@@ -78,7 +78,8 @@ jobs:
           - payment-service
           - proxy-manager
           - staging-service
-    if: needs.changes.outputs[matrix.service] == 'true' || needs.changes.outputs.shared == 'true'
+    # matrix недоступен в job-level if (jobs.<job_id>.if), поэтому условие
+    # вешается на каждый шаг — там контекст matrix доступен.
     defaults:
       run:
         working-directory: services/${{ matrix.service }}
@@ -92,10 +93,13 @@ jobs:
           cache-dependency-path: services/${{ matrix.service }}/go.sum
 
       - name: Build
+        if: needs.changes.outputs[matrix.service] == 'true' || needs.changes.outputs.shared == 'true'
         run: go build -v ./...
 
       - name: Vet
+        if: needs.changes.outputs[matrix.service] == 'true' || needs.changes.outputs.shared == 'true'
         run: go vet ./...
 
       - name: Test
+        if: needs.changes.outputs[matrix.service] == 'true' || needs.changes.outputs.shared == 'true'
         run: go test -race -v ./...
