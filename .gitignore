@@ -1,0 +1,6 @@
+.DS_Store
+.zcode/
+.kilo/
+AGENTS.md
+.env
+services/*/tmp/
