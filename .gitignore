@@ -3,4 +3,5 @@
 .kilo/
 AGENTS.md
 .env
+deploy/.env
 services/*/tmp/
