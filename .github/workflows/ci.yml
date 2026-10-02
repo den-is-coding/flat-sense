@@ -1,0 +1,101 @@
+# CI: сборка, vet и тесты Go-сервисов (issue #17).
+# Матрица по сервисам services/* (у тех, у кого есть go.mod).
+# dorny/paths-filter запускает сборку только затронутых сервисов;
+# изменения в pkg/, migrations или самом workflow запускают все сервисы.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  changes:
+    name: Detect changed services
+    runs-on: ubuntu-latest
+    outputs:
+      # Список сервисов должен совпадать с matrix.service в job build.
+      ads-service: ${{ steps.filter.outputs.ads-service }}
+      analyzer-service: ${{ steps.filter.outputs.analyzer-service }}
+      api-gateway: ${{ steps.filter.outputs.api-gateway }}
+      auth-service: ${{ steps.filter.outputs.auth-service }}
+      notification-service: ${{ steps.filter.outputs.notification-service }}
+      parser-service: ${{ steps.filter.outputs.parser-service }}
+      payment-service: ${{ steps.filter.outputs.payment-service }}
+      proxy-manager: ${{ steps.filter.outputs.proxy-manager }}
+      staging-service: ${{ steps.filter.outputs.staging-service }}
+      shared: ${{ steps.filter.outputs.shared }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            ads-service:
+              - 'services/ads-service/**'
+            analyzer-service:
+              - 'services/analyzer-service/**'
+            api-gateway:
+              - 'services/api-gateway/**'
+            auth-service:
+              - 'services/auth-service/**'
+            notification-service:
+              - 'services/notification-service/**'
+            parser-service:
+              - 'services/parser-service/**'
+            payment-service:
+              - 'services/payment-service/**'
+            proxy-manager:
+              - 'services/proxy-manager/**'
+            staging-service:
+              - 'services/staging-service/**'
+            shared:
+              - 'pkg/**'
+              - 'migrations/**'
+              - '.github/workflows/ci.yml'
+
+  build:
+    name: Build ${{ matrix.service }}
+    needs: changes
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Сервисы с go.mod в services/* (image-ai-service и user-service пока пустые).
+        service:
+          - ads-service
+          - analyzer-service
+          - api-gateway
+          - auth-service
+          - notification-service
+          - parser-service
+          - payment-service
+          - proxy-manager
+          - staging-service
+    if: needs.changes.outputs[matrix.service] == 'true' || needs.changes.outputs.shared == 'true'
+    defaults:
+      run:
+        working-directory: services/${{ matrix.service }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Версия Go берётся из go.mod конкретного сервиса (1.24, parser-service — 1.25).
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: services/${{ matrix.service }}/go.mod
+          cache-dependency-path: services/${{ matrix.service }}/go.sum
+
+      - name: Build
+        run: go build -v ./...
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test
+        run: go test -race -v ./...
