@@ -41,6 +41,9 @@ func main() {
 	if *noDetails {
 		cfg.FetchDetails = false
 	}
+	if *onlyStudio {
+		cfg.OnlyStudios = true // фильтр действует и на поиск, и на экспорт
+	}
 	if *sourceTask != "" {
 		cfg.SourceTask = *sourceTask
 	}
@@ -265,6 +268,7 @@ type Config struct {
 	Avito        avito.ClientConfig
 	MaxPages     int
 	FetchDetails bool
+	OnlyStudios  bool
 	SourceTask   string
 }
 
@@ -272,6 +276,7 @@ func (c Config) serviceConfig() avito.ServiceConfig {
 	return avito.ServiceConfig{
 		MaxPages:     c.MaxPages,
 		FetchDetails: c.FetchDetails,
+		OnlyStudios:  c.OnlyStudios,
 		SourceTask:   c.SourceTask,
 	}
 }

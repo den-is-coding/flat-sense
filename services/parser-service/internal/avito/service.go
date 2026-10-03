@@ -15,6 +15,7 @@ import (
 
 // ServiceConfig — поведение прогона парсинга.
 type ServiceConfig struct {
+	OnlyStudios  bool   // фаза поиска: сохранять и обогащать только студии
 	MaxPages     int    // максимум страниц выдачи (0 = пока есть объявления, верхний предел 100)
 	FetchDetails bool   // дополнительно запрашивать карточку каждого объявления
 	SourceTask   string // метка задачи для трассировки записей в БД
@@ -180,6 +181,9 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 				return stats, err
 			}
 			l.SourceTask = s.cfg.SourceTask
+			if s.cfg.OnlyStudios && !l.Studio {
+				continue // фильтр «только студии» на фазе поиска
+			}
 			if s.storage != nil {
 				isNew, err := s.storage.UpsertListing(ctx, l)
 				if err != nil {
