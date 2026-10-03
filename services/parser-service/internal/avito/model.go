@@ -60,10 +60,11 @@ type Listing struct {
 	YearBuilt   int
 
 	// География
-	Address  string
-	Region   string
-	City     string
-	District string
+	Address            string
+	Region             string
+	City               string
+	ResidentialComplex string
+	District           string
 	Metro    string
 	Lat      float64
 	Lng      float64

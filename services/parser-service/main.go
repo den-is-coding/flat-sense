@@ -12,6 +12,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/yourusername/real-estate-analyzer/parser-service/internal/admin"
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/avito"
 )
 
@@ -203,6 +204,21 @@ func main() {
 		}
 		writeJSON(w, http.StatusOK, runs)
 	})
+
+	// Админка (issue #57): включается при заданных ADMIN_LOGIN/ADMIN_PASSWORD.
+	// TODO(#57): при появлении auth-service (Этап 2) перевести проверку
+	// доступа на него; сейчас — креды из env deploy/.env.
+	if login, pass := os.Getenv("ADMIN_LOGIN"), os.Getenv("ADMIN_PASSWORD"); login != "" && pass != "" {
+		ttl := time.Duration(envInt("ADMIN_SESSION_TTL_HOURS", 12)) * time.Hour
+		secret := os.Getenv("ADMIN_SESSION_SECRET")
+		if secret == "" {
+			secret = pass + "|flat-sense-admin"
+		}
+		admin.Register(mux, admin.NewStore(storage.Pool()), admin.NewSessions(secret, ttl), login, pass)
+		log.Printf("admin routes enabled (user=%s)", login)
+	} else {
+		log.Printf("admin routes disabled: ADMIN_LOGIN/ADMIN_PASSWORD not set")
+	}
 
 	addr := ":" + cfg.HTTPPort
 	log.Printf("parser-service listening on %s", addr)

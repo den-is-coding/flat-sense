@@ -34,6 +34,9 @@ func NewStorage(ctx context.Context, dsn string) (*Storage, error) {
 
 func (s *Storage) Close() { s.pool.Close() }
 
+// Pool — доступ к пулу соединений (для read-only админского хранилища #57).
+func (s *Storage) Pool() *pgxpool.Pool { return s.pool }
+
 // nilIfZero превращает нулевые значения в NULL для опциональных колонок.
 func nilIfZero[T comparable](v T) any {
 	var zero T
@@ -67,7 +70,7 @@ INSERT INTO avito_listings (
     price, price_currency, price_per_unit, price_unit, price_meta,
     rooms, studio, total_area, living_area, kitchen_area, land_area,
     floor, floors_total, house_type, renovation, balcony, bathroom, year_built,
-    address, region, city, district, metro, lat, lng, geo,
+    address, region, city, residential_complex, district, metro, lat, lng, geo,
     seller_name, seller_type, seller_url, seller_rating, seller,
     images, image_count,
     views_count, contacts_count, favorites_count,
@@ -80,12 +83,12 @@ INSERT INTO avito_listings (
     $8,$9,$10,$11,$12,
     $13,$14,$15,$16,$17,$18,
     $19,$20,$21,$22,$23,$24,$25,
-    $26,$27,$28,$29,$30,$31,$32,$33,
-    $34,$35,$36,$37,$38,
-    $39,$40,
-    $41,$42,$43,
-    $44,$45,
-    $46,$47,$48,
+    $26,$27,$28,$29,$30,$31,$32,$33,$34,
+    $35,$36,$37,$38,$39,
+    $40,$41,
+    $42,$43,$44,
+    $45,$46,
+    $47,$48,$49,
     now(), now()
 )
 ON CONFLICT (id) DO UPDATE SET
@@ -114,6 +117,7 @@ ON CONFLICT (id) DO UPDATE SET
     address        = COALESCE(EXCLUDED.address, avito_listings.address),
     region         = COALESCE(EXCLUDED.region, avito_listings.region),
     city           = COALESCE(EXCLUDED.city, avito_listings.city),
+    residential_complex = COALESCE(EXCLUDED.residential_complex, avito_listings.residential_complex),
     district       = COALESCE(EXCLUDED.district, avito_listings.district),
     metro          = COALESCE(EXCLUDED.metro, avito_listings.metro),
     lat            = COALESCE(EXCLUDED.lat, avito_listings.lat),
@@ -145,7 +149,7 @@ RETURNING (xmax = 0) AS inserted`
 		nilIfZero(l.Price), nilIfZero(l.Currency), nilIfZero(l.PricePerM2), nilIfZero(l.PriceUnit), jsonOrNil(l.PriceMeta),
 		nilIfZero(l.Rooms), l.Studio, nilIfZero(l.TotalArea), nilIfZero(l.LivingArea), nilIfZero(l.KitchenArea), nilIfZero(l.LandArea),
 		nilIfZero(l.Floor), nilIfZero(l.FloorsTotal), nilIfZero(l.HouseType), nilIfZero(l.Renovation), nilIfZero(l.Balcony), nilIfZero(l.Bathroom), nilIfZero(l.YearBuilt),
-		nilIfZero(l.Address), nilIfZero(l.Region), nilIfZero(l.City), nilIfZero(l.District), nilIfZero(l.Metro), nilIfZero(l.Lat), nilIfZero(l.Lng), jsonOrNil(l.Geo),
+		nilIfZero(l.Address), nilIfZero(l.Region), nilIfZero(l.City), nilIfZero(l.ResidentialComplex), nilIfZero(l.District), nilIfZero(l.Metro), nilIfZero(l.Lat), nilIfZero(l.Lng), jsonOrNil(l.Geo),
 		nilIfZero(l.SellerName), nilIfZero(l.SellerType), nilIfZero(l.SellerURL), nilIfZero(l.SellerRating), jsonOrNil(l.Seller),
 		images, nilIfZero(l.ImageCount),
 		nilIfZero(l.Views), nilIfZero(l.Contacts), nilIfZero(l.Favorites),
@@ -219,8 +223,8 @@ func (s *Storage) ListRuns(ctx context.Context, limit int) ([]ParseRun, error) {
 		limit = 20
 	}
 	rows, err := s.pool.Query(ctx, `
-SELECT id, started_at, finished_at, filters, request_url,
-       pages_fetched, items_found, items_new, items_updated, status, error
+SELECT id, started_at, finished_at, filters, COALESCE(request_url, '') AS request_url,
+       pages_fetched, items_found, items_new, items_updated, status, COALESCE(error, '') AS error
 FROM avito_parse_runs ORDER BY id DESC LIMIT $1`, limit)
 	if err != nil {
 		return nil, err
