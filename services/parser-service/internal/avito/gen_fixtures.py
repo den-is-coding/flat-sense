@@ -20,8 +20,8 @@ item1 = {
     "geo": {"formattedAddress": "Москва, улица Ленина, 10", "region": "Москва",
             "city": "Москва", "district": "ЦАО",
             "coordinates": {"lat": 55.751244, "lng": 37.618423}},
-    "images": [{"640x480": {"url": "https://90.img.avito.st/640x480/111.jpg"},
-                "208x208": {"url": "https://90.img.avito.st/208x208/111s.jpg"}}],
+    "images": [{"640x480": {"url": "/img/111_640.png"},
+                "208x208": {"url": "/img/111_208.png"}}],
     "time": 1696200000,
     "sellerId": 12345,
 }
@@ -38,7 +38,7 @@ item2 = {
     "address": "Москва, проспект Мира, 5",
     "geo": {"formattedAddress": "Москва, проспект Мира, 5", "region": "Москва", "city": "Москва",
             "coordinates": {"lat": 55.788874, "lng": 37.632648}},
-    "images": [{"640x480": {"url": "https://91.img.avito.st/640x480/222.jpg"}}],
+    "images": [{"640x480": {"url": "/img/222_640.png"}}],
     "time": 1696286400,
     "sellerId": 67890,
 }
@@ -88,7 +88,7 @@ detail = {
             "seller": {"sellerName": "Иван", "sellerType": "private", "rating": 4.8,
                        "reviewsCount": 12, "isVerified": True},
             "counters": {"views": 1520, "contacts": 34, "favorites": 12},
-            "images": [{"640x480": {"url": "https://90.img.avito.st/640x480/111.jpg"}}],
+            "images": [{"640x480": {"url": "/img/111_640.png"}}],
             "time": 1696200000,
             "refreshTime": 1696500000,
         }

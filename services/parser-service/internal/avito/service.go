@@ -1,16 +1,21 @@
 package avito
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
 	"log"
 	"math/rand"
+	"os"
+	"strings"
+	"sync"
 	"time"
 )
 
 // ServiceConfig — поведение прогона парсинга.
 type ServiceConfig struct {
+	OnlyStudios  bool   // фаза поиска: сохранять и обогащать только студии
 	MaxPages     int    // максимум страниц выдачи (0 = пока есть объявления, верхний предел 100)
 	FetchDetails bool   // дополнительно запрашивать карточку каждого объявления
 	SourceTask   string // метка задачи для трассировки записей в БД
@@ -89,6 +94,8 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 		stats.Duration = time.Since(start).Round(time.Millisecond).String()
 	}()
 
+	var detailQueue []*Listing
+	canonicalURL := ""
 	for page := 1; page <= s.cfg.MaxPages; page++ {
 		select {
 		case <-ctx.Done():
@@ -99,17 +106,55 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 		}
 
 		pageURL := f.BuildURL(page)
+		if canonicalURL != "" && page > 1 {
+			// пагинация по каноническому URL первой страницы — без повторного редиректа
+			pageURL = canonicalURL
+			if q := pageURL + "&p=" + itoa(page); strings.Contains(pageURL, "?") {
+				pageURL = q
+			} else {
+				pageURL = pageURL + "?p=" + itoa(page)
+			}
+		}
 		if page == 1 {
 			stats.URL = pageURL
 		}
-		body, err := s.client.Fetch(pageURL)
-		if err != nil {
-			stats.Status = "partial"
-			stats.Error = err.Error()
-			if page == 1 {
-				return stats, err // даже первую страницу не получили — это провал
+		var body []byte
+		pageTries := 0
+		for {
+			if pageTries >= 3 {
+				break
 			}
-			break // получили часть страниц — отдаём что есть
+			pageTries++
+			b, finalURL, ferr := s.fetchFollowingRedirects(pageURL, 3)
+			if ferr == nil && page == 1 && finalURL != pageURL {
+				canonicalURL = finalURL
+			}
+			if ferr != nil {
+				stats.Status = "partial"
+				stats.Error = ferr.Error()
+				if page == 1 && stats.PagesFetched == 0 && len(body) == 0 {
+					return stats, ferr
+				}
+				body = nil
+				break
+			}
+			if bytes.Contains(b, []byte("data-mfe-state")) || bytes.Contains(b, []byte("__initialData__")) {
+				body = b
+				break
+			}
+			// статус 200, но JSON-состояний нет: софт-блок Qrator — сохраняем
+			// образец и повторяем через другой порт
+			log.Printf("[avito] страница без JSON-состояний (%d байт) — софт-блок, попытка %d", len(b), pageTries)
+			_ = os.WriteFile(fmt.Sprintf("/tmp/softblock-p%d-t%d.html", page, pageTries), b, 0o644)
+			continue
+		}
+		if len(body) == 0 {
+			if stats.PagesFetched == 0 {
+				stats.Status = "partial"
+				stats.Error = "page 1: soft-blocked on all tries"
+				return stats, fmt.Errorf("page 1: soft-blocked")
+			}
+			break
 		}
 		stats.PagesFetched = page
 
@@ -127,17 +172,17 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 		}
 		stats.ItemsFound += len(listings)
 
+		// Фаза 1: сразу сохраняем данные выдачи — они уже полноценны
+		// (цена/комнаты/площадь/этаж/гео/продавец), фоновые потери не страшны.
 		for _, l := range listings {
 			if err := ctx.Err(); err != nil {
 				stats.Status = "partial"
 				stats.Error = "context cancelled"
 				return stats, err
 			}
-			if s.cfg.FetchDetails {
-				if err := s.enrichDetail(ctx, l); err != nil {
-					log.Printf("[avito] detail %d: %v (keeping search-page data)", l.ID, err)
-				}
-				sleepJitter(s.rng, 300*time.Millisecond, 1200*time.Millisecond)
+			l.SourceTask = s.cfg.SourceTask
+			if s.cfg.OnlyStudios && !l.Studio {
+				continue // фильтр «только студии» на фазе поиска
 			}
 			if s.storage != nil {
 				isNew, err := s.storage.UpsertListing(ctx, l)
@@ -151,10 +196,25 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 					stats.ItemsUpdated++
 				}
 			}
+			detailQueue = append(detailQueue, l)
 			if withListings {
 				stats.Listings = append(stats.Listings, &ListingInfo{
 					ID: l.ID, Title: l.Title, URL: l.URL, Price: l.Price, Address: l.Address, IsNew: l.IsNew,
 				})
+			}
+		}
+	}
+
+	// Фаза 2: параллельное обогащение карточками (воркер на порт пула).
+	if s.cfg.FetchDetails && len(detailQueue) > 0 {
+		done := s.enrichParallel(ctx, detailQueue)
+		for _, l := range detailQueue {
+			if done[l.ID] {
+				if s.storage != nil {
+					if _, err := s.storage.UpsertListing(ctx, l); err != nil {
+						log.Printf("[avito] upsert detail %d: %v", l.ID, err)
+					}
+				}
 			}
 		}
 	}
@@ -169,11 +229,34 @@ func (s *Service) RunParse(ctx context.Context, f *SearchFilters, withListings b
 
 // enrichDetail дополняет данные выдачи данными карточки (описание, продавец,
 // счётчики, полный набор параметров).
+// fetchFollowingRedirects получает страницу и, если Авито вернул SSR-заглушку
+// с редиректом на канонический URL (фильтры упаковываются в слаг f=),
+// переходит по ней. Возвращает (тело, финальный URL) — финальный URL
+// используется для пагинации без повторных редиректов.
+func (s *Service) fetchFollowingRedirects(u string, maxHops int) ([]byte, string, error) {
+	body, err := s.client.Fetch(u)
+	if err != nil {
+		return nil, "", err
+	}
+	for hop := 0; hop < maxHops; hop++ {
+		rd := SearchRedirect(string(body))
+		if rd == "" {
+			return body, u, nil
+		}
+		log.Printf("[avito] ssr-redirect -> %s", rd)
+		u = absoluteURL(rd)
+		if body, err = s.client.Fetch(u); err != nil {
+			return nil, "", err
+		}
+	}
+	return body, u, nil
+}
+
 func (s *Service) enrichDetail(ctx context.Context, l *Listing) error {
 	if l.URL == "" {
 		return fmt.Errorf("listing %d has no url", l.ID)
 	}
-	body, err := s.client.Fetch(l.URL)
+	body, _, err := s.fetchFollowingRedirects(l.URL, 2)
 	if err != nil {
 		return err
 	}
@@ -390,3 +473,54 @@ func (f *SearchFilters) String() string {
 	return fmt.Sprintf("city=%s category=%s deal=%s page=%d pmin=%d pmax=%d rooms=%v sort=%s f=%s",
 		f.City, f.Category, f.Deal, f.Page, f.PriceMin, f.PriceMax, f.Rooms, f.Sort, f.Advanced)
 }
+
+// enrichParallel обогащает объявления карточками параллельно: по воркеру
+// на порт пула, каждый дёргает свой порт (согласованные куки/IP на порт).
+func (s *Service) enrichParallel(ctx context.Context, listings []*Listing) map[int64]bool {
+	n := s.client.PortCount()
+	if n > 6 {
+		n = 6 // бережём шлюз: не более 6 параллельных подключений
+	}
+	if n < 1 {
+		n = 1
+	}
+	queue := make(chan *Listing)
+	done := make(map[int64]bool)
+	var mu sync.Mutex
+	var wg sync.WaitGroup
+
+	for w := 0; w < n; w++ {
+		wg.Add(1)
+		go func(idx int) {
+			defer wg.Done()
+			for l := range queue {
+				if ctx.Err() != nil {
+					return
+				}
+				body, err := s.client.FetchViaPort(idx, l.URL)
+				if err != nil {
+					log.Printf("[avito] detail %d via port %d: %v", l.ID, idx, err)
+					sleepJitter(s.rng, 2*time.Second, 5*time.Second)
+					continue
+				}
+				full, err := ParseItemPage(string(body))
+				if err != nil {
+					log.Printf("[avito] detail %d parse: %v", l.ID, err)
+					continue
+				}
+				mergeDetails(l, full)
+				mu.Lock()
+				done[l.ID] = true
+				mu.Unlock()
+			}
+		}(w)
+	}
+	for _, l := range listings {
+		queue <- l
+	}
+	close(queue)
+	wg.Wait()
+	return done
+}
+
+func itoa(n int) string { return fmt.Sprintf("%d", n) }

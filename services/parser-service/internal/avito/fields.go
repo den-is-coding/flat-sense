@@ -49,12 +49,28 @@ func applyParams(l *Listing, params []map[string]any) {
 			l.Balcony = value
 		case "Санузел":
 			l.Bathroom = value
-		case "Год постройки":
+		case "Год постройки", "Год сдачи":
 			if n, err := strconv.Atoi(leadingInt(value)); err == nil && n > 1700 && n < 2200 {
 				l.YearBuilt = n
 			}
 		}
+		// Название ЖК пишется в params под разными заголовками («ЖК»,
+		// «Название ЖК», «Жилой комплекс» и т.п.) — ловим по подстроке.
+		if l.ResidentialComplex == "" && containsAnyFold(title, "жк", "жилой комплекс") {
+			l.ResidentialComplex = value
+		}
 	}
+}
+
+// containsAnyFold — строка содержит любую из подстрок (без учёта регистра).
+func containsAnyFold(s string, subs ...string) bool {
+	ls := strings.ToLower(s)
+	for _, sub := range subs {
+		if strings.Contains(ls, sub) {
+			return true
+		}
+	}
+	return false
 }
 
 var reNum = regexp.MustCompile(`[-+]?\d+([.,]\d+)?`)

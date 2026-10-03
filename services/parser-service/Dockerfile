@@ -1,4 +1,4 @@
-FROM golang:1.24-alpine3.20 AS builder
+FROM golang:1.25-alpine AS builder
 RUN apk add --no-cache ca-certificates tzdata
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app

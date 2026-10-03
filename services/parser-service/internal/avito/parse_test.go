@@ -75,8 +75,8 @@ func TestParseSearchPage(t *testing.T) {
 	}
 	if l.ImageCount != 1 || len(l.Images) != 1 {
 		t.Errorf("images = %d", l.ImageCount)
-	} else if l.Images[0].URL != "https://90.img.avito.st/640x480/111.jpg" {
-		t.Errorf("image url = %q (ожидался лучший размер 640x480)", l.Images[0].URL)
+	} else if l.Images[0].URL != "https://www.avito.ru/img/111_640.png" || l.Images[0].W != 640 || l.Images[0].H != 480 {
+		t.Errorf("image = %+v (ожидался лучший размер 640x480)", l.Images[0])
 	}
 	if l.PublishedAt.IsZero() {
 		t.Errorf("publishedAt пустой")
