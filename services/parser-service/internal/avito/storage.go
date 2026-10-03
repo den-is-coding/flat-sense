@@ -237,3 +237,30 @@ FROM avito_parse_runs ORDER BY id DESC LIMIT $1`, limit)
 	}
 	return out, rows.Err()
 }
+
+// RawRow — строка avito_listings для пере-парсинга.
+type RawRow struct {
+	ID       int64
+	Category string
+	DealType string
+	Raw      []byte
+}
+
+// SelectRawByTask отдаёт исходники объявлений задачи (для офлайн-пере-парсинга).
+func (s *Storage) SelectRawByTask(ctx context.Context, task string) ([]RawRow, error) {
+	rows, err := s.pool.Query(ctx,
+		`SELECT id, category, deal_type, raw::text FROM avito_listings WHERE source_task=$1 ORDER BY id`, task)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var out []RawRow
+	for rows.Next() {
+		var r RawRow
+		if err := rows.Scan(&r.ID, &r.Category, &r.DealType, &r.Raw); err != nil {
+			return nil, err
+		}
+		out = append(out, r)
+	}
+	return out, rows.Err()
+}

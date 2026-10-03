@@ -5,3 +5,6 @@ AGENTS.md
 .env
 deploy/.env
 services/*/tmp/
+data/
+.tmp-wiki/
+services/parser-service/internal/avito/testdata/avito_run_*/
