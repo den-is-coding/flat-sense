@@ -271,6 +271,8 @@ services:
       ADMIN_LOGIN: ${ADMIN_LOGIN:-}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
       ADMIN_SESSION_TTL_HOURS: ${ADMIN_SESSION_TTL_HOURS:-12}
+    ports:
+      - "8088:8080"   # админка /admin (issue #57)
     command: ["air", "-c", ".air.toml"]
 
   analyzer-service:
