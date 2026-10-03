@@ -237,3 +237,9 @@ FROM avito_parse_runs ORDER BY id DESC LIMIT $1`, limit)
 	}
 	return out, rows.Err()
 }
+
+// DeleteListing удаляет объявление (например, не прошедшее фильтры после обогащения).
+func (s *Storage) DeleteListing(ctx context.Context, id int64) error {
+	_, err := s.pool.Exec(ctx, `DELETE FROM avito_listings WHERE id=$1`, id)
+	return err
+}

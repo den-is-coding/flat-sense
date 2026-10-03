@@ -3,6 +3,7 @@ package avito
 import (
 	"encoding/json"
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 	"time"
@@ -101,6 +102,7 @@ func parseSearchItem(m map[string]any) *Listing {
 	l.Address = mapStr(m, "address")
 	parseGeo(l, m)
 	parseImages(l, m)
+	applySearchIVA(l, m)
 
 	if t := parseEpochMs(mapGet(m, "time")); !t.IsZero() {
 		l.PublishedAt = t
@@ -170,16 +172,17 @@ func parseImages(l *Listing, m map[string]any) {
 		best := Image{}
 		bestArea := 0
 		for key, v := range em {
-			im, ok := asMap(v)
-			if !ok {
-				continue
+			var u string
+			if sv, isStr := v.(string); isStr {
+				u = sv // {"640x480": "https://..."} — url строкой
+			} else if im, ok := asMap(v); ok {
+				u = mapStr(im, "url")
 			}
-			u := mapStr(im, "url")
 			if u == "" {
 				continue
 			}
-			w, _ := mapFloat(im, "width")
-			h, _ := mapFloat(im, "height")
+			w, _ := mapFloat(em, "width")
+			h, _ := mapFloat(em, "height")
 			if w == 0 || h == 0 {
 				if kw, kh, ok := parseSizeKey(key); ok {
 					w, h = kw, kh
@@ -204,7 +207,7 @@ func absoluteURL(path string) string {
 	if strings.HasPrefix(path, "http://") || strings.HasPrefix(path, "https://") {
 		return path
 	}
-	return "https://www.avito.ru" + path
+	return baseURL + path
 }
 
 // parseSizeKey — "640x480" → (640, 480, true).
@@ -387,3 +390,119 @@ func firstTime(ts ...time.Time) time.Time {
 	}
 	return time.Time{}
 }
+
+// SearchRedirect вытаскивает из страницы SSR-редирект Авито (заглушка
+// loaderData.redirect / loaderData.data.url вместо выдачи). Возвращает
+// путь для перехода или "".
+func SearchRedirect(pageHTML string) string {
+	states, err := extractStates(pageHTML)
+	if err != nil {
+		return ""
+	}
+	for _, st := range states {
+		for _, key := range []string{"redirect", "url"} {
+			if v, ok := findKey(st, key); ok {
+				if s := asString(v); strings.HasPrefix(s, "/") {
+					return s
+				}
+			}
+		}
+	}
+	return ""
+}
+
+// ivaStep достаёт payload первого элемента шага из iva-структуры выдачи:
+// item.iva.PriceStep[0].payload и т.п.
+func ivaStep(m map[string]any, step string) map[string]any {
+	iva, ok := deepGet(m, "iva")
+	if !ok {
+		return nil
+	}
+	arr, ok := asArray(mapGet(iva, step))
+	if !ok || len(arr) == 0 {
+		return nil
+	}
+	first, _ := asMap(arr[0])
+	payload, _ := deepGet(first, "payload")
+	return payload
+}
+
+// applySearchIVA дозаполняет объявление данными реальной выдачи Авито,
+// где поля завёрнуты в iva-шаги (PriceStep, UserInfoStep), а комнаты/
+// площадь/этаж встречаются только в заголовке.
+func applySearchIVA(l *Listing, m map[string]any) {
+	if p := ivaStep(m, "PriceStep"); p != nil {
+		if l.Price == 0 {
+			if pd, ok := deepGet(p, "priceDetailed"); ok {
+				var price priceDetailed
+				if b, err := json.Marshal(pd); err == nil && json.Unmarshal(b, &price) == nil {
+					l.SetPriceFromDetailed(&price)
+					l.PriceMeta = b
+				}
+			}
+		}
+		if l.PricePerM2 == 0 {
+			if s := mapStr(p, "normalizedPrice"); s != "" { // "314 556 ₽ за м²"
+				num := leadingInt(s)
+				if v, err := strconv.ParseFloat(num, 64); err == nil {
+					l.PricePerM2 = int64(v)
+					l.PriceUnit = "м2"
+				}
+			}
+		}
+	}
+	if l.SellerName == "" {
+		if u := ivaStep(m, "UserInfoStep"); u != nil {
+			if prof, ok := deepGet(u, "profile"); ok {
+				l.SellerName = mapStr(prof, "title")
+				l.SellerURL = absoluteURL(mapStr(prof, "link"))
+				link := mapStr(prof, "link")
+				switch {
+				case strings.Contains(link, "/brands/"):
+					l.SellerType = "developer"
+				case strings.Contains(link, "/b/"):
+					l.SellerType = "agency"
+				default:
+					l.SellerType = "private"
+				}
+				l.Seller = mustJSON(map[string]any{"name": l.SellerName, "url": l.SellerURL, "type": l.SellerType})
+			}
+		}
+	}
+	if l.Rooms == 0 && !l.Studio && l.TotalArea == 0 {
+		parseTitleParams(l, l.Title)
+	}
+}
+
+// parseTitleParams извлекает комнаты/площадь/этаж из заголовка выдачи:
+// «Квартира-студия, 25,2 м², 3/4 эт.», «1-к. квартира, 41,7 м², 8/9 эт.»
+func parseTitleParams(l *Listing, title string) {
+	if title == "" {
+		return
+	}
+	// Авито использует неразрывные пробелы (U+00A0/U+202F), которые \s не матчит
+	title = strings.NewReplacer("\u00a0", " ", "\u202f", " ").Replace(title)
+	if strings.Contains(strings.ToLower(title), "студия") {
+		l.Studio = true
+	} else if m := regexpRooms.FindStringSubmatch(title); m != nil {
+		if n, err := strconv.Atoi(m[1]); err == nil {
+			l.Rooms = n
+		}
+	}
+	if a := regexpArea.FindStringSubmatch(title); a != nil {
+		if v, err := strconv.ParseFloat(strings.ReplaceAll(a[1], ",", "."), 64); err == nil {
+			l.TotalArea = v
+		}
+	}
+	if f := regexpFloor.FindStringSubmatch(title); f != nil {
+		fl, _ := strconv.Atoi(strings.ReplaceAll(f[1], " ", ""))
+		ft, _ := strconv.Atoi(strings.ReplaceAll(f[2], " ", ""))
+		l.Floor, l.FloorsTotal = fl, ft
+	}
+}
+
+var (
+	regexpRooms = regexp.MustCompile(`(\d+)[- ]к[. ]`)
+	regexpArea  = regexp.MustCompile(`(\d+(?:[.,]\d+)?)\s*м²`)
+	regexpFloor = regexp.MustCompile(`(\d+)\s*/\s*(\d+)\s*эт`)
+)

@@ -7,6 +7,23 @@ import (
 	"strings"
 )
 
+// baseURL — базовый URL Авито. Переопределяется через SetBaseURL
+// (переменная окружения AVITO_BASE_URL в main.go) для тестов на мок-сервере.
+const defaultBaseURL = "https://www.avito.ru"
+
+var baseURL = defaultBaseURL
+
+// SetBaseURL переопределяет базовый URL Авито (моки/тесты). Пустая строка
+// оставляет значение по умолчанию.
+func SetBaseURL(u string) {
+	if strings.TrimSpace(u) != "" {
+		baseURL = strings.TrimRight(u, "/")
+	}
+}
+
+// isCustomBase сообщает, работает ли клиент с мок-сервером, а не с Авито.
+func isCustomBase() bool { return baseURL != defaultBaseURL }
+
 // Category — категория недвижимости на Авито (slug в URL).
 type Category string
 
@@ -106,7 +123,7 @@ func (f *SearchFilters) dealSegment() DealType {
 // BuildURL собирает URL страницы выдачи с учётом пагинации.
 func (f *SearchFilters) BuildURL(page int) string {
 	deal := f.dealSegment()
-	u := fmt.Sprintf("https://www.avito.ru/%s/%s/%s", strings.Trim(f.City, "/"), f.Category, deal)
+	u := fmt.Sprintf("%s/%s/%s/%s", baseURL, strings.Trim(f.City, "/"), f.Category, deal)
 
 	q := url.Values{}
 	if f.Query != "" {

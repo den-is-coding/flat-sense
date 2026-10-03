@@ -49,7 +49,7 @@ func applyParams(l *Listing, params []map[string]any) {
 			l.Balcony = value
 		case "Санузел":
 			l.Bathroom = value
-		case "Год постройки":
+		case "Год постройки", "Год сдачи":
 			if n, err := strconv.Atoi(leadingInt(value)); err == nil && n > 1700 && n < 2200 {
 				l.YearBuilt = n
 			}

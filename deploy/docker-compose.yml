@@ -267,6 +267,10 @@ services:
       AVITO_MAX_DELAY_MS: ${AVITO_MAX_DELAY_MS:-6000}
       PARSE_MAX_PAGES: ${PARSE_MAX_PAGES:-0}
       PARSE_FETCH_DETAILS: "1"
+      # Админка (issue #57): креды из deploy/.env
+      ADMIN_LOGIN: ${ADMIN_LOGIN:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ADMIN_SESSION_TTL_HOURS: ${ADMIN_SESSION_TTL_HOURS:-12}
     command: ["air", "-c", ".air.toml"]
 
   analyzer-service:
