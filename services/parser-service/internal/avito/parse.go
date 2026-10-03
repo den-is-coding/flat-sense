@@ -168,7 +168,7 @@ func parseImages(l *Listing, m map[string]any) {
 			l.Images = append(l.Images, Image{URL: absoluteURL(u), W: int(w), H: int(h)})
 			continue
 		}
-		// формат {«640x480»: {url...}|«url-строка», ...} — размеры в ключе
+		// формат {«640x480»: {url...}, «208x208»: {...}} — размеры в ключе
 		best := Image{}
 		bestArea := 0
 		for key, v := range em {
@@ -482,7 +482,7 @@ func parseTitleParams(l *Listing, title string) {
 	}
 	// Авито использует неразрывные пробелы (U+00A0/U+202F), которые \s не матчит
 	title = strings.NewReplacer("\u00a0", " ", "\u202f", " ").Replace(title)
-	if strings.Contains(title, "студия") || strings.Contains(title, "студиЯ") {
+	if strings.Contains(strings.ToLower(title), "студия") {
 		l.Studio = true
 	} else if m := regexpRooms.FindStringSubmatch(title); m != nil {
 		if n, err := strconv.Atoi(m[1]); err == nil {
@@ -507,8 +507,8 @@ var (
 	regexpFloor = regexp.MustCompile(`(\d+)\s*/\s*(\d+)\s*эт`)
 )
 
-// ReparseSearchItem заново разбирает сохранённый raw JSON элемента выдачи
-// актуальной версией парсера (офлайн, без сети) — например, после правок схемы.
+// ReparseSearchItem — повторный разбор сохранённого raw поисковой карточки
+// актуальным парсером (офлайн пере-парсинг задач, флаг -reparse).
 func ReparseSearchItem(rawJSON []byte, category string, deal DealKind, sourceTask string) (*Listing, error) {
 	var m map[string]any
 	if err := json.Unmarshal(rawJSON, &m); err != nil {
