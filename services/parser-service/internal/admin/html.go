@@ -81,6 +81,7 @@ var funcs = template.FuncMap{
 	"hasNext": func(total, limit, page int) bool { return total > limit*page },
 	"sub1":    func(n int) int { return n - 1 },
 	"add1":    func(n int) int { return n + 1 },
+	"rownum":  func(start, i int) int { return start + i },
 	"qse": func(f ListingFilters, key, val string) string {
 		q := url.Values{}
 		q.Set("q", f.Search)
@@ -129,6 +130,8 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
  body{font:14px/1.45 system-ui,sans-serif;margin:0;color:#1a1a1a;background:#f5f6f8}
  header{background:#232a35;color:#fff;padding:10px 20px;display:flex;gap:16px;align-items:center}
  header span{color:#9aa4b2}
+ header .total{color:#fff;font-size:15px}
+ header .total b{font-size:19px;color:#ffd166}
  .wrap{padding:16px 20px}
  table{border-collapse:collapse;width:100%;background:#fff;font-variant-numeric:tabular-nums}
  th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;white-space:nowrap}
@@ -142,7 +145,8 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
  .muted{color:#666}
 </style></head>
 <body>
-<header><b>flat-sense admin</b><span>объявлений: {{.Page.Total}}</span>
+<header><b>flat-sense admin</b>
+<span class="total">Всего объявлений: <b>{{.Page.Total}}</b>{{if .RowsTo}} · показано {{.RowsFrom}}–{{.RowsTo}}{{end}}</span>
 <form method="post" action="/admin/logout" style="margin-left:auto"><button>Выйти</button></form></header>
 <div class="wrap">
 <form class="filters" method="get" action="/admin">
@@ -163,7 +167,7 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
 <div style="overflow-x:auto">
 <table>
 <thead><tr>
-<th>ID</th><th>Заголовок</th>
+<th>#</th><th>ID</th><th>Заголовок</th>
 <th><a href="{{qse .Filters "sort" "price"}}">Цена{{mark .Filters "price"}}</a></th>
 <th><a href="{{qse .Filters "sort" "total_area"}}">м²{{mark .Filters "total_area"}}</a></th>
 <th>Этаж</th><th>Комнаты</th><th>Цена/м²</th>
@@ -174,22 +178,23 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
 <th><a href="{{qse .Filters "sort" "last_seen_at"}}">Обновл.{{mark .Filters "last_seen_at"}}</a></th>
 </tr></thead>
 <tbody>
-{{range .Page.Items}}<tr>
-<td class="num"><a href="{{.URL}}" rel="noopener" target="_blank">{{.ID}}</a></td>
-<td>{{.Title}}</td>
-<td class="num">{{if .Price}}{{commaint .Price}}{{end}}</td>
-<td class="num">{{areaStr .TotalArea}}</td>
-<td class="num">{{floorStr .Floor .FloorsTotal}}</td>
-<td>{{roomsStr .Rooms .Studio}}</td>
-<td class="num">{{if .PricePerM2}}{{commaint .PricePerM2}}{{end}}</td>
-<td>{{.Address}}</td><td>{{.ResidentialComplex}}</td>
-<td>{{.City}}</td><td>{{.District}}</td>
-<td>{{.HouseType}}</td><td class="num">{{if .YearBuilt}}{{.YearBuilt}}{{end}}</td>
-<td>{{.Renovation}}</td>
-<td>{{if .HasCoords}}<span class="ok">✔</span>{{else}}<span class="miss">✘</span>{{end}}</td>
-<td class="num">{{if .ImageCount}}{{.ImageCount}}{{end}}</td>
-<td>{{shortdate .PublishedAt}}</td>
-<td>{{shortdate .FirstSeenAt}}</td><td>{{shortdate .LastSeenAt}}</td>
+{{range $i, $row := .Page.Items}}<tr>
+<td class="num">{{rownum $.RowsFrom $i}}</td>
+<td class="num"><a href="{{$row.URL}}" rel="noopener" target="_blank">{{$row.ID}}</a></td>
+<td>{{$row.Title}}</td>
+<td class="num">{{if $row.Price}}{{commaint $row.Price}}{{end}}</td>
+<td class="num">{{areaStr $row.TotalArea}}</td>
+<td class="num">{{floorStr $row.Floor $row.FloorsTotal}}</td>
+<td>{{roomsStr $row.Rooms $row.Studio}}</td>
+<td class="num">{{if $row.PricePerM2}}{{commaint $row.PricePerM2}}{{end}}</td>
+<td>{{$row.Address}}</td><td>{{$row.ResidentialComplex}}</td>
+<td>{{$row.City}}</td><td>{{$row.District}}</td>
+<td>{{$row.HouseType}}</td><td class="num">{{if $row.YearBuilt}}{{$row.YearBuilt}}{{end}}</td>
+<td>{{$row.Renovation}}</td>
+<td>{{if $row.HasCoords}}<span class="ok">✔</span>{{else}}<span class="miss">✘</span>{{end}}</td>
+<td class="num">{{if $row.ImageCount}}{{$row.ImageCount}}{{end}}</td>
+<td>{{shortdate $row.PublishedAt}}</td>
+<td>{{shortdate $row.FirstSeenAt}}</td><td>{{shortdate $row.LastSeenAt}}</td>
 </tr>{{end}}
 </tbody></table></div>
 <div class="pager">
@@ -218,11 +223,18 @@ func renderTable(w http.ResponseWriter, f ListingFilters, page *ListingPage) {
 	if f.Studio != nil && *f.Studio {
 		studioFilter = "1"
 	}
+	rowsFrom, rowsTo := 0, 0
+	if n := len(page.Items); n > 0 {
+		rowsFrom = (page.Page-1)*page.Limit + 1
+		rowsTo = rowsFrom + n - 1
+	}
 	data := struct {
 		Filters      ListingFilters
 		Page         *ListingPage
 		CoordsFilter string
 		StudioFilter string
-	}{f, page, coords, studioFilter}
+		RowsFrom     int
+		RowsTo       int
+	}{f, page, coords, studioFilter, rowsFrom, rowsTo}
 	_ = tableTmpl.Execute(w, data)
 }

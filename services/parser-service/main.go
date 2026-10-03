@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"time"
@@ -25,6 +26,7 @@ func main() {
 		onceURL       = flag.String("url", "", "URL выдачи Авито (скопированный из браузера) — разовый прогон и выход")
 		onceItem      = flag.String("item", "", "URL карточки объявления — разовый разбор и выход")
 		reparse       = flag.String("reparse", "", "source_task — пере-парсинг raw из БД актуальным парсером (офлайн)")
+		importFile    = flag.String("import", "", "JSON-дамп кампании ({meta, items:[...]}) — разовый импорт в БД и выход")
 		exportOnly    = flag.String("export", "", "source_task — выгрузка из БД в -out-dir без нового сбора")
 		maxPages      = flag.Int("max-pages", 0, "максимум страниц выдачи (0 — из окружения/по умолчанию)")
 		noDetails     = flag.Bool("no-details", false, "не запрашивать карточку каждого объявления")
@@ -81,6 +83,34 @@ func main() {
 
 	// CLI-режимы: разовый прогон и выход.
 	switch {
+	case *importFile != "":
+		data, err := os.ReadFile(*importFile)
+		if err != nil {
+			log.Fatalf("read dump: %v", err)
+		}
+		task := *sourceTask
+		if task == "" {
+			task = "import-" + strings.TrimSuffix(filepath.Base(*importFile), ".json")
+		}
+		listings, err := avito.ImportListings(data, task)
+		if err != nil {
+			log.Fatalf("import: %v", err)
+		}
+		inserted, updated := 0, 0
+		for _, l := range listings {
+			isNew, err := storage.UpsertListing(ctx, l)
+			if err != nil {
+				log.Printf("upsert %d: %v", l.ID, err)
+				continue
+			}
+			if isNew {
+				inserted++
+			} else {
+				updated++
+			}
+		}
+		printJSON(map[string]any{"sourceTask": task, "rows": len(listings), "inserted": inserted, "updated": updated})
+		return
 	case *exportOnly != "":
 		if *outDir == "" {
 			log.Fatalf("-export требует -out-dir")
