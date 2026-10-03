@@ -213,21 +213,6 @@ services:
 
   # ==================== МИКРОСЕРВИСЫ ====================
   # Каждый сервис теперь монтирует только свою папку
-  # Мок-сервер Авито: только с профилем mock (docker compose --profile mock ...)
-  avito-mock:
-    image: python:3.12-alpine
-    container_name: real-estate-avito-mock
-    profiles: ["mock"]
-    volumes:
-      - ./avito-mock/server.py:/srv/server.py:ro
-      - ../services/parser-service/internal/avito/testdata:/srv/testdata:ro
-    command: ["python", "/srv/server.py", "8080", "/srv/testdata"]
-    ports:
-      - "8091:8080"
-    logging: *default-logging
-    networks:
-      - app-network
-
   auth-service:
     build:
       context: ../services/auth-service
@@ -280,14 +265,12 @@ services:
       AVITO_COOKIES: ${AVITO_COOKIES:-}
       AVITO_MIN_DELAY_MS: ${AVITO_MIN_DELAY_MS:-2000}
       AVITO_MAX_DELAY_MS: ${AVITO_MAX_DELAY_MS:-6000}
-      AVITO_MAX_ROTATIONS: ${AVITO_MAX_ROTATIONS:-8}
-      AVITO_BLOCK_THRESHOLD: ${AVITO_BLOCK_THRESHOLD:-3}
-      AVITO_RETRY_DELAY_MS: ${AVITO_RETRY_DELAY_MS:-5000}
       PARSE_MAX_PAGES: ${PARSE_MAX_PAGES:-0}
       PARSE_FETCH_DETAILS: "1"
-      # Мок-сервер Авито для локальных тестов (профиль mock):
-      # AVITO_BASE_URL=http://avito-mock:8080 docker compose --profile mock up -d parser-service
-      AVITO_BASE_URL: ${AVITO_BASE_URL:-}
+      # Админка (issue #57): креды из deploy/.env
+      ADMIN_LOGIN: ${ADMIN_LOGIN:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ADMIN_SESSION_TTL_HOURS: ${ADMIN_SESSION_TTL_HOURS:-12}
     command: ["air", "-c", ".air.toml"]
 
   analyzer-service:
@@ -398,9 +381,7 @@ services:
       - ../migrations:/migrations
     environment:
       DATABASE_URL: postgres://${POSTGRES_USER:-analyzer}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-analyzer}?sslmode=disable
-    # $DATABASE_URL здесь интерполируется самим compose (а не shell в контейнере),
-    # поэтому URL подставляем через POSTGRES_* переменные, а не через $DATABASE_URL.
-    entrypoint: ["migrate", "-path", "/migrations", "-database", "postgres://${POSTGRES_USER:-analyzer}:${POSTGRES_PASSWORD:-secret}@postgres:5432/${POSTGRES_DB:-analyzer}?sslmode=disable"]
+    entrypoint: ["migrate", "-path", "/migrations", "-database", "$DATABASE_URL"]
     command: ["up"]
     networks:
       - app-network

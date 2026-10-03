@@ -21,17 +21,20 @@ func main() {
 	avito.SetBaseURL(os.Getenv("AVITO_BASE_URL"))
 
 	var (
-		onceTask   = flag.String("task", "", "JSON фильтров — разовый прогон парсинга и выход")
-		onceURL    = flag.String("url", "", "URL выдачи Авито (скопированный из браузера) — разовый прогон и выход")
-		onceItem   = flag.String("item", "", "URL карточки объявления — разовый разбор и выход")
-		reparse    = flag.String("reparse", "", "source_task — пере-парсинг raw из БД актуальным парсером (офлайн)")
-		exportOnly = flag.String("export", "", "source_task — выгрузка из БД в -out-dir без нового сбора")
-		maxPages   = flag.Int("max-pages", 0, "максимум страниц выдачи (0 — из окружения/по умолчанию)")
-		noDetails  = flag.Bool("no-details", false, "не запрашивать карточку каждого объявления")
-		sourceTask = flag.String("source-task", "", "метка прогона (0 — из окружения PARSE_SOURCE_TASK)")
-		outDir     = flag.String("out-dir", "", "директория выгрузки карточек (JSON) и изображений после прогона")
-		onlyStudio = flag.Bool("only-studio", false, "выгрузка: только студии")
-		minYear    = flag.Int("min-year", 0, "выгрузка: год постройки/сдачи >= значения (0 = без фильтра)")
+		onceTask      = flag.String("task", "", "JSON фильтров — разовый прогон парсинга и выход")
+		onceURL       = flag.String("url", "", "URL выдачи Авито (скопированный из браузера) — разовый прогон и выход")
+		onceItem      = flag.String("item", "", "URL карточки объявления — разовый разбор и выход")
+		reparse       = flag.String("reparse", "", "source_task — пере-парсинг raw из БД актуальным парсером (офлайн)")
+		exportOnly    = flag.String("export", "", "source_task — выгрузка из БД в -out-dir без нового сбора")
+		maxPages      = flag.Int("max-pages", 0, "максимум страниц выдачи (0 — из окружения/по умолчанию)")
+		noDetails     = flag.Bool("no-details", false, "не запрашивать карточку каждого объявления")
+		sourceTask    = flag.String("source-task", "", "метка прогона (0 — из окружения PARSE_SOURCE_TASK)")
+		outDir        = flag.String("out-dir", "", "директория выгрузки карточек (JSON) и изображений после прогона")
+		onlyStudio    = flag.Bool("only-studio", false, "только студии (поиск + выгрузка)")
+		minYear       = flag.Int("min-year", 0, "год постройки/сдачи >= значения (поиск + выгрузка, 0 = без фильтра)")
+		onlyFlats     = flag.Bool("only-flats", false, "исключить апартаменты (поиск)")
+		floorNotFirst = flag.Bool("not-first-floor", false, "исключить первый этаж (поиск)")
+		floorNotLast  = flag.Bool("not-last-floor", false, "исключить последний этаж (поиск)")
 	)
 	flag.Parse()
 
@@ -44,6 +47,18 @@ func main() {
 	}
 	if *onlyStudio {
 		cfg.OnlyStudios = true // фильтр действует и на поиск, и на экспорт
+	}
+	if *onlyFlats {
+		cfg.OnlyFlats = true
+	}
+	if *floorNotFirst {
+		cfg.FloorNotFirst = true
+	}
+	if *floorNotLast {
+		cfg.FloorNotLast = true
+	}
+	if *minYear > 0 {
+		cfg.MinYear = *minYear
 	}
 	if *sourceTask != "" {
 		cfg.SourceTask = *sourceTask
@@ -279,21 +294,29 @@ func httpError(w http.ResponseWriter, status int, format string, args ...any) {
 
 // Config — конфигурация сервиса из окружения.
 type Config struct {
-	DSN          string
-	HTTPPort     string
-	Avito        avito.ClientConfig
-	MaxPages     int
-	FetchDetails bool
-	OnlyStudios  bool
-	SourceTask   string
+	DSN           string
+	HTTPPort      string
+	Avito         avito.ClientConfig
+	MaxPages      int
+	FetchDetails  bool
+	OnlyStudios   bool
+	OnlyFlats     bool
+	FloorNotFirst bool
+	FloorNotLast  bool
+	MinYear       int
+	SourceTask    string
 }
 
 func (c Config) serviceConfig() avito.ServiceConfig {
 	return avito.ServiceConfig{
-		MaxPages:     c.MaxPages,
-		FetchDetails: c.FetchDetails,
-		OnlyStudios:  c.OnlyStudios,
-		SourceTask:   c.SourceTask,
+		MaxPages:      c.MaxPages,
+		FetchDetails:  c.FetchDetails,
+		OnlyStudios:   c.OnlyStudios,
+		OnlyFlats:     c.OnlyFlats,
+		FloorNotFirst: c.FloorNotFirst,
+		FloorNotLast:  c.FloorNotLast,
+		MinYear:       c.MinYear,
+		SourceTask:    c.SourceTask,
 	}
 }
 
@@ -314,10 +337,9 @@ func loadConfig() Config {
 			MaxDelay:           time.Duration(envInt("AVITO_MAX_DELAY_MS", 6000)) * time.Millisecond,
 			LongPauseEvery:     envInt("AVITO_LONG_PAUSE_EVERY", 20),
 			MaxRotations:       envInt("AVITO_MAX_ROTATIONS", 8),
-			BlockThreshold:     envInt("AVITO_BLOCK_THRESHOLD", 3),
-			RetryDelay:         time.Duration(envInt("AVITO_RETRY_DELAY_MS", 5000)) * time.Millisecond,
 			BlockedCool:        time.Duration(envInt("AVITO_BLOCKED_COOL_SEC", 90)) * time.Second,
 			TimeoutSeconds:     envInt("AVITO_TIMEOUT_SEC", 45),
+			ImagesDirect:       env("AVITO_IMAGES_VIA_PROXY", "") != "1",
 			InsecureSkipVerify: env("AVITO_TLS_INSECURE", "") == "1",
 		},
 		MaxPages:     envInt("PARSE_MAX_PAGES", 0),

@@ -41,7 +41,7 @@ type ClientConfig struct {
 	Proxies []string
 
 	// ProxyRotationURL — необязательный URL смены выходного IP (link-прокси
-	// мобильных операторов); вызывается при блоке текущего прокси.
+	// мобильных операторов); вызывается при устойчивых блоках порта.
 	ProxyRotationURL string
 
 	// CookieString — стартовые куки для avito.ru (например, снятые из браузера
@@ -55,29 +55,35 @@ type ClientConfig struct {
 	LongPauseMin   time.Duration // нижняя граница длинной паузы (default 15s)
 	LongPauseMax   time.Duration // верхняя (default 30s)
 
-	MaxRotations   int           // максимум попыток на один запрос (default 8)
+	MaxRotations   int           // максимум попыток на один запрос (default 12)
 	BlockThreshold int           // блоков подряд до смены прокси (default 3, как в эталоне)
 	RetryDelay     time.Duration // пауза перед повтором на том же IP (default 5s)
 	BlockedCool    time.Duration // охлаждение порта после threshold блоков (default 90s)
 	TimeoutSeconds int           // http-таймаут (default 45)
 
-	InsecureSkipVerify bool
-
-	// CookieDir — директория файлового кэша cookie-jar по портам (прогрев
-	// сессий сохраняется между запусками процесса). Пусто — не сохранять.
+	// CookieDir — директория файлового кэша cookie-jar по портам (прогретые
+	// сессии переживают перезапуск процесса). Пусто — не сохранять.
 	CookieDir string
+
+	// ImagesDirect — скачивать изображения (FetchAsset) напрямую, без прокси:
+	// CDN avito.st не защищён антиботом, так экономится трафик пачки.
+	ImagesDirect bool
+
+	InsecureSkipVerify bool
 }
 
-// AvitoClient — HTTP-клиент с TLS-имперсонацией, пулом прокси и
-// rotate-until-clean ретраями на 403/429/439.
+// AvitoClient — HTTP-клиент с TLS-имперсонацией и антиблок-политикой
+// (как в эталонном парсере): работаем на одном IP до BlockThreshold
+// блоков подряд, затем переходим к следующему порту пула.
 type AvitoClient struct {
-	cfg  ClientConfig
-	pool []*proxyEntry
-	mu   sync.Mutex
-	cur  int
-	rng  *rand.Rand
-
-	totalReqs int
+	cfg        ClientConfig
+	pool       []*proxyEntry
+	mu         sync.Mutex
+	cur        int
+	rng        *rand.Rand
+	totalReqs  int
+	direct     tlsclient.HttpClient // для CDN-ресурсов без прокси (ленивая инициализация)
+	directOnce sync.Once
 }
 
 type proxyEntry struct {
@@ -108,7 +114,7 @@ func NewClient(cfg ClientConfig) (*AvitoClient, error) {
 		cfg.LongPauseMax = cfg.LongPauseMin + 15*time.Second
 	}
 	if cfg.MaxRotations <= 0 {
-		cfg.MaxRotations = 8
+		cfg.MaxRotations = 12
 	}
 	if cfg.BlockThreshold <= 0 {
 		cfg.BlockThreshold = 3
@@ -183,40 +189,6 @@ func newProxyEntry(name, proxy string, cfg ClientConfig) (*proxyEntry, error) {
 	return &proxyEntry{name: name, client: cl, prof: prof}, nil
 }
 
-// persistCookies сохраняет cookies порта в файл (лучшее усилие).
-func persistCookies(cl tlsclient.HttpClient, dir, name string) {
-	u, _ := url.Parse(baseURL)
-	cookies := cl.GetCookies(u)
-	data, err := json.Marshal(cookies)
-	if err != nil {
-		return
-	}
-	_ = os.MkdirAll(dir, 0o755)
-	_ = os.WriteFile(filepath.Join(dir, cookieFileName(name)+".json"), data, 0o600)
-}
-
-// loadCookies восстанавливает cookies порта из файла (лучшее усилие).
-func loadCookies(cl tlsclient.HttpClient, dir, name string) {
-	data, err := os.ReadFile(filepath.Join(dir, cookieFileName(name)+".json"))
-	if err != nil {
-		return
-	}
-	var cookies []*fhttp.Cookie
-	if json.Unmarshal(data, &cookies) != nil {
-		return
-	}
-	u, _ := url.Parse(baseURL)
-	if len(cookies) > 0 {
-		cl.SetCookies(u, cookies)
-	}
-}
-
-func cookieFileName(proxyURL string) string {
-	h := fnv.New32a()
-	h.Write([]byte(proxyURL))
-	return fmt.Sprintf("jar-%d", h.Sum32())
-}
-
 // browserProfile — согласованные набор TLS-профиля и заголовков десктопного Chrome.
 type browserProfile struct {
 	tls     profiles.ClientProfile
@@ -241,31 +213,22 @@ func pickProfile() browserProfile {
 	return browserProfile{tls: p.profile, version: p.version, ua: ua, secChUa: secCh}
 }
 
-// Fetch выполняет GET с антиблок-политикой (как в эталонном парсере):
-// работаем на одном IP; 403/429/439/капча повторяются на том же прокси
-// с паузой RetryDelay, и только BlockThreshold блоков подряд отправляют
-// порт в cooldown, а клиента — на следующий прокси пула.
+// Fetch выполняет GET с антиблок-политикой: работаем на одном IP;
+// 403/429/439/капча повторяются на том же прокси с паузой RetryDelay,
+// и только BlockThreshold блоков подряд отправляют порт в cooldown,
+// а клиента — на следующий прокси пула. Когда все порты в cooldown
+// (закрытая фаза шлюза) — ждём reopening, а не обрываем запрос.
 func (c *AvitoClient) Fetch(target string) ([]byte, error) {
 	var lastErr error
 	phaseWaits := 0
 	for attempt := 0; attempt < c.cfg.MaxRotations; attempt++ {
 		pc := c.pick()
 		if pc == nil {
-			// все порты в cooldown (шлюз в закрытой фазе): ждём ближайшее
-			// разблокирование вместо аборта — бюджет фаз-ожиданий ограничен
 			if phaseWaits >= 6 {
 				return nil, ErrBlocked
 			}
 			phaseWaits++
-			c.mu.Lock()
-			earliest := time.Now().Add(time.Hour)
-			for _, p := range c.pool {
-				if p.blockedUntil.Before(earliest) {
-					earliest = p.blockedUntil
-				}
-			}
-			c.mu.Unlock()
-			d := time.Until(earliest) + time.Second
+			d := c.earliestUnlock()
 			if d > 60*time.Second {
 				d = 60 * time.Second
 			}
@@ -276,13 +239,13 @@ func (c *AvitoClient) Fetch(target string) ([]byte, error) {
 		c.waitTurn()
 		if err := c.warmUp(pc); err != nil {
 			lastErr = fmt.Errorf("%s: warmup: %v", maskProxy(pc.name), err)
-			c.countBlock(pc, 0, true)
+			c.countBlock(pc, "warmup", true)
 			continue
 		}
 		body, status, err := c.doGet(pc, target)
 		if err != nil {
 			lastErr = fmt.Errorf("%s: request: %w", maskProxy(pc.name), err)
-			c.countBlock(pc, 0, true)
+			c.countBlock(pc, "network", true)
 			continue
 		}
 		if status == 404 {
@@ -290,12 +253,12 @@ func (c *AvitoClient) Fetch(target string) ([]byte, error) {
 		}
 		if blockStatuses[status] || blockMarkers.Match(body) {
 			lastErr = fmt.Errorf("%s: blocked (status %d)", maskProxy(pc.name), status)
-			c.countBlock(pc, status, false)
+			c.countBlock(pc, fmt.Sprintf("status %d", status), false)
 			continue
 		}
 		if status != 200 {
 			lastErr = fmt.Errorf("%s: unexpected status %d", maskProxy(pc.name), status)
-			c.countBlock(pc, status, true)
+			c.countBlock(pc, fmt.Sprintf("status %d", status), true)
 			continue
 		}
 		// успех: счётчик блоков IP сбрасывается, порт остаётся рабочим
@@ -315,14 +278,13 @@ func (c *AvitoClient) Fetch(target string) ([]byte, error) {
 
 // countBlock учитывает подряд идущие неудачи IP: до BlockThreshold — короткая
 // пауза и повтор на том же прокси, после — долгий cooldown и переход к следующему.
-// network=true — сетевые ошибки учитываются в том же счётчике (как в эталоне).
-func (c *AvitoClient) countBlock(pc *proxyEntry, status int, network bool) {
+func (c *AvitoClient) countBlock(pc *proxyEntry, what string, network bool) {
 	c.mu.Lock()
 	pc.blocks++
 	blocks := pc.blocks
 	threshold := c.cfg.BlockThreshold
-	switchCase := blocks >= threshold
-	if switchCase {
+	rotate := blocks >= threshold
+	if rotate {
 		pc.blockedUntil = time.Now().Add(c.cfg.BlockedCool)
 		pc.blocks = 0
 		// следующий pick() начнёт с другого порта
@@ -330,19 +292,38 @@ func (c *AvitoClient) countBlock(pc *proxyEntry, status int, network bool) {
 	}
 	c.mu.Unlock()
 
-	what := "network"
-	if !network {
-		what = "status"
+	kind := "status"
+	if network {
+		kind = "network"
 	}
-	if switchCase {
-		log.Printf("[avito] %s: %d неудач подряд (%s %v) — порт в cooldown %s, следующий прокси",
-			maskProxy(pc.name), blocks, what, status, c.cfg.BlockedCool)
-		time.Sleep(c.cfg.RetryDelay)
+	if rotate {
+		log.Printf("[avito] %s: %d неудач подряд (%s %s) — порт в cooldown %s, следующий прокси",
+			maskProxy(pc.name), blocks, kind, what, c.cfg.BlockedCool)
+		if c.cfg.ProxyRotationURL != "" {
+			go rotateProxy(c.cfg.ProxyRotationURL)
+		}
 	} else {
-		log.Printf("[avito] %s: неудача %d/%d (%s %v) — повтор на том же IP через %s",
-			maskProxy(pc.name), blocks, threshold, what, status, c.cfg.RetryDelay)
-		time.Sleep(c.cfg.RetryDelay)
+		log.Printf("[avito] %s: неудача %d/%d (%s %s) — повтор на том же IP через %s",
+			maskProxy(pc.name), blocks, threshold, kind, what, c.cfg.RetryDelay)
 	}
+	time.Sleep(c.cfg.RetryDelay)
+}
+
+// earliestUnlock — когда ближайший порт выйдет из cooldown.
+func (c *AvitoClient) earliestUnlock() time.Duration {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+	earliest := time.Now().Add(time.Hour)
+	for _, p := range c.pool {
+		if p.blockedUntil.Before(earliest) {
+			earliest = p.blockedUntil
+		}
+	}
+	d := time.Until(earliest) + time.Second
+	if d < 0 {
+		d = time.Second
+	}
+	return d
 }
 
 // pick возвращает текущий прокси, пока он доступен; при его блокировке —
@@ -365,6 +346,8 @@ func (c *AvitoClient) pick() *proxyEntry {
 	return nil
 }
 
+// waitTurn соблюдает паузы между запросами: межстраничная задержка с джиттером
+// и удлинённая пауза каждые LongPauseEvery запросов.
 func (c *AvitoClient) waitTurn() {
 	c.mu.Lock()
 	n := c.totalReqs
@@ -449,82 +432,6 @@ func applyHeaders(req *fhttp.Request, prof browserProfile) {
 	}
 }
 
-// FetchAsset скачивает статический ресурс (изображение с CDN Авито) через
-// текущий прокси пула. Без антиблок-цикла выдачи: темп задаёт вызывающий код.
-func (c *AvitoClient) FetchAsset(target string) ([]byte, error) {
-	var lastErr error
-	for attempt := 0; attempt < 3; attempt++ {
-		pc := c.pick()
-		if pc == nil {
-			return nil, ErrBlocked
-		}
-		body, status, err := c.doGet(pc, target)
-		if err != nil {
-			lastErr = err
-			continue
-		}
-		if status == 200 {
-			return body, nil
-		}
-		lastErr = fmt.Errorf("asset %s: status %d", target, status)
-	}
-	return nil, lastErr
-}
-
-func (c *AvitoClient) cooldown(pc *proxyEntry) {
-	c.mu.Lock()
-	pc.blockedUntil = time.Now().Add(c.cfg.BlockedCool)
-	c.mu.Unlock()
-
-	// Мобильные link-прокси: просим сменить выходной IP, чтобы тот же прокси
-	// вернулся в пул с новым адресом.
-	if c.cfg.ProxyRotationURL != "" {
-		go rotateProxy(c.cfg.ProxyRotationURL)
-	}
-}
-
-func rotateProxy(rotationURL string) {
-	cl, err := tlsclient.NewHttpClient(tlsclient.NewNoopLogger(),
-		tlsclient.WithTimeoutSeconds(20), tlsclient.WithClientProfile(pickProfile().tls))
-	if err != nil {
-		return
-	}
-	req, err := fhttp.NewRequest(fhttp.MethodGet, rotationURL, nil)
-	if err != nil {
-		return
-	}
-	resp, err := cl.Do(req)
-	if err == nil {
-		resp.Body.Close()
-	}
-}
-
-// parseCookieString разбирает "k1=v1; k2=v2" в слайс cookies.
-func parseCookieString(s string) []*fhttp.Cookie {
-	var out []*fhttp.Cookie
-	for _, pair := range strings.Split(s, ";") {
-		pair = strings.TrimSpace(pair)
-		if pair == "" || !strings.Contains(pair, "=") {
-			continue
-		}
-		k, v, _ := strings.Cut(pair, "=")
-		out = append(out, &fhttp.Cookie{Name: strings.TrimSpace(k), Value: strings.TrimSpace(v)})
-	}
-	return out
-}
-
-// maskProxy прячет креды прокси в логах.
-func maskProxy(p string) string {
-	u, err := url.Parse(p)
-	if err != nil || u.User == nil {
-		return p
-	}
-	if _, ok := u.User.Password(); ok {
-		return strings.Replace(p, u.User.String()+"@", "***@", 1)
-	}
-	return p
-}
-
 // PortCount — размер пула прокси.
 func (c *AvitoClient) PortCount() int { return len(c.pool) }
 
@@ -564,4 +471,153 @@ func (c *AvitoClient) FetchViaPort(idx int, target string) ([]byte, error) {
 		return body, nil
 	}
 	return nil, lastErr
+}
+
+// FetchAsset скачивает статический ресурс (изображение с CDN Авито).
+// По умолчанию — напрямую без прокси (CDN не защищён антиботом, так
+// экономится трафик пачки); AVITO_IMAGES_VIA_PROXY=1 переключает на пул.
+func (c *AvitoClient) FetchAsset(target string) ([]byte, error) {
+	if !c.cfg.ImagesDirect {
+		return c.fetchAssetViaPool(target)
+	}
+	c.directOnce.Do(func() {
+		idle := 45 * time.Second
+		cl, err := tlsclient.NewHttpClient(tlsclient.NewNoopLogger(),
+			tlsclient.WithClientProfile(pickProfile().tls),
+			tlsclient.WithTimeoutSeconds(30),
+			tlsclient.WithTransportOptions(&tlsclient.TransportOptions{
+				MaxIdleConns:        8,
+				MaxIdleConnsPerHost: 4,
+				IdleConnTimeout:     &idle,
+			}),
+		)
+		if err != nil {
+			log.Printf("[avito] direct image client: %v", err)
+			return
+		}
+		c.direct = cl
+	})
+	if c.direct != nil {
+		req, err := fhttp.NewRequest(fhttp.MethodGet, target, nil)
+		if err != nil {
+			return nil, err
+		}
+		req.Header.Set("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36")
+		req.Header.Set("referer", "https://www.avito.ru/")
+		resp, err := c.direct.Do(req)
+		if err != nil {
+			return nil, err
+		}
+		defer resp.Body.Close()
+		if resp.StatusCode != 200 {
+			return nil, fmt.Errorf("asset %s: status %d", target, resp.StatusCode)
+		}
+		buf := make([]byte, 0, 256*1024)
+		tmp := make([]byte, 32*1024)
+		for {
+			n, rerr := resp.Body.Read(tmp)
+			buf = append(buf, tmp[:n]...)
+			if rerr != nil {
+				break
+			}
+		}
+		return buf, nil
+	}
+	return c.fetchAssetViaPool(target)
+}
+
+func (c *AvitoClient) fetchAssetViaPool(target string) ([]byte, error) {
+	var lastErr error
+	for attempt := 0; attempt < 3; attempt++ {
+		pc := c.pick()
+		if pc == nil {
+			return nil, ErrBlocked
+		}
+		body, status, err := c.doGet(pc, target)
+		if err != nil {
+			lastErr = err
+			continue
+		}
+		if status == 200 {
+			return body, nil
+		}
+		lastErr = fmt.Errorf("asset %s: status %d", target, status)
+	}
+	return nil, lastErr
+}
+
+func rotateProxy(rotationURL string) {
+	cl, err := tlsclient.NewHttpClient(tlsclient.NewNoopLogger(),
+		tlsclient.WithTimeoutSeconds(20), tlsclient.WithClientProfile(pickProfile().tls))
+	if err != nil {
+		return
+	}
+	req, err := fhttp.NewRequest(fhttp.MethodGet, rotationURL, nil)
+	if err != nil {
+		return
+	}
+	resp, err := cl.Do(req)
+	if err == nil {
+		resp.Body.Close()
+	}
+}
+
+// parseCookieString разбирает "k1=v1; k2=v2" в слайс cookies.
+func parseCookieString(s string) []*fhttp.Cookie {
+	var out []*fhttp.Cookie
+	for _, pair := range strings.Split(s, ";") {
+		pair = strings.TrimSpace(pair)
+		if pair == "" || !strings.Contains(pair, "=") {
+			continue
+		}
+		k, v, _ := strings.Cut(pair, "=")
+		out = append(out, &fhttp.Cookie{Name: strings.TrimSpace(k), Value: strings.TrimSpace(v)})
+	}
+	return out
+}
+
+// persistCookies сохраняет cookies порта в файл (лучшее усилие).
+func persistCookies(cl tlsclient.HttpClient, dir, name string) {
+	u, _ := url.Parse(baseURL)
+	cookies := cl.GetCookies(u)
+	data, err := json.Marshal(cookies)
+	if err != nil {
+		return
+	}
+	_ = os.MkdirAll(dir, 0o755)
+	_ = os.WriteFile(filepath.Join(dir, cookieFileName(name)+".json"), data, 0o600)
+}
+
+// loadCookies восстанавливает cookies порта из файла (лучшее усилие).
+func loadCookies(cl tlsclient.HttpClient, dir, name string) {
+	data, err := os.ReadFile(filepath.Join(dir, cookieFileName(name)+".json"))
+	if err != nil {
+		return
+	}
+	var cookies []*fhttp.Cookie
+	if json.Unmarshal(data, &cookies) != nil {
+		return
+	}
+	if len(cookies) > 0 {
+		u, _ := url.Parse(baseURL)
+		cl.SetCookies(u, cookies)
+	}
+}
+
+func cookieFileName(proxyURL string) string {
+	h := fnv.New32a()
+	h.Write([]byte(proxyURL))
+	return fmt.Sprintf("jar-%d", h.Sum32())
+}
+
+// maskProxy прячет креды прокси в логах.
+func maskProxy(p string) string {
+	u, err := url.Parse(p)
+	if err != nil || u.User == nil {
+		return p
+	}
+	if _, ok := u.User.Password(); ok {
+		return strings.Replace(p, u.User.String()+"@", "***@", 1)
+	}
+	return p
 }

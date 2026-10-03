@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"log"
 	"math/rand"
 	"os"
 	"path/filepath"
@@ -85,18 +84,6 @@ FROM avito_listings WHERE source_task=$1 ORDER BY id`, sourceTask)
 		for i, fd := range rows.FieldDescriptions() {
 			m[string(fd.Name)] = vals[i]
 		}
-		// jsonb-колонки pgx может вернуть как []byte или string: в JSON-выгрузке
-		// отдаём их как сырой JSON (иначе encoding/json закодирует []byte в base64).
-		for _, col := range []string{"price_meta", "geo", "seller", "params", "raw", "images"} {
-			if v, ok := m[col]; ok {
-				switch t := v.(type) {
-				case []byte:
-					m[col] = json.RawMessage(t)
-				case string:
-					m[col] = json.RawMessage(t)
-				}
-			}
-		}
 
 		if opts.OnlyStudio && m["studio"] != true {
 			stats["skipped"] = stats["skipped"].(int) + 1
@@ -125,27 +112,13 @@ FROM avito_listings WHERE source_task=$1 ORDER BY id`, sourceTask)
 		}
 		stats["exported"] = stats["exported"].(int) + 1
 
-		// Изображения карточки. pgx декодирует jsonb в нативные значения
-		// ([]interface{}, map[string]any); []byte/string — на всякий случай.
-		var raw []byte
-		switch t := m["images"].(type) {
-		case []byte:
-			raw = t
-		case string:
-			raw = []byte(t)
-		case nil:
+		// Изображения карточки.
+		raw, ok := m["images"].([]byte)
+		if !ok {
 			continue
-		default:
-			b, merr := json.Marshal(t)
-			if merr != nil {
-				log.Printf("[export] listing %s: images marshal: %v", id, merr)
-				continue
-			}
-			raw = b
 		}
 		var imgs []Image
 		if err := json.Unmarshal(raw, &imgs); err != nil || len(imgs) == 0 {
-			log.Printf("[export] listing %s: images unmarshal: %v (len=%d)", id, err, len(imgs))
 			continue
 		}
 		listingImgDir := filepath.Join(imagesDir, id)
