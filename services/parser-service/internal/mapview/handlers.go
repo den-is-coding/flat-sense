@@ -4,27 +4,44 @@ import (
 	"encoding/json"
 	"net/http"
 	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
 
-// Thresholds — пороги цветового кодирования по доходности (годовые %):
-// ≥ GreenMin — зелёный, ≥ YellowMin — жёлтый, ниже — красный; нет данных —
-// серый. Задаются окружением, не хардкодом (issue #73, доработка 2).
+// Thresholds — границы цветовых диапазонов доходности (годовые %),
+// по возрастанию: N границ → N+1 диапазонов (7 границ по умолчанию).
+// Диапазон i: [b[i-1], b[i]); первый — ниже b[0], последний — ≥ b[n-1].
+// Нет данных — серый. Задаются окружением YIELD_THRESHOLDS (список через
+// запятую), не хардкодом (issue #73, доработка 2; 7 диапазонов — по
+// просьбе пользователя, границы подобраны по фактическому разбросу
+// доходности, чтобы крайние диапазоны не пустовали).
 type Thresholds struct {
-	GreenMin  float64 `json:"greenMin"`
-	YellowMin float64 `json:"yellowMin"`
+	Boundaries []float64 `json:"boundaries"`
+}
+
+// defaultBoundaries — 6 границ → 7 диапазонов. Подобраны по фактическому
+// разбросу доходности (4.0–5.8 %): все семь диапазонов непустые
+// (1/2/2/4/1/12/1 объявлений на данных 2026-10-04).
+func defaultBoundaries() []float64 {
+	return []float64{4.1, 4.55, 4.75, 5.05, 5.35, 5.65}
 }
 
 func thresholdsFromEnv() Thresholds {
-	t := Thresholds{GreenMin: 8, YellowMin: 5}
-	if v, err := strconv.ParseFloat(os.Getenv("YIELD_GREEN_MIN"), 64); err == nil && v > 0 {
-		t.GreenMin = v
+	b := defaultBoundaries()
+	if v := os.Getenv("YIELD_THRESHOLDS"); v != "" {
+		var out []float64
+		for _, s := range strings.Split(v, ",") {
+			if x, err := strconv.ParseFloat(strings.TrimSpace(s), 64); err == nil && x > 0 {
+				out = append(out, x)
+			}
+		}
+		if len(out) >= 2 {
+			sort.Float64s(out)
+			b = out
+		}
 	}
-	if v, err := strconv.ParseFloat(os.Getenv("YIELD_YELLOW_MIN"), 64); err == nil && v > 0 && v < t.GreenMin {
-		t.YellowMin = v
-	}
-	return t
+	return Thresholds{Boundaries: b}
 }
 
 // Register вешает публичные маршруты карты: страница /map (индексируемая,
@@ -193,15 +210,22 @@ const pageHTML = `<!doctype html>
  .legend .head{cursor:pointer;user-select:none}
  .legend .body{margin-top:4px}
  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
- .dot.green{background:#1a7f37}.dot.yellow{background:#e3a008}.dot.red{background:#c62828}.dot.gray{background:#9e9e9e}
+ /* 7 диапазонов доходности (c0 — самый низкий, c6 — самый высокий) + серый без данных */
+ .dot.c0{background:#b71c1c}.dot.c1{background:#d84315}.dot.c2{background:#ea7600}
+ .dot.c3{background:#c79500}.dot.c4{background:#9e9d24}.dot.c5{background:#558b2f}.dot.c6{background:#1b5e20}
+ .dot.gray{background:#9e9e9e}
  .pin{display:flex;align-items:center;justify-content:center;border-radius:13px;border:2px solid #fff;
    box-shadow:0 1px 4px rgba(0,0,0,.4);font-size:11px;font-weight:600;color:#fff;white-space:nowrap}
- .pin.green{background:#1a7f37}.pin.yellow{background:#e3a008}.pin.red{background:#c62828}.pin.gray{background:#9e9e9e}
+ .pin.c0{background:#b71c1c}.pin.c1{background:#d84315}.pin.c2{background:#ea7600}
+ .pin.c3{background:#c79500}.pin.c4{background:#9e9d24}.pin.c5{background:#558b2f}.pin.c6{background:#1b5e20}
+ .pin.gray{background:#9e9e9e}
  .cluster-pin{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;
    border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);color:#fff;font-weight:700;box-sizing:border-box}
- /* фон кластера — сплошной, по разбивке доходности (агрегат-максимум) */
- .cluster-pin.green{background:#1a7f37}.cluster-pin.yellow{background:#e3a008}
- .cluster-pin.red{background:#c62828}.cluster-pin.gray{background:#9e9e9e}
+ /* фон кластера — сплошной, по диапазону максимума доходности внутри */
+ .cluster-pin.c0{background:#b71c1c}.cluster-pin.c1{background:#d84315}.cluster-pin.c2{background:#ea7600}
+ .cluster-pin.c3{background:#c79500}.cluster-pin.c4{background:#9e9d24}
+ .cluster-pin.c5{background:#558b2f}.cluster-pin.c6{background:#1b5e20}
+ .cluster-pin.gray{background:#9e9e9e}
  .cluster-pin .n{font-size:14px;line-height:1.1}
  .cluster-pin .v{font-size:10px;font-weight:500;opacity:.95}
  .leaflet-control-zoom a{width:44px !important;height:44px !important;line-height:44px !important;font-size:20px !important}
@@ -242,12 +266,7 @@ const pageHTML = `<!doctype html>
  </div>
  <div class="legend" id="legend">
   <div class="head" id="legend-head">Доходность, % годовых ▾</div>
-  <div class="body" id="legend-body">
-   <div><span class="dot green"></span>≥ <span id="lg-green"></span> %</div>
-   <div><span class="dot yellow"></span><span id="lg-yellow"></span>–<span id="lg-green2"></span> %</div>
-   <div><span class="dot red"></span>&lt; <span id="lg-yellow2"></span> %</div>
-   <div><span class="dot gray"></span>нет данных</div>
-  </div>
+  <div class="body" id="legend-body"><!-- строки диапазонов строит map.js из MAP_THRESHOLDS --></div>
  </div>
  <div class="card" id="card"></div>
 </div>

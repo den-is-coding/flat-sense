@@ -269,8 +269,8 @@ func main() {
 	// Публичная карта объектов (issue #73): SSR-страница + bbox-выдача
 	// метрик из кэша ad_roi_results. Пороги цветов доходности — env.
 	mapview.Register(mux, mapview.NewStore(storage.Pool()))
-	log.Printf("map routes enabled: /map, /api/map/listings (YIELD_GREEN_MIN=%s YIELD_YELLOW_MIN=%s)",
-		env("YIELD_GREEN_MIN", "8"), env("YIELD_YELLOW_MIN", "5"))
+	log.Printf("map routes enabled: /map, /api/map/listings (YIELD_THRESHOLDS=%s)",
+		env("YIELD_THRESHOLDS", "4.1,4.55,4.75,5.05,5.35,5.65"))
 
 	addr := ":" + cfg.HTTPPort
 	log.Printf("parser-service listening on %s", addr)

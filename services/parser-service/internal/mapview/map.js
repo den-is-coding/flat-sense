@@ -4,7 +4,6 @@
   // markercluster, а не supercluster: точек сотни (не десятки тысяч),
   // из коробки клик-зум по кластеру и iconCreateFunction для кастомных
   // подписей (агрегат выбранной метрики) и цветов (агрегат доходности).
-  var T = window.MAP_THRESHOLDS || { greenMin: 8, yellowMin: 5 };
 
   // Метрики подписей: цена/полная стоимость → минимум в кластере,
   // доходность → максимум (правило агрегации issue #73).
@@ -99,11 +98,21 @@
     return Math.max.apply(null, vals); // агрегат доходности кластера — максимум
   }
 
-  function colorClass(yieldPct) {
-    if (yieldPct == null) return 'gray';
-    if (yieldPct >= T.greenMin) return 'green';
-    if (yieldPct >= T.yellowMin) return 'yellow';
-    return 'red';
+  // Диапазоны доходности: N границ → N+1 диапазонов, шкала красный→зелёный.
+  // Индекс диапазона = число границ, которые значение перешагнуло.
+  var B = (window.MAP_THRESHOLDS && window.MAP_THRESHOLDS.boundaries) || [4.1, 4.55, 4.75, 5.05, 5.35, 5.65];
+  var BUCKET_COLORS = ['#b71c1c', '#d84315', '#ea7600', '#c79500', '#9e9d24', '#558b2f', '#1b5e20'];
+
+  function bucketIndex(y) {
+    if (y == null) return -1;
+    var i = 0;
+    while (i < B.length && y >= B[i]) i++;
+    return i; // 0..B.length
+  }
+
+  function colorClass(y) {
+    var i = bucketIndex(y);
+    return i < 0 ? 'gray' : ('c' + i);
   }
 
   function fmtRub(v) {
@@ -209,19 +218,26 @@
   });
   renderBasemapButtons();
 
-  // Легенда: сворачиваемая, пороги из конфига.
+  // Легенда: сворачиваемая, диапазоны и цвета — из MAP_THRESHOLDS.
   var legendHead = document.getElementById('legend-head');
   var legendBody = document.getElementById('legend-body');
+  (function buildLegend() {
+    var rows = '';
+    for (var i = 0; i <= B.length; i++) {
+      var lo = i === 0 ? null : B[i - 1];
+      var hi = i === B.length ? null : B[i];
+      var label = lo == null ? ('< ' + hi + ' %')
+        : (hi == null ? ('≥ ' + lo + ' %') : (lo + '–' + hi + ' %'));
+      rows += '<div><span class="dot c' + i + '"></span>' + label + '</div>';
+    }
+    rows += '<div><span class="dot gray"></span>нет данных</div>';
+    legendBody.innerHTML = rows;
+  })();
   legendHead.onclick = function () {
     var open = legendBody.style.display !== 'none';
     legendBody.style.display = open ? 'none' : 'block';
     legendHead.textContent = 'Доходность, % годовых ' + (open ? '▸' : '▾');
   };
-  ['green', 'yellow'].forEach(function (k) {
-    var v = T[k + 'Min'];
-    document.getElementById('lg-' + k).textContent = v;
-    document.getElementById('lg-' + k + '2').textContent = v;
-  });
 
   // Фильтры: состояние в URL + localStorage; применяются на бэкенде
   // (до кластеризации — скрытые объекты в кластеры не попадают).

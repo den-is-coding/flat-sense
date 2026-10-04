@@ -92,20 +92,24 @@ func TestFiltersFromRequest(t *testing.T) {
 	}
 }
 
-// Пороги цветов из окружения (не хардкод).
+// Границы 7 диапазонов из окружения (не хардкод); мусор игнорируется.
 func TestThresholdsFromEnv(t *testing.T) {
-	t.Setenv("YIELD_GREEN_MIN", "9")
-	t.Setenv("YIELD_YELLOW_MIN", "4.5")
+	t.Setenv("YIELD_THRESHOLDS", "3.8, 4.4 , 5.0,6,x,2")
 	th := thresholdsFromEnv()
-	if th.GreenMin != 9 || th.YellowMin != 4.5 {
-		t.Fatalf("thresholds = %+v", th)
+	want := []float64{2, 3.8, 4.4, 5, 6}
+	if len(th.Boundaries) != len(want) {
+		t.Fatalf("boundaries = %v, want %v", th.Boundaries, want)
 	}
-	// дефолты
-	t.Setenv("YIELD_GREEN_MIN", "")
-	t.Setenv("YIELD_YELLOW_MIN", "")
+	for i := range want {
+		if th.Boundaries[i] != want[i] {
+			t.Fatalf("boundaries[%d] = %v, want %v", i, th.Boundaries[i], want[i])
+		}
+	}
+	// дефолт: 6 границ → 7 диапазонов
+	t.Setenv("YIELD_THRESHOLDS", "")
 	th2 := thresholdsFromEnv()
-	if th2.GreenMin != 8 || th2.YellowMin != 5 {
-		t.Fatalf("defaults = %+v", th2)
+	if len(th2.Boundaries) != 6 || th2.Boundaries[0] != 4.1 {
+		t.Fatalf("defaults = %v", th2.Boundaries)
 	}
 }
 
@@ -197,8 +201,8 @@ func TestHandlers_API_Integration(t *testing.T) {
 	if err := json.NewDecoder(resp.Body).Decode(&out); err != nil {
 		t.Fatal(err)
 	}
-	if out.Thresholds.GreenMin == 0 {
-		t.Fatal("thresholds not in response")
+	if len(out.Thresholds.Boundaries) < 2 {
+		t.Fatalf("boundaries not in response: %v", out.Thresholds.Boundaries)
 	}
 	if len(out.Items) == 0 {
 		t.Fatal("no roi items in SPb center bbox")
@@ -230,9 +234,10 @@ func TestHandlers_API_Integration(t *testing.T) {
 		"OpenStreetMap", // атрибуция обязательна
 		"MAP_THRESHOLDS",
 		"только с рентабельностью",
-		// фон кластера — сплошной, по разбивке доходности (регрессия #73)
-		".cluster-pin.green{background", ".cluster-pin.yellow{background",
-		".cluster-pin.red{background", ".cluster-pin.gray{background",
+		// фон кластера — сплошной, по 7 диапазонам доходности (#73)
+		".cluster-pin.c0{background", ".cluster-pin.c3{background",
+		".cluster-pin.c6{background", ".cluster-pin.gray{background",
+		".dot.c2{background",
 	} {
 		if !strings.Contains(html, want) {
 			t.Fatalf("page missing %q", want)
