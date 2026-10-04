@@ -19,6 +19,7 @@ type ListingFilters struct {
 	PriceMin  int64
 	PriceMax  int64
 	HasCoords *bool // есть/нет координаты (без координат не сопоставится в кластеризацию #55)
+	HasROI    *bool // только с рассчитанной доходностью (кэш ad_roi_results, #66/#67)
 	Search    string
 	SortBy    string // price | total_area | first_seen_at | last_seen_at | published_at
 	SortDir   string // asc | desc
@@ -90,6 +91,13 @@ func (f *ListingFilters) buildQuery() (listSQL, countSQL string, args []any) {
 			where = append(where, "(lat IS NULL OR lng IS NULL)")
 		}
 	}
+	if f.HasROI != nil && *f.HasROI {
+		// Есть расчёт доходности (#64): строка кэша со статусом ok и
+		// хотя бы одним посчитанным сценарием (строки «no_rent_data»
+		// и сценарии-пустышки в таблице выглядят как «—» — их скрываем).
+		where = append(where, "ad_roi_results.status = 'ok' AND "+
+			"(ad_roi_results.yield_unfurnished_pct IS NOT NULL OR ad_roi_results.yield_furnished_pct IS NOT NULL)")
+	}
 	if f.Search != "" {
 		args = append(args, "%"+f.Search+"%")
 		where = append(where, fmt.Sprintf("(address ILIKE $%d OR residential_complex ILIKE $%d OR title ILIKE $%d)", len(args), len(args), len(args)))
@@ -101,7 +109,9 @@ func (f *ListingFilters) buildQuery() (listSQL, countSQL string, args []any) {
 	order := fmt.Sprintf(" ORDER BY %s %s NULLS LAST", sortColumns[f.SortBy], strings.ToUpper(f.SortDir))
 	listSQL = "SELECT " + listingColumns + ", " + roiColumns + listingFromSQL + cond + order +
 		fmt.Sprintf(" LIMIT %d OFFSET %d", f.Limit, f.offset())
-	countSQL = "SELECT count(*) FROM avito_listings" + cond
+	// count по тому же FROM с JOIN (ad_roi_results 1:1 по PK — число строк
+	// не меняет), иначе условия по кэшу ROI в счётчике не работают.
+	countSQL = "SELECT count(*)" + listingFromSQL + cond
 	return listSQL, countSQL, args
 }
 

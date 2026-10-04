@@ -103,6 +103,10 @@ func filtersFromRequest(r *http.Request) ListingFilters {
 		b := v == "1" || v == "true"
 		f.HasCoords = &b
 	}
+	if v := q.Get("has_roi"); v != "" {
+		b := v == "1" || v == "true"
+		f.HasROI = &b
+	}
 	// студии хранятся с rooms=NULL, поэтому «комнаты = студия» → фильтр studio
 	if v := q.Get("rooms"); v == "0" {
 		t := true
