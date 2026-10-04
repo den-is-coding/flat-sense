@@ -82,7 +82,7 @@ func TestClusterStats(t *testing.T) {
 		{Price: 32000, TotalArea: 22.0, Studio: true, Rooms: one(0), Address: "x"},
 	}
 	input := Listing{TotalArea: 21.2, Studio: true, Address: "x"}
-	c := BuildCluster(comps, &input, 500)
+	c := BuildCluster(comps, &input)
 	s := c.Stats()
 	if s.N != 4 {
 		t.Fatalf("N = %d", s.N)
@@ -125,7 +125,7 @@ func TestBuildClusterFilters(t *testing.T) {
 			comps[i].Geo.AddressLinks.HouseLink.Link = "/h/x/" + id
 		}
 	}
-	c := BuildCluster(comps, &input, 500)
+	c := BuildCluster(comps, &input)
 	if len(c.Comps) != 3 {
 		t.Fatalf("в кластере %d аналогов, want 3 (ids 1, 2, 5)", len(c.Comps))
 	}
@@ -134,27 +134,13 @@ func TestBuildClusterFilters(t *testing.T) {
 	}
 }
 
-// Радиус-сопоставление по координатам (фолбэк ЖК-уровня, Config.ClusterRadiusM).
-func TestRadiusMatching(t *testing.T) {
-	coord := func(lat, lng float64) *Listing {
-		la, lo := lat, lng
-		return &Listing{Lat: &la, Lng: &lo, Address: "разные адреса"}
-	}
-	in := coord(60.04013, 30.24573)
-	near := coord(60.04108, 30.24815)  // ~150 м — корпус того же ЖК
-	far := coord(59.846396, 30.293347) // ~22 км — другой район
-
-	if !withinRadius(in, near, 500) {
-		t.Fatal("корпус в 150 м должен попадать в радиус 500 м")
-	}
-	if withinRadius(in, far, 500) {
-		t.Fatal("объект в 22 км не должен попадать в радиус 500 м")
-	}
-	if withinRadius(in, near, 0) {
-		t.Fatal("радиус 0 должен отключать сопоставление")
-	}
-	noCoords := &Listing{Address: "x"}
-	if withinRadius(in, noCoords, 500) {
-		t.Fatal("без координат радиус-сопоставление неприменимо")
+// Соседние здания без общих ключей в кластер не попадают, даже если
+// координаты близко (радиус-фолбэк удалён по решению владельца).
+func TestNoCrossZhkMatching(t *testing.T) {
+	in := Listing{Studio: true, TotalArea: 24, Address: "Кубинская ул., 76к7"}
+	near := Listing{Studio: true, TotalArea: 25, Price: 40000, Address: "Кубинская ул., 76к1"}
+	cl := BuildCluster([]Listing{near}, &in)
+	if len(cl.Comps) != 0 {
+		t.Fatalf("аренда соседнего корпуса другого ЖК не должна попадать в кластер")
 	}
 }

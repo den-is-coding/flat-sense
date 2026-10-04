@@ -13,3 +13,6 @@ data/**/images/
 
 # Локальная копия wiki (отдельный git-репозиторий)
 .tmp-wiki/
+
+# Mimosa hook state (артефакты сессий)
+.mimosa/

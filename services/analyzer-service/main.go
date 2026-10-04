@@ -29,9 +29,9 @@ import (
 
 func main() {
 	var (
-		evalTarget = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход (источник: -dump-dir, иначе БД)")
-		dumpDirs   = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate и HTTP-режима без БД)")
-		labelFurn  = flag.Bool("label-furnishing", false, "разметить меблировку всех объявлений БД в ad_furnishing и выйти")
+		evalTarget  = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход (источник: -dump-dir, иначе БД)")
+		dumpDirs    = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate и HTTP-режима без БД)")
+		labelFurn   = flag.Bool("label-furnishing", false, "разметить меблировку всех объявлений БД в ad_furnishing и выйти")
 		backfillROI = flag.Bool("backfill-roi", false, "пересчитать окупаемость всех объявлений-продаж в ad_roi_results и выйти (идемпотентно, источник — БД)")
 	)
 	flag.Parse()
@@ -220,11 +220,6 @@ func configFromEnv() evaluate.Config {
 	if v := os.Getenv("MIN_CLUSTER_SIZE"); v != "" {
 		if n, err := strconv.Atoi(v); err == nil && n > 0 {
 			cfg.MinClusterSize = n
-		}
-	}
-	if v := os.Getenv("CLUSTER_RADIUS_M"); v != "" {
-		if n, err := strconv.Atoi(v); err == nil && n >= 0 {
-			cfg.ClusterRadiusM = n
 		}
 	}
 	if v := os.Getenv("REALTOR_FEE_PCT"); v != "" {

@@ -7,7 +7,6 @@ package evaluate
 
 import (
 	"encoding/json"
-	"math"
 	"strings"
 )
 
@@ -137,22 +136,6 @@ func (l *Listing) Keys() []string {
 	}
 	return out
 }
-
-// hasCoords — есть ли координаты для радиус-сопоставления.
-func (l *Listing) hasCoords() bool { return l.Lat != nil && l.Lng != nil }
-
-// distanceM — расстояние между объявлениями по координатам (haversine, м).
-func (l *Listing) distanceM(o *Listing) float64 {
-	const earthM = 6_371_000
-	la1, lo1 := degRad(*l.Lat), degRad(*l.Lng)
-	la2, lo2 := degRad(*o.Lat), degRad(*o.Lng)
-	sinLat := math.Sin((la2 - la1) / 2)
-	sinLng := math.Sin((lo2 - lo1) / 2)
-	h := sinLat*sinLat + math.Cos(la1)*math.Cos(la2)*sinLng*sinLng
-	return 2 * earthM * math.Asin(math.Min(1, math.Sqrt(h)))
-}
-
-func degRad(d float64) float64 { return d * math.Pi / 180 }
 
 // matchesKeys — совпадение кластера: пересечение множеств ключей.
 func matchesKeys(a, b []string) bool {
