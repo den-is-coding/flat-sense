@@ -230,6 +230,9 @@ func TestHandlers_API_Integration(t *testing.T) {
 		"OpenStreetMap", // атрибуция обязательна
 		"MAP_THRESHOLDS",
 		"только с рентабельностью",
+		// фон кластера — сплошной, по разбивке доходности (регрессия #73)
+		".cluster-pin.green{background", ".cluster-pin.yellow{background",
+		".cluster-pin.red{background", ".cluster-pin.gray{background",
 	} {
 		if !strings.Contains(html, want) {
 			t.Fatalf("page missing %q", want)
