@@ -182,11 +182,14 @@ const pageHTML = `<!doctype html>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <style>
- body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1a1a1a}
+ body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1a1a1a;
+   display:flex;flex-direction:column;min-height:100vh}
  header{padding:10px 16px;background:#232a35;color:#fff}
  header h1{font-size:17px;margin:0}
  header .intro{color:#9aa4b2;font-size:13px;margin-top:2px}
- #map{height:72vh;min-height:420px;position:relative}
+ #map{flex:1 1 auto;min-height:420px;position:relative}
+ footer{padding:8px 16px;background:#f5f6f8;border-top:1px solid #ddd;color:#666;
+   font-size:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
  .metric-panel{position:absolute;top:10px;right:10px;z-index:1000;background:#fff;
    border:1px solid #ddd;border-radius:6px;padding:6px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
  .metric-panel button{display:block;width:100%;margin:2px 0;padding:6px 10px;border:1px solid #ccc;
@@ -272,6 +275,11 @@ const pageHTML = `<!doctype html>
  </div>
  <div class="card" id="card"></div>
 </div>
+<footer>
+ <span>flat-sense — данные объявлений: Авито</span>
+ <span>метрики окупаемости рассчитаны по арендным аналогам того же ЖК</span>
+ <span>Карта: © OpenStreetMap contributors</span>
+</footer>
 <script>window.MAP_THRESHOLDS = {{.Thresholds}};</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
