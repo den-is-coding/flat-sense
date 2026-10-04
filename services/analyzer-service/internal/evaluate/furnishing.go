@@ -6,6 +6,9 @@ import "strings"
 // признаки аренды/продажи (Avito отдаёт часть признаков в params)
 // + фолбэк-эвристика по описанию. Правила зафиксированы юнит-тестами
 // (furnishing_test.go); сомнение трактуется консервативно — «без мебели».
+//
+// Порядок правил: явный негатив → маркеры «обставить под себя» → явный
+// позитив → перечисление предметов мебели (≥2 разных) → неизвестно.
 
 // Слова-маркеры. Порядок важен: негатив («без мебели») сильнее позитива.
 var (
@@ -14,12 +17,28 @@ var (
 		"без мебели", "без мебелью", "мебели нет", "мебели отсутствуют",
 		"не меблирован", "не меблирова", "нет мебели", "пустая, без",
 	}
+	// «сможете обставить под себя», «по своему вкусу», «со своей мебелью» —
+	// квартира сдаётся пустой, мебель tenants привозят сами.
+	noFurniturePhrases = []string{
+		"обставить", "по своему вкусу", "по вашему вкусу",
+		"со своей мебелью", "своей мебелью", "со своей техникой",
+		"своей техникой", "под свои", "со своей бытовой техникой",
+	}
 	// «полностью меблирована», «с мебелью», «мебель вся остаётся» и т.п.
 	furnishedPhrases = []string{
 		"меблирован", "с мебелью", "со всей мебелью", "мебель вся",
 		"вся мебель", "мебель остаётся", "мебель остается", "мебель полностью",
 		"есть вся необходимая мебель", "полностью укомплектована мебелью",
-		"мебель и техника", "укомплектован",
+		"мебель и техника", "мебелью и техникой", "техника и мебель",
+		"укомплектован",
+	}
+	// Предметы мебели/техники: перечисление конкретики — сильный признак
+	// меблированной сдачи («кровать, шкаф, телевизор…»).
+	furnitureItems = []string{
+		"кровать", "диван", "стол", "шкаф", "кухня", "кухонн",
+		"посудомо", "телевизор", "хранения", "комод", "тумба",
+		"холодильник", "стиральная машина", "стирал", "духовка",
+		"матрас", "тумбочка", "вешалк", "зеркало", "микроволнов",
 	}
 )
 
@@ -45,9 +64,32 @@ func normalizeHomoglyphs(s string) string {
 	return string(b)
 }
 
-// DetectFurnishing определяет признак меблировки по описанию и параметрам.
-// Возвращает (признак, определён_ли_уверенно).
-func DetectFurnishing(description string, params []Param) (Furnishing, bool) {
+// DetectFurnishingDetailed — признак меблировки + уверенность + фразы,
+// по которым решено (для метки в БД и отчёта). Полная эвристика: явные
+// фразы + перечисление предметов (для классификации арендных аналогов).
+func DetectFurnishingDetailed(description string, params []Param) (Furnishing, bool, string) {
+	if f, ok, ev := detectExplicit(description, params); ok {
+		return f, ok, ev
+	}
+	// Перечисление предметов мебели: считаем разные группы упоминаний —
+	// одно «кухня» может быть комнатой, два разных предмета — уже обстановка.
+	text := normalizeHomoglyphs(strings.ToLower(description))
+	var items []string
+	for _, item := range furnitureItems {
+		if strings.Contains(text, item) {
+			items = append(items, item)
+		}
+	}
+	if len(items) >= 2 {
+		return Furnished, true, "описание: предметы мебели (" + strings.Join(items, ", ") + ")"
+	}
+	return Unknown, false, ""
+}
+
+// detectExplicit — только явные маркеры (params и фразы), без вывода по
+// предметам. Для ВХОДНОГО объявления продажи: сомнение остаётся сомнением
+// («остаётся кухонный гарнитур» ≠ «полностью меблирована»).
+func detectExplicit(description string, params []Param) (Furnishing, bool, string) {
 	// 1) Явный признак в params (Авито: «Мебель и техника», «Мебель»).
 	for _, p := range params {
 		title := strings.ToLower(p.Title)
@@ -57,38 +99,48 @@ func DetectFurnishing(description string, params []Param) (Furnishing, bool) {
 		v := strings.ToLower(p.Value)
 		switch {
 		case strings.Contains(v, "без"):
-			return Unfurnished, true
+			return Unfurnished, true, "params: " + p.Title + "=" + p.Value
 		case v != "" && v != "нет":
-			return Furnished, true
+			return Furnished, true, "params: " + p.Title + "=" + p.Value
 		}
 	}
-	// 2) Эвристика по описанию: сначала негативные маркеры (консервативно),
-	// затем позитивные. Текст нормализуется против омоглифов.
+	// 2) Описание, нормализованное против омоглифов: сначала негативные
+	// маркеры (консервативно), затем «обставить под себя», затем позитив.
 	text := normalizeHomoglyphs(strings.ToLower(description))
-	if hasAny(text, unfurnishedPhrases) {
-		return Unfurnished, true
+	if hit := firstHit(text, unfurnishedPhrases); hit != "" {
+		return Unfurnished, true, "описание: «" + hit + "»"
 	}
-	if hasAny(text, furnishedPhrases) {
-		return Furnished, true
+	if hit := firstHit(text, noFurniturePhrases); hit != "" {
+		return Unfurnished, true, "описание: «" + hit + "» (обставить самостоятельно)"
 	}
-	return Unknown, false
+	if hit := firstHit(text, furnishedPhrases); hit != "" {
+		return Furnished, true, "описание: «" + hit + "»"
+	}
+	return Unknown, false, ""
 }
 
-// ResolveFurnishing — меблировка входного объявления с консервативным
-// правилом из issue: сомнение = «без мебели» (помечается в отчёте).
+// DetectFurnishing — признак + уверенность (совместимый интерфейс).
+func DetectFurnishing(description string, params []Param) (Furnishing, bool) {
+	f, ok, _ := DetectFurnishingDetailed(description, params)
+	return f, ok
+}
+
+// ResolveFurnishing — меблировка входного объявления (продажи): только
+// явные маркеры; предметный вывод не применяется, а сомнение
+// консервативно = «без мебели» (помечается в отчёте).
 func ResolveFurnishing(description string, params []Param) (Furnishing, bool) {
-	f, ok := DetectFurnishing(description, params)
+	f, ok, _ := detectExplicit(description, params)
 	if !ok {
-		return Unfurnished, false // консервативное допущение
+		return Unfurnished, false
 	}
 	return f, true
 }
 
-func hasAny(text string, phrases []string) bool {
+func firstHit(text string, phrases []string) string {
 	for _, p := range phrases {
 		if strings.Contains(text, p) {
-			return true
+			return p
 		}
 	}
-	return false
+	return ""
 }

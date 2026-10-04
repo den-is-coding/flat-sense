@@ -22,13 +22,15 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/evaluate"
+	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/labeler"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/source"
 )
 
 func main() {
 	var (
-		evalTarget = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход")
-		dumpDirs   = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate без БД)")
+		evalTarget = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход (источник: -dump-dir, иначе БД)")
+		dumpDirs   = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate и HTTP-режима без БД)")
+		labelFurn  = flag.Bool("label-furnishing", false, "разметить меблировку всех объявлений БД в ad_furnishing и выйти")
 	)
 	flag.Parse()
 
@@ -37,7 +39,25 @@ func main() {
 
 	cfg := configFromEnv()
 
-	// CLI-режим: оценка по дампам из директории.
+	// Режим разметки мебели: БД → эвристика → ad_furnishing.
+	if *labelFurn {
+		pool, err := pgxpool.New(ctx, dsn())
+		if err != nil {
+			log.Fatalf("db: %v", err)
+		}
+		defer pool.Close()
+		if err := pool.Ping(ctx); err != nil {
+			log.Fatalf("db ping: %v", err)
+		}
+		sum, byType, err := labeler.LabelAll(ctx, pool)
+		if err != nil {
+			log.Fatalf("label: %v", err)
+		}
+		printJSON(map[string]any{"summary": sum, "byDealType": byType})
+		return
+	}
+
+	// CLI-режим: оценка по дампам из директории либо по БД.
 	if *evalTarget != "" {
 		runCLI(ctx, cfg, *evalTarget, *dumpDirs)
 		return
@@ -81,18 +101,29 @@ func main() {
 }
 
 func runCLI(ctx context.Context, cfg evaluate.Config, target, dumpDirs string) {
-	if dumpDirs == "" {
-		log.Fatalf("-evaluate требует -dump-dir (каталоги дампов listings) либо HTTP-режим с БД")
-	}
-	src, err := source.NewDumpSource(strings.Split(dumpDirs, ",")...)
-	if err != nil {
-		log.Fatalf("dump source: %v", err)
-	}
 	id := source.ExtractListingID(target)
 	if id == 0 {
 		log.Fatalf("не удалось извлечь id объявления из %q", target)
 	}
-	ev := evaluate.NewEvaluator(src, cfg)
+	var ev *evaluate.Evaluator
+	if dumpDirs != "" {
+		src, err := source.NewDumpSource(strings.Split(dumpDirs, ",")...)
+		if err != nil {
+			log.Fatalf("dump source: %v", err)
+		}
+		ev = evaluate.NewEvaluator(src, cfg)
+	} else {
+		// Источник — БД (DB_HOST=localhost при запуске на хосте).
+		pool, err := pgxpool.New(ctx, dsn())
+		if err != nil {
+			log.Fatalf("db: %v", err)
+		}
+		defer pool.Close()
+		if err := pool.Ping(ctx); err != nil {
+			log.Fatalf("db ping: %v", err)
+		}
+		ev = evaluate.NewEvaluator(source.NewDBSource(pool), cfg)
+	}
 	rep, err := ev.EvaluateByID(ctx, id)
 	if err != nil {
 		log.Fatalf("evaluate: %v", err)
@@ -142,6 +173,13 @@ func writeJSON(w http.ResponseWriter, status int, v any) {
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	w.WriteHeader(status)
 	enc := json.NewEncoder(w)
+	enc.SetIndent("", "  ")
+	enc.Encode(v)
+}
+
+// printJSON — вывод результата CLI-режимов в stdout.
+func printJSON(v any) {
+	enc := json.NewEncoder(os.Stdout)
 	enc.SetIndent("", "  ")
 	enc.Encode(v)
 }

@@ -57,3 +57,55 @@ func TestHouseKeyAndStudio(t *testing.T) {
 		t.Fatalf("HouseKey = %q", l.HouseKey())
 	}
 }
+
+// Предметный признак: перечисление мебели/техники → furnished.
+func TestDetectFurnishingItems(t *testing.T) {
+	f, ok, ev := DetectFurnishingDetailed("Новая студия: двуспальная кровать, шкаф-купе, телевизор на стене.", nil)
+	if f != Furnished || !ok {
+		t.Fatalf("got (%s, %v), want furnished/true", f, ok)
+	}
+	if ev == "" || !contains(ev, "кровать") {
+		t.Fatalf("evidence должен содержать триггеры: %q", ev)
+	}
+	// Один предмет — недостаточно («кухня» может быть комнатой).
+	if f, ok, _ = DetectFurnishingDetailed("Студия с кухней-гостиной, тёплый пол.", nil); f != Unknown || ok {
+		t.Fatalf("один предмет: got (%s, %v), want unknown/false", f, ok)
+	}
+}
+
+// «Обставите под себя» и синонимы → unfurnished.
+func TestDetectFurnishingSelfFurnish(t *testing.T) {
+	cases := []string{
+		"Студия сдаётся пустой — сможете обставить под себя.",
+		"Ремонт свежий, обустроите по своему вкусу.",
+		"Заезжай со своей мебелью и техникой.",
+	}
+	for _, d := range cases {
+		if f, ok, _ := DetectFurnishingDetailed(d, nil); f != Unfurnished || !ok {
+			t.Errorf("%q: got (%s, %v), want unfurnished/true", d, f, ok)
+		}
+	}
+	// Явный «без мебели» всё ещё сильнее и идёт первым.
+	if f, _, ev := DetectFurnishingDetailed("Без мебели, обставите по своему вкусу.", nil); f != Unfurnished || contains(ev, "обставить") {
+		t.Errorf("негатив должен срабатывать первым: %s / %q", f, ev)
+	}
+}
+
+func contains(s, sub string) bool { return len(s) >= len(sub) && indexOf(s, sub) >= 0 }
+
+func indexOf(s, sub string) int {
+	for i := 0; i+len(sub) <= len(s); i++ {
+		if s[i:i+len(sub)] == sub {
+			return i
+		}
+	}
+	return -1
+}
+
+// Омоглифы не ломают предметный признак.
+func TestDetectFurnishingItemsHomoglyphs(t *testing.T) {
+	f, ok, _ := DetectFurnishingDetailed("cдaeтся c двуx яpycной кpoвaтью и шкaфoм, вce ocтaeтcя", nil)
+	if f != Furnished || !ok {
+		t.Fatalf("got (%s, %v), want furnished/true", f, ok)
+	}
+}
