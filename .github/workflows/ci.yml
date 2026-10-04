@@ -25,6 +25,7 @@ jobs:
       analyzer-service: ${{ steps.filter.outputs.analyzer-service }}
       api-gateway: ${{ steps.filter.outputs.api-gateway }}
       auth-service: ${{ steps.filter.outputs.auth-service }}
+      image-ai-service: ${{ steps.filter.outputs.image-ai-service }}
       notification-service: ${{ steps.filter.outputs.notification-service }}
       parser-service: ${{ steps.filter.outputs.parser-service }}
       payment-service: ${{ steps.filter.outputs.payment-service }}
@@ -45,6 +46,8 @@ jobs:
               - 'services/api-gateway/**'
             auth-service:
               - 'services/auth-service/**'
+            image-ai-service:
+              - 'services/image-ai-service/**'
             notification-service:
               - 'services/notification-service/**'
             parser-service:
@@ -67,12 +70,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # Сервисы с go.mod в services/* (image-ai-service и user-service пока пустые).
+        # Сервисы с go.mod в services/* (user-service пока пустой).
         service:
           - ads-service
           - analyzer-service
           - api-gateway
           - auth-service
+          - image-ai-service
           - notification-service
           - parser-service
           - payment-service

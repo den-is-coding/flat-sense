@@ -275,6 +275,22 @@ services:
       - "8088:8080"   # админка /admin (issue #57)
     command: ["air", "-c", ".air.toml"]
 
+  image-ai-service:
+    build:
+      context: ../services/image-ai-service
+      dockerfile: Dockerfile
+      target: ${TARGET:-dev}
+    container_name: real-estate-image-ai
+    <<: *go-service
+    volumes:
+      - ../services/image-ai-service:/app
+    environment:
+      <<: *common-env
+      HTTP_PORT: 8080
+    ports:
+      - "8089:8080"   # API детекции планировок (issue #58)
+    command: ["air", "-c", ".air.toml"]
+
   analyzer-service:
     build:
       context: ../services/analyzer-service
