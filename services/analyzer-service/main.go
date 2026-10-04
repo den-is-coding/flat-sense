@@ -43,17 +43,28 @@ func main() {
 		return
 	}
 
-	// HTTP-режим: источник — БД.
-	pool, err := pgxpool.New(ctx, dsn())
-	if err != nil {
-		log.Fatalf("db: %v", err)
-	}
-	defer pool.Close()
-	if err := pool.Ping(ctx); err != nil {
-		log.Fatalf("db ping: %v", err)
+	// HTTP-режим: источник — БД, либо дампы (если задан -dump-dir,
+	// удобно для локальной проверки без арендного пула в БД).
+	var src evaluate.Source
+	if *dumpDirs != "" {
+		ds, err := source.NewDumpSource(strings.Split(*dumpDirs, ",")...)
+		if err != nil {
+			log.Fatalf("dump source: %v", err)
+		}
+		src = ds
+	} else {
+		pool, err := pgxpool.New(ctx, dsn())
+		if err != nil {
+			log.Fatalf("db: %v", err)
+		}
+		defer pool.Close()
+		if err := pool.Ping(ctx); err != nil {
+			log.Fatalf("db ping: %v", err)
+		}
+		src = source.NewDBSource(pool)
 	}
 
-	ev := evaluate.NewEvaluator(source.NewDBSource(pool), cfg)
+	ev := evaluate.NewEvaluator(src, cfg)
 	srv := newServer(ev)
 
 	mux := http.NewServeMux()
@@ -61,6 +72,8 @@ func main() {
 		w.Write([]byte("OK"))
 	})
 	mux.HandleFunc("POST /evaluate", srv.handleEvaluate)
+	mux.HandleFunc("GET /{$}", srv.handleForm)
+	mux.HandleFunc("GET /evaluate-page", srv.handleEvaluatePage)
 
 	addr := ":" + env("HTTP_PORT", "8080")
 	log.Printf("analyzer-service listening on %s", addr)

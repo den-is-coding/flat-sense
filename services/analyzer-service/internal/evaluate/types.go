@@ -94,29 +94,60 @@ func (l *Listing) IsStudio() bool {
 		strings.Contains(strings.ToLower(l.Title), "студия")
 }
 
-// HouseKey — ключ сопоставления «тот же дом/ЖК»: id дома из ссылки
-// houseLink; если ссылки нет — нормализованный адрес.
+// HouseKey — человекочитаемый первичный ключ сопоставления: id дома из
+// ссылки houseLink; если ссылки нет — нормализованный адрес.
 func (l *Listing) HouseKey() string {
-	if l.Geo != nil {
-		if link := l.Geo.AddressLinks.HouseLink.Link; link != "" {
-			parts := strings.Split(strings.Split(link, "?")[0], "/")
-			if n := len(parts); n > 0 && parts[n-1] != "" {
-				return "house:" + parts[n-1]
-			}
-		}
+	if ks := l.Keys(); len(ks) > 0 {
+		return ks[0]
 	}
 	return "addr:" + normalizeAddr(l.Address)
 }
 
-// normalizeAddr — приведение адреса к сравнимому виду.
+// Keys — все ключи сопоставления «тот же дом/ЖК» (совпадение по любому):
+// дом по houseLink (когда есть у обеих сторон) и нормализованный адрес
+// (дампы кампаний houseLink не содержат — только адрес).
+func (l *Listing) Keys() []string {
+	var out []string
+	if l.Geo != nil {
+		if link := l.Geo.AddressLinks.HouseLink.Link; link != "" {
+			parts := strings.Split(strings.Split(link, "?")[0], "/")
+			if n := len(parts); n > 0 && parts[n-1] != "" {
+				out = append(out, "house:"+parts[n-1])
+			}
+		}
+	}
+	if a := normalizeAddr(l.Address); a != "" {
+		out = append(out, "addr:"+a)
+	}
+	return out
+}
+
+// matchesKeys — совпадение кластера: пересечение множеств ключей.
+func matchesKeys(a, b []string) bool {
+	for _, ka := range a {
+		for _, kb := range b {
+			if ka == kb {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+var cityTokens = []string{"санкт-петербург", "санкт питербург", "спб"}
+
+// normalizeAddr — приведение адреса к сравнимому виду: без города
+// («Санкт-Петербург, …» в дампах кампаний), пунктуации и пробелов.
 func normalizeAddr(s string) string {
 	s = strings.ToLower(s)
+	for _, c := range cityTokens {
+		s = strings.ReplaceAll(s, c, " ")
+	}
 	var b strings.Builder
 	for _, r := range s {
 		switch {
-		case r >= 'a' && r <= 'z', r >= '0' && r <= '9':
-			b.WriteRune(r)
-		case r >= 'а' && r <= 'я' || r == 'ё':
+		case r >= 'a' && r <= 'z', r >= '0' && r <= '9',
+			r >= 'а' && r <= 'я' || r == 'ё':
 			b.WriteRune(r)
 		}
 	}

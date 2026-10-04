@@ -36,6 +36,7 @@ func BuildCluster(comps []Listing, input *Listing, areaTolPct float64) Cluster {
 	lo := input.TotalArea * (1 - areaTolPct/100)
 	hi := input.TotalArea * (1 + areaTolPct/100)
 	c := Cluster{HouseKey: input.HouseKey(), AreaMin: lo, AreaMax: hi}
+	inputKeys := input.Keys()
 	for i := range comps {
 		r := &comps[i]
 		if !r.IsStudio() || r.Price <= 0 {
@@ -44,7 +45,7 @@ func BuildCluster(comps []Listing, input *Listing, areaTolPct float64) Cluster {
 		if r.TotalArea < lo || r.TotalArea > hi {
 			continue
 		}
-		if r.HouseKey() != c.HouseKey {
+		if !matchesKeys(r.Keys(), inputKeys) {
 			continue
 		}
 		c.Comps = append(c.Comps, *r)

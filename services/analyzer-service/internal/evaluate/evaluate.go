@@ -148,30 +148,40 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 		}, nil
 	}
 
-	// Сценарии.
+	// Сценарии. Медианы берутся из строгих групп по мебели; если группа
+	// пуста, а кластер не пуст — фолбэк на медиану всего кластера с
+	// предупреждением (в реальных объявлениях мебель часто не указана).
 	price := input.Price
 	if price <= 0 {
 		return nil, fmt.Errorf("listing %d has no price", input.ID)
 	}
 	furnMed, furnOK := cluster.groupMedian(cluster.Furnished)
-	unfMed, _ := cluster.groupMedian(cluster.Unfurn)
+	unfMed, unfOK := cluster.groupMedian(cluster.Unfurn)
 	furnP := groupBounds(cluster.Furnished)
 	unfP := groupBounds(cluster.Unfurn)
+	furnComps, unfComps := len(cluster.Furnished), len(cluster.Unfurn)
+
+	if !unfOK && stats.N > 0 {
+		unfMed, unfP, unfComps = stats.Median, bounds{p25: stats.P25, p75: stats.P75}, stats.N
+		rep.Warnings = append(rep.Warnings, fmt.Sprintf(
+			"меблировка не указана у %d из %d арендных аналогов — медиана «без мебели» посчитана по всему кластеру", stats.N-stats.NFurnished-stats.NUnfurnished, stats.N))
+	}
+	if !furnOK && stats.N > 0 {
+		furnMed, furnP, furnComps = stats.Median, bounds{p25: stats.P25, p75: stats.P75}, stats.N
+		rep.Warnings = append(rep.Warnings, fmt.Sprintf(
+			"в кластере нет арендных объявлений с явно указанной мебелью (%d без указания) — медиана «с мебелью» посчитана по всему кластеру", stats.N-stats.NFurnished-stats.NUnfurnished))
+	}
 
 	if f == Furnished {
 		// Мебель есть: только сценарий «с мебелью», без надбавки (issue п.5).
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, len(cluster.Furnished), price, 0))
-		if !furnOK {
-			rep.Scenarios[0].Applicable = false
-			rep.Scenarios[0].SkippedReason = "в арендном кластере нет объявлений с определённой мебелью"
-		}
+			ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, furnComps, price, 0))
 	} else {
 		// Мебели нет (или сомнение): оба сценария (issue п.3–4).
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, len(cluster.Unfurn), price, 0))
+			ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, unfComps, price, 0))
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, len(cluster.Furnished), price, e.Config.FurnishingCostRUB))
+			ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, furnComps, price, e.Config.FurnishingCostRUB))
 	}
 
 	// Confidence по размеру кластера (метрики качества — задача #55).
@@ -183,9 +193,6 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 		rep.Confidence = "medium"
 	default:
 		rep.Confidence = "high"
-	}
-	if f != Furnished && len(cluster.Furnished) == 0 {
-		rep.Warnings = append(rep.Warnings, "в кластере нет арендных объявлений с мебелью — сценарий «с мебелью» не рассчитан")
 	}
 	return rep, nil
 }

@@ -19,8 +19,31 @@ var (
 		"меблирован", "с мебелью", "со всей мебелью", "мебель вся",
 		"вся мебель", "мебель остаётся", "мебель остается", "мебель полностью",
 		"есть вся необходимая мебель", "полностью укомплектована мебелью",
+		"мебель и техника", "укомплектован",
 	}
 )
+
+// homoglyphs — латинские двойники кириллицы (продавцы маскируют текст,
+// «сдaeтся», «мeбель») — приводим к кириллице перед поиском фраз.
+var homoglyphs = map[rune]rune{
+	'a': 'а', 'c': 'с', 'e': 'е', 'o': 'о', 'p': 'р', 'x': 'х', 'y': 'у',
+	'A': 'А', 'C': 'С', 'E': 'Е', 'O': 'О', 'P': 'Р', 'X': 'Х', 'Y': 'У',
+	'B': 'В', 'K': 'К', 'M': 'М', 'H': 'Н', 'T': 'Т',
+}
+
+func normalizeHomoglyphs(s string) string {
+	if !strings.ContainsFunc(s, func(r rune) bool { _, ok := homoglyphs[r]; return ok }) {
+		return s
+	}
+	b := make([]rune, 0, len(s))
+	for _, r := range s {
+		if c, ok := homoglyphs[r]; ok {
+			r = c
+		}
+		b = append(b, r)
+	}
+	return string(b)
+}
 
 // DetectFurnishing определяет признак меблировки по описанию и параметрам.
 // Возвращает (признак, определён_ли_уверенно).
@@ -40,8 +63,8 @@ func DetectFurnishing(description string, params []Param) (Furnishing, bool) {
 		}
 	}
 	// 2) Эвристика по описанию: сначала негативные маркеры (консервативно),
-	// затем позитивные.
-	text := strings.ToLower(description)
+	// затем позитивные. Текст нормализуется против омоглифов.
+	text := normalizeHomoglyphs(strings.ToLower(description))
 	if hasAny(text, unfurnishedPhrases) {
 		return Unfurnished, true
 	}
