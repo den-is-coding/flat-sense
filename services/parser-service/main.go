@@ -15,6 +15,7 @@ import (
 
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/admin"
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/avito"
+	"github.com/yourusername/real-estate-analyzer/parser-service/internal/mapview"
 )
 
 func main() {
@@ -264,6 +265,12 @@ func main() {
 	} else {
 		log.Printf("admin routes disabled: ADMIN_LOGIN/ADMIN_PASSWORD not set")
 	}
+
+	// Публичная карта объектов (issue #73): SSR-страница + bbox-выдача
+	// метрик из кэша ad_roi_results. Пороги цветов доходности — env.
+	mapview.Register(mux, mapview.NewStore(storage.Pool()))
+	log.Printf("map routes enabled: /map, /api/map/listings (YIELD_GREEN_MIN=%s YIELD_YELLOW_MIN=%s)",
+		env("YIELD_GREEN_MIN", "8"), env("YIELD_YELLOW_MIN", "5"))
 
 	addr := ":" + cfg.HTTPPort
 	log.Printf("parser-service listening on %s", addr)
