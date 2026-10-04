@@ -147,25 +147,35 @@ var funcs = template.FuncMap{
 	"sub1":    func(n int) int { return n - 1 },
 	"add1":    func(n int) int { return n + 1 },
 	"rownum":  func(start, i int) int { return start + i },
-	"qse": func(f ListingFilters, key, val string) string {
-		q := url.Values{}
-		q.Set("q", f.Search)
-		q.Set("city", f.City)
-		q.Set("complex", f.Complex)
-		if f.Rooms >= 0 {
-			q.Set("rooms", strconv.Itoa(f.Rooms))
-		}
-		if f.PriceMin > 0 {
-			q.Set("priceMin", strconv.FormatInt(f.PriceMin, 10))
-		}
-		if f.PriceMax > 0 {
-			q.Set("priceMax", strconv.FormatInt(f.PriceMax, 10))
-		}
-		q.Set("sort", f.SortBy)
-		q.Set("dir", f.SortDir)
-		q.Set(key, val)
-		return "/admin?" + q.Encode()
-	},
+		"qse": func(f ListingFilters, key, val string) string {
+			q := url.Values{}
+			q.Set("q", f.Search)
+			q.Set("city", f.City)
+			q.Set("complex", f.Complex)
+			if f.Rooms >= 0 {
+				q.Set("rooms", strconv.Itoa(f.Rooms))
+			}
+			if f.PriceMin > 0 {
+				q.Set("priceMin", strconv.FormatInt(f.PriceMin, 10))
+			}
+			if f.PriceMax > 0 {
+				q.Set("priceMax", strconv.FormatInt(f.PriceMax, 10))
+			}
+			if f.HasCoords != nil {
+				if *f.HasCoords {
+					q.Set("hasCoords", "1")
+				} else {
+					q.Set("hasCoords", "0")
+				}
+			}
+			if f.HasROI != nil && *f.HasROI {
+				q.Set("has_roi", "1") // состояние фильтра живёт в URL (#67)
+			}
+			q.Set("sort", f.SortBy)
+			q.Set("dir", f.SortDir)
+			q.Set(key, val)
+			return "/admin?" + q.Encode()
+		},
 }
 
 var loginTmpl = template.Must(template.New("login").Funcs(funcs).Parse(`<!doctype html>
@@ -226,6 +236,7 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
 <select name="hasCoords"><option value="">координаты</option>
 <option value="1" {{if eq .CoordsFilter "1"}}selected{{end}}>есть</option>
 <option value="0" {{if eq .CoordsFilter "0"}}selected{{end}}>нет</option></select>
+<label style="display:inline-flex;align-items:center;gap:4px"><input type="checkbox" name="has_roi" value="1" {{if eq .ROIFilter "1"}}checked{{end}}> только с рентабельностью</label>
 <input type="hidden" name="sort" value="{{.Filters.SortBy}}">
 <input type="hidden" name="dir" value="{{.Filters.SortDir}}">
 <button>Применить</button></form>
@@ -296,6 +307,10 @@ func renderTable(w http.ResponseWriter, f ListingFilters, page *ListingPage) {
 	if f.Studio != nil && *f.Studio {
 		studioFilter = "1"
 	}
+	roiFilter := ""
+	if f.HasROI != nil && *f.HasROI {
+		roiFilter = "1"
+	}
 	rowsFrom, rowsTo := 0, 0
 	if n := len(page.Items); n > 0 {
 		rowsFrom = (page.Page-1)*page.Limit + 1
@@ -306,8 +321,9 @@ func renderTable(w http.ResponseWriter, f ListingFilters, page *ListingPage) {
 		Page         *ListingPage
 		CoordsFilter string
 		StudioFilter string
+		ROIFilter    string
 		RowsFrom     int
 		RowsTo       int
-	}{f, page, coords, studioFilter, rowsFrom, rowsTo}
+	}{f, page, coords, studioFilter, roiFilter, rowsFrom, rowsTo}
 	_ = tableTmpl.Execute(w, data)
 }
