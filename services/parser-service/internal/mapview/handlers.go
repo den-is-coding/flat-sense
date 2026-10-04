@@ -223,8 +223,6 @@ const pageHTML = `<!doctype html>
    border:1px solid var(--color-border-strong);border-radius:var(--radius-sm);cursor:pointer}
  .filters button:hover{border-color:var(--color-accent);color:var(--color-accent-hover)}
  .filters label{color:var(--color-text-secondary)}
- #theme-toggle{display:inline-flex;align-items:center;gap:4px}
- #theme-toggle svg{width:14px;height:14px}
  .card{position:absolute;top:10px;bottom:10px;right:10px;width:320px;max-width:calc(100% - 20px);
    background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
    box-shadow:0 2px 12px var(--map-shadow-lg);z-index:1100;padding:12px;overflow-y:auto;display:none;box-sizing:border-box}
@@ -295,9 +293,7 @@ const pageHTML = `<!doctype html>
   <option value="3plus">3+</option>
  </select>
  <label><input id="f-hasroi" type="checkbox"> только с рентабельностью</label>
- <button id="f-apply">Применить</button>
  <button id="f-reset">Сброс</button>
- <button id="theme-toggle" title="Тема: системная / светлая / тёмная" aria-label="Переключить тему"></button>
 </div>
 <div id="map">
  <div class="metric-panel" id="metric-panel">

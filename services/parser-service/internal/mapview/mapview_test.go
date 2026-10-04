@@ -240,9 +240,16 @@ func TestHandlers_API_Integration(t *testing.T) {
 		".cluster-pin.c0{background", ".cluster-pin.c3{background",
 		".cluster-pin.c6{background", ".cluster-pin.gray{background",
 		".dot.c2{background",
+		// дизайн-токены #88 + фидбек: без кнопки «Применить»,
+		// без отдельной кнопки темы (тему ведёт выбор подложки)
+		"--color-accent", "[data-theme=\"dark\"]", "prefers-color-scheme",
+		"data-lucide", "Inter",
 	} {
 		if !strings.Contains(html, want) {
 			t.Fatalf("page missing %q", want)
+		}
+		if strings.Contains(html, "f-apply") || strings.Contains(html, "theme-toggle") {
+			t.Fatal("устаревшие кнопки «Применить»/темы должны отсутствовать")
 		}
 	}
 }
