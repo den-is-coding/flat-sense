@@ -240,7 +240,59 @@ func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing
 }
 
 func (s *DBSource) RentListings(ctx context.Context) ([]evaluate.Listing, error) {
-	return s.listingsByDealType(ctx, "rent_long")
+	rows, err := s.pool.Query(ctx, s.listingJSON()+
+		`, coalesce(source_task, '') FROM avito_listings WHERE deal_type = 'rent_long'`)
+	if err != nil {
+		return nil, fmt.Errorf("rent listings: %w", err)
+	}
+	defer rows.Close()
+	type keyed struct {
+		l      evaluate.Listing
+		task   string
+		rawAdr string
+	}
+	var out []keyed
+	for rows.Next() {
+		var blob []byte
+		var task string
+		if err := rows.Scan(&blob, &task); err != nil {
+			return nil, err
+		}
+		l, err := evaluate.ParseListing(blob)
+		if err != nil {
+			return nil, err
+		}
+		zhk.Enrich(l)
+		out = append(out, keyed{l: *l, task: task, rawAdr: l.Address})
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+
+	// Алиасы корпусов ЖК по кампании (source_task): арендная кампания
+	// собирается по одному ЖК, поэтому каждому объявлению выдаются адреса
+	// всех корпусов его задачи — аналог meta.addresses дамп-адаптера.
+	addrs := map[string][]string{}
+	seen := map[string]map[string]bool{}
+	for _, k := range out {
+		a := strings.TrimSpace(k.rawAdr)
+		if a == "" {
+			continue
+		}
+		if seen[k.task] == nil {
+			seen[k.task] = map[string]bool{}
+		}
+		if !seen[k.task][a] {
+			seen[k.task][a] = true
+			addrs[k.task] = append(addrs[k.task], a)
+		}
+	}
+	res := make([]evaluate.Listing, 0, len(out))
+	for _, k := range out {
+		k.l.Aliases = addrs[k.task]
+		res = append(res, k.l)
+	}
+	return res, nil
 }
 
 // SaleListings — весь пул продаж (вход backfill #66).
