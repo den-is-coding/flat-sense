@@ -31,11 +31,35 @@
 
   var map = L.map('map', { zoomControl: true }); // кнопки +/− слева сверху (доработка 1)
   window.__fsMap = map; // хук для e2e/отладки
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
+
+  // Подложки (issue #73, по просьбе пользователя — переключатель стиля):
+  // OSM стандартная, светлая и тёмная серые канвасы Esri (на данных OSM;
+  // Carto-тайлы без API-ключа отдают заглушку «API KEY REQUIRED»).
+  var BASEMAPS = {
+    osm: {
+      url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    },
+    light: {
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+      attribution: 'Tiles &copy; Esri — источник: Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      opts: { maxNativeZoom: 16 }
+    },
+    dark: {
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+      attribution: 'Tiles &copy; Esri — источник: Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      opts: { maxNativeZoom: 16 }
+    }
+  };
+  var basemap = localStorage.getItem('mapBasemap');
+  if (!BASEMAPS[basemap]) basemap = 'osm';
+  var tileLayer = makeTiles(basemap).addTo(map);
   map.fitBounds([[59.83, 30.15], [60.02, 30.45]]); // СПб по умолчанию
+
+  function makeTiles(key) {
+    var b = BASEMAPS[key];
+    return L.tileLayer(b.url, Object.assign({ maxZoom: 19, attribution: b.attribution }, b.opts || {}));
+  }
 
   var cluster = L.markerClusterGroup({
     showCoverageOnHover: false,
@@ -166,6 +190,24 @@
     cluster.eachLayer(function (mk) { mk.setIcon(pinIcon(mk.dataset)); });
   }
   renderMetricButtons();
+
+  // Переключатель подложки: выбор в localStorage, применяется на лету.
+  var basemapPanel = document.getElementById('basemap-panel');
+  function renderBasemapButtons() {
+    basemapPanel.querySelectorAll('button').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.basemap === basemap);
+    });
+  }
+  basemapPanel.addEventListener('click', function (e) {
+    var b = e.target.closest('button');
+    if (!b || !BASEMAPS[b.dataset.basemap]) return;
+    basemap = b.dataset.basemap;
+    localStorage.setItem('mapBasemap', basemap);
+    map.removeLayer(tileLayer);
+    tileLayer = makeTiles(basemap).addTo(map);
+    renderBasemapButtons();
+  });
+  renderBasemapButtons();
 
   // Легенда: сворачиваемая, пороги из конфига.
   var legendHead = document.getElementById('legend-head');
