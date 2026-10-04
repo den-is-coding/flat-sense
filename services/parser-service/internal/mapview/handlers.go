@@ -175,6 +175,11 @@ const pageHTML = `<!doctype html>
  .metric-panel button{display:block;width:100%;margin:2px 0;padding:6px 10px;border:1px solid #ccc;
    background:#fff;cursor:pointer;border-radius:4px;text-align:left}
  .metric-panel button.active{background:#232a35;color:#fff;border-color:#232a35}
+ .basemap-panel{position:absolute;top:10px;left:64px;z-index:1000;display:flex;gap:2px;background:#fff;
+   border:1px solid #ddd;border-radius:6px;padding:3px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+ .basemap-panel button{padding:4px 8px;border:1px solid transparent;background:#fff;cursor:pointer;border-radius:4px;font-size:12px}
+ .basemap-panel button.active{background:#e8ecf1;border-color:#c8d0d8;font-weight:600}
+ @media (max-width:640px){ .basemap-panel{top:8px;left:56px} }
  .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 16px;background:#f5f6f8;border-bottom:1px solid #ddd}
  .filters input,.filters select{padding:4px 6px}
  .card{position:absolute;top:10px;bottom:10px;right:10px;width:320px;max-width:calc(100% - 20px);
@@ -229,6 +234,11 @@ const pageHTML = `<!doctype html>
   <button data-metric="price">Цена</button>
   <button data-metric="cost">Полная стоимость</button>
   <button data-metric="yield">Доходность с мебелью</button>
+ </div>
+ <div class="basemap-panel" id="basemap-panel">
+  <button data-basemap="osm" title="OpenStreetMap стандартная">ОСМ</button>
+  <button data-basemap="light" title="Светлая (© OpenStreetMap contributors © CARTO)">Светлая</button>
+  <button data-basemap="dark" title="Тёмная (© OpenStreetMap contributors © CARTO)">Тёмная</button>
  </div>
  <div class="legend" id="legend">
   <div class="head" id="legend-head">Доходность, % годовых ▾</div>
