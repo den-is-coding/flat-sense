@@ -97,11 +97,10 @@
       var n = all.length;
       var m = METRICS[metric];
       var agg = aggregate(all, m);
-      var yMax = aggregateYield(all); // кластер красится по максимуму доходности
-      // крупный круг: значение выбранной метрики должно помещаться
-      // внутри с полями (компактный формат — «7,5 млн ₽»)
+      // кластер красится по своему агрегату выбранной метрики
+      // (цена/стоимость — минимум, доходность — максимум)
       var size = Math.min(92, 46 + n * 1.6);
-      var html = '<div class="cluster-pin ' + colorClass(yMax) + '" style="width:' + size + 'px;height:' + size + 'px">' +
+      var html = '<div class="cluster-pin ' + colorClass(agg, metric) + '" style="width:' + size + 'px;height:' + size + 'px">' +
         '<span class="n">' + n + '</span><span class="v">' + m.fmtShort(agg) + '</span></div>';
       return L.divIcon({ html: html, className: '', iconSize: [size, size] });
     }
@@ -131,18 +130,37 @@
 
   // Диапазоны доходности: N границ → N+1 диапазонов, шкала красный→зелёный.
   // Индекс диапазона = число границ, которые значение перешагнуло.
-  var B = (window.MAP_THRESHOLDS && window.MAP_THRESHOLDS.boundaries) || [4.1, 4.55, 4.75, 5.05, 5.35, 5.65];
+  // Диапазоны по метрикам (issue #108): цвет следует выбранной метрике.
+  // Индекс нормирован: 0 — худший (красный), последний — лучший (зелёный).
+  var T = (window.MAP_THRESHOLDS && window.MAP_THRESHOLDS.thresholds) || {};
+  var BOUNDS = {
+    yield: T.yield || [5, 8],          // % годовых, «выше = зеленее»
+    price: T.price || [7.5e6, 9e6],    // ₽, «дешевле = зеленее»
+    cost: T.cost || [9.5e6, 11.5e6]    // ₽
+  };
 
-  function bucketIndex(y) {
-    if (y == null) return -1;
+  function bucketIndex(v, m) {
+    if (v == null) return -1;
+    var b = BOUNDS[m] || [];
     var i = 0;
-    while (i < B.length && y >= B[i]) i++;
-    return i; // 0..B.length
+    if (m === 'yield') {
+      // «выше = зеленее»: индекс = число перешагнутых границ
+      while (i < b.length && v >= b[i]) i++;
+    } else {
+      // «дешевле = зеленее»: индекс = число границ, которые значение
+      // НЕ перешагнуло снизу (дешёвое значение — последний индекс)
+      var above = 0;
+      for (var j = 0; j < b.length; j++) {
+        if (v > b[j]) above++;
+      }
+      i = b.length - above;
+    }
+    return i; // 0 — худший (красный) … b.length — лучший (зелёный)
   }
 
-  function colorClass(y) {
-    var i = bucketIndex(y);
-    return i < 0 ? 'gray' : ('c' + i);
+  function colorClass(v, m) {
+    var i = bucketIndex(v, m);
+    return i < 0 ? 'gray' : ('b' + i);
   }
 
   function fmtRub(v) {
@@ -166,13 +184,13 @@
   }
 
   function pinIcon(d) {
-    var y = d.yieldFurnished != null ? d.yieldFurnished : d.yieldUnfurnished;
     var m = METRICS[metric];
-    var text = m.fmt(m.value(d));
+    var v = m.value(d);
+    var text = m.fmt(v);
     // обёртка с translate(-50%,-50%) центрирует метку любой ширины на точке
     return L.divIcon({
       className: '',
-      html: '<div class="pin-wrap"><div class="pin ' + colorClass(y) + '">' + text + '</div></div>',
+      html: '<div class="pin-wrap"><div class="pin ' + colorClass(v, metric) + '">' + text + '</div></div>',
       iconSize: null
     });
   }
@@ -187,22 +205,60 @@
   // Карточка объекта (правая панель), закрытие по крестику/клику вне.
   var card = document.getElementById('card');
   function showCard(d) {
-    var rows = '';
-    if (d.area != null) rows += '<div>Площадь: ' + d.area + ' м²</div>';
-    if (d.studio) rows += '<div>Студия</div>';
-    else if (d.rooms != null) rows += '<div>Комнат: ' + d.rooms + '</div>';
-    if (d.floor != null) rows += '<div>Этаж: ' + d.floor + (d.floorsTotal ? '/' + d.floorsTotal : '') + '</div>';
-    rows += '<div class="muted">' + escapeHtml(d.address || '') + (d.complex ? ' · ' + escapeHtml(d.complex) : '') + '</div>';
-    rows += '<hr><div>Цена: <b>' + fmtRub(d.price) + '</b></div>';
-    if (d.totalCostFurnished != null) rows += '<div>Полная стоимость (с мебелью): <b>' + fmtRub(d.totalCostFurnished) + '</b></div>';
-    if (d.totalCostUnfurnished != null) rows += '<div>Полная стоимость (без мебели): ' + fmtRub(d.totalCostUnfurnished) + '</div>';
-    rows += '<div>Доходность с мебелью: <b>' + (d.yieldFurnished != null ? d.yieldFurnished.toFixed(1) + ' %' : '—') + '</b></div>';
-    rows += '<div>Доходность без мебели: ' + (d.yieldUnfurnished != null ? d.yieldUnfurnished.toFixed(1) + ' %' : '—') + '</div>';
-    if (d.confidence) rows += '<div class="muted">Уверенность оценки: ' + escapeHtml(d.confidence) + '</div>';
-    card.innerHTML = '<button class="close" id="card-close" aria-label="Закрыть"><i data-lucide="x"></i></button>' +
-      (d.photo ? '<img src="' + escapeAttr(d.photo) + '" alt="">' : '') +
-      '<div><b>' + escapeHtml(d.title || 'Объявление') + '</b></div>' + rows +
-      '<p><a href="' + escapeAttr(d.url) + '" rel="noopener" target="_blank">Открыть на Авито →</a></p>';
+    var html = '<button class="close" id="card-close" aria-label="Закрыть"><i data-lucide="x"></i></button>';
+    if (d.photo) html += '<img class="photo" src="' + escapeAttr(d.photo) + '" alt="">';
+
+    // шапка: цена объявления + ЖК, адрес — вторично
+    html += '<div class="price-row"><span class="price">' + fmtRub(d.price) + '</span>' +
+      (d.complex ? '<span class="jk-badge">' + escapeHtml(d.complex) + '</span>' : '') + '</div>';
+    var meta = [];
+    if (d.address) meta.push(escapeHtml(d.address));
+    if (d.studio) meta.push('студия');
+    else if (d.rooms != null) meta.push(d.rooms + '-к');
+    if (d.area != null) meta.push(d.area + ' м²');
+    if (d.floor != null) meta.push('эт. ' + d.floor + (d.floorsTotal ? '/' + d.floorsTotal : ''));
+    html += '<div class="addr">' + meta.join(' · ') + '</div><hr>';
+
+    // ключевой блок: ожидаемая цена сдачи + вилка p25–p75 (оценка #64).
+    // Ключевой сценарий — по меблировке объявления; вторая строка —
+    // альтернативный сценарий. Нет данных — прочерк с объяснением.
+    var furn = { name: 'С мебелью', med: d.rentMedianFurnished, p25: d.rentP25Furnished, p75: d.rentP75Furnished,
+      comps: d.compsFurnished, y: d.yieldFurnished, cls: 's-furn' };
+    var unf = { name: 'Без мебели', med: d.rentMedianUnfurnished, p25: d.rentP25Unfurnished, p75: d.rentP75Unfurnished,
+      comps: d.compsUnfurnished, y: d.yieldUnfurnished, cls: 's-unfurn' };
+    var key = d.inputFurnishing === 'furnished' ? furn : unf;
+    if (key.med == null && furn.med != null) key = furn;   // своего сценария нет — показываем доступный
+    else if (key.med == null && unf.med != null) key = unf;
+    if (furn.med == null && unf.med == null) {
+      var why = d.dealType === 'rent_long'
+        ? 'оценка окупаемости считается для объявлений о продаже'
+        : 'по этому ЖК нет арендных данных — расчёт не выполнен';
+      html += '<div class="key-data"><div class="lbl">Ожидаемая цена сдачи</div>' +
+        '<div class="main">—</div><div class="range-n">' + escapeHtml(why) + '</div></div>';
+    } else {
+      html += '<div class="key-data"><div class="lbl">Ожидаемая цена сдачи (' +
+        (key.name === 'Без мебели' ? 'без мебели' : 'с мебелью') + ')</div>' +
+        '<div class="main">' + fmtRub(key.med) + '/мес</div>' +
+        '<div class="range-row"><span class="range">' + fmtRub(key.p25) + ' – ' + fmtRub(key.p75) + '</span>' +
+        '<span class="range-n"> · p25–p75' + (key.comps ? ' · ' + key.comps + ' аналогов ЖК' : '') + '</span></div></div>';
+      // сценарии: обе строки (доступные)
+      var scen = '';
+      [furn, unf].forEach(function (sc) {
+        if (sc.med == null) return;
+        var years = sc.y != null ? (100 / sc.y).toFixed(1) : '—';
+        scen += '<div class="row ' + sc.cls + '"><span class="sdot"></span>' + sc.name + ': ' +
+          fmtRub(sc.med) + ' · ' + (sc.y != null ? sc.y.toFixed(1) + '%' : '—') + ' · ' + years + ' лет</div>';
+      });
+      if (scen) html += '<div class="scenarios">' + scen + '</div>';
+      html += '<div class="muted">Полная стоимость: ' +
+        (d.totalCostFurnished != null ? 'с мебелью ' + fmtRub(d.totalCostFurnished) : '') +
+        (d.totalCostFurnished != null && d.totalCostUnfurnished != null ? ' · ' : '') +
+        (d.totalCostUnfurnished != null ? 'без мебели ' + fmtRub(d.totalCostUnfurnished) : '') +
+        (d.confidence ? ' · уверенность ' + escapeHtml(d.confidence) : '') + '</div>';
+    }
+
+    html += '<a class="avito" href="' + escapeAttr(d.url) + '" rel="noopener" target="_blank">Открыть на Авито →</a>';
+    card.innerHTML = html;
     card.style.display = 'block';
     document.getElementById('card-close').onclick = hideCard;
     if (window.lucide) window.lucide.createIcons();
@@ -233,6 +289,7 @@
     metric = b.dataset.metric;
     localStorage.setItem('mapMetric', metric);
     renderMetricButtons();
+    buildLegend(); // легенда = те же пороги, что красят точки
     renderMarks(); // пересобрать пины и кластеры с новой метрикой
   });
   renderMetricButtons();
@@ -261,26 +318,90 @@
 
   if (window.lucide) window.lucide.createIcons();
 
-  // Легенда: сворачиваемая, диапазоны и цвета — из MAP_THRESHOLDS.
+  // Бургер-навигация (#108): список разделов в одном месте, легко
+  // расширять; цели ЖК/Блог/Тарифы — фреймы #102/#103/#104 (заглушки).
+  var NAV = [
+    { href: '/', label: 'Главная', icon: 'home' },
+    { href: '/map', label: 'Карта', icon: 'map' },
+    { href: '#', label: 'ЖК-аналитика', icon: 'building-2' },
+    { href: '#', label: 'Блог', icon: 'newspaper' },
+    { href: '#', label: 'Тарифы', icon: 'credit-card' },
+    { href: '#', label: 'Мои объекты', icon: 'folder-open' }
+  ];
+  var drawer = document.getElementById('drawer');
+  var drawerOverlay = document.getElementById('drawer-overlay');
+  (function buildDrawer() {
+    var here = location.pathname;
+    var nav = document.getElementById('drawer-nav');
+    var html = '';
+    NAV.forEach(function (item) {
+      var active = item.href !== '#' && here === item.href;
+      html += '<a href="' + item.href + '"' + (active ? ' class="active" aria-current="page"' : '') + '>' +
+        '<i data-lucide="' + item.icon + '"></i>' + item.label + '</a>';
+    });
+    nav.innerHTML = html;
+  })();
+  function toggleDrawer(open) {
+    drawer.classList.toggle('open', open);
+    drawerOverlay.classList.toggle('open', open);
+  }
+  document.getElementById('burger').addEventListener('click', function () {
+    toggleDrawer(!drawer.classList.contains('open'));
+    if (window.lucide) window.lucide.createIcons();
+  });
+  drawerOverlay.addEventListener('click', function () { toggleDrawer(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') toggleDrawer(false);
+  });
+
+  // Легенда (#108): следует выбранной метрике — те же пороги, что красят
+  // точки; строка-примечание о правиле агрегации кластера.
   var legendHead = document.getElementById('legend-head');
   var legendBody = document.getElementById('legend-body');
-  (function buildLegend() {
+  var LEGEND_TITLES = { price: 'Цена, ₽', cost: 'Полная стоимость, ₽', yield: 'Доходность, % год' };
+  function legendLabel(m, lo, hi) {
+    var f = m.fmtShort;
+    if (lo == null) return '≤ ' + f(hi);
+    if (hi == null) return '> ' + f(lo);
+    return f(lo) + '–' + f(hi);
+  }
+  function buildLegend() {
+    var m = METRICS[metric];
+    var b = BOUNDS[metric] || [];
+    var n = b.length; // диапазонов n+1; b0 — граница «хуже/лучше»
     var rows = '';
-    for (var i = 0; i <= B.length; i++) {
-      var lo = i === 0 ? null : B[i - 1];
-      var hi = i === B.length ? null : B[i];
-      var label = lo == null ? ('< ' + hi + ' %')
-        : (hi == null ? ('≥ ' + lo + ' %') : (lo + '–' + hi + ' %'));
-      rows += '<div><span class="dot c' + i + '"></span>' + label + '</div>';
+    // лучший диапазон — первый в легенде: для цены «≤ b0», для доходности «≥ bLast»
+    for (var i = n; i >= 0; i--) {
+      var cls = 'b' + i;
+      var label;
+      if (metric === 'yield') {
+        var lo = i === 0 ? null : b[i - 1];
+        var hi = i === n ? null : b[i];
+        label = legendLabelYield(lo, hi);
+      } else {
+        // цена/стоимость: i=n → «≤ b0» (лучший), i=0 → «> bLast» (худший)
+        if (i === n) label = '≤ ' + m.fmtShort(b[0]);
+        else if (i === 0) label = '> ' + m.fmtShort(b[n - 1]);
+        else label = m.fmtShort(b[n - i - 1]) + '–' + m.fmtShort(b[n - i]);
+      }
+      rows += '<div><span class="ldot ' + cls + '"></span>' + label + '</div>';
     }
-    rows += '<div><span class="dot gray"></span>нет данных</div>';
+    rows += '<div><span class="ldot gray"></span>нет данных</div>';
+    rows += '<div class="note">в кластере — ' + (m.agg === 'max' ? 'максимум' : 'минимум') + '</div>';
     legendBody.innerHTML = rows;
-  })();
+    legendHead.textContent = LEGEND_TITLES[metric] + ' ▾';
+  }
+  function legendLabelYield(lo, hi) {
+    if (lo == null) return '< ' + hi + ' %';
+    if (hi == null) return '≥ ' + lo + ' %';
+    return lo + '–' + hi + ' %';
+  }
   legendHead.onclick = function () {
     var open = legendBody.style.display !== 'none';
     legendBody.style.display = open ? 'none' : 'block';
-    legendHead.textContent = 'Доходность, % годовых ' + (open ? '▸' : '▾');
+    legendHead.textContent = LEGEND_TITLES[metric] + (open ? ' ▸' : ' ▾');
   };
+  buildLegend();
 
   // Фильтры: состояние в URL + localStorage; применяются на бэкенде
   // (до кластеризации — скрытые объекты в кластеры не попадают).

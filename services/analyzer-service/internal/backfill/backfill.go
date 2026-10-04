@@ -30,10 +30,14 @@ type Row struct {
 	YieldUnfurnished *float64
 	TotalCostUnfurn  *int64
 	RentMedianUnfurn *float64
+	RentP25Unfurn    *float64
+	RentP75Unfurn    *float64
 	CompsUnfurn      *int
 	YieldFurnished   *float64
 	TotalCostFurn    *int64
 	RentMedianFurn   *float64
+	RentP25Furn      *float64
+	RentP75Furn      *float64
 	CompsFurn        *int
 	ClusterN         *int
 	Confidence       string
@@ -92,11 +96,15 @@ func RowFromReport(rep *evaluate.Report) Row {
 			row.YieldUnfurnished = &s.YieldPct
 			row.TotalCostUnfurn = &s.PriceUsed
 			row.RentMedianUnfurn = &s.RentMedian
+			row.RentP25Unfurn = &s.RentP25
+			row.RentP75Unfurn = &s.RentP75
 			row.CompsUnfurn = &s.Comps
 		case row.YieldFurnished == nil && (s.Name == "с мебелью" || s.Name == "с мебелью (после меблировки)"):
 			row.YieldFurnished = &s.YieldPct
 			row.TotalCostFurn = &s.PriceUsed
 			row.RentMedianFurn = &s.RentMedian
+			row.RentP25Furn = &s.RentP25
+			row.RentP75Furn = &s.RentP75
 			row.CompsFurn = &s.Comps
 		}
 	}
@@ -200,28 +208,32 @@ func (r *Runner) upsert(ctx context.Context, row Row) error {
 	_, err := r.Pool.Exec(ctx, `
 		INSERT INTO ad_roi_results (
 			ad_id, status, input_furnishing,
-			yield_unfurnished_pct, total_cost_unfurnished, rent_median_unfurnished, comps_unfurnished,
-			yield_furnished_pct, total_cost_furnished, rent_median_furnished, comps_furnished,
+			yield_unfurnished_pct, total_cost_unfurnished, rent_median_unfurnished, rent_p25_unfurnished, rent_p75_unfurnished, comps_unfurnished,
+			yield_furnished_pct, total_cost_furnished, rent_median_furnished, rent_p25_furnished, rent_p75_furnished, comps_furnished,
 			cluster_n, confidence, notice, computed_at
-		) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14, now())
+		) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18, now())
 		ON CONFLICT (ad_id) DO UPDATE SET
 			status = EXCLUDED.status,
 			input_furnishing = EXCLUDED.input_furnishing,
 			yield_unfurnished_pct = EXCLUDED.yield_unfurnished_pct,
 			total_cost_unfurnished = EXCLUDED.total_cost_unfurnished,
 			rent_median_unfurnished = EXCLUDED.rent_median_unfurnished,
+			rent_p25_unfurnished = EXCLUDED.rent_p25_unfurnished,
+			rent_p75_unfurnished = EXCLUDED.rent_p75_unfurnished,
 			comps_unfurnished = EXCLUDED.comps_unfurnished,
 			yield_furnished_pct = EXCLUDED.yield_furnished_pct,
 			total_cost_furnished = EXCLUDED.total_cost_furnished,
 			rent_median_furnished = EXCLUDED.rent_median_furnished,
+			rent_p25_furnished = EXCLUDED.rent_p25_furnished,
+			rent_p75_furnished = EXCLUDED.rent_p75_furnished,
 			comps_furnished = EXCLUDED.comps_furnished,
 			cluster_n = EXCLUDED.cluster_n,
 			confidence = EXCLUDED.confidence,
 			notice = EXCLUDED.notice,
 			computed_at = now()`,
 		row.AdID, row.Status, textOrNil(row.InputFurnishing),
-		row.YieldUnfurnished, row.TotalCostUnfurn, row.RentMedianUnfurn, row.CompsUnfurn,
-		row.YieldFurnished, row.TotalCostFurn, row.RentMedianFurn, row.CompsFurn,
+		row.YieldUnfurnished, row.TotalCostUnfurn, row.RentMedianUnfurn, row.RentP25Unfurn, row.RentP75Unfurn, row.CompsUnfurn,
+		row.YieldFurnished, row.TotalCostFurn, row.RentMedianFurn, row.RentP25Furn, row.RentP75Furn, row.CompsFurn,
 		row.ClusterN, textOrNil(row.Confidence), row.Notice)
 	return err
 }

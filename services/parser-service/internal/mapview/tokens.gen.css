@@ -29,6 +29,8 @@
   --color-text-muted: #9CA3AF;
   --color-text-primary: #1F2937;
   --color-text-secondary: #6B7280;
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FFFBEB;
   --map-bucket-0: #b71c1c;
   --map-bucket-1: #d84315;
   --map-bucket-2: #ea7600;
@@ -74,6 +76,8 @@
   --color-text-muted: #6B7A73;
   --color-text-primary: #F1F7F4;
   --color-text-secondary: #9FB2AA;
+  --color-warning: #FBBF24;
+  --color-warning-bg: #2A2114;
   --map-bucket-0: #e07b72;
   --map-bucket-1: #f08c5a;
   --map-bucket-2: #ffab40;
@@ -120,6 +124,8 @@
   --color-text-muted: #6B7A73;
   --color-text-primary: #F1F7F4;
   --color-text-secondary: #9FB2AA;
+  --color-warning: #FBBF24;
+  --color-warning-bg: #2A2114;
   --map-bucket-0: #e07b72;
   --map-bucket-1: #f08c5a;
   --map-bucket-2: #ffab40;

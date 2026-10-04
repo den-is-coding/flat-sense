@@ -51,9 +51,9 @@ func TestMatchByName(t *testing.T) {
 	}
 	for _, c := range cases {
 		l := &evaluate.Listing{
-			Address:             "Санкт-Петербург, Лиговский пр., 50",
-			ResidentialComplex:  c.label,
-			Description:         c.desc,
+			Address:            "Санкт-Петербург, Лиговский пр., 50",
+			ResidentialComplex: c.label,
+			Description:        c.desc,
 		}
 		got := Match(l)
 		name := ""
