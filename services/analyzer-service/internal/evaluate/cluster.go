@@ -1,0 +1,178 @@
+package evaluate
+
+import (
+	"fmt"
+	"sort"
+)
+
+// RentStats — сводка арендного кластера (цены в рублях/мес).
+type RentStats struct {
+	N            int     `json:"n"`            // всего аналогов в кластере
+	NFurnished   int     `json:"nFurnished"`   // из них с мебелью
+	NUnfurnished int     `json:"nUnfurnished"` // без мебели
+	Median       float64 `json:"median"`       // медиана кластера целиком
+	P25          float64 `json:"p25"`
+	P75          float64 `json:"p75"`
+	Min          float64 `json:"min"`
+	Max          float64 `json:"max"`
+}
+
+// Cluster — арендный кластер: студии того же ЖК/дома (правила #55:
+// локация → студии). Все студии ЖК попадают в кластер без фильтра по
+// площади — при малых пулах он уничтожает выборку; фактический разброс
+// площадей отдаётся на страницу как справка.
+type Cluster struct {
+	HouseKey  string    `json:"houseKey"`
+	Comps     []Listing `json:"-"`
+	Furnished []Listing `json:"-"`
+	Unfurn    []Listing `json:"-"`
+}
+
+// AreaRange — фактический разброс площадей аналогов [мин, макс].
+func (c *Cluster) AreaRange() (lo, hi float64) {
+	for i := range c.Comps {
+		a := c.Comps[i].TotalArea
+		if lo == 0 || a < lo {
+			lo = a
+		}
+		if a > hi {
+			hi = a
+		}
+	}
+	return lo, hi
+}
+
+// BuildCluster отбирает из comps студии того же ЖК/дома и разбивает их
+// по мебели (неопределённые остаются только в Comps — в строгие группы
+// сценариев они не попадают). Совпадение локации: пересечение ключей
+// (дом/адрес/алиасы корпусов ЖК) ИЛИ расстояние по координатам не больше
+// radiusM (если координаты есть у обоих).
+func BuildCluster(comps []Listing, input *Listing, radiusM int) Cluster {
+	c := Cluster{HouseKey: input.HouseKey()}
+	inputKeys := input.Keys()
+	for i := range comps {
+		r := &comps[i]
+		if !r.IsStudio() || r.Price <= 0 {
+			continue
+		}
+		if !matchesKeys(r.Keys(), inputKeys) && !withinRadius(input, r, radiusM) {
+			continue
+		}
+		c.Comps = append(c.Comps, *r)
+		f, _ := DetectFurnishing(r.Description, r.Params)
+		switch f {
+		case Furnished:
+			c.Furnished = append(c.Furnished, *r)
+		case Unfurnished:
+			c.Unfurn = append(c.Unfurn, *r)
+		}
+	}
+	return c
+}
+
+// withinRadius — радиус-сопоставление (фолбэк, когда ключей нет, но есть
+// координаты у обеих сторон; радиус из Config, по умолчанию 500 м).
+func withinRadius(a, b *Listing, radiusM int) bool {
+	if radiusM <= 0 || !a.hasCoords() || !b.hasCoords() {
+		return false
+	}
+	return a.distanceM(b) <= float64(radiusM)
+}
+
+// Stats — сводка по кластеру.
+func (c *Cluster) Stats() RentStats {
+	s := RentStats{N: len(c.Comps), NFurnished: len(c.Furnished), NUnfurnished: len(c.Unfurn)}
+	if s.N == 0 {
+		return s
+	}
+	prices := make([]float64, 0, s.N)
+	for i := range c.Comps {
+		prices = append(prices, float64(c.Comps[i].Price))
+	}
+	sort.Float64s(prices)
+	s.Median = quantile(prices, 0.5)
+	s.P25 = quantile(prices, 0.25)
+	s.P75 = quantile(prices, 0.75)
+	s.Min = prices[0]
+	s.Max = prices[len(prices)-1]
+	return s
+}
+
+// groupMedian — медиана цены строгой группы (furnished/unfurnished).
+func (c *Cluster) groupMedian(l []Listing) (float64, bool) {
+	if len(l) == 0 {
+		return 0, false
+	}
+	prices := make([]float64, 0, len(l))
+	for i := range l {
+		prices = append(prices, float64(l[i].Price))
+	}
+	sort.Float64s(prices)
+	return quantile(prices, 0.5), true
+}
+
+// quantile — перцентиль с линейной интерполяцией (как в Excel/numpy).
+func quantile(sorted []float64, q float64) float64 {
+	n := len(sorted)
+	if n == 0 {
+		return 0
+	}
+	if n == 1 {
+		return sorted[0]
+	}
+	pos := q * float64(n-1)
+	lo := int(pos)
+	hi := lo + 1
+	if hi >= n {
+		return sorted[n-1]
+	}
+	return sorted[lo] + (pos-float64(lo))*(sorted[hi]-sorted[lo])
+}
+
+// Scenario — одна строка сценария оценки.
+type Scenario struct {
+	Name           string  `json:"name"` // «без мебели» | «с мебелью»
+	Applicable     bool    `json:"applicable"`
+	SkippedReason  string  `json:"skippedReason,omitempty"`
+	RentMedian     float64 `json:"rentMedian"` // ₽/мес
+	RentP25        float64 `json:"rentP25"`
+	RentP75        float64 `json:"rentP75"`
+	Comps          int     `json:"comps"`          // число аналогов сценария
+	PriceUsed      int64   `json:"priceUsed"`      // итоговая стоимость в расчёте
+	FurnishingCost int64   `json:"furnishingCost"` // надбавка на мебель (0 — без неё)
+	DealCosts      int64   `json:"dealCosts"`      // транзакционные издержки (риэлтор + титул + оформление)
+	PaybackYears   float64 `json:"paybackYears"`   // окупаемость, лет
+	YieldPct       float64 `json:"yieldPct"`       // доходность, % в год
+}
+
+// ComputeScenario — арифметика одного сценария (чистая функция, тестируется
+// table-driven): итоговая стоимость = цена + меблировка + издержки сделки;
+// аренда = медиана группы; окупаемость = стоимость / (аренда × 12);
+// доходность = аренда × 12 / стоимость × 100%.
+func ComputeScenario(name string, rentMedian, rentP25, rentP75 float64, comps int, price, furnishingCost, dealCosts int64) Scenario {
+	priceUsed := price + furnishingCost + dealCosts
+	s := Scenario{
+		Name:           name,
+		Applicable:     comps > 0 && rentMedian > 0 && priceUsed > 0,
+		RentMedian:     rentMedian,
+		RentP25:        rentP25,
+		RentP75:        rentP75,
+		Comps:          comps,
+		PriceUsed:      priceUsed,
+		FurnishingCost: furnishingCost,
+		DealCosts:      dealCosts,
+	}
+	if !s.Applicable {
+		s.SkippedReason = "нет аналогов с определённой мебелью в кластере"
+		return s
+	}
+	annual := rentMedian * 12
+	s.PaybackYears = float64(priceUsed) / annual
+	s.YieldPct = annual / float64(priceUsed) * 100
+	return s
+}
+
+// warningMinCluster — предупреждение о малом кластере.
+func warningMinCluster(n, min int) string {
+	return fmt.Sprintf("в кластере мало аналогов (%d < %d) — оценка ненадёжна", n, min)
+}

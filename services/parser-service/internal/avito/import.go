@@ -99,7 +99,7 @@ func developerName(raw json.RawMessage) string {
 }
 
 // listingFromImportItem — маппинг карточки дампа в Listing.
-func listingFromImportItem(it ImportItem, sourceTask string) (*Listing, error) {
+func listingFromImportItem(it ImportItem, sourceTask string, kind DealKind) (*Listing, error) {
 	if it.AvitoID == 0 {
 		return nil, fmt.Errorf("avito_id is required")
 	}
@@ -108,7 +108,7 @@ func listingFromImportItem(it ImportItem, sourceTask string) (*Listing, error) {
 		URL:        "https://www.avito.ru" + it.URL,
 		URLPath:    it.URL,
 		Category:   "kvartiry",
-		DealType:   KindSale,
+		DealType:   kind,
 		Title:      it.Title,
 		Price:      it.Price,
 		Currency:   "RUB",
@@ -198,6 +198,21 @@ func listingFromImportItem(it ImportItem, sourceTask string) (*Listing, error) {
 	return l, nil
 }
 
+// dealKindFromQuery — тип сделки из запроса кампании (meta.query):
+// «аренда (длительный срок)» → rent_long, «посуточно» → rent_daily,
+// остальное — продажа.
+func dealKindFromQuery(query string) DealKind {
+	q := strings.ToLower(strings.ReplaceAll(query, "\u00a0", " "))
+	switch {
+	case strings.Contains(q, "посуточно"):
+		return KindRentDaily
+	case strings.Contains(q, "аренда"):
+		return KindRentLong
+	default:
+		return KindSale
+	}
+}
+
 // ImportListings разбирает дамп кампании и возвращает готовые к upsert записи.
 // Карточки без avito_id пропускаются; исходный JSON каждой карточки
 // сохраняется в Listing.Raw.
@@ -206,6 +221,11 @@ func ImportListings(data []byte, sourceTask string) ([]*Listing, error) {
 	if err := json.Unmarshal(data, &dump); err != nil {
 		return nil, fmt.Errorf("parse dump: %w", err)
 	}
+	var meta struct {
+		Query string `json:"query"`
+	}
+	_ = json.Unmarshal(dump.Meta, &meta)
+	kind := dealKindFromQuery(meta.Query)
 	var rawItems []json.RawMessage
 	if err := json.Unmarshal(data, &struct {
 		Items *[]json.RawMessage `json:"items"`
@@ -217,7 +237,7 @@ func ImportListings(data []byte, sourceTask string) ([]*Listing, error) {
 		if idx < len(rawItems) {
 			it.Raw = rawItems[idx]
 		}
-		l, err := listingFromImportItem(it, sourceTask)
+		l, err := listingFromImportItem(it, sourceTask, kind)
 		if err != nil {
 			continue
 		}
