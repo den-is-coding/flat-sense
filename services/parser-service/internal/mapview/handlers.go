@@ -214,8 +214,10 @@ const pageHTML = `<!doctype html>
  .dot.c0{background:#b71c1c}.dot.c1{background:#d84315}.dot.c2{background:#ea7600}
  .dot.c3{background:#c79500}.dot.c4{background:#9e9d24}.dot.c5{background:#558b2f}.dot.c6{background:#1b5e20}
  .dot.gray{background:#9e9e9e}
- .pin{display:flex;align-items:center;justify-content:center;border-radius:13px;border:2px solid #fff;
-   box-shadow:0 1px 4px rgba(0,0,0,.4);font-size:11px;font-weight:600;color:#fff;white-space:nowrap}
+ .pin-wrap{transform:translate(-50%,-50%)} /* центровка метки любой ширины на точке */
+ .pin{display:flex;align-items:center;justify-content:center;border-radius:17px;border:2px solid #fff;
+   box-shadow:0 1px 4px rgba(0,0,0,.4);font-size:12px;font-weight:600;color:#fff;white-space:nowrap;
+   min-width:44px;height:30px;padding:0 10px;box-sizing:border-box}
  .pin.c0{background:#b71c1c}.pin.c1{background:#d84315}.pin.c2{background:#ea7600}
  .pin.c3{background:#c79500}.pin.c4{background:#9e9d24}.pin.c5{background:#558b2f}.pin.c6{background:#1b5e20}
  .pin.gray{background:#9e9e9e}
@@ -226,8 +228,8 @@ const pageHTML = `<!doctype html>
  .cluster-pin.c3{background:#c79500}.cluster-pin.c4{background:#9e9d24}
  .cluster-pin.c5{background:#558b2f}.cluster-pin.c6{background:#1b5e20}
  .cluster-pin.gray{background:#9e9e9e}
- .cluster-pin .n{font-size:14px;line-height:1.1}
- .cluster-pin .v{font-size:10px;font-weight:500;opacity:.95}
+ .cluster-pin .n{font-size:16px;line-height:1.15}
+ .cluster-pin .v{font-size:12px;font-weight:600;opacity:.95;line-height:1.1;max-width:92%;overflow:hidden}
  .leaflet-control-zoom a{width:44px !important;height:44px !important;line-height:44px !important;font-size:20px !important}
  @media (max-width:640px){ .card{left:10px;width:auto;top:auto;height:55vh} .legend{display:none} }
 </style>

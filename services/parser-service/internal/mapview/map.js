@@ -11,18 +11,21 @@
     price: {
       label: 'Цена', agg: 'min',
       value: function (d) { return d.price; },
-      fmt: function (v) { return fmtRub(v); }
+      fmt: function (v) { return fmtRub(v); },
+      fmtShort: function (v) { return fmtRubCompact(v); }
     },
     cost: {
       label: 'Полная стоимость', agg: 'min',
       // полная стоимость = с мебелью, при отсутствии — без мебели
       value: function (d) { return d.totalCostFurnished != null ? d.totalCostFurnished : d.totalCostUnfurnished; },
-      fmt: function (v) { return fmtRub(v); }
+      fmt: function (v) { return fmtRub(v); },
+      fmtShort: function (v) { return fmtRubCompact(v); }
     },
     yield: {
       label: 'Доходность', agg: 'max',
       value: function (d) { return d.yieldFurnished != null ? d.yieldFurnished : d.yieldUnfurnished; },
-      fmt: function (v) { return v == null ? '—' : v.toFixed(1) + ' %'; }
+      fmt: function (v) { return v == null ? '—' : v.toFixed(1) + ' %'; },
+      fmtShort: function (v) { return v == null ? '—' : v.toFixed(1) + ' %'; }
     }
   };
   var metric = localStorage.getItem('mapMetric') || 'price';
@@ -69,9 +72,11 @@
       var m = METRICS[metric];
       var agg = aggregate(all, m);
       var yMax = aggregateYield(all); // кластер красится по максимуму доходности
-      var size = Math.min(58, 34 + Math.min(n, 30));
+      // крупный круг: значение выбранной метрики должно помещаться
+      // внутри с полями (компактный формат — «7,5 млн ₽»)
+      var size = Math.min(92, 46 + n * 1.6);
       var html = '<div class="cluster-pin ' + colorClass(yMax) + '" style="width:' + size + 'px;height:' + size + 'px">' +
-        '<span class="n">' + n + '</span><span class="v">' + m.fmt(agg) + '</span></div>';
+        '<span class="n">' + n + '</span><span class="v">' + m.fmtShort(agg) + '</span></div>';
       return L.divIcon({ html: html, className: '', iconSize: [size, size] });
     }
   });
@@ -126,15 +131,24 @@
     return out + '\u00a0₽';
   }
 
+  // компактный формат для кружков кластеров («7,5 млн ₽», «850 тыс ₽»),
+  // чтобы значение помещалось внутри окружности с полями
+  function fmtRubCompact(v) {
+    if (v == null) return '—';
+    if (v >= 1e6) return (v / 1e6).toFixed(1).replace('.', ',') + '\u00a0млн';
+    if (v >= 1e3) return Math.round(v / 1e3) + '\u00a0тыс';
+    return Math.round(v) + '\u00a0₽';
+  }
+
   function pinIcon(d) {
     var y = d.yieldFurnished != null ? d.yieldFurnished : d.yieldUnfurnished;
     var m = METRICS[metric];
     var text = m.fmt(m.value(d));
+    // обёртка с translate(-50%,-50%) центрирует метку любой ширины на точке
     return L.divIcon({
       className: '',
-      html: '<div class="pin ' + colorClass(y) + '" style="min-width:34px;height:26px;padding:0 6px">' + text + '</div>',
-      iconSize: null,
-      iconAnchor: [17, 13]
+      html: '<div class="pin-wrap"><div class="pin ' + colorClass(y) + '">' + text + '</div></div>',
+      iconSize: null
     });
   }
 
