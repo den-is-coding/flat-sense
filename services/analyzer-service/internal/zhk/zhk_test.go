@@ -66,6 +66,19 @@ func TestMatchByName(t *testing.T) {
 	}
 }
 
+// Адрес из реестра главнее упоминания другого ЖК в описании: у 76к7
+// (Сенат) в описании рекламный текст «Титул в Московском».
+func TestAddressBeatsNameMention(t *testing.T) {
+	l := &evaluate.Listing{
+		Address:     "Санкт-Петербург, Кубинская ул., 76к7",
+		Description: "«Титул в Московском» — это жизнь в одном из самых престижных районов",
+	}
+	c := Match(l)
+	if c == nil || c.Name != "Сенат" {
+		t.Fatalf("Match = %v, want Сенат (address wins over description mention)", c)
+	}
+}
+
 func TestEnrichAliases(t *testing.T) {
 	// Аренда в корпусе 42к1 получает адреса всех корпусов Граффити —
 	// студия продажи в 42к2 кластеризуется с ней на уровне ЖК.
