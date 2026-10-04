@@ -53,9 +53,40 @@
       opts: { maxNativeZoom: 16 }
     }
   };
-  var basemap = localStorage.getItem('mapBasemap');
-  if (!BASEMAPS[basemap]) basemap = 'osm';
-  var tileLayer = makeTiles(basemap).addTo(map);
+  // Тема (issue #88): 'auto' (системная) | 'light' | 'dark' — ручной
+  // выбор в localStorage, по умолчанию системная. Подложка карты следует
+  // эффективной теме; маркеры/UI перекрашиваются CSS-переменными сами.
+  var theme = localStorage.getItem('mapTheme') || 'auto';
+  if (['auto', 'light', 'dark'].indexOf(theme) < 0) theme = 'auto';
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  var themeBtn = document.getElementById('theme-toggle');
+  var THEME_META = {
+    auto: { next: 'light', icon: 'monitor', label: 'Системная' },
+    light: { next: 'dark', icon: 'sun', label: 'Светлая' },
+    dark: { next: 'auto', icon: 'moon', label: 'Тёмная' }
+  };
+
+  function effectiveDark() {
+    return theme === 'dark' || (theme === 'auto' && darkQuery.matches);
+  }
+
+  function applyTheme() {
+    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    // подложка переключается вместе с темой (ручной выбор подложки
+    // работает, но перекрывается следующим переключением темы)
+    basemap = effectiveDark() ? 'dark' : 'light';
+    localStorage.setItem('mapBasemap', basemap);
+    if (tileLayer) map.removeLayer(tileLayer);
+    tileLayer = makeTiles(basemap).addTo(map);
+    if (basemapPanel) renderBasemapButtons();
+    if (themeBtn) renderThemeButton();
+  }
+
+  var basemap;
+  var tileLayer;
+  var basemapPanel = document.getElementById('basemap-panel');
+  applyTheme();
   map.fitBounds([[59.83, 30.15], [60.02, 30.45]]); // СПб по умолчанию
 
   function makeTiles(key) {
@@ -106,7 +137,6 @@
   // Диапазоны доходности: N границ → N+1 диапазонов, шкала красный→зелёный.
   // Индекс диапазона = число границ, которые значение перешагнуло.
   var B = (window.MAP_THRESHOLDS && window.MAP_THRESHOLDS.boundaries) || [4.1, 4.55, 4.75, 5.05, 5.35, 5.65];
-  var BUCKET_COLORS = ['#b71c1c', '#d84315', '#ea7600', '#c79500', '#9e9d24', '#558b2f', '#1b5e20'];
 
   function bucketIndex(y) {
     if (y == null) return -1;
@@ -174,12 +204,13 @@
     rows += '<div>Доходность с мебелью: <b>' + (d.yieldFurnished != null ? d.yieldFurnished.toFixed(1) + ' %' : '—') + '</b></div>';
     rows += '<div>Доходность без мебели: ' + (d.yieldUnfurnished != null ? d.yieldUnfurnished.toFixed(1) + ' %' : '—') + '</div>';
     if (d.confidence) rows += '<div class="muted">Уверенность оценки: ' + escapeHtml(d.confidence) + '</div>';
-    card.innerHTML = '<button class="close" id="card-close" aria-label="Закрыть">✕</button>' +
+    card.innerHTML = '<button class="close" id="card-close" aria-label="Закрыть"><i data-lucide="x"></i></button>' +
       (d.photo ? '<img src="' + escapeAttr(d.photo) + '" alt="">' : '') +
       '<div><b>' + escapeHtml(d.title || 'Объявление') + '</b></div>' + rows +
       '<p><a href="' + escapeAttr(d.url) + '" rel="noopener" target="_blank">Открыть на Авито →</a></p>';
     card.style.display = 'block';
     document.getElementById('card-close').onclick = hideCard;
+    if (window.lucide) window.lucide.createIcons();
   }
   function hideCard() { card.style.display = 'none'; }
   document.addEventListener('click', function (e) {
@@ -215,7 +246,6 @@
   renderMetricButtons();
 
   // Переключатель подложки: выбор в localStorage, применяется на лету.
-  var basemapPanel = document.getElementById('basemap-panel');
   function renderBasemapButtons() {
     basemapPanel.querySelectorAll('button').forEach(function (b) {
       b.classList.toggle('active', b.dataset.basemap === basemap);
@@ -231,6 +261,25 @@
     renderBasemapButtons();
   });
   renderBasemapButtons();
+
+  // Переключатель темы: цикл auto → light → dark; подпись и иконка lucide
+  // (THEME_META объявлена в блоке темы — до первого applyTheme).
+  function renderThemeButton() {
+    var meta = THEME_META[theme];
+    themeBtn.innerHTML = '<i data-lucide="' + meta.icon + '"></i>' + meta.label;
+    if (window.lucide) window.lucide.createIcons();
+  }
+  themeBtn.addEventListener('click', function () {
+    theme = THEME_META[theme].next;
+    localStorage.setItem('mapTheme', theme);
+    applyTheme();
+  });
+  // системная тема сменилась при auto — перекрашиваемся и меняем подложку
+  darkQuery.addEventListener('change', function () {
+    if (theme === 'auto') applyTheme();
+  });
+  renderThemeButton();
+  if (window.lucide) window.lucide.createIcons();
 
   // Легенда: сворачиваемая, диапазоны и цвета — из MAP_THRESHOLDS.
   var legendHead = document.getElementById('legend-head');

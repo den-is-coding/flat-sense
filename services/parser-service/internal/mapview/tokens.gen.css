@@ -1,0 +1,139 @@
+/* СГЕНЕРИРОВАНО scripts/gen-design-tokens.py из proto/auth-flow.pen —
+   НЕ ПРАВИТЬ ВРУЧНУЮ. Дизайн-файл — единственный источник токенов. */
+
+
+:root {
+  --color-accent: #10B981;
+  --color-accent-bg: #ECFDF5;
+  --color-accent-hover: #059669;
+  --color-accent-on: #FFFFFF;
+  --color-accent-ring: #A7F3D0;
+  --color-accent-soft: #A7F3D0;
+  --color-bg: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-border-strong: #CBD5CF;
+  --color-danger: #EF4444;
+  --color-danger-bg: #FEF2F2;
+  --font-body: Inter;
+  --font-heading: Inter;
+  --color-input-bg: #FFFFFF;
+  --color-overlay: #0F1A16;
+  --color-overlay-blur: #FFFFFFE6;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --radius-xl: 32px;
+  --color-success: #10B981;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F9FAFB;
+  --color-text-muted: #9CA3AF;
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
+  --map-bucket-0: #b71c1c;
+  --map-bucket-1: #d84315;
+  --map-bucket-2: #ea7600;
+  --map-bucket-3: #c79500;
+  --map-bucket-4: #9e9d24;
+  --map-bucket-5: #558b2f;
+  --map-bucket-6: #1b5e20;
+  --map-bucket-fg: #FFFFFF;
+  --map-bucket-fg-bright: #FFFFFF;
+  --map-bucket-gray: #9e9e9e;
+  --map-header-bg: #232A35;
+  --map-header-muted: #9AA4B2;
+  --map-header-text: #FFFFFF;
+  --map-pin-border: #FFFFFF;
+  --map-shadow: rgba(0, 0, 0, .25);
+  --map-shadow-lg: rgba(0, 0, 0, .25);
+}
+
+[data-theme="dark"] {
+  --color-accent: #34D399;
+  --color-accent-bg: #06281D;
+  --color-accent-hover: #10B981;
+  --color-accent-on: #042114;
+  --color-accent-ring: #10B981;
+  --color-accent-soft: #047857;
+  --color-bg: #0B1411;
+  --color-border: #24342E;
+  --color-border-strong: #3A4D44;
+  --color-danger: #F87171;
+  --color-danger-bg: #2A1414;
+  --font-body: Inter;
+  --font-heading: Inter;
+  --color-input-bg: #111C17;
+  --color-overlay: #000000;
+  --color-overlay-blur: #13201AE6;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --radius-xl: 32px;
+  --color-success: #34D399;
+  --color-surface: #13201A;
+  --color-surface-2: #1A2A22;
+  --color-text-muted: #6B7A73;
+  --color-text-primary: #F1F7F4;
+  --color-text-secondary: #9FB2AA;
+  --map-bucket-0: #e07b72;
+  --map-bucket-1: #f08c5a;
+  --map-bucket-2: #ffab40;
+  --map-bucket-3: #ffd54f;
+  --map-bucket-4: #d4ce46;
+  --map-bucket-5: #8bc34a;
+  --map-bucket-6: #66bb6a;
+  --map-bucket-fg: #F1F7F4;
+  --map-bucket-fg-bright: #13201A;
+  --map-bucket-gray: #7a8b83;
+  --map-header-bg: #0B1411;
+  --map-header-muted: #8FA39A;
+  --map-header-text: #F1F7F4;
+  --map-pin-border: #13201A;
+  --map-shadow: rgba(0, 0, 0, .6);
+  --map-shadow-lg: rgba(0, 0, 0, .7);
+}
+
+@media (prefers-color-scheme: dark) {
+:root:not([data-theme="light"]) {
+  --color-accent: #34D399;
+  --color-accent-bg: #06281D;
+  --color-accent-hover: #10B981;
+  --color-accent-on: #042114;
+  --color-accent-ring: #10B981;
+  --color-accent-soft: #047857;
+  --color-bg: #0B1411;
+  --color-border: #24342E;
+  --color-border-strong: #3A4D44;
+  --color-danger: #F87171;
+  --color-danger-bg: #2A1414;
+  --font-body: Inter;
+  --font-heading: Inter;
+  --color-input-bg: #111C17;
+  --color-overlay: #000000;
+  --color-overlay-blur: #13201AE6;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --radius-xl: 32px;
+  --color-success: #34D399;
+  --color-surface: #13201A;
+  --color-surface-2: #1A2A22;
+  --color-text-muted: #6B7A73;
+  --color-text-primary: #F1F7F4;
+  --color-text-secondary: #9FB2AA;
+  --map-bucket-0: #e07b72;
+  --map-bucket-1: #f08c5a;
+  --map-bucket-2: #ffab40;
+  --map-bucket-3: #ffd54f;
+  --map-bucket-4: #d4ce46;
+  --map-bucket-5: #8bc34a;
+  --map-bucket-6: #66bb6a;
+  --map-bucket-fg: #F1F7F4;
+  --map-bucket-fg-bright: #13201A;
+  --map-bucket-gray: #7a8b83;
+  --map-header-bg: #0B1411;
+  --map-header-muted: #8FA39A;
+  --map-header-text: #F1F7F4;
+  --map-pin-border: #13201A;
+  --map-shadow: rgba(0, 0, 0, .6);
+  --map-shadow-lg: rgba(0, 0, 0, .7);
+}
