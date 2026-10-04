@@ -169,6 +169,21 @@ func configFromEnv() evaluate.Config {
 			cfg.ClusterRadiusM = n
 		}
 	}
+	if v := os.Getenv("REALTOR_FEE_PCT"); v != "" {
+		if f, err := strconv.ParseFloat(v, 64); err == nil && f >= 0 {
+			cfg.RealtorFeePct = f
+		}
+	}
+	if v := os.Getenv("TITLE_INSURANCE_PCT"); v != "" {
+		if f, err := strconv.ParseFloat(v, 64); err == nil && f >= 0 {
+			cfg.TitleInsurancePct = f
+		}
+	}
+	if v := os.Getenv("DEAL_FIXED_COSTS_RUB"); v != "" {
+		if n, err := strconv.ParseInt(v, 10, 64); err == nil && n >= 0 {
+			cfg.DealFixedCostsRUB = n
+		}
+	}
 	return cfg
 }
 

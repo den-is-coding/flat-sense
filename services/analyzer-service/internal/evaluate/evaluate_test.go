@@ -111,12 +111,13 @@ func TestEvalUnfurnishedBothScenarios(t *testing.T) {
 	approxT(t, "rent median (без мебели)", unf.RentMedian, 27500, 1e-9)
 	approxT(t, "rent p25", unf.RentP25, 26750, 1e-9)
 	approxT(t, "rent p75", unf.RentP75, 29000, 1e-9)
-	if unf.Comps != 4 || unf.PriceUsed != 7_958_145 || unf.FurnishingCost != 0 {
+	if unf.Comps != 4 || unf.PriceUsed != 8_301_471 || unf.FurnishingCost != 0 || unf.DealCosts != 343_326 {
 		t.Fatalf("аргументы сценария 1: %+v", unf)
 	}
-	// 7 958 145 / (27 500 × 12) = 24.1156…
-	approxT(t, "payback", unf.PaybackYears, 7_958_145.0/330_000.0, 1e-9)
-	approxT(t, "yield", unf.YieldPct, 330_000.0/7_958_145.0*100, 1e-9)
+	// цена 7 958 145 + сделка 343 326 (4% = 318 326 + 25 000) = 8 301 471;
+	// годовая аренда 330 000 ₽: окупаемость 25.1560… лет
+	approxT(t, "payback", unf.PaybackYears, 8_301_471.0/330_000.0, 1e-9)
+	approxT(t, "yield", unf.YieldPct, 330_000.0/8_301_471.0*100, 1e-9)
 
 	if furn.Name != "с мебелью (после меблировки)" || !furn.Applicable {
 		t.Fatalf("сценарий 2: %+v", furn)
@@ -125,12 +126,12 @@ func TestEvalUnfurnishedBothScenarios(t *testing.T) {
 		t.Fatalf("компов с мебелью = %d, want 3", furn.Comps)
 	}
 	approxT(t, "rent median (с мебелью)", furn.RentMedian, 35000, 1e-9)
-	if furn.PriceUsed != 8_458_145 || furn.FurnishingCost != 500_000 {
+	if furn.PriceUsed != 8_801_471 || furn.FurnishingCost != 500_000 || furn.DealCosts != 343_326 {
 		t.Fatalf("надбавка: %+v", furn)
 	}
-	// 8 458 145 / (35 000 × 12) = 20.1384…
-	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_458_145.0/420_000.0, 1e-9)
-	approxT(t, "yield с надбавкой", furn.YieldPct, 420_000.0/8_458_145.0*100, 1e-9)
+	// 7 958 145 + 500 000 + 343 326 = 8 801 471; годовая аренда 420 000 ₽
+	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_801_471.0/420_000.0, 1e-9)
+	approxT(t, "yield с надбавкой", furn.YieldPct, 420_000.0/8_801_471.0*100, 1e-9)
 
 	if rep.Confidence != "high" {
 		t.Fatalf("confidence = %s, want high (n=8)", rep.Confidence)
@@ -157,11 +158,12 @@ func TestEvalFurnishedSingleScenario(t *testing.T) {
 	if s.Name != "с мебелью" || !s.Applicable {
 		t.Fatalf("сценарий: %+v", s)
 	}
-	if s.FurnishingCost != 0 || s.PriceUsed != 7_979_597 {
-		t.Fatalf("надбавка не должна применяться: %+v", s)
+	if s.FurnishingCost != 0 || s.DealCosts != 344_184 || s.PriceUsed != 8_323_781 {
+		t.Fatalf("надбавка на мебель не должна применяться, сделка — да: %+v", s)
 	}
+	// 7 979 597 + сделка 344 184 (319 184 + 25 000) = 8 323 781
 	approxT(t, "rent median", s.RentMedian, 35000, 1e-9)
-	approxT(t, "payback", s.PaybackYears, 7_979_597.0/420_000.0, 1e-9)
+	approxT(t, "payback", s.PaybackYears, 8_323_781.0/420_000.0, 1e-9)
 }
 
 // E2E (критерий 3): дом без арендных данных → вежливый отказ, не ошибка.

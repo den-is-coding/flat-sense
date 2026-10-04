@@ -45,8 +45,10 @@ var pageTmpl = template.Must(template.New("page").
 </form>
 {{if .Report}}{{template "report" .Report}}{{end}}
 <p class="muted">Методика: арендные аналоги — студии того же ЖК/дома в диапазоне площади ±20% (правила #55;
-ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам);
-надбавка на меблировку — константа из конфига (500 000 ₽). Источник данных: локальные дампы парсера.</p>
+ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам). В стоимости учтены:
+меблировка {{price .Config.FurnishingCostRUB}} ₽ (если мебели нет), риэлтор {{.Config.RealtorFeePct}}%,
+титульное страхование {{.Config.TitleInsurancePct}}%, оформление сделки {{price .Config.DealFixedCostsRUB}} ₽.
+Источник данных: локальные дампы парсера.</p>
 </body></html>
 {{define "report"}}
 {{with .Listing}}
@@ -75,7 +77,9 @@ var pageTmpl = template.Must(template.New("page").
    <div><div class="muted">предполагаемая сдача</div><div class="num">{{pricef .RentMedian}} ₽/мес</div>
     <div class="muted">p25–p75: {{pricef .RentP25}}–{{pricef .RentP75}}</div></div>
    <div><div class="muted">окупаемость</div><div class="num">{{printf "%.1f" .PaybackYears}} лет</div>
-    {{if .FurnishingCost}}<div class="muted">цена +{{price .FurnishingCost}} ₽ на мебель</div>{{end}}</div>
+    {{if .FurnishingCost}}<div class="muted">цена +{{price .FurnishingCost}} ₽ на мебель</div>{{end}}
+    <div class="muted">+ {{price .DealCosts}} ₽ сделка<br>(риэлтор {{$.Config.RealtorFeePct}}% + титул {{$.Config.TitleInsurancePct}}% + оформление {{price $.Config.DealFixedCostsRUB}} ₽)</div>
+    <div class="muted">стоимость в расчёте: {{price .PriceUsed}} ₽</div></div>
    <div><div class="muted">доходность</div><div class="num">{{printf "%.2f" .YieldPct}} %/год</div></div>
    <div><div class="muted">аналогов в сценарии</div><div class="num">{{.Comps}}</div></div>
   </div>
@@ -90,10 +94,11 @@ var pageTmpl = template.Must(template.New("page").
 type reportPage struct {
 	Query  string
 	Report *evaluate.Report
+	Config evaluate.Config
 }
 
 func (s *apiServer) handleForm(w http.ResponseWriter, r *http.Request) {
-	writeHTML(w, http.StatusOK, &reportPage{})
+	writeHTML(w, http.StatusOK, &reportPage{Config: s.ev.Config})
 }
 
 func (s *apiServer) handleEvaluatePage(w http.ResponseWriter, r *http.Request) {
@@ -104,7 +109,7 @@ func (s *apiServer) handleEvaluatePage(w http.ResponseWriter, r *http.Request) {
 	}
 	id := sourceExtractID(q)
 	if id == 0 {
-		writeHTML(w, http.StatusOK, &reportPage{Query: q})
+		writeHTML(w, http.StatusOK, &reportPage{Query: q, Config: s.ev.Config})
 		return
 	}
 	rep, err := s.ev.EvaluateByID(r.Context(), id)
@@ -112,7 +117,7 @@ func (s *apiServer) handleEvaluatePage(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "ошибка оценки: "+err.Error(), http.StatusBadGateway)
 		return
 	}
-	writeHTML(w, http.StatusOK, &reportPage{Query: q, Report: rep})
+	writeHTML(w, http.StatusOK, &reportPage{Query: q, Report: rep, Config: s.ev.Config})
 }
 
 func writeHTML(w http.ResponseWriter, status int, data *reportPage) {

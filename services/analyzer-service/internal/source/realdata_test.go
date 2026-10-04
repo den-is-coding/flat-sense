@@ -79,12 +79,13 @@ func TestEvalRealRentPrimPrime(t *testing.T) {
 	approxT(t, "rent median (без мебели)", unf.RentMedian, 25000, 1e-9)
 	approxT(t, "rent p25", unf.RentP25, 25000, 1e-9)
 	approxT(t, "rent p75", unf.RentP75, 25500, 1e-9)
-	if unf.PriceUsed != 7_990_000 || unf.FurnishingCost != 0 {
+	if unf.PriceUsed != 8_334_600 || unf.FurnishingCost != 0 || unf.DealCosts != 344_600 {
 		t.Fatalf("аргументы «без мебели»: %+v", unf)
 	}
-	// 7 990 000 / (25 000 × 12) = 26.6333… лет
-	approxT(t, "payback", unf.PaybackYears, 7_990_000.0/300_000.0, 1e-9)
-	approxT(t, "yield", unf.YieldPct, 300_000.0/7_990_000.0*100, 1e-9)
+	// цена 7 990 000 + сделка 344 600 (4% = 319 600 + 25 000) = 8 334 600;
+	// годовая аренда 300 000 ₽: окупаемость 27.782 лет
+	approxT(t, "payback", unf.PaybackYears, 8_334_600.0/300_000.0, 1e-9)
+	approxT(t, "yield", unf.YieldPct, 300_000.0/8_334_600.0*100, 1e-9)
 
 	// «с мебелью»: строгая группа — медиана 36 000 (35 000/36 000/40 000).
 	if furn.Comps != 3 {
@@ -93,12 +94,12 @@ func TestEvalRealRentPrimPrime(t *testing.T) {
 	approxT(t, "rent median (с мебелью)", furn.RentMedian, 36000, 1e-9)
 	approxT(t, "rent p25", furn.RentP25, 35500, 1e-9)
 	approxT(t, "rent p75", furn.RentP75, 38000, 1e-9)
-	if furn.PriceUsed != 8_490_000 {
-		t.Fatalf("PriceUsed = %d, want 8 490 000 (7 990 000 + 500 000)", furn.PriceUsed)
+	if furn.PriceUsed != 8_834_600 || furn.FurnishingCost != 500_000 || furn.DealCosts != 344_600 {
+		t.Fatalf("аргументы «с мебелью»: %+v", furn)
 	}
-	// 8 490 000 / (36 000 × 12) = 19.6527… лет
-	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_490_000.0/432_000.0, 1e-9)
-	approxT(t, "yield с надбавкой", furn.YieldPct, 432_000.0/8_490_000.0*100, 1e-9)
+	// 7 990 000 + 500 000 + 344 600 = 8 834 600; годовая аренда 432 000 ₽
+	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_834_600.0/432_000.0, 1e-9)
+	approxT(t, "yield с надбавкой", furn.YieldPct, 432_000.0/8_834_600.0*100, 1e-9)
 
 	if rep.Confidence != "high" {
 		t.Fatalf("confidence = %s, want high (n=23)", rep.Confidence)

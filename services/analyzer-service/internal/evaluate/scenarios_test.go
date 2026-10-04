@@ -13,41 +13,41 @@ func approx(t *testing.T, name string, got, want, tol float64) {
 }
 
 // Арифметика сценариев (issue #64): аренда = медиана группы;
-// окупаемость = цена / (аренда × 12); доходность = аренда × 12 / цена.
+// окупаемость = итоговая стоимость / (аренда × 12); доходность = аренда × 12 / стоимость.
 func TestComputeScenario(t *testing.T) {
-	t.Run("без мебели: без надбавки", func(t *testing.T) {
-		// аренда 27500 ₽/мес; цена 7 958 145 ₽
-		s := ComputeScenario("без мебели", 27500, 26750, 29000, 4, 7_958_145, 0)
+	t.Run("без мебели: без надбавок", func(t *testing.T) {
+		// аренда 27500 ₽/мес; цена 7 958 145 ₽, издержки 0
+		s := ComputeScenario("без мебели", 27500, 26750, 29000, 4, 7_958_145, 0, 0)
 		if !s.Applicable {
 			t.Fatal("сценарий должен быть применим")
 		}
 		if s.PriceUsed != 7_958_145 {
 			t.Errorf("PriceUsed = %d", s.PriceUsed)
 		}
-		if s.FurnishingCost != 0 {
-			t.Errorf("FurnishingCost = %d, want 0", s.FurnishingCost)
+		if s.FurnishingCost != 0 || s.DealCosts != 0 {
+			t.Errorf("FurnishingCost = %d, DealCosts = %d, want 0/0", s.FurnishingCost, s.DealCosts)
 		}
 		// годовая аренда 330 000 ₽: окупаемость 7 958 145 / 330 000 = 24.1156… лет
 		approx(t, "payback", s.PaybackYears, 7_958_145.0/330_000.0, 1e-9)
 		approx(t, "yield", s.YieldPct, 330_000.0/7_958_145.0*100, 1e-9)
 	})
 
-	t.Run("с мебелью: +500 000 ₽ на меблировку", func(t *testing.T) {
-		// аренда 35000 ₽/мес; цена 7 958 145 + 500 000 = 8 458 145 ₽
-		s := ComputeScenario("с мебелью", 35000, 33000, 36000, 3, 7_958_145, 500_000)
-		if s.PriceUsed != 8_458_145 {
-			t.Errorf("PriceUsed = %d, want 8458145", s.PriceUsed)
+	t.Run("с мебелью: +500 000 ₽ и издержки сделки", func(t *testing.T) {
+		// аренда 35000 ₽/мес; цена 7 958 145 + мебель 500 000 + сделка 343 326 = 8 801 471 ₽
+		s := ComputeScenario("с мебелью", 35000, 33000, 36000, 3, 7_958_145, 500_000, 343_326)
+		if s.PriceUsed != 8_801_471 {
+			t.Errorf("PriceUsed = %d, want 8801471", s.PriceUsed)
 		}
-		if s.FurnishingCost != 500_000 {
-			t.Errorf("FurnishingCost = %d", s.FurnishingCost)
+		if s.FurnishingCost != 500_000 || s.DealCosts != 343_326 {
+			t.Errorf("FurnishingCost = %d, DealCosts = %d", s.FurnishingCost, s.DealCosts)
 		}
-		// годовая аренда 420 000 ₽: окупаемость 8 458 145 / 420 000 = 20.1384… лет
-		approx(t, "payback", s.PaybackYears, 8_458_145.0/420_000.0, 1e-9)
-		approx(t, "yield", s.YieldPct, 420_000.0/8_458_145.0*100, 1e-9)
+		// годовая аренда 420 000 ₽: окупаемость 8 801 471 / 420 000 = 20.9559… лет
+		approx(t, "payback", s.PaybackYears, 8_801_471.0/420_000.0, 1e-9)
+		approx(t, "yield", s.YieldPct, 420_000.0/8_801_471.0*100, 1e-9)
 	})
 
 	t.Run("нет аналогов — неприменим с причиной", func(t *testing.T) {
-		s := ComputeScenario("с мебелью", 0, 0, 0, 0, 7_958_145, 500_000)
+		s := ComputeScenario("с мебелью", 0, 0, 0, 0, 7_958_145, 500_000, 343_326)
 		if s.Applicable {
 			t.Fatal("сценарий не должен быть применим")
 		}
@@ -55,6 +55,21 @@ func TestComputeScenario(t *testing.T) {
 			t.Fatal("должна быть причина пропуска")
 		}
 	})
+}
+
+// Издержки сделки: 3% риэлтор + 1% титул (от цены, с округлением) + фикс.
+func TestDealCosts(t *testing.T) {
+	cfg := DefaultConfig()
+	if got := cfg.DealCosts(7_990_000); got != 344_600 { // 4% = 319 600 + 25 000
+		t.Errorf("DealCosts(7990000) = %d, want 344600", got)
+	}
+	if got := cfg.DealCosts(7_958_145); got != 343_326 { // 318 325.8 → 318 326 + 25 000
+		t.Errorf("DealCosts(7958145) = %d, want 343326 (округление)", got)
+	}
+	zero := Config{RealtorFeePct: 0, TitleInsurancePct: 0}
+	if got := zero.DealCosts(10_000_000); got != 0 {
+		t.Errorf("нулевые ставки: DealCosts = %d, want 0", got)
+	}
 }
 
 // Медиана/перцентили кластера (линейная интерполяция, как numpy).

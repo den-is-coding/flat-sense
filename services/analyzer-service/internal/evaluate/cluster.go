@@ -130,17 +130,19 @@ type Scenario struct {
 	RentP25        float64 `json:"rentP25"`
 	RentP75        float64 `json:"rentP75"`
 	Comps          int     `json:"comps"`          // число аналогов сценария
-	PriceUsed      int64   `json:"priceUsed"`      // цена для расчёта
+	PriceUsed      int64   `json:"priceUsed"`      // итоговая стоимость в расчёте
 	FurnishingCost int64   `json:"furnishingCost"` // надбавка на мебель (0 — без неё)
+	DealCosts      int64   `json:"dealCosts"`      // транзакционные издержки (риэлтор + титул + оформление)
 	PaybackYears   float64 `json:"paybackYears"`   // окупаемость, лет
 	YieldPct       float64 `json:"yieldPct"`       // доходность, % в год
 }
 
 // ComputeScenario — арифметика одного сценария (чистая функция, тестируется
-// table-driven): аренда = медиана группы; окупаемость = цена / (аренда × 12);
-// доходность = аренда × 12 / цена × 100%.
-func ComputeScenario(name string, rentMedian, rentP25, rentP75 float64, comps int, price, furnishingCost int64) Scenario {
-	priceUsed := price + furnishingCost
+// table-driven): итоговая стоимость = цена + меблировка + издержки сделки;
+// аренда = медиана группы; окупаемость = стоимость / (аренда × 12);
+// доходность = аренда × 12 / стоимость × 100%.
+func ComputeScenario(name string, rentMedian, rentP25, rentP75 float64, comps int, price, furnishingCost, dealCosts int64) Scenario {
+	priceUsed := price + furnishingCost + dealCosts
 	s := Scenario{
 		Name:           name,
 		Applicable:     comps > 0 && rentMedian > 0 && priceUsed > 0,
@@ -150,6 +152,7 @@ func ComputeScenario(name string, rentMedian, rentP25, rentP75 float64, comps in
 		Comps:          comps,
 		PriceUsed:      priceUsed,
 		FurnishingCost: furnishingCost,
+		DealCosts:      dealCosts,
 	}
 	if !s.Applicable {
 		s.SkippedReason = "нет аналогов с определённой мебелью в кластере"

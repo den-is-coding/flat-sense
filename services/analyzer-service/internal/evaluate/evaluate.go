@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"math"
 	"sort"
 	"strings"
 )
@@ -35,11 +36,29 @@ type Config struct {
 	// ClusterRadiusM — радиус сопоставления по координатам (фолбэк, когда
 	// дом/адрес не сматчились; корпуса одного ЖК обычно в пределах 500 м).
 	ClusterRadiusM int
+	// RealtorFeePct — комиссия риэлтору, % от цены квартиры.
+	RealtorFeePct float64
+	// TitleInsurancePct — титульное страхование, % от цены квартиры.
+	TitleInsurancePct float64
+	// DealFixedCostsRUB — издержки на оформление сделки, фикс.
+	DealFixedCostsRUB int64
 }
 
 // DefaultConfig — значения по умолчанию (продублированы в env-обвязке main.go).
 func DefaultConfig() Config {
-	return Config{FurnishingCostRUB: 500_000, AreaTolerancePct: 20, MinClusterSize: 3, ClusterRadiusM: 500}
+	return Config{
+		FurnishingCostRUB: 500_000, AreaTolerancePct: 20, MinClusterSize: 3,
+		ClusterRadiusM: 500, RealtorFeePct: 3, TitleInsurancePct: 1,
+		DealFixedCostsRUB: 25_000,
+	}
+}
+
+// DealCosts — транзакционные издержки покупки: комиссия риэлтору и
+// титульное страхование считаются от цены квартиры, оформление — фикс.
+func (c Config) DealCosts(price int64) int64 {
+	pct := c.RealtorFeePct + c.TitleInsurancePct
+	percentPart := math.Round(float64(price) * pct / 100)
+	return int64(percentPart) + c.DealFixedCostsRUB
 }
 
 // Evaluator — расчёт оценки по объявлению.
@@ -161,6 +180,7 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	if price <= 0 {
 		return nil, fmt.Errorf("listing %d has no price", input.ID)
 	}
+	dealCosts := e.Config.DealCosts(price)
 	furnMed, furnOK := cluster.groupMedian(cluster.Furnished)
 	unfMed, unfOK := cluster.groupMedian(cluster.Unfurn)
 	furnP := groupBounds(cluster.Furnished)
@@ -181,13 +201,13 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	if f == Furnished {
 		// Мебель есть: только сценарий «с мебелью», без надбавки (issue п.5).
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, furnComps, price, 0))
+			ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, furnComps, price, 0, dealCosts))
 	} else {
 		// Мебели нет (или сомнение): оба сценария (issue п.3–4).
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, unfComps, price, 0))
+			ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, unfComps, price, 0, dealCosts))
 		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, furnComps, price, e.Config.FurnishingCostRUB))
+			ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, furnComps, price, e.Config.FurnishingCostRUB, dealCosts))
 	}
 
 	// Confidence по размеру кластера (метрики качества — задача #55).
