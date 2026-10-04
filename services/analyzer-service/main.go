@@ -164,6 +164,11 @@ func configFromEnv() evaluate.Config {
 			cfg.MinClusterSize = n
 		}
 	}
+	if v := os.Getenv("CLUSTER_RADIUS_M"); v != "" {
+		if n, err := strconv.Atoi(v); err == nil && n >= 0 {
+			cfg.ClusterRadiusM = n
+		}
+	}
 	return cfg
 }
 

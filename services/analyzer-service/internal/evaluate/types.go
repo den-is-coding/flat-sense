@@ -7,6 +7,7 @@ package evaluate
 
 import (
 	"encoding/json"
+	"math"
 	"strings"
 )
 
@@ -83,6 +84,12 @@ type Listing struct {
 	Params      ParamList `json:"params"`
 	Images      []Image   `json:"images"`
 	Geo         *Geo      `json:"geo"`
+	Lat         *float64  `json:"lat,omitempty"`
+	Lng         *float64  `json:"lng,omitempty"`
+
+	// Aliases — дополнительные ключи сопоставления (сырые адреса),
+	// например адреса всех корпусов ЖК из мета арендной кампании.
+	Aliases []string `json:"-"`
 }
 
 // IsStudio — студия по флагу или по заголовку (в части кампаний флаг не заполнен).
@@ -104,8 +111,9 @@ func (l *Listing) HouseKey() string {
 }
 
 // Keys — все ключи сопоставления «тот же дом/ЖК» (совпадение по любому):
-// дом по houseLink (когда есть у обеих сторон) и нормализованный адрес
-// (дампы кампаний houseLink не содержат — только адрес).
+// дом по houseLink (когда есть у обеих сторон), нормализованный адрес
+// (дампы кампаний houseLink не содержат — только адрес) и алиасы
+// (адреса всех корпусов ЖК арендной кампании).
 func (l *Listing) Keys() []string {
 	var out []string
 	if l.Geo != nil {
@@ -119,8 +127,29 @@ func (l *Listing) Keys() []string {
 	if a := normalizeAddr(l.Address); a != "" {
 		out = append(out, "addr:"+a)
 	}
+	for _, a := range l.Aliases {
+		if a = normalizeAddr(a); a != "" {
+			out = append(out, "addr:"+a)
+		}
+	}
 	return out
 }
+
+// hasCoords — есть ли координаты для радиус-сопоставления.
+func (l *Listing) hasCoords() bool { return l.Lat != nil && l.Lng != nil }
+
+// distanceM — расстояние между объявлениями по координатам (haversine, м).
+func (l *Listing) distanceM(o *Listing) float64 {
+	const earthM = 6_371_000
+	la1, lo1 := degRad(*l.Lat), degRad(*l.Lng)
+	la2, lo2 := degRad(*o.Lat), degRad(*o.Lng)
+	sinLat := math.Sin((la2 - la1) / 2)
+	sinLng := math.Sin((lo2 - lo1) / 2)
+	h := sinLat*sinLat + math.Cos(la1)*math.Cos(la2)*sinLng*sinLng
+	return 2 * earthM * math.Asin(math.Min(1, math.Sqrt(h)))
+}
+
+func degRad(d float64) float64 { return d * math.Pi / 180 }
 
 // matchesKeys — совпадение кластера: пересечение множеств ключей.
 func matchesKeys(a, b []string) bool {

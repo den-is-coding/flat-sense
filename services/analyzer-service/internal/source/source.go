@@ -92,17 +92,41 @@ type campaignItem struct {
 	Price       int64    `json:"price"`
 	Description string   `json:"description"`
 	Images      []string `json:"image_urls_1280"`
+	Coordinates *struct {
+		Lat float64 `json:"lat"`
+		Lng float64 `json:"lng"`
+	} `json:"coordinates"`
 }
 
 // parseCampaignDump превращает {meta, items} в объявления аренды
-// (rent_long): кампании собираются по ЖК, площадь/этаж — в заголовке
-// («Квартира-студия, 26 м², 10/12 эт.»).
+// (rent_long). Кампания собирается по одному ЖК (несколько корпусов), поэтому
+// каждому item выдаются алиасы-ключи по адресам ВСЕХ корпусов кампании —
+// так sale-объявление любого корпуса кластеризуется на уровне ЖК
+// (issue #64: «в этом же ЖК»). Координаты — для радиус-фолбэка.
 func parseCampaignDump(blob []byte) []*evaluate.Listing {
 	var d struct {
+		Meta struct {
+			Addresses map[string]int `json:"addresses"`
+		} `json:"meta"`
 		Items []campaignItem `json:"items"`
 	}
 	if err := json.Unmarshal(blob, &d); err != nil {
 		return nil
+	}
+	// Адреса корпусов ЖК: из meta.addresses, иначе — множество адресов items.
+	var zhkAddrs []string
+	for a := range d.Meta.Addresses {
+		zhkAddrs = append(zhkAddrs, a)
+	}
+	if len(zhkAddrs) == 0 {
+		seen := map[string]bool{}
+		for i := range d.Items {
+			a := strings.TrimSpace(d.Items[i].Address)
+			if a != "" && !seen[a] {
+				seen[a] = true
+				zhkAddrs = append(zhkAddrs, a)
+			}
+		}
 	}
 	out := make([]*evaluate.Listing, 0, len(d.Items))
 	for i := range d.Items {
@@ -120,6 +144,11 @@ func parseCampaignDump(blob []byte) []*evaluate.Listing {
 			Price:       it.Price,
 			Address:     strings.ReplaceAll(it.Address, "\u00a0", " "),
 			Description: it.Description,
+			Aliases:     zhkAddrs,
+		}
+		if it.Coordinates != nil {
+			lat, lng := it.Coordinates.Lat, it.Coordinates.Lng
+			l.Lat, l.Lng = &lat, &lng
 		}
 		if len(it.Metro) > 0 {
 			l.Metro = it.Metro[0].Station
@@ -180,17 +209,21 @@ type DBSource struct {
 
 func NewDBSource(pool *pgxpool.Pool) *DBSource { return &DBSource{pool: pool} }
 
-func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing, error) {
-	var blob []byte
-	err := s.pool.QueryRow(ctx, `
+func (s *DBSource) listingJSON() string {
+	return `
 		SELECT jsonb_build_object(
 			'id', id, 'url', url, 'title', title, 'deal_type', deal_type,
 			'category', category, 'rooms', rooms, 'studio', studio,
 			'total_area', total_area, 'floor', floor, 'floors_total', floors_total,
 			'price', price, 'address', address, 'city', city, 'district', district,
 			'metro', metro, 'house_type', house_type, 'description', description,
-			'params', params, 'images', images, 'geo', geo
-		) FROM avito_listings WHERE id = $1`, id).Scan(&blob)
+			'params', params, 'images', images, 'geo', geo, 'lat', lat, 'lng', lng
+		)`
+}
+
+func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing, error) {
+	var blob []byte
+	err := s.pool.QueryRow(ctx, s.listingJSON()+` FROM avito_listings WHERE id = $1`, id).Scan(&blob)
 	if err != nil {
 		return nil, fmt.Errorf("listing %d: %w", id, err)
 	}
@@ -198,15 +231,8 @@ func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing
 }
 
 func (s *DBSource) RentListings(ctx context.Context) ([]evaluate.Listing, error) {
-	rows, err := s.pool.Query(ctx, `
-		SELECT jsonb_build_object(
-			'id', id, 'url', url, 'title', title, 'deal_type', deal_type,
-			'category', category, 'rooms', rooms, 'studio', studio,
-			'total_area', total_area, 'floor', floor, 'floors_total', floors_total,
-			'price', price, 'address', address, 'city', city, 'district', district,
-			'metro', metro, 'house_type', house_type, 'description', description,
-			'params', params, 'images', images, 'geo', geo
-		) FROM avito_listings WHERE deal_type = 'rent_long'`)
+	rows, err := s.pool.Query(ctx, s.listingJSON()+
+		` FROM avito_listings WHERE deal_type = 'rent_long'`)
 	if err != nil {
 		return nil, fmt.Errorf("rent listings: %w", err)
 	}

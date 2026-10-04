@@ -44,7 +44,8 @@ var pageTmpl = template.Must(template.New("page").
   <button type="submit">Оценить</button>
 </form>
 {{if .Report}}{{template "report" .Report}}{{end}}
-<p class="muted">Методика: арендные аналоги — студии того же дома в диапазоне площади ±20% (правила #55);
+<p class="muted">Методика: арендные аналоги — студии того же ЖК/дома в диапазоне площади ±20% (правила #55;
+ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам);
 надбавка на меблировку — константа из конфига (500 000 ₽). Источник данных: локальные дампы парсера.</p>
 </body></html>
 {{define "report"}}
@@ -62,7 +63,7 @@ var pageTmpl = template.Must(template.New("page").
  <div class="refuse"><b>Пока не можем посчитать.</b> {{.Notice}}</div>
 {{else}}
  <div class="card">
-  <h3>Аренда подобных студий в этом доме</h3>
+  <h3>Аренда подобных студий в этом ЖК</h3>
   <div class="muted">аналогов: {{.Cluster.N}} (без мебели: {{.Cluster.NUnfurnished}}, с мебелью: {{.Cluster.NFurnished}});
    диапазон площади {{index .Cluster.AreaRange 0}}–{{index .Cluster.AreaRange 1}} м²;
    медиана аренды {{pricef .Cluster.Rent.Median}} ₽/мес (p25–p75: {{pricef .Cluster.Rent.P25}}–{{pricef .Cluster.Rent.P75}})</div>

@@ -29,10 +29,12 @@ type Cluster struct {
 	Unfurn    []Listing `json:"-"`
 }
 
-// BuildCluster отбирает из comps студии того же дома в диапазоне площади
+// BuildCluster отбирает из comps студии того же дома/ЖК в диапазоне площади
 // и разбивает их по мебели (неопределённые остаются только в Comps —
-// в строгие группы сценариев они не попадают).
-func BuildCluster(comps []Listing, input *Listing, areaTolPct float64) Cluster {
+// в строгие группы сценариев они не попадают). Совпадение локации:
+// пересечение ключей (дом/адрес/алиасы корпусов ЖК) ИЛИ расстояние по
+// координатам не больше radiusM (если координаты есть у обоих).
+func BuildCluster(comps []Listing, input *Listing, areaTolPct float64, radiusM int) Cluster {
 	lo := input.TotalArea * (1 - areaTolPct/100)
 	hi := input.TotalArea * (1 + areaTolPct/100)
 	c := Cluster{HouseKey: input.HouseKey(), AreaMin: lo, AreaMax: hi}
@@ -45,7 +47,7 @@ func BuildCluster(comps []Listing, input *Listing, areaTolPct float64) Cluster {
 		if r.TotalArea < lo || r.TotalArea > hi {
 			continue
 		}
-		if !matchesKeys(r.Keys(), inputKeys) {
+		if !matchesKeys(r.Keys(), inputKeys) && !withinRadius(input, r, radiusM) {
 			continue
 		}
 		c.Comps = append(c.Comps, *r)
@@ -58,6 +60,15 @@ func BuildCluster(comps []Listing, input *Listing, areaTolPct float64) Cluster {
 		}
 	}
 	return c
+}
+
+// withinRadius — радиус-сопоставление (фолбэк, когда ключей нет, но есть
+// координаты у обеих сторон; радиус из Config, по умолчанию 500 м).
+func withinRadius(a, b *Listing, radiusM int) bool {
+	if radiusM <= 0 || !a.hasCoords() || !b.hasCoords() {
+		return false
+	}
+	return a.distanceM(b) <= float64(radiusM)
 }
 
 // Stats — сводка по кластеру.

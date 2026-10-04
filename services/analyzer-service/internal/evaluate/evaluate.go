@@ -32,11 +32,14 @@ type Config struct {
 	AreaTolerancePct float64
 	// MinClusterSize — минимальный кластер для полноценного confidence.
 	MinClusterSize int
+	// ClusterRadiusM — радиус сопоставления по координатам (фолбэк, когда
+	// дом/адрес не сматчились; корпуса одного ЖК обычно в пределах 500 м).
+	ClusterRadiusM int
 }
 
 // DefaultConfig — значения по умолчанию (продублированы в env-обвязке main.go).
 func DefaultConfig() Config {
-	return Config{FurnishingCostRUB: 500_000, AreaTolerancePct: 20, MinClusterSize: 3}
+	return Config{FurnishingCostRUB: 500_000, AreaTolerancePct: 20, MinClusterSize: 3, ClusterRadiusM: 500}
 }
 
 // Evaluator — расчёт оценки по объявлению.
@@ -52,6 +55,9 @@ func NewEvaluator(src Source, cfg Config) *Evaluator {
 	}
 	if cfg.MinClusterSize == 0 {
 		cfg.MinClusterSize = DefaultConfig().MinClusterSize
+	}
+	if cfg.ClusterRadiusM == 0 {
+		cfg.ClusterRadiusM = DefaultConfig().ClusterRadiusM
 	}
 	return &Evaluator{Source: src, Config: cfg}
 }
@@ -125,7 +131,7 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	if err != nil {
 		return nil, err
 	}
-	cluster := BuildCluster(rents, input, e.Config.AreaTolerancePct)
+	cluster := BuildCluster(rents, input, e.Config.AreaTolerancePct, e.Config.ClusterRadiusM)
 	stats := cluster.Stats()
 	rep.Cluster = &ClusterView{
 		HouseKey:     cluster.HouseKey,

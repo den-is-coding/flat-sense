@@ -29,15 +29,15 @@ func approxT(t *testing.T, name string, got, want, tol float64) {
 
 // E2E на реальных данных (issue #64, критерий 1): sale-объявление
 // 8409401832 (Парашютная ул., 71к2, 24.7 м², 7 990 000 ₽ — выгрузка из БД,
-// fixtures) против реальной аренды того же дома — 10 студий в дампе
-// кампании. Совпадение дома — по нормализованному адресу: арендные items
-// houseLink не содержат.
+// fixtures) против реальной аренды ЖҚ «Прайм Приморский» — кластер уровня
+// ЖК: кампания покрывает 4 корпуса (Парашютная 71к2/77к1/79к1, Лидии
+// Зверевой 6), каждый item получает алиасы по всем адресам кампании.
 //
-// Данные дома 71к2 (после омоглиф-нормализации описаний): мебель указали
-// 2 из 10 (35 000 и 36 000 ₽ → медиана 35 500), «без мебели» явно — 0,
-// не указана — 8 → для сценария «без мебели» работает фолбэк на медиану
-// всего кластера: цены [30000,30000,35000,35000,36000,39000,39600,40000,
-// 43000,45000] → медиана 37 500, p25 35 000, p75 39 900.
+// Данные (после омоглиф-нормализации): «без мебели» явно — 3 объявления
+// Зверевой 6 (25 000, 25 000, 26 000 → медиана 25 000); «с мебелью» — 3
+// в диапазоне площади (35 000, 36 000, 40 000 → медиана 36 000; 39 999
+// @29.9 м² выпадает по допуску ±20% от 24.7 м²); не указана — 17.
+// Итого кластер 23 из 24 (area filter), фолбэк не нужен.
 func TestEvalRealRentPrimPrime(t *testing.T) {
 	if _, err := os.Stat(realRentDump); err != nil {
 		t.Skipf("реальный арендный дамп недоступен: %v", err)
@@ -58,11 +58,11 @@ func TestEvalRealRentPrimPrime(t *testing.T) {
 		t.Fatalf("status = %s (%s)", rep.Status, rep.Notice)
 	}
 	c := rep.Cluster
-	if c.N != 10 {
-		t.Fatalf("N = %d, want 10 (аренда дома 71к2)", c.N)
+	if c.N != 23 {
+		t.Fatalf("N = %d, want 23 (весь ЖК минус комп 29.9 м²)", c.N)
 	}
-	if c.NFurnished != 2 || c.NUnfurnished != 0 {
-		t.Fatalf("разбивка: furnished=%d unfurnished=%d, want 2/0", c.NFurnished, c.NUnfurnished)
+	if c.NFurnished != 3 || c.NUnfurnished != 3 {
+		t.Fatalf("разбивка: furnished=%d unfurnished=%d, want 3/3", c.NFurnished, c.NUnfurnished)
 	}
 	if rep.InputFurnishing != evaluate.Unfurnished {
 		t.Fatalf("меблировка входа = %s (описание пустое → консервативно «без мебели»)", rep.InputFurnishing)
@@ -72,37 +72,39 @@ func TestEvalRealRentPrimPrime(t *testing.T) {
 	}
 
 	unf, furn := rep.Scenarios[0], rep.Scenarios[1]
-	// «без мебели»: фолбэк на весь кластер — медиана 37 500, вилка 35 000–39 900.
-	if unf.Comps != 10 {
-		t.Fatalf("компов «без мебели» = %d, want 10 (фолбэк)", unf.Comps)
+	// «без мебели»: строгая группа — медиана 25 000 (25 000/25 000/26 000).
+	if unf.Comps != 3 {
+		t.Fatalf("компов «без мебели» = %d, want 3", unf.Comps)
 	}
-	approxT(t, "rent median (фолбэк)", unf.RentMedian, 37500, 1e-9)
-	approxT(t, "rent p25", unf.RentP25, 35000, 1e-9)
-	approxT(t, "rent p75", unf.RentP75, 39900, 1e-9)
+	approxT(t, "rent median (без мебели)", unf.RentMedian, 25000, 1e-9)
+	approxT(t, "rent p25", unf.RentP25, 25000, 1e-9)
+	approxT(t, "rent p75", unf.RentP75, 25500, 1e-9)
 	if unf.PriceUsed != 7_990_000 || unf.FurnishingCost != 0 {
 		t.Fatalf("аргументы «без мебели»: %+v", unf)
 	}
-	// 7 990 000 / (37 500 × 12) = 17.7555… лет
-	approxT(t, "payback", unf.PaybackYears, 7_990_000.0/450_000.0, 1e-9)
-	approxT(t, "yield", unf.YieldPct, 450_000.0/7_990_000.0*100, 1e-9)
+	// 7 990 000 / (25 000 × 12) = 26.6333… лет
+	approxT(t, "payback", unf.PaybackYears, 7_990_000.0/300_000.0, 1e-9)
+	approxT(t, "yield", unf.YieldPct, 300_000.0/7_990_000.0*100, 1e-9)
 
-	// «с мебелью»: строгая группа — медиана 35 500, цена +500 000.
-	if furn.Comps != 2 {
-		t.Fatalf("компов «с мебелью» = %d, want 2", furn.Comps)
+	// «с мебелью»: строгая группа — медиана 36 000 (35 000/36 000/40 000).
+	if furn.Comps != 3 {
+		t.Fatalf("компов «с мебелью» = %d, want 3", furn.Comps)
 	}
-	approxT(t, "rent median (с мебелью)", furn.RentMedian, 35500, 1e-9)
+	approxT(t, "rent median (с мебелью)", furn.RentMedian, 36000, 1e-9)
+	approxT(t, "rent p25", furn.RentP25, 35500, 1e-9)
+	approxT(t, "rent p75", furn.RentP75, 38000, 1e-9)
 	if furn.PriceUsed != 8_490_000 {
 		t.Fatalf("PriceUsed = %d, want 8 490 000 (7 990 000 + 500 000)", furn.PriceUsed)
 	}
-	// 8 490 000 / (35 500 × 12) = 19.9295… лет
-	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_490_000.0/426_000.0, 1e-9)
-	approxT(t, "yield с надбавкой", furn.YieldPct, 426_000.0/8_490_000.0*100, 1e-9)
+	// 8 490 000 / (36 000 × 12) = 19.6527… лет
+	approxT(t, "payback с надбавкой", furn.PaybackYears, 8_490_000.0/432_000.0, 1e-9)
+	approxT(t, "yield с надбавкой", furn.YieldPct, 432_000.0/8_490_000.0*100, 1e-9)
 
 	if rep.Confidence != "high" {
-		t.Fatalf("confidence = %s, want high (n=10)", rep.Confidence)
+		t.Fatalf("confidence = %s, want high (n=23)", rep.Confidence)
 	}
-	if len(rep.Warnings) == 0 {
-		t.Fatal("должно быть предупреждение о фолбэке (8 из 10 без указания мебели)")
+	if len(rep.Warnings) != 0 {
+		t.Fatalf("предупреждений быть не должно (обе строгие группы непусты): %v", rep.Warnings)
 	}
 }
 
