@@ -15,6 +15,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/evaluate"
+	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/zhk"
 )
 
 // DumpSource — источник из каталогов с дампами парсера. Понимает два
@@ -216,7 +217,8 @@ func (s *DBSource) listingJSON() string {
 			'category', category, 'rooms', rooms, 'studio', studio,
 			'total_area', total_area, 'floor', floor, 'floors_total', floors_total,
 			'price', price, 'address', address, 'city', city, 'district', district,
-			'metro', metro, 'house_type', house_type, 'description', description,
+			'metro', metro, 'house_type', house_type, 'residential_complex', residential_complex,
+			'description', description,
 			'params', params, 'images', images, 'geo', geo, 'lat', lat, 'lng', lng
 		)`
 }
@@ -227,14 +229,30 @@ func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing
 	if err != nil {
 		return nil, fmt.Errorf("listing %d: %w", id, err)
 	}
-	return evaluate.ParseListing(blob)
+	l, err := evaluate.ParseListing(blob)
+	if err != nil {
+		return nil, err
+	}
+	// Алиасы ЖК (реестр zhk, issue #66): кластеризация уровня ЖК — как
+	// с meta.addresses кампаний в DumpSource.
+	zhk.Enrich(l)
+	return l, nil
 }
 
 func (s *DBSource) RentListings(ctx context.Context) ([]evaluate.Listing, error) {
+	return s.listingsByDealType(ctx, "rent_long")
+}
+
+// SaleListings — весь пул продаж (вход backfill #66).
+func (s *DBSource) SaleListings(ctx context.Context) ([]evaluate.Listing, error) {
+	return s.listingsByDealType(ctx, "sale")
+}
+
+func (s *DBSource) listingsByDealType(ctx context.Context, dealType string) ([]evaluate.Listing, error) {
 	rows, err := s.pool.Query(ctx, s.listingJSON()+
-		` FROM avito_listings WHERE deal_type = 'rent_long'`)
+		` FROM avito_listings WHERE deal_type = $1`, dealType)
 	if err != nil {
-		return nil, fmt.Errorf("rent listings: %w", err)
+		return nil, fmt.Errorf("%s listings: %w", dealType, err)
 	}
 	defer rows.Close()
 	var out []evaluate.Listing
@@ -247,6 +265,7 @@ func (s *DBSource) RentListings(ctx context.Context) ([]evaluate.Listing, error)
 		if err != nil {
 			return nil, err
 		}
+		zhk.Enrich(l)
 		out = append(out, *l)
 	}
 	return out, rows.Err()

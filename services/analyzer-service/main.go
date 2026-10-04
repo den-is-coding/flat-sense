@@ -21,6 +21,7 @@ import (
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/backfill"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/evaluate"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/labeler"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/source"
@@ -31,6 +32,7 @@ func main() {
 		evalTarget = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход (источник: -dump-dir, иначе БД)")
 		dumpDirs   = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate и HTTP-режима без БД)")
 		labelFurn  = flag.Bool("label-furnishing", false, "разметить меблировку всех объявлений БД в ad_furnishing и выйти")
+		backfillROI = flag.Bool("backfill-roi", false, "пересчитать окупаемость всех объявлений-продаж в ad_roi_results и выйти (идемпотентно, источник — БД)")
 	)
 	flag.Parse()
 
@@ -38,6 +40,29 @@ func main() {
 	defer cancel()
 
 	cfg := configFromEnv()
+
+	// Режим backfill окупаемости: БД → оценка всех продаж → ad_roi_results.
+	if *backfillROI {
+		pool, err := pgxpool.New(ctx, dsn())
+		if err != nil {
+			log.Fatalf("db: %v", err)
+		}
+		defer pool.Close()
+		if err := pool.Ping(ctx); err != nil {
+			log.Fatalf("db ping: %v", err)
+		}
+		run := &backfill.Runner{
+			Source: source.NewDBSource(pool),
+			Pool:   pool,
+			Config: cfg,
+		}
+		rep, err := run.Run(ctx)
+		if err != nil {
+			log.Fatalf("backfill: %v", err)
+		}
+		printJSON(rep)
+		return
+	}
 
 	// Режим разметки мебели: БД → эвристика → ad_furnishing.
 	if *labelFurn {

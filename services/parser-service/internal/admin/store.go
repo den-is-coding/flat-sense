@@ -99,7 +99,7 @@ func (f *ListingFilters) buildQuery() (listSQL, countSQL string, args []any) {
 		cond = " WHERE " + strings.Join(where, " AND ")
 	}
 	order := fmt.Sprintf(" ORDER BY %s %s NULLS LAST", sortColumns[f.SortBy], strings.ToUpper(f.SortDir))
-	listSQL = "SELECT " + listingColumns + " FROM avito_listings" + cond + order +
+	listSQL = "SELECT " + listingColumns + ", " + roiColumns + listingFromSQL + cond + order +
 		fmt.Sprintf(" LIMIT %d OFFSET %d", f.Limit, f.offset())
 	countSQL = "SELECT count(*) FROM avito_listings" + cond
 	return listSQL, countSQL, args
@@ -131,6 +131,27 @@ type ListingRow struct {
 	PublishedAt        *string  `json:"publishedAt"`
 	FirstSeenAt        string   `json:"firstSeenAt"`
 	LastSeenAt         string   `json:"lastSeenAt"`
+	// ROI — кэш оценки окупаемости ad_roi_results (считает
+	// analyzer-service, issue #66); nil — расчёта ещё не было («—»).
+	ROI *ROIView `json:"roi,omitempty"`
+}
+
+// ROIView — колонки доходности/полной стоимости из ad_roi_results.
+// nil-сценарные поля — «—» в таблице (сценарий неприменим / нет данных).
+type ROIView struct {
+	Status                string   `json:"status"` // ok | no_rent_data
+	InputFurnishing       string   `json:"inputFurnishing,omitempty"`
+	YieldUnfurnished      *float64 `json:"yieldUnfurnished,omitempty"`      // % годовых
+	TotalCostUnfurnished  *int64   `json:"totalCostUnfurnished,omitempty"`  // ₽
+	RentMedianUnfurnished *float64 `json:"rentMedianUnfurnished,omitempty"` // ₽/мес
+	CompsUnfurnished      *int     `json:"compsUnfurnished,omitempty"`
+	YieldFurnished        *float64 `json:"yieldFurnished,omitempty"`      // % годовых
+	TotalCostFurnished    *int64   `json:"totalCostFurnished,omitempty"`  // ₽
+	RentMedianFurnished   *float64 `json:"rentMedianFurnished,omitempty"` // ₽/мес
+	CompsFurnished        *int     `json:"compsFurnished,omitempty"`
+	ClusterN              *int     `json:"clusterN,omitempty"`
+	Confidence            string   `json:"confidence,omitempty"`
+	Notice                string   `json:"notice,omitempty"`
 }
 
 const listingColumns = `
@@ -138,6 +159,15 @@ id, url, title, price, price_per_unit, total_area, rooms, studio,
 floor, floors_total, address, residential_complex, city, district, metro,
 house_type, year_built, renovation, lat, lng, image_count,
 published_at, first_seen_at, last_seen_at`
+
+// roiColumns — поля кэша ad_roi_results (ad_id первым: NULL строки = расчёта нет).
+const roiColumns = `
+ad_roi_results.ad_id, status, input_furnishing,
+yield_unfurnished_pct, total_cost_unfurnished, rent_median_unfurnished, comps_unfurnished,
+yield_furnished_pct, total_cost_furnished, rent_median_furnished, comps_furnished,
+cluster_n, confidence, notice`
+
+const listingFromSQL = ` FROM avito_listings LEFT JOIN ad_roi_results ON ad_roi_results.ad_id = avito_listings.id`
 
 func scanListingRow(rs pgx.Rows) (ListingRow, error) {
 	var r ListingRow
@@ -149,11 +179,21 @@ func scanListingRow(rs pgx.Rows) (ListingRow, error) {
 	var rooms, floor, floorsTotal, yearBuilt, imageCount **int
 	var publishedAt, firstSeenAt, lastSeenAt *time.Time
 	var lat, lng *float64
+	// кэш ROI (LEFT JOIN: NULL-строка = расчёта не было)
+	var roiAdID *int64
+	var roiStatus, roiFurnishing, roiConfidence, roiNotice *string
+	var yieldU, yieldF, rentMedU, rentMedF *float64
+	var costU, costF *int64
+	var compsU, compsF, clusterN *int
 	err := rs.Scan(&r.ID, &r.URL, &title, &price, &pricePerUnit, &totalArea,
 		&rooms, &r.Studio, &floor, &floorsTotal, &address,
 		&complex, &city, &district, &metro,
 		&houseType, &yearBuilt, &renovation, &lat, &lng, &imageCount,
-		&publishedAt, &firstSeenAt, &lastSeenAt)
+		&publishedAt, &firstSeenAt, &lastSeenAt,
+		&roiAdID, &roiStatus, &roiFurnishing,
+		&yieldU, &costU, &rentMedU, &compsU,
+		&yieldF, &costF, &rentMedF, &compsF,
+		&clusterN, &roiConfidence, &roiNotice)
 	if err != nil {
 		return r, err
 	}
@@ -188,6 +228,23 @@ func scanListingRow(rs pgx.Rows) (ListingRow, error) {
 	}
 	r.FirstSeenAt = firstSeenAt.Format(time.RFC3339)
 	r.LastSeenAt = lastSeenAt.Format(time.RFC3339)
+	if roiAdID != nil {
+		r.ROI = &ROIView{
+			Status:                derefStr(roiStatus),
+			InputFurnishing:       derefStr(roiFurnishing),
+			YieldUnfurnished:      yieldU,
+			TotalCostUnfurnished:  costU,
+			RentMedianUnfurnished: rentMedU,
+			CompsUnfurnished:      compsU,
+			YieldFurnished:        yieldF,
+			TotalCostFurnished:    costF,
+			RentMedianFurnished:   rentMedF,
+			CompsFurnished:        compsF,
+			ClusterN:              clusterN,
+			Confidence:            derefStr(roiConfidence),
+			Notice:                derefStr(roiNotice),
+		}
+	}
 	return r, nil
 }
 
@@ -252,7 +309,8 @@ func (s *Store) List(ctx context.Context, f ListingFilters) (*ListingPage, error
 
 // Get — одно объявление по avito id.
 func (s *Store) Get(ctx context.Context, id int64) (*ListingRow, error) {
-	rows, err := s.pool.Query(ctx, "SELECT "+listingColumns+" FROM avito_listings WHERE id = $1", id)
+	rows, err := s.pool.Query(ctx,
+		"SELECT "+listingColumns+", "+roiColumns+listingFromSQL+" WHERE avito_listings.id = $1", id)
 	if err != nil {
 		return nil, err
 	}

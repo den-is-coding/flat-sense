@@ -80,12 +80,15 @@ type Listing struct {
 	District    string    `json:"district"`
 	Metro       string    `json:"metro"`
 	HouseType   string    `json:"house_type"`
-	Description string    `json:"description"`
-	Params      ParamList `json:"params"`
-	Images      []Image   `json:"images"`
-	Geo         *Geo      `json:"geo"`
-	Lat         *float64  `json:"lat,omitempty"`
-	Lng         *float64  `json:"lng,omitempty"`
+	// ResidentialComplex — «название ЖК» (колонка avito_listings из
+	// миграции 000011; в дампах парсера отсутствует, там ЖК в params).
+	ResidentialComplex string    `json:"residential_complex"`
+	Description        string    `json:"description"`
+	Params             ParamList `json:"params"`
+	Images             []Image   `json:"images"`
+	Geo                *Geo      `json:"geo"`
+	Lat                *float64  `json:"lat,omitempty"`
+	Lng                *float64  `json:"lng,omitempty"`
 
 	// Aliases — дополнительные ключи сопоставления (сырые адреса),
 	// например адреса всех корпусов ЖК из мета арендной кампании.
@@ -182,6 +185,11 @@ func normalizeAddr(s string) string {
 	}
 	return b.String()
 }
+
+// NormalizeAddr — нормализация адреса для сопоставления (экспорт для
+// реестра ЖК internal/zhk: ключи кластеризации и ключи реестра должны
+// строиться одинаково).
+func NormalizeAddr(s string) string { return normalizeAddr(s) }
 
 // ParseListing — разбор объявления из JSON-дампа парсера.
 func ParseListing(blob []byte) (*Listing, error) {

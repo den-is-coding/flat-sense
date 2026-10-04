@@ -2,6 +2,7 @@ package admin
 
 import (
 	"encoding/json"
+	"fmt"
 	"html/template"
 	"net/http"
 	"net/url"
@@ -19,26 +20,90 @@ type loginData struct {
 	Error string
 }
 
+// commaintInt — целое с разделителями разрядов (цены в рублях).
+func commaintInt(v int64) string {
+	s := strconv.FormatInt(v, 10)
+	n := len(s)
+	if v < 0 {
+		n--
+	}
+	if n <= 3 {
+		return s
+	}
+	var out []byte
+	for i, c := range []byte(s) {
+		if i > 0 && (len(s)-i)%3 == 0 {
+			out = append(out, ' ')
+		}
+		out = append(out, c)
+	}
+	return string(out)
+}
+
+// pct1 — доходность с одним знаком после запятой; nil → пусто («—»
+// рисует шаблон).
+func pct1(v *float64) string {
+	if v == nil {
+		return ""
+	}
+	return strconv.FormatFloat(*v, 'f', 1, 64)
+}
+
+// roiTipYield — подпись методики для ячейки доходности (медиана сдачи,
+// число аналогов, confidence — как отдаёт модуль #64); при «—» — причина.
+func roiTipYield(roi *ROIView, unfurnished bool) string {
+	if roi == nil {
+		return ""
+	}
+	med, comps := roi.RentMedianFurnished, roi.CompsFurnished
+	if unfurnished {
+		med, comps = roi.RentMedianUnfurnished, roi.CompsUnfurnished
+	}
+	if med == nil {
+		return roi.Notice
+	}
+	s := fmt.Sprintf("медиана сдачи %s ₽/мес", commaintInt(int64(*med)))
+	if comps != nil {
+		s += fmt.Sprintf(", аналогов %d", *comps)
+	}
+	if roi.ClusterN != nil {
+		s += fmt.Sprintf(", кластер %d", *roi.ClusterN)
+	}
+	if roi.Confidence != "" {
+		s += ", уверенность " + roi.Confidence
+	}
+	return s
+}
+
+// roiTipCost — подпись для ячейки полной стоимости: оба сценария.
+func roiTipCost(roi *ROIView) string {
+	if roi == nil {
+		return ""
+	}
+	if roi.TotalCostFurnished == nil && roi.TotalCostUnfurnished == nil {
+		return roi.Notice
+	}
+	s := "полная стоимость (цена + издержки сделки; надбавка на меблировку — в сценарии, который её применяет)"
+	if roi.TotalCostFurnished != nil {
+		s = "«с мебелью»: " + commaintInt(*roi.TotalCostFurnished) + " ₽ · " + s
+	}
+	if roi.TotalCostUnfurnished != nil {
+		s += " · «без мебели»: " + commaintInt(*roi.TotalCostUnfurnished) + " ₽"
+	}
+	return s
+}
+
 var funcs = template.FuncMap{
-	"commaint": func(v int64) string {
-		// целое с разделителями разрядов (цены в рублях)
-		s := strconv.FormatInt(v, 10)
-		n := len(s)
-		if v < 0 {
-			n--
+	"commaint":  commaintInt,
+	"commaintP": func(v *int64) string {
+		if v == nil {
+			return ""
 		}
-		if n <= 3 {
-			return s
-		}
-		var out []byte
-		for i, c := range []byte(s) {
-			if i > 0 && (len(s)-i)%3 == 0 {
-				out = append(out, ' ')
-			}
-			out = append(out, c)
-		}
-		return string(out)
+		return commaintInt(*v)
 	},
+	"pct1": pct1,
+	"roiTipYield": roiTipYield,
+	"roiTipCost":  roiTipCost,
 	"floorStr": func(f, ft *int) string {
 		if f == nil {
 			return ""
@@ -171,6 +236,9 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
 <th><a href="{{qse .Filters "sort" "price"}}">Цена{{mark .Filters "price"}}</a></th>
 <th><a href="{{qse .Filters "sort" "total_area"}}">м²{{mark .Filters "total_area"}}</a></th>
 <th>Этаж</th><th>Комнаты</th><th>Цена/м²</th>
+<th title="сценарий «строго без мебели» (сдача по немеблированным аналогам ЖК)">Доходность без мебели, %</th>
+<th title="сценарий «с мебелью» (надбавка на меблировку, сдача по меблированным аналогам)">Доходность с мебелью, %</th>
+<th title="цена + издержки сделки + надбавка на меблировку (там, где сценарий её применяет)">Полная стоимость</th>
 <th>Адрес</th><th>ЖК</th><th>Город</th><th>Район</th>
 <th>Тип дома</th><th>Год</th><th>Ремонт</th><th>Коорд.</th>
 <th>Фото</th><th>Опубл.</th>
@@ -187,6 +255,11 @@ var tableTmpl = template.Must(template.New("table").Funcs(funcs).Parse(`<!doctyp
 <td class="num">{{floorStr $row.Floor $row.FloorsTotal}}</td>
 <td>{{roomsStr $row.Rooms $row.Studio}}</td>
 <td class="num">{{if $row.PricePerM2}}{{commaint $row.PricePerM2}}{{end}}</td>
+{{$vu := ""}}{{if $row.ROI}}{{$vu = pct1 $row.ROI.YieldUnfurnished}}{{end}}
+<td class="num">{{if $vu}}<span title="{{roiTipYield $row.ROI true}}">{{$vu}}</span>{{else}}<span class="muted" title="{{roiTipYield $row.ROI true}}">—</span>{{end}}</td>
+{{$vf := ""}}{{if $row.ROI}}{{$vf = pct1 $row.ROI.YieldFurnished}}{{end}}
+<td class="num">{{if $vf}}<span title="{{roiTipYield $row.ROI false}}">{{$vf}}</span>{{else}}<span class="muted" title="{{roiTipYield $row.ROI false}}">—</span>{{end}}</td>
+<td class="num">{{if $row.ROI}}{{if $row.ROI.TotalCostFurnished}}<span title="{{roiTipCost $row.ROI}}">{{commaintP $row.ROI.TotalCostFurnished}}</span>{{else if $row.ROI.TotalCostUnfurnished}}<span title="{{roiTipCost $row.ROI}}">{{commaintP $row.ROI.TotalCostUnfurnished}}</span>{{else}}<span class="muted" title="{{roiTipCost $row.ROI}}">—</span>{{end}}{{else}}<span class="muted" title="расчёт ещё не выполнялся — запустите -backfill-roi в analyzer-service">—</span>{{end}}</td>
 <td>{{$row.Address}}</td><td>{{$row.ResidentialComplex}}</td>
 <td>{{$row.City}}</td><td>{{$row.District}}</td>
 <td>{{$row.HouseType}}</td><td class="num">{{if $row.YearBuilt}}{{$row.YearBuilt}}{{end}}</td>
