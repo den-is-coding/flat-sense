@@ -135,11 +135,18 @@ func (e *Evaluator) EvaluateByID(ctx context.Context, id int64) (*Report, error)
 func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, error) {
 	rep := &Report{Status: "ok", Listing: listView(input)}
 
-	// Меблировка входного объявления (продажа): консервативно.
-	f, certain := ResolveFurnishing(input.Description, input.Params)
+	// Меблировка входного объявления (продажа): полная эвристика
+	// (явные фразы + предметы); сомнение консервативно = «без мебели».
+	f, confident, evidence := DetectFurnishingDetailed(input.Description, input.Params)
+	if !confident {
+		f = Unfurnished
+	}
 	rep.InputFurnishing = f
-	if !certain {
-		rep.FurnishingNote = "меблировка по объявлению не определена — консервативно считаем «без мебели»"
+	switch {
+	case !confident:
+		rep.FurnishingNote = "меблировка по объявлению не определена — консервативно считаем «без мебели», добавляем надбавку на меблировку"
+	case f == Furnished && strings.HasPrefix(evidence, "описание: предметы"):
+		rep.FurnishingNote = "мебель определена по перечислению предметов в описании — надбавка на меблировку не добавляется"
 	}
 
 	// Арендный пул и кластер «студии того же ЖК/дома» (все, без фильтра

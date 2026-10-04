@@ -91,6 +91,21 @@ func TestDetectFurnishingSelfFurnish(t *testing.T) {
 	}
 }
 
+// Sale-вход: предметный признак применяется (500к только где мебели нет).
+func TestResolveFurnishingSaleItems(t *testing.T) {
+	// Меблированная продажа: перечисление предметов → furnished, надбавки не будет.
+	f, ok := ResolveFurnishing("Продам студию: остаётся двуспальная кровать, шкаф-купе, диван и телевизор.", nil)
+	if f != Furnished || !ok {
+		t.Fatalf("got (%s, %v), want furnished/true", f, ok)
+	}
+	// Только техника+кухня без спальной мебели — не «меблирована»:
+	// консервативно «без мебели» (надбавка 500к применяется).
+	f, ok = ResolveFurnishing("Остаётся кухонный гарнитур: посудомойка, холодильник, стиральная машина.", nil)
+	if f != Unfurnished || ok {
+		t.Fatalf("got (%s, %v), want unfurnished/false (только техника)", f, ok)
+	}
+}
+
 func contains(s, sub string) bool { return len(s) >= len(sub) && indexOf(s, sub) >= 0 }
 
 func indexOf(s, sub string) int {

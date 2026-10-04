@@ -40,6 +40,13 @@ var (
 		"холодильник", "стиральная машина", "стирал", "духовка",
 		"матрас", "тумбочка", "вешалк", "зеркало", "микроволнов",
 	}
+	// furnitureProper — «настоящая» мебель (сон/хранение/гостиная): бытовая
+	// техника и кухня сами по себе квартиру меблированной не делают,
+	// поэтому среди упомянутых предметов должен быть хотя бы один такой.
+	furnitureProper = []string{
+		"кровать", "диван", "шкаф", "комод", "матрас",
+		"тумбочка", "тумба", "вешалк", "гардероб", "кресло",
+	}
 )
 
 // homoglyphs — латинские двойники кириллицы (продавцы маскируют текст,
@@ -71,8 +78,9 @@ func DetectFurnishingDetailed(description string, params []Param) (Furnishing, b
 	if f, ok, ev := detectExplicit(description, params); ok {
 		return f, ok, ev
 	}
-	// Перечисление предметов мебели: считаем разные группы упоминаний —
-	// одно «кухня» может быть комнатой, два разных предмета — уже обстановка.
+	// Перечисление предметов мебели: ≥2 разных предмета, среди которых
+	// есть хотя бы один «настоящий» (сон/хранение/гостиная) — бытовая
+	// техника и кухня без кровати/шкафа меблированной квартиру не делают.
 	text := normalizeHomoglyphs(strings.ToLower(description))
 	var items []string
 	for _, item := range furnitureItems {
@@ -80,7 +88,14 @@ func DetectFurnishingDetailed(description string, params []Param) (Furnishing, b
 			items = append(items, item)
 		}
 	}
-	if len(items) >= 2 {
+	hasProper := false
+	for _, p := range furnitureProper {
+		if strings.Contains(text, p) {
+			hasProper = true
+			break
+		}
+	}
+	if len(items) >= 2 && hasProper {
 		return Furnished, true, "описание: предметы мебели (" + strings.Join(items, ", ") + ")"
 	}
 	return Unknown, false, ""
@@ -125,11 +140,12 @@ func DetectFurnishing(description string, params []Param) (Furnishing, bool) {
 	return f, ok
 }
 
-// ResolveFurnishing — меблировка входного объявления (продажи): только
-// явные маркеры; предметный вывод не применяется, а сомнение
-// консервативно = «без мебели» (помечается в отчёте).
+// ResolveFurnishing — меблировка входного объявления (продажи): полная
+// эвристика (явные фразы + предметы). Сомнение консервативно = «без
+// мебели» (помечается в отчёте). Надбавка на меблировку добавляется
+// только если мебели нет.
 func ResolveFurnishing(description string, params []Param) (Furnishing, bool) {
-	f, ok, _ := detectExplicit(description, params)
+	f, ok, _ := DetectFurnishingDetailed(description, params)
 	if !ok {
 		return Unfurnished, false
 	}
