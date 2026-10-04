@@ -94,24 +94,33 @@ func TestFiltersFromRequest(t *testing.T) {
 	}
 }
 
-// Границы 7 диапазонов из окружения (не хардкод); мусор игнорируется.
+// Границы диапазонов по метрикам из окружения (не хардкод);
+// мусор игнорируется, сортировка сохраняется.
 func TestThresholdsFromEnv(t *testing.T) {
-	t.Setenv("YIELD_THRESHOLDS", "3.8, 4.4 , 5.0,6,x,2")
+	t.Setenv("YIELD_THRESHOLDS", "8, 5 ,x,6")
+	t.Setenv("PRICE_THRESHOLDS", "7500000,9000000")
 	th := thresholdsFromEnv()
-	want := []float64{2, 3.8, 4.4, 5, 6}
-	if len(th.Boundaries) != len(want) {
-		t.Fatalf("boundaries = %v, want %v", th.Boundaries, want)
+	wantYield := []float64{5, 6, 8}
+	if len(th.Yield) != len(wantYield) {
+		t.Fatalf("yield = %v, want %v", th.Yield, wantYield)
 	}
-	for i := range want {
-		if th.Boundaries[i] != want[i] {
-			t.Fatalf("boundaries[%d] = %v, want %v", i, th.Boundaries[i], want[i])
+	for i := range wantYield {
+		if th.Yield[i] != wantYield[i] {
+			t.Fatalf("yield[%d] = %v, want %v", i, th.Yield[i], wantYield[i])
 		}
 	}
-	// дефолт: 6 границ → 7 диапазонов
+	if len(th.Price) != 2 || th.Price[0] != 7_500_000 {
+		t.Fatalf("price = %v", th.Price)
+	}
+	// дефолты из макета #107: доходность 5/8, цена 7,5/9 млн, стоимость 9,5/11,5 млн
 	t.Setenv("YIELD_THRESHOLDS", "")
+	t.Setenv("PRICE_THRESHOLDS", "")
 	th2 := thresholdsFromEnv()
-	if len(th2.Boundaries) != 6 || th2.Boundaries[0] != 4.1 {
-		t.Fatalf("defaults = %v", th2.Boundaries)
+	if len(th2.Yield) != 2 || th2.Yield[0] != 5 {
+		t.Fatalf("yield defaults = %v", th2.Yield)
+	}
+	if len(th2.Cost) != 2 || th2.Cost[0] != 9_500_000 {
+		t.Fatalf("cost defaults = %v", th2.Cost)
 	}
 }
 
@@ -203,8 +212,8 @@ func TestHandlers_API_Integration(t *testing.T) {
 	if err := json.NewDecoder(resp.Body).Decode(&out); err != nil {
 		t.Fatal(err)
 	}
-	if len(out.Thresholds.Boundaries) < 2 {
-		t.Fatalf("boundaries not in response: %v", out.Thresholds.Boundaries)
+	if len(out.Thresholds.Yield) < 2 || len(out.Thresholds.Price) < 2 || len(out.Thresholds.Cost) < 2 {
+		t.Fatalf("metric thresholds not in response: %+v", out.Thresholds)
 	}
 	if len(out.Items) == 0 {
 		t.Fatal("no roi items in SPb center bbox")
@@ -236,20 +245,25 @@ func TestHandlers_API_Integration(t *testing.T) {
 		"OpenStreetMap", // атрибуция обязательна
 		"MAP_THRESHOLDS",
 		"только с рентабельностью",
-		// фон кластера — сплошной, по 7 диапазонам доходности (#73)
-		".cluster-pin.c0{background", ".cluster-pin.c3{background",
-		".cluster-pin.c6{background", ".cluster-pin.gray{background",
-		".dot.c2{background",
+		// цвета точек/кластеров/легенды — семантические токены (#108)
+		".cluster-pin.b0{background:var(--color-danger)", ".cluster-pin.b1{background:var(--color-warning)",
+		".cluster-pin.b2{background:var(--color-success)", "--map-bucket-gray",
+		".ldot.b2{background",
 		// дизайн-токены #88 + фидбек: без кнопки «Применить»,
 		// без отдельной кнопки темы (тему ведёт выбор подложки)
 		"--color-accent", "[data-theme=\"dark\"]", "prefers-color-scheme",
 		"data-lucide", "Inter",
+		// #108: бургер-навигация и профиль; ключевой блок карточки
+		"ИнвестКвартал", "burger", "drawer", "user-round",
+		"key-data", "Ожидаемая цена сдачи",
 	} {
 		if !strings.Contains(html, want) {
 			t.Fatalf("page missing %q", want)
 		}
-		if strings.Contains(html, "f-apply") || strings.Contains(html, "theme-toggle") {
-			t.Fatal("устаревшие кнопки «Применить»/темы должны отсутствовать")
+		for _, gone := range []string{"f-apply", "theme-toggle", "flat-sense — данные объявлений"} {
+			if strings.Contains(html, gone) {
+				t.Fatalf("устаревший элемент %q должен отсутствовать", gone)
+			}
 		}
 	}
 }
@@ -263,7 +277,9 @@ func TestMapJS_NoHardcodedColors(t *testing.T) {
 		t.Fatal(err)
 	}
 	hexRe := regexp.MustCompile(`#[0-9a-fA-F]{3,8}\b`)
-	if m := hexRe.Find(js); m != nil {
+	// комментарии не сканируем: там встречаются ссылки на issue («#108»)
+	noComments := regexp.MustCompile(`(?s)/\*.*?\*/|//[^\n]*`).ReplaceAll(js, nil)
+	if m := hexRe.Find(noComments); m != nil {
 		t.Fatalf("map.js contains hardcoded color %q — используйте CSS-переменные", m)
 	}
 	css, err := staticFS.ReadFile("tokens.gen.css")

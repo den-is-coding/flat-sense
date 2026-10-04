@@ -74,8 +74,12 @@ const mapColumns = `
 a.id, a.url, a.title, a.deal_type, a.price, a.total_area, a.rooms, a.studio,
 a.floor, a.floors_total, a.address, a.residential_complex, a.city, a.lat, a.lng,
 a.images->0->>'url' AS photo,
+r.input_furnishing,
 r.yield_unfurnished_pct, r.yield_furnished_pct,
-r.total_cost_unfurnished, r.total_cost_furnished, r.confidence`
+r.total_cost_unfurnished, r.total_cost_furnished,
+r.rent_median_unfurnished, r.rent_p25_unfurnished, r.rent_p75_unfurnished, comps_unfurnished,
+r.rent_median_furnished, r.rent_p25_furnished, r.rent_p75_furnished, comps_furnished,
+r.confidence`
 
 // MapItem — точка карты (JSON-ответ).
 type MapItem struct {
@@ -96,11 +100,21 @@ type MapItem struct {
 	Lng                float64  `json:"lng"`
 	Photo              string   `json:"photo,omitempty"`
 	// ROI — результат #64/#66 (NULL-поля = «—»)
+	InputFurnishing    string   `json:"inputFurnishing,omitempty"`
 	YieldUnfurnished   *float64 `json:"yieldUnfurnished,omitempty"`
 	YieldFurnished     *float64 `json:"yieldFurnished,omitempty"`
 	TotalCostUnfurn    *int64   `json:"totalCostUnfurnished,omitempty"`
 	TotalCostFurnished *int64   `json:"totalCostFurnished,omitempty"`
-	Confidence         string   `json:"confidence,omitempty"`
+	// ожидаемая аренда по сценариям: медиана + вилка p25–p75 (#108)
+	RentMedianUnfurn *float64 `json:"rentMedianUnfurnished,omitempty"`
+	RentP25Unfurn    *float64 `json:"rentP25Unfurnished,omitempty"`
+	RentP75Unfurn    *float64 `json:"rentP75Unfurnished,omitempty"`
+	CompsUnfurn      *int     `json:"compsUnfurnished,omitempty"`
+	RentMedianFurn   *float64 `json:"rentMedianFurnished,omitempty"`
+	RentP25Furn      *float64 `json:"rentP25Furnished,omitempty"`
+	RentP75Furn      *float64 `json:"rentP75Furnished,omitempty"`
+	CompsFurn        *int     `json:"compsFurnished,omitempty"`
+	Confidence       string   `json:"confidence,omitempty"`
 }
 
 // MapPage — ответ выдачи: точки + индикатор пропущенного.
@@ -127,17 +141,21 @@ func (s *Store) List(ctx context.Context, f MapFilters) ([]MapItem, error) {
 	out := []MapItem{}
 	for rows.Next() {
 		var it MapItem
-		var title, address, complex, city *string
+		var title, address, complex, city, furnishing *string
 		var price **int64
 		var area **float64
 		var rooms, floor, floorsTotal **int
 		var photo *string
-		var yieldU, yieldF *float64
+		var yieldU, yieldF, rentMedU, rentP25U, rentP75U, rentMedF, rentP25F, rentP75F *float64
 		var costU, costF *int64
+		var compsU, compsF *int
 		var conf *string
 		if err := rows.Scan(&it.ID, &it.URL, &title, &it.DealType, &price, &area,
 			&rooms, &it.Studio, &floor, &floorsTotal, &address, &complex, &city,
-			&it.Lat, &it.Lng, &photo, &yieldU, &yieldF, &costU, &costF, &conf); err != nil {
+			&it.Lat, &it.Lng, &photo, &furnishing,
+			&yieldU, &yieldF, &costU, &costF,
+			&rentMedU, &rentP25U, &rentP75U, &compsU,
+			&rentMedF, &rentP25F, &rentP75F, &compsF, &conf); err != nil {
 			return nil, err
 		}
 		derefInt64 := func(p **int64) *int64 {
@@ -171,6 +189,13 @@ func (s *Store) List(ctx context.Context, f MapFilters) ([]MapItem, error) {
 		it.Rooms, it.Floor, it.FloorsTotal = derefInt(rooms), derefInt(floor), derefInt(floorsTotal)
 		it.YieldUnfurnished, it.YieldFurnished = yieldU, yieldF
 		it.TotalCostUnfurn, it.TotalCostFurnished = costU, costF
+		it.RentMedianUnfurn, it.RentP25Unfurn, it.RentP75Unfurn = rentMedU, rentP25U, rentP75U
+		it.CompsUnfurn = compsU
+		it.RentMedianFurn, it.RentP25Furn, it.RentP75Furn = rentMedF, rentP25F, rentP75F
+		it.CompsFurn = compsF
+		if furnishing != nil {
+			it.InputFurnishing = *furnishing
+		}
 		if conf != nil {
 			it.Confidence = *conf
 		}
