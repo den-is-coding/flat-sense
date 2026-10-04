@@ -1,0 +1,543 @@
+{
+  "address": "Ул. Тамбасова, корп. 3",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:41:09.28697Z",
+  "floor": 6,
+  "floors_total": 9,
+  "geo": {
+    "formattedAddress": "Ул. Тамбасова, корп. 3",
+    "geoReferences": [
+      {
+        "content": "р-н Красносельский"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 7651614061,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.NeBEl7a6mQkKPWMCIrtZrGY3mwn8LmMCCj2bC_Iqmw.i_eTDtPw8EgM5M5oIPfDQ0vxn1tfcWBAyOByF8R8E7s",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.wtM43ba6bjp2d5QxMKq5iW58bDqAZJQxdndsOI5gbA.cdSYDiQn_HjeThaSit5ebKTP5pK_rx4_L9Q48D_BaFs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM3flsLGtU7tf8edOs0phcLG35Y6zyeBOg.dS6G6ym_SyfTkstcwquwAHvSSgLS3vlcUjHXpFzUc90?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojQf1Fg_QXIAhAffoDTpx1g_H9SgNufDoA.2AKq36AIQhtg5R2X0HnRk3IXOw5xYJSXC3txtnJF-M0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.DtFRfra6ojgf1FgzQUIAiAffoDjpx1gzH9SgOufDoA.fb40aeXQ8r6Br6T8TXfxPcIdFUO6TMpJk6cgw1oSTx4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:41:09.28697Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7969143,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 969 143",
+    "stringWithoutDiscount": null,
+    "value": 7969143,
+    "wasLowered": false
+  },
+  "price_per_unit": 349,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790930126000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "2919 завершённых объявлений",
+    "closestAddressId": 22095606,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "ул. Тамбасова, корп. 3",
+      "lat": "59.83985",
+      "lng": "30.15198",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 8763512,
+    "developmentName": "ЖК «Кинопарк»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "19 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,8 м², 6/9 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 19,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "formattedAddress": "Ул. Тамбасова, корп. 3",
+      "geoReferences": [
+        {
+          "content": "р-н Красносельский"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 7651614061,
+    "images": [
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.NeBEl7a6mQlSNzsIIrtZrGY3mwn8LjsIUjebC_Iqmw.NFIKf2WEcm_UrPvk7HfO90hQBtypmey9HFuyqtOPBaw",
+        "236x236": "https://40.img.avito.st/image/1/1.NeBEl7a6mQkqN0MIIrtZrGY3mwn8LkMIKjebC_Iqmw.5yZOD_UPXUHkUHDZwyVQ8obt-jQoMDG--j0jjonS2AA",
+        "318x318": "https://40.img.avito.st/image/1/1.NeBEl7a6mQkOMGcPIrtZrGY3mwn8LmcPDjCbC_Iqmw.eOMfv-lu_MDnNt409pQb7xlgJMxN9e7OukgJI96wNDM",
+        "416x416": "https://40.img.avito.st/image/1/1.NeBEl7a6mQkyMlsNIrtZrGY3mwn8LlsNMjKbC_Iqmw.CW8cAc4Pga7bVgpuh1XdcVCnzdLk7jhnE1JBOf3tblA",
+        "472x472": "https://40.img.avito.st/image/1/1.NeBEl7a6mQlCMysMIrtZrGY3mwn8LisMQjObC_Iqmw.Jp5Wfxf1-2SwZvrUkuc2SZW6AXBNYetn4wcCnqFttUI",
+        "636x636": "https://40.img.avito.st/image/1/1.NeBEl7a6mQkKPWMCIrtZrGY3mwn8LmMCCj2bC_Iqmw.i_eTDtPw8EgM5M5oIPfDQ0vxn1tfcWBAyOByF8R8E7s"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.wtM43ba6bjoufcw7MKq5iW58bDqAZMw7Ln1sOI5gbA.NZnmwZ4ys0ICUzt3MdHACY1NlirMME2TRPWPXP2KtNg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.wtM43ba6bjpWfbQ7MKq5iW58bDqAZLQ7Vn1sOI5gbA.MzWQ8vjwCNbPv7Zdr2Ng16XwRafb0JHZ3lynVmpA8Sc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.wtM43ba6bjpyepA8MKq5iW58bDqAZJA8cnpsOI5gbA.EBJwzH-B0m20WOdyqd96HWIPpM2_Dyv5Y-CEYCrrl9A?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.wtM43ba6bjpOeKw-MKq5iW58bDqAZKw-TnhsOI5gbA.TJbmIOzu3LaNo0TbVwl7zP6Hu1XEPd_lYZcc6GBDn0I?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.wtM43ba6bjo-edw_MKq5iW58bDqAZNw_PnlsOI5gbA.rz4DQfKKaz0Kp_DlTbI617DISIzGV5N97vf8_WPwtdo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.wtM43ba6bjp2d5QxMKq5iW58bDqAZJQxdndsOI5gbA.cdSYDiQn_HjeThaSit5ebKTP5pK_rx4_L9Q48D_BaFs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM2HnJrMtU7tf8edOs0phZrMh5w6zyeBOg.EtKR14x_VXbwJAMZlohpbQD6xdUhyYSXW3NljIZu-o8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM3_nOLMtU7tf8edOs0pheLM_5w6zyeBOg.INeaRFoGrt6lqC92IFf-pwJOOqpj-IpZa3FZ6Te0cpQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM3bm8bLtU7tf8edOs0phcbL25s6zyeBOg.8qnIcI_zpPbWs5bntS8ttg2Ahj2ZWcGklhr5fTRkqMM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM3nmfrJtU7tf8edOs0phfrJ55k6zyeBOg.Dj2G9oXRV5oWV-oLQMZPizfWXySZlpaHMaPdpX4e1eE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM2XmIrItU7tf8edOs0phYrIl5g6zyeBOg.HSzXNR_o8DG5JWXQEhjL84NrZC9Mu2o1flXbr5wKfKA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.lCSRPLa6OM3flsLGtU7tf8edOs0phcLG35Y6zyeBOg.dS6G6ym_SyfTkstcwquwAHvSSgLS3vlcUjHXpFzUc90?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojRH3gA1QXIAhAffoDTpxwA1R96gNufDoA.vLsCsVi8m2bihhqqq1nHMiRGW7T7mrImHqUOpH7wyQ4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojQ_3ng1QXIAhAffoDTpx3g1P96gNufDoA.a3CZBzIMPdcWyQukkCUbgsX1uusNp5nWC8kqcD1yNdA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojQb2VwyQXIAhAffoDTpx1wyG9mgNufDoA.3UH-vLXzSNtISbwJOkkQbiZbh1tDrFSaVYJnBtX0x3c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojQn22AwQXIAhAffoDTpx2AwJ9ugNufDoA.acpTgCPhMj7IIR1ZW4BIHuP4feIVj3JGLtGq5KJTIY4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojRX2hAxQXIAhAffoDTpxxAxV9qgNufDoA.4rYwYzcRGWY1Rmd5GTwCOz0H-piEmrMQDkWdH1pU52s?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://20.img.avito.st/image/1/1.Dt1Rfra6ojQf1Fg_QXIAhAffoDTpx1g_H9SgNufDoA.2AKq36AIQhtg5R2X0HnRk3IXOw5xYJSXC3txtnJF-M0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.DtFRfra6ojhH3gA5QUIAiAffoDjpxwA5R96gOufDoA.fBoei_gQXRCFCW96uevGfhXmaiAGm2tCibo8sr2Nn3M?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.DtFRfra6ojg_3ng5QUIAiAffoDjpx3g5P96gOufDoA.uNUZbdSf6M_wyYdT4bxXGjv1zua1RJsEkPCEfvdCiXk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.DtFRfra6ojgb2Vw-QUIAiAffoDjpx1w-G9mgOufDoA.YB3mh6ZFqMVa05Lni1xofmoIuEAD-SZ_xotUeoF8SBI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.DtFRfra6ojgn22A8QUIAiAffoDjpx2A8J9ugOufDoA.cNIw5PQY3htH7aFoG_7Pds8QpDCLfdy55z3WQZQJO40?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.DtFRfra6ojhX2hA9QUIAiAffoDjpxxA9V9qgOufDoA.24vSktZ_pxKSkH4Dmsl_sGZEDY2LlfVlMHCFgWAN8oE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.DtFRfra6ojgf1FgzQUIAiAffoDjpx1gzH9SgOufDoA.fb40aeXQ8r6Br6T8TXfxPcIdFUO6TMpJk6cgw1oSTx4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      }
+    ],
+    "imagesCount": 19,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 7651614061
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "description": "Выгодное предложение от застройщика:\n* Дом с видом на парк.\n* Свои 2 детских сада и школа.\n* Дизайнерские парадные с атмосферой кино.\n* Подземный паркинг со спуском на лифте.\n* Концептуальное благоустройство.\n\n*Стоимость квартиры указана с учетом действующих акций при условии 100% оплаты собственными средствами.\nПродаётся Студия в ЖК «Кинопарк» от застройщика Группа компаний «Рсти».\nКвартира находится в 9 этажном доме, в Очередь 2, Корпус 1 на 6 этаже. Общая площадь квартиры 22,78 кв. М.\n\n«Кинопарк» — современный жилой комплекс, в котором главную роль играете Вы! ЖК у парка «Новознаменка» возводится на бывшей территории «Ленфильма». Тема кино пронизывает весь проект и находит отражение в отделке мест общего пользования и благоустройстве территорий. В проекте большой выбор квартир с разными типами отделки: чистовой в двух цветовых решениях, белой, а также предусмотрены лоты и без отделки.\n\nФасады в неоклассическом стиле и стильные арки делают проект узнаваемым. Безбарьерный доступ — вход в парадные осуществляется с уровня земли, что исключает необходимость в ступенях и пандусах. В каждой очереди ЖК «Кинопарк» предусмотрен подземный отапливаемый паркинг, в который можно спуститься на лифте. Что обеспечивает комфортный, легкий и быстрый доступ из машины в квартиру, например, когда требуется отнести домой покупки. При входе в паркинг будут установлены системы контроля доступа и охранного видеонаблюдения. В третьей очереди жилого комплекса «Кинопарк» спроектирована центральная входная группа, в оформлении которой отражена тема кинематографа. В форме спаренной винтовой лестницы читается образ киноленты. Арки в витражах возрождают в памяти образы вокзалов из кинокартин и перекликаются с архитектурным обликом комплекса.\n\nЖК «Кинопарк» расположен в одном из самых экологически благополучных районов с развитой инфраструктурой — Красносельском. Рядом есть магазины, детские сады, школы и другая необходимая инфраструктура. Напротив комплекса находится парк «Новознаменка», в шаговой доступности еще четыре парка и два сквера. В непосредственной близости — ТЦ «Жемчужная Плаза», гипермаркеты «О’Кей» и «Леруа Мерлен», рестораны, кафе, аптеки, пункты выдачи. В радиусе 1,5 км находятся детские сады, школы, вузы и заведения среднеспециального образования, спортивные клубы и секции.\n\n«Кинопарк» имеет хорошую транспортную доступность в любую точку города: Кад, Зсд, Петергофское шоссе, проспект Ветеранов, пригороды: Стрельна, Петергоф и Ораниенбаум. Ближайшая остановка общественного транспорта «улица Томбасова, д. 6» расположена в 200 м от ЖК.\n\nЖК «Кинопарк» находится в окружении 5 парков, 2 скверов и множества водоемов. В шаговой доступности выход к южному берегу Финского залива, здесь много различных водоемов — парковые пруды, реки (Ивановка, Сосновка, Новая) и Дудергофский канал; новая благоустроенная набережная со смотровой площадкой; яхт-клуб «Балтиец»; Жемчужный пляж.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "developmentInfo": {
+              "developmentId": 8763512,
+              "href": "https://zhk-kinopark-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFAAL__YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjg3NjM1MTI7fV-akn5AAAAA",
+              "name": "ЖК «Кинопарк»",
+              "pageNumber": 7
+            },
+            "rating": {
+              "formattedValue": {
+                "attributes": {},
+                "text": "1 отзыв",
+                "version": 1
+              },
+              "showChevronEnd": false,
+              "type": null
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Ул. Тамбасова, корп. 3",
+              "geoReferences": [
+                {
+                  "content": "р-н Красносельский"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 7651614061,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "X9dGX88g4NDJ2Td9"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "349 524 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 969 143",
+              "stringWithoutDiscount": null,
+              "value": 7969143,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7651614061
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,8 м², 6/9 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,8 м², 6/9 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/rsti_official?src=search_seller_info\u0026iid=7651614061",
+              "title": "Группа компаний «РСТИ»"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "2919 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 7651614061
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "349 524 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,97 млн",
+      "fullString": "7 969 143 ₽",
+      "hasValue": true,
+      "normalizedPrice": "349 524 ₽ за м²",
+      "postfix": "",
+      "string": "7 969 143",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7969143,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "1 отзыв",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": ""
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "endText": {
+        "color": "red600",
+        "value": "до 30 тыс ₽"
+      },
+      "startIcon": {
+        "color": "red600",
+        "name": "flashFilled"
+      },
+      "startText": {
+        "color": "black",
+        "value": "Скидка"
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790930126000,
+    "title": "Квартира-студия, 22,8 м², 6/9 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "ул. Тамбасова, корп. 3",
+      "link": "/brands/rsti_official?page_from=from_items_list_icon\u0026iid=7651614061",
+      "slug": null,
+      "src": "https://10.img.avito.st/image/1/1.P4krara6hWAdyxFgWS4vuffJlWa7SZNil-uRYp3dkQ.KgLP_yYrLXfH-LZTwDUFgRMVMUcd-mBHsn9W8taZSpk?cqp=2.EI1aZg-3nTjj2X2l0mbh9ealZRk="
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Группа компаний «РСТИ»",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/rsti_official?src=search_seller_info\u0026iid=7651614061"
+  },
+  "seller_name": "Группа компаний «РСТИ»",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/rsti_official?src=search_seller_info\u0026iid=7651614061",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,8 м², 6/9 эт.",
+  "total_area": 22.8,
+  "updated_at": "2026-10-03T11:41:09.28697Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_228_m_69_et._7651614061?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+  "views_count": null,
+  "year_built": null
+}

@@ -1,0 +1,578 @@
+{
+  "address": "Наб. реки Фонтанки, 38",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.092417Z",
+  "floor": 2,
+  "floors_total": 5,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/nab_reki_fontanki_38/257971?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 38"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=176",
+        "text": "Маяковская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/naberezhnaya_reki_fontanki/1633-ASgBAgECA0SSA8YQ5geMUujIE8IZAUXcBxwibmFiZXJlemhuYXlhX3Jla2lfZm9udGFua2ki",
+        "text": "наб. реки Фонтанки"
+      }
+    },
+    "formattedAddress": "Наб. реки Фонтанки, 38",
+    "geoReferences": [
+      {
+        "after": " 700 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#009A49"
+        ],
+        "content": "Маяковская"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,2 · 4 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8448743454,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.BXjzN7a-qZG9nVOa9SsneuuXq5dBgK2RQefIm01somtMlKs.rKHUnNpKIcZvmtDoV8-KT4dPvUquCQ-IOEE8xzhcXPk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.4cAPara-TSlBwLciQXG9wRfKTy-93UkpvbosI7ExRtOwyU8.luom3tjnfYDqWaMLqDukqv04JvGXa_1CuU6S_kFQFMI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.AdUuara-rTxgwFc3IHoP1jbKrzqc3ak8nLrMNpAxpsaRya8.dzdjvsY6McaJLBVP7uCKuj2Pk9cKmmWSpXIQkz93r8I",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c70.img.avito.st/image/1/1.188YNra-eyZWnIEtOkmKzgCWeSCqgX8mquYaLKZtcNynlXk.6-kONVeOsnzlw7t3W26-hM6CSwFGAMWirPAKBPY5Peg",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.WHT2B7a-9J24rQ6WylpXd-6n9ptEsPCdRNeVl0hc_2dJpPY.qIf75BTOxv8QzvrdjAPWCN1cmqbsk1CFAxTgfcpQwb4",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.092417Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 461,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790175113000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "532 завершённых объявления",
+    "closestAddressId": 257971,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, набережная реки Фонтанки, 38",
+      "lat": "59.9341",
+      "lng": "30.344722",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "12 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 17,3 м², 2/5 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 12,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/nab_reki_fontanki_38/257971?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 38"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=176",
+          "text": "Маяковская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/naberezhnaya_reki_fontanki/1633-ASgBAgECA0SSA8YQ5geMUujIE8IZAUXcBxwibmFiZXJlemhuYXlhX3Jla2lfZm9udGFua2ki",
+          "text": "наб. реки Фонтанки"
+        }
+      },
+      "formattedAddress": "Наб. реки Фонтанки, 38",
+      "geoReferences": [
+        {
+          "after": " 700 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#009A49"
+          ],
+          "content": "Маяковская"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,2 · 4 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8448743454,
+    "images": [
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.BXjzN7a-qZHllwuQ9SsneuuXq5dBgK2RQefIm000qDNGlKs.psIpn83Hy3Cq-ef4aDur341COqF7-yJMCVWq488Dc5A",
+        "236x236": "https://80.img.avito.st/image/1/1.BXjzN7a-qZGdl3OQ9SsneuuXq5dBgK2RQefIm01MqEtGlKs.ZnaHHJJe7xhhDOctpcgmAmMDi1vKexsF5r5p0_gC0EU",
+        "318x318": "https://80.img.avito.st/image/1/1.BXjzN7a-qZG5kFeX9SsneuuXq5dBgK2RQefIm01or29BlKs.GKCNBt6RFWoZ3kUb1Pr73EOYf_3xM7uNxC2VvAFUnYI",
+        "416x416": "https://80.img.avito.st/image/1/1.BXjzN7a-qZGFkmuV9SsneuuXq5dBgK2RQefIm01UrVNDlKs.DyrCjE6mKHXEeyvjty09ZlriXLRDsel7qVVpTNgy6bE",
+        "472x472": "https://80.img.avito.st/image/1/1.BXjzN7a-qZH1kxuU9SsneuuXq5dBgK2RQefIm00krCNClKs.CkComadL2lcl1pxsPGoud8SwCHdGJX4xM-SZ2lAvYNw",
+        "636x636": "https://80.img.avito.st/image/1/1.BXjzN7a-qZG9nVOa9SsneuuXq5dBgK2RQefIm01somtMlKs.rKHUnNpKIcZvmtDoV8-KT4dPvUquCQ-IOEE8xzhcXPk"
+      },
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.4cAPara-TSkZyu8oQXG9wRfKTy-93UkpvbosI7FpTIu6yU8.csuB45RTb44UHOTHKJ0CEn5b6aZLePVMDtYLdV-f-t8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://20.img.avito.st/image/1/1.4cAPara-TSlhypcoQXG9wRfKTy-93UkpvbosI7ERTPO6yU8.Ne_wY2oqcRWiFkqbGWk-IQdYTeMUPS1Ew0BWmEtq3t4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://20.img.avito.st/image/1/1.4cAPara-TSlFzbMvQXG9wRfKTy-93UkpvbosI7E1S9e9yU8.I5GbSKPIRzjm_Xr-Y8SFino9xB1pgnZ4REpxFlJ1Xxs?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://20.img.avito.st/image/1/1.4cAPara-TSl5z48tQXG9wRfKTy-93UkpvbosI7EJSeu_yU8.z1IChLD44BgbpJxnRGatWWErW0_I0qhcAnzEBktVoF0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://20.img.avito.st/image/1/1.4cAPara-TSkJzv8sQXG9wRfKTy-93UkpvbosI7F5SJu-yU8.esAnpUDiF08yeN3VVLGUmJ8CJetf7y9o_aIp9pSAbAo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://20.img.avito.st/image/1/1.4cAPara-TSlBwLciQXG9wRfKTy-93UkpvbosI7ExRtOwyU8.luom3tjnfYDqWaMLqDukqv04JvGXa_1CuU6S_kFQFMI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.AdUuara-rTw4yg89IHoP1jbKrzqc3ak8nLrMNpBprJ6bya8.QXZ9H6ql4oHWGJV_qMRQfNMIm9auHkeXsfuTX-x9DsY",
+        "236x236": "https://80.img.avito.st/image/1/1.AdUuara-rTxAync9IHoP1jbKrzqc3ak8nLrMNpARrOabya8.dK_i_UgxAumn9cOasTYyt3Ejdw-0aj9ix3hTCqpFBm0",
+        "318x318": "https://80.img.avito.st/image/1/1.AdUuara-rTxkzVM6IHoP1jbKrzqc3ak8nLrMNpA1q8Kcya8.mrxdfPum4jFXc1QCt3sky1Bg-N2DYmiGBZsoaC9X49I",
+        "416x416": "https://80.img.avito.st/image/1/1.AdUuara-rTxYz284IHoP1jbKrzqc3ak8nLrMNpAJqf6eya8.8jU2RxBzblnRkTlHkDxOHg00IFCAT7W1bkBAqvqUjkY",
+        "472x472": "https://80.img.avito.st/image/1/1.AdUuara-rTwozh85IHoP1jbKrzqc3ak8nLrMNpB5qI6fya8.guo5QL5cqrRW9dlYG8WhAHgNrcv0khT9hDMVXbNFX6M",
+        "636x636": "https://80.img.avito.st/image/1/1.AdUuara-rTxgwFc3IHoP1jbKrzqc3ak8nLrMNpAxpsaRya8.dzdjvsY6McaJLBVP7uCKuj2Pk9cKmmWSpXIQkz93r8I"
+      },
+      {
+        "208x208": "https://c70.img.avito.st/image/1/1.188YNra-eyYOltknOkmKzgCWeSCqgX8mquYaLKY1eoStlXk.x4Nx8Jrq9WPNkJ1s9AiIIQJACS6OXFKfYV4f1EE_d7k",
+        "236x236": "https://c70.img.avito.st/image/1/1.188YNra-eyZ2lqEnOkmKzgCWeSCqgX8mquYaLKZNevytlXk.bXMDRnWB-1y_7XZnW-Ib_jagG4VG9VvoK05Ky2sgDPM",
+        "318x318": "https://c70.img.avito.st/image/1/1.188YNra-eyZSkYUgOkmKzgCWeSCqgX8mquYaLKZpfdiqlXk.SahflnAwlfo7uzyLiRhU8_budyzk5Rby2eCbIczbQ1g",
+        "416x416": "https://c70.img.avito.st/image/1/1.188YNra-eyZuk7kiOkmKzgCWeSCqgX8mquYaLKZVf-SolXk.CjUo0tx1kavFT44CVdlENINq8j2YeAa0ltWEOFg3Zlk",
+        "472x472": "https://c70.img.avito.st/image/1/1.188YNra-eyYekskjOkmKzgCWeSCqgX8mquYaLKYlfpSplXk.zTCfq2GIbe866g7PId_HzS1OGJ_b-9sw7WtH-AmW63I",
+        "636x636": "https://c70.img.avito.st/image/1/1.188YNra-eyZWnIEtOkmKzgCWeSCqgX8mquYaLKZtcNynlXk.6-kONVeOsnzlw7t3W26-hM6CSwFGAMWirPAKBPY5Peg"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.WHT2B7a-9J3gp1acylpXd-6n9ptEsPCdRNeVl0gE9T9DpPY.eGP_HtifF3TyKE5Yuyu-th8lQPcPVhylyY0B6siV0UE",
+        "236x236": "https://40.img.avito.st/image/1/1.WHT2B7a-9J2Ypy6cylpXd-6n9ptEsPCdRNeVl0h89UdDpPY.n3FgoAtHfW1OAA66__maZMkAH-SqbZ3N6TNs4tWRBFk",
+        "318x318": "https://40.img.avito.st/image/1/1.WHT2B7a-9J28oAqbylpXd-6n9ptEsPCdRNeVl0hY8mNEpPY.xQH4AshoYRx_W_PoEwQkrGX0-DlWo6KpIdJ4MnbzC_Y",
+        "416x416": "https://40.img.avito.st/image/1/1.WHT2B7a-9J2AojaZylpXd-6n9ptEsPCdRNeVl0hk8F9GpPY.wjBGh20JDGvRrONcLKj2RFwFsWFY_agkUGZyQHMavl0",
+        "472x472": "https://40.img.avito.st/image/1/1.WHT2B7a-9J3wo0aYylpXd-6n9ptEsPCdRNeVl0gU8S9HpPY.quSYh4Hh3Cx8vNjp-3ZfmJ1QLTDIGELeSjjI4pjMihg",
+        "636x636": "https://40.img.avito.st/image/1/1.WHT2B7a-9J24rQ6WylpXd-6n9ptEsPCdRNeVl0hc_2dJpPY.qIf75BTOxv8QzvrdjAPWCN1cmqbsk1CFAxTgfcpQwb4"
+      }
+    ],
+    "imagesCount": 12,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8448743454
+            },
+            "relative": "1 неделю назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "description": "Доход с первого дня | Фиксированный доход 8% годовых | Клубный инвестиционный проект на Фонтанке.\n\nПроект для инвесторов, которые ищут понятный актив в одной из самых ликвидных локаций города с регулярным доходом и потенциалом роста стоимости.\n\nНабережная реки Фонтанки, 38.\n\nМ. Гостиный двор — 7 минут пешком.\nМ. Невский проспект — 8 минут пешком.\n\nИсторический центр Санкт-Петербурга с постоянным спросом на аренду независимо от сезона.\n\nО проекте.\n\nИсторический кирпичный дом в центре Петербурга.\n\nВысота потолков до 3,1 м.\n\nКлассическая архитектура и одна из самых узнаваемых локаций города.\n\nКонцепция проекта.\n\nАвторская отделка в стиле французской неоклассики.\nРемонт, сантехника и освещение включены в стоимость.\nОснащение мебелью и техникой — в подарок.\n\nПолностью готовый объект для получения дохода без дополнительных вложений.\n\nИнвестиционные преимущества.\n\nДоход с первого дня владения объектом.\nГарантированный доход 8% годовых по программе управления*.\nДоходность от аренды 12% годовых.\nОснащение мебелью и техникой уже включено — дополнительных затрат на запуск объекта не требуется.\nРоста стоимости объекта до 20% по мере реализации проекта.\nОграниченное предложение — осталось всего 1 из 6 лотов.\nВысокий спрос на аренду круглый год.\nЛиквидная локация в историческом центре Санкт-Петербурга.\n\nПочему инвесторы заходят сейчас.\n\nМногие инвесторы рассматривают стратегию:\n\nпокупка по стартовой цене.\nПолучение гарантированного или арендного дохода посредством УК.\nПродажа объекта через 2–3 года после роста стоимости.\n\nУсловия покупки.\n\nИпотека.\nРассрочка.\nПолное сопровождение сделки.\nПомощь с ипотечным кредитованием.\nПерепланировка и мокрые зоны узаконены, все подтверждено в Егрн.\n\nНапишите или позвоните.\n\nОтправим презентацию проекта.\nПокажем все доступные планировки.\nПредоставим инвестиционный расчет.\nРасскажем об условиях получения дохода.\nОрганизуем персональный показ.\n\n*Подробные условия программы с гарантированным доходом предоставляются по запросу.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Наб. реки Фонтанки, 38",
+              "geoReferences": [
+                {
+                  "after": " 700 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#009A49"
+                  ],
+                  "content": "Маяковская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8448743454,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "461 850 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8448743454
+            },
+            "seo": {
+              "title": "Квартира-студия, 17,3 м², 2/5 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 17,3 м², 2/5 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/iremd.ru?src=search_seller_info\u0026iid=8448743454",
+              "title": "IREMD | АЙРЭМДИ"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "532 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8448743454
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "461 850 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "461 850 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,2 · 4 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790235555000,
+    "title": "Квартира-студия, 17,3 м², 2/5 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, набережная реки Фонтанки, 38",
+      "link": "/brands/iremd.ru?page_from=from_items_list_icon\u0026iid=8448743454",
+      "slug": null,
+      "src": "https://70.img.avito.st/image/1/1.ngupjLa5JOKfLbDimeaALp8sMOQbCbDiHyUS4B8vJOA.L7DnMbI3Ehf_6vOfgq8P3znAHIGnJiO4cICp9A52MFM"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "IREMD | АЙРЭМДИ",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/iremd.ru?src=search_seller_info\u0026iid=8448743454"
+  },
+  "seller_name": "IREMD | АЙРЭМДИ",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/iremd.ru?src=search_seller_info\u0026iid=8448743454",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 17,3 м², 2/5 эт.",
+  "total_area": 17.3,
+  "updated_at": "2026-10-03T11:32:50.092417Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_173_m_25_et._8448743454?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

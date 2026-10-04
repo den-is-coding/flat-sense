@@ -1,0 +1,610 @@
+{
+  "address": "Ул. Швецова, 4",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.191925Z",
+  "floor": 3,
+  "floors_total": 5,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/ul_shvetsova_4/2041684?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 4"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=179",
+        "text": "Нарвская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_shvetsova/10988-ASgBAgECA0SSA8YQ5geMUujIE9irAQFF3AcSInVsaXRzYV9zaHZldHNvdmEi",
+        "text": "ул. Швецова"
+      }
+    },
+    "formattedAddress": "Ул. Швецова, 4",
+    "geoReferences": [
+      {
+        "after": " 600 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Нарвская"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "1 отзыв",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": null
+    }
+  },
+  "house_type": null,
+  "id": 7953363732,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.a2pxZba-x4M_zz2IK0h9Dl3FxYXD0sODw7Wmic8-zHnOxsU.5c8-bEudYFqz8qVsvF1f_17WIDCt6Ixy9PbaPtkc5as?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.qYJ7xra-BWs1bP9gJfjSi0hmB23JcQFryRZkYcWdDpHEZQc.-v-mKY-5TfAcgcpCCPn3J3KBcwAbX6zylI66olPu-yY",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.NVbQ9La-mb-eXmO0tpBvXeNUm7liQ52_YiT4tW6vkkVvV5s.FnZzdBsn69mrgPDfblAa0OXqXSv1VdK36Uv1Ey3Js78",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.daPHnba-2UqJNyNBodRjl_Q920x1Kt1KdU24QHnG0rB4Pts._gRcRKwQYwMjp2hximAz6LI_0NJCuqJf5pS_rwQ9Nc4",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.QhcmQba-7v5o6xT1LihUIxXh7PiU9ur-lJGP9Jga5QSZ4uw.w_Z_QsHfyCUxFJjfqJWZlVAJqSsrykWZSSp1shWsOY8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:37:13.016178Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7964961,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 964 961",
+    "stringWithoutDiscount": null,
+    "value": 7964961,
+    "wasLowered": false
+  },
+  "price_per_unit": 400,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788948249000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "39 завершённых объявлений",
+    "closestAddressId": 2041684,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, улица Швецова, 4",
+      "lat": "59.89612",
+      "lng": "30.279639",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "15 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 19,9 м², 3/5 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 15,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/ul_shvetsova_4/2041684?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 4"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=179",
+          "text": "Нарвская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_shvetsova/10988-ASgBAgECA0SSA8YQ5geMUujIE9irAQFF3AcSInVsaXRzYV9zaHZldHNvdmEi",
+          "text": "ул. Швецова"
+        }
+      },
+      "formattedAddress": "Ул. Швецова, 4",
+      "geoReferences": [
+        {
+          "after": " 600 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Нарвская"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "1 отзыв",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": null
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 7953363732,
+    "images": [
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.a2pxZba-x4NnxWWCK0h9Dl3FxYXD0sODw7Wmic9mxiHExsU.uPXz7SA297zPXLnmQLcxgxLvoAYGY2vGnGqpBzGpnqU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://20.img.avito.st/image/1/1.a2pxZba-x4MfxR2CK0h9Dl3FxYXD0sODw7Wmic8exlnExsU.zipbUyXv5EykiYp1_0vW5NuWpkkMkAnMdGDVCmFKK-Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://20.img.avito.st/image/1/1.a2pxZba-x4M7wjmFK0h9Dl3FxYXD0sODw7Wmic86wX3DxsU.DQnT_u0CG7ezg58V2WmBmSmsOfgZvXwq0ZJz5whAFNE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://20.img.avito.st/image/1/1.a2pxZba-x4MHwAWHK0h9Dl3FxYXD0sODw7Wmic8Gw0HBxsU.svu345Hh_0elokaga10bMAdAoazQZHkFV9UvrOqcCd4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://20.img.avito.st/image/1/1.a2pxZba-x4N3wXWGK0h9Dl3FxYXD0sODw7Wmic92wjHAxsU.WJdcsGEMvzcbWS3xny4_lQU2zM8_CMQoEMU5FuzD9cI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://20.img.avito.st/image/1/1.a2pxZba-x4M_zz2IK0h9Dl3FxYXD0sODw7Wmic8-zHnOxsU.5c8-bEudYFqz8qVsvF1f_17WIDCt6Ixy9PbaPtkc5as?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.qYJ7xra-BWttZqdqJfjSi0hmB23JcQFryRZkYcXFBMnOZQc.MQapbi6YGbTe7yAjR271pmHdeBxQ_Aq_RI51_3Z0PhM",
+        "236x236": "https://60.img.avito.st/image/1/1.qYJ7xra-BWsVZt9qJfjSi0hmB23JcQFryRZkYcW9BLHOZQc.zLpKvLwRMTp5rNzvdYzGOK_HP2zUyv3TcDRU7BzWTmw",
+        "318x318": "https://60.img.avito.st/image/1/1.qYJ7xra-BWsxYfttJfjSi0hmB23JcQFryRZkYcWZA5XJZQc.ZFvwU_ff9wXKZbztqKTNgFuPbmDOWYbFd6wjDL1nHzM",
+        "416x416": "https://60.img.avito.st/image/1/1.qYJ7xra-BWsNY8dvJfjSi0hmB23JcQFryRZkYcWlAanLZQc.qYoCLwBc5iAUAZyaS76CW_4JCwkR9Oeu9HBFXWVEQzU",
+        "472x472": "https://60.img.avito.st/image/1/1.qYJ7xra-BWt9YrduJfjSi0hmB23JcQFryRZkYcXVANnKZQc.LB6D-3iCjowT5RP_mSxdQSSnCNt-BQgy2SZoFvBbClE",
+        "636x636": "https://60.img.avito.st/image/1/1.qYJ7xra-BWs1bP9gJfjSi0hmB23JcQFryRZkYcWdDpHEZQc.-v-mKY-5TfAcgcpCCPn3J3KBcwAbX6zylI66olPu-yY"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.NVbQ9La-mb_GVDu-tpBvXeNUm7liQ52_YiT4tW73mB1lV5s.NPXQVzNlSzE0KeINcn78Is8KJ7Ex3Z2WsB1Zsa2QxYM",
+        "236x236": "https://40.img.avito.st/image/1/1.NVbQ9La-mb--VEO-tpBvXeNUm7liQ52_YiT4tW6PmGVlV5s.oEHtzKc4CStR4lT1SnCccyisMNM098OMCH6hNUKz9vA",
+        "318x318": "https://40.img.avito.st/image/1/1.NVbQ9La-mb-aU2e5tpBvXeNUm7liQ52_YiT4tW6rn0FiV5s.TU509-n2t1CrkRoIBgudlYuF0AkzR2T0REb99NxKG_A",
+        "416x416": "https://40.img.avito.st/image/1/1.NVbQ9La-mb-mUVu7tpBvXeNUm7liQ52_YiT4tW6XnX1gV5s.VC0CsEQEPo6CDbCwhzRNI9dYsJge-OtFQjC8_xammao",
+        "472x472": "https://40.img.avito.st/image/1/1.NVbQ9La-mb_WUCu6tpBvXeNUm7liQ52_YiT4tW7nnA1hV5s.tPvH554Rd-40KPOaUlw81Y1dDABzYU4wvLt68KpRsoY",
+        "636x636": "https://40.img.avito.st/image/1/1.NVbQ9La-mb-eXmO0tpBvXeNUm7liQ52_YiT4tW6vkkVvV5s.FnZzdBsn69mrgPDfblAa0OXqXSv1VdK36Uv1Ey3Js78"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.daPHnba-2UrRPXtLodRjl_Q920x1Kt1KdU24QHme2OhyPts.GEbXmHTxajeurVT7ljeD9ytXGyaV9p8Exfvcacna0HY",
+        "236x236": "https://80.img.avito.st/image/1/1.daPHnba-2UqpPQNLodRjl_Q920x1Kt1KdU24QHnm2JByPts._C5aKTE2YZm6vV0ua6mas9zA-vOWDHuy8TyZQ9ssr7A",
+        "318x318": "https://80.img.avito.st/image/1/1.daPHnba-2UqNOidModRjl_Q920x1Kt1KdU24QHnC37R1Pts.ya_ZckNE7I9TZozMwnaOh_nwaGYBJf3PqL9X3qe8tSQ",
+        "416x416": "https://80.img.avito.st/image/1/1.daPHnba-2UqxOBtOodRjl_Q920x1Kt1KdU24QHn-3Yh3Pts.PYHkS2LPDsobV7Lnfl79pZBMQ-aiaIQTqzOoiAzL_jw",
+        "472x472": "https://80.img.avito.st/image/1/1.daPHnba-2UrBOWtPodRjl_Q920x1Kt1KdU24QHmO3Ph2Pts.DKDqJcKjYzJP1IHTY13KGWp81RXLo0wNfSWEsRlJh6s",
+        "636x636": "https://80.img.avito.st/image/1/1.daPHnba-2UqJNyNBodRjl_Q920x1Kt1KdU24QHnG0rB4Pts._gRcRKwQYwMjp2hximAz6LI_0NJCuqJf5pS_rwQ9Nc4"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.QhcmQba-7v4w4Uz_LihUIxXh7PiU9ur-lJGP9JhC71yT4uw.T20137phNDRXFh48Dtt-AsX5ne_Ca9BLYn-yh-f7GDc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.QhcmQba-7v5I4TT_LihUIxXh7PiU9ur-lJGP9Jg67yST4uw.AHlGrG6DXApjf1mA4j_qa_hoAVWY6XjX75wriou_4XY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.QhcmQba-7v5s5hD4LihUIxXh7PiU9ur-lJGP9Jge6ACU4uw.AYq1oTgZXFykIWLeIKu4oIBZqJFT8RXPoeRTORjajzM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.QhcmQba-7v5Q5Cz6LihUIxXh7PiU9ur-lJGP9Jgi6jyW4uw.ZiOpSEkk3t9TsBhAbrNublKH91_cb-W2pYciZFsqgvQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.QhcmQba-7v4g5Vz7LihUIxXh7PiU9ur-lJGP9JhS60yX4uw.NXeuooZl6yAKXgjCYyz4fpMkuHKxduy1AzNBAwNPdkg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.QhcmQba-7v5o6xT1LihUIxXh7PiU9ur-lJGP9Jga5QSZ4uw.w_Z_QsHfyCUxFJjfqJWZlVAJqSsrykWZSSp1shWsOY8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 15,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 7953363732
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 7953363732
+            },
+            "relative": "3 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "description": "Студия в новом доме в 6 минутах от метро Нарвская.\n\nВажно: это не точечная квартира в долгострое или на вторичке. Это полностью завершённый, благоустроенный дом — с новым фасадом, парадной, инженерией. Заезжайте и живите, без сюрпризов и доделок за соседей.\n\n6 минут до метро Нарвская, в самом сердце исторического Петербурга. Никаких долгих поездок — вы в центре города пешком.\n\nПочему это выгодное предложение.\n\nДом полностью сдан и благоустроен — новый фасад, отремонтированная парадная, ухоженный двор. Не только квартира готова — готов весь дом.\nУдобная планировка-студия с зонированием под спальное и рабочее место, продуманным расположением сантехники и кухни.\nВысота потолков 3 метра — простор и свет, которых не бывает в типовых студиях.\nОкна на улицу — естественное освещение весь день.\nЮридически чисто: 1 собственник, ограничений и обременений не найдено, площадь и адрес подтверждены Росреестром.\nВозможна ипотека — подходит под программы любых банков.\n\nСостояние.\n\nКвартира под чистовую отделку — стяжка, разводка коммуникаций выполнены, можно делать ремонт сразу под себя, без демонтажа чужого дизайна.\n\nЭто не последняя квартира в доме.\n\nУ нас есть и другие варианты в этом же доме — разные планировки и метраж: от компактных студий до более просторных вариантов. Если эта планировка не подойдёт по площади или расположению окон — подберём то, что нужно именно вам, в этом же доме, с теми же гарантиями готовности и юридической чистоты.\n\nЛокация.\n\n— Метро Нарвская — 6 минут пешком.\n— Метро Балтийская и Путиловская — в пределах 20 минут.\n— Магазины, школы, детские сады, аптеки в шаговой доступности.\n— Тихий двор, исторический район с развитой инфраструктурой.\n\nЗвоните — расскажем подробно о доме, покажем другие варианты планировок и поможем подобрать оптимальные условия покупки.\nДом уже готов — не нужно ждать стройку, можно заехать и жить уже сейчас.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Ул. Швецова, 4",
+              "geoReferences": [
+                {
+                  "after": " 600 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Нарвская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 7953363732,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "xgrz06C7DT84jZeE"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "400 249 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 964 961",
+              "stringWithoutDiscount": null,
+              "value": 7964961,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7953363732
+            },
+            "seo": {
+              "title": "Квартира-студия, 19,9 м², 3/5 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 19,9 м², 3/5 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i365999508?src=search_seller_info\u0026iid=7953363732",
+              "title": "Агентство Швецова 4"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "39 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 7953363732
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "400 249 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,96 млн",
+      "fullString": "7 964 961 ₽",
+      "hasValue": true,
+      "normalizedPrice": "400 249 ₽ за м²",
+      "postfix": "",
+      "string": "7 964 961",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7964961,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "1 отзыв",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": ""
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1788948249000,
+    "title": "Квартира-студия, 19,9 м², 3/5 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, улица Швецова, 4",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Агентство Швецова 4",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i365999508?src=search_seller_info\u0026iid=7953363732"
+  },
+  "seller_name": "Агентство Швецова 4",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i365999508?src=search_seller_info\u0026iid=7953363732",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 19,9 м², 3/5 эт.",
+  "total_area": 19.9,
+  "updated_at": "2026-10-03T11:37:13.016178Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_199_m_35_et._7953363732?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "views_count": null,
+  "year_built": null
+}

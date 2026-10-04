@@ -1,0 +1,582 @@
+{
+  "address": "Наб. реки Мойки, 30",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.087022Z",
+  "floor": 2,
+  "floors_total": 5,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/nab_reki_moyki_30/346599?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 30"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2132",
+        "text": "Адмиралтейская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/naberezhnaya_reki_moyki/5845-ASgBAgECA0SSA8YQ5geMUujIE6pbAUXcBxkibmFiZXJlemhuYXlhX3Jla2lfbW95a2ki",
+        "text": "наб. реки Мойки"
+      }
+    },
+    "formattedAddress": "Наб. реки Мойки, 30",
+    "geoReferences": [
+      {
+        "after": " 400 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Адмиралтейская"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8145526758,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.BsHFmba-qiiLM1AjxaV4wuo5qC53Lq4od0nLInvCodJ6Oqg.SJejYyHIPDCFpuVWEokzFc8Bhn5wvpMXc4pQLC_TSmQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.-5TT87a-V32dWa12qciDmPxTVXthRFN9YSM2d22oXIdsUFU.Af8PLZ5B9gKhGonOJzQKaD0LOH44I4q03lQy6lG8G9g",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.Kdyjlra-hTXtPH8-_fod3ow2hzMRIYE1EUbkPx3Njs8cNYc.d0G07jD0zYthkmpst1B0-HB7fFP6_hCAdeCxIZarRrw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.Hn8Aiba-spZOI0idMIVcci8psJCyPraWslnTnL7SuWy_KrA.ZUOBe6MbbZPMm4H7ZOJGObE_aSymSDoO1WOgOkSzYSw",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB5SWLoVSLmp-jNSQhiuRUQeriIhFKKpS-SjUUI.CsPRd3yRQ3DMf7cxMvmrhRaZQ_0AnhgRXTz_XN6VdJg",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.087022Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 400,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788855155000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "69 завершённых объявлений",
+    "closestAddressId": 346599,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, набережная реки Мойки, 30",
+      "lat": "59.938572",
+      "lng": "30.319937",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "13 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 20 м², 2/5 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 13,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/nab_reki_moyki_30/346599?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 30"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2132",
+          "text": "Адмиралтейская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/naberezhnaya_reki_moyki/5845-ASgBAgECA0SSA8YQ5geMUujIE6pbAUXcBxkibmFiZXJlemhuYXlhX3Jla2lfbW95a2ki",
+          "text": "наб. реки Мойки"
+        }
+      },
+      "formattedAddress": "Наб. реки Мойки, 30",
+      "geoReferences": [
+        {
+          "after": " 400 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Адмиралтейская"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8145526758,
+    "images": [
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.BsHFmba-qijTOQgpxaV4wuo5qC53Lq4od0nLInuaq4pwOqg.auqTAGZSoqS54lTfe2WNsK8S3a5hjBz-Fhch-ABrB-c?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://20.img.avito.st/image/1/1.BsHFmba-qiirOXApxaV4wuo5qC53Lq4od0nLInviq_JwOqg.t5L7oV-7H4HweHknITSzqUoUK_GBdN3LqyaZPba2rZU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://20.img.avito.st/image/1/1.BsHFmba-qiiPPlQuxaV4wuo5qC53Lq4od0nLInvGrNZ3Oqg.ezLGNOpusVy2qob6M7iWiqZVLZyyMNrfo4tMHVsRqzA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://20.img.avito.st/image/1/1.BsHFmba-qiizPGgsxaV4wuo5qC53Lq4od0nLInv6rup1Oqg.ZLHbs-RV54kpxCfEc__ppbPFwuxYKWPVgc4w3Av_kO0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://20.img.avito.st/image/1/1.BsHFmba-qijDPRgtxaV4wuo5qC53Lq4od0nLInuKr5p0Oqg.pfuCvQ49qsZyS_wjerq8pK7mHpW5RxT4QWjr4zUBzXQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://20.img.avito.st/image/1/1.BsHFmba-qiiLM1AjxaV4wuo5qC53Lq4od0nLInvCodJ6Oqg.SJejYyHIPDCFpuVWEokzFc8Bhn5wvpMXc4pQLC_TSmQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.-5TT87a-V33FU_V8qciDmPxTVXthRFN9YSM2d23wVt9mUFU.rebVNOEJXNrzxIXpTyIMsofM5tMHS77m8AS2pB3GZBY",
+        "236x236": "https://60.img.avito.st/image/1/1.-5TT87a-V329U418qciDmPxTVXthRFN9YSM2d22IVqdmUFU.L_TsnszWw6eurE_KceamQG3tCx8adE_eXmOrd-UVhNM",
+        "318x318": "https://60.img.avito.st/image/1/1.-5TT87a-V32ZVKl7qciDmPxTVXthRFN9YSM2d22sUYNhUFU.lkCBT0aEHmoPDcJ334cs2xzJlH-IPDCh5zXvJD-52eA",
+        "416x416": "https://60.img.avito.st/image/1/1.-5TT87a-V32lVpV5qciDmPxTVXthRFN9YSM2d22QU79jUFU.W-zoePPtMjH38LXPc9GgxQQNrEmUrc1SRQegK4RlDrc",
+        "472x472": "https://60.img.avito.st/image/1/1.-5TT87a-V33VV-V4qciDmPxTVXthRFN9YSM2d23gUs9iUFU.dxVJzLv532lkSUJzH0NISTstUNWlAGC8Tx0h73hlp3c",
+        "636x636": "https://60.img.avito.st/image/1/1.-5TT87a-V32dWa12qciDmPxTVXthRFN9YSM2d22oXIdsUFU.Af8PLZ5B9gKhGonOJzQKaD0LOH44I4q03lQy6lG8G9g"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.Kdyjlra-hTW1Nic0_fod3ow2hzMRIYE1EUbkPx2VhJcWNYc.AwkpiCnyUr4KMJNG2bSkuXAh39NTrR8OErc5P9oZZoA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.Kdyjlra-hTXNNl80_fod3ow2hzMRIYE1EUbkPx3thO8WNYc.iMnrdmFD0fB24LF8CqTHhogXexu6qgncmimb7c8FHWI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.Kdyjlra-hTXpMXsz_fod3ow2hzMRIYE1EUbkPx3Jg8sRNYc.XBYU4jjBZqoq0xUJGQN1_Xzybvnl26tfSOcuxy16PDw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.Kdyjlra-hTXVM0cx_fod3ow2hzMRIYE1EUbkPx31gfcTNYc.JoUlf85CfI6gSXoPnDJHjz0yCyroi-47d3A2_lcSN3k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.Kdyjlra-hTWlMjcw_fod3ow2hzMRIYE1EUbkPx2FgIcSNYc.IdxbSRPgD437l7u7S4IzcPDoxE-gNtvL_F4A7gmIB5s?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.Kdyjlra-hTXtPH8-_fod3ow2hzMRIYE1EUbkPx3Njs8cNYc.d0G07jD0zYthkmpst1B0-HB7fFP6_hCAdeCxIZarRrw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.Hn8Aiba-spYWKRCXMIVcci8psJCyPraWslnTnL6KszS1KrA.hUISDEraIulL89lD8qXP5slFjw4AMd97a8s8ujEawZU",
+        "236x236": "https://50.img.avito.st/image/1/1.Hn8Aiba-spZuKWiXMIVcci8psJCyPraWslnTnL7ys0y1KrA.C5Wuk6LBreprkoI7Bdevu0SK4Gx7ScsKqf9Tqt--lNY",
+        "318x318": "https://50.img.avito.st/image/1/1.Hn8Aiba-spZKLkyQMIVcci8psJCyPraWslnTnL7WtGiyKrA.XCx5W0uOvJ3I5GhD-YIFWFHAENOPD3aHHdjScD7LhC0",
+        "416x416": "https://50.img.avito.st/image/1/1.Hn8Aiba-spZ2LHCSMIVcci8psJCyPraWslnTnL7qtlSwKrA.l5ux9x3F0FQybtOMCLWpbZZeJTj4LSn6MfErvjmmSPQ",
+        "472x472": "https://50.img.avito.st/image/1/1.Hn8Aiba-spYGLQCTMIVcci8psJCyPraWslnTnL6atySxKrA.7f-9udugP4TaZ3qhJJfhuKC-8mC5JKH56cRiJnmFYLk",
+        "636x636": "https://50.img.avito.st/image/1/1.Hn8Aiba-spZOI0idMIVcci8psJCyPraWslnTnL7SuWy_KrA.ZUOBe6MbbZPMm4H7ZOJGObE_aSymSDoO1WOgOkSzYSw"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB4KUuIfSLmp-jNSQhiuRUQeriIhFKLxQbypUUI.1boYOForSl246r4bhsgFYsBvIId-rbgMwfMEOHDDeFs",
+        "236x236": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB5yUpofSLmp-jNSQhiuRUQeriIhFKKJQcSpUUI.nkPQmGZtqSOoWsWBnsPcobWsVhYX-tahYgqMVBIVnjA",
+        "318x318": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB5WVb4YSLmp-jNSQhiuRUQeriIhFKKtRuCuUUI.x-T8wDd_FOsrDsj6NqxmWy-i_8aqYwtKsjRJ-XNEZGI",
+        "416x416": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB5qV4IaSLmp-jNSQhiuRUQeriIhFKKRRNysUUI.ut_35VXT5fbR3977EwDV-ycElv3OPTx7_Bzk7bqly2I",
+        "472x472": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB4aVvIbSLmp-jNSQhiuRUQeriIhFKLhRaytUUI.__tbAPJ_e55LueDOtd2RpyFmO1tnY8M2KzuqOH3dTmg",
+        "636x636": "https://50.img.avito.st/image/1/1.7Pcc8ra-QB5SWLoVSLmp-jNSQhiuRUQeriIhFKKpS-SjUUI.CsPRd3yRQ3DMf7cxMvmrhRaZQ_0AnhgRXTz_XN6VdJg"
+      }
+    ],
+    "imagesCount": 13,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#02D15C",
+                    "valueDark": "#04C454"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8145526758
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8145526758
+            },
+            "relative": "3 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "description": "Kвapтирa-инвecтиция на набережной реки Мойки. Дохoд 13% гoдoвыx.\n\nCтудия в топовoй лoкaции Пeтeрбурга — 2 минуты от Невского. Пoлнoстью готoвa к cдачe в aренду чеpез упрaвляющую кoмпанию.\n\nЧтo вы получaeте:\n\n— Apeндный дoход oт 13% годовых стaбильными плaтежaми.\n\n— Pocт стоимoсти oбъeкта — 17–18% годовыx, локация дoрoжaет быстрее рынка за последние годы.\n\n— Полное управление: поиск жильцов, уборка, ремонт, коммуналка — всё берёт на себя УК.\n\nВаши действия: вложили → получаете доход → продали дороже через несколько лет.\n\nУсловия: наличные, 100% оплата.\n\nИнвестиционные показатели:\n\n— Цена входа: 8 000 000 ₽.\n\n— Чистый доход после оплаты УК: от 85 000 ₽/мес.\n\n— Окупаемость только за счёт аренды: менее 10 лет.\n\n— Реальная доходность (аренда + рост цены): достигает 30% в год.\n\nПродать такой объект легко — покупатель находится быстро среди инвесторов.\n\nЗвоните — расскажу детали и организую просмотр.\n\nДобавьте в избранное, чтобы не потерять.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Наб. реки Мойки, 30",
+              "geoReferences": [
+                {
+                  "after": " 400 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Адмиралтейская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8145526758,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "400 000 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8145526758
+            },
+            "seo": {
+              "title": "Квартира-студия, 20 м², 2/5 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 20 м², 2/5 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/e0ea88cc0e269d2b446d01e2d5b281b1?src=search_seller_info\u0026iid=8145526758",
+              "title": "Сергей"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "69 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8145526758
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "400 000 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "400 000 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1788855155000,
+    "title": "Квартира-студия, 20 м², 2/5 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, набережная реки Мойки, 30",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Сергей",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/e0ea88cc0e269d2b446d01e2d5b281b1?src=search_seller_info\u0026iid=8145526758"
+  },
+  "seller_name": "Сергей",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/e0ea88cc0e269d2b446d01e2d5b281b1?src=search_seller_info\u0026iid=8145526758",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 20 м², 2/5 эт.",
+  "total_area": 20,
+  "updated_at": "2026-10-03T11:32:50.087022Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_20_m_25_et._8145526758?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

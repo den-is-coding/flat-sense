@@ -1,0 +1,627 @@
+{
+  "address": "Зверинская ул., 2/5",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.078003Z",
+  "floor": 2,
+  "floors_total": 6,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/zverinskaya_ul_25/12151256?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 2/5"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=203",
+        "text": "Спортивная"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/zverinskaya_ulitsa/13717-ASgBAgECA0SSA8YQ5geMUujIE6rWAQFF3AcUInp2ZXJpbnNrYXlhX3VsaXRzYSI",
+        "text": "Зверинская ул."
+      }
+    },
+    "formattedAddress": "Зверинская ул., 2/5",
+    "geoReferences": [
+      {
+        "after": " 200 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Спортивная"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "1 отзыв",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": null
+    }
+  },
+  "house_type": null,
+  "id": 8060105613,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b30.img.avito.st/image/1/1.Hj73Kba-ste5g0jcx3lTN8yJsNFFnrbXRfnT3UlyuS1IirA.eQAwvNmOrmIG6g5I4VOrLCfOI_7m9uLbtYmmlCU631Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFTcUYpfpviLiKlbclIgTHRUICsRXiyge64tWHI.vCr2meJNGT5JZgg3YXXXVAK4yjKbkbUFwpxYYQZsxHs",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.9HmdY7a-WJDTyaKb-SSScqbDWpYv1FyQL7M5miM4U2oiwFo.OGGp-1zXbwFDBLlSmVoAEXuHjJqtPm9vaOSamWVPZqM",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.SovuDba-5mKgpxxp9kwdgdWt5GRcuuJiXN2HaFBW7ZhRruQ.CC2JEv41xNIgvgGYnO4NfT_5np0gEHGD1YaEB7fCqVU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.skbjK7a-Hq-tgeSkix3_T9iLHKlRnBqvUft_pV1wFVVciBw.m7FICx5AK0TtxBVN2kmvybT7JOQr3SeVI1BJMsiTa-8",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.078003Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 465,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790081070000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "633 завершённых объявления",
+    "closestAddressId": 12151256,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Зверинская улица, 2/5",
+      "lat": "59.95357",
+      "lng": "30.292952",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "19 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 17,2 м², 2/6 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 19,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/zverinskaya_ul_25/12151256?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 2/5"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=203",
+          "text": "Спортивная"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/zverinskaya_ulitsa/13717-ASgBAgECA0SSA8YQ5geMUujIE6rWAQFF3AcUInp2ZXJpbnNrYXlhX3VsaXRzYSI",
+          "text": "Зверинская ул."
+        }
+      },
+      "formattedAddress": "Зверинская ул., 2/5",
+      "geoReferences": [
+        {
+          "after": " 200 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Спортивная"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "1 отзыв",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": null
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8060105613,
+    "images": [
+      {
+        "208x208": "https://b30.img.avito.st/image/1/1.Hj73Kba-stfhiRDWx3lTN8yJsNFFnrbXRfnT3Ukqs3VCirA.nkYdUUWeU77A2R-WLyaSl6n1pDq4Ears80AN55kVKSo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b30.img.avito.st/image/1/1.Hj73Kba-steZiWjWx3lTN8yJsNFFnrbXRfnT3UlSsw1CirA.ENq2SYauUypOt38rfx_83XPxuB-jng6WZtIpylyJ5F4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b30.img.avito.st/image/1/1.Hj73Kba-ste9jkzRx3lTN8yJsNFFnrbXRfnT3Ul2tClFirA.W0CFvc1PuUKzT7x-oNLtMvN8QqZJw6xv6HCwT1beU8k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b30.img.avito.st/image/1/1.Hj73Kba-steBjHDTx3lTN8yJsNFFnrbXRfnT3UlKthVHirA.py-OvtCdLE4Bw00PcBol2X6QzQ2ASnAFp0ptOThKHfg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b30.img.avito.st/image/1/1.Hj73Kba-stfxjQDSx3lTN8yJsNFFnrbXRfnT3Uk6t2VGirA.CBitYKipPYWUTbdAjW_XHbUipl133_okDjz3rUt8tME?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b30.img.avito.st/image/1/1.Hj73Kba-ste5g0jcx3lTN8yJsNFFnrbXRfnT3UlyuS1IirA.eQAwvNmOrmIG6g5I4VOrLCfOI_7m9uLbtYmmlCU631Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFSEW9JVpviLiKlbclIgTHRUICsRXiz4cfYnWHI.WGZnj3XTo2xJgEeSdAH3wcdryEypJU-FZuezO3tf2uI",
+        "236x236": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFT8W6pVpviLiKlbclIgTHRUICsRXiyAcY4nWHI.xwXLA1OXyc5A23lu1Rrx3f9-xHPcfycIWFWN5W-ipdU",
+        "318x318": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFTYXI5SpviLiKlbclIgTHRUICsRXiykdqogWHI.1GNX0QJ-5HEUXburvRUcGBcRk75SAdPo85S08XjKomo",
+        "416x416": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFTkXrJQpviLiKlbclIgTHRUICsRXiyYdJYiWHI.AHSu7a7VQ08sKLJaB9iyHdSf8CD6HafG_L_fbJR4ZpY",
+        "472x472": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFSUX8JRpviLiKlbclIgTHRUICsRXizodeYjWHI.1qO1zmHKdnJ0fCVYUe0a9VAW8nklovoDDwB9L_ugc5I",
+        "636x636": "https://b40.img.avito.st/image/1/1.3L2S-7a-cFTcUYpfpviLiKlbclIgTHRUICsRXiyge64tWHI.vCr2meJNGT5JZgg3YXXXVAK4yjKbkbUFwpxYYQZsxHs"
+      },
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.9HmdY7a-WJCLw_qR-SSScqbDWpYv1FyQL7M5miNgWTIowFo.Md93d3VCokt0bjbqX96u61mFJ4AhWEibXOPblBrUvlA",
+        "236x236": "https://70.img.avito.st/image/1/1.9HmdY7a-WJDzw4KR-SSScqbDWpYv1FyQL7M5miMYWUoowFo.YHRLJ47QVgwf4I9DwXgAbhztuhCDB2TRpZpPx1GPyOw",
+        "318x318": "https://70.img.avito.st/image/1/1.9HmdY7a-WJDXxKaW-SSScqbDWpYv1FyQL7M5miM8Xm4vwFo.wlVUVbP2HNkF7WpG7MLIKWlv63qQvqgEVN9uCA9pvGQ",
+        "416x416": "https://70.img.avito.st/image/1/1.9HmdY7a-WJDrxpqU-SSScqbDWpYv1FyQL7M5miMAXFItwFo.yFfKLuiNL_N_6fcwWnBRfG54E8JNfyDhw1VQzIajQBs",
+        "472x472": "https://70.img.avito.st/image/1/1.9HmdY7a-WJCbx-qV-SSScqbDWpYv1FyQL7M5miNwXSIswFo.p4FgP6-bkLgg1ZsD1YFdYhwWDAGzNydMkxg7BJkv97g",
+        "636x636": "https://70.img.avito.st/image/1/1.9HmdY7a-WJDTyaKb-SSScqbDWpYv1FyQL7M5miM4U2oiwFo.OGGp-1zXbwFDBLlSmVoAEXuHjJqtPm9vaOSamWVPZqM"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.SovuDba-5mL4rURj9kwdgdWt5GRcuuJiXN2HaFAO58BbruQ.gVJwbhWPfysFjBl4wGFsLnUvAsuuyJGESmyVyI03tH0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.SovuDba-5mKArTxj9kwdgdWt5GRcuuJiXN2HaFB257hbruQ.GoH86Y7Kcz65plw2IlBVBC2nmf0wkfwt2NlvQwa69qc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.SovuDba-5mKkqhhk9kwdgdWt5GRcuuJiXN2HaFBS4JxcruQ.zwYee5Z0iwbZ9a2hTuWvt-ZMdocyV3O3Sn7pB9uzvkc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.SovuDba-5mKYqCRm9kwdgdWt5GRcuuJiXN2HaFBu4qBeruQ.LO-rwAdUhSM97R20FIYyPgnQtIjneS52EgqkH-3bzNA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.SovuDba-5mLoqVRn9kwdgdWt5GRcuuJiXN2HaFAe49BfruQ.e7OkjWQ5Wuv5hhEPCCZjeY7qkuzbmMXbLS-o40tN0Yw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.SovuDba-5mKgpxxp9kwdgdWt5GRcuuJiXN2HaFBW7ZhRruQ.CC2JEv41xNIgvgGYnO4NfT_5np0gEHGD1YaEB7fCqVU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.skbjK7a-Hq_1i7yuix3_T9iLHKlRnBqvUft_pV0oHw1WiBw.GM-CToB7VAACu3dEYCnlygMh81L9zep3n4KKikYSyu8",
+        "236x236": "https://60.img.avito.st/image/1/1.skbjK7a-Hq-Ni8Suix3_T9iLHKlRnBqvUft_pV1QH3VWiBw.2nrF-dguKQsPUhr4NI1SAbocRmj0Zm5dZxa4wjQc3W4",
+        "318x318": "https://60.img.avito.st/image/1/1.skbjK7a-Hq-pjOCpix3_T9iLHKlRnBqvUft_pV10GFFRiBw.XPdIXMKpr8q46GvsLN7oYs0oA40SbrVLNAVZzdAUTSw",
+        "416x416": "https://60.img.avito.st/image/1/1.skbjK7a-Hq-Vjtyrix3_T9iLHKlRnBqvUft_pV1IGm1TiBw.TN_ZlXR2gG_rHf94uSBajZuuE8FFRvFPAMPEx3RI5Bg",
+        "472x472": "https://60.img.avito.st/image/1/1.skbjK7a-Hq_lj6yqix3_T9iLHKlRnBqvUft_pV04Gx1SiBw.dMqHH2tgXITrEcDhQHdtLTJ5xcz4Xh7xKeNqdok0bzs",
+        "636x636": "https://60.img.avito.st/image/1/1.skbjK7a-Hq-tgeSkix3_T9iLHKlRnBqvUft_pV1wFVVciBw.m7FICx5AK0TtxBVN2kmvybT7JOQr3SeVI1BJMsiTa-8"
+      }
+    ],
+    "imagesCount": 19,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8060105613
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8060105613
+            },
+            "relative": "1 неделю назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "description": "Идеальное гнездо в сердце истории: Студия у метро Спортивной!\n\nАдрес: Санкт-Петербург, Петроградский район, ул. Зверинская, 2/5 (пешком до ст. М. Спортивная — 5 минут).\n\nДоля!\n\nПочувствуйте пульс Петербурга в его самом сердце! Вы получаете отдельную, полностью готовую к жизни студию в доме с богатой историей, расположенную в тихом уголке, но в двух шагах от шумной и красивой городской жизни.\n\nО доме и студии:\n\n· Историческая ценность: Доходный дом 1909 года постройки — настоящий памятник архитектуры с массивными кирпичными стенами и атмосферой старого Петербурга.\n\n· Новый ремонт «под ключ»: В студии выполнен современный ремонт с использованием качественных материалов. Вам не придется тратить время и нервы на стройку.\n\n· Готовность 100%: Продается полностью с мебелью и техникой. Берите чемодан и въезжайте!\n\n· Комфорт в деталях: В доме есть лифт, что делает переезд легким, а жизнь — комфортной (особенно после удачных шопинг-экспедиций).\n\n· Состояние дома: Дом находится в исправном состоянии, управляющая компания поддерживает порядок.\n\nНе просто жильё, а готовый бизнес-проект.\n\nЭта студия — редкое сочетание личного комфорта и высокой инвестиционной привлекательности.\n\n· Высокий спрос: Локация в историческом центре у метро «Спортивная» — магнит для туристов, командировочных и гостей города. Посуточная и долгосрочная аренда здесь стабильно востребована круглый год.\n\n· Вход в бизнес без лишних хлопот: Вам не нужно ничего доделывать, докупать или ремонтировать. Студия уже с мебелью, техникой и дизайн-ремонтом — выходите на рынок аренды на следующий день после покупки.\n\n· Два в одном: Живите сами, когда захотите — сдавайте. Идеальный актив, который работает на вас.\n\nЛокация: Эпицентр притяжения Петроградки:\n\nУлица Зверинская — это особенная магия. Здесь нет суетливой толпы туристов, но есть настоящий дух Северной столицы.\n\n· Уют и тишина: В отличие от Невского проспекта, здесь тихо, уютно и безопасно. Район славится своей «интеллигентной» атмосферой и красивыми дворами.\n\n· Спортивная и Нева рядом: От метро «Спортивная» идут кораблики, а до набережной Невы буквально рукой подать (около 10 минут прогулочным шагом). Вы будете жить в шаговой доступности от воды.\n\nПрогулочный радиус: всё, чем славится Петербург.\n\nВыходя из подъезда, вы оказываетесь в мире достопримечательностей.\n\n· Петроградская сторона — мекка для гурманов: Это гастрономический центр города. Вокруг вас ждут модные пекарни, авторские кофейни и рестораны, где любят завтракать сами петербуржцы.\n\n· В шаге от Крестовского: Рядом с вами — Петровский остров, стадион, яхт-клубы и лучшие видовые точки на Неву.\n\n· Парки и архитектура: Рядом Александровский парк, Зоопарк, Планетарий и легендарный Ленинградский Дворец молодежи. А также знаменитые дома в стиле «северный модерн» на соседних улицах.\n\n· Образование и работа: Удобная локация для студентов и преподавателей ведущих вузов города.\n\nПочему стоит остаться здесь жить или начать зарабатывать?\n\nПредставьте: вы возвращаетесь с работы, гуляете по вечерней набережной, заходите в любимую кофейню, а затем поднимаетесь в свою уютную, наполненную светом студию.\n\nА можете просто включить её в свой портфель недвижимости и получать стабильный доход с первого месяца. Это не просто покупка квадратных метров — это покупка образа жизни в самом сердце большого города или готового финансового актива.\n\nЗвоните и пишите прямо сейчас! Эта студия с характером и душой ждёт своего хозяина или инвестора. Показ в удобное для вас время. Один взрослый собственник. Никто не прописан. Без обременений.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Зверинская ул., 2/5",
+              "geoReferences": [
+                {
+                  "after": " 200 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Спортивная"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8060105613,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "465 116 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8060105613
+            },
+            "seo": {
+              "title": "Квартира-студия, 17,2 м², 2/6 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 17,2 м², 2/6 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i87864351?src=search_seller_info\u0026iid=8060105613",
+              "title": "ПРОДАМ"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "633 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8060105613
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "465 116 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "465 116 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "1 отзыв",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": ""
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790081070000,
+    "title": "Квартира-студия, 17,2 м², 2/6 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Зверинская улица, 2/5",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "ПРОДАМ",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i87864351?src=search_seller_info\u0026iid=8060105613"
+  },
+  "seller_name": "ПРОДАМ",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i87864351?src=search_seller_info\u0026iid=8060105613",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 17,2 м², 2/6 эт.",
+  "total_area": 17.2,
+  "updated_at": "2026-10-03T11:32:50.078003Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_172_m_26_et._8060105613?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

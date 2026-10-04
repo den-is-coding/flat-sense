@@ -1,0 +1,628 @@
+{
+  "address": "Пос. Шушары, Старорусский пр-т, 5к2",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.217211Z",
+  "floor": 8,
+  "floors_total": 12,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/starorusskiy_pr-t_5k2/74537211?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 5к2"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=170",
+        "text": "Купчино"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/starorusskiy_prospekt/6321-ASgBAgECA0SSA8YQ5geMUujIE~JiAUXcBxcic3Rhcm9ydXNza2l5X3Byb3NwZWt0Ig",
+        "text": "пос. Шушары, Старорусский пр-т"
+      }
+    },
+    "formattedAddress": "Пос. Шушары, Старорусский пр-т, 5к2",
+    "geoReferences": [
+      {
+        "after": " 2,6 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#0078C9"
+        ],
+        "content": "Купчино"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 9 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8426308112,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.qd0tkra-BTRjOP8_c5yn3ysyBzKfJQE0n0JkPpPJDs6SMQc.vuJwcpbjz9-5NuUf9PLD2St8kt6PcYEFdCFDy7CSirk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.Y_ya6La-zxXUQjUe0NlB_ZxIzRMoX8sVKDiuHySzxO8lS80.sngz8JaJQ2aXmcDFYUJZuPzJ8QAUIK-8rcl-HlAzcmw",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.T0WKZ7a-46zEzRmnmEoQRIzH4ao40OesOLeCpjQ86FY1xOE.uSBVMdj6PuRiROEr-hzlnG271vVn3wSiunr2FrvJk88",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.Kr5gh7a-hlcuLXxcOKdnvmYnhFHSMIJX0lfnXd7cja3fJIQ.JGu40d-AyDGk9DhOdKewiKgYJuNlbrhEe1je-LAFfcw",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bPUUy-45PhbW5xZ17UoTtGzKCm0uSSi3kklWtc.6EwABjeX3H1RNjAENmStjRivRRXV0bya3iDOzl3OVEU",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:34:23.217211Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 390,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790846273000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "87242 завершённых объявления",
+    "closestAddressId": 74537211,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Пушкинский р-н, пос. Шушары, Старорусский пр-т, 5к2",
+      "lat": "59.80893",
+      "lng": "30.354316",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "31 фотография",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 20,5 м², 8/12 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 31,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/starorusskiy_pr-t_5k2/74537211?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 5к2"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=170",
+          "text": "Купчино"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/starorusskiy_prospekt/6321-ASgBAgECA0SSA8YQ5geMUujIE~JiAUXcBxcic3Rhcm9ydXNza2l5X3Byb3NwZWt0Ig",
+          "text": "пос. Шушары, Старорусский пр-т"
+        }
+      },
+      "formattedAddress": "Пос. Шушары, Старорусский пр-т, 5к2",
+      "geoReferences": [
+        {
+          "after": " 2,6 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#0078C9"
+          ],
+          "content": "Купчино"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,6 · 9 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8426308112,
+    "images": [
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.qd0tkra-BTQ7Mqc1c5yn3ysyBzKfJQE0n0JkPpORBJaYMQc.GWJRVr6nHc0bt5tT4yGfsdL64VItmI8ZdsEkBVJ4Oqg",
+        "236x236": "https://50.img.avito.st/image/1/1.qd0tkra-BTRDMt81c5yn3ysyBzKfJQE0n0JkPpPpBO6YMQc.Mke3xmT1ItEmSm1yeP4MwLZN32YKgSdhIQAVPf82JAQ",
+        "318x318": "https://50.img.avito.st/image/1/1.qd0tkra-BTRnNfsyc5yn3ysyBzKfJQE0n0JkPpPNA8qfMQc.VrkUYR-VGsh75UfgHOgICX8zXLJt99KZ73cbztAXzdE",
+        "416x416": "https://50.img.avito.st/image/1/1.qd0tkra-BTRbN8cwc5yn3ysyBzKfJQE0n0JkPpPxAfadMQc.HCIa0Z6IqNbDCb6Qlbqxe7gEQGbCOwJb9_GiVGeJaQQ",
+        "472x472": "https://50.img.avito.st/image/1/1.qd0tkra-BTQrNrcxc5yn3ysyBzKfJQE0n0JkPpOBAIacMQc.XphKYipQcfF8bxsGIEZ_wYFVNL2SjDjW1ljcr3lfoaU",
+        "636x636": "https://50.img.avito.st/image/1/1.qd0tkra-BTRjOP8_c5yn3ysyBzKfJQE0n0JkPpPJDs6SMQc.vuJwcpbjz9-5NuUf9PLD2St8kt6PcYEFdCFDy7CSirk"
+      },
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.Y_ya6La-zxWMSG0U0NlB_ZxIzRMoX8sVKDiuHyTrzrcvS80.SkY4JvaR0vTpJexzEeuncY8gJUBqjqJRWF-5i17IzNg",
+        "236x236": "https://70.img.avito.st/image/1/1.Y_ya6La-zxX0SBUU0NlB_ZxIzRMoX8sVKDiuHySTzs8vS80.CY9irYkT-E9cIsj7Bnfjz6Ne9Frt484bAOQIydDxQHU",
+        "318x318": "https://70.img.avito.st/image/1/1.Y_ya6La-zxXQTzET0NlB_ZxIzRMoX8sVKDiuHyS3yesoS80.tMljlsQsQAMDDBHYu3M9EP-5EEVbT2CxbzXKfINLajk",
+        "416x416": "https://70.img.avito.st/image/1/1.Y_ya6La-zxXsTQ0R0NlB_ZxIzRMoX8sVKDiuHySLy9cqS80.OhjVMhvjqiPVHa_k3Scq0zmGc9wp2rXDboyK2-8Htsw",
+        "472x472": "https://70.img.avito.st/image/1/1.Y_ya6La-zxWcTH0Q0NlB_ZxIzRMoX8sVKDiuHyT7yqcrS80.VRpaVVs_tFGuwWkiyVnxZTHZORR2aZu3ek70CM4e3WU",
+        "636x636": "https://70.img.avito.st/image/1/1.Y_ya6La-zxXUQjUe0NlB_ZxIzRMoX8sVKDiuHySzxO8lS80.sngz8JaJQ2aXmcDFYUJZuPzJ8QAUIK-8rcl-HlAzcmw"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.T0WKZ7a-46ycx0GtmEoQRIzH4ao40OesOLeCpjRk4g4_xOE.ySOehPcb69Ek8rmXTcCxs8C6M3WNkw4G4sOu4cJIF3I",
+        "236x236": "https://60.img.avito.st/image/1/1.T0WKZ7a-46zkxzmtmEoQRIzH4ao40OesOLeCpjQc4nY_xOE.opA2V_XEP4pJYc1dAnQF060FJl3_8MzA34XY_RmLch4",
+        "318x318": "https://60.img.avito.st/image/1/1.T0WKZ7a-46zAwB2qmEoQRIzH4ao40OesOLeCpjQ45VI4xOE.pEJovy0f1FxSJuDKEvagwHysLB3hdj9tUVMD_aL0kVE",
+        "416x416": "https://60.img.avito.st/image/1/1.T0WKZ7a-46z8wiGomEoQRIzH4ao40OesOLeCpjQE5246xOE.Pd8YutIEZ3xReEFkGpmVM_EJnXbhA_cWmuW5aTgl-v4",
+        "472x472": "https://60.img.avito.st/image/1/1.T0WKZ7a-46yMw1GpmEoQRIzH4ao40OesOLeCpjR05h47xOE.mFQ-vlYnfXKg30DwDB1van6SGO42_8YW-w552cPUAI4",
+        "636x636": "https://60.img.avito.st/image/1/1.T0WKZ7a-46zEzRmnmEoQRIzH4ao40OesOLeCpjQ86FY1xOE.uSBVMdj6PuRiROEr-hzlnG271vVn3wSiunr2FrvJk88"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.Kr5gh7a-hld2JyRWOKdnvmYnhFHSMIJX0lfnXd6Eh_XVJIQ.EJebY-TP2-bQ7DpKw-7Y5Ly-IRfMJ15VXGeAdwNUmRY",
+        "236x236": "https://80.img.avito.st/image/1/1.Kr5gh7a-hlcOJ1xWOKdnvmYnhFHSMIJX0lfnXd78h43VJIQ.ni7oAMvdY-FLwd5sMFLu2U7pQ7MbsC5MkGY3KQaETwc",
+        "318x318": "https://80.img.avito.st/image/1/1.Kr5gh7a-hlcqIHhROKdnvmYnhFHSMIJX0lfnXd7YgKnSJIQ.oG9xMtXfXHC7JTNz39aq3F9bvYMizw5JiQc7Rw0NB6U",
+        "416x416": "https://80.img.avito.st/image/1/1.Kr5gh7a-hlcWIkRTOKdnvmYnhFHSMIJX0lfnXd7kgpXQJIQ.EFB3ypc0HwDiYyaRy2lOXfSnBV9Jakb8aWMFBNpEvm4",
+        "472x472": "https://80.img.avito.st/image/1/1.Kr5gh7a-hldmIzRSOKdnvmYnhFHSMIJX0lfnXd6Ug-XRJIQ.oa_f5VpHZjz6qW_iSvUTRLdws-SGpepKi9oYA1WBPrQ",
+        "636x636": "https://80.img.avito.st/image/1/1.Kr5gh7a-hlcuLXxcOKdnvmYnhFHSMIJX0lfnXd7cja3fJIQ.JGu40d-AyDGk9DhOdKewiKgYJuNlbrhEe1je-LAFfcw"
+      },
+      {
+        "208x208": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bOMWXey5PhbW5xZ17UoTtGzKCm0uST61BEvWtc.FLE0qy0GR7fAoH1lfyB46NzNQGYfSG16eo5nNTXoWqQ",
+        "236x236": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bP0WQ-y5PhbW5xZ17UoTtGzKCm0uSSC1GkvWtc.r31gik-a7e-aS4fngJDqqQpk1sDKHfsY0uk9Ks4MlnE",
+        "318x318": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bPQXiu15PhbW5xZ17UoTtGzKCm0uSSm000oWtc.ptdAgtapmeoJpitdWzDgGasKb-1zNDiQ0vbGJcz_JOY",
+        "416x416": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bPsXBe35PhbW5xZ17UoTtGzKCm0uSSa0XEqWtc.l1pn-ada5ZZIQgRJUnb8C1kzvGsCOVfxqyns9p7BwMk",
+        "472x472": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bOcXWe25PhbW5xZ17UoTtGzKCm0uSTq0AErWtc.J7MPFtAT-sCnEVrdShwgqVyLRf5c-YR00numZpzULT4",
+        "636x636": "https://c60.img.avito.st/image/1/1.eVqa-ba-1bPUUy-45PhbW5xZ17UoTtGzKCm0uSSi3kklWtc.6EwABjeX3H1RNjAENmStjRivRRXV0bya3iDOzl3OVEU"
+      }
+    ],
+    "imagesCount": 31,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": true,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8426308112
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8426308112
+            },
+            "relative": "3 дня назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "description": "Продаeтся стильная студия в ЖK Аэpосити 6 с cоврeмeнным рeмoнтoм 2025 гoдa постройки. Пpоcтoрнaя куxня oбopудовaнa вcей неoбходимoй теxникoй, включaя xoлoдильник, полнoрaзмерную плиту нa 4 кoнфоpки и полнoценную бoльшую дуxовку.\n\nB квapтиpе сoвмещенный caнузел c вaнной, установленa качественная сантехника, есть стиральная машинка.\nОкна выходят на Запад, в квартире очень светло. Из окон открывается вид на детский сад с закрытой территорией и спортивной площадкой. Лоджия застеклена и утеплена, что позволяет использовать ее круглый год. Установлен шкаф для хранения вещей.\nВ доме есть пассажирский и грузовой лифты, а также подземная парковка.\n\nВся мебель и техника останется новому владельцу. Заезжай и живи.\nМебель вся новая! Покупали специально для этой квартиры. В комнате 2 шкафа — один очень большой большой угловой. В него много вещей можно разместить. И маленький пенал для оперативного использования.\nЖемчужина квартиры — это ортопедический диван-кровать Аскона Вега на пружинном блоке. Спать ооочень удобно.\nВозможна покупка в ипотеку.\n\nУ меня есть небольшой остаток по ипотеке, но это сделке не мешает. Банки сейчас проводят одновременное гашение ипотеки и переход права собственности на нового владельца.\nИли возьму потребительский кредит перед выходом на сделку и погашу.\nОдин собственник, покупали у застройщика. Детей в квартире не прописано и собственности у них нет.\nМатеринский капитал не использовался.\nВсе вопросы по телефону.\n\nТакже у нас есть в собственности машиноместо в паркинге в этом доме. Самое лучшее место на всей парковке. Оно отдельно стоящее. Можно ставить 2 машины друг за другом или отделить половину места и сделать кладовку. Такая услуга по установке металлических роллет есть у УК Лидер.\nСтоимость места 1 800 000.\nПри покупке квартиры и машиноместа сделаю хорошую скидку.\n\nНомер в базе: 14254708.\nКод пользователя: 190652.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пос. Шушары, Старорусский пр-т, 5к2",
+              "geoReferences": [
+                {
+                  "after": " 2,6 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#0078C9"
+                  ],
+                  "content": "Купчино"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8426308112,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "TF0cKEJu0m1V8vlN"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "390 244 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8426308112
+            },
+            "seo": {
+              "title": "Квартира-студия, 20,5 м², 8/12 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 20,5 м², 8/12 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/spbetagi?src=search_seller_info\u0026iid=8426308112",
+              "title": "Этажи Санкт-Петербург"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "87242 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8426308112
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "390 244 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "390 244 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 9 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790846273000,
+    "title": "Квартира-студия, 20,5 м², 8/12 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Пушкинский р-н, пос. Шушары, Старорусский пр-т, 5к2",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Этажи Санкт-Петербург",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/spbetagi?src=search_seller_info\u0026iid=8426308112"
+  },
+  "seller_name": "Этажи Санкт-Петербург",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/spbetagi?src=search_seller_info\u0026iid=8426308112",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 20,5 м², 8/12 эт.",
+  "total_area": 20.5,
+  "updated_at": "2026-10-03T11:34:23.217211Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_205_m_812_et._8426308112?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "views_count": null,
+  "year_built": null
+}

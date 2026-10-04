@@ -1,0 +1,582 @@
+{
+  "address": "2-я Советская ул., 10",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.189275Z",
+  "floor": 2,
+  "floors_total": 6,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/2-ya_sovetskaya_ul_10/266817?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 10"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=191",
+        "text": "Площадь Восстания"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/2-ya_sovetskaya_ulitsa/10244-ASgBAgECA0SSA8YQ5geMUujIE4igAQFF3AcYIjIteWFfc292ZXRza2F5YV91bGl0c2Ei",
+        "text": "2-я Советская ул."
+      }
+    },
+    "formattedAddress": "2-я Советская ул., 10",
+    "geoReferences": [
+      {
+        "after": " 500 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Площадь Восстания"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8381033838,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.ZOtDMba-yAINmzIJBxACh0WRygTxhswC8eGpCP1qw_j8kso.zu0jJFSGF60mMfCS6hn8opUIq05imKDjvBq8Dp7D1iY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b20.img.avito.st/image/1/1.O2f677a-l460RW2FgLNPBfxPlYhIWJOOSD_2hES0nHRFTJU.IHo9UngC1UjjzF8dIoTKEUAZ9ffPY3qJFBBeG8tScFM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c70.img.avito.st/image/1/1.H0vea7a-s6KQwUmp7G95KtjLsaRs3LeibLvSqGAwuFhhyLE.Z_vrPCWldd8nPAxl-bLtIjSkgPA54V03GHrHb9kZbGY",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.CPKuX7a-pBvg9V4QsktwkKj_ph0c6KAbHI_FERAEr-ER_KY.sZjvGR2jyyOKIpBNajwNjGd_b67KO64NSewbPcrk4sA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.JorS3ba-imOcd3Boko0y6dR9iGVgao5jYA3raWyGgZltfog.SHqtgp6w1oGTVbRyTBc9HQj4UnhXuxJKzf7ODg2vjnE",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:37:13.010582Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 380,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790599665000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "12745 завершённых объявлений",
+    "closestAddressId": 266817,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, 2-я Советская ул., 10",
+      "lat": "59.931819",
+      "lng": "30.368977",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "24 фотографии",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 21 м², 2/6 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 24,
+      "isFirstImageHighImportance": false,
+      "isLazy": false,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/2-ya_sovetskaya_ul_10/266817?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 10"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=191",
+          "text": "Площадь Восстания"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/2-ya_sovetskaya_ulitsa/10244-ASgBAgECA0SSA8YQ5geMUujIE4igAQFF3AcYIjIteWFfc292ZXRza2F5YV91bGl0c2Ei",
+          "text": "2-я Советская ул."
+        }
+      },
+      "formattedAddress": "2-я Советская ул., 10",
+      "geoReferences": [
+        {
+          "after": " 500 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Площадь Восстания"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8381033838,
+    "images": [
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.ZOtDMba-yAJVkWoDBxACh0WRygTxhswC8eGpCP0yyaD2kso.za9EAgR1QndH1mg_tFJeiA-KYEK5xLsehaMb3zZN1zs?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.ZOtDMba-yAItkRIDBxACh0WRygTxhswC8eGpCP1Kydj2kso.jfOB5KOahZqmixrdKOP_RFjKDFfuN7XQAMfWdKoBzCA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.ZOtDMba-yAIJljYEBxACh0WRygTxhswC8eGpCP1uzvzxkso.jWrK1D6mUwpnysBQR-ajSkKmLt5TngllWh1M6vOJPJw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.ZOtDMba-yAI1lAoGBxACh0WRygTxhswC8eGpCP1SzMDzkso.wz_jV-4KW1drXE0RrjFtIGovOJ7ipw7v3dNuSQ8Axmc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.ZOtDMba-yAJFlXoHBxACh0WRygTxhswC8eGpCP0izbDykso.HOGc5hvDzqZ-HWSYhhzX-P65YxLIv9Mktv-qp3zRXSk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.ZOtDMba-yAINmzIJBxACh0WRygTxhswC8eGpCP1qw_j8kso.zu0jJFSGF60mMfCS6hn8opUIq05imKDjvBq8Dp7D1iY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b20.img.avito.st/image/1/1.O2f677a-l47sTzWPgLNPBfxPlYhIWJOOSD_2hETslixPTJU.EGKVERwgEPm8nqf0H6uIn22CAwMBg_UzCXoi-VCDUBI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b20.img.avito.st/image/1/1.O2f677a-l46UT02PgLNPBfxPlYhIWJOOSD_2hESUllRPTJU.QOcPjVZqLQpT6KteSC8y-gqCtkng4lNgoRYRZAD6Xf8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b20.img.avito.st/image/1/1.O2f677a-l46wSGmIgLNPBfxPlYhIWJOOSD_2hESwkXBITJU.sd69ixHPEVSarEdNuKW5KiernnY4gXGtaCsH7UMRc84?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b20.img.avito.st/image/1/1.O2f677a-l46MSlWKgLNPBfxPlYhIWJOOSD_2hESMk0xKTJU.j-YNDDr5RCYVLTHVFS1C9mcwZzJUSw4mgBH_5ltpey4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b20.img.avito.st/image/1/1.O2f677a-l478SyWLgLNPBfxPlYhIWJOOSD_2hET8kjxLTJU.qOZGoQD3w-k7mN6YAzOO1JMt2P6w8MHm0EEMIZjqEnE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b20.img.avito.st/image/1/1.O2f677a-l460RW2FgLNPBfxPlYhIWJOOSD_2hES0nHRFTJU.IHo9UngC1UjjzF8dIoTKEUAZ9ffPY3qJFBBeG8tScFM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://c70.img.avito.st/image/1/1.H0vea7a-s6LIyxGj7G95KtjLsaRs3LeibLvSqGBosgBryLE.uN8cJSXbshDqS2PVdhpl4Qhx-Du-XWjvKEKXqe-3Ucw",
+        "236x236": "https://c70.img.avito.st/image/1/1.H0vea7a-s6Kwy2mj7G95KtjLsaRs3LeibLvSqGAQsnhryLE.bqxUh5hKTbbtvHTAZlOFslHPPx0P5GSQN9jxJxUPQ3w",
+        "318x318": "https://c70.img.avito.st/image/1/1.H0vea7a-s6KUzE2k7G95KtjLsaRs3LeibLvSqGA0tVxsyLE.MV9MDKfSSxJNTLpa0TcGU_hbCrix4WoiS0lGcyvaEoU",
+        "416x416": "https://c70.img.avito.st/image/1/1.H0vea7a-s6KoznGm7G95KtjLsaRs3LeibLvSqGAIt2BuyLE.BJT7OrPdXpujQK3iF7oGF1-DYZDVQsJKZ7v2UOwFNYk",
+        "472x472": "https://c70.img.avito.st/image/1/1.H0vea7a-s6LYzwGn7G95KtjLsaRs3LeibLvSqGB4thBvyLE.iw6g7gJGkDT5iJg6aRk95cEu7pRfbwA781OmpMFRJcM",
+        "636x636": "https://c70.img.avito.st/image/1/1.H0vea7a-s6KQwUmp7G95KtjLsaRs3LeibLvSqGAwuFhhyLE.Z_vrPCWldd8nPAxl-bLtIjSkgPA54V03GHrHb9kZbGY"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.CPKuX7a-pBu4_wYasktwkKj_ph0c6KAbHI_FERBcpbkb_KY.9d6G5ZGtjajEaQ7Cu4KXskQ3u9YunPUWbJ1dsVVN7Yg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.CPKuX7a-pBvA_34asktwkKj_ph0c6KAbHI_FERAkpcEb_KY.ghOcQXQ6r-0pWMETlyxULW2wyVHpGPVNIzc0XwsfhII?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.CPKuX7a-pBvk-FodsktwkKj_ph0c6KAbHI_FERAAouUc_KY.AGr8xSVVqjSSOhUgiaQfr4JPB2aP_tehE27DP6TE06o?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.CPKuX7a-pBvY-mYfsktwkKj_ph0c6KAbHI_FERA8oNke_KY.ZLAsXM0dEHapNyjgDBvn6aeijTceCKaZPgmKhddY0Eo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.CPKuX7a-pBuo-xYesktwkKj_ph0c6KAbHI_FERBMoakf_KY.SJCeXRhP7MpyN6_wTKaOQ9MTnssFCRBK7m3ICwPDgrA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.CPKuX7a-pBvg9V4QsktwkKj_ph0c6KAbHI_FERAEr-ER_KY.sZjvGR2jyyOKIpBNajwNjGd_b67KO64NSewbPcrk4sA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.JorS3ba-imPEfShiko0y6dR9iGVgao5jYA3raWzei8Fnfog.RNMJvTf9a4oU0JGxKfpOXIrpaV7fKAXA7CIfNkn4XRo",
+        "236x236": "https://50.img.avito.st/image/1/1.JorS3ba-imO8fVBiko0y6dR9iGVgao5jYA3raWymi7lnfog.SnPxBEgWO0ia6Dgr7ORUJLwm7KJIlT49sygpSUU3pi0",
+        "318x318": "https://50.img.avito.st/image/1/1.JorS3ba-imOYenRlko0y6dR9iGVgao5jYA3raWyCjJ1gfog.BvPL_b6n2yPDskLG5MNfvy1hlfNVqtZTmQdTOLLPCwk",
+        "416x416": "https://50.img.avito.st/image/1/1.JorS3ba-imOkeEhnko0y6dR9iGVgao5jYA3raWy-jqFifog.DTCDh5oGlrg_dIP5H6uJ-bh5oNBVImPnr8iOdrPDC2g",
+        "472x472": "https://50.img.avito.st/image/1/1.JorS3ba-imPUeThmko0y6dR9iGVgao5jYA3raWzOj9Fjfog.fJGw8tjCtx43Y42J82mXQ-BkiWpUf3SRCxY0r548xD8",
+        "636x636": "https://50.img.avito.st/image/1/1.JorS3ba-imOcd3Boko0y6dR9iGVgao5jYA3raWyGgZltfog.SHqtgp6w1oGTVbRyTBc9HQj4UnhXuxJKzf7ODg2vjnE"
+      }
+    ],
+    "imagesCount": 24,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8381033838
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8381033838
+            },
+            "relative": "7 дней назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "description": "Арт. 144780254 Доля в квартире!\n\nПредлагается к продаже готовая студия (доля) в историческом центре Санкт-Петербурга с дизайнерским ремонтом, видом на улицу и пассивным доходом от управляющей компании.\n\nКлючевые преимущества объекта.\nПрестижное расположение: Вход со 2-й Советской улицы. Всего 8 минут пешком до метро «Площадь Восстания» и Московского вокзала.\n\nИсторическая эстетика: Дом 1896 года постройки в архитектурном стиле эклектика. Комфортный 2-й этаж и легкая, удобная лестница.\n\nРедкий вид из окон: Окна выходят на улицу, а не в типичные петербургские дворы-«колодцы». Отличный уровень естественного освещения.\n\nКачественный ремонт: Небольшая, но очень уютная студия с дизайнерским ремонтом, выполненным «для себя» (использовались качественные материалы).\n\nФормат «Заезжай и живи / Сдавай»: Абсолютно все мебель, техника и элементы декора остаются в квартире.\n\nЮридическая чистота и пассивный доход.\nИнвестиции без забот: Студия работает через договор с управляющей компанией. Вам не нужно искать жильцов и заниматься уборкой — доход начнет поступать сразу после сделки.\n\nБезупречные документы: Один адекватный собственник, никаких обременений или залогов.\n\nОперативность: Документы полностью проверены, 100%-я готовность к быстрому выходу на сделку.\n\nПредлагаем Премиальное обслуживание для требовательных клиентов.\nОперативно организуем просмотр, предоставим полную информацию по объекту.\nОбойдем острые углы, подстрахуем, подскажем, поможем с кредитом, если это необходимо.\nОрганизуем безопасные взаиморасчеты в отделении Private Banking.\nПоможем принять объект, поздравим с покупкой!\n\n20 лет работы с требовательными клиентами подготовили нас к решению Ваших сложных задач.\nБудем рады знакомству! Ул. Рубинштейна, д.8.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "2-я Советская ул., 10",
+              "geoReferences": [
+                {
+                  "after": " 500 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Площадь Восстания"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8381033838,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "xgrz06C7DT84jZeE"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "380 952 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8381033838
+            },
+            "seo": {
+              "title": "Квартира-студия, 21 м², 2/6 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 21 м², 2/6 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i90711227?src=search_seller_info\u0026iid=8381033838",
+              "title": "МИР КВАРТИР PREMIUM"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "12745 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8381033838
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "380 952 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "380 952 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790599665000,
+    "title": "Квартира-студия, 21 м², 2/6 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, 2-я Советская ул., 10",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "МИР КВАРТИР PREMIUM",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i90711227?src=search_seller_info\u0026iid=8381033838"
+  },
+  "seller_name": "МИР КВАРТИР PREMIUM",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i90711227?src=search_seller_info\u0026iid=8381033838",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 21 м², 2/6 эт.",
+  "total_area": 21,
+  "updated_at": "2026-10-03T11:37:13.010582Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_26_et._8381033838?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "views_count": null,
+  "year_built": null
+}

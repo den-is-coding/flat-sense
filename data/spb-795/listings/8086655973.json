@@ -1,0 +1,581 @@
+{
+  "address": "Пос. Парголово, ул. Фёдора Абрамова, 4",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:31:15.580461Z",
+  "floor": 22,
+  "floors_total": 27,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/ul_fedora_abramova_4/92050?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 4"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=213",
+        "text": "Парнас"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_fedora_abramova/730-ASgBAgECA0SSA8YQ5geMUujIE7QLAUXcBxgidWxpdHNhX2ZlZG9yYV9hYnJhbW92YSI",
+        "text": "пос. Парголово, ул. Фёдора Абрамова"
+      }
+    },
+    "formattedAddress": "Пос. Парголово, ул. Фёдора Абрамова, 4",
+    "geoReferences": [
+      {
+        "after": " 400 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "до 5 мин."
+        },
+        "colors": [
+          "#0078C9"
+        ],
+        "content": "Парнас"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 42 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8086655973,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.MOxCzLa-nAUMZmYOLuQ303JsngPwe5gF8Bz9D_yXl__9b54.J_jOycAa3HfZc5ipUTQFiMgrrctQD4PJrdfWAHLyjHo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.FutnYra-ugIpyEAJRzZ501fCuATV1b4C1bLbCNk5sfjYwbg.rhh84LyTavEZc34QtiB4ktnw6nZ4eyiLG9WJqaOru1k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b20.img.avito.st/image/1/1.JW04ora-iYR2CHOPfrZDVQgCi4KKFY2EinLojob5gn6HAYs.WI5A6FB6rMM4nZhwpgPziZLC6z9pL0HRE5yJQuTl3sk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.ojtLuba-DtIFE_TZA9OtBXsZDNT5DgrS-Wlv2PXiBSj0Ggw.hOljUp2vMYS3jlOQqKsPmWqdnfo3GnppjPead46U5uA",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.lXq4Lba-OZP2h8OYnn_jQ4iNO5UKmj2TCv1YmQZ2MmkHjjs.aj00PM8rTYqU2md4_wwEL0Xkw9jmi1gUZQDKj7JYq4A",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:31:15.580461Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 246,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790580082000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "56 завершённых объявлений",
+    "closestAddressId": 92050,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, посёлок Парголово, улица Фёдора Абрамова, 4",
+      "lat": "60.070307",
+      "lng": "30.334948",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "24 фотографии",
+      "cropImagesInfo": null,
+      "extraPhoto": [
+        "",
+        ""
+      ],
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 32,5 м², 22/27 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 24,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/ul_fedora_abramova_4/92050?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 4"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=213",
+          "text": "Парнас"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_fedora_abramova/730-ASgBAgECA0SSA8YQ5geMUujIE7QLAUXcBxgidWxpdHNhX2ZlZG9yYV9hYnJhbW92YSI",
+          "text": "пос. Парголово, ул. Фёдора Абрамова"
+        }
+      },
+      "formattedAddress": "Пос. Парголово, ул. Фёдора Абрамова, 4",
+      "geoReferences": [
+        {
+          "after": " 400 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "до 5 мин."
+          },
+          "colors": [
+            "#0078C9"
+          ],
+          "content": "Парнас"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,5 · 42 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8086655973,
+    "images": [
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.MOxCzLa-nAVUbD4ELuQ303JsngPwe5gF8Bz9D_zPnaf3b54.nnulLUKnTliBCerOARqub2ZV46hk2R7gVLeL69hJNQw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://20.img.avito.st/image/1/1.MOxCzLa-nAUsbEYELuQ303JsngPwe5gF8Bz9D_y3nd_3b54.17g7e23n_GagW0Xu6_jMamkN-d5JFUEfUdWjHv1Ipv4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://20.img.avito.st/image/1/1.MOxCzLa-nAUIa2IDLuQ303JsngPwe5gF8Bz9D_yTmvvwb54.4rKU1R3P_ZMlB5OjIEQvBz9rL3vc1bQf0f1TicPhqHQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://20.img.avito.st/image/1/1.MOxCzLa-nAU0aV4BLuQ303JsngPwe5gF8Bz9D_yvmMfyb54.DqbipltUr9STVG01ypeDe_W28Wy_mFZQHzOGBCBAoWY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://20.img.avito.st/image/1/1.MOxCzLa-nAVEaC4ALuQ303JsngPwe5gF8Bz9D_zfmbfzb54.nM31bbI7iXK9MYSj7DCBymVIFSyah0Lm4nCQGO8HYA4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://20.img.avito.st/image/1/1.MOxCzLa-nAUMZmYOLuQ303JsngPwe5gF8Bz9D_yXl__9b54.J_jOycAa3HfZc5ipUTQFiMgrrctQD4PJrdfWAHLyjHo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.FutnYra-ugJxwhgDRzZ501fCuATV1b4C1bLbCNlhu6DSwbg.tpp54-w2hMGhfYh-W7kviknBiK9JrNIPNKvyrze9tAo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.FutnYra-ugIJwmADRzZ501fCuATV1b4C1bLbCNkZu9jSwbg.7QlOIT1fnAW1mjcww6AfH6adWyGNkNgS1la9F2Vk6YI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.FutnYra-ugItxUQERzZ501fCuATV1b4C1bLbCNk9vPzVwbg.1xK9nNkXHHAmCVWclwR2OQMP_jyaQSWmvjFDizCFaLg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.FutnYra-ugIRx3gGRzZ501fCuATV1b4C1bLbCNkBvsDXwbg.R4TAvqWzLl5jt5wEuMPgXKbgvEOgbR9QYJirvxr4390?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.FutnYra-ugJhxggHRzZ501fCuATV1b4C1bLbCNlxv7DWwbg.2GG-C7ykHAUxjushJ_7Tjcoa4m0BTO5gNHP0yG8wy_g?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.FutnYra-ugIpyEAJRzZ501fCuATV1b4C1bLbCNk5sfjYwbg.rhh84LyTavEZc34QtiB4ktnw6nZ4eyiLG9WJqaOru1k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b20.img.avito.st/image/1/1.JW04ora-iYQuAiuFfrZDVQgCi4KKFY2EinLojoahiCaNAYs.RGN6Xu-Km6f_LpI9NktPGMUAnHKxZWRJwqhZ55BX1jw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b20.img.avito.st/image/1/1.JW04ora-iYRWAlOFfrZDVQgCi4KKFY2EinLojobZiF6NAYs.EQOu5Y61-dCNSV8IxSQc-APUlvfANlcgUP2gGR60ZZ0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b20.img.avito.st/image/1/1.JW04ora-iYRyBXeCfrZDVQgCi4KKFY2EinLojob9j3qKAYs.H6uBwNUNW3wmDdhIbxmXEOZ1uNENv1a1gGV2gdyOS1Y?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b20.img.avito.st/image/1/1.JW04ora-iYROB0uAfrZDVQgCi4KKFY2EinLojobBjUaIAYs.5OAs0TxXa6D-aEnMWXoa4S6urW8iyEkJ197JxMSXA_E?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b20.img.avito.st/image/1/1.JW04ora-iYQ-BjuBfrZDVQgCi4KKFY2EinLojoaxjDaJAYs.NFLnEwcgqm4RieHiD_e_-7JJOS4yNxauCUh5S-OsYnk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b20.img.avito.st/image/1/1.JW04ora-iYR2CHOPfrZDVQgCi4KKFY2EinLojob5gn6HAYs.WI5A6FB6rMM4nZhwpgPziZLC6z9pL0HRE5yJQuTl3sk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.ojtLuba-DtJdGazTA9OtBXsZDNT5DgrS-Wlv2PW6D3D-Ggw.LVtxZkjVj7d_Ob-5unWqWvW8zdZFcD6euh3VenFSwHw",
+        "236x236": "https://50.img.avito.st/image/1/1.ojtLuba-DtIlGdTTA9OtBXsZDNT5DgrS-Wlv2PXCDwj-Ggw.gtvSK7xvs21s0ANz0cVMh76p_4v7D09VCC8_5Qnqz08",
+        "318x318": "https://50.img.avito.st/image/1/1.ojtLuba-DtIBHvDUA9OtBXsZDNT5DgrS-Wlv2PXmCCz5Ggw._rDHtjovtu3h6KgVoeRzB3BCFnB1MZmwffDGPwHk-zU",
+        "416x416": "https://50.img.avito.st/image/1/1.ojtLuba-DtI9HMzWA9OtBXsZDNT5DgrS-Wlv2PXaChD7Ggw.jJOnEF7JIj89jlyKaCiMtjRDG1mjrts4XSBDjEH1eJs",
+        "472x472": "https://50.img.avito.st/image/1/1.ojtLuba-DtJNHbzXA9OtBXsZDNT5DgrS-Wlv2PWqC2D6Ggw.4lXnnNpxPB9HulgDL3AT7ZYrA8-iHaTF2CCM76lrHfs",
+        "636x636": "https://50.img.avito.st/image/1/1.ojtLuba-DtIFE_TZA9OtBXsZDNT5DgrS-Wlv2PXiBSj0Ggw.hOljUp2vMYS3jlOQqKsPmWqdnfo3GnppjPead46U5uA"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.lXq4Lba-OZOujZuSnn_jQ4iNO5UKmj2TCv1YmQYuODENjjs.pvU6beYMxiRy3thDCr2Bq-_WfrPf4k55fUcnbU1qAA0",
+        "236x236": "https://80.img.avito.st/image/1/1.lXq4Lba-OZPWjeOSnn_jQ4iNO5UKmj2TCv1YmQZWOEkNjjs.ZrNgt1HdIJUB06XCql6g1M-Q53Bu0b4iIYQSeW_8spY",
+        "318x318": "https://80.img.avito.st/image/1/1.lXq4Lba-OZPyiseVnn_jQ4iNO5UKmj2TCv1YmQZyP20Kjjs.IWjWh3UEQNHHDsl4m762N4LDbwv0Z4PxsyIHzAWEhoc",
+        "416x416": "https://80.img.avito.st/image/1/1.lXq4Lba-OZPOiPuXnn_jQ4iNO5UKmj2TCv1YmQZOPVEIjjs.55XN2odke8FuZLLOUdV-9WvApHmggSdho1dgTq9Pvqw",
+        "472x472": "https://80.img.avito.st/image/1/1.lXq4Lba-OZO-iYuWnn_jQ4iNO5UKmj2TCv1YmQY-PCEJjjs.KPsznDutozIaDFvZIEj4I-EMewYRwsfixFiuIyWh7dY",
+        "636x636": "https://80.img.avito.st/image/1/1.lXq4Lba-OZP2h8OYnn_jQ4iNO5UKmj2TCv1YmQZ2MmkHjjs.aj00PM8rTYqU2md4_wwEL0Xkw9jmi1gUZQDKj7JYq4A"
+      }
+    ],
+    "imagesCount": 24,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": true,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#02D15C",
+                    "valueDark": "#04C454"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8086655973
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8086655973
+            },
+            "relative": "3 дня назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "isTooltipHidden": false,
+            "vas": [
+              {
+                "icon": {
+                  "default": "https://www.avito.st/s/common/components/monetization/icons/web/bbip.svg",
+                  "small": "https://www.avito.st/s/common/components/monetization/icons/web/bbip-small.svg"
+                },
+                "link": "https://www.avito.ru/business/tools/promotion-new",
+                "slug": "bbip",
+                "title": "Продвинуто"
+              },
+              {
+                "icon": {
+                  "default": "https://www.avito.st/s/common/components/monetization/icons/web/xl.svg",
+                  "small": "https://www.avito.st/s/common/components/monetization/icons/web/xl-small.svg"
+                },
+                "link": "https://support.avito.ru/articles/685",
+                "slug": "xl",
+                "title": "XL"
+              }
+            ]
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "description": "Продается уютная студия с косметическим ремонтом на 22 этаже монолитного дома 2011 года постройки. Из окон открывается вид на улицу, что обеспечивает хорошее естественное освещение. В квартире совмещенный санузел, есть просторная лоджия. Дом оборудован мусоропроводом и тремя пассажирскими лифтами, а также одним грузовым лифтом. Во дворе обустроена детская площадка и предусмотрена открытая парковка. Один взрослый собственник. Отличная планировка для студии. Кухню можно изолировать, в комнате 4 окна. Никто не прописан. Кухня остаётся. Развитая инфраструктура: рядом магазин, школа, детский сад. Хорошая транспортная доступность: до метро можно дойти пешком, у дома автобусная остановка.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пос. Парголово, ул. Фёдора Абрамова, 4",
+              "geoReferences": [
+                {
+                  "after": " 400 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "до 5 мин."
+                  },
+                  "colors": [
+                    "#0078C9"
+                  ],
+                  "content": "Парнас"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8086655973,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "1vtIRGbGuCk3H5Rm"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "246 154 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8086655973
+            },
+            "seo": {
+              "title": "Квартира-студия, 32,5 м², 22/27 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 32,5 м², 22/27 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "246 154 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "246 154 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 42 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790769767000,
+    "title": "Квартира-студия, 32,5 м², 22/27 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, посёлок Парголово, улица Фёдора Абрамова, 4",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 32,5 м², 22/27 эт.",
+  "total_area": 32.5,
+  "updated_at": "2026-10-03T11:31:15.580461Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_325_m_2227_et._8086655973?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

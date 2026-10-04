@@ -1,0 +1,611 @@
+{
+  "address": "Центральный район, ул. Некрасова, 29",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.0813Z",
+  "floor": 2,
+  "floors_total": 4,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/ul_nekrasova_29/924547?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 29"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=157",
+        "text": "Чернышевская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_nekrasova/6319-ASgBAgECA0SSA8YQ5geMUujIE95iAUXcBxIidWxpdHNhX25la3Jhc292YSI",
+        "text": "Центральный район, ул. Некрасова"
+      }
+    },
+    "formattedAddress": "Центральный район, ул. Некрасова, 29",
+    "geoReferences": [
+      {
+        "after": " 700 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "6–10 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Чернышевская"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "5,0 · 3 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8282013736,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.T8S1Wba-4y378xkmpwgUsaD54SsH7uctB4mCJwsC6NcK-uE.Xynoz-NR48ROH6cQv3aISxX3SsdxZvpJyw81T8IhpXI",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.kmRJcra-Po0H2MSGYViyEVzSPIv7xTqN-6Jfh_cpNXf20Tw.s_O6MySU6yIipKdwnXoyYB0ciAzbS5LuDNKN7RLvjJ0",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1._sEwXra-Uih-9KgjQBHNtyX-UC6C6VYogo4zIo4FWdKP_VA.rJ0kZhzuwncJTaGEJz77UoSJ7HeE1qOrpz3cAx3cy5M",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.XQOc5La-8erSTgvhqpEQd4lE8-wuU_XqLjSQ4CK_-hAjR_M.JpysUJXNXfx_zf2XDPmV5G6A3spi5zPzdTBCJiwl7Fg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.QzQWG7a-791YsRXWHFYKQAO77dukrOvdpMuO16hA5CepuO0.wFY5gey3pq-FcGgdDZSkYBHhVh1daboyRFp7hVcPZbI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.0813Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 443,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788979983000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "1 завершённое объявление",
+    "closestAddressId": 924547,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Центральный район, улица Некрасова, 29",
+      "lat": "59.93860245",
+      "lng": "30.36110687",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "26 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 18 м², 2/4 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 26,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/ul_nekrasova_29/924547?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 29"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=157",
+          "text": "Чернышевская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_nekrasova/6319-ASgBAgECA0SSA8YQ5geMUujIE95iAUXcBxIidWxpdHNhX25la3Jhc292YSI",
+          "text": "Центральный район, ул. Некрасова"
+        }
+      },
+      "formattedAddress": "Центральный район, ул. Некрасова, 29",
+      "geoReferences": [
+        {
+          "after": " 700 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "6–10 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Чернышевская"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "5,0 · 3 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8282013736,
+    "images": [
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.T8S1Wba-4y2j-UEspwgUsaD54SsH7uctB4mCJwta4o8A-uE.ibQo3haqs4hKT4HNknkblooM_9I4tqo8ApW9IdwqYxM",
+        "236x236": "https://90.img.avito.st/image/1/1.T8S1Wba-4y3b-TkspwgUsaD54SsH7uctB4mCJwsi4vcA-uE.W1s_VQC9rcmk9rgF6Ux-F60oEVS4icq_K3eb9r5G0cg",
+        "318x318": "https://90.img.avito.st/image/1/1.T8S1Wba-4y3__h0rpwgUsaD54SsH7uctB4mCJwsG5dMH-uE.GwOsxBEk6B3UyNQFwOEahtAL8KyhO-aZUaqVfdGguv4",
+        "416x416": "https://90.img.avito.st/image/1/1.T8S1Wba-4y3D_CEppwgUsaD54SsH7uctB4mCJws65-8F-uE.KNl9JQ7WZ4eAiCQUYWdC692LxAKGfBmUDXTbsG9aIaU",
+        "472x472": "https://90.img.avito.st/image/1/1.T8S1Wba-4y2z_VEopwgUsaD54SsH7uctB4mCJwtK5p8E-uE.mVmC_1fOmci6_vVZjabBMXlntt8i26ku_CJNW8ol8vs",
+        "636x636": "https://90.img.avito.st/image/1/1.T8S1Wba-4y378xkmpwgUsaD54SsH7uctB4mCJwsC6NcK-uE.Xynoz-NR48ROH6cQv3aISxX3SsdxZvpJyw81T8IhpXI"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.kmRJcra-Po1f0pyMYViyEVzSPIv7xTqN-6Jfh_dxPy_80Tw.SbloDRrRDMeIuBva2pXejh6kr2oNBQRj3qdg8h-i4hs",
+        "236x236": "https://90.img.avito.st/image/1/1.kmRJcra-Po0n0uSMYViyEVzSPIv7xTqN-6Jfh_cJP1f80Tw.reNxpcPVBulWaAztgUa4ZjGYg7fLG2A7SyaNFFZaEIs",
+        "318x318": "https://90.img.avito.st/image/1/1.kmRJcra-Po0D1cCLYViyEVzSPIv7xTqN-6Jfh_ctOHP70Tw.lAeE68V_vscZ_-qt466WDVpXN7rHzuIBBBKOflcASZ4",
+        "416x416": "https://90.img.avito.st/image/1/1.kmRJcra-Po0_1_yJYViyEVzSPIv7xTqN-6Jfh_cROk_50Tw.2EH9iSpInJDKjfz5dJKav05IzDfcO9N638dDSOcRWSc",
+        "472x472": "https://90.img.avito.st/image/1/1.kmRJcra-Po1P1oyIYViyEVzSPIv7xTqN-6Jfh_dhOz_40Tw.0H5KaxMys4if4ATLr7hse42SMmwkpNBvPCTgjCxt-FY",
+        "636x636": "https://90.img.avito.st/image/1/1.kmRJcra-Po0H2MSGYViyEVzSPIv7xTqN-6Jfh_cpNXf20Tw.s_O6MySU6yIipKdwnXoyYB0ciAzbS5LuDNKN7RLvjJ0"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1._sEwXra-Uigm_vApQBHNtyX-UC6C6VYogo4zIo5dU4qF_VA.khgj0oPRUGOBDtwvXH6nV9CA30ULsqt3kxGQZtV5Ie0",
+        "236x236": "https://50.img.avito.st/image/1/1._sEwXra-Uihe_ogpQBHNtyX-UC6C6VYogo4zIo4lU_KF_VA.fD8WQ-Z40QP_Jdh8Wil4HIfxXjQ2dqJ4NANe4x4DG0s",
+        "318x318": "https://50.img.avito.st/image/1/1._sEwXra-Uih6-awuQBHNtyX-UC6C6VYogo4zIo4BVNaC_VA.dYTdW0XPS7LANsrELIfB6FXqWUzb5kfZZydyHLhjR54",
+        "416x416": "https://50.img.avito.st/image/1/1._sEwXra-UihG-5AsQBHNtyX-UC6C6VYogo4zIo49VuqA_VA.m9wtSfsMUvPajsUCm_X1RYN7BVipnJonNZHjyKQsqp8",
+        "472x472": "https://50.img.avito.st/image/1/1._sEwXra-Uig2-uAtQBHNtyX-UC6C6VYogo4zIo5NV5qB_VA.tCl4cqjrIJImm1fUJRIrjAoVhCOk25lE1-IwopNjYfs",
+        "636x636": "https://50.img.avito.st/image/1/1._sEwXra-Uih-9KgjQBHNtyX-UC6C6VYogo4zIo4FWdKP_VA.rJ0kZhzuwncJTaGEJz77UoSJ7HeE1qOrpz3cAx3cy5M"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.XQOc5La-8eqKRFPrqpEQd4lE8-wuU_XqLjSQ4CLn8EgpR_M.pD9nLKFXUD79EBCN4i0i3H0VSYwDVRNXVM5-b6KWPD4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.XQOc5La-8eryRCvrqpEQd4lE8-wuU_XqLjSQ4CKf8DApR_M.ThaX71RYz-pqvD5ZHdkr2GphQ7uvh1HpIWK5N6M-1y8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.XQOc5La-8erWQw_sqpEQd4lE8-wuU_XqLjSQ4CK79xQuR_M.nnWcQV4E0rTx2IBFGqTowvWLYqO2Q6va1gn7K3zLKuM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.XQOc5La-8erqQTPuqpEQd4lE8-wuU_XqLjSQ4CKH9SgsR_M.T1m1J6cUenQv-yhj3XrzdyzGX9qAcFy7_z0xBbWeqS8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.XQOc5La-8eqaQEPvqpEQd4lE8-wuU_XqLjSQ4CL39FgtR_M.GaIBCBNmQz2z1Z92l87AtcvHG2370S2lB6EtIYHS8s0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.XQOc5La-8erSTgvhqpEQd4lE8-wuU_XqLjSQ4CK_-hAjR_M.JpysUJXNXfx_zf2XDPmV5G6A3spi5zPzdTBCJiwl7Fg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.QzQWG7a-790Au03cHFYKQAO77dukrOvdpMuO16gY7n-juO0.Zadh0QRSy07VewebV1G-VhG_XI15ToQeWAyuURQW2OY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.QzQWG7a-7914uzXcHFYKQAO77dukrOvdpMuO16hg7gejuO0.LWiePhf6J3HkNLk8BIBvwZbWZfv7KZbeHj5vM9v9xO8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.QzQWG7a-791cvBHbHFYKQAO77dukrOvdpMuO16hE6SOkuO0.hdtgINGDu3ep3jIAtJ0NEVziqgxAR5BPJRkha4zB68I?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.QzQWG7a-791gvi3ZHFYKQAO77dukrOvdpMuO16h46x-muO0.cNWz8-UiG-oGTY40d-8jhx22nqWfKmoFVmBbmDZdZnU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.QzQWG7a-790Qv13YHFYKQAO77dukrOvdpMuO16gI6m-nuO0.d8mQVCXRPC-I8r3aXq_yAwhkcxw7HsdRotupwM-Vz-g?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.QzQWG7a-791YsRXWHFYKQAO77dukrOvdpMuO16hA5CepuO0.wFY5gey3pq-FcGgdDZSkYBHhVh1daboyRFp7hVcPZbI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 26,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8282013736
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8282013736
+            },
+            "relative": "3 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "description": "Доходная Студия В Цeнтрe Саhкт-Пetepбуpга.\n\nФото Настоящие, студию можно посмотреть в любое удобное время.\n\nСтудия сдается в по суточную аренду в профессиональной управляющей компании и приносит стабильный доход каждый месяц.\nС первого дня покупки вы можете получать пассивный доход!\n\nАдрес: угол улица Некрасова/ улица Восстания.\n\nПродаётcя пoлнoстью гoтовая студия в истopичeскoм цeнтpe Caнкт-Пeтepбуpгa — в пешой доступности от Московского вокзала и oт cтaнций метро «Восстания», «Чернышевская».\n\nНаши преимущества:\n\nЦентр города с высоким спросом на аренду круглый год.\n\nГотовый арендный бизнес — студия уже приносит доход.\n\nПродаётся с мебелью, техникой и наработанной клиентской базой.\n\nНе требует дополнительных вложений.\n\nГородская прописка.\n\nМалонаселённый объект — всего 5 студий на этаже.\n\nСтудия полностью оборудована для комфортного проживания:\n\nкухонная зона с техникой и посудой.\n\nУдобное спальное место.\n\nСанузел с бойлером.\n\nСтиральная машина.\n\nSmаrt ТV и Wi-Fi.\n\nТекущая доходность:\n\n— с октября по апрель студия сдаётся посуточно от 2500 до 5000₽ в сутки.\n\n— в высокий сезон май-сентябрь стоимость аренды достигает 5000-7000₽ в сутки.\n\nПо запросу покажем фактические показатели доходности за 2023,2024,2025,2026 год.\n\nВажная информация по документам:\n\nОбъект оформлен как долевая собственность — 15/94 долей. Площадь по документам с учётом мест общего пользования — 15м². Дополнительно организован второй уровень, там где кровать 3 кв. М.\n\nВсе нотариальные отказы получены. Документы готовы к сделке. Прямая продажа.\n\nЗвоните, чтобы записаться на просмотр и оценить объект лично.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Центральный район, ул. Некрасова, 29",
+              "geoReferences": [
+                {
+                  "after": " 700 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "6–10 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Чернышевская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8282013736,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "443 889 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8282013736
+            },
+            "seo": {
+              "title": "Квартира-студия, 18 м², 2/4 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 18 м², 2/4 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/a2b027b047cddc9ac267f08e783e539d?src=search_seller_info\u0026iid=8282013736",
+              "title": "Продажи"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "1 завершённое объявление"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 31,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Документы проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8282013736
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "443 889 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "443 889 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "5,0 · 3 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1788979983000,
+    "title": "Квартира-студия, 18 м², 2/4 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Центральный район, улица Некрасова, 29",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Продажи",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/a2b027b047cddc9ac267f08e783e539d?src=search_seller_info\u0026iid=8282013736"
+  },
+  "seller_name": "Продажи",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/a2b027b047cddc9ac267f08e783e539d?src=search_seller_info\u0026iid=8282013736",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 18 м², 2/4 эт.",
+  "total_area": 18,
+  "updated_at": "2026-10-03T11:32:50.0813Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_18_m_24_et._8282013736?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

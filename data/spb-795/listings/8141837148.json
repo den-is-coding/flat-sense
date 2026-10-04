@@ -1,0 +1,586 @@
+{
+  "address": "Пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:22.980673Z",
+  "floor": 2,
+  "floors_total": 4,
+  "geo": {
+    "formattedAddress": "Пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+    "geoReferences": [
+      {
+        "content": "р-н Петродворцовый"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8141837148,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.mfIB87a6NRtPWc8QP53l1T9TNxu5Ss8QT1k3GbdONw.zmmCYqfSbGZQf1Y-ZWU2UY5r9ssPdTTIzNHryYSMVZI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4aMAQWN6PIVT_wL_YZ6EgWNjAH9hHQW_Q.m7DyHeXg2qS_RG8HgARCMTNDlmk0T7JzQkFLSX7sg8s",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.V9-V47a6-zbbSQE9t_Jg-qtD-TYtWgE920n5NCNe-Q.94wdynBAYLky3oQBqj0Osh5fr4V4-I_ClR194wf-C-U?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c70.img.avito.st/image/1/1.vZbky7a6EX-qYet0kqGylttrE39ccut0qmETfVJ2Ew.0YCf09tDespaBlne1MFeiopBODOf-vi_PGLdoUpDi0E",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.vHE28ba6EJh4W-qTQr_-VAhREpiOSOqTeFsSmoBMEg.ZK3GiPGZn-yOkKwLoqBOzesY3RgmXhd-8xYI7kufwyo",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.277066Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7982907,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 982 907",
+    "stringWithoutDiscount": null,
+    "value": 7982907,
+    "wasLowered": false
+  },
+  "price_per_unit": 310,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789662695000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "373 завершённых объявления",
+    "closestAddressId": 14175466,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+      "lat": "59.84721",
+      "lng": "30.07891",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 2518452,
+    "developmentName": "ЖК «Любоград»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "5 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 25,7 м², 2/4 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 5,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "formattedAddress": "Пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+      "geoReferences": [
+        {
+          "content": "р-н Петродворцовый"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8141837148,
+    "images": [
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.mfIB87a6NRsXU5caP53l1T9TNxu5SpcaF1M3GbdONw.vQrVFIo1w-YAzNI-LQ8uMVjaf-fAx1PcaGPnYdYxQ0M?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://20.img.avito.st/image/1/1.mfIB87a6NRtvU-8aP53l1T9TNxu5Su8ab1M3GbdONw.pevmpdRNi2PQ37jSlVj36Uq4Ne61Evn3wFr_pvyfKk4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://20.img.avito.st/image/1/1.mfIB87a6NRtLVMsdP53l1T9TNxu5SssdS1Q3GbdONw.bVcfL-kySp2tS83UxWl6UspEeaQ0DVJyLetgkIruyHc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://20.img.avito.st/image/1/1.mfIB87a6NRt3VvcfP53l1T9TNxu5Svcfd1Y3GbdONw.j_4zbAOIY89q4Ww8m6VF20MF7v0zFZp4nYND7MlKuJg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://20.img.avito.st/image/1/1.mfIB87a6NRsHV4ceP53l1T9TNxu5SoceB1c3GbdONw.pCQ73GIepi9V3-bdUPX1y8rqIk08gv1n6ZdCBxt3wN0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://20.img.avito.st/image/1/1.mfIB87a6NRtPWc8QP53l1T9TNxu5Ss8QT1k3GbdONw.zmmCYqfSbGZQf1Y-ZWU2UY5r9ssPdTTIzNHryYSMVZI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4bUC12H6PIVT_wL_YZ6El2H1Av9hHQW_Q.vn3uqKbPbJx0Pi41_b-wj6oO1qAlUx4OuwBGof_50rA",
+        "236x236": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4asCyWH6PIVT_wL_YZ6EiWHrAv9hHQW_Q.BlxL9_pwAhFh0yXo63q2E9Sx5DFODKjlNttxYHpPRfQ",
+        "318x318": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4aIDAGA6PIVT_wL_YZ6EgGAiAz9hHQW_Q.3lfxTGr7BbHeBfD4XPpacug6jMIwwuGUDvMEsdL9V08",
+        "416x416": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4a0Dj2C6PIVT_wL_YZ6Ej2CtA79hHQW_Q.KePH-jL2hmsE6mBPZMmLgAaQz00dM8sVcpUqNTRjIUA",
+        "472x472": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4bED02D6PIVT_wL_YZ6Ek2DxA_9hHQW_Q.VI54RcLrczs7osdJRis3FpAkWG_nCS_tBwhvWfaJsks",
+        "636x636": "https://60.img.avito.st/image/1/1.U2_Cq7a6_4aMAQWN6PIVT_wL_YZ6EgWNjAH9hHQW_Q.m7DyHeXg2qS_RG8HgARCMTNDlmk0T7JzQkFLSX7sg8s"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.V9-V47a6-zaDQ1k3t_Jg-qtD-TYtWlk3g0P5NCNe-Q.65Qm9SKzERA6wr9Y1n8c1ZcKU4k0cDWMx62TqsuEgqs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.V9-V47a6-zb7QyE3t_Jg-qtD-TYtWiE3-0P5NCNe-Q.Nx4_2fKok2mWI8rD7-oT42XCB5u7fokziNGCNC2gl68?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.V9-V47a6-zbfRAUwt_Jg-qtD-TYtWgUw30T5NCNe-Q.ly5DjWtoaObb54YjLJOrStPeGKKL_5Dj1SW_fdJRRlY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.V9-V47a6-zbjRjkyt_Jg-qtD-TYtWjky40b5NCNe-Q.I_2mvNE2Yelb048sSi424sCZ3RcXqMDj_opc347hBIE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.V9-V47a6-zaTR0kzt_Jg-qtD-TYtWkkzk0f5NCNe-Q.clzpuZmPT3LIRWqIhgA0Coh9rqQ11m1w2XATA6vnEvM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.V9-V47a6-zbbSQE9t_Jg-qtD-TYtWgE920n5NCNe-Q.94wdynBAYLky3oQBqj0Osh5fr4V4-I_ClR194wf-C-U?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://c70.img.avito.st/image/1/1.vZbky7a6EX_ya7N-kqGylttrE39ccrN-8msTfVJ2Ew.xJdJ9FL0Vv4zsYdapWlYIRBbNgQhok61PtLkyDzic00",
+        "236x236": "https://c70.img.avito.st/image/1/1.vZbky7a6EX-Ka8t-kqGylttrE39ccst-imsTfVJ2Ew.4Ad1vpBELnTRryx5VNceABFCBUWumC2E3BhXDb0xgqw",
+        "318x318": "https://c70.img.avito.st/image/1/1.vZbky7a6EX-ubO95kqGylttrE39ccu95rmwTfVJ2Ew.BP3xHmGXLU3PEzcbf6eXG6ZlP1NO0xxU-0WmAjP-UNA",
+        "416x416": "https://c70.img.avito.st/image/1/1.vZbky7a6EX-SbtN7kqGylttrE39cctN7km4TfVJ2Ew.hj2vN_bhSOk2JdVImQv9-cpNocNXScKLpD0cgs9sEa4",
+        "472x472": "https://c70.img.avito.st/image/1/1.vZbky7a6EX_ib6N6kqGylttrE39ccqN64m8TfVJ2Ew.lFosArQw0J-m873N7jUQL1miq7bcnZIXNFTPvRpqreY",
+        "636x636": "https://c70.img.avito.st/image/1/1.vZbky7a6EX-qYet0kqGylttrE39ccut0qmETfVJ2Ew.0YCf09tDespaBlne1MFeiopBODOf-vi_PGLdoUpDi0E"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.vHE28ba6EJggUbKZQr_-VAhREpiOSLKZIFESmoBMEg.PB5gTuW0rD0RfAe3lIaEqBdg3t-3oha88rHdARY2T04",
+        "236x236": "https://40.img.avito.st/image/1/1.vHE28ba6EJhYUcqZQr_-VAhREpiOSMqZWFESmoBMEg.nrApgF63rq4nc9ewMfVbmyC3GgJWrFba6vR4yDowPaI",
+        "318x318": "https://40.img.avito.st/image/1/1.vHE28ba6EJh8Vu6eQr_-VAhREpiOSO6efFYSmoBMEg.0jpZuNmDqHluxDQBySWdR-OGq1MrIjxbLTQU_mFXo70",
+        "416x416": "https://40.img.avito.st/image/1/1.vHE28ba6EJhAVNKcQr_-VAhREpiOSNKcQFQSmoBMEg.XOIySNDArzwWuLAbpETvRrJX2IeDxbUY8MGbSfvPqf0",
+        "472x472": "https://40.img.avito.st/image/1/1.vHE28ba6EJgwVaKdQr_-VAhREpiOSKKdMFUSmoBMEg.x967sXxi5PjmyomCNNbXEL0VVHs_JDvkZhVKqvVpdWs",
+        "636x636": "https://40.img.avito.st/image/1/1.vHE28ba6EJh4W-qTQr_-VAhREpiOSOqTeFsSmoBMEg.ZK3GiPGZn-yOkKwLoqBOzesY3RgmXhd-8xYI7kufwyo"
+      }
+    ],
+    "imagesCount": 5,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": true,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2285,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "От застройщика",
+                "version": 2
+              },
+              {
+                "id": 2283,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Чистовая отделка",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8141837148
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8141837148
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "description": "«Любоград» — уютный малоэтажный квартал комфорт-класса, состоящий из домов высотой всего 4 этажа. Жизнь здесь будет размеренной и спокойной, а все соседи будут знать друг друга. В ЖК «Любоград» предусмотрена вся инфраструктура для полноценной и интересной жизни: два детских сада, школа, поликлиника, спортивный комплекс. На первых этажах домов откроются магазины и кафе.\n«Любоград» располагается в уникальном месте Петербурга: в Стрельне, в историческом Петродворцовом районе, который славится роскошными дворцами и парками. Здесь уже есть вся социальная и торгово-сервисная инфраструктура, необходимая для комфортной жизни. Хорошую транспортную доступность обеспечивает близость развязки Кад и Санкт-Петербургского шоссе. Добраться до ближайшего метро можно на маршрутке или трамвае.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "developmentInfo": {
+              "developmentId": 2518452,
+              "href": "https://zhk-lyubograd-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFAAL__YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjI1MTg0NTI7fRZn-7RAAAAA",
+              "name": "ЖК «Любоград»",
+              "pageNumber": 1
+            },
+            "rating": {
+              "formattedValue": {
+                "attributes": {},
+                "text": "4,1 · 24 отзыва",
+                "version": 1
+              },
+              "showChevronEnd": false,
+              "type": "rating"
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+              "geoReferences": [
+                {
+                  "content": "р-н Петродворцовый"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8141837148,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "310 619 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 982 907",
+              "stringWithoutDiscount": null,
+              "value": 7982907,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8141837148
+            },
+            "seo": {
+              "title": "Квартира-студия, 25,7 м², 2/4 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 25,7 м², 2/4 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/a51a5f916f9dc5d665a071ac5d0ac851?src=search_seller_info\u0026iid=8141837148",
+              "title": "Любоград"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "373 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8141837148
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "310 619 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,98 млн",
+      "fullString": "7 982 907 ₽",
+      "hasValue": true,
+      "normalizedPrice": "310 619 ₽ за м²",
+      "postfix": "",
+      "string": "7 982 907",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7982907,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,1 · 24 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789662695000,
+    "title": "Квартира-студия, 25,7 м², 2/4 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "пос. Стрельна, ш. Красносельское, уч. 4, корп. 4.1",
+      "link": "/brands/a51a5f916f9dc5d665a071ac5d0ac851?page_from=from_items_list_icon\u0026iid=8141837148",
+      "slug": null,
+      "src": "https://90.img.avito.st/image/1/1.pEpq9ba5HqNcVIqjLv-ANCJUCqXYcIqj3FwoodxWHqE.0VCKKLBkXWPhQgAifDKMNx3c2j72SJR2bqapfACyUqk"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Любоград",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/a51a5f916f9dc5d665a071ac5d0ac851?src=search_seller_info\u0026iid=8141837148"
+  },
+  "seller_name": "Любоград",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/a51a5f916f9dc5d665a071ac5d0ac851?src=search_seller_info\u0026iid=8141837148",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 25,7 м², 2/4 эт.",
+  "total_area": 25.7,
+  "updated_at": "2026-10-03T11:20:07.277066Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_257_m_24_et._8141837148?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

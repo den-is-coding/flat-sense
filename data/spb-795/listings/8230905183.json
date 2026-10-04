@@ -1,0 +1,635 @@
+{
+  "address": "Ул. Тельмана, д. 37, лит. А",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:22.986805Z",
+  "floor": 11,
+  "floors_total": 13,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/ul_telmana_37/175048?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " лит. А"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=208",
+        "text": "Улица Дыбенко"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/ulitsa_telmana/11793-ASgBAgECA0SSA8YQ5geOUujIE6K4AQFF3AcQInVsaXRzYV90ZWxtYW5hIg",
+        "text": "ул. Тельмана, д. 37"
+      }
+    },
+    "formattedAddress": "Ул. Тельмана, д. 37, лит. А",
+    "geoReferences": [
+      {
+        "after": " 1,8 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "21–30 мин."
+        },
+        "colors": [
+          "#EA7125"
+        ],
+        "content": "Улица Дыбенко"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8230905183,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.h4Jag7a6K2sUKdFgWIXhx04jKWviOtFgFCkpaew-KQ.mxkgCzN-qIbr5cAEo51AXFOvRDuWuzdpIzaahQWHcYo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.J1Rarra6i70UBHG2GIZ2EE4Oib3iF3G2FASJv-wTiQ.DcvPcT-jAb5YxQ0NkSiQPmSbfuAfa-hTP4M3NOYc5-U?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://00.img.avito.st/image/1/1.3mFAvba6cogOF4iDcMLNJFQdcIj4BIiDDhdwivYAcA.IaiJyOv1OcwDJFw7nyQI5hkwqVrX3vENq0Jz5Yoylg0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.kp85w7a6PnZ3acR9EbXP2y1jPHaBesR9d2k8dI9-PA.TXZfVFhmttmWk5rRC5HvaXZtNXSa7wlJgd04PY-4D88?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://20.img.avito.st/image/1/1.lDwtfLa6ONVj1sLeCTLcZzncOtWVxcLeY9Y615vBOg.UdFb525X9ci_XX8YnDq2XSeIPzHnbHVT9itmHoJ7O1c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.284521Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7987750,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 987 750",
+    "stringWithoutDiscount": null,
+    "value": 7987750,
+    "wasLowered": false
+  },
+  "price_per_unit": 358,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790931171000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "15866 завершённых объявлений",
+    "closestAddressId": 175048,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "ул. Тельмана, д. 37, лит. А",
+      "lat": "59.89151",
+      "lng": "30.48005",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 9295759,
+    "developmentName": "ЖК «ИСКРА-Сити»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "21 фотография",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,3 м², 11/13 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 21,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/ul_telmana_37/175048?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " лит. А"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=208",
+          "text": "Улица Дыбенко"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/ulitsa_telmana/11793-ASgBAgECA0SSA8YQ5geOUujIE6K4AQFF3AcQInVsaXRzYV90ZWxtYW5hIg",
+          "text": "ул. Тельмана, д. 37"
+        }
+      },
+      "formattedAddress": "Ул. Тельмана, д. 37, лит. А",
+      "geoReferences": [
+        {
+          "after": " 1,8 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "21–30 мин."
+          },
+          "colors": [
+            "#EA7125"
+          ],
+          "content": "Улица Дыбенко"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8230905183,
+    "images": [
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.h4Jag7a6K2tMI4lqWIXhx04jKWviOolqTCMpaew-KQ.WB_x1RK2r6PCAfjlajxuwhBIG71mW82KSl3gtigzHJo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.h4Jag7a6K2s0I_FqWIXhx04jKWviOvFqNCMpaew-KQ.okLOYn1A09FgeNk4_JOmhfetP_QztEUxzb7HImLUMYw?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.h4Jag7a6K2sQJNVtWIXhx04jKWviOtVtECQpaew-KQ.jdCuOaZlAF0pRwyGbf2KJ25nN2UolXbjtjrzCQAlmu4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.h4Jag7a6K2ssJulvWIXhx04jKWviOulvLCYpaew-KQ.IZlAu55yfntIQfWz-61h4UgswrIZx-SvoITn4wLx-3o?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.h4Jag7a6K2tcJ5luWIXhx04jKWviOpluXCcpaew-KQ.x1tMCyRl0Ic5ueZrcCXwXNDLmqRLk6p9J4bpuJ1nhtQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.h4Jag7a6K2sUKdFgWIXhx04jKWviOtFgFCkpaew-KQ.mxkgCzN-qIbr5cAEo51AXFOvRDuWuzdpIzaahQWHcYo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.J1Rarra6i71MDim8GIZ2EE4Oib3iFym8TA6Jv-wTiQ.zswCmCR8n-_wMqDZ0YA_NyVNbmtr2QyPEw-6c1uaWIg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://20.img.avito.st/image/1/1.J1Rarra6i700DlG8GIZ2EE4Oib3iF1G8NA6Jv-wTiQ.3sXuXrN3O8h3v-IpIdk4HyDzZOmVKp2Kr7npyr582po?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://20.img.avito.st/image/1/1.J1Rarra6i70QCXW7GIZ2EE4Oib3iF3W7EAmJv-wTiQ.W-y3DIiGNvo0bs-_2Wx_mKKgFx_42kV-ZzZvH7qBhUY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://20.img.avito.st/image/1/1.J1Rarra6i70sC0m5GIZ2EE4Oib3iF0m5LAuJv-wTiQ.sIQFmrNYtDMvqsmJmLMD7olxyoAGVKiYYiSjnDPQkS4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://20.img.avito.st/image/1/1.J1Rarra6i71cCjm4GIZ2EE4Oib3iFzm4XAqJv-wTiQ.Gx8m8JDSH51GwTdtyDCwJxFGkdknO_d2QOPBSHM8HX0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://20.img.avito.st/image/1/1.J1Rarra6i70UBHG2GIZ2EE4Oib3iF3G2FASJv-wTiQ.DcvPcT-jAb5YxQ0NkSiQPmSbfuAfa-hTP4M3NOYc5-U?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://00.img.avito.st/image/1/1.3mFAvba6cohWHdCJcMLNJFQdcIj4BNCJVh1wivYAcA.TTklx6v_7jaOs7wedq5KP7NDReMEhoxRCMhiHGRQZ7k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://00.img.avito.st/image/1/1.3mFAvba6coguHaiJcMLNJFQdcIj4BKiJLh1wivYAcA.KWozpIKNoxgo1i8XQFOYUORarA9pbPoYXq0I8LyYZxI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://00.img.avito.st/image/1/1.3mFAvba6cogKGoyOcMLNJFQdcIj4BIyOChpwivYAcA.JXmXmc_WPW-ZJYikX-O5EcfvHBBss-bip32Iph5SvxM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://00.img.avito.st/image/1/1.3mFAvba6cog2GLCMcMLNJFQdcIj4BLCMNhhwivYAcA.fQ1Mz9fhD2BsmlVMsY7m6vWab_56l_a3Z2DBkPuClHo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://00.img.avito.st/image/1/1.3mFAvba6cohGGcCNcMLNJFQdcIj4BMCNRhlwivYAcA.rZmg6aROvF7pYnGiRd9WnfpWrBdlt8cGGgQ1bTXVL5c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://00.img.avito.st/image/1/1.3mFAvba6cogOF4iDcMLNJFQdcIj4BIiDDhdwivYAcA.IaiJyOv1OcwDJFw7nyQI5hkwqVrX3vENq0Jz5Yoylg0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.kp85w7a6PnYvY5x3EbXP2y1jPHaBepx3L2M8dI9-PA.-03tMbNiXVLTCgYlklcYk0-D19oGiaK_IiCVNetm9ys?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.kp85w7a6PnZXY-R3EbXP2y1jPHaBeuR3V2M8dI9-PA.bJvthJutk0dHSh7CrU63-O5C_0N28YmdxWDtK95gqyo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.kp85w7a6PnZzZMBwEbXP2y1jPHaBesBwc2Q8dI9-PA.Z7AnF0Ni-39FNm6XfPrhBF0fulPmZ5jHcxubcvFqKT8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.kp85w7a6PnZPZvxyEbXP2y1jPHaBevxyT2Y8dI9-PA.y6nunGYjYK5WCTiHzSy6cHp3mb7g0cWQvK2OuGUI3Eo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.kp85w7a6PnY_Z4xzEbXP2y1jPHaBeoxzP2c8dI9-PA.6-n7bmpFOukY37eoG1BdpxQHt20KCFDLF-sy1ayhSaM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.kp85w7a6PnZ3acR9EbXP2y1jPHaBesR9d2k8dI9-PA.TXZfVFhmttmWk5rRC5HvaXZtNXSa7wlJgd04PY-4D88?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://20.img.avito.st/image/1/1.lDwtfLa6ONU73JrUCTLcZzncOtWVxZrUO9w615vBOg.ofEQ8Z3ParXGr23G-eE_j1sTPm68-P28cbnlsQQCuRI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://20.img.avito.st/image/1/1.lDwtfLa6ONVD3OLUCTLcZzncOtWVxeLUQ9w615vBOg.r4_B3VDoJ02adXlQffC0i3PFrVxZfwvxPDXNhxqmc2E?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://20.img.avito.st/image/1/1.lDwtfLa6ONVn28bTCTLcZzncOtWVxcbTZ9s615vBOg.jk6jsVuQZsQet2r9pkJjX6cZczCAfgFGoWwgetfF_M4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://20.img.avito.st/image/1/1.lDwtfLa6ONVb2frRCTLcZzncOtWVxfrRW9k615vBOg.wa456vNqd3HeUUVNLuLlqndD2RpydDV6wKK3nkOqcws?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://20.img.avito.st/image/1/1.lDwtfLa6ONUr2IrQCTLcZzncOtWVxYrQK9g615vBOg.6yb-tdx5_xjI4xePQApOtLf9lmHuJrFyAk_XT0JTd3k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://20.img.avito.st/image/1/1.lDwtfLa6ONVj1sLeCTLcZzncOtWVxcLeY9Y615vBOg.UdFb525X9ci_XX8YnDq2XSeIPzHnbHVT9itmHoJ7O1c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      }
+    ],
+    "imagesCount": 21,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": true,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2285,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "От застройщика",
+                "version": 2
+              },
+              {
+                "id": 2283,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Чистовая отделка",
+                "version": 2
+              },
+              {
+                "id": 2282,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "antiPyramid",
+                  "rightEdgeStyle": "flag"
+                },
+                "title": "Балкон",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8230905183
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8230905183
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "description": "«Искра-Сити» — жилой комплекс комфорт-класса на 777 квартир, ориентированный на семейных покупателей. В проекте очень мало студий. Дом возводится на правом берегу Невы, в Невском районе Санкт-Петербурга, между улицей Тельмана и переулком Челиева — в створе Искровского проспекта. Это давно сложившийся район без высотной или уплотнительной застройки. Прогулка до ближайшей станции метро «ул. Дыбенко» займёт всего 25 минут. Отлично развито транспортное сообщение. Рядом гипермаркет «Максидом». 4 корпуса переменной этажности — от 13 до 18, объединены подземным паркингом. На первых этажах будут располагаться магазины, пекарни, аптеки и салоны красоты, есть собственный детский сад. Квартиры с угловым остеклением, собственными кладовыми. Большие ванные с окном и просторные балконы. Территория двора закрыта и благоустроена.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "developmentInfo": {
+              "developmentId": 9295759,
+              "href": "https://zhk-iskra-siti-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFAAL__YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjkyOTU3NTk7fVo47_hAAAAA",
+              "name": "ЖК «ИСКРА-Сити»",
+              "pageNumber": 1
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Ул. Тельмана, д. 37, лит. А",
+              "geoReferences": [
+                {
+                  "after": " 1,8 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "21–30 мин."
+                  },
+                  "colors": [
+                    "#EA7125"
+                  ],
+                  "content": "Улица Дыбенко"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8230905183,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "358 195 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 987 750",
+              "stringWithoutDiscount": null,
+              "value": 7987750,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8230905183
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,3 м², 11/13 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,3 м², 11/13 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/lidergroup?src=search_seller_info\u0026iid=8230905183",
+              "title": "ГК Лидер Групп"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "15866 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8230905183
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "358 195 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 987 750 ₽",
+      "hasValue": true,
+      "normalizedPrice": "358 195 ₽ за м²",
+      "postfix": "",
+      "string": "7 987 750",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7987750,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790931171000,
+    "title": "Квартира-студия, 22,3 м², 11/13 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "ул. Тельмана, д. 37, лит. А",
+      "link": "/brands/lidergroup?page_from=from_items_list_icon\u0026iid=8230905183",
+      "slug": null,
+      "src": "https://90.img.avito.st/image/1/1.n1u-eLa5JbKI2bGyjBrbf6_aMbQM_bGyCNETsAjbJbA.Pecdp7Vk_0DnUNl9gszAPr5tBvIRSzfDOe82gMM0AVc"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "ГК Лидер Групп",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/lidergroup?src=search_seller_info\u0026iid=8230905183"
+  },
+  "seller_name": "ГК Лидер Групп",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/lidergroup?src=search_seller_info\u0026iid=8230905183",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,3 м², 11/13 эт.",
+  "total_area": 22.3,
+  "updated_at": "2026-10-03T11:20:07.284521Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_223_m_1113_et._8230905183?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

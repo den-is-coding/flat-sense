@@ -1,0 +1,544 @@
+{
+  "address": "Верхне-Каменская ул., 11к1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:23.002579Z",
+  "floor": 21,
+  "floors_total": 25,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/verhne-kamenskaya_ul_11k1/21612873?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 11к1"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/verhne-kamenskaya_ulitsa/3431-ASgBAgECA0SSA8YQ5geMUujIE841AUXcBxoidmVyaG5lLWthbWVuc2theWFfdWxpdHNhIg",
+        "text": "Верхне-Каменская ул."
+      }
+    },
+    "formattedAddress": "Верхне-Каменская ул., 11к1",
+    "geoReferences": [
+      {
+        "content": "р-н Приморский"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 36 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8342222957,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXOwlIN42CX63OGee3VMiX1zTO4YeUBlcolBnXs.QnVxKtsSGKgEk2oFsbcW_k29B0FLc6BoLREdQoWgIDA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.V8z1_7a--yW7VQEu164tiepf-SNHSP8lRy-aL0uk8N9KXPk.1dYHSGUbuBY3guBgsjn95SoNWlmUi9qOj-ppBDXMxIE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.-6cjYba-V05ty61FWSaP4jzBVUiR1lNOkbE2RJ06XLScwlU.dQ_FsbEqdT0auCmpC1bdBQyBu7xvEGWK3P7stNTSgFg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF9ThmZUcSA88QKMnlmvm5hfr_z9VaN3l6Wij54.rpLbRjF2XiPhGZzhmz9Ll7GHXDVZsfMpOaL8uqFxJ2w?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.rFPRRba-ALqf7_qxhXeEFs7lArxj8gS6Y5VhsG8eC0Bu5gI.4jgDVHUYs6fewLfPIjl_QCce6ili-3Ydsv0HrAgKJ_E",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.302915Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 322,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1791017158000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "21 завершённое объявление",
+    "closestAddressId": 21612873,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Верхне-Каменская улица, 11к1",
+      "lat": "60.03591426751529",
+      "lng": "30.205040610230014",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "22 фотографии",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 24,8 м², 21/25 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 22,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/verhne-kamenskaya_ul_11k1/21612873?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 11к1"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/verhne-kamenskaya_ulitsa/3431-ASgBAgECA0SSA8YQ5geMUujIE841AUXcBxoidmVyaG5lLWthbWVuc2theWFfdWxpdHNhIg",
+          "text": "Верхне-Каменская ул."
+        }
+      },
+      "formattedAddress": "Верхне-Каменская ул., 11к1",
+      "geoReferences": [
+        {
+          "content": "р-н Приморский"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,6 · 36 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8342222957,
+    "images": [
+      {
+        "208x208": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXPontty2CX63OGee3VMiX1zTO4YeUA9eNFLnXs.SK5Fe3YRfXT5_S7zyNIjcI7iIb5LrGPgMeVQAK7tfzI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXOQnqNy2CX63OGee3VMiX1zTO4YeUBFeKlLnXs.XKMA52ZZIiMWQowLksYWuYu2Uv7SWoD6oieYJOL_qfU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXO0mYd12CX63OGee3VMiX1zTO4YeUBhf41MnXs.0Ry6auZpy3ch0kObbLckBnO2BT9_PRAPpcHa2ajzKFw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXOIm7t32CX63OGee3VMiX1zTO4YeUBdfbFOnXs.TxZB4FUg9AUKDmvQ_LWzXWEppFQ1lfuCcsOPSMcIwN8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXP4mst22CX63OGee3VMiX1zTO4YeUAtfMFPnXs.NaVtUsJWl2Lg95Xu7fy1o-W8UoisDaYPjBS0fOx32Vc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://00.img.avito.st/image/1/1.1Zr-Pra-eXOwlIN42CX63OGee3VMiX1zTO4YeUBlcolBnXs.QnVxKtsSGKgEk2oFsbcW_k29B0FLc6BoLREdQoWgIDA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.V8z1_7a--yXjX1kk164tiepf-SNHSP8lRy-aL0v8-odAXPk.yHpAqTRHAx62CyA6FJVQdRpQxs2zwtsfYJssaQe0aEE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.V8z1_7a--yWbXyEk164tiepf-SNHSP8lRy-aL0uE-v9AXPk.JJGX57e6aX2lQclQMIsQCtjyts9UUgDmWq9OGObDeK4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.V8z1_7a--yW_WAUj164tiepf-SNHSP8lRy-aL0ug_dtHXPk.Bq1VpCO2ynIpESVsCO_H5GqfrWsRcTXInc6Qz6LXWC4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.V8z1_7a--yWDWjkh164tiepf-SNHSP8lRy-aL0uc_-dFXPk.aVziTD3CU0jZf46I45ealpX4VvquZvz_r2TZJrSM57o?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.V8z1_7a--yXzW0kg164tiepf-SNHSP8lRy-aL0vs_pdEXPk.rlMng3SS1r_BTqdj23ixatCnrVtzFas6uyxFG1SkTjA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.V8z1_7a--yW7VQEu164tiepf-SNHSP8lRy-aL0uk8N9KXPk.1dYHSGUbuBY3guBgsjn95SoNWlmUi9qOj-ppBDXMxIE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.-6cjYba-V041wfVPWSaP4jzBVUiR1lNOkbE2RJ1iVuyWwlU.LRk6t2yna-weF0p8N9j8QrK0enAZ1NPGKoG7VF2rcqU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.-6cjYba-V05NwY1PWSaP4jzBVUiR1lNOkbE2RJ0aVpSWwlU.53jMj2pi6EQ9PRCDEKj9D2C_-kivBER7PkK9v-u2MzQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.-6cjYba-V05pxqlIWSaP4jzBVUiR1lNOkbE2RJ0-UbCRwlU.UpoZ-XEku2pDGkvrZVd99CMrE84GdY2m7lrtVcHRpBI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.-6cjYba-V05VxJVKWSaP4jzBVUiR1lNOkbE2RJ0CU4yTwlU.9srsKSl6SkmZzLFTfghPrvJEcKn2o35hYemMPHNAz3g?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.-6cjYba-V04lxeVLWSaP4jzBVUiR1lNOkbE2RJ1yUvySwlU.2-CUvN8AzW_Jh4P7J82g7nozByCq9hqMaEADKiKRvzk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.-6cjYba-V05ty61FWSaP4jzBVUiR1lNOkbE2RJ06XLScwlU.dQ_FsbEqdT0auCmpC1bdBQyBu7xvEGWK3P7stNTSgFg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF8LjD5ecSA88QKMnlmvm5hfr_z9VaMvnf2oj54.-LzydkYZ4k2zMYpOPpMUfmcINRPKVT-cSU-iv3VNfjw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF9zjEZecSA88QKMnlmvm5hfr_z9VaNXnYWoj54.bvjDbqEBpIKmP0LNOB1g7HAvogSfo_kbVsQTU66UjsY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF9Xi2JZcSA88QKMnlmvm5hfr_z9VaNzmqGvj54.FXzS3mjNeUQu4j66JacxcRJO3dWs-ElPCoutiW9AlQg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF9riV5bcSA88QKMnlmvm5hfr_z9VaNPmJ2tj54.JPeWpsAhiQgFf3kEnpraDsbcRhE439g10WUluofFV8E?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF8biC5acSA88QKMnlmvm5hfr_z9VaM_me2sj54.LnO2UemBPUJGHXPYQcFs_wl_vlUC4DHcmS2IFqWxYbk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b20.img.avito.st/image/1/1.MLYdLLa-nF9ThmZUcSA88QKMnlmvm5hfr_z9VaN3l6Wij54.rpLbRjF2XiPhGZzhmz9Ll7GHXDVZsfMpOaL8uqFxJ2w?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.rFPRRba-ALrH5aK7hXeEFs7lArxj8gS6Y5VhsG9GARhk5gI.X42TX6CfvNWBvbzXirpTgawTASfBcFjbZE342-Csnas",
+        "236x236": "https://80.img.avito.st/image/1/1.rFPRRba-ALq_5dq7hXeEFs7lArxj8gS6Y5VhsG8-AWBk5gI.nYjRjaZFzxXozfDLxhNU-qDVpvMXSx8So2PIvEJJwN8",
+        "318x318": "https://80.img.avito.st/image/1/1.rFPRRba-ALqb4v68hXeEFs7lArxj8gS6Y5VhsG8aBkRj5gI.MMnx29PzLLA5yVzzdbmwh0El9_WdjamD52aR6_M0wCI",
+        "416x416": "https://80.img.avito.st/image/1/1.rFPRRba-ALqn4MK-hXeEFs7lArxj8gS6Y5VhsG8mBHhh5gI.ZYThLl3QGC9jkD1BNE3eU1svWIhT6InA2wBv8EaIrKQ",
+        "472x472": "https://80.img.avito.st/image/1/1.rFPRRba-ALrX4bK_hXeEFs7lArxj8gS6Y5VhsG9WBQhg5gI.cSlawY0QkHCYncTgEIdOVb5SG-K_bLXjPUrBVjU-KFE",
+        "636x636": "https://80.img.avito.st/image/1/1.rFPRRba-ALqf7_qxhXeEFs7lArxj8gS6Y5VhsG8eC0Bu5gI.4jgDVHUYs6fewLfPIjl_QCce6ili-3Ydsv0HrAgKJ_E"
+      }
+    ],
+    "imagesCount": 22,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#02D15C",
+                    "valueDark": "#04C454"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              },
+              {
+                "id": 39,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Собственник",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "antiPyramid",
+                  "rightEdgeStyle": "flag"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8342222957
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8342222957
+            },
+            "relative": "2 часа назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "description": "Продается светлая, уютная студия с современным ремонтом в монолитном доме 2023 года постройки. Просторная лоджия с панорамными окнами открывает вид на ухоженный двор с закрытой территорией и спортивными площадками. В квартире выполнен качественный евро-ремонт с теплым полом, что создает уютную атмосферу.\n\nКухня оборудована всей необходимой техникой, включая микроволновую печь, холодильник и посудомоечную машину. Совмещенный санузел оформлен в современном стиле и оборудован стиральной машиной. В прихожей предусмотрены вместительные шкафы для хранения вещей. Подключен интернет.\n\nДом оснащен двумя пассажирскими лифтами и грузовым лифтом, а также подземной парковкой и охраняемой парковкой во дворе дома за шлагбаумом. Двор дома закрытый и охраняемый.\n\nВ шаговой доступности есть вся необходимая инфраструктура: детские сады, школы, кафе и магазины. До метро Коменданский пр-т 20 минут на автобусе, остановка которого прямо у дома. Совсем скоро откроется новая станция метро Каменка.\n\nКвартира абсолютно новая, в ней никто не проживал! Продажа напрямую от собственника.\n\nТакже при желании можно приобрести данную квартиру вместе с паркингом. Стоимость паркинга обсуждается отдельно.\n\nПрошу риэлторов и агентов по недвижимости не предлогать свои услуги по продаже квартиры, мне уже помогают! Если есть реальный покупатель, звоните обсудим.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Верхне-Каменская ул., 11к1",
+              "geoReferences": [
+                {
+                  "content": "р-н Приморский"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8342222957,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "322 581 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8342222957
+            },
+            "seo": {
+              "title": "Квартира-студия, 24,8 м², 21/25 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 24,8 м², 21/25 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "322 581 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "322 581 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 36 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1791017158000,
+    "title": "Квартира-студия, 24,8 м², 21/25 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Верхне-Каменская улица, 11к1",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 24,8 м², 21/25 эт.",
+  "total_area": 24.8,
+  "updated_at": "2026-10-03T11:20:07.302915Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_248_m_2125_et._8342222957?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

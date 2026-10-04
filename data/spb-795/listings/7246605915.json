@@ -1,0 +1,576 @@
+{
+  "address": "Пр-т Товарищеский, д. 38",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:22.989899Z",
+  "floor": 3,
+  "floors_total": 22,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/tovarischeskiy_pr-t_38/228974?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " д. 38"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=208",
+        "text": "Улица Дыбенко"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/tovarischeskiy_prospekt/7674-ASgBAgECA0SSA8YQ5geOUujIE_R3AUXcBxkidG92YXJpc2NoZXNraXlfcHJvc3Bla3Qi",
+        "text": "пр-т Товарищеский"
+      }
+    },
+    "formattedAddress": "Пр-т Товарищеский, д. 38",
+    "geoReferences": [
+      {
+        "after": " 900 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "16–20 мин."
+        },
+        "colors": [
+          "#EA7125"
+        ],
+        "content": "Улица Дыбенко"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 7246605915,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b20.img.avito.st/image/1/1.WGpe2La69IMQcg6IYokCLkl49oPmYQ6IEHL2gehl9g.CPV1RodiMsazcm1IDfPCs5gN-8ZIPfyKNR8Y6UAsT3o?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.IW7xZLa6jYe_zneMvww6YrrFj4dJ3XeMv86PhUfZjw.DuiyNG_ge-WqIHgcMbk7v8SIzPnbLCVtqmNiPGtYhaE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.B0t7-7a6q6I1UVGpeZ9VaVtbqaLDQlGpNVGpoM1GqQ.NLnC5yNevxzU89JX54dqiAwq70khkq6UxrZ-AzMQB5g",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG9AR6ZkYt6ezFJMXm-2VKZkQEdebbhQXg.5a_UK82d2X6jerjCWxkzIu_pTDmq6xuZ4Zr1Of8TH3o?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1._LyceLa6UFXS0qpe6Ae19cDZUlUkwape0tJSVyrFUg.uIcAyCCbtuolL_9cipk1XKdRf1MG0rj2ia9c7H9EvVk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.287282Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7964154,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 964 154",
+    "stringWithoutDiscount": null,
+    "value": 7964154,
+    "wasLowered": false
+  },
+  "price_per_unit": 381,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790848193000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "70778 завершённых объявлений",
+    "closestAddressId": 228974,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "пр-т Товарищеский, д. 38",
+      "lat": "59.90427",
+      "lng": "30.49802",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 11943433,
+    "developmentName": "ЖК «Дыбенко Парк» ",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "11 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 20,9 м², 3/22 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 11,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/tovarischeskiy_pr-t_38/228974?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " д. 38"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=208",
+          "text": "Улица Дыбенко"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/tovarischeskiy_prospekt/7674-ASgBAgECA0SSA8YQ5geOUujIE_R3AUXcBxkidG92YXJpc2NoZXNraXlfcHJvc3Bla3Qi",
+          "text": "пр-т Товарищеский"
+        }
+      },
+      "formattedAddress": "Пр-т Товарищеский, д. 38",
+      "geoReferences": [
+        {
+          "after": " 900 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "16–20 мин."
+          },
+          "colors": [
+            "#EA7125"
+          ],
+          "content": "Улица Дыбенко"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 7246605915,
+    "images": [
+      {
+        "208x208": "https://b20.img.avito.st/image/1/1.WGpe2La69INIeFaCYokCLkl49oPmYVaCSHj2gehl9g.hQRAwlcHf0nj_cVKm_HBw5uLEj2ZmiPmqnATRDcuR6k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b20.img.avito.st/image/1/1.WGpe2La69IMweC6CYokCLkl49oPmYS6CMHj2gehl9g.osmH_pATcCDaNxKhAmvWF9TNamawl-Ccc8wpmWQiwck?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b20.img.avito.st/image/1/1.WGpe2La69IMUfwqFYokCLkl49oPmYQqFFH_2gehl9g.NVg0h_PQqc_EwEg2Eq_DVQXLSs-bn88SoWwRtkhU1gA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b20.img.avito.st/image/1/1.WGpe2La69IMofTaHYokCLkl49oPmYTaHKH32gehl9g.OQT38oJDIxJbnE567LsaOaiC4-8_On5uXtUhi-xpKmc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b20.img.avito.st/image/1/1.WGpe2La69INYfEaGYokCLkl49oPmYUaGWHz2gehl9g.TKIqpAS1dgWZS4d-oRTsH_VrncaOYDxzjP0i9_JmWrE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b20.img.avito.st/image/1/1.WGpe2La69IMQcg6IYokCLkl49oPmYQ6IEHL2gehl9g.CPV1RodiMsazcm1IDfPCs5gN-8ZIPfyKNR8Y6UAsT3o?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.IW7xZLa6jYfnxC-Gvww6YrrFj4dJ3S-G58SPhUfZjw.zyaM9v4OwgiG-4a70ZJifVO_ce89FO0gY6mzNTQodtA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://30.img.avito.st/image/1/1.IW7xZLa6jYefxFeGvww6YrrFj4dJ3VeGn8SPhUfZjw.y7yBx3oGZCO5zw6ZztDr5O76oDiSys-uV7ry5vmYzOA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://30.img.avito.st/image/1/1.IW7xZLa6jYe7w3OBvww6YrrFj4dJ3XOBu8OPhUfZjw.L-ZWiBzLmta3YQlwasMC6hgowzEJ0FiUsYkMZfHqhP0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://30.img.avito.st/image/1/1.IW7xZLa6jYeHwU-Dvww6YrrFj4dJ3U-Dh8GPhUfZjw.wuXnwM_ScFkWrvvFk1GADEVmZjHyBr-ox25IiYEWugw?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://30.img.avito.st/image/1/1.IW7xZLa6jYf3wD-Cvww6YrrFj4dJ3T-C98CPhUfZjw.kuS3J8XOEVgq43zR1j-1Y-n8MxEVukVrXAzNqmPMYcY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://30.img.avito.st/image/1/1.IW7xZLa6jYe_zneMvww6YrrFj4dJ3XeMv86PhUfZjw.DuiyNG_ge-WqIHgcMbk7v8SIzPnbLCVtqmNiPGtYhaE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.B0t7-7a6q6JtWwmjeZ9VaVtbqaLDQgmjbVupoM1GqQ.PN0sclru3EZzdN451P2_QfV9KtQhBfD53-wbWY2xf4Y",
+        "236x236": "https://90.img.avito.st/image/1/1.B0t7-7a6q6IVW3GjeZ9VaVtbqaLDQnGjFVupoM1GqQ.ys8qlSmFLHvr7PFd3zuBXOD_noXUt7dpVasKBNLbBZw",
+        "318x318": "https://90.img.avito.st/image/1/1.B0t7-7a6q6IxXFWkeZ9VaVtbqaLDQlWkMVypoM1GqQ.IVXmp6K4n6Oxvj3vTFZ_OSOCxPAY6xCqDKgdePqX1c0",
+        "416x416": "https://90.img.avito.st/image/1/1.B0t7-7a6q6INXmmmeZ9VaVtbqaLDQmmmDV6poM1GqQ.itj9bpFyvC8ADKvsQur984ftCzg0QowsTnZ9u9R2MnY",
+        "472x472": "https://90.img.avito.st/image/1/1.B0t7-7a6q6J9XxmneZ9VaVtbqaLDQhmnfV-poM1GqQ.xjbUYRJhOsiFi79TWxZtSOfMyZrH4FQU6oE5m1BumWs",
+        "636x636": "https://90.img.avito.st/image/1/1.B0t7-7a6q6I1UVGpeZ9VaVtbqaLDQlGpNVGpoM1GqQ.NLnC5yNevxzU89JX54dqiAwq70khkq6UxrZ-AzMQB5g"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG8YTf5uYt6ezFJMXm-2VP5uGE1ebbhQXg.Xj5uP3p7B9l0Zr0Po8SLvq43qIfO-_EUnDP9yPlsU4w?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG9gTYZuYt6ezFJMXm-2VIZuYE1ebbhQXg.cRI5swC5ViEv7y3asfAMPwBWXymvHhdZNda96Gl3xI8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG9ESqJpYt6ezFJMXm-2VKJpREpebbhQXg.YQT0qBBXYmNCJ68jFyIDDX3et4_bMiWdKbcp7sAA2KM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG94SJ5rYt6ezFJMXm-2VJ5reEhebbhQXg.7pDYCDkYdzbf2pYnbSB6LYHC6MeG7JrIirhKwh77ZYM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG8ISe5qYt6ezFJMXm-2VO5qCElebbhQXg.lCGbuGal8EbTEsLw3cInnfvLF1Mz5niY_FlPijZEyDo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.8IYO7ba6XG9AR6ZkYt6ezFJMXm-2VKZkQEdebbhQXg.5a_UK82d2X6jerjCWxkzIu_pTDmq6xuZ4Zr1Of8TH3o?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1._LyceLa6UFWK2PJU6Ae19cDZUlUkwfJUithSVyrFUg.7SVRgVIYIT4cET49oveZOEebmdKzwvMVbYUhat49oJo?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1._LyceLa6UFXy2IpU6Ae19cDZUlUkwYpU8thSVyrFUg.C1qK6t2oBFGSNaSTj5o-P6wxytpzqWMYH3R03svBWD0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1._LyceLa6UFXW365T6Ae19cDZUlUkwa5T1t9SVyrFUg.aJu300lVYAJIlRBA6B9OYu0mm1jeoVMsutk8Xwxn07w?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1._LyceLa6UFXq3ZJR6Ae19cDZUlUkwZJR6t1SVyrFUg.cL2IfKIR53fy32B-pamwPMuFXDW0sQ-KNT8euhQTzb4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1._LyceLa6UFWa3OJQ6Ae19cDZUlUkweJQmtxSVyrFUg.A5IyM0E3RTL8khz8ts6tuZ-JGGT0t_AaV_QYE3MhQRQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1._LyceLa6UFXS0qpe6Ae19cDZUlUkwape0tJSVyrFUg.uIcAyCCbtuolL_9cipk1XKdRf1MG0rj2ia9c7H9EvVk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      }
+    ],
+    "imagesCount": 11,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 7246605915
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "description": "Цена действует при 100% оплате и на определенные ипотечные программы.\nПодробности — в отделе продаж по телефону.\n\nПродается студия в ЖК «Дыбенко Парк» на 3 этаже. Общая площадь составляет 20.90 кв. М. Квартира с чистовой отделкой. Жилой комплекс располагается по адресу Санкт-Петербург, проспект Товарищеский.\n\nПроект комфорт плюс-класса, расположенный в пешей доступности от станции метро «Улица Дыбенко».\n\nРасположение:\n10 мин на авто до Октябрьской набережной;\n15 мин пешком до метро Улица Дыбенко;\n15 мин пешком до парка им. Есенина.\n15 мин на авто до Мега-Дыбенко;\n30 мин на авто до центра Санкт-Петербурга.\n\nПарадные выполнены по современному дизайн-проекту и оснащены колясочными, зонами ожидания, стильными и бесшумными лифтами. В подвальном этаже предусмотрены индивидуальные кладовые.\n\nНа территории ЖК запланировано строительство отдельно стоящего 9-этажного паркинга на 331 машиноместо. Двор комплекса будет закрыт и превратится в небольшой современный парк.\n\nДополнительно на первом этаже дома откроют детский сад на 65 мест и кабинет врача общей практики. Предусмотрены встроенные помещения для коммерческой инфраструктуры.\n\nПреимущества ЖК:\nМетро «Улица Дыбенко» в пешей доступности. Дорога до разных районов города не займет много времени.\nЛокация с отлично развитой инфраструктурой. Магазины, торговые центры, рестораны, клиники и спортклубы — всё в радиусе 1 км.\nВаш дом в окружении природы. Близость к большим зеленым зонам: паркам Есенина, Строителей и Оккервиль.\nБлагоустройство современного уровня. Зеленый двор с современными детскими и спортивными площадками, зонами отдыха.\nОбразовательные возможности для ваших детей. Рядом открыты школы и детские сады, университеты и колледжи, развивающие студии и секции.\n\nУспейте приобрести квартиру на выгодных условиях!\nЧтобы узнать подробности, обращайтесь за консультацией по телефону.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "developmentInfo": {
+              "developmentId": 11943433,
+              "href": "https://zhk-dybenko-park-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFBAL7_YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjExOTQzNDMzO32i8KGaQQAAAA",
+              "name": "ЖК «Дыбенко Парк» ",
+              "pageNumber": 1
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пр-т Товарищеский, д. 38",
+              "geoReferences": [
+                {
+                  "after": " 900 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "16–20 мин."
+                  },
+                  "colors": [
+                    "#EA7125"
+                  ],
+                  "content": "Улица Дыбенко"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 7246605915,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "381 060 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 964 154",
+              "stringWithoutDiscount": null,
+              "value": 7964154,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7246605915
+            },
+            "seo": {
+              "title": "Квартира-студия, 20,9 м², 3/22 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 20,9 м², 3/22 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/lsr.spb?src=search_seller_info\u0026iid=7246605915",
+              "title": "ЛСР. Недвижимость – Северо-Запад"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "70778 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 7246605915
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "381 060 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,96 млн",
+      "fullString": "7 964 154 ₽",
+      "hasValue": true,
+      "normalizedPrice": "381 060 ₽ за м²",
+      "postfix": "",
+      "string": "7 964 154",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7964154,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "endText": {
+        "color": "red600",
+        "value": "до 239 тыс ₽"
+      },
+      "startIcon": {
+        "color": "red600",
+        "name": "flashFilled"
+      },
+      "startText": {
+        "color": "black",
+        "value": "Скидка"
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790848193000,
+    "title": "Квартира-студия, 20,9 м², 3/22 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "пр-т Товарищеский, д. 38",
+      "link": "/brand/lsr?source=search_icon",
+      "slug": "/brand/lsr",
+      "src": "https://60.img.avito.st/image/1/1.G5OEXba4feww_EV5kv85i-VOO3sy_L1wwv8VeTL-t3w0.QqIpQ23msgO8C-W7L0bJjuJlEwA24la0qLljXhzu8KQ"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "ЛСР. Недвижимость – Северо-Запад",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/lsr.spb?src=search_seller_info\u0026iid=7246605915"
+  },
+  "seller_name": "ЛСР. Недвижимость – Северо-Запад",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/lsr.spb?src=search_seller_info\u0026iid=7246605915",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 20,9 м², 3/22 эт.",
+  "total_area": 20.9,
+  "updated_at": "2026-10-03T11:20:07.287282Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_209_m_322_et._7246605915?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

@@ -1,0 +1,589 @@
+{
+  "address": "Невская губа, уч. 13",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:22:40.029887Z",
+  "floor": 5,
+  "floors_total": 17,
+  "geo": {
+    "addressLinks": {
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=194",
+        "text": "Приморская"
+      }
+    },
+    "formattedAddress": "Невская губа, уч. 13",
+    "geoReferences": [
+      {
+        "after": " 2,7 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#009A49"
+        ],
+        "content": "Приморская"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8261627701,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.1YDkMLa6eWmqmoNiwi_g8uOQe2lciYNiqpp7a1KNew.zptN3HhQpJFIWt5liUdF32-tsS0hWkJNY4IrjHz4C-Y",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.rtIxYba6Ajt_y_gwYT_37hzBADuJ2Pgwf8sAOYfcAA.W8J0OI2meHBPMgbFsbVYyP3OkrAitlAGUvlGa4UCKkk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.1A5yU7a6eOc8-YLsVnS6PV_zeufK6oLsPPl65cTueg.G4hpSn9AK--FW0yPPp8q3W4CveMdKyjY9RNQDu8s_Yk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.GiYVNba6ts9bn0zELQkbFDiVtM-tjEzEW5-0zaOItA.tcN-y3YwSUgPGBL9vfrjjMYvfOKRCNm66jOQ0OzRW7s",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.tSDMgra6GcmCKOPCqsSoEuEiG8l0O-PCgigby3o_Gw.SjLtLBxzMHU0N6zV1EcqObg3q-PY19nKTSnllCGI0rM",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:22:40.029887Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7975843,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "от 7 975 843",
+    "stringWithoutDiscount": null,
+    "value": 7975843,
+    "wasLowered": false
+  },
+  "price_per_unit": 383,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788816261000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "531 завершённое объявление",
+    "closestAddressId": 79648392,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Невская губа, уч. 13",
+      "lat": "59.93626",
+      "lng": "30.19222",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 11583209,
+    "developmentName": "ЖК «НОВАЯ ЗЕМЛЯ»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "14 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 20,8 м², 5/17 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 14,
+      "isFirstImageHighImportance": false,
+      "isLazy": false,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=194",
+          "text": "Приморская"
+        }
+      },
+      "formattedAddress": "Невская губа, уч. 13",
+      "geoReferences": [
+        {
+          "after": " 2,7 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#009A49"
+          ],
+          "content": "Приморская"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8261627701,
+    "images": [
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.1YDkMLa6eWnykNtowi_g8uOQe2lcidto8pB7a1KNew.ydPgxNR6R18QBYy5YTgHu4Jq2l87TEqsdwInWrvqNZQ",
+        "236x236": "https://50.img.avito.st/image/1/1.1YDkMLa6eWmKkKNowi_g8uOQe2lciaNoipB7a1KNew.dzutqLmM9cT6TFUj9IKYD_0bbohrVV-TjHrQs_SQp8s",
+        "318x318": "https://50.img.avito.st/image/1/1.1YDkMLa6eWmul4dvwi_g8uOQe2lciYdvrpd7a1KNew.6IfJFEPWIaBJM9c_7NEv9KSMbYnLy4YLhrDFN7-Wg0w",
+        "416x416": "https://50.img.avito.st/image/1/1.1YDkMLa6eWmSlbttwi_g8uOQe2lcibttkpV7a1KNew.KBTKjAmwlzpDkOX9x_aw_xkMsVw2_LOslmbHY0YMu1Q",
+        "472x472": "https://50.img.avito.st/image/1/1.1YDkMLa6eWnilMtswi_g8uOQe2lcicts4pR7a1KNew.1547S_R071eijwytc2BIzOhWQCwxGbPYctlSYs80Gh8",
+        "636x636": "https://50.img.avito.st/image/1/1.1YDkMLa6eWmqmoNiwi_g8uOQe2lciYNiqpp7a1KNew.zptN3HhQpJFIWt5liUdF32-tsS0hWkJNY4IrjHz4C-Y"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.rtIxYba6AjsnwaA6YT_37hzBADuJ2KA6J8EAOYfcAA.6QSjEMHFMwNlt1bSUVxnE89rQHc-9KJzsZzzq0s2Ans?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.rtIxYba6Ajtfwdg6YT_37hzBADuJ2Ng6X8EAOYfcAA.yI9B0AgS7hirfNoOD7rMOrISxdAlVPI5zzpo4VOrV_4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.rtIxYba6Ajt7xvw9YT_37hzBADuJ2Pw9e8YAOYfcAA.0F34JsP6SSb8jeRGzkGzdGlCpZtm5KwAPST7lEmQyXI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.rtIxYba6AjtHxMA_YT_37hzBADuJ2MA_R8QAOYfcAA.ayRmnZkJwRIGhgz2tLBw6V7rFDGBv9kSj96JJhwnwS8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.rtIxYba6Ajs3xbA-YT_37hzBADuJ2LA-N8UAOYfcAA.URfP527fI4uEeqPTi-qYsBw8SKz0TnUcaZIl2UnQjPA?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.rtIxYba6Ajt_y_gwYT_37hzBADuJ2Pgwf8sAOYfcAA.W8J0OI2meHBPMgbFsbVYyP3OkrAitlAGUvlGa4UCKkk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.1A5yU7a6eOdk89rmVnS6PV_zeufK6trmZPN65cTueg.F_8o5D62nczpUEJkSirF1Pn2dOk2noCOLdkiqC6e9Ws",
+        "236x236": "https://40.img.avito.st/image/1/1.1A5yU7a6eOcc86LmVnS6PV_zeufK6qLmHPN65cTueg.y78YB1VQtUevO2KKWFc2bfxm1pUS_Pfg4O4Tv4d9ngM",
+        "318x318": "https://40.img.avito.st/image/1/1.1A5yU7a6eOc49IbhVnS6PV_zeufK6obhOPR65cTueg.BY7NdERl1ur-SyhOMukqevHDevMG86Rb-_BOn3Tuplw",
+        "416x416": "https://40.img.avito.st/image/1/1.1A5yU7a6eOcE9rrjVnS6PV_zeufK6rrjBPZ65cTueg.K5iTqZCpxXuJzz57deiS9xXvKtVNp8yb51kuc-fHmKw",
+        "472x472": "https://40.img.avito.st/image/1/1.1A5yU7a6eOd098riVnS6PV_zeufK6sridPd65cTueg.97ZlDDOOfNyynQMtHJ00epOtzmdujUgXo1SGxuYa_PY",
+        "636x636": "https://40.img.avito.st/image/1/1.1A5yU7a6eOc8-YLsVnS6PV_zeufK6oLsPPl65cTueg.G4hpSn9AK--FW0yPPp8q3W4CveMdKyjY9RNQDu8s_Yk"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.GiYVNba6ts8DlRTOLQkbFDiVtM-tjBTOA5W0zaOItA.1wguTlhqfR_D-Uo96KZKdMmiF3u_kX5EVidycVRYdhY",
+        "236x236": "https://80.img.avito.st/image/1/1.GiYVNba6ts97lWzOLQkbFDiVtM-tjGzOe5W0zaOItA.uKCbJk9trJh3Ag7WlVOcmSpDm44nNar0Tsu9BxKOz8I",
+        "318x318": "https://80.img.avito.st/image/1/1.GiYVNba6ts9fkkjJLQkbFDiVtM-tjEjJX5K0zaOItA.maxlCTzTniF32QfAPdt_jfmoZ-AGcz0BuuYrelX5ges",
+        "416x416": "https://80.img.avito.st/image/1/1.GiYVNba6ts9jkHTLLQkbFDiVtM-tjHTLY5C0zaOItA.aF-dcYWzm0zrVUW5Y0v2v2lYUC3XlYQ7UQ77s4gJdLA",
+        "472x472": "https://80.img.avito.st/image/1/1.GiYVNba6ts8TkQTKLQkbFDiVtM-tjATKE5G0zaOItA.7x7M9oaEi1Ebq6bAO_qqQnQz7MWMCVyNCT9wy67CaaQ",
+        "636x636": "https://80.img.avito.st/image/1/1.GiYVNba6ts9bn0zELQkbFDiVtM-tjEzEW5-0zaOItA.tcN-y3YwSUgPGBL9vfrjjMYvfOKRCNm66jOQ0OzRW7s"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.tSDMgra6GcnaIrvIqsSoEuEiG8l0O7vI2iIby3o_Gw.5RC4jTb494TuKBqDISC_S5neq10hpIQ8rZI5aXEEWN0",
+        "236x236": "https://60.img.avito.st/image/1/1.tSDMgra6GcmiIsPIqsSoEuEiG8l0O8PIoiIby3o_Gw.jhZP1phOuw7kY9Vk7MObocfMXJUVXjXvUaPWK_FMplk",
+        "318x318": "https://60.img.avito.st/image/1/1.tSDMgra6GcmGJefPqsSoEuEiG8l0O-fPhiUby3o_Gw.w0r3YHfw2QQ06ecHAJqsrVsH5oeRq0wF8_MF1G94d2g",
+        "416x416": "https://60.img.avito.st/image/1/1.tSDMgra6Gcm6J9vNqsSoEuEiG8l0O9vNuicby3o_Gw.f1hkPXR2xaagZJz0U7PCSfrtLDDqgXUFhux8LtgIh5g",
+        "472x472": "https://60.img.avito.st/image/1/1.tSDMgra6GcnKJqvMqsSoEuEiG8l0O6vMyiYby3o_Gw.CGdX0iQDuP-zqO7C0YPyXaCTNGzNh-VJI15vJbifYRQ",
+        "636x636": "https://60.img.avito.st/image/1/1.tSDMgra6GcmCKOPCqsSoEuEiG8l0O-PCgigby3o_Gw.SjLtLBxzMHU0N6zV1EcqObg3q-PY19nKTSnllCGI0rM"
+      }
+    ],
+    "imagesCount": 14,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": true,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2285,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "От застройщика",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8261627701
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8261627701
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "description": "Успейте оформить бронирование на этих условиях, срок акции ограничен! Стоимость квартиры указана со скидкой, ваша экономия составит 886,205 руб. Звоните, наши менеджеры вам все расскажут.\n\n1-комн. Квартира-студия от застройщика с предчистовой отделкой в ЖК «Новая Земля» на 5 этаже. Общая площадь: 20.8 кв. М. Высота потолков 2.85 м.\n\nДом монолитный, многоподъездный, высотой 17 этажей. Квартира находится в 1-й секции в корпусе 1.4. На этаже 5 квартир. В подъезде 1 пассажирский и 1 грузовой лифт. Окончание строительства — 4 квартал 2028 года. Оформление сделки по договору долевого участия.\n\nКвартира реализуется напрямую от застройщика.\nОбращение по данному предложению осуществляется через отдел продаж застройщика.\nДля агентств недвижимости действует отдельный формат сотрудничества.\n\nНовая Земля — проект Legenda в локации морской набережной Васильевского острова, где уже сегодня формируется многообещающее и перспективное место для жизни и инвестиций.\n\nПроект состоит из двух очередей, расположенных в непосредственной близости, но имеющих идеологически разный подход к проектированию и ассортиментному предложению.\n\nПервая очередь, где квартиры уже в продаже, наполнена компактными функциональными и эстетичными сьютами в комплектации технобокс, подходящими для активной аудитории, предпочитающей больше времени проводить в городе.\n\nТранспортная доступность обеспечена благодаря близости выезда на Зсд, который позволяет быстро добраться как до центра города, так и до других районов Санкт-Петербурга.\n\nАрхитектурная концепция проекта задает новый стандарт для этой локации. Дизайн фасадов, большие окна без импостов, современные инженерные решения — всё это создаёт атмосферу комфортного и эстетичного пространства, отвечающего самым высоким требованиям.\n\nВ проекте представлена новая линейка планировочных решений, созданных по принципам отельного проектирования. Сьюты от Legenda — это уникальная работа с пространством, сочетающая сверхфункциональность и удобство, чистоту линий и стилистический минимализм. Планировочные решения в рамках первой очереди проекта будут поделены на несколько сегментов, отличающихся размерами, функциональной наполненностью и отвечающих потребностям различных жителей проекта.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "developmentInfo": {
+              "developmentId": 11583209,
+              "href": "https://zhk-novaya-zemlya-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFBAL7_YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjExNTgzMjA5O30BUMyaQQAAAA",
+              "name": "ЖК «НОВАЯ ЗЕМЛЯ»",
+              "pageNumber": 2
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Невская губа, уч. 13",
+              "geoReferences": [
+                {
+                  "after": " 2,7 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#009A49"
+                  ],
+                  "content": "Приморская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8261627701,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "72wDuihfDnwh9fla"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "383 454 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "от 7 975 843",
+              "stringWithoutDiscount": null,
+              "value": 7975843,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8261627701
+            },
+            "seo": {
+              "title": "Квартира-студия, 20,8 м², 5/17 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 20,8 м², 5/17 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/3ca92928ea8ea5a132d362470ec84ecc?src=search_seller_info\u0026iid=8261627701",
+              "title": "Legenda Development"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "531 завершённое объявление"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8261627701
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "383 454 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,98 млн",
+      "fullString": "от 7 975 843 ₽",
+      "hasValue": true,
+      "normalizedPrice": "383 454 ₽ за м²",
+      "postfix": "",
+      "string": "от 7 975 843",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7975843,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "endText": {
+        "color": "black",
+        "value": "без скидки"
+      },
+      "startText": {
+        "color": "black",
+        "value": "8 862 048 ₽"
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1788816261000,
+    "title": "Квартира-студия, 20,8 м², 5/17 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Невская губа, уч. 13",
+      "link": "/brands/3ca92928ea8ea5a132d362470ec84ecc?page_from=from_items_list_icon\u0026iid=8261627701",
+      "slug": null,
+      "src": "https://50.img.avito.st/image/1/1.SiIlZ7a58MsTxmTLPVZJQgjH5M2X4mTLk87GyZPE8Mk.JFGim36-b5eCot43Hbzw30tPxQQTJWs1l6rmOMZsSq8"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Legenda Development",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/3ca92928ea8ea5a132d362470ec84ecc?src=search_seller_info\u0026iid=8261627701"
+  },
+  "seller_name": "Legenda Development",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/3ca92928ea8ea5a132d362470ec84ecc?src=search_seller_info\u0026iid=8261627701",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 20,8 м², 5/17 эт.",
+  "total_area": 20.8,
+  "updated_at": "2026-10-03T11:22:40.029887Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_208_m_517_et._8261627701?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "views_count": null,
+  "year_built": null
+}

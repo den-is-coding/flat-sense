@@ -7,3 +7,9 @@ deploy/.env
 services/*/tmp/
 services/parser-service/parser-service
 services/parser-service/internal/avito/testdata/avito_run_*/
+
+# Дампы кампаний: выгрузки фото не храним в git (задача #41 — MinIO)
+data/**/images/
+
+# Локальная копия wiki (отдельный git-репозиторий)
+.tmp-wiki/

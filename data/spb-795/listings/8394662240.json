@@ -1,0 +1,560 @@
+{
+  "address": "Пр-т Мечникова, д. 40, лит. А",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:22.995583Z",
+  "floor": 7,
+  "floors_total": 9,
+  "geo": {
+    "addressLinks": {
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=190",
+        "text": "Площадь Мужества"
+      }
+    },
+    "formattedAddress": "Пр-т Мечникова, д. 40, лит. А",
+    "geoReferences": [
+      {
+        "after": " 2,3 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Площадь Мужества"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8394662240,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.ehLIr7a61vuGBSzwsMYbSNAP1PtwFizwhgXU-X4S1A.G7ULT2mwLbd110InWk7Pgsi7qrevDzYeSYWQOXXoI-k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.2SBYZra6dckWzI_CZh3SeUDGd8ng34_CFsx3y-7bdw.6hkAYuhByYXp0YviQnr55P4jUEMEdA8499MZ6DO6bZI",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.Ml4um7a6nrdgMWS8RqsPQjQ7nLeWImS8YDGctZgmnA.eb3SCL8P0ZDaAVihF7RfSp-HE3DsilsMrK3BSJnW7Bc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c70.img.avito.st/image/1/1.z-zp-La6YwWnUpkO-5vV8vNYYQVRQZkOp1JhB19FYQ.FgwrHT-asAMKdmh8btB-EjBmVyDQvNvmqCzIQt1Dbi0",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR-BrYMU6QDL6NWnex93voMUga17HXm6ew.Yt_Jo866-xD35A0i0FwuvPqqGJkC4ZJ7lnh9LOS4vjU?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.29107Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7959276,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 959 276",
+    "stringWithoutDiscount": null,
+    "value": 7959276,
+    "wasLowered": false
+  },
+  "price_per_unit": 375,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789597321000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "54220 завершённых объявлений",
+    "closestAddressId": 15585754,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "пр-т Мечникова, д. 40, лит. А",
+      "lat": "59.98671",
+      "lng": "30.39725",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 16078418,
+    "developmentName": "ЖК «Левел Мечникова»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "35 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 21,2 м², 7/9 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 35,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=190",
+          "text": "Площадь Мужества"
+        }
+      },
+      "formattedAddress": "Пр-т Мечникова, д. 40, лит. А",
+      "geoReferences": [
+        {
+          "after": " 2,3 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Площадь Мужества"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8394662240,
+    "images": [
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.ehLIr7a61vveD3T6sMYbSNAP1PtwFnT63g_U-X4S1A.XbFWLhw9gawIX-G59reEwRZsHRLmvFghHLZ1Kw_oNY8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.ehLIr7a61vumDwz6sMYbSNAP1PtwFgz6pg_U-X4S1A.sB4YXX5rqB9lkRa6i9wrD-nb5avpCDu3JG1lhHXNp9w?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.ehLIr7a61vuCCCj9sMYbSNAP1PtwFij9ggjU-X4S1A.GFMvGrq8Xxw6KTAzH2PaBKG242tMkcrn67d5_e9JKMM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.ehLIr7a61vu-ChT_sMYbSNAP1PtwFhT_vgrU-X4S1A.bYWXqPurvzuktSTV6xhu-Dh13bypUBVOGYILxok5Yg8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.ehLIr7a61vvOC2T-sMYbSNAP1PtwFmT-zgvU-X4S1A.18RCxbLzMXNY9eWtHsFoVUA51swS0Dml55979DmXS9M?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.ehLIr7a61vuGBSzwsMYbSNAP1PtwFizwhgXU-X4S1A.G7ULT2mwLbd110InWk7Pgsi7qrevDzYeSYWQOXXoI-k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.2SBYZra6dclOxtfIZh3SeUDGd8ng39fITsZ3y-7bdw.jQGZEHxqSz-dXzsq3_nvcjVOLr0i8k3VDaCjjQKQVF8",
+        "236x236": "https://80.img.avito.st/image/1/1.2SBYZra6dck2xq_IZh3SeUDGd8ng36_INsZ3y-7bdw.iB4sbjN-oCdQM9hSqdnplEZpneu5humK4cH5Oihwl5A",
+        "318x318": "https://80.img.avito.st/image/1/1.2SBYZra6dckSwYvPZh3SeUDGd8ng34vPEsF3y-7bdw.gmQBSwJ08xKj1DiCPUei6xaeCaKsw-YQIZioq7fv8TA",
+        "416x416": "https://80.img.avito.st/image/1/1.2SBYZra6dckuw7fNZh3SeUDGd8ng37fNLsN3y-7bdw._UvgUySmkZ4bF01a4DOx4wjfGocX2ofjl2_jFfNMH4Y",
+        "472x472": "https://80.img.avito.st/image/1/1.2SBYZra6dclewsfMZh3SeUDGd8ng38fMXsJ3y-7bdw.JqKsczdslaR-AnyjLEO3THni-w-fphQBhFxkMTO4fNA",
+        "636x636": "https://80.img.avito.st/image/1/1.2SBYZra6dckWzI_CZh3SeUDGd8ng34_CFsx3y-7bdw.6hkAYuhByYXp0YviQnr55P4jUEMEdA8499MZ6DO6bZI"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.Ml4um7a6nrc4Ozy2RqsPQjQ7nLeWIjy2ODuctZgmnA.lpbkoANRVWVqNpKn_8y6U76KipMAnyxLOAEyjP9uQTI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://30.img.avito.st/image/1/1.Ml4um7a6nrdAO0S2RqsPQjQ7nLeWIkS2QDuctZgmnA.oaBEUhJwvjVN44BiiEhZVbd3LWVCconO7KEIhv99svg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://30.img.avito.st/image/1/1.Ml4um7a6nrdkPGCxRqsPQjQ7nLeWImCxZDyctZgmnA.sH9h6uhqd1b-4Ep2nKWrTFvZOhL-XK3DGvjR7f0mIQY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://30.img.avito.st/image/1/1.Ml4um7a6nrdYPlyzRqsPQjQ7nLeWIlyzWD6ctZgmnA.2Q4WPXR1Yi31UyOZ1qWwMvVG7qznpJHV2YggomOfTNE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://30.img.avito.st/image/1/1.Ml4um7a6nrcoPyyyRqsPQjQ7nLeWIiyyKD-ctZgmnA.abXEjhgvA2twee6kflbi9UbGJHzfRZ1ZuQoe7M407Z4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://30.img.avito.st/image/1/1.Ml4um7a6nrdgMWS8RqsPQjQ7nLeWImS8YDGctZgmnA.eb3SCL8P0ZDaAVihF7RfSp-HE3DsilsMrK3BSJnW7Bc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://c70.img.avito.st/image/1/1.z-zp-La6YwX_WMEE-5vV8vNYYQVRQcEE_1hhB19FYQ.EoN5TiXT6VkKB1K4Z3xpbaTUL0voK6Ap6iOL2PY_ldc",
+        "236x236": "https://c70.img.avito.st/image/1/1.z-zp-La6YwWHWLkE-5vV8vNYYQVRQbkEh1hhB19FYQ.VDRTdOUXTFqKC3hYUnRAypO_Xp4ZtNTD8CNUfFmCxXY",
+        "318x318": "https://c70.img.avito.st/image/1/1.z-zp-La6YwWjX50D-5vV8vNYYQVRQZ0Do19hB19FYQ.gNV913ersMyMVWOZwBWmtThErWoOGjJ1bdRoWR4dxRw",
+        "416x416": "https://c70.img.avito.st/image/1/1.z-zp-La6YwWfXaEB-5vV8vNYYQVRQaEBn11hB19FYQ.gdoX94lJ4sfvZMimNjokgjmx_1bbpTg-49zBGk1SyZA",
+        "472x472": "https://c70.img.avito.st/image/1/1.z-zp-La6YwXvXNEA-5vV8vNYYQVRQdEA71xhB19FYQ.I8ZV5I71bAsqT1F5l1VACR3ADP8M-E2KikJPtE324PI",
+        "636x636": "https://c70.img.avito.st/image/1/1.z-zp-La6YwWnUpkO-5vV8vNYYQVRQZkOp1JhB19FYQ.FgwrHT-asAMKdmh8btB-EjBmVyDQvNvmqCzIQt1Dbi0"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR_Zp9se6QDL6NWnex93vtse2ad7HXm6ew.rNE5qOZ38iDrWafUOBr9CIm_CsH_21PRfcMYeuBBeW0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR-hp6Me6QDL6NWnex93vqMeoad7HXm6ew.ZONGC1XxoKBMT00IuqtVlEk6kyqbf3aUX_XH3bDr6WQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR-FoIcZ6QDL6NWnex93vocZhaB7HXm6ew.g2bxql239kSgkixMbtAVD0kpI4HTqv2_2wRgzEtCMgk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR-5orsb6QDL6NWnex93vrsbuaJ7HXm6ew.GbtB3bJaWUucbyD4NkB2qpss83DG8XqhbrhzbBEA1bk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR_Jo8sa6QDL6NWnex93vssayaN7HXm6ew.83Gt9xoMRA3UDu2QiyHUNyem598R1wa9TzF89U_TwRI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.1fbPB7a6eR-BrYMU6QDL6NWnex93voMUga17HXm6ew.Yt_Jo866-xD35A0i0FwuvPqqGJkC4ZJ7lnh9LOS4vjU?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      }
+    ],
+    "imagesCount": 35,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8394662240
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "description": "Продается студия площадью 21.20 кв. М без отделки. Квартира находится на 7 этаже 9-этажного дома, Корпус 3, в новом жилом комплексе комфорт-класса Левел Мечникова (застройщик — компания Level Group/Левел групп).\n\nЛевел Мечникова — семейный жилой комплекс комфорт-класса в Калининском районе, одном из самых благоустроенных в Санкт-Петербурге. Здесь есть вся необходимая инфраструктура для жизни: школы, детские сады, магазины, фитнес-клубы, парки и развитая транспортная сеть.\n\nНовый уровень комфорта:\n- Самые привлекательные цены на старте продаж.\n- Расположение в одном из самых зелёных и благоприятных для жизни районов Санкт-Петербурга.\n- Камерная атмосфера: четыре корпуса по 9 этажей.\n- Три варианта отделки: без отделки, предчистовая и дизайнерская в двух стилях.\n- Закрытый двор без машин с зонами отдыха, детскими и спортивными площадками.\n- Собственный детский сад и развитая внутренняя инфраструктура.\n- Стильные парадные и дизайнерское гранд-лобби, удобные колясочные.\n- Подземный отапливаемый паркинг, в т. Ч машино-места с возможностью установки зарядной станции для электромобилей.\n- Безопасная территория проекта: круглосуточная охрана и видеонаблюдение.\n- Автоматизированная система контроля и учёта энергоресурсов через мобильное приложение.\n\nЛевел Мечникова расположен в уединённой части района, вдали от шумных трасс — здесь легко наслаждаться тишиной, уютом и спокойным ритмом жизни. Всего в двух минутах от дома — зелёная территория мемориального Богословского кладбища с ухоженными аллеями, где жители района часто гуляют.\n\nЖилой комплекс состоит из четырёх 9-этажных корпусов. Камерный формат, современные фасады в нейтральной гамме, двухкамерные стеклопакеты и окна высотой до 1,8 м создают комфортную, светлую и уютную среду, что особенно ценно для семей с детьми. Из окон открываются виды на уютные и зелёные аллеи.\n\nВо всех квартирах корпуса 4 на типовых этажах предусмотрены функциональные лоджии площадью до 5,96 м². Их можно превратить в зону для завтраков, мини-библиотеку, рабочее место, уголок для йоги или спокойного отдыха.\n\nВ каждом корпусе предусмотрены стильные парадные, которые помогают мягко переключиться с ритма города на спокойствие дома. В корпусе апартаментов для всех жителей будет доступно гранд-лобби с лаундж-зоной, консьержем и комнатой для работы — место для встреч, дел и коротких пауз в течение дня.\n\nЗакрытый двор площадью 0,4 га продуман для всей семьи: здесь будут места для прогулок, игр с детьми, отдыха и спорта, а почти половина территории отведена под озеленение.\n\nНа первых этажах появятся магазины и сервисы, а на территории проекта — собственный детский сад на 160 мест и кабинет врача общей практики. Всё необходимое для повседневной жизни будет рядом.\n\nПродажи в Левел Мечникова только стартовали — сейчас можно выбрать подходящую планировку для вашей семьи на привлекательных условиях.\nАртикул 335.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "developmentInfo": {
+              "developmentId": 16078418,
+              "href": "https://zhk-level-mechnikova-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFBAL7_YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjE2MDc4NDE4O310S_wcQQAAAA",
+              "name": "ЖК «Левел Мечникова»",
+              "pageNumber": 1
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пр-т Мечникова, д. 40, лит. А",
+              "geoReferences": [
+                {
+                  "after": " 2,3 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Площадь Мужества"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8394662240,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "375 438 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 959 276",
+              "stringWithoutDiscount": null,
+              "value": 7959276,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8394662240
+            },
+            "seo": {
+              "title": "Квартира-студия, 21,2 м², 7/9 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 21,2 м², 7/9 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/level_group?src=search_seller_info\u0026iid=8394662240",
+              "title": "Level Group"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "54220 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8394662240
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "375 438 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,96 млн",
+      "fullString": "7 959 276 ₽",
+      "hasValue": true,
+      "normalizedPrice": "375 438 ₽ за м²",
+      "postfix": "",
+      "string": "7 959 276",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7959276,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "endText": {
+        "color": "red600",
+        "value": "до 2 млн ₽"
+      },
+      "startIcon": {
+        "color": "red600",
+        "name": "flashFilled"
+      },
+      "startText": {
+        "color": "black",
+        "value": "Скидка"
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789597321000,
+    "title": "Квартира-студия, 21,2 м², 7/9 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "пр-т Мечникова, д. 40, лит. А",
+      "link": "/brands/level_group?page_from=from_items_list_icon\u0026iid=8394662240",
+      "slug": null,
+      "src": "https://60.img.avito.st/image/1/1.TKTwJLa69k3GhWJN5DU1nS6H5ktgB-BPTKXiT0aT4g.AosHjifr9mFaW-_E8fQ445IQc9Ge5Qr1_T-71miiRXk"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Level Group",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/level_group?src=search_seller_info\u0026iid=8394662240"
+  },
+  "seller_name": "Level Group",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/level_group?src=search_seller_info\u0026iid=8394662240",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 21,2 м², 7/9 эт.",
+  "total_area": 21.2,
+  "updated_at": "2026-10-03T11:20:07.29107Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_212_m_79_et._8394662240?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

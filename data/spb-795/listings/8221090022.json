@@ -1,0 +1,640 @@
+{
+  "address": "Суздальское ш., уч. 26",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:22.983312Z",
+  "floor": 2,
+  "floors_total": 25,
+  "geo": {
+    "addressLinks": {
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=197",
+        "text": "Проспект Просвещения"
+      }
+    },
+    "formattedAddress": "Суздальское ш., уч. 26",
+    "geoReferences": [
+      {
+        "after": " 2,9 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#0078C9"
+        ],
+        "content": "Проспект Просвещения"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8221090022,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ4MhrMFBD_22lSMSw76lbMFDIZLDPSRSw.XIaJO9MaH5UAD2tRLpSzgQBsJMbj46FF4P6rILGIyiQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.8zeOVLa6X97A_qXV5HupD5j0Xd427aXVwP5d3DjpXQ.uBUEWq4G87NtqVrPoDtR_Np4Ak2xcc63KrEuxb1HVoA",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://00.img.avito.st/image/1/1.AJjjm7a6rHGtMVZ6758NoPU7rnFbIlZ6rTGuc1Umrg.6gBqFD34VOkAIRyBSdHSE2N532Ibl9oY0u5g7nKnlPg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzt61bUwfnDk6iLfTTuMxrUwetVNOYLCTQ.DjDEKF3YdjvJ3wP30mXLOzGspGPrH_U7uLiVBVM-Rzk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c70.img.avito.st/image/1/1.uNPebra6FDqQxO4xomjG7cjOFjpm1-4xkMQWOGjTFg.McERhC-pJ2aJrf-PKz0EvgypIjxuAflYUM81egd5f6U",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.280838Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7979251,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "от 7 979 251",
+    "stringWithoutDiscount": null,
+    "value": 7979251,
+    "wasLowered": false
+  },
+  "price_per_unit": 301,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790683684000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "1675 завершённых объявлений",
+    "closestAddressId": 85971592,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Суздальское ш., уч. 26",
+      "lat": "60.05663",
+      "lng": "30.28107",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 14656777,
+    "developmentName": "ЖК «Сезоны»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "6 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 26,5 м², 2/25 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 6,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=197",
+          "text": "Проспект Просвещения"
+        }
+      },
+      "formattedAddress": "Суздальское ш., уч. 26",
+      "geoReferences": [
+        {
+          "after": " 2,9 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#0078C9"
+          ],
+          "content": "Проспект Просвещения"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8221090022,
+    "images": [
+      {
+        "208x208": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ5UjOsPBD_22lSMSw76lesPVIxLDPSRSw.PYeF39Ao8IW4JmqIDRNZCsRekvowIYlQAJxKLYNQR2s?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ4sjJMPBD_22lSMSw76lZMPLIxLDPSRSw._fVTGHU21qA8_fSpg7V-ZSKdIjqKqvSwMEvIbvJ1i7c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ4Ii7cIBD_22lSMSw76lbcICItLDPSRSw.Mvk8bCALVWZxO8GyGHX33LWgRB_2j0QtaTGRLEOMoM8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ40iYsKBD_22lSMSw76lYsKNIlLDPSRSw.kPRML1ODkkxeDjRVzN4ZC3fVy68NrAcanzvg8VXbNhk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ5EiPsLBD_22lSMSw76lfsLRIhLDPSRSw.TrUNmwbTdoQsCrLtOoiRVFXbpDfqQUfg0wj11DGkRVs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b20.img.avito.st/image/1/1.5edCLLa6SQ4MhrMFBD_22lSMSw76lbMFDIZLDPSRSw.XIaJO9MaH5UAD2tRLpSzgQBsJMbj46FF4P6rILGIyiQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.8zeOVLa6X96Y9P3f5HupD5j0Xd427f3fmPRd3DjpXQ.r9ANgBvOSwR1j3fM2a1hnz54_llkEsldb9Yzbs6G_yI",
+        "236x236": "https://40.img.avito.st/image/1/1.8zeOVLa6X97g9IXf5HupD5j0Xd427YXf4PRd3DjpXQ.Ad_bCHUgeMMbaiTPGWUmx2ct0pUav8GJYcMX_Jku7qs",
+        "318x318": "https://40.img.avito.st/image/1/1.8zeOVLa6X97E86HY5HupD5j0Xd427aHYxPNd3DjpXQ.a-orGr27uaUOrxZbiggMxi2BoBQNulBhFl8Msje16Qk",
+        "416x416": "https://40.img.avito.st/image/1/1.8zeOVLa6X9748Z3a5HupD5j0Xd427Z3a-PFd3DjpXQ.2C5Ax8YvS42BVTw6oeQid8x65twZn7O_0oHOswNHJkU",
+        "472x472": "https://40.img.avito.st/image/1/1.8zeOVLa6X96I8O3b5HupD5j0Xd427e3biPBd3DjpXQ.TsAHgqAJCVrhL4ajLFpA1gL0H8dhF_U5cnxLjkmfFY4",
+        "636x636": "https://40.img.avito.st/image/1/1.8zeOVLa6X97A_qXV5HupD5j0Xd427aXVwP5d3DjpXQ.uBUEWq4G87NtqVrPoDtR_Np4Ak2xcc63KrEuxb1HVoA"
+      },
+      {
+        "208x208": "https://00.img.avito.st/image/1/1.AJjjm7a6rHH1Ow5w758NoPU7rnFbIg5w9Tuuc1Umrg.E1RM24wWBz8OzKKccLJmt2_4U6q-uckRU0KkcihaS-0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://00.img.avito.st/image/1/1.AJjjm7a6rHGNO3Zw758NoPU7rnFbInZwjTuuc1Umrg.mQtyhL3g5fKX8pZ0Jfrjb6aGw6bTy_aZ0HM-5lgXqb0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://00.img.avito.st/image/1/1.AJjjm7a6rHGpPFJ3758NoPU7rnFbIlJ3qTyuc1Umrg.viq2z25hEsKU9SeRfK0ZuatyvTLpr3ZtQ9EAtLwjhQI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://00.img.avito.st/image/1/1.AJjjm7a6rHGVPm51758NoPU7rnFbIm51lT6uc1Umrg.AlUvRoguckXCKSJy-iNfQXph-faLlXDdOmRiafXeCqI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://00.img.avito.st/image/1/1.AJjjm7a6rHHlPx50758NoPU7rnFbIh505T-uc1Umrg.A-GQ2ikDQyglJm0nUOSxp5_tiajVIJewzZ-xIfsz8B0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://00.img.avito.st/image/1/1.AJjjm7a6rHGtMVZ6758NoPU7rnFbIlZ6rTGuc1Umrg.6gBqFD34VOkAIRyBSdHSE2N532Ibl9oY0u5g7nKnlPg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzsi3-06fnDk6iLfTTuMxu06It9NOYLCTQ.o6kV-7888vzy3YOcODJOKxiunhp0yyTq-RLkZhGWiLs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzta35U6fnDk6iLfTTuMxpU6Wt9NOYLCTQ.lVTS2K-M2cbLhEJUiVP0Aeimv-lQG07LUs0xJzscU3k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzt-2LE9fnDk6iLfTTuMxrE9fthNOYLCTQ.uISh-LhvIQ2r8Wpcf_kbVGnO4GHEMSCCL9lYwkY9tpg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.49I0f7a6TztC2o0_fnDk6iLfTTuMxo0_QtpNOYLCTQ._R60tv1zaz8imG24Yt9zITt5iL_fhVXjXLqSYXvQhJk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzsy2_0-fnDk6iLfTTuMxv0-MttNOYLCTQ.wmuqHRVfuWZFZHqZyirys91pVGGoFi-1WYivUf0T9a0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.49I0f7a6Tzt61bUwfnDk6iLfTTuMxrUwetVNOYLCTQ.DjDEKF3YdjvJ3wP30mXLOzGspGPrH_U7uLiVBVM-Rzk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://c70.img.avito.st/image/1/1.uNPebra6FDrIzrY7omjG7cjOFjpm17Y7yM4WOGjTFg.S2ObHAiTNXFNimkaTSohGoq-ZS5pVq6Y7L6bWqpT-h4",
+        "236x236": "https://c70.img.avito.st/image/1/1.uNPebra6FDqwzs47omjG7cjOFjpm1847sM4WOGjTFg.WHYvc3BW2EP1PvUj9wMQLQaRceHnAbKxHkHkXxBxkL0",
+        "318x318": "https://c70.img.avito.st/image/1/1.uNPebra6FDqUyeo8omjG7cjOFjpm1-o8lMkWOGjTFg.iCoORAutlrqta_RqUblglx3dnTEUh-tuKNsmoT2pId0",
+        "416x416": "https://c70.img.avito.st/image/1/1.uNPebra6FDqoy9Y-omjG7cjOFjpm19Y-qMsWOGjTFg.tom7ZpK4is5ATfSbys6896_z6zaOzS3KbfsvVDw_DR4",
+        "472x472": "https://c70.img.avito.st/image/1/1.uNPebra6FDrYyqY_omjG7cjOFjpm16Y_2MoWOGjTFg.uu30cv0odjOYdzRJphw6gCnflrXxonkGgs1VOFp_qV0",
+        "636x636": "https://c70.img.avito.st/image/1/1.uNPebra6FDqQxO4xomjG7cjOFjpm1-4xkMQWOGjTFg.McERhC-pJ2aJrf-PKz0EvgypIjxuAflYUM81egd5f6U"
+      }
+    ],
+    "imagesCount": 6,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": true,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2291,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Окна во двор",
+                "version": 2
+              },
+              {
+                "id": 2285,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "От застройщика",
+                "version": 2
+              },
+              {
+                "id": 2283,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "antiPyramid",
+                  "rightEdgeStyle": "flag"
+                },
+                "title": "Чистовая отделка",
+                "version": 2
+              },
+              {
+                "id": 2282,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "pipka",
+                  "rightEdgeStyle": "pyramid"
+                },
+                "title": "Балкон",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8221090022
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8221090022
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "description": "1-комн. Квартира-студия с отделкой в жилом комплексе комфорт-класса «Сезоны». Общая площадь: 26.54 кв. М., площадь гостиной с кухонной зоной 16.96 кв. М. Все окна выходят на одну сторону. В квартире один балкон, один совмещенный санузел. Высота потолков 2.76 м.\n\nКорпус 622 в ЖК «Сезоны», в котором расположена квартира, будет построен в 2028 году. Дом монолитный, в корпусе всего один подъезд, есть 2 пассажирских и 1 грузовой лифт.\n\nДо станций метро «Проспект Просвещения», «Озерки», «Удельная», «Парнас» и «Комендантский Проспект» можно доехать за 11-14 минут на общественном транспорте.\n\nВидовой жилой комплекс комфорт-класса «Сезоны» от ГК «Пск» строится в Приморском районе Санкт-Петербурга, на Суздальском шоссе. Главное преимущество проекта — редкое для большого города соседство с природой: всего в 50 метрах расположен Новоорловский заказник и протекает река Каменка, а в пешей доступности находятся Суздальские озёра.\n\nРасположение И Транспортная Доступность.\n\nДо станции метро «Проспект Просвещения» — около 15 минут на автомобиле, до Кад и Зсд — около 10 минут, до выездов на Суздальское и Выборгское шоссе — около 5 минут.\n\nИнфраструктура Для Жизни.\n\nПроект реализуется по принципу «15-минутного города». В ближайшем окружении находятся две школы, пять детских садов, магазины, кафе, салоны красоты, банковские отделения и пункты выдачи заказов. На внутренней территории комплекса предусмотрено строительство собственного детского сада.\n\nАрхитектура И Комфорт.\n\nАрхитектура сочетает современную неоклассику, лаконичные линии и строгую геометрию. Дома высотой 7 и 25 этажей рассчитаны на 928 квартир. Для автомобилей запроектированы два четырёхъярусных паркинга с лифтами на 288 машино-мест, для сезонных и крупногабаритных вещей — отдельные кладовые. Ввод комплекса в эксплуатацию запланирован на II квартал 2028 года, передача ключей — на IV квартал 2028 года.\n\nБлагоустройство И Безопасность.\n\nЛандшафтные пространства оформят в стилистике «Лесной сад», продолжающей природную концепцию проекта. Система «умного дома» включает IP-домофонию, просмотр камер видеонаблюдения, дистанционное открывание дверей и контроль показаний счётчиков. Управлять доступом на территорию и в парадную, а также другими сервисами можно через приложение Psk Home.\n\nУсловия Покупки В Октябре.\n\nВ ЖК «Сезоны» действуют программы рассрочки без удорожания: 20/80 на 3 месяца, 30/70 на 6 месяцев, а также варианты сроком до марта 2028 года. Условия зависят от выбранной квартиры и не распространяются на квартиры по переуступке. Позвоните сегодня и получите бесплатный расчёт ипотеки или зафиксируйте стоимость квартиры.\n\nО Застройщике.\n\nГК «Пск» строит в Санкт-Петербурге с 2007 года и все дома сдаёт точно в срок. Надёжность компании семь лет подряд подтверждается званием «Надёжный застройщик России». ГК «Пск» уже ввела более 60 объектов — жилые и апарт-комплексы, школы, детские сады и коммерческую недвижимость, а по итогам 2025 года вошла в тройку крупнейших застройщиков Петербурга.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "developmentInfo": {
+              "developmentId": 14656777,
+              "href": "https://zhk-sezony-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFBAL7_YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjE0NjU2Nzc3O30deGcwQQAAAA",
+              "name": "ЖК «Сезоны»",
+              "pageNumber": 1
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Суздальское ш., уч. 26",
+              "geoReferences": [
+                {
+                  "after": " 2,9 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#0078C9"
+                  ],
+                  "content": "Проспект Просвещения"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8221090022,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "301 104 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "от 7 979 251",
+              "stringWithoutDiscount": null,
+              "value": 7979251,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Застройщик"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8221090022
+            },
+            "seo": {
+              "title": "Квартира-студия, 26,5 м², 2/25 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 26,5 м², 2/25 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/d7e903c9fb89c4cef8e0c8990113655d?src=search_seller_info\u0026iid=8221090022",
+              "title": "ПСК"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "1675 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8221090022
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "301 104 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,98 млн",
+      "fullString": "от 7 979 251 ₽",
+      "hasValue": true,
+      "normalizedPrice": "301 104 ₽ за м²",
+      "postfix": "",
+      "string": "от 7 979 251",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7979251,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "endText": {
+        "color": "black",
+        "value": "без скидки"
+      },
+      "startText": {
+        "color": "black",
+        "value": "9 387 354 ₽"
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790683684000,
+    "title": "Квартира-студия, 26,5 м², 2/25 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Суздальское ш., уч. 26",
+      "link": "/brands/d7e903c9fb89c4cef8e0c8990113655d?page_from=from_items_list_icon\u0026iid=8221090022",
+      "slug": null,
+      "src": "https://30.img.avito.st/image/1/1.cuc9zba5yA4LbFwOVcBQzytt3AiPSFwOi2T-DItuyAw.OZWubuONP_9pyXy6zNmdxIouvLa-VAoDXeD9iDvHaNI?cqp=2.EI1aZg-3nTjj2X2l0mbh9ealZRk="
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "ПСК",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/d7e903c9fb89c4cef8e0c8990113655d?src=search_seller_info\u0026iid=8221090022"
+  },
+  "seller_name": "ПСК",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/d7e903c9fb89c4cef8e0c8990113655d?src=search_seller_info\u0026iid=8221090022",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 26,5 м², 2/25 эт.",
+  "total_area": 26.5,
+  "updated_at": "2026-10-03T11:20:07.280838Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_265_m_225_et._8221090022?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

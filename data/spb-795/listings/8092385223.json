@@ -1,0 +1,579 @@
+{
+  "address": "Ул. Адмирала Черокова, 18к1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:31:15.567243Z",
+  "floor": 3,
+  "floors_total": 11,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/ul_admirala_cherokova_18k1/96096?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 18к1"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_admirala_cherokova/548-ASgBAgECA0SSA8YQ5geMUujIE8gIAUXcBxsidWxpdHNhX2FkbWlyYWxhX2NoZXJva292YSI",
+        "text": "ул. Адмирала Черокова"
+      }
+    },
+    "formattedAddress": "Ул. Адмирала Черокова, 18к1",
+    "geoReferences": [
+      {
+        "content": "р-н Красносельский"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,8 · 12 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8092385223,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.zps7N7a-YnJ1nZh5KzDFtx-XYHSJgGZyiecDeIVsaYiElGA.EAvPejuLowWgoeg5tLaDfF3dTiErdG3BYlIZmrF_wxU",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.6dPq3La-RTqkdr8xtPPJ_M58RzxYa0E6WAwkMFSHTsBVf0c.u-ljFMvDViQoSy1b46lsTcKDdnO_VzoJkUqMB1xlbmQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.5wr9P7a-S-OzlbHov1CuJNmfSeVPiE_jT-8q6UNkQBlCnEk.8liiYavCI-POAyg85mhAJoR4xFBzurDmUAXGmMqpGhI",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b10.img.avito.st/image/1/1.lm0807a-OoRyecCPHK3FQRhzOIKOZD6EjgNbjoKIMX6DcDg.zFx2_jTGVpkl8DmJ0559QWLnMcocsn8l_-FGCvvbq1k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.XClVNra-8MAbnArLYXd8BnGW8sbngfTA5-aRyutt-zrqlfI.TxscV9z0x_2RjgX0C9hH2HDjRps1iqWYiS13C2jrOgc",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:34:23.178852Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 332,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790696787000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "17663 завершённых объявления",
+    "closestAddressId": 96096,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, ул. Адмирала Черокова, 18к1",
+      "lat": "59.85313",
+      "lng": "30.139735",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "16 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 24 м², 3/11 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 16,
+      "isFirstImageHighImportance": false,
+      "isLazy": false,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/ul_admirala_cherokova_18k1/96096?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 18к1"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/ulitsa_admirala_cherokova/548-ASgBAgECA0SSA8YQ5geMUujIE8gIAUXcBxsidWxpdHNhX2FkbWlyYWxhX2NoZXJva292YSI",
+          "text": "ул. Адмирала Черокова"
+        }
+      },
+      "formattedAddress": "Ул. Адмирала Черокова, 18к1",
+      "geoReferences": [
+        {
+          "content": "р-н Красносельский"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,8 · 12 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8092385223,
+    "images": [
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.zps7N7a-YnItl8BzKzDFtx-XYHSJgGZyiecDeIU0Y9COlGA.aPN_6OYD3QIAGzsL36c0swu8wH1IGENLklcpBpw31pc",
+        "236x236": "https://70.img.avito.st/image/1/1.zps7N7a-YnJVl7hzKzDFtx-XYHSJgGZyiecDeIVMY6iOlGA.j3rq4TqegA76sgQd3f-3mMjLvi2cLgK16uXag-uQFH4",
+        "318x318": "https://70.img.avito.st/image/1/1.zps7N7a-YnJxkJx0KzDFtx-XYHSJgGZyiecDeIVoZIyJlGA.D-2v7ltv4koPO8Kb7rxcWUZ26vyqbPzPJC4yJnfkARI",
+        "416x416": "https://70.img.avito.st/image/1/1.zps7N7a-YnJNkqB2KzDFtx-XYHSJgGZyiecDeIVUZrCLlGA.l_9Pd52TERHOr90bVCai-cFTnhx2e4gkGZKWWEMr6Kk",
+        "472x472": "https://70.img.avito.st/image/1/1.zps7N7a-YnI9k9B3KzDFtx-XYHSJgGZyiecDeIUkZ8CKlGA.5XFcEXGE7laOeUgr4PQNmTYiPPZiWWIB0ibBQF-mBEo",
+        "636x636": "https://70.img.avito.st/image/1/1.zps7N7a-YnJ1nZh5KzDFtx-XYHSJgGZyiecDeIVsaYiElGA.EAvPejuLowWgoeg5tLaDfF3dTiErdG3BYlIZmrF_wxU"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.6dPq3La-RTr8fOc7tPPJ_M58RzxYa0E6WAwkMFTfRJhff0c.XlpIEQCkXUzzgiX0_5b9sGwo_66uvdTmgFMStUbBb90?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.6dPq3La-RTqEfJ87tPPJ_M58RzxYa0E6WAwkMFSnROBff0c.lLkB_-PJNGMdzdXku6DeStYEGF71xhfxvLahd0JnV38?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.6dPq3La-RTqge7s8tPPJ_M58RzxYa0E6WAwkMFSDQ8RYf0c.uPmUiwmigj_usgvTklMszB8yxRy6K8rEPaFyOFTQZpM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.6dPq3La-RTqceYc-tPPJ_M58RzxYa0E6WAwkMFS_Qfhaf0c.im4vrVqS95ErXPNnDLXrbknnZGCuVvpCMHFx4vEF_fc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.6dPq3La-RTrsePc_tPPJ_M58RzxYa0E6WAwkMFTPQIhbf0c.XBR6y0bzF6CfNOB8HlK0juDBwrbNQ8a9iXVWfUPK2bA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.6dPq3La-RTqkdr8xtPPJ_M58RzxYa0E6WAwkMFSHTsBVf0c.u-ljFMvDViQoSy1b46lsTcKDdnO_VzoJkUqMB1xlbmQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.5wr9P7a-S-Prn-niv1CuJNmfSeVPiE_jT-8q6UM8SkFInEk.mDCa7TDtrrKYfHRymFAZ3fHg49kHE76KLlsoVaJHADs",
+        "236x236": "https://90.img.avito.st/image/1/1.5wr9P7a-S-OTn5Hiv1CuJNmfSeVPiE_jT-8q6UNESjlInEk.mx0t9Z6OF5SdKMx1meGA08_F8uUocLiTpsFZpLjqrXA",
+        "318x318": "https://90.img.avito.st/image/1/1.5wr9P7a-S-O3mLXlv1CuJNmfSeVPiE_jT-8q6UNgTR1PnEk.EDZkGfJaUyTXp_F9A_-5MnJcrbqi-q_yo1zd6LOQLVg",
+        "416x416": "https://90.img.avito.st/image/1/1.5wr9P7a-S-OLmonnv1CuJNmfSeVPiE_jT-8q6UNcTyFNnEk.x1c5gwIhwJ8LpwoXCITefoEfpb2WqepfM17zPBjFWvU",
+        "472x472": "https://90.img.avito.st/image/1/1.5wr9P7a-S-P7m_nmv1CuJNmfSeVPiE_jT-8q6UMsTlFMnEk.NEZf5QOHFS5BcWthe5z1RSCVw_0gs4znKlyeV6sPkSo",
+        "636x636": "https://90.img.avito.st/image/1/1.5wr9P7a-S-OzlbHov1CuJNmfSeVPiE_jT-8q6UNkQBlCnEk.8liiYavCI-POAyg85mhAJoR4xFBzurDmUAXGmMqpGhI"
+      },
+      {
+        "208x208": "https://b10.img.avito.st/image/1/1.lm0807a-OoQqc5iFHK3FQRhzOIKOZD6EjgNbjoLQOyaJcDg.WuOfbbkl0EA7iW3hpAKlWBi-nKqCnssQfx3elzaHSRs?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b10.img.avito.st/image/1/1.lm0807a-OoRSc-CFHK3FQRhzOIKOZD6EjgNbjoKoO16JcDg.EmCtbDyorOmKo_8hEUvuDr61-QNkysmTDqeBIMlypdo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b10.img.avito.st/image/1/1.lm0807a-OoR2dMSCHK3FQRhzOIKOZD6EjgNbjoKMPHqOcDg.UF5UWf97tKLyCGccQp8s_EqhASAH-_kmDXojzmy63lE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b10.img.avito.st/image/1/1.lm0807a-OoRKdviAHK3FQRhzOIKOZD6EjgNbjoKwPkaMcDg.bWWcEcSZ31NEDKFhPR1Qo4y6AoSu3mmjGDgvc0GmHiA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b10.img.avito.st/image/1/1.lm0807a-OoQ6d4iBHK3FQRhzOIKOZD6EjgNbjoLAPzaNcDg.XLnayHBbx_p4Mz4ICwQrL1OeTHYtmY6o71-cj5t_T28?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b10.img.avito.st/image/1/1.lm0807a-OoRyecCPHK3FQRhzOIKOZD6EjgNbjoKIMX6DcDg.zFx2_jTGVpkl8DmJ0559QWLnMcocsn8l_-FGCvvbq1k?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.XClVNra-8MBDllLBYXd8BnGW8sbngfTA5-aRyus18WLglfI.w3PSccE2WEz7aLZlOUeY0dTn28pJ59G22fc3BMnwiRQ",
+        "236x236": "https://80.img.avito.st/image/1/1.XClVNra-8MA7lirBYXd8BnGW8sbngfTA5-aRyutN8RrglfI.dALHjdebtil4vf42CjlJBcgocouX2uxmKNeqteIX9Rs",
+        "318x318": "https://80.img.avito.st/image/1/1.XClVNra-8MAfkQ7GYXd8BnGW8sbngfTA5-aRyutp9j7nlfI.3AxWvOPyQVsoS7UvcX6oM7tU_3y0FTTyGWYuqjMW2n0",
+        "416x416": "https://80.img.avito.st/image/1/1.XClVNra-8MAjkzLEYXd8BnGW8sbngfTA5-aRyutV9ALllfI.2CCKw4GDU4l4iUvjmNLL_QOpnKOBzCZ3O3W2RK3zG8M",
+        "472x472": "https://80.img.avito.st/image/1/1.XClVNra-8MBTkkLFYXd8BnGW8sbngfTA5-aRyusl9XLklfI.io5gEGWrpRKoo1VJeRAgnaonYAvfTaxogvUPaPRPvc8",
+        "636x636": "https://80.img.avito.st/image/1/1.XClVNra-8MAbnArLYXd8BnGW8sbngfTA5-aRyutt-zrqlfI.TxscV9z0x_2RjgX0C9hH2HDjRps1iqWYiS13C2jrOgc"
+      }
+    ],
+    "imagesCount": 16,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8092385223
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8092385223
+            },
+            "relative": "3 дня назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "description": "Номер объявления: 22641 — назовите его оператору. Уютная эргономичная студия с окном в кухонной зоне и панорамным балконом.\nКвартира находится в современном и обжитом квартале ЖК «Море».\nОбъект с мебелью и техникой, полностью подходит для комфортного проживания или под сдачу в аренду. Не требует дополнительных вложений.\n\nВид на две стороны: Панорамный вид на лес с улицы Адмирала Черокова и вид во двор с торговым центром ТЦ «Жемчужная Плаза».\n\nУдобная транспортная сеть: Автобусная остановка прямо у дома. Трамвайная остановка в 5 минутах ходьбы (удобное сообщение с Автово, Стрельной, Петродворцом). Выезд на Кад в 10 минутах.\nВ шаговой доступности: Торговый центр «Жемчужная Плаза» — 3 минуты.\nФинский залив и Южно-Приморский парк — 5 минут.\nВся необходимая инфраструктура: В ТЦ «Балтийская жемчужина» расположены кафе, рестораны, фитнес-клуб. Детская и взрослая поликлиники — напротив дома, рядом сад и школа.\n\n1 взрослый собственник. Прямая продажа.\n\nНе упустите свой шанс стать обладателем этой уникальной квартиры!\n\nБонус в подарок! Дизайнерский проект, уже созданный продавцом.\n\nЗвоните и приходите на просмотр!",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Ул. Адмирала Черокова, 18к1",
+              "geoReferences": [
+                {
+                  "content": "р-н Красносельский"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8092385223,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "TF0cKEJu0m1V8vlN"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "332 917 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8092385223
+            },
+            "seo": {
+              "title": "Квартира-студия, 24 м², 3/11 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 24 м², 3/11 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i197583455?src=search_seller_info\u0026iid=8092385223",
+              "title": "Петербургская Недвижимость"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "17663 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8092385223
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "332 917 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "332 917 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,8 · 12 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790696787000,
+    "title": "Квартира-студия, 24 м², 3/11 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, ул. Адмирала Черокова, 18к1",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Петербургская Недвижимость",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i197583455?src=search_seller_info\u0026iid=8092385223"
+  },
+  "seller_name": "Петербургская Недвижимость",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i197583455?src=search_seller_info\u0026iid=8092385223",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 24 м², 3/11 эт.",
+  "total_area": 24,
+  "updated_at": "2026-10-03T11:34:23.178852Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_311_et._8092385223?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "views_count": null,
+  "year_built": null
+}

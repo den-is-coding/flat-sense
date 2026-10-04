@@ -1,0 +1,628 @@
+{
+  "address": "Бухарестская ул., 96",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:31:15.564261Z",
+  "floor": 3,
+  "floors_total": 25,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/buharestskaya_ul_96/49386?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 96"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2216",
+        "text": "Проспект Славы"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/buharestskaya_ulitsa/3840-ASgBAgECA0SSA8YQ5geMUujIE4A8AUXcBxYiYnVoYXJlc3Rza2F5YV91bGl0c2Ei",
+        "text": "Бухарестская ул."
+      }
+    },
+    "formattedAddress": "Бухарестская ул., 96",
+    "geoReferences": [
+      {
+        "after": " 400 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "до 5 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Проспект Славы"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,1 · 8 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8280714507,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.Swyuy7a-5-XgYR3utP4VHLxr5eMcfOPlHBuG7xCQ7B8RaOU.OKfMpEgcgpXm_uQt97me7jb9qzKm6yXBboyoQSGVPjU",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.fmh16ba-0oE7QyiKBbBNeGdJ0IfHXtaBxzmzi8uy2XvKStA.mzHUwm1dutb4Dn4tZguMPDHHvLKbtJkWwDXjLutWsJY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b30.img.avito.st/image/1/1.F2wwGba-u4V-s0GOEkEafSK5uYOCrr-Fgsnaj45CsH-Purk.Lmq9451jK-Ka3AMikn6rzBLoaZ2oOXU-UScVjPdmC00?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.MIMGdLa-nGpI3mZhaig6khTUnmy0w5hqtKT9YLgvl5C5154.JfnD2ox1NDQhpoxox98wmt3oe8IHH64x5qX7svIWiWo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.FjN1zba-uto7Z0DRVfkHIWdtuNzHer7axx3b0MuWsSDKbrg.RwZT-5ma4ybemg-5y0WayHu6DLLahrNgA1JX01759XI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:31:15.564261Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 332,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789551146000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "185 завершённых объявлений",
+    "closestAddressId": 49386,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": false,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Бухарестская улица, 96",
+      "lat": "59.8599205",
+      "lng": "30.39356422",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "17 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 24 м², 3/25 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 17,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/buharestskaya_ul_96/49386?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 96"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2216",
+          "text": "Проспект Славы"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/buharestskaya_ulitsa/3840-ASgBAgECA0SSA8YQ5geMUujIE4A8AUXcBxYiYnVoYXJlc3Rza2F5YV91bGl0c2Ei",
+          "text": "Бухарестская ул."
+        }
+      },
+      "formattedAddress": "Бухарестская ул., 96",
+      "geoReferences": [
+        {
+          "after": " 400 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "до 5 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Проспект Славы"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,1 · 8 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8280714507,
+    "images": [
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.Swyuy7a-5-W4a0XktP4VHLxr5eMcfOPlHBuG7xDI5kcbaOU.r-blm0k6kDjjYLfCX7UvENK-mZuL3AcOXth-Qm4Wh_c",
+        "236x236": "https://40.img.avito.st/image/1/1.Swyuy7a-5-XAaz3ktP4VHLxr5eMcfOPlHBuG7xCw5j8baOU.4FPncbiWoBcVYqF8HmC90BkuC9xExwTEZhvMhuWYVfU",
+        "318x318": "https://40.img.avito.st/image/1/1.Swyuy7a-5-XkbBnjtP4VHLxr5eMcfOPlHBuG7xCU4RscaOU.noYLG218Xg4Vac0i85d1NBbFvdzCN_UNU_2ZMfz6a8w",
+        "416x416": "https://40.img.avito.st/image/1/1.Swyuy7a-5-XYbiXhtP4VHLxr5eMcfOPlHBuG7xCo4yceaOU.UKBImR3m8SEYk7ur83spK6sS9eHIi9koxIhxxVWg1Ts",
+        "472x472": "https://40.img.avito.st/image/1/1.Swyuy7a-5-Wob1XgtP4VHLxr5eMcfOPlHBuG7xDY4lcfaOU.u-c-Thwko7fPqpXexrBs4yTcSJ_dNBOD2OR2e-10gHw",
+        "636x636": "https://40.img.avito.st/image/1/1.Swyuy7a-5-XgYR3utP4VHLxr5eMcfOPlHBuG7xCQ7B8RaOU.OKfMpEgcgpXm_uQt97me7jb9qzKm6yXBboyoQSGVPjU"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.fmh16ba-0oFjSXCABbBNeGdJ0IfHXtaBxzmzi8vq0yPAStA.xkSKF3JQQQvGQGPEezPfmlqCOU7tHesNxa0m-CGxXqQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.fmh16ba-0oEbSQiABbBNeGdJ0IfHXtaBxzmzi8uS01vAStA.SGqGwqB20BfwOVCRSN2L1GsK1rZ1VR5zDcE2QLgd2jY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.fmh16ba-0oE_TiyHBbBNeGdJ0IfHXtaBxzmzi8u21H_HStA._5RnC5ZH3zA50AFz5YpPEjL5oRuSNF-LxvSzESAiVts?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.fmh16ba-0oEDTBCFBbBNeGdJ0IfHXtaBxzmzi8uK1kPFStA.646C2MJQY8uRHPLDsKrd-iOVEWFusf7LAqMFdOaHxSU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.fmh16ba-0oFzTWCEBbBNeGdJ0IfHXtaBxzmzi8v61zPEStA.KUjMX596dsXI_oRUmq6z3NKhEQiP1s5ZwVg_75V2pNM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.fmh16ba-0oE7QyiKBbBNeGdJ0IfHXtaBxzmzi8uy2XvKStA.mzHUwm1dutb4Dn4tZguMPDHHvLKbtJkWwDXjLutWsJY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b30.img.avito.st/image/1/1.F2wwGba-u4UmuRmEEkEafSK5uYOCrr-Fgsnaj44auieFurk.qjo0dgfBADNO7oW9z-R4z5cPLyQ7IE9a4e83BpzoUNk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b30.img.avito.st/image/1/1.F2wwGba-u4VeuWGEEkEafSK5uYOCrr-Fgsnaj45iul-Furk.NUeDFVwru_dDUnKB4vmvUeO9lW_etM1v5ui8oXDu1IE?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b30.img.avito.st/image/1/1.F2wwGba-u4V6vkWDEkEafSK5uYOCrr-Fgsnaj45GvXuCurk.NFuvsgwGPT7xKUwm131TQfuQFXsvvTIAxS_UIVkWZjI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b30.img.avito.st/image/1/1.F2wwGba-u4VGvHmBEkEafSK5uYOCrr-Fgsnaj456v0eAurk.b-EoYt3Jcberfzow-PyLmgjKOrwEu6EiP_Bqn0GNxJQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b30.img.avito.st/image/1/1.F2wwGba-u4U2vQmAEkEafSK5uYOCrr-Fgsnaj44KvjeBurk.vdo5o55k-uP8fhH4BWs-GTfFLSwk3d7s4ZIhTVo0M18?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b30.img.avito.st/image/1/1.F2wwGba-u4V-s0GOEkEafSK5uYOCrr-Fgsnaj45CsH-Purk.Lmq9451jK-Ka3AMikn6rzBLoaZ2oOXU-UScVjPdmC00?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.MIMGdLa-nGoQ1D5raig6khTUnmy0w5hqtKT9YLh3nciz154.jJuvTtd6sWtbKGPxmw1EPpxJQmQ1KgdFVdYQfTYGcCc?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.MIMGdLa-nGpo1EZraig6khTUnmy0w5hqtKT9YLgPnbCz154.aiPL7VmKP3LTKXhxJqotk97ZfCrjr2AvhB8TT1yBrXA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.MIMGdLa-nGpM02Jsaig6khTUnmy0w5hqtKT9YLgrmpS0154.6SqGHbcmC-_kl5UnCM93miksnqi2QPcvmgnLzmyG_F0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.MIMGdLa-nGpw0V5uaig6khTUnmy0w5hqtKT9YLgXmKi2154.7HlWiMSOoAIEAfbj0P9V1QhO_jxuiQ-CuM9vcPPhEsU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.MIMGdLa-nGoA0C5vaig6khTUnmy0w5hqtKT9YLhnmdi3154.RtVXEt55Fb-QQsgH8OWHtJNx1eXqmnKiUG3e0QDCSjo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.MIMGdLa-nGpI3mZhaig6khTUnmy0w5hqtKT9YLgvl5C5154.JfnD2ox1NDQhpoxox98wmt3oe8IHH64x5qX7svIWiWo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.FjN1zba-utpjbRjbVfkHIWdtuNzHer7axx3b0MvOu3jAbrg.XWqpHbV_xdROFl3nJzGXxwKztfk3JuO0v0a4wmk_8tQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.FjN1zba-utobbWDbVfkHIWdtuNzHer7axx3b0Mu2uwDAbrg.xopv-Teb4f5sNveAumx3hc-ddcmkwH-Abi8JjwshiUw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.FjN1zba-uto_akTcVfkHIWdtuNzHer7axx3b0MuSvCTHbrg.kS70Qy0KXB0xFG6CiNe6zFjweWLJYE9oYNOzhkDpY5U?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.FjN1zba-utoDaHjeVfkHIWdtuNzHer7axx3b0MuuvhjFbrg.egutbD9_CsaFiC3EhdjcvqHlBraz_KIAYBJjBzQRilI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.FjN1zba-utpzaQjfVfkHIWdtuNzHer7axx3b0Mvev2jEbrg.BjtTf2p0CZvoGQLr7YD7jBYIImdxyZCFrW1J2iFm4-E?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.FjN1zba-uto7Z0DRVfkHIWdtuNzHer7axx3b0MuWsSDKbrg.RwZT-5ma4ybemg-5y0WayHu6DLLahrNgA1JX01759XI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 17,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#02D15C",
+                    "valueDark": "#04C454"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8280714507
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8280714507
+            },
+            "relative": "2 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "description": "Видовая студия с лоджией в 100 метрах от станции метро пр. Славы. С лоджии вид на парк Интернационалистов и храм Георгия Победоносца.\n\nПрямая продажа, более 5 лет в собственности, не обременена никакими обязательствами. Собственник один.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Бухарестская ул., 96",
+              "geoReferences": [
+                {
+                  "after": " 400 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "до 5 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Проспект Славы"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8280714507,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "1vtIRGbGuCk3H5Rm"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "332 917 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8280714507
+            },
+            "seo": {
+              "title": "Квартира-студия, 24 м², 3/25 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 24 м², 3/25 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i13514395?src=search_seller_info\u0026iid=8280714507",
+              "title": "Жанна"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "185 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 31,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Документы проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8280714507
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "332 917 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "332 917 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,1 · 8 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789551146000,
+    "title": "Квартира-студия, 24 м², 3/25 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Бухарестская улица, 96",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Жанна",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i13514395?src=search_seller_info\u0026iid=8280714507"
+  },
+  "seller_name": "Жанна",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i13514395?src=search_seller_info\u0026iid=8280714507",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 24 м², 3/25 эт.",
+  "total_area": 24,
+  "updated_at": "2026-10-03T11:31:15.564261Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_24_m_325_et._8280714507?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "views_count": null,
+  "year_built": null
+}
