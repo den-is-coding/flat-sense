@@ -290,7 +290,10 @@ const pageHTML = `<!doctype html>
  .card .close{float:right;border:none;background:none;font-size:18px;cursor:pointer;color:var(--color-text-secondary)}
  .card .close:hover{color:var(--color-danger)}
  .card .close svg{width:16px;height:16px}
- .card img.photo{width:100%;border-radius:var(--radius-md);margin-bottom:10px}
+ /* фото — компактный баннер фиксированной высоты: карточка не скроллится
+    даже при полном наборе данных (сценарии + расходы) */
+ .card img.photo{width:100%;height:150px;object-fit:cover;object-position:center;
+   display:block;border-radius:var(--radius-md);margin-bottom:10px}
  .card .price-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
  .card .price{font-family:var(--font-heading);font-weight:800;font-size:22px}
  .card .jk-badge{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--color-accent-bg);
