@@ -194,6 +194,9 @@ const pageHTML = `<!doctype html>
  .pin.green{background:#1a7f37}.pin.yellow{background:#e3a008}.pin.red{background:#c62828}.pin.gray{background:#9e9e9e}
  .cluster-pin{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;
    border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);color:#fff;font-weight:700;box-sizing:border-box}
+ /* фон кластера — сплошной, по разбивке доходности (агрегат-максимум) */
+ .cluster-pin.green{background:#1a7f37}.cluster-pin.yellow{background:#e3a008}
+ .cluster-pin.red{background:#c62828}.cluster-pin.gray{background:#9e9e9e}
  .cluster-pin .n{font-size:14px;line-height:1.1}
  .cluster-pin .v{font-size:10px;font-weight:500;opacity:.95}
  .leaflet-control-zoom a{width:44px !important;height:44px !important;line-height:44px !important;font-size:20px !important}
