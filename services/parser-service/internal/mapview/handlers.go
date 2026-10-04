@@ -311,6 +311,15 @@ const pageHTML = `<!doctype html>
  .scenarios .sdot{width:8px;height:8px;border-radius:50%;flex:none}
  .scenarios .s-furn .sdot{background:var(--color-success)}
  .scenarios .s-unfurn .sdot{background:var(--color-warning)}
+ .key-data .key-metrics{margin-top:4px;font-size:13px;color:var(--color-text-secondary)}
+ .key-data .key-metrics b{color:var(--color-text-primary)}
+ /* расшифровка расходов сделки (#108) */
+ .costs{margin:10px 0;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:8px 12px}
+ .costs-head{font-size:12px;color:var(--color-text-secondary);margin-bottom:4px}
+ .costs .row{display:flex;justify-content:space-between;gap:12px;padding:2px 0;font-size:13px;color:var(--color-text-secondary)}
+ .costs .row b{color:var(--color-text-primary);font-variant-numeric:tabular-nums;white-space:nowrap}
+ .costs .row.total{border-top:1px solid var(--color-border);margin-top:4px;padding-top:6px;
+   color:var(--color-text-primary);font-weight:600}
  .card a.avito{display:inline-block;margin-top:8px;color:var(--color-accent-hover);font-weight:600}
  .drawer-overlay{position:fixed;inset:0;background:var(--color-overlay);opacity:0;pointer-events:none;
    transition:opacity .2s;z-index:1300}

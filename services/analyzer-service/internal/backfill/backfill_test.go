@@ -13,7 +13,7 @@ func TestRowFromReport_NoRentData(t *testing.T) {
 		Notice:          "по дому/ЖК addr:… нет арендных данных",
 		InputFurnishing: evaluate.Unfurnished,
 	}
-	row := RowFromReport(rep)
+	row := RowFromReport(rep, evaluate.DefaultConfig())
 	if row.Status != "no_rent_data" {
 		t.Fatalf("status = %q", row.Status)
 	}
@@ -38,7 +38,7 @@ func TestRowFromReport_FurnishedInput(t *testing.T) {
 			{Name: "с мебелью", Applicable: true, YieldPct: yield, PriceUsed: cost, RentMedian: 35_500, Comps: 4},
 		},
 	}
-	row := RowFromReport(rep)
+	row := RowFromReport(rep, evaluate.DefaultConfig())
 	if row.YieldFurnished == nil || *row.YieldFurnished != yield {
 		t.Fatalf("yieldFurnished = %v", row.YieldFurnished)
 	}
@@ -65,7 +65,7 @@ func TestRowFromReport_UnfurnishedInput(t *testing.T) {
 			{Name: "с мебелью (после меблировки)", Applicable: true, YieldPct: 4.6, PriceUsed: 8_353_000, RentMedian: 32_000, Comps: 1},
 		},
 	}
-	row := RowFromReport(rep)
+	row := RowFromReport(rep, evaluate.DefaultConfig())
 	if row.YieldUnfurnished == nil || *row.YieldUnfurnished != 4.9 {
 		t.Fatalf("yieldUnfurnished = %v", row.YieldUnfurnished)
 	}
@@ -89,8 +89,38 @@ func TestRowFromReport_InapplicableScenario(t *testing.T) {
 			{Name: "с мебелью (после меблировки)", Applicable: false, SkippedReason: "нет данных"},
 		},
 	}
-	row := RowFromReport(rep)
+	row := RowFromReport(rep, evaluate.DefaultConfig())
 	if row.YieldUnfurnished != nil || row.YieldFurnished != nil {
 		t.Fatalf("inapplicable scenarios must stay nil: %+v", row)
+	}
+}
+
+// Раскладка расходов (#108): риэлтор = % от цены, остальное — титул +
+// оформление; меблировка — максимум по сценариям.
+func TestRowFromReport_CostBreakdown(t *testing.T) {
+	cfg := evaluate.DefaultConfig() // риэлтор 3 %, титул 1 %, оформление 25 000
+	rep := &evaluate.Report{
+		Status:          "ok",
+		InputFurnishing: evaluate.Unfurnished,
+		Confidence:      "low",
+		Listing:         &evaluate.ListingView{ID: 1, Price: 7_500_000},
+		Cluster:         &evaluate.ClusterView{N: 5},
+		Scenarios: []evaluate.Scenario{
+			{Name: "без мебели", Applicable: true, PriceUsed: 7_950_000, DealCosts: 325_000, FurnishingCost: 0},
+			{Name: "с мебелью (после меблировки)", Applicable: true, PriceUsed: 8_450_000, DealCosts: 325_000, FurnishingCost: 500_000},
+		},
+	}
+	row := RowFromReport(rep, cfg)
+	if row.RealtorFee == nil || *row.RealtorFee != 225_000 {
+		t.Fatalf("realtorFee = %v, want 225000", row.RealtorFee)
+	}
+	if row.DealCostsOther == nil || *row.DealCostsOther != 100_000 {
+		t.Fatalf("dealCostsOther = %v, want 100000 (титул 1%% + оформление 25000)", row.DealCostsOther)
+	}
+	if row.DealCostsTotal == nil || *row.DealCostsTotal != 325_000 {
+		t.Fatalf("dealCostsTotal = %v, want 325000", row.DealCostsTotal)
+	}
+	if row.FurnishingCost == nil || *row.FurnishingCost != 500_000 {
+		t.Fatalf("furnishingCost = %v, want 500000", row.FurnishingCost)
 	}
 }
