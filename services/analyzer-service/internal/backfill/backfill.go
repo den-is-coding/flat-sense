@@ -7,6 +7,7 @@ package backfill
 import (
 	"context"
 	"fmt"
+	"math"
 	"sort"
 
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -39,9 +40,15 @@ type Row struct {
 	RentP25Furn      *float64
 	RentP75Furn      *float64
 	CompsFurn        *int
-	ClusterN         *int
-	Confidence       string
-	Notice           string
+	// раскладка расходов сделки (#108): риэлтор / титул+оформление /
+	// меблировка — считает analyzer, карта только показывает
+	FurnishingCost *int64
+	RealtorFee     *int64
+	DealCostsOther *int64
+	DealCostsTotal *int64
+	ClusterN       *int
+	Confidence     string
+	Notice         string
 }
 
 // ComplexStat — сводка по одному ЖК: сколько объявлений обеих сторон
@@ -67,7 +74,9 @@ type Report struct {
 // RowFromReport — маппинг отчёта #64 в строку кэша (чистая функция).
 // Сценарий «с мебелью» для уже меблированного объявления не содержит
 // надбавки — полная стоимость в обоих случаях берётся из PriceUsed отчёта.
-func RowFromReport(rep *evaluate.Report) Row {
+// cfg нужен для раскладки издержек: риэлтор = % от цены (issue #108),
+// остальное (титул + оформление) — разность с общими издержками сделки.
+func RowFromReport(rep *evaluate.Report, cfg evaluate.Config) Row {
 	row := Row{
 		Status:          rep.Status,
 		InputFurnishing: string(rep.InputFurnishing),
@@ -79,6 +88,25 @@ func RowFromReport(rep *evaluate.Report) Row {
 	}
 	n := rep.Cluster.N
 	row.ClusterN = &n
+	if rep.Listing != nil && rep.Listing.Price > 0 {
+		realtor := int64(math.Round(float64(rep.Listing.Price) * cfg.RealtorFeePct / 100))
+		var dealTotal int64
+		for i := range rep.Scenarios {
+			if rep.Scenarios[i].Applicable {
+				dealTotal = rep.Scenarios[i].DealCosts
+				if row.FurnishingCost == nil || rep.Scenarios[i].FurnishingCost > *row.FurnishingCost {
+					fc := rep.Scenarios[i].FurnishingCost
+					row.FurnishingCost = &fc
+				}
+			}
+		}
+		if dealTotal > 0 {
+			row.RealtorFee = &realtor
+			other := dealTotal - realtor
+			row.DealCostsOther = &other
+			row.DealCostsTotal = &dealTotal
+		}
+	}
 	for i := range rep.Scenarios {
 		s := &rep.Scenarios[i]
 		if !s.Applicable {
@@ -175,7 +203,7 @@ func (r *Runner) Run(ctx context.Context) (*Report, error) {
 			rep.Errors = append(rep.Errors, fmt.Sprintf("объявление %d: %v", in.ID, err))
 			continue
 		}
-		row := RowFromReport(out)
+		row := RowFromReport(out, r.Config)
 		row.AdID = in.ID
 		if err := r.upsert(ctx, row); err != nil {
 			return nil, fmt.Errorf("upsert %d: %w", in.ID, err)
@@ -210,8 +238,9 @@ func (r *Runner) upsert(ctx context.Context, row Row) error {
 			ad_id, status, input_furnishing,
 			yield_unfurnished_pct, total_cost_unfurnished, rent_median_unfurnished, rent_p25_unfurnished, rent_p75_unfurnished, comps_unfurnished,
 			yield_furnished_pct, total_cost_furnished, rent_median_furnished, rent_p25_furnished, rent_p75_furnished, comps_furnished,
+			furnishing_cost, realtor_fee, deal_costs_other, deal_costs_total,
 			cluster_n, confidence, notice, computed_at
-		) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18, now())
+		) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22, now())
 		ON CONFLICT (ad_id) DO UPDATE SET
 			status = EXCLUDED.status,
 			input_furnishing = EXCLUDED.input_furnishing,
@@ -227,6 +256,10 @@ func (r *Runner) upsert(ctx context.Context, row Row) error {
 			rent_p25_furnished = EXCLUDED.rent_p25_furnished,
 			rent_p75_furnished = EXCLUDED.rent_p75_furnished,
 			comps_furnished = EXCLUDED.comps_furnished,
+			furnishing_cost = EXCLUDED.furnishing_cost,
+			realtor_fee = EXCLUDED.realtor_fee,
+			deal_costs_other = EXCLUDED.deal_costs_other,
+			deal_costs_total = EXCLUDED.deal_costs_total,
 			cluster_n = EXCLUDED.cluster_n,
 			confidence = EXCLUDED.confidence,
 			notice = EXCLUDED.notice,
@@ -234,6 +267,7 @@ func (r *Runner) upsert(ctx context.Context, row Row) error {
 		row.AdID, row.Status, textOrNil(row.InputFurnishing),
 		row.YieldUnfurnished, row.TotalCostUnfurn, row.RentMedianUnfurn, row.RentP25Unfurn, row.RentP75Unfurn, row.CompsUnfurn,
 		row.YieldFurnished, row.TotalCostFurn, row.RentMedianFurn, row.RentP25Furn, row.RentP75Furn, row.CompsFurn,
+		row.FurnishingCost, row.RealtorFee, row.DealCostsOther, row.DealCostsTotal,
 		row.ClusterN, textOrNil(row.Confidence), row.Notice)
 	return err
 }

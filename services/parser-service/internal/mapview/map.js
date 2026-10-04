@@ -240,16 +240,31 @@
         (key.name === 'Без мебели' ? 'без мебели' : 'с мебелью') + ')</div>' +
         '<div class="main">' + fmtRub(key.med) + '/мес</div>' +
         '<div class="range-row"><span class="range">' + fmtRub(key.p25) + ' – ' + fmtRub(key.p75) + '</span>' +
-        '<span class="range-n"> · p25–p75' + (key.comps ? ' · ' + key.comps + ' аналогов ЖК' : '') + '</span></div></div>';
+        '<span class="range-n"> · p25–p75' + (key.comps ? ' · ' + key.comps + ' аналогов ЖК' : '') + '</span></div>' +
+        (key.y != null ? '<div class="key-metrics">доходность <b>' + key.y.toFixed(1).replace('.', ',') +
+          '%</b> · окупаемость <b>' + (100 / key.y).toFixed(1).replace('.', ',') + ' лет</b></div>' : '') + '</div>';
       // сценарии: обе строки (доступные)
       var scen = '';
       [furn, unf].forEach(function (sc) {
         if (sc.med == null) return;
         var years = sc.y != null ? (100 / sc.y).toFixed(1) : '—';
         scen += '<div class="row ' + sc.cls + '"><span class="sdot"></span>' + sc.name + ': ' +
-          fmtRub(sc.med) + ' · ' + (sc.y != null ? sc.y.toFixed(1) + '%' : '—') + ' · ' + years + ' лет</div>';
+          fmtRub(sc.med) + ' · ' + (sc.y != null ? sc.y.toFixed(1).replace('.', ',') + '%' : '—') + ' · ' + years + ' лет</div>';
       });
       if (scen) html += '<div class="scenarios">' + scen + '</div>';
+      // расшифровка расходов сделки (#108): меблировка / риэлтор / сделка
+      if (d.dealCostsTotal != null) {
+        var exp = '<div class="costs"><div class="costs-head">Расходы сделки</div>' +
+          '<div class="row"><span>Риэлтор</span><b>' + fmtRub(d.realtorFee) + '</b></div>' +
+          '<div class="row"><span>Титульное страхование и оформление</span><b>' + fmtRub(d.dealCostsOther) + '</b></div>';
+        if (d.furnishingCost != null && d.furnishingCost > 0) {
+          exp += '<div class="row"><span>Меблировка</span><b>' + fmtRub(d.furnishingCost) + '</b></div>';
+        } else {
+          exp += '<div class="row"><span>Меблировка</span><b>не требуется</b></div>';
+        }
+        exp += '<div class="row total"><span>Сверх цены объявления</span><b>' + fmtRub(d.dealCostsTotal + (d.furnishingCost || 0)) + '</b></div></div>';
+        html += exp;
+      }
       html += '<div class="muted">Полная стоимость: ' +
         (d.totalCostFurnished != null ? 'с мебелью ' + fmtRub(d.totalCostFurnished) : '') +
         (d.totalCostFurnished != null && d.totalCostUnfurnished != null ? ' · ' : '') +

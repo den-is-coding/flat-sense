@@ -79,6 +79,7 @@ r.yield_unfurnished_pct, r.yield_furnished_pct,
 r.total_cost_unfurnished, r.total_cost_furnished,
 r.rent_median_unfurnished, r.rent_p25_unfurnished, r.rent_p75_unfurnished, comps_unfurnished,
 r.rent_median_furnished, r.rent_p25_furnished, r.rent_p75_furnished, comps_furnished,
+r.furnishing_cost, r.realtor_fee, r.deal_costs_other, r.deal_costs_total,
 r.confidence`
 
 // MapItem — точка карты (JSON-ответ).
@@ -114,7 +115,12 @@ type MapItem struct {
 	RentP25Furn      *float64 `json:"rentP25Furnished,omitempty"`
 	RentP75Furn      *float64 `json:"rentP75Furnished,omitempty"`
 	CompsFurn        *int     `json:"compsFurnished,omitempty"`
-	Confidence       string   `json:"confidence,omitempty"`
+	// раскладка расходов сделки (#108): меблировка / риэлтор / титул+оформление
+	FurnishingCost *int64 `json:"furnishingCost,omitempty"`
+	RealtorFee     *int64 `json:"realtorFee,omitempty"`
+	DealCostsOther *int64 `json:"dealCostsOther,omitempty"`
+	DealCostsTotal *int64 `json:"dealCostsTotal,omitempty"`
+	Confidence     string `json:"confidence,omitempty"`
 }
 
 // MapPage — ответ выдачи: точки + индикатор пропущенного.
@@ -147,7 +153,7 @@ func (s *Store) List(ctx context.Context, f MapFilters) ([]MapItem, error) {
 		var rooms, floor, floorsTotal **int
 		var photo *string
 		var yieldU, yieldF, rentMedU, rentP25U, rentP75U, rentMedF, rentP25F, rentP75F *float64
-		var costU, costF *int64
+		var costU, costF, furnCost, realtorFee, dealOther, dealTotal *int64
 		var compsU, compsF *int
 		var conf *string
 		if err := rows.Scan(&it.ID, &it.URL, &title, &it.DealType, &price, &area,
@@ -155,7 +161,8 @@ func (s *Store) List(ctx context.Context, f MapFilters) ([]MapItem, error) {
 			&it.Lat, &it.Lng, &photo, &furnishing,
 			&yieldU, &yieldF, &costU, &costF,
 			&rentMedU, &rentP25U, &rentP75U, &compsU,
-			&rentMedF, &rentP25F, &rentP75F, &compsF, &conf); err != nil {
+			&rentMedF, &rentP25F, &rentP75F, &compsF,
+			&furnCost, &realtorFee, &dealOther, &dealTotal, &conf); err != nil {
 			return nil, err
 		}
 		derefInt64 := func(p **int64) *int64 {
@@ -193,6 +200,8 @@ func (s *Store) List(ctx context.Context, f MapFilters) ([]MapItem, error) {
 		it.CompsUnfurn = compsU
 		it.RentMedianFurn, it.RentP25Furn, it.RentP75Furn = rentMedF, rentP25F, rentP75F
 		it.CompsFurn = compsF
+		it.FurnishingCost, it.RealtorFee = furnCost, realtorFee
+		it.DealCostsOther, it.DealCostsTotal = dealOther, dealTotal
 		if furnishing != nil {
 			it.InputFurnishing = *furnishing
 		}
