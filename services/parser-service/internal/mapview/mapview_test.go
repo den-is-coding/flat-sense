@@ -1,12 +1,14 @@
 package mapview
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"io"
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"regexp"
 	"strings"
 	"testing"
 
@@ -241,6 +243,29 @@ func TestHandlers_API_Integration(t *testing.T) {
 	} {
 		if !strings.Contains(html, want) {
 			t.Fatalf("page missing %q", want)
+		}
+	}
+}
+
+// Критерий приёмки #88: в клиентском коде карты нет хардкод-цветов —
+// все цвета живут в tokens.gen.css (генерируется из auth-flow.pen);
+// токены инжектируются в страницу вместе с тёмной темой.
+func TestMapJS_NoHardcodedColors(t *testing.T) {
+	js, err := staticFS.ReadFile("map.js")
+	if err != nil {
+		t.Fatal(err)
+	}
+	hexRe := regexp.MustCompile(`#[0-9a-fA-F]{3,8}\b`)
+	if m := hexRe.Find(js); m != nil {
+		t.Fatalf("map.js contains hardcoded color %q — используйте CSS-переменные", m)
+	}
+	css, err := staticFS.ReadFile("tokens.gen.css")
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, want := range []string{"--color-accent:", "[data-theme=\"dark\"]", "--map-bucket-0:", "prefers-color-scheme"} {
+		if !bytes.Contains(css, []byte(want)) {
+			t.Fatalf("tokens.gen.css missing %q", want)
 		}
 	}
 }

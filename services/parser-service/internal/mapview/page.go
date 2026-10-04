@@ -5,8 +5,14 @@ import (
 	"html/template"
 )
 
-//go:embed map.js
+//go:embed map.js tokens.gen.css
 var staticFS embed.FS
+
+// TokensCSS — сгенерированные дизайн-токены (scripts/gen-design-tokens.py
+// из proto/auth-flow.pen): :root light, [data-theme="dark"], системная
+// тема через prefers-color-scheme. Тип template.CSS обязателен: иначе
+// html/template санирует строку в CSS-контексте в «ZgotmplZ».
+var TokensCSS = template.CSS(mustEmbed("tokens.gen.css"))
 
 func mustEmbed(name string) string {
 	b, err := staticFS.ReadFile(name)

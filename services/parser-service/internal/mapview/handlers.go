@@ -2,6 +2,7 @@ package mapview
 
 import (
 	"encoding/json"
+	"html/template"
 	"net/http"
 	"os"
 	"sort"
@@ -60,6 +61,7 @@ func Register(mux *http.ServeMux, store *Store) {
 			WithCoords: withCoords,
 			NoCoords:   total - withCoords,
 			Thresholds: t,
+			TokensCSS:  TokensCSS,
 		})
 	})
 	mux.HandleFunc("GET /api/map/listings", func(w http.ResponseWriter, r *http.Request) {
@@ -167,6 +169,7 @@ type pageData struct {
 	WithCoords int64
 	NoCoords   int64
 	Thresholds Thresholds
+	TokensCSS  template.CSS // доверенный CSS (html/template санитарит строки в <style>)
 }
 
 // pageHTML — разметка страницы карты (переключатель метрик, фильтры,
@@ -181,56 +184,93 @@ const pageHTML = `<!doctype html>
 <meta name="description" content="Интерактивная карта объявлений о студиях в Санкт-Петербурге на OpenStreetMap: цена, полная стоимость и доходность с мебелью, кластеризация по районам.">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 <style>
- body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1a1a1a;
-   display:flex;flex-direction:column;min-height:100vh}
- header{padding:10px 16px;background:#232a35;color:#fff}
+{{.TokensCSS}}
+</style>
+<style>
+ body{margin:0;font:14px/1.45 var(--font-body),system-ui,sans-serif;color:var(--color-text-primary);
+   background:var(--color-bg);display:flex;flex-direction:column;min-height:100vh}
+ header{padding:10px 16px;background:var(--map-header-bg);color:var(--map-header-text)}
  header h1{font-size:17px;margin:0}
- header .intro{color:#9aa4b2;font-size:13px;margin-top:2px}
+ header .intro{color:var(--map-header-muted);font-size:13px;margin-top:2px}
  #map{flex:1 1 auto;min-height:420px;position:relative}
- footer{padding:8px 16px;background:#f5f6f8;border-top:1px solid #ddd;color:#666;
-   font-size:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
- .metric-panel{position:absolute;top:10px;right:10px;z-index:1000;background:#fff;
-   border:1px solid #ddd;border-radius:6px;padding:6px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
- .metric-panel button{display:block;width:100%;margin:2px 0;padding:6px 10px;border:1px solid #ccc;
-   background:#fff;cursor:pointer;border-radius:4px;text-align:left}
- .metric-panel button.active{background:#232a35;color:#fff;border-color:#232a35}
- .basemap-panel{position:absolute;top:10px;left:64px;z-index:1000;display:flex;gap:2px;background:#fff;
-   border:1px solid #ddd;border-radius:6px;padding:3px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
- .basemap-panel button{padding:4px 8px;border:1px solid transparent;background:#fff;cursor:pointer;border-radius:4px;font-size:12px}
- .basemap-panel button.active{background:#e8ecf1;border-color:#c8d0d8;font-weight:600}
+ footer{padding:8px 16px;background:var(--color-surface-2);border-top:1px solid var(--color-border);
+   color:var(--color-text-secondary);font-size:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
+ .metric-panel{position:absolute;top:10px;right:10px;z-index:1000;background:var(--color-surface);
+   border:1px solid var(--color-border);border-radius:var(--radius-md);padding:6px;
+   box-shadow:0 1px 4px var(--map-shadow)}
+ .metric-panel button{display:flex;align-items:center;gap:6px;width:100%;margin:2px 0;padding:6px 10px;
+   border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text-primary);
+   cursor:pointer;border-radius:var(--radius-sm);text-align:left}
+ .metric-panel button svg{width:14px;height:14px;flex:none}
+ .metric-panel button.active{background:var(--color-accent);color:var(--color-accent-on);border-color:var(--color-accent)}
+ .basemap-panel{position:absolute;top:10px;left:64px;z-index:1000;display:flex;gap:2px;
+   background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);
+   padding:3px;box-shadow:0 1px 4px var(--map-shadow)}
+ .basemap-panel button{padding:4px 8px;border:1px solid transparent;background:var(--color-surface);
+   color:var(--color-text-secondary);cursor:pointer;border-radius:var(--radius-sm);font-size:12px}
+ .basemap-panel button.active{background:var(--color-accent-bg);border-color:var(--color-accent-ring);
+   color:var(--color-text-primary);font-weight:600}
  @media (max-width:640px){ .basemap-panel{top:8px;left:56px} }
- .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 16px;background:#f5f6f8;border-bottom:1px solid #ddd}
- .filters input,.filters select{padding:4px 6px}
+ .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 16px;
+   background:var(--color-surface-2);border-bottom:1px solid var(--color-border)}
+ .filters input,.filters select{padding:4px 6px;background:var(--color-input-bg);
+   color:var(--color-text-primary);border:1px solid var(--color-border);border-radius:var(--radius-sm)}
+ .filters button{padding:4px 10px;background:var(--color-surface);color:var(--color-text-primary);
+   border:1px solid var(--color-border-strong);border-radius:var(--radius-sm);cursor:pointer}
+ .filters button:hover{border-color:var(--color-accent);color:var(--color-accent-hover)}
+ .filters label{color:var(--color-text-secondary)}
+ #theme-toggle{display:inline-flex;align-items:center;gap:4px}
+ #theme-toggle svg{width:14px;height:14px}
  .card{position:absolute;top:10px;bottom:10px;right:10px;width:320px;max-width:calc(100% - 20px);
-   background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.25);
-   z-index:1100;padding:12px;overflow-y:auto;display:none;box-sizing:border-box}
- .card .close{float:right;border:none;background:none;font-size:18px;cursor:pointer}
- .card img{width:100%;border-radius:6px;margin-bottom:8px}
- .card .muted{color:#666}
- .legend{position:absolute;bottom:10px;right:10px;z-index:1000;background:#fff;border:1px solid #ddd;
-   border-radius:6px;padding:6px 10px;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+   background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
+   box-shadow:0 2px 12px var(--map-shadow-lg);z-index:1100;padding:12px;overflow-y:auto;display:none;box-sizing:border-box}
+ .card .close{float:right;border:none;background:none;font-size:18px;cursor:pointer;color:var(--color-text-secondary)}
+ .card .close:hover{color:var(--color-danger)}
+ .card .close svg{width:16px;height:16px}
+ .card img{width:100%;border-radius:var(--radius-md);margin-bottom:8px}
+ .card .muted{color:var(--color-text-secondary)}
+ .card hr{border:none;border-top:1px solid var(--color-border)}
+ .card a{color:var(--color-accent-hover)}
+ .legend{position:absolute;bottom:10px;right:10px;z-index:1000;background:var(--color-surface);
+   border:1px solid var(--color-border);border-radius:var(--radius-md);padding:6px 10px;font-size:13px;
+   color:var(--color-text-primary);box-shadow:0 1px 4px var(--map-shadow)}
  .legend .head{cursor:pointer;user-select:none}
  .legend .body{margin-top:4px}
  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
- /* 7 диапазонов доходности (c0 — самый низкий, c6 — самый высокий) + серый без данных */
- .dot.c0{background:#b71c1c}.dot.c1{background:#d84315}.dot.c2{background:#ea7600}
- .dot.c3{background:#c79500}.dot.c4{background:#9e9d24}.dot.c5{background:#558b2f}.dot.c6{background:#1b5e20}
- .dot.gray{background:#9e9e9e}
+ /* 7 диапазонов доходности (c0 — самый низкий, c6 — самый высокий) + серый;
+    цвета — токены (dark-варианты перекрашиваются автоматически) */
+ .dot.c0{background:var(--map-bucket-0)}.dot.c1{background:var(--map-bucket-1)}
+ .dot.c2{background:var(--map-bucket-2)}.dot.c3{background:var(--map-bucket-3)}
+ .dot.c4{background:var(--map-bucket-4)}.dot.c5{background:var(--map-bucket-5)}
+ .dot.c6{background:var(--map-bucket-6)}.dot.gray{background:var(--map-bucket-gray)}
  .pin-wrap{transform:translate(-50%,-50%)} /* центровка метки любой ширины на точке */
- .pin{display:flex;align-items:center;justify-content:center;border-radius:17px;border:2px solid #fff;
-   box-shadow:0 1px 4px rgba(0,0,0,.4);font-size:12px;font-weight:600;color:#fff;white-space:nowrap;
+ .pin{display:flex;align-items:center;justify-content:center;border-radius:17px;
+   border:2px solid var(--map-pin-border);box-shadow:0 1px 4px var(--map-shadow);
+   font-size:12px;font-weight:600;white-space:nowrap;color:var(--map-bucket-fg);
    min-width:44px;height:30px;padding:0 10px;box-sizing:border-box}
- .pin.c0{background:#b71c1c}.pin.c1{background:#d84315}.pin.c2{background:#ea7600}
- .pin.c3{background:#c79500}.pin.c4{background:#9e9d24}.pin.c5{background:#558b2f}.pin.c6{background:#1b5e20}
- .pin.gray{background:#9e9e9e}
+ .pin.c0{background:var(--map-bucket-0)}.pin.c1{background:var(--map-bucket-1)}
+ .pin.c2{background:var(--map-bucket-2)}.pin.c3{background:var(--map-bucket-3)}
+ .pin.c4{background:var(--map-bucket-4)}.pin.c5{background:var(--map-bucket-5)}
+ .pin.c6{background:var(--map-bucket-6)}.pin.gray{background:var(--map-bucket-gray)}
+ /* яркие диапазоны (c2, c3) в тёмной теме — тёмный текст */
+ [data-theme="dark"] .pin.c2,[data-theme="dark"] .pin.c3{color:var(--map-bucket-fg-bright)}
+ @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pin.c2,
+   :root:not([data-theme="light"]) .pin.c3{color:var(--map-bucket-fg-bright)} }
  .cluster-pin{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;
-   border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);color:#fff;font-weight:700;box-sizing:border-box}
+   border:3px solid var(--map-pin-border);box-shadow:0 2px 6px var(--map-shadow);
+   color:var(--map-bucket-fg);font-weight:700;box-sizing:border-box}
  /* фон кластера — сплошной, по диапазону максимума доходности внутри */
- .cluster-pin.c0{background:#b71c1c}.cluster-pin.c1{background:#d84315}.cluster-pin.c2{background:#ea7600}
- .cluster-pin.c3{background:#c79500}.cluster-pin.c4{background:#9e9d24}
- .cluster-pin.c5{background:#558b2f}.cluster-pin.c6{background:#1b5e20}
- .cluster-pin.gray{background:#9e9e9e}
+ .cluster-pin.c0{background:var(--map-bucket-0)}.cluster-pin.c1{background:var(--map-bucket-1)}
+ .cluster-pin.c2{background:var(--map-bucket-2)}.cluster-pin.c3{background:var(--map-bucket-3)}
+ .cluster-pin.c4{background:var(--map-bucket-4)}.cluster-pin.c5{background:var(--map-bucket-5)}
+ .cluster-pin.c6{background:var(--map-bucket-6)}.cluster-pin.gray{background:var(--map-bucket-gray)}
+ [data-theme="dark"] .cluster-pin.c2,[data-theme="dark"] .cluster-pin.c3{color:var(--map-bucket-fg-bright)}
+ @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cluster-pin.c2,
+   :root:not([data-theme="light"]) .cluster-pin.c3{color:var(--map-bucket-fg-bright)} }
  .cluster-pin .n{font-size:16px;line-height:1.15}
  .cluster-pin .v{font-size:12px;font-weight:600;opacity:.95;line-height:1.1;max-width:92%;overflow:hidden}
  .leaflet-control-zoom a{width:44px !important;height:44px !important;line-height:44px !important;font-size:20px !important}
@@ -257,12 +297,13 @@ const pageHTML = `<!doctype html>
  <label><input id="f-hasroi" type="checkbox"> только с рентабельностью</label>
  <button id="f-apply">Применить</button>
  <button id="f-reset">Сброс</button>
+ <button id="theme-toggle" title="Тема: системная / светлая / тёмная" aria-label="Переключить тему"></button>
 </div>
 <div id="map">
  <div class="metric-panel" id="metric-panel">
-  <button data-metric="price">Цена</button>
-  <button data-metric="cost">Полная стоимость</button>
-  <button data-metric="yield">Доходность с мебелью</button>
+  <button data-metric="price"><i data-lucide="banknote"></i>Цена</button>
+  <button data-metric="cost"><i data-lucide="wallet"></i>Полная стоимость</button>
+  <button data-metric="yield"><i data-lucide="percent"></i>Доходность</button>
  </div>
  <div class="basemap-panel" id="basemap-panel">
   <button data-basemap="osm" title="OpenStreetMap стандартная">ОСМ</button>
@@ -283,6 +324,7 @@ const pageHTML = `<!doctype html>
 <script>window.MAP_THRESHOLDS = {{.Thresholds}};</script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 <script>
 {{template "mapjs" .}}
 </script>
