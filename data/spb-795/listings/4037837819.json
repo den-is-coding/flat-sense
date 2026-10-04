@@ -1,0 +1,464 @@
+{
+  "address": "Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.069907Z",
+  "floor": 10,
+  "floors_total": 25,
+  "geo": {
+    "addressLinks": {
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2349",
+        "text": "Юго-Западная"
+      }
+    },
+    "formattedAddress": "Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+    "geoReferences": [
+      {
+        "after": " 700 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "11–15 мин."
+        },
+        "colors": [
+          "#7F5528"
+        ],
+        "content": "Юго-Западная"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 4037837819,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.cEqwXba-3KP-9yao3GQ3RsX83qUC6tijAo29qQ4G11kP_t4.XS57BA7ZtgPQVYyt4oYLAEj1M3Fvbf0O4XDvjQBq7oE",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b40.img.avito.st/image/1/1.e38Zyba-15ZXYy2dY8xGDGdr1ZCrftOWqxm2nKeS3GymatU.XevBD7JeNr7zYd-tVT3aXqhgCrdDuAGSqWxwZAG3GXk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH_kZW501t98rZZvlnkYeJB_GB_1dRSUn4UVbJY.CT6jbmRlwk1xAkkZX42IN1-s9jAevI6CSDWrGGTAn1s",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.XWSuPra-8Y3glAuGmCciXpKe84scifWNHO6QhxBl-ncRnfM.F3Qkcqde65SpOCh1yy5tN1-y6owyjh7Tz13HQiZl23Q",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.dVai87a-2b_sWSO0xI4GCMpR27kQRN2_ECO4tRyo0kUdUNs.LFv0BATIED_5f_zWezq4wTFJJGg5lt-6E7A7w36Znqw",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.069907Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 357,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790868106000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "23 завершённых объявления",
+    "closestAddressId": 15023555,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+      "lat": "59.86301",
+      "lng": "30.22099",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "25 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,4 м², 10/25 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 25,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=2349",
+          "text": "Юго-Западная"
+        }
+      },
+      "formattedAddress": "Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+      "geoReferences": [
+        {
+          "after": " 700 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "11–15 мин."
+          },
+          "colors": [
+            "#7F5528"
+          ],
+          "content": "Юго-Западная"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 4037837819,
+    "images": [
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.cEqwXba-3KOm_X6i3GQ3RsX83qUC6tijAo29qQ5e3QEF_t4.F-nGgVitOxnnigoQPQYQyyEra3Ukmfdzse2fw4cj_js",
+        "236x236": "https://40.img.avito.st/image/1/1.cEqwXba-3KPe_Qai3GQ3RsX83qUC6tijAo29qQ4m3XkF_t4.If8yfOOaNkriuOLVJMZ8FseiDLOdKA14ap-fMfnGYco",
+        "318x318": "https://40.img.avito.st/image/1/1.cEqwXba-3KP6-iKl3GQ3RsX83qUC6tijAo29qQ4C2l0C_t4.RRuzsY1XRPknkPiLc6ePBnuud0f7dv0K-cGurCOrLTw",
+        "416x416": "https://40.img.avito.st/image/1/1.cEqwXba-3KPG-B6n3GQ3RsX83qUC6tijAo29qQ4-2GEA_t4.9LTy8q32bzjJcqp8tNo0avA7wfoyl3bZ9zdS8kRTZyo",
+        "472x472": "https://40.img.avito.st/image/1/1.cEqwXba-3KO2-W6m3GQ3RsX83qUC6tijAo29qQ5O2REB_t4.BEkWAPN9S8Yt0CY6bJZoGMA2ag16pnIczrOW5Pxf9lw",
+        "636x636": "https://40.img.avito.st/image/1/1.cEqwXba-3KP-9yao3GQ3RsX83qUC6tijAo29qQ4G11kP_t4.XS57BA7ZtgPQVYyt4oYLAEj1M3Fvbf0O4XDvjQBq7oE"
+      },
+      {
+        "208x208": "https://b40.img.avito.st/image/1/1.e38Zyba-15YPaXWXY8xGDGdr1ZCrftOWqxm2nKfK1jSsatU.ftSQSV6xIEaQXQCZd9z5p3ElVQJcsJrfTLex_cDhB20",
+        "236x236": "https://b40.img.avito.st/image/1/1.e38Zyba-15Z3aQ2XY8xGDGdr1ZCrftOWqxm2nKey1kysatU.GA8_WFftRAPDWXSj7oWoFba4o1tMZ7L1nduIx-48K60",
+        "318x318": "https://b40.img.avito.st/image/1/1.e38Zyba-15ZTbimQY8xGDGdr1ZCrftOWqxm2nKeW0WiratU.SguEWGV6JRQF9wkoG3KvLiYdPl-kBQ0wRUr_GAyBVGY",
+        "416x416": "https://b40.img.avito.st/image/1/1.e38Zyba-15ZvbBWSY8xGDGdr1ZCrftOWqxm2nKeq01SpatU.ZMjywwZ5mvawXmL6WiRAdSsHmEgED6tUjnpjFy5p5-w",
+        "472x472": "https://b40.img.avito.st/image/1/1.e38Zyba-15YfbWWTY8xGDGdr1ZCrftOWqxm2nKfa0iSoatU.-ymXHx3ohk0tVK2uKFOX4xmvAGgw7K7EGHJ7XByAg8g",
+        "636x636": "https://b40.img.avito.st/image/1/1.e38Zyba-15ZXYy2dY8xGDGdr1ZCrftOWqxm2nKeS3GymatU.XevBD7JeNr7zYd-tVT3aXqhgCrdDuAGSqWxwZAG3GXk"
+      },
+      {
+        "208x208": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH-8bzZ-1t98rZZvlnkYeJB_GB_1dRTMld0fbJY.jMxzaMLUzDLr1ZMTmFW2S4MrmNkm9cKyWNYsxSsSxfk",
+        "236x236": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH_Eb05-1t98rZZvlnkYeJB_GB_1dRS0laUfbJY.6aGDxZvYNpIQ48rTXXpylO7lepTS0gTWmmr9j4TKYLo",
+        "318x318": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH_gaGp51t98rZZvlnkYeJB_GB_1dRSQkoEYbJY.4XLZmLodt9myhZKtQR9-j5AjcIR5Ec1BZI2UKUEo80Q",
+        "416x416": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH_calZ71t98rZZvlnkYeJB_GB_1dRSskL0abJY.dqbVg2aotzRRdDZD4dUtaMcfaFZD9yuVsjoIeaGDVTY",
+        "472x472": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH-sayZ61t98rZZvlnkYeJB_GB_1dRTckc0bbJY.znRh3vX5Psvz6310AEh7ujFi3WXNdYEevMJOKtfKB-0",
+        "636x636": "https://c60.img.avito.st/image/1/1.OJaqz7a-lH_kZW501t98rZZvlnkYeJB_GB_1dRSUn4UVbJY.CT6jbmRlwk1xAkkZX42IN1-s9jAevI6CSDWrGGTAn1s"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.XWSuPra-8Y24nlOMmCciXpKe84scifWNHO6QhxA98C8bnfM.YIE0ry2eCVac4A4ndGJYPxjzOBdfpxHHZIhzG9Gnd5s",
+        "236x236": "https://50.img.avito.st/image/1/1.XWSuPra-8Y3AniuMmCciXpKe84scifWNHO6QhxBF8FcbnfM.sY8K2oCeByqDa6kL9gnEfOxudkeCBERbdUyRENPuBv0",
+        "318x318": "https://50.img.avito.st/image/1/1.XWSuPra-8Y3kmQ-LmCciXpKe84scifWNHO6QhxBh93McnfM.uT5IxqWp7dv-r30Ta8hrfK16T6mU39CwB2jh3MY2hM4",
+        "416x416": "https://50.img.avito.st/image/1/1.XWSuPra-8Y3YmzOJmCciXpKe84scifWNHO6QhxBd9U8enfM.dVHL8EpTBzbQO1h4koHBAcxpWdR-8qxjdeyf2LfmS8E",
+        "472x472": "https://50.img.avito.st/image/1/1.XWSuPra-8Y2omkOImCciXpKe84scifWNHO6QhxAt9D8fnfM.lH_JpGr8sxqXbQALbBs5L3vBrg3dt9dxK1R_e9rUkZM",
+        "636x636": "https://50.img.avito.st/image/1/1.XWSuPra-8Y3glAuGmCciXpKe84scifWNHO6QhxBl-ncRnfM.F3Qkcqde65SpOCh1yy5tN1-y6owyjh7Tz13HQiZl23Q"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.dVai87a-2b-0U3u-xI4GCMpR27kQRN2_ECO4tRzw2B0XUNs.WbejA6crkvxr22tw98BXkXunZRMwdkcknifjzCgWjQ0",
+        "236x236": "https://50.img.avito.st/image/1/1.dVai87a-2b_MUwO-xI4GCMpR27kQRN2_ECO4tRyI2GUXUNs.yCe-DYLHgc2LZXa_KiM7w47XwxH3wfn60_5vQqExH1U",
+        "318x318": "https://50.img.avito.st/image/1/1.dVai87a-2b_oVCe5xI4GCMpR27kQRN2_ECO4tRys30EQUNs.SbdGBzNREmB0voXMU8vHkfEGcwemyOMzmLmM4GyEDsc",
+        "416x416": "https://50.img.avito.st/image/1/1.dVai87a-2b_UVhu7xI4GCMpR27kQRN2_ECO4tRyQ3X0SUNs._jew340i8nc6K-yqx7QT4_KOpxuRP7sBRgE9oTXAS2w",
+        "472x472": "https://50.img.avito.st/image/1/1.dVai87a-2b-kV2u6xI4GCMpR27kQRN2_ECO4tRzg3A0TUNs.Wp0PywtgacFn0r8oPx0hF5nyrY34wZj1yZHwXZPY620",
+        "636x636": "https://50.img.avito.st/image/1/1.dVai87a-2b_sWSO0xI4GCMpR27kQRN2_ECO4tRyo0kUdUNs.LFv0BATIED_5f_zWezq4wTFJJGg5lt-6E7A7w36Znqw"
+      }
+    ],
+    "imagesCount": 25,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 4037837819
+            },
+            "relative": "3 дня назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "description": "Продаётся студия 22.4 м2. Метро «юго-западная» в 5 минутах (пешком). Во дворе школа, детский сад. Квартира находится в ипотеке (сбер), два собственника, альтернативная продажа.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+              "geoReferences": [
+                {
+                  "after": " 700 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "11–15 мин."
+                  },
+                  "colors": [
+                    "#7F5528"
+                  ],
+                  "content": "Юго-Западная"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 4037837819,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "357 143 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4037837819
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,4 м², 10/25 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,4 м², 10/25 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "357 143 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "357 143 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790868106000,
+    "title": "Квартира-студия, 22,4 м², 10/25 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Красносельский район, муниципальный округ Юго-Запад, жилой комплекс Морская миля",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,4 м², 10/25 эт.",
+  "total_area": 22.4,
+  "updated_at": "2026-10-03T11:32:50.069907Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_224_m_1025_et._4037837819?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

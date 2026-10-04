@@ -1,0 +1,645 @@
+{
+  "address": "Верхне-Каменская ул., 5",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.219572Z",
+  "floor": 7,
+  "floors_total": 25,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/verhne-kamenskaya_ul_5/12265092?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 5"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+        "text": "Комендантский проспект"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/verhne-kamenskaya_ulitsa/3431-ASgBAgECA0SSA8YQ5geMUujIE841AUXcBxoidmVyaG5lLWthbWVuc2theWFfdWxpdHNhIg",
+        "text": "Верхне-Каменская ул."
+      }
+    },
+    "formattedAddress": "Верхне-Каменская ул., 5",
+    "geoReferences": [
+      {
+        "after": " 4 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Комендантский проспект"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,2 · 25 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8362866284,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh5_mlgVIRRxqiuQoBiDh6Yeg-DDFI9rqeSOk6A.aiJemLwlOeleKt8C81N9qJtmoYqlp9IqMTgOKa5-CcU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.7SeKJra-Qc7EjLvF3BWPepCGQ8g4kUXOOPYgxDR9SjQ1hUM.ebFyHB54Y5MEA5ioks5KyAbyOepu7FuWLSbRyizC9cQ",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.nC2-lba-MMTwP8rPivfrEaI1MsIMIjTEDEVRzgDOOz4BNjI.wJW2VK_5UF-xwkBwu3t3x31rIhMrHe-RxBZ5Ynwq3o0",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b40.img.avito.st/image/1/1.-haO27a-Vv_Acaz09sDjSpR7VPk8bFL_PAs39TCAXQUxeFQ.FOoQQj7urf2zwc7sctjHxmRK1rFoV81jrC-baHQt7Bo",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.YgS-27a-zu3wcTTm9s5yWKR7zOsMbMrtDAuv5wCAxRcBeMw.XXmW7tFLW_gylInPWHzcMhbr6WFlWNji3B5-ces6UHU",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:34:23.219572Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 317,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788871778000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "87242 завершённых объявления",
+    "closestAddressId": 12265092,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Верхне-Каменская ул., 5",
+      "lat": "60.036928",
+      "lng": "30.215365",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "25 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 25,2 м², 7/25 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 25,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/verhne-kamenskaya_ul_5/12265092?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 5"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+          "text": "Комендантский проспект"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/verhne-kamenskaya_ulitsa/3431-ASgBAgECA0SSA8YQ5geMUujIE841AUXcBxoidmVyaG5lLWthbWVuc2theWFfdWxpdHNhIg",
+          "text": "Верхне-Каменская ул."
+        }
+      },
+      "formattedAddress": "Верхне-Каменская ул., 5",
+      "geoReferences": [
+        {
+          "after": " 4 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Комендантский проспект"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,2 · 25 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8362866284,
+    "images": [
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh4nkAAfIRRxqiuQoBiDh6Yeg-DDFI8zo7yEk6A.vT2JQiXBNNohxctTwEMMCo-paVHu9UEZi-CAgOqM2JU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh5fkHgfIRRxqiuQoBiDh6Yeg-DDFI9Lo8SEk6A.fMA3b55MjmZEv3jwEeM_sRZLiT_Rj7rsOgu-fnnlA9U?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh57l1wYIRRxqiuQoBiDh6Yeg-DDFI9vpOCDk6A.NOL5OPRkKOOdFMfe7FtTFa0Wz30iNsZxR3RdIBGA2O8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh5HlWAaIRRxqiuQoBiDh6Yeg-DDFI9TptyBk6A.CeFrScHToRST8bun4EN1ZbDjIKWdf3-MJOPCmD7wTLQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh43lBAbIRRxqiuQoBiDh6Yeg-DDFI8jp6yAk6A.JpYp9tvzi62vyKz1hDuqyqLFjp6IqVmO3QCQ3Tx_P5Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.DvcxMLa-oh5_mlgVIRRxqiuQoBiDh6Yeg-DDFI9rqeSOk6A.aiJemLwlOeleKt8C81N9qJtmoYqlp9IqMTgOKa5-CcU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.7SeKJra-Qc6chuPP3BWPepCGQ8g4kUXOOPYgxDQlQGw_hUM.nFBpcZZmaLtW35upWdt6qb5rd8OtHih0SaUSIypCnCk",
+        "236x236": "https://50.img.avito.st/image/1/1.7SeKJra-Qc7khpvP3BWPepCGQ8g4kUXOOPYgxDRdQBQ_hUM.hpnJevAXc3lMmB-fC5sN-9ZVIUrZCOpeemsLn8doHSc",
+        "318x318": "https://50.img.avito.st/image/1/1.7SeKJra-Qc7Agb_I3BWPepCGQ8g4kUXOOPYgxDR5RzA4hUM.nG405cQ4_CH8q-qhJsAAGlkbbJZCBs1DYLmpu7JOK-Y",
+        "416x416": "https://50.img.avito.st/image/1/1.7SeKJra-Qc78g4PK3BWPepCGQ8g4kUXOOPYgxDRFRQw6hUM.Z6NIfOUCvB4bxsC3rap3FL8BsFf2TTakkpOVogqONkk",
+        "472x472": "https://50.img.avito.st/image/1/1.7SeKJra-Qc6MgvPL3BWPepCGQ8g4kUXOOPYgxDQ1RHw7hUM.OBiWUayt2bCBlgwW3RYtwsz43vc2p4fbrbhZbS1hr34",
+        "636x636": "https://50.img.avito.st/image/1/1.7SeKJra-Qc7EjLvF3BWPepCGQ8g4kUXOOPYgxDR9SjQ1hUM.ebFyHB54Y5MEA5ioks5KyAbyOepu7FuWLSbRyizC9cQ"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.nC2-lba-MMSoNZLFivfrEaI1MsIMIjTEDEVRzgCWMWYLNjI.FI2vOtbRewDX30pQdYxSZThvbdiXQhn8gxPLEzA5u3s",
+        "236x236": "https://80.img.avito.st/image/1/1.nC2-lba-MMTQNerFivfrEaI1MsIMIjTEDEVRzgDuMR4LNjI.Pwo1LegXuOCKoEWXcMcVE8zMGrpKpdgMEn3LmCAsDoY",
+        "318x318": "https://80.img.avito.st/image/1/1.nC2-lba-MMT0Ms7CivfrEaI1MsIMIjTEDEVRzgDKNjoMNjI.vyBFCoYibedjO4ZKx4OJBRLRKdX-MFvUiJS2NPEgzSo",
+        "416x416": "https://80.img.avito.st/image/1/1.nC2-lba-MMTIMPLAivfrEaI1MsIMIjTEDEVRzgD2NAYONjI.vFUPsvkfPuo2uBGZY-TnCzM7Oltxw5UvubyKM7hYaec",
+        "472x472": "https://80.img.avito.st/image/1/1.nC2-lba-MMS4MYLBivfrEaI1MsIMIjTEDEVRzgCGNXYPNjI.EwzFj5fC3HbmsQeP3yBkHZJGHvxyJp8gCmxtSoReTDQ",
+        "636x636": "https://80.img.avito.st/image/1/1.nC2-lba-MMTwP8rPivfrEaI1MsIMIjTEDEVRzgDOOz4BNjI.wJW2VK_5UF-xwkBwu3t3x31rIhMrHe-RxBZ5Ynwq3o0"
+      },
+      {
+        "208x208": "https://b40.img.avito.st/image/1/1.-haO27a-Vv-Ye_T-9sDjSpR7VPk8bFL_PAs39TDYV107eFQ.Trv-HOksg6hMnqLCkgz3-dy5F00cLLwsJCi6x4h5DOY",
+        "236x236": "https://b40.img.avito.st/image/1/1.-haO27a-Vv_ge4z-9sDjSpR7VPk8bFL_PAs39TCgVyU7eFQ.5HSV2-tzz_6dT_Gj7p3rd42cedUOOq73GDTCqyv3IC8",
+        "318x318": "https://b40.img.avito.st/image/1/1.-haO27a-Vv_EfKj59sDjSpR7VPk8bFL_PAs39TCEUAE8eFQ.aHUwQolm5zLDNnXqEArvZQTLl3hbuHw7iqBf8x2DyMk",
+        "416x416": "https://b40.img.avito.st/image/1/1.-haO27a-Vv_4fpT79sDjSpR7VPk8bFL_PAs39TC4Uj0-eFQ.er9OQBRj68Vq-JSUavA3iFwzVxGNJymJQlqPhtSj-_c",
+        "472x472": "https://b40.img.avito.st/image/1/1.-haO27a-Vv-If-T69sDjSpR7VPk8bFL_PAs39TDIU00_eFQ.7uGCg9LZz4qidn3v-qZDUh5fsEN_c_ibULfIj3-usVo",
+        "636x636": "https://b40.img.avito.st/image/1/1.-haO27a-Vv_Acaz09sDjSpR7VPk8bFL_PAs39TCAXQUxeFQ.FOoQQj7urf2zwc7sctjHxmRK1rFoV81jrC-baHQt7Bo"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.YgS-27a-zu2oe2zs9s5yWKR7zOsMbMrtDAuv5wDYz08LeMw.MQfWDZt0Fn3W3UA_6XADxwuCEU5Nvq7lRPi1Md37hxo",
+        "236x236": "https://80.img.avito.st/image/1/1.YgS-27a-zu3QexTs9s5yWKR7zOsMbMrtDAuv5wCgzzcLeMw.s7rIcmroLzMjrjfJ1rQC8fhOWZDh9_ck34InDeEEKxo",
+        "318x318": "https://80.img.avito.st/image/1/1.YgS-27a-zu30fDDr9s5yWKR7zOsMbMrtDAuv5wCEyBMMeMw.SEgAPnnE1J8cDiM37aFQ73eBUczlzET_SvlBrmvJDFI",
+        "416x416": "https://80.img.avito.st/image/1/1.YgS-27a-zu3Ifgzp9s5yWKR7zOsMbMrtDAuv5wC4yi8OeMw.jsX62tTY4Yy_XNZJg8BXt7KpBiUeDgOTznfNz3bzsAw",
+        "472x472": "https://80.img.avito.st/image/1/1.YgS-27a-zu24f3zo9s5yWKR7zOsMbMrtDAuv5wDIy18PeMw.x4yGSkxJg8IAEEygu1GFkou5JvW_Q9HeM-rmkNKxW0k",
+        "636x636": "https://80.img.avito.st/image/1/1.YgS-27a-zu3wcTTm9s5yWKR7zOsMbMrtDAuv5wCAxRcBeMw.XXmW7tFLW_gylInPWHzcMhbr6WFlWNji3B5-ces6UHU"
+      }
+    ],
+    "imagesCount": 25,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "antiPyramid",
+                  "rightEdgeStyle": "flag"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8362866284
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8362866284
+            },
+            "relative": "2 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "description": "Продаётся уютная студия 25,2 м² в ЖК «Чистое небо» от Setl Group у станции метро Комендантский проспект.\n\nО квартире:\n\nПродаётся светлая студия площадью 25,2 м² в жилом комплексе «Чистое небо» от Setl Group.\n\nПланировка продуманная и функциональная:\n\n* общая площадь — 25,2 м²;\n* жилая зона — 17,9 м²;\n* 7 этаж из 26;\n* застеклённая лоджия;\n* окна выходят во двор;\n* предусмотрена возможность парковки(наземный+подземный паркинг).\n\nКвартира отлично подойдёт как для собственного проживания, так и в качестве объекта для сдачи в аренду.\n\nМебель частично остаётся — комплектация обсуждается с собственником.\n\nО документах и собственнике:\n\n*1 собственник.\n*без обременений.\n\nО доме и жилом комплексе:\n\n«Чистое небо» — масштабный жилой комплекс комфорт-класса от Setl Group в Приморском районе Санкт-Петербурга.\n\nВ проекте предусмотрены:\n\n* современные монолитные дома;\n* благоустроенные дворовые территории;\n* игровые и спортивные площадки;\n* пешеходные пространства для прогулок;\n* детские сады и школа;\n* наземные и подземные паркинги.\n\nО транспортной доступности:\n\nЖК расположен в Приморском районе Санкт-Петербурга, в районе Комендантского проспекта.\n\nДо станции метро «Комендантский проспект» — около 10-15 минут на транспорте.\nДля автомобилистов удобный выезд в сторону Кад и Зсд, что позволяет быстрее добираться в разные районы города.\n\nОб инфраструктуре:\n\nВ шаговой доступности школы и детские сады, продуктовые магазины, пункты выдачи маркетплейсов.\nВ 5 минутах на машине прордуктовые и строительные гипермаркеты, тренажёрные залы.\nВ 10-15 минутах на машине торговый центр Атмосфера и Лео Молл.\n\nХороший вариант для тех, кто ищет современную студию в развитом жилом комплексе, хочет жить в спокойной части Приморского района и при этом иметь удобный доступ к метро и основным транспортным магистралям.\n\nЗвоните или пишите — расскажу подробнее о квартире и договоримся о просмотре.\n\nНомер в базе: 13979237.\nКод пользователя: 208105.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Верхне-Каменская ул., 5",
+              "geoReferences": [
+                {
+                  "after": " 4 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Комендантский проспект"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8362866284,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "TF0cKEJu0m1V8vlN"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "317 460 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8362866284
+            },
+            "seo": {
+              "title": "Квартира-студия, 25,2 м², 7/25 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 25,2 м², 7/25 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/spbetagi?src=search_seller_info\u0026iid=8362866284",
+              "title": "Этажи Санкт-Петербург"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "87242 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8362866284
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "317 460 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "317 460 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,2 · 25 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789817561000,
+    "title": "Квартира-студия, 25,2 м², 7/25 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Верхне-Каменская ул., 5",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Этажи Санкт-Петербург",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/spbetagi?src=search_seller_info\u0026iid=8362866284"
+  },
+  "seller_name": "Этажи Санкт-Петербург",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/spbetagi?src=search_seller_info\u0026iid=8362866284",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 25,2 м², 7/25 эт.",
+  "total_area": 25.2,
+  "updated_at": "2026-10-03T11:34:23.219572Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_252_m_725_et._8362866284?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJURjBjS0VKdTBtMVY4dmxOIjt9K0PnUj8AAAA",
+  "views_count": null,
+  "year_built": null
+}

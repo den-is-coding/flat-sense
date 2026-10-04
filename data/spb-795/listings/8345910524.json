@@ -1,0 +1,628 @@
+{
+  "address": "Пр-т Авиаконструкторов, 63",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.198185Z",
+  "floor": 6,
+  "floors_total": 13,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/pr-t_aviakonstruktorov_63/21118152?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 63"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+        "text": "Комендантский проспект"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_aviakonstruktorov/4783-ASgBAgECA0SSA8YQ5geMUujIE95KAUXcBxwicHJvc3Bla3RfYXZpYWtvbnN0cnVrdG9yb3Yi",
+        "text": "пр-т Авиаконструкторов"
+      }
+    },
+    "formattedAddress": "Пр-т Авиаконструкторов, 63",
+    "geoReferences": [
+      {
+        "after": " 4,1 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Комендантский проспект"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 25 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8345910524,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwnSJeUC9p2ewZovHQ8uOBsJLl9-AyLUFPMjLB0.VC_A9iB6oxBoulF6_JAaf_vwCs3I1xHBZkOcayE2vzg",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.9xF2r7a-W_g4BaHzFIyjNXAPWf7EGF_4xH868sj0UALJDFk.koK4oPrP0wgngscZ7zkNNtZqgu2Xj3xmS7s-1JhAvTk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c60.img.avito.st/image/1/1.-Axus7a-VOUgGa7uEpiDLGgTVuPcBFDl3GM179DoXx_REFY.3h9rVwkwhmeV1SkuyHblTWEMemztas3jRemPRfngulQ",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.fxF2Wra-0_g48CnzBHt_MnD60f7E7df4xIqy8sgB2ALJ-dE.OLSI-jSC5G6g7cZrkWQh91nKR1KKTN9kNghXAqzGeMs",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.M7Q6rra-n110BGVWUIoDljwOnVuIGZtdiH7-V4T1lKeFDZ0.aV6aeB4V2JkhdFInBlE7of-h00I1FS7UkTYRVb7vioo",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:37:13.033532Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7980000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 980 000",
+    "stringWithoutDiscount": null,
+    "value": 7980000,
+    "wasLowered": false
+  },
+  "price_per_unit": 351,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790768091000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "25026 завершённых объявлений",
+    "closestAddressId": 21118152,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, пр-т Авиаконструкторов, 63",
+      "lat": "60.034416",
+      "lng": "30.20754",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "28 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,7 м², 6/13 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 28,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/pr-t_aviakonstruktorov_63/21118152?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 63"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+          "text": "Комендантский проспект"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_aviakonstruktorov/4783-ASgBAgECA0SSA8YQ5geMUujIE95KAUXcBxwicHJvc3Bla3RfYXZpYWtvbnN0cnVrdG9yb3Yi",
+          "text": "пр-т Авиаконструкторов"
+        }
+      },
+      "formattedAddress": "Пр-т Авиаконструкторов, 63",
+      "geoReferences": [
+        {
+          "after": " 4,1 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Комендантский проспект"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,5 · 25 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8345910524,
+    "images": [
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwmKL70I9p2ewZovHQ8uOBsJLl9-AyKMHqspLB0.0Xe8Zy1qWus1guO2rVZdSW3PVp5WRQMPG-kHTUhkjXQ",
+        "236x236": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwnyL8UI9p2ewZovHQ8uOBsJLl9-AyL0HtMpLB0.VLJCTfTeMC47Y_2wCs8I4v3OvpDsx1rKTaWU4f2TPb8",
+        "318x318": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwnWKOEP9p2ewZovHQ8uOBsJLl9-AyLQGfcuLB0.weGIPdL0yufLWUXzhM47mZN06cbAAsr7iWiwREpRt5s",
+        "416x416": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwnqKt0N9p2ewZovHQ8uOBsJLl9-AyLsG8ssLB0.6kYtzCnT0qy-KdhlZDEPM1jNFEoAmuK11ovnuTtDMf4",
+        "472x472": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwmaK60M9p2ewZovHQ8uOBsJLl9-AyKcGrstLB0.lop0vu8ZTGln5nTaH6Dl3NlR0PqqbWfFdN5XJyJiSo4",
+        "636x636": "https://70.img.avito.st/image/1/1.s-Ccj7a-HwnSJeUC9p2ewZovHQ8uOBsJLl9-AyLUFPMjLB0.VC_A9iB6oxBoulF6_JAaf_vwCs3I1xHBZkOcayE2vzg"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.9xF2r7a-W_hgD_n5FIyjNXAPWf7EGF_4xH868sisWlrDDFk.dBwBvK4WJ5UU71P8pej2kvnNsQriburt8HffN_4pTcE",
+        "236x236": "https://60.img.avito.st/image/1/1.9xF2r7a-W_gYD4H5FIyjNXAPWf7EGF_4xH868sjUWiLDDFk.5HPU6d19EfT1H-IK4RVL1nUIjmkg3JOIf9eVPk56G-8",
+        "318x318": "https://60.img.avito.st/image/1/1.9xF2r7a-W_g8CKX-FIyjNXAPWf7EGF_4xH868sjwXQbEDFk.m5L4OlmgXvqdeWLrZEJZOlQUL1jJkHcBvt69w2bs6ck",
+        "416x416": "https://60.img.avito.st/image/1/1.9xF2r7a-W_gACpn8FIyjNXAPWf7EGF_4xH868sjMXzrGDFk.ZEN7db8q8BBaOz4xuXIicZj5EsuR4i-CKS38qQfgIxE",
+        "472x472": "https://60.img.avito.st/image/1/1.9xF2r7a-W_hwC-n9FIyjNXAPWf7EGF_4xH868si8XkrHDFk.NdXSSnyQhcjroMue2rncnULAxMNWlIDOupa9EEwEzt0",
+        "636x636": "https://60.img.avito.st/image/1/1.9xF2r7a-W_g4BaHzFIyjNXAPWf7EGF_4xH868sj0UALJDFk.koK4oPrP0wgngscZ7zkNNtZqgu2Xj3xmS7s-1JhAvTk"
+      },
+      {
+        "208x208": "https://c60.img.avito.st/image/1/1.-Axus7a-VOV4E_bkEpiDLGgTVuPcBFDl3GM179CwVUfbEFY.jGy0lYqR1-Au6cB-tIb-v4S_jfuw2Ir__hxyw6yLs60",
+        "236x236": "https://c60.img.avito.st/image/1/1.-Axus7a-VOUAE47kEpiDLGgTVuPcBFDl3GM179DIVT_bEFY.slgksIJhwgosV5EsYlm5e2vnmziK51HP8MsG626YYG4",
+        "318x318": "https://c60.img.avito.st/image/1/1.-Axus7a-VOUkFKrjEpiDLGgTVuPcBFDl3GM179DsUhvcEFY.5Q1f7nObzl8IX3EOOETtPQMui1BA_7PyVuX7QHeFgG0",
+        "416x416": "https://c60.img.avito.st/image/1/1.-Axus7a-VOUYFpbhEpiDLGgTVuPcBFDl3GM179DQUCfeEFY.KSYzoeHPkoLG82GirG9h8LlMu6e8aPNbV339GVyuhr4",
+        "472x472": "https://c60.img.avito.st/image/1/1.-Axus7a-VOVoF-bgEpiDLGgTVuPcBFDl3GM179CgUVffEFY.l1244mxQFQoMX03bIpCH4Fgy7IdRMNh4opJHpsoF-MU",
+        "636x636": "https://c60.img.avito.st/image/1/1.-Axus7a-VOUgGa7uEpiDLGgTVuPcBFDl3GM179DoXx_REFY.3h9rVwkwhmeV1SkuyHblTWEMemztas3jRemPRfngulQ"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.fxF2Wra-0_hg-nH5BHt_MnD60f7E7df4xIqy8shZ0lrD-dE.FG4IwM9KTSUrvNfbR9b6XV7TT7nc29_2Jr7Lp_5CwEQ",
+        "236x236": "https://60.img.avito.st/image/1/1.fxF2Wra-0_gY-gn5BHt_MnD60f7E7df4xIqy8sgh0iLD-dE.uL9_ZDm_5Dr3g7bWWS2me8w6aL0_MgXHRCjPjtqj5L4",
+        "318x318": "https://60.img.avito.st/image/1/1.fxF2Wra-0_g8_S3-BHt_MnD60f7E7df4xIqy8sgF1QbE-dE.8jNWFdRFN25JvBwlC4Uu-8PDvKFZxVoQDX7Pv_p94lk",
+        "416x416": "https://60.img.avito.st/image/1/1.fxF2Wra-0_gA_xH8BHt_MnD60f7E7df4xIqy8sg51zrG-dE.ICTlP0DNwSOtvmXlQR4qL71F1-etgm_U0wxhVAJYU3k",
+        "472x472": "https://60.img.avito.st/image/1/1.fxF2Wra-0_hw_mH9BHt_MnD60f7E7df4xIqy8shJ1krH-dE.sDc-D2PEA9OO97waU0JTf8M5WJ8YAAmyL3bcNoxqNkE",
+        "636x636": "https://60.img.avito.st/image/1/1.fxF2Wra-0_g48CnzBHt_MnD60f7E7df4xIqy8sgB2ALJ-dE.OLSI-jSC5G6g7cZrkWQh91nKR1KKTN9kNghXAqzGeMs"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.M7Q6rra-n10sDj1cUIoDljwOnVuIGZtdiH7-V4Stnv-PDZ0.d1LsmW7_xu58jSEjsALuEOsEDL4arba7sWC5_lZWsEg",
+        "236x236": "https://90.img.avito.st/image/1/1.M7Q6rra-n11UDkVcUIoDljwOnVuIGZtdiH7-V4TVnoePDZ0.SH6WNgzAwSpEWzdZL4Fv4IkBzQAakzyzwrub_DJL-5s",
+        "318x318": "https://90.img.avito.st/image/1/1.M7Q6rra-n11wCWFbUIoDljwOnVuIGZtdiH7-V4TxmaOIDZ0.KjyHb90w92CnN3amccGqevbuK-vbRcm0G5lPtpPOk6E",
+        "416x416": "https://90.img.avito.st/image/1/1.M7Q6rra-n11MC11ZUIoDljwOnVuIGZtdiH7-V4TNm5-KDZ0.FJ3y82CVnKm7LyXSBqFjfVHQsQ1HfYjnGrwhbxaVE1M",
+        "472x472": "https://90.img.avito.st/image/1/1.M7Q6rra-n108Ci1YUIoDljwOnVuIGZtdiH7-V4S9mu-LDZ0.PqSLrfoSuz1GAgKK7wIAawu3ArnyiFZbIvQehlE6yho",
+        "636x636": "https://90.img.avito.st/image/1/1.M7Q6rra-n110BGVWUIoDljwOnVuIGZtdiH7-V4T1lKeFDZ0.aV6aeB4V2JkhdFInBlE7of-h00I1FS7UkTYRVb7vioo"
+      }
+    ],
+    "imagesCount": 28,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8345910524
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8345910524
+            },
+            "relative": "3 дня назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "description": "Код объекта: 2368522.\n\nКлючевое преимущество.\nСовременная студия в доме 2024 года на проспекте Авиаконструкторов — компактный и функциональный вариант: 22,7 м² с изолированной зоной комнаты 14,2 м² и полноценной кухней 5 м². Окна во двор и балкон создают ощущение уюта и тишины в городской среде.\n\nПланировка и ощущения пространства.\nПланировка продумана так, чтобы каждые метры работали на комфорт: высота потолков 2,7 м добавляет объёма, изолированная жилая зона даёт приватность, а балкон расширяет функциональность — зона для утреннего кофе или хранения. Общая площадь легко обустраивается под рабочее место, зону отдыха и компактную кухню.\n\nРемонт и готовность к проживанию.\nЕвроремонт — современная отделка, аккуратные поверхности и сантехника в совмещённом санузле. Квартира готова к заезду сразу после сделки: минимальные вложения на ваш вкус и мебель. Центральное отопление обеспечивает стабильный микроклимат.\n\nДом, безопасность и эксплуатация.\nКирпично-монолитный каркас и монолитные перекрытия — прочная конструкция и хорошие звукоизоляционные характеристики. Дом 13-этажный, квартира на 6 этаже: комфортная высота без лишних подъёмов. Огороженная территория повышает безопасность и порядок на придомовой территории.\n\nЛокация и инфраструктура.\nАдрес — проспект Авиаконструкторов, 63: расположение на крупном проспекте обеспечивает доступ к городской инфраструктуре и удобную логистику по городу. Окна во двор — меньше уличного шума, больше спокойствия для жизни и работы.\n\nДействие.\nДокументы готовы к сделке. Покажу в удобное для вас время, оперативное сопровождение продажи и профессиональная консультация по ипотеке.\n\nМы гарантируем безопасную сделку и юридическую поддержку нашим Клиентам. Поможем одобрить ипотеку с сниженной ставкой.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пр-т Авиаконструкторов, 63",
+              "geoReferences": [
+                {
+                  "after": " 4,1 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Комендантский проспект"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8345910524,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "xgrz06C7DT84jZeE"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "351 542 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 980 000",
+              "stringWithoutDiscount": null,
+              "value": 7980000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8345910524
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,7 м², 6/13 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,7 м², 6/13 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i4009544?src=search_seller_info\u0026iid=8345910524",
+              "title": "Владис"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "25026 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8345910524
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "351 542 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,98 млн",
+      "fullString": "7 980 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "351 542 ₽ за м²",
+      "postfix": "",
+      "string": "7 980 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7980000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 25 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790768091000,
+    "title": "Квартира-студия, 22,7 м², 6/13 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, пр-т Авиаконструкторов, 63",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Владис",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i4009544?src=search_seller_info\u0026iid=8345910524"
+  },
+  "seller_name": "Владис",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i4009544?src=search_seller_info\u0026iid=8345910524",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,7 м², 6/13 эт.",
+  "total_area": 22.7,
+  "updated_at": "2026-10-03T11:37:13.033532Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_613_et._8345910524?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "views_count": null,
+  "year_built": null
+}

@@ -1,0 +1,611 @@
+{
+  "address": "Кондратьевский пр-т, 68к4",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:22:40.04321Z",
+  "floor": 9,
+  "floors_total": 24,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/kondratevskiy_pr-t_68k4/102338?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 68к4"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=190",
+        "text": "Площадь Мужества"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/kondratevskiy_prospekt/7371-ASgBAgECA0SSA8YQ5geMUujIE5ZzAUXcBxgia29uZHJhdGV2c2tpeV9wcm9zcGVrdCI",
+        "text": "Кондратьевский пр-т"
+      }
+    },
+    "formattedAddress": "Кондратьевский пр-т, 68к4",
+    "geoReferences": [
+      {
+        "after": " 2,3 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Площадь Мужества"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 52 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8000520171,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.MfnP6ba-nRCBQ2cboa139PtJnxZ9XpkQfTn8GnGylupwSp8.WECQAkvXR-MR1vNPqJPNG9Iyg-rHimnjyO6X_F1LRxQ",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.rhnupLa-AvCgDvj7vu6JGNoEAPZcEwbwXHRj-lD_CQpRBwA.0EU3Q8GYCzlBNWTfU9kgIfSqNQsBXEOizIqpKt8SK8Q",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.NNWZaba-mDzXw2I3_REv2a3Jmjor3pw8K7n5Nicyk8Ymypo.8-QdTFt6j-KkQl2AfL-fVheN5hXQ8fGqUPlr_yeJauA",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.6ZLxNra-RXu_nL9wr0n3nsWWR31DgUF7Q-YkcU9tToFOlUc.U90EWYAOK8iCDqGp3hXDWvre1Mlaq-uJpWNztPOmFYE",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c60.img.avito.st/image/1/1.5Xl75La-SZA1TrObPZPPeE9ES5bJU02QyTQomsW_QmrER0s.Qb9rYuTLPGQUyz0Emsnw7xkdxoOC2xp9jGLFr3-EuBA",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:22:40.04321Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 285,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789285985000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "1838 завершённых объявлений",
+    "closestAddressId": 102338,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Кондратьевский проспект, 68к4",
+      "lat": "59.98498620498305",
+      "lng": "30.39547434223245",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "15 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 28 м², 9/24 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 15,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/kondratevskiy_pr-t_68k4/102338?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 68к4"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=190",
+          "text": "Площадь Мужества"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/kondratevskiy_prospekt/7371-ASgBAgECA0SSA8YQ5geMUujIE5ZzAUXcBxgia29uZHJhdGV2c2tpeV9wcm9zcGVrdCI",
+          "text": "Кондратьевский пр-т"
+        }
+      },
+      "formattedAddress": "Кондратьевский пр-т, 68к4",
+      "geoReferences": [
+        {
+          "after": " 2,3 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Площадь Мужества"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,6 · 52 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8000520171,
+    "images": [
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.MfnP6ba-nRDZST8Roa139PtJnxZ9XpkQfTn8GnHqnLJ6Sp8.bhtJ8-fFMhSZYk5kXCPhE8RAWcrlYWsG5rS0bA9CvJI",
+        "236x236": "https://60.img.avito.st/image/1/1.MfnP6ba-nRChSUcRoa139PtJnxZ9XpkQfTn8GnGSnMp6Sp8.0bnMqQiTedv-K0Lyh7iTqK-6rQ-vHS64ag0JptlW8-4",
+        "318x318": "https://60.img.avito.st/image/1/1.MfnP6ba-nRCFTmMWoa139PtJnxZ9XpkQfTn8GnG2m-59Sp8.U2ANKU_pZEAPiAOl-Ro4ZeLPj7abHq3U7pfr88kgzXE",
+        "416x416": "https://60.img.avito.st/image/1/1.MfnP6ba-nRC5TF8Uoa139PtJnxZ9XpkQfTn8GnGKmdJ_Sp8.-Nyc9R3VHyhJnX2rnpMTvOxwbS89fcJNkRF1Bas7n94",
+        "472x472": "https://60.img.avito.st/image/1/1.MfnP6ba-nRDJTS8Voa139PtJnxZ9XpkQfTn8GnH6mKJ-Sp8.2XZJ6o2rWwU1yCJSxi2u2oE_zX2CZsWi34PJdae-HCs",
+        "636x636": "https://60.img.avito.st/image/1/1.MfnP6ba-nRCBQ2cboa139PtJnxZ9XpkQfTn8GnGylupwSp8.WECQAkvXR-MR1vNPqJPNG9Iyg-rHimnjyO6X_F1LRxQ"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.rhnupLa-AvD4BKDxvu6JGNoEAPZcEwbwXHRj-lCnA1JbBwA.OtzZUfs0o5oX6QQhjG7q82-d7Oh_uY0yvZDfGzOGxpk",
+        "236x236": "https://60.img.avito.st/image/1/1.rhnupLa-AvCABNjxvu6JGNoEAPZcEwbwXHRj-lDfAypbBwA.e06WKi8B3CcM05I65OvKMdlSlPw749bTjOUrrMK0aEc",
+        "318x318": "https://60.img.avito.st/image/1/1.rhnupLa-AvCkA_z2vu6JGNoEAPZcEwbwXHRj-lD7BA5cBwA.UqnOJM6rZzmQyBvhlE6fzzeou9JJAGv6g8LVY6ct1R8",
+        "416x416": "https://60.img.avito.st/image/1/1.rhnupLa-AvCYAcD0vu6JGNoEAPZcEwbwXHRj-lDHBjJeBwA.qyyE9RQdAsFVW5FMLzAq6f9Iuhn2GLAddDtjZ04cw2M",
+        "472x472": "https://60.img.avito.st/image/1/1.rhnupLa-AvDoALD1vu6JGNoEAPZcEwbwXHRj-lC3B0JfBwA.0bvz-Lw-9a-JRNRuJGOAi6fvL3sL_96jFgg5TmBNKvM",
+        "636x636": "https://60.img.avito.st/image/1/1.rhnupLa-AvCgDvj7vu6JGNoEAPZcEwbwXHRj-lD_CQpRBwA.0EU3Q8GYCzlBNWTfU9kgIfSqNQsBXEOizIqpKt8SK8Q"
+      },
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.NNWZaba-mDyPyTo9_REv2a3Jmjor3pw8K7n5NidqmZ4sypo.UKygbIDMNZozvgj6iBdBKylO8Vz5gi5bCgY3SmDkc3k",
+        "236x236": "https://70.img.avito.st/image/1/1.NNWZaba-mDz3yUI9_REv2a3Jmjor3pw8K7n5NicSmeYsypo.7EpOXB88YJnyHKE9jpKV1VguPdDFNSbVI2_i11l_UDE",
+        "318x318": "https://70.img.avito.st/image/1/1.NNWZaba-mDzTzmY6_REv2a3Jmjor3pw8K7n5Nic2nsIrypo.naOe86KI2PLuBMi5GF_iculR1Jeu_Yzyvwh4KOT7Hyo",
+        "416x416": "https://70.img.avito.st/image/1/1.NNWZaba-mDzvzFo4_REv2a3Jmjor3pw8K7n5NicKnP4pypo.b9S3stzDtxssScjsowDAGU2v3VH1dzb9DcSDzKk_jsg",
+        "472x472": "https://70.img.avito.st/image/1/1.NNWZaba-mDyfzSo5_REv2a3Jmjor3pw8K7n5Nid6nY4oypo.Hlwe_q74xtIz2OaQUtvZyV-nR6mcb0fMeX3fEbzg8RM",
+        "636x636": "https://70.img.avito.st/image/1/1.NNWZaba-mDzXw2I3_REv2a3Jmjor3pw8K7n5Nicyk8Ymypo.8-QdTFt6j-KkQl2AfL-fVheN5hXQ8fGqUPlr_yeJauA"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.6ZLxNra-RXvnlud6r0n3nsWWR31DgUF7Q-YkcU81RNlElUc.E_qE9YvqnBZnlC9Tzm9aMYQByKzxsEiO1VwVYnw7qjU",
+        "236x236": "https://90.img.avito.st/image/1/1.6ZLxNra-RXuflp96r0n3nsWWR31DgUF7Q-YkcU9NRKFElUc.OYYT42pFpzqxzsp87LsDOQD8BCauPtgAu93pCWZ7p2A",
+        "318x318": "https://90.img.avito.st/image/1/1.6ZLxNra-RXu7kbt9r0n3nsWWR31DgUF7Q-YkcU9pQ4VDlUc.nVaGLereil5MlybgglfrFYUgl4-hexPKeaOUwABC4aA",
+        "416x416": "https://90.img.avito.st/image/1/1.6ZLxNra-RXuHk4d_r0n3nsWWR31DgUF7Q-YkcU9VQblBlUc.oZVcSnjMo9fm3Y8MEw3u35ODFd8O6jq0mLxwsOerBbA",
+        "472x472": "https://90.img.avito.st/image/1/1.6ZLxNra-RXv3kvd-r0n3nsWWR31DgUF7Q-YkcU8lQMlAlUc.yxeqyp2ZKkTOSRbSEhyDJPZ1XI7Jq2QMXN4dCp6T1B0",
+        "636x636": "https://90.img.avito.st/image/1/1.6ZLxNra-RXu_nL9wr0n3nsWWR31DgUF7Q-YkcU9tToFOlUc.U90EWYAOK8iCDqGp3hXDWvre1Mlaq-uJpWNztPOmFYE"
+      },
+      {
+        "208x208": "https://c60.img.avito.st/image/1/1.5Xl75La-SZBtROuRPZPPeE9ES5bJU02QyTQomsXnSDLOR0s.FBnozVuG-XX2aGpu45-bigICb9ONHFZ_xQWcgfvB7Yo",
+        "236x236": "https://c60.img.avito.st/image/1/1.5Xl75La-SZAVRJORPZPPeE9ES5bJU02QyTQomsWfSErOR0s.-2f1gYIs83ja3W2jUEkbh8UGYKSjLLu4ZKq-Nzub1c8",
+        "318x318": "https://c60.img.avito.st/image/1/1.5Xl75La-SZAxQ7eWPZPPeE9ES5bJU02QyTQomsW7T27JR0s.ZH0xhY098-Xy58hP9GfOIikCgrsF2ElmaTd-OI_LOnA",
+        "416x416": "https://c60.img.avito.st/image/1/1.5Xl75La-SZANQYuUPZPPeE9ES5bJU02QyTQomsWHTVLLR0s.PgJ46nQP8tngZK3bdKwuuq3EPty9mgbfVyamsQaCem8",
+        "472x472": "https://c60.img.avito.st/image/1/1.5Xl75La-SZB9QPuVPZPPeE9ES5bJU02QyTQomsX3TCLKR0s.lsT57WKslfA3AnDRUSJ12zPSJTmCmvY8myulKVAX_MY",
+        "636x636": "https://c60.img.avito.st/image/1/1.5Xl75La-SZA1TrObPZPPeE9ES5bJU02QyTQomsW_QmrER0s.Qb9rYuTLPGQUyz0Emsnw7xkdxoOC2xp9jGLFr3-EuBA"
+      }
+    ],
+    "imagesCount": 15,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8000520171
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8000520171
+            },
+            "relative": "2 недели назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "description": "Студия 30 м² с ремонтом и мебелью в ЖК Полюстрово Парк.\n\nОписание планировки: Просторная студия 30 м² с продуманной планировкой: жилая зона 18,2 м², выделенная кухня с техникой, ниши для хранения, уютная лоджия 6,7 м² с видом во двор. Есть отдельная прихожая 3,8 м² и совмещённый санузел 4,1 м². Квартира с качественной готовой отделкой — можно заехать и жить сразу.\n\nЛокация: Санкт-Петербург, Кондратьевский проспект, дом 68, корпус 4. Район с развитой транспортной доступностью, рядом станции метро, удобный выезд на Кад и центр города. Тихий двор без шума магистралей.\n\nИнфраструктура: Во дворе — современные детские площадки и зоны отдыха. В шаговой доступности: супермаркеты, кофейни, школы, детские сады и фитнес-центры. Рядом зелёные зоны для прогулок и спорта.\n\nДля кого квартира?\nИдеальный вариант для студентов, молодого специалиста, пары или инвестора. Студия отлично подойдёт как для комфортного проживания, так и для сдачи в аренду.\n\nУсловия продажи: Прямая продажа. Один взрослый собственник. Квартира без обременений, с мебелью и техникой. Полный комплект документов готов к сделке.\n\nНе упустите шанс купить просторную студию с ремонтом в обжитом районе Петербурга!\n\nЗвоните и записывайтесь на просмотр уже сегодня!",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Кондратьевский пр-т, 68к4",
+              "geoReferences": [
+                {
+                  "after": " 2,3 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Площадь Мужества"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8000520171,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "72wDuihfDnwh9fla"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "285 357 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8000520171
+            },
+            "seo": {
+              "title": "Квартира-студия, 28 м², 9/24 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 28 м², 9/24 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/status-realt?src=search_seller_info\u0026iid=8000520171",
+              "title": "Агентство недвижимости «Статус»"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "1838 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8000520171
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "285 357 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "285 357 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 52 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789285985000,
+    "title": "Квартира-студия, 28 м², 9/24 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Кондратьевский проспект, 68к4",
+      "link": "/brands/status-realt?page_from=from_items_list_icon\u0026iid=8000520171",
+      "slug": null,
+      "src": "https://40.img.avito.st/image/1/1.UjN8vra66NpKH3zaVNtZCqId-Nzsnf7YwD_82MoJ_A.DjSVwEja-a_t6rQzAX7NJFSDzz4mNAlBttJzhn703pc"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Агентство недвижимости «Статус»",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/status-realt?src=search_seller_info\u0026iid=8000520171"
+  },
+  "seller_name": "Агентство недвижимости «Статус»",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/status-realt?src=search_seller_info\u0026iid=8000520171",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 28 м², 9/24 эт.",
+  "total_area": 28,
+  "updated_at": "2026-10-03T11:22:40.04321Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_28_m_924_et._8000520171?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "views_count": null,
+  "year_built": null
+}

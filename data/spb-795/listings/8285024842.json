@@ -1,0 +1,576 @@
+{
+  "address": "Репищева ул., 10к1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:22:40.040275Z",
+  "floor": 2,
+  "floors_total": 16,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/repischeva_ul_10k1/160049?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 10к1"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+        "text": "Комендантский проспект"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/repischeva_ulitsa/2050-ASgBAgECA0SSA8YQ5geMUujIE4QgAUXcBxMicmVwaXNjaGV2YV91bGl0c2Ei",
+        "text": "Репищева ул."
+      }
+    },
+    "formattedAddress": "Репищева ул., 10к1",
+    "geoReferences": [
+      {
+        "after": " 1,8 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "21–30 мин."
+        },
+        "colors": [
+          "#702785"
+        ],
+        "content": "Комендантский проспект"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,7 · 20 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8285024842,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.j8SvBba-Iy3hr9kmvWPU0b-lISsdsictHdVCJxFeKNcQpiE.SVYXtq-jRmnSSQ-OHeLaL8sd5Qn1nQRB5OLFhYitnxo",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.ZKqx3La-yEP_djJI9Y0B86B8ykUDa8xDAwypSQ-Hw7kOf8o.-E3oAEHH4RBQJR7Jg2Tyw6ezIfzjdIVL_I9vCxm-Q_k",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.h4APFba-K2lBv9FiDRe56R61KW-9oi9pvcVKY7FOIJOwtik.YMrPrer9s3ejhWc2YexmpEimdBxrAaqiJ7VPuHED-a8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.nJh2jLa-MHE4Jsp6Qvb782csMnfEOzRxxFxRe8jXO4vJLzI.gUCG0JeRC_QLCDXYSNqT0XhXEFAvNWEGyKBPR8f35d0",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.qB9t1La-BPYjfv79MbbURnx0BvDfYwD23wRl_NOPDwzSdwY.f7-lYg-Lz323gKxYEE_8gpDpnzg8aHHInp7d1lOsmGg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:22:40.040275Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7999999,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 999 999",
+    "stringWithoutDiscount": null,
+    "value": 7999999,
+    "wasLowered": false
+  },
+  "price_per_unit": 307,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790680561000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "Нет завершённых объявлений",
+    "closestAddressId": 160049,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Репищева улица, 10к1",
+      "lat": "60.020979",
+      "lng": "30.279504",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "17 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 26 м², 2/16 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 17,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/repischeva_ul_10k1/160049?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 10к1"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=168",
+          "text": "Комендантский проспект"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/repischeva_ulitsa/2050-ASgBAgECA0SSA8YQ5geMUujIE4QgAUXcBxMicmVwaXNjaGV2YV91bGl0c2Ei",
+          "text": "Репищева ул."
+        }
+      },
+      "formattedAddress": "Репищева ул., 10к1",
+      "geoReferences": [
+        {
+          "after": " 1,8 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "21–30 мин."
+          },
+          "colors": [
+            "#702785"
+          ],
+          "content": "Комендантский проспект"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,7 · 20 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8285024842,
+    "images": [
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.j8SvBba-Iy25pYEsvWPU0b-lISsdsictHdVCJxEGIo8apiE.YwRtVf9qMKZB4M7xq6ZwJBARtMBzXIxzgSeNL_8yXXo",
+        "236x236": "https://90.img.avito.st/image/1/1.j8SvBba-Iy3BpfksvWPU0b-lISsdsictHdVCJxF-IvcapiE.lSlebwZGlMvoBdjuSOKBeYcLi8PEgSyK4Pp500rnTds",
+        "318x318": "https://90.img.avito.st/image/1/1.j8SvBba-Iy3lot0rvWPU0b-lISsdsictHdVCJxFaJdMdpiE._D_YWcrHQ3Lrmdn7fTPpHlUPZV9N7l09D8RyaUz-BT8",
+        "416x416": "https://90.img.avito.st/image/1/1.j8SvBba-Iy3ZoOEpvWPU0b-lISsdsictHdVCJxFmJ-8fpiE.1eM1UvbGZQCFhibnUSTgfcCe9mZRblyX9tVInYDYNf0",
+        "472x472": "https://90.img.avito.st/image/1/1.j8SvBba-Iy2poZEovWPU0b-lISsdsictHdVCJxEWJp8epiE.uej1CROHYJ6k87LCI0k0mvU-xUdQzjtjZco03qLtBuU",
+        "636x636": "https://90.img.avito.st/image/1/1.j8SvBba-Iy3hr9kmvWPU0b-lISsdsictHdVCJxFeKNcQpiE.SVYXtq-jRmnSSQ-OHeLaL8sd5Qn1nQRB5OLFhYitnxo"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.ZKqx3La-yEOnfGpC9Y0B86B8ykUDa8xDAwypSQ_fyeEEf8o.iv25ulmaKOC1bOi43F9vKfZiXozcduw6-6kxgVbkYsM",
+        "236x236": "https://90.img.avito.st/image/1/1.ZKqx3La-yEPffBJC9Y0B86B8ykUDa8xDAwypSQ-nyZkEf8o.45teDw0tuadB7l16sgTY_wYwC1BS1pSyXTFrwgALipQ",
+        "318x318": "https://90.img.avito.st/image/1/1.ZKqx3La-yEP7ezZF9Y0B86B8ykUDa8xDAwypSQ-Dzr0Df8o.nk68oSCYxrsligmCJLZ4AXoBL3xOXI_FrxYltgCccA4",
+        "416x416": "https://90.img.avito.st/image/1/1.ZKqx3La-yEPHeQpH9Y0B86B8ykUDa8xDAwypSQ-_zIEBf8o.OEkOm476VD45Ynda9E5-lrTML1Z6hEPPi538XMt3VD4",
+        "472x472": "https://90.img.avito.st/image/1/1.ZKqx3La-yEO3eHpG9Y0B86B8ykUDa8xDAwypSQ_PzfEAf8o.ByJ6llXHNBjN2Qojc9m201ssbfCdUnSsxwF1CHb6tUU",
+        "636x636": "https://90.img.avito.st/image/1/1.ZKqx3La-yEP_djJI9Y0B86B8ykUDa8xDAwypSQ-Hw7kOf8o.-E3oAEHH4RBQJR7Jg2Tyw6ezIfzjdIVL_I9vCxm-Q_k"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.h4APFba-K2kZtYloDRe56R61KW-9oi9pvcVKY7EWKsu6tik.FRVvlaoQvsTB4QcYyUH6e5Li_7TzvzF8fxkijIXeQPo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.h4APFba-K2lhtfFoDRe56R61KW-9oi9pvcVKY7FuKrO6tik.ilUiOYhg7w33zl4cdjGVneBRKt7nf-FwS-PEBZBM2MQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.h4APFba-K2lFstVvDRe56R61KW-9oi9pvcVKY7FKLZe9tik.dpmHqWvLsOzZOmBPb6T2scgh-3gXmYuiye-89zQcJOU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.h4APFba-K2l5sOltDRe56R61KW-9oi9pvcVKY7F2L6u_tik.4zxFDiMFJfoDrNfhWvthX7NHj-f1jylBsJJlFx0PKSQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.h4APFba-K2kJsZlsDRe56R61KW-9oi9pvcVKY7EGLtu-tik.8HwsgJEQOrbG-1uPJvg-gxDVRMTocqFhthxMypmxH48?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.h4APFba-K2lBv9FiDRe56R61KW-9oi9pvcVKY7FOIJOwtik.YMrPrer9s3ejhWc2YexmpEimdBxrAaqiJ7VPuHED-a8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.nJh2jLa-MHFgLJJwQvb782csMnfEOzRxxFxRe8iPMdPDLzI.qCf6vz-aGJMoLIuy8Qj2WxPNoTADUgP7Bi09Db1-3H0",
+        "236x236": "https://50.img.avito.st/image/1/1.nJh2jLa-MHEYLOpwQvb782csMnfEOzRxxFxRe8j3MavDLzI.CGzCJSAgyV_72Ecrds8Bl5q2jj890cOmhYzYpKhMAE8",
+        "318x318": "https://50.img.avito.st/image/1/1.nJh2jLa-MHE8K853Qvb782csMnfEOzRxxFxRe8jTNo_ELzI.7TngrP1ET3ycVrgC3RKXdMxaelTMxzSQrbGLstY02zI",
+        "416x416": "https://50.img.avito.st/image/1/1.nJh2jLa-MHEAKfJ1Qvb782csMnfEOzRxxFxRe8jvNLPGLzI.8awqOvJmR2bXOzyKCe1wNt7MBCpFbeNdsRsRmHNBmQw",
+        "472x472": "https://50.img.avito.st/image/1/1.nJh2jLa-MHFwKIJ0Qvb782csMnfEOzRxxFxRe8ifNcPHLzI.KHP2phMb_1KqlwK3nAtZF5n3sTM0tJ1W6zGDAy5-RcQ",
+        "636x636": "https://50.img.avito.st/image/1/1.nJh2jLa-MHE4Jsp6Qvb782csMnfEOzRxxFxRe8jXO4vJLzI.gUCG0JeRC_QLCDXYSNqT0XhXEFAvNWEGyKBPR8f35d0"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.qB9t1La-BPZ7dKb3MbbURnx0BvDfYwD23wRl_NPXBVTYdwY.Z28jt3-NUO7MuGLG7Pmcq_iZsmMa2Ri8cRPGwmV-7cM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.qB9t1La-BPYDdN73MbbURnx0BvDfYwD23wRl_NOvBSzYdwY.hEhHK0vXHrTqHyegJye4sdFYb9Lkmi3-dvb-d01Akb8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.qB9t1La-BPYnc_rwMbbURnx0BvDfYwD23wRl_NOLAgjfdwY.L3Zof1f9R7OilrXgEm5s3AYp2CoZtTwWzU6OrLFMDxo?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.qB9t1La-BPYbccbyMbbURnx0BvDfYwD23wRl_NO3ADTddwY.X_C9ev3u5nOksScd307Dgi1_LxOw73wI13l-b6y2TME?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.qB9t1La-BPZrcLbzMbbURnx0BvDfYwD23wRl_NPHAUTcdwY.XJiKE-HfMZXLXVtC0MqcHCD-Lte_1Z24jgfPirkbmWQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.qB9t1La-BPYjfv79MbbURnx0BvDfYwD23wRl_NOPDwzSdwY.f7-lYg-Lz323gKxYEE_8gpDpnzg8aHHInp7d1lOsmGg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 17,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#02D15C",
+                    "valueDark": "#04C454"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              },
+              {
+                "id": 39,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Собственник",
+                "version": 2
+              },
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "antiPyramid",
+                  "rightEdgeStyle": "flag"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8285024842
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8285024842
+            },
+            "relative": "7 дней назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "description": "Продаю Свою квартиру студию.\nПокупалась у застройщика, более 5 лет в собственности. Смены собственника не было, все документы и разрешения на руках, небольшой остаток по ипотеке в сбере, без просрочек. Прямая продажа без встречки и ожидания.\nДом комфорт класса, закрытая территория, детские и спортивные площадки, закрытый двор, охрана, что обеспечит безопасное и спокойное проживание без рекламщиков и посторонних лиц, нет очереди у лифта по утрам, кафе и магазины прямо во дворе.\nБлижайшие станции метро— «Комендантский проспект», «Пионерская» и «Удельная». До любой из них около 25–30 минут пешком или 10–15 минут на общественном транспорте, остановка автобуса. Выезд на кад 15 минут, до центра 25 минут на авто. Рядом есть пвз, больница, школа, детские сады, пакр, торговый центр.\n\nВ квартире постарались максимально эргономично использовать пространство:\n\nвыделена зона кухни, функциональной перегородкой, утеплен балкон, в зоне уложена кафельная плитка, кухня с варочной поверхностью и местами хранения, остается холодильник и вся кухонная мебель.\n\nВ зоне гостинной есть места хранения, тв зона, доп спальное место( остается по согласованию).\n\nВ зоне спальни кровать с подьемным механизмом 160*200 см, огромное место для храния в кровати, что является большим плюсом для квартиры студии.\n\nБалкон утеплен, застеклен, уложена плитка. Можно использовать, как место для сушки белья, храния вещеи или для отдыха в теплое время года.\n\nВ санузле душевой бокс выполнен из плитки, установлена сантехника, полотенцесушитель, большое зеркало, выведены дополнительные розетки, есть полочки и крючки, для хранения мелочей.\n\nВ прихожей установлен стеллаж и вешалка, сможете дополнить шкафом или пуфом.\n\nКвартира имеет счетчики на свет, воду, а так же индивидульный счетчик на отопление, что существенно сэкономит бюджет, если не любите платить за отключенные батареи.\n\nВся квартира в светлых тонах, легко может быть дополнена яркими акцентами на ваше усмотрение. Практически, вся мебель и техника остается в квартире, можно заезжать сразу и не беспокоиться, что нужно довести свое гнездышко до идеала. В подарок для вас, будет произведен клининг перед передачей ключей.\n\nВ помощи риелтеров не нуждаюсь. Торг только при просмотре.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Репищева ул., 10к1",
+              "geoReferences": [
+                {
+                  "after": " 1,8 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "21–30 мин."
+                  },
+                  "colors": [
+                    "#702785"
+                  ],
+                  "content": "Комендантский проспект"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8285024842,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "72wDuihfDnwh9fla"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "307 692 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 999 999",
+              "stringWithoutDiscount": null,
+              "value": 7999999,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285024842
+            },
+            "seo": {
+              "title": "Квартира-студия, 26 м², 2/16 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 26 м², 2/16 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "307 692 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "7 999 999 ₽",
+      "hasValue": true,
+      "normalizedPrice": "307 692 ₽ за м²",
+      "postfix": "",
+      "string": "7 999 999",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7999999,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,7 · 20 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790680561000,
+    "title": "Квартира-студия, 26 м², 2/16 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Репищева улица, 10к1",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 26 м², 2/16 эт.",
+  "total_area": 26,
+  "updated_at": "2026-10-03T11:22:40.040275Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_26_m_216_et._8285024842?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "views_count": null,
+  "year_built": null
+}

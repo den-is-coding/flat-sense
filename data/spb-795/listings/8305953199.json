@@ -1,0 +1,461 @@
+{
+  "address": "Гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:41:09.296084Z",
+  "floor": 6,
+  "floors_total": 12,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/bolshaya_baltiyskaya_ul_10k3/97504672?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " корп. 3"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/bolshaya_baltiyskaya_ulitsa/188233-ASgBAgECA0SSA8YQ5geOUujIE5L9FgFF3AcdImJvbHNoYXlhX2JhbHRpeXNrYXlhX3VsaXRzYSI",
+        "text": "гп Новоселье, ул. Большая Балтийская, д. 10"
+      }
+    },
+    "formattedAddress": "Гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+    "geoReferences": []
+  },
+  "house_type": null,
+  "id": 8305953199,
+  "image_count": 3,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://00.img.avito.st/image/1/1.PcoUaLa6kSNawmsoYlh4rRLIkyOs0WsoWsKTIaLVkw.N-axzKmwzsulcLFEwgC_bvBArDKkr_ThGh03SzPUpKs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.Q6c-Pba6705wlxVFNCADxzid7U6GhBVFcJftTIiA7Q.ExUzkRZeOgVzsFrP342ykEnsdaG2DNiEeO5JsJ9-JMg",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.A20Or7a6r4RABVWPBPtKCggPrYS2FlWPQAWthrgSrQ.TDPUoHyDNNkv7rVj8Bv3TxLfDqrcXSWj4QRxI75mha0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:41:09.296084Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7974416,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 974 416",
+    "stringWithoutDiscount": null,
+    "value": 7974416,
+    "wasLowered": false
+  },
+  "price_per_unit": 256,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790608140000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "858433 завершённых объявления",
+    "closestAddressId": 97504672,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": false,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+      "lat": "59.80825",
+      "lng": "30.05735",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 4216757,
+    "developmentName": "ЖК «ЛесART» (ЛесАРТ)",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "3 фотографии",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 31,1 м², 6/12 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 3,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/bolshaya_baltiyskaya_ul_10k3/97504672?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " корп. 3"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/novostroyka/street/bolshaya_baltiyskaya_ulitsa/188233-ASgBAgECA0SSA8YQ5geOUujIE5L9FgFF3AcdImJvbHNoYXlhX2JhbHRpeXNrYXlhX3VsaXRzYSI",
+          "text": "гп Новоселье, ул. Большая Балтийская, д. 10"
+        }
+      },
+      "formattedAddress": "Гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+      "geoReferences": []
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8305953199,
+    "images": [
+      {
+        "208x208": "https://00.img.avito.st/image/1/1.PcoUaLa6kSMCyDMiYlh4rRLIkyOs0TMiAsiTIaLVkw.4r4JK97pcPYl-rgEdHWUGwrnQ6qt4KhX8b5EtHe1-6k?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://00.img.avito.st/image/1/1.PcoUaLa6kSN6yEsiYlh4rRLIkyOs0UsiesiTIaLVkw.CdbjgJFn6lymPilF54JPuxPfDHu5Fy1hAh52BkN4ezk?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://00.img.avito.st/image/1/1.PcoUaLa6kSNez28lYlh4rRLIkyOs0W8lXs-TIaLVkw.BgKgig9qDrGvgAliK2p98WLfKrM0f-LfQpDJ9qHw6NQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://00.img.avito.st/image/1/1.PcoUaLa6kSNizVMnYlh4rRLIkyOs0VMnYs2TIaLVkw.vig-A1Mi9AxYZybHCc1B1P9_1oFJ_y1MC2JZHGHM9xY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://00.img.avito.st/image/1/1.PcoUaLa6kSMSzCMmYlh4rRLIkyOs0SMmEsyTIaLVkw.8W4t-3XXi-X7x43xYXpyQhemC8TcAw7jA-yJonbUXWw?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://00.img.avito.st/image/1/1.PcoUaLa6kSNawmsoYlh4rRLIkyOs0WsoWsKTIaLVkw.N-axzKmwzsulcLFEwgC_bvBArDKkr_ThGh03SzPUpKs?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.Q6c-Pba6704onU1PNCADxzid7U6GhE1PKJ3tTIiA7Q.WZhofD7G1EiU3c5Q-jx7emvI3xkH1zBFXaooBCdImcI",
+        "236x236": "https://50.img.avito.st/image/1/1.Q6c-Pba6705QnTVPNCADxzid7U6GhDVPUJ3tTIiA7Q.A-lh6Z2qoT8LF2yrm20cqwxVUZzwjlAms_xBhcpqEzM",
+        "318x318": "https://50.img.avito.st/image/1/1.Q6c-Pba67050mhFINCADxzid7U6GhBFIdJrtTIiA7Q.d-OgD_Vj7zLK01BZXAWVkJ11l_pK2e5J0gJ81j_7EtA",
+        "416x416": "https://50.img.avito.st/image/1/1.Q6c-Pba6705ImC1KNCADxzid7U6GhC1KSJjtTIiA7Q.QULpydjF0PTAd_mdYmChrH9fkmGvxmQg2JhWR_PLnig",
+        "472x472": "https://50.img.avito.st/image/1/1.Q6c-Pba67044mV1LNCADxzid7U6GhF1LOJntTIiA7Q.HJ5DjfmYM6B82YG0IE7pzJvBKAhdTnYZGvbVHFshoE0",
+        "636x636": "https://50.img.avito.st/image/1/1.Q6c-Pba6705wlxVFNCADxzid7U6GhBVFcJftTIiA7Q.ExUzkRZeOgVzsFrP342ykEnsdaG2DNiEeO5JsJ9-JMg"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.A20Or7a6r4QYDw2FBPtKCggPrYS2Fg2FGA-thrgSrQ.8s033z_q52KERgYeUJF8G7pxjNHHiLR_yokjZXD6HRI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://30.img.avito.st/image/1/1.A20Or7a6r4RgD3WFBPtKCggPrYS2FnWFYA-thrgSrQ.OZCRt0rdJJIr1rr12BtdJ66aNOYbHgmO9PS3W7rsB08?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://30.img.avito.st/image/1/1.A20Or7a6r4RECFGCBPtKCggPrYS2FlGCRAithrgSrQ.HKBV5XvvtJ-UalO1DlqrPI51-Ny0FLLmVyxgoMey-E8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://30.img.avito.st/image/1/1.A20Or7a6r4R4Cm2ABPtKCggPrYS2Fm2AeAqthrgSrQ.tJrtdJ3D02wvx2FjMZ7KWOP2R6ySeL-GOlxuWsjZlHY?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://30.img.avito.st/image/1/1.A20Or7a6r4QICx2BBPtKCggPrYS2Fh2BCAuthrgSrQ.k4ld8uMf86B3LQOMQhcYb-7z3qjhHgdnUXw6udI4mqQ?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://30.img.avito.st/image/1/1.A20Or7a6r4RABVWPBPtKCggPrYS2FlWPQAWthrgSrQ.TDPUoHyDNNkv7rVj8Bv3TxLfDqrcXSWj4QRxI75mha0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      }
+    ],
+    "imagesCount": 3,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8305953199
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "description": "Номер квартиры: 28.\n\nЭтаж: 6.\n\nПлощадь: 31.05.\n\nКорпус: Дом 3 (3 этап). Жилой комплекс «лесart» представляет собой проект из пяти домов комфорт-класса, окруженный лесом и малоэтажной застройкой. Комплекс предлагает квартиры с разнообразными планировками — от студий до четырехкомнатных, площадью от 21,11 до 114,6 кв. М. Все квартиры сдаются с чистовой отделкой и отделкой whitebox. В каждой квартире предусмотрена система «Умного дома» для управления освещением, мультимедиа и климат-контролем.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "developmentInfo": {
+              "developmentId": 4216757,
+              "href": "https://zhk-lesart-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFAAL__YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjQyMTY3NTc7fc7ORbZAAAAA",
+              "name": "ЖК «ЛесART» (ЛесАРТ)",
+              "pageNumber": 7
+            },
+            "rating": {
+              "formattedValue": {
+                "attributes": {},
+                "text": "4,5 · 37 отзывов",
+                "version": 1
+              },
+              "showChevronEnd": false,
+              "type": "rating"
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+              "geoReferences": [],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8305953199,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "X9dGX88g4NDJ2Td9"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "256 412 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 974 416",
+              "stringWithoutDiscount": null,
+              "value": 7974416,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8305953199
+            },
+            "seo": {
+              "title": "Квартира-студия, 31,1 м², 6/12 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 31,1 м², 6/12 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "256 412 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,97 млн",
+      "fullString": "7 974 416 ₽",
+      "hasValue": true,
+      "normalizedPrice": "256 412 ₽ за м²",
+      "postfix": "",
+      "string": "7 974 416",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7974416,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 37 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790608140000,
+    "title": "Квартира-студия, 31,1 м², 6/12 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "гп Новоселье, ул. Большая Балтийская, д. 10, корп. 3",
+      "link": "/brands/i306257956?page_from=from_items_list_icon\u0026iid=8305953199",
+      "slug": null,
+      "src": "https://static.avito.ru/stub_avatars/D/6_128x128.png"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 31,1 м², 6/12 эт.",
+  "total_area": 31.1,
+  "updated_at": "2026-10-03T11:41:09.296084Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_311_m_612_et._8305953199?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJYOWRHWDg4ZzROREoyVGQ5Ijt9bEI26D8AAAA",
+  "views_count": null,
+  "year_built": null
+}

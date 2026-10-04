@@ -1,0 +1,510 @@
+{
+  "address": "Пос. Шушары, территория Детскосельский, Колпинское ш., 129",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:34:23.195045Z",
+  "floor": 2,
+  "floors_total": 4,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/kolpinskoe_sh_129/55510648?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 129"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/kolpinskoe_shosse/13014-ASgBAgECA0SSA8YQ5geMUujIE6zLAQFF3AcTImtvbHBpbnNrb2Vfc2hvc3NlIg",
+        "text": "пос. Шушары, территория Детскосельский, Колпинское ш."
+      }
+    },
+    "formattedAddress": "Пос. Шушары, территория Детскосельский, Колпинское ш., 129",
+    "geoReferences": [
+      {
+        "content": "р-н Пушкинский"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "5,0 · 8 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 4643080024,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b40.img.avito.st/image/1/1.RyG8oLa-68jyChHDvuEvVbYB6c4OF-_IDnCKwgL74DIDA-k.tke4Ydb93bNIZoSUdOSqN-UinXEUnd2QypD8zgil8Og",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.gnvmvra-LpKoFNSZ7ozrD-wfLJRUCSqSVG5PmFjlJWhZHSw.14jQJVoyY0HUpbivSm5ueIbtYjB2WR9_pY-K-kM_wow",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kceQARMeMcXw3ZK_EHiXfpH4jqfTe6x9b3vSfw.oKfY4UBP6MCsbGQeOh9UCc2yuB9tbr70pEd-SjGpMHI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.DLutT7a-oFLj5VpZuUsz8KfuolQf-KRSH5_BWBMUq6gS7KI.T0iNc1n-5C1LFOeU88dq5gdclRDVd7ueIU_nf2JJSIw",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://00.img.avito.st/image/1/1.GWAmALa-tYloqk-CGAhGUCiht4-Ut7GJlNDUg5hbvnOZo7c.j8m3ZQ_oxrtoNt5Dp33GzLWfHcAuuKsd9xP1yPvUPrQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:37:13.022426Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 308,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789825301000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "29 завершённых объявлений",
+    "closestAddressId": 55510648,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Пушкинский район, посёлок Шушары, территория Детскосельский, Колпинское шоссе, 129",
+      "lat": "59.739",
+      "lng": "30.48347",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "9 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 25,9 м², 2/4 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 9,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/kolpinskoe_sh_129/55510648?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 129"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/kolpinskoe_shosse/13014-ASgBAgECA0SSA8YQ5geMUujIE6zLAQFF3AcTImtvbHBpbnNrb2Vfc2hvc3NlIg",
+          "text": "пос. Шушары, территория Детскосельский, Колпинское ш."
+        }
+      },
+      "formattedAddress": "Пос. Шушары, территория Детскосельский, Колпинское ш., 129",
+      "geoReferences": [
+        {
+          "content": "р-н Пушкинский"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "5,0 · 8 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 4643080024,
+    "images": [
+      {
+        "208x208": "https://b40.img.avito.st/image/1/1.RyG8oLa-68iqAEnJvuEvVbYB6c4OF-_IDnCKwgKj6moJA-k.BeSm6UtULzgjBi3V4Q5fG9quSpuojZ2UA4p_89swEXo",
+        "236x236": "https://b40.img.avito.st/image/1/1.RyG8oLa-68jSADHJvuEvVbYB6c4OF-_IDnCKwgLb6hIJA-k.5iwtobN66YoiYvF2r95T2L9VYXQAw6UcrIwO7sUJ1r4",
+        "318x318": "https://b40.img.avito.st/image/1/1.RyG8oLa-68j2BxXOvuEvVbYB6c4OF-_IDnCKwgL_7TYOA-k.qCyGKsbDd2RnuNl3a0xMjqLXSsjwqg8smXGO0A6iQ5M",
+        "416x416": "https://b40.img.avito.st/image/1/1.RyG8oLa-68jKBSnMvuEvVbYB6c4OF-_IDnCKwgLD7woMA-k.w8GYh3qGrjwzcKu2qgdhfkGgPB3EZiHpee8d_oK8DMA",
+        "472x472": "https://b40.img.avito.st/image/1/1.RyG8oLa-68i6BFnNvuEvVbYB6c4OF-_IDnCKwgKz7noNA-k.7EZD_2w1oYxTpayZpaqftAceZ486nqP-f7h_HPDvAUc",
+        "636x636": "https://b40.img.avito.st/image/1/1.RyG8oLa-68jyChHDvuEvVbYB6c4OF-_IDnCKwgL74DIDA-k.tke4Ydb93bNIZoSUdOSqN-UinXEUnd2QypD8zgil8Og"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.gnvmvra-LpLwHoyT7ozrD-wfLJRUCSqSVG5PmFi9LzBTHSw.Ua2ahctFUEKovDTvPuXhIyhT7p2r75hBMkxrVgN6ifc",
+        "236x236": "https://50.img.avito.st/image/1/1.gnvmvra-LpKIHvST7ozrD-wfLJRUCSqSVG5PmFjFL0hTHSw.iabjlniRKPilQcGYlopeTNl7KvjeZdZVQKPhQWqGThA",
+        "318x318": "https://50.img.avito.st/image/1/1.gnvmvra-LpKsGdCU7ozrD-wfLJRUCSqSVG5PmFjhKGxUHSw.8RssIquXSxs-yeB6RR1sMCibBOdFT76eK78v5my785A",
+        "416x416": "https://50.img.avito.st/image/1/1.gnvmvra-LpKQG-yW7ozrD-wfLJRUCSqSVG5PmFjdKlBWHSw.Kr1E5sjLzeImjNmBzigMI5cykuvXupywTyuR3aCAR3I",
+        "472x472": "https://50.img.avito.st/image/1/1.gnvmvra-LpLgGpyX7ozrD-wfLJRUCSqSVG5PmFitKyBXHSw.CWiLRtxCgy5Q1ruHjhAhFCA-TZTwnoDkLROGbhHTjC0",
+        "636x636": "https://50.img.avito.st/image/1/1.gnvmvra-LpKoFNSZ7ozrD-wfLJRUCSqSVG5PmFjlJWhZHSw.14jQJVoyY0HUpbivSm5ueIbtYjB2WR9_pY-K-kM_wow"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kdGSlxGeMcXw3ZK_EHiXfpH4jqfTe7p_-XlSfw.IjifW0uYLSRrxHnPwA-tyTdrnEqyFM9vpth2F6Oaepw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kc-SiRGeMcXw3ZK_EHiXfpH4jqfTe6R_53lSfw.L87f1BGUdi1kXO5ZScDnmlqDIXb3-Vc3SJz8qg_FlR8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kcaTQBBeMcXw3ZK_EHiXfpH4jqfTe61-LniSfw.K4ok-hO3vPlfAh0Jv5E9e9PWy_Lp1dvdjbsFGwqqR3o?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kcmTzxDeMcXw3ZK_EHiXfpH4jqfTe6J-oXgSfw.gdT-3D_QD6XhTdC7OGLhlA9vIIUzcHx--IYrY3igO9Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kdWTkxCeMcXw3ZK_EHiXfpH4jqfTe75-_XhSfw.f-Oe1xWNg_JHWnEgxOAoWLU8kML6w-BVi5RJ1HIkgG8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.Uq5Q6ra-_kceQARMeMcXw3ZK_EHiXfpH4jqfTe6x9b3vSfw.oKfY4UBP6MCsbGQeOh9UCc2yuB9tbr70pEd-SjGpMHI?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.DLutT7a-oFK77wJTuUsz8KfuolQf-KRSH5_BWBNMofAY7KI.nieYeCaFBiU2zHW1ADhmuHFwEnm5kAk9z_glgTqBV1U",
+        "236x236": "https://50.img.avito.st/image/1/1.DLutT7a-oFLD73pTuUsz8KfuolQf-KRSH5_BWBM0oYgY7KI.OLwbrbbO0VjjvM7YBnuBBiTqUQUt9IppNKuPuncoGCk",
+        "318x318": "https://50.img.avito.st/image/1/1.DLutT7a-oFLn6F5UuUsz8KfuolQf-KRSH5_BWBMQpqwf7KI.v2RJzgpi8PC8TVGJLlfePxGKdIfA6DU7WYwPHiQcggg",
+        "416x416": "https://50.img.avito.st/image/1/1.DLutT7a-oFLb6mJWuUsz8KfuolQf-KRSH5_BWBMspJAd7KI.BBUchyjvSMXsNiO-3XD33V0l_ve5OQ19mINOHuAD638",
+        "472x472": "https://50.img.avito.st/image/1/1.DLutT7a-oFKr6xJXuUsz8KfuolQf-KRSH5_BWBNcpeAc7KI.8JG_7GMXsy23YiVa64nNx9GVyCzjaJjuj3r-yNZobKU",
+        "636x636": "https://50.img.avito.st/image/1/1.DLutT7a-oFLj5VpZuUsz8KfuolQf-KRSH5_BWBMUq6gS7KI.T0iNc1n-5C1LFOeU88dq5gdclRDVd7ueIU_nf2JJSIw"
+      },
+      {
+        "208x208": "https://00.img.avito.st/image/1/1.GWAmALa-tYkwoBeIGAhGUCiht4-Ut7GJlNDUg5gDtCuTo7c.PiG_RZddYnw6MBtJDjSdRLwW8uXsrHHYmaRKCmHM8F4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://00.img.avito.st/image/1/1.GWAmALa-tYlIoG-IGAhGUCiht4-Ut7GJlNDUg5h7tFOTo7c.WGxbwy4vNUN640aQynm96YA8jCuhgh4hugYSMX4kIeM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://00.img.avito.st/image/1/1.GWAmALa-tYlsp0uPGAhGUCiht4-Ut7GJlNDUg5hfs3eUo7c.6S1-tmlmcmGlCs6GND-J2wiq-egTrPks5ZAB8JYR2gM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://00.img.avito.st/image/1/1.GWAmALa-tYlQpXeNGAhGUCiht4-Ut7GJlNDUg5hjsUuWo7c.qVX-VfMsndHalZvBvbrnkstSCZ16ZwsmDnqQFGpvM9Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://00.img.avito.st/image/1/1.GWAmALa-tYkgpAeMGAhGUCiht4-Ut7GJlNDUg5gTsDuXo7c.uHwSeE31wzELG7x6TmcmmmlBO6T7syzbhS03tTsE5Js?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://00.img.avito.st/image/1/1.GWAmALa-tYloqk-CGAhGUCiht4-Ut7GJlNDUg5hbvnOZo7c.j8m3ZQ_oxrtoNt5Dp33GzLWfHcAuuKsd9xP1yPvUPrQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 9,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 4643080024
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 4643080024
+            },
+            "relative": "1 неделю назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "description": "Продаётся просторная и уютная студия в Санкт-Петербурге от собственника.\n\n! с агентствами и другими риэлторами не работаю!\n\nСо всякими предложениями, типа у вас есть клиент или работаете по данному району — не тратьте мое время.\n\nОбщая площадь — 24,9 кв. М. ;\nЖилая — 18,1 кв. М.\nЛоджия — 2,1 кв. М.\nКоридор — 3.0 кв. М.\n\nДом комфорт класса.\nМалоэтажное строительство — скандинавские фасады.\nЗакрытый внутренний двор без машин, пешеходная зона с тематическими зонами.\nСобственный еловый сквер и яблоневый сад.\nПлощадка для выгула собак и зоны отдыха.\n\nИнфраструктура:\nВ шаговой доступности — школы, детские сады, магазины, торгово-развлекательные центры, поликлиники, аптеки, кафе и отделения банков.\n\nРядом планируется строительство студенческого кампуса.\n\nСкоростная трамвайная линия до центра города.\n\nДорога на автомобиле до Кад займет 15 минут.\nСтанции метро: Шушары~ 20 мин. На машине; м. Купчино~ 20 мин.,\nг. Пушкин — 10 минут на машине. Поблизости есть железнодорожная станция Царское село, откуда легко добраться до цента спб.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пос. Шушары, территория Детскосельский, Колпинское ш., 129",
+              "geoReferences": [
+                {
+                  "content": "р-н Пушкинский"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 4643080024,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "xgrz06C7DT84jZeE"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "308 880 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 4643080024
+            },
+            "seo": {
+              "title": "Квартира-студия, 25,9 м², 2/4 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 25,9 м², 2/4 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "308 880 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "308 880 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "5,0 · 8 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789825301000,
+    "title": "Квартира-студия, 25,9 м², 2/4 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Пушкинский район, посёлок Шушары, территория Детскосельский, Колпинское шоссе, 129",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 25,9 м², 2/4 эт.",
+  "total_area": 25.9,
+  "updated_at": "2026-10-03T11:37:13.022426Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_259_m_24_et._4643080024?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "views_count": null,
+  "year_built": null
+}

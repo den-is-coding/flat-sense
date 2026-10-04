@@ -1,0 +1,542 @@
+{
+  "address": "Земледельческая ул., 3",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:31:15.573012Z",
+  "floor": 2,
+  "floors_total": 13,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/zemledelcheskaya_ul_3/306543?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 3"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=173",
+        "text": "Лесная"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/zemledelcheskaya_ulitsa/3247-ASgBAgECA0SSA8YQ5geMUujIE94yAUXcBxkiemVtbGVkZWxjaGVza2F5YV91bGl0c2Ei",
+        "text": "Земледельческая ул."
+      }
+    },
+    "formattedAddress": "Земледельческая ул., 3",
+    "geoReferences": [
+      {
+        "after": " 1,1 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "16–20 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Лесная"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 18 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8407180860,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.LkV9Pra-gqwzlHinLUY_O2SegKrPiYasz-7jpsNliVbCnYA.Bw1tj5xvToTNd5b1cxHDsYYljkHk4LQTAcknI8Qj42A?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.LODk1La-gAmqfnoCsNBdmP10gg9WY4QJVgThA1qPi_Nbd4I.brY4RwbmG_mi1g8XTUSiuugdSh3PxflANX0fslwkzy0",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.sIPVBLa-HGqbruZhuWrb_cykHmxnsxhqZ9R9YGtfF5Bqpx4.XIM2Pj5JGpVgG0TqgVzrC3CDzy-UznGpBi10JTTWwUk",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.q1-UcLa-B7ba2v29zn7EIY3QBbAmxwO2JqBmvCorDEwr0wU.nLOZNozwLMMPecMjW7NhRaTQXEm5TtRS2DyqN-RKnYs",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.IhJq8La-jvskWnTwIthsanNQjP3YR4r72CDv8dSrhQHVU4w.DVH8P8nTXfunofOwW5xjhrN__j2bsB49dqzjO1bv4Wg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:31:15.573012Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 337,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790286534000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "13 завершённых объявлений",
+    "closestAddressId": 306543,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Земледельческая улица, 3",
+      "lat": "59.99085812765716",
+      "lng": "30.327724106005547",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "6 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 23,7 м², 2/13 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 6,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/zemledelcheskaya_ul_3/306543?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 3"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=173",
+          "text": "Лесная"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/zemledelcheskaya_ulitsa/3247-ASgBAgECA0SSA8YQ5geMUujIE94yAUXcBxkiemVtbGVkZWxjaGVza2F5YV91bGl0c2Ei",
+          "text": "Земледельческая ул."
+        }
+      },
+      "formattedAddress": "Земледельческая ул., 3",
+      "geoReferences": [
+        {
+          "after": " 1,1 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "16–20 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Лесная"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,6 · 18 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8407180860,
+    "images": [
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.LkV9Pra-gqxrniCtLUY_O2SegKrPiYasz-7jpsM9gw7InYA.6emER6XCV-JMLCaL2zySB4OCFkdznQw7OfT2fGK24ps?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.LkV9Pra-gqwTnlitLUY_O2SegKrPiYasz-7jpsNFg3bInYA.DmLyKreerGQyS_lhgYHENiXQ_HSxZmwEoiNELb9nKvM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.LkV9Pra-gqw3mXyqLUY_O2SegKrPiYasz-7jpsNhhFLPnYA.-jIC9CXFXnOMiZbQrICriggJkHiYliSQTzBGPPo0DN0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.LkV9Pra-gqwLm0CoLUY_O2SegKrPiYasz-7jpsNdhm7NnYA.H6gHgqYV_vDgX-oPrYo_n1KUj_FkOdke_QNwMCtsYmw?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.LkV9Pra-gqx7mjCpLUY_O2SegKrPiYasz-7jpsMthx7MnYA.mnzh5ZTDxhrMpcHPeAnZ_fSedRnTdd67EGx7uRwPR6Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.LkV9Pra-gqwzlHinLUY_O2SegKrPiYasz-7jpsNliVbCnYA.Bw1tj5xvToTNd5b1cxHDsYYljkHk4LQTAcknI8Qj42A?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.LODk1La-gAnydCIIsNBdmP10gg9WY4QJVgThA1rXgatRd4I.fRmy4Xgf-rNBjCXCLNLU7G9wGzvHCmYTfnFT9ADw8F4",
+        "236x236": "https://90.img.avito.st/image/1/1.LODk1La-gAmKdFoIsNBdmP10gg9WY4QJVgThA1qvgdNRd4I.VDuABn_B4JGOg40nkgxEADWjo5EYb6JNXCo0APdjeD0",
+        "318x318": "https://90.img.avito.st/image/1/1.LODk1La-gAmuc34PsNBdmP10gg9WY4QJVgThA1qLhvdWd4I.B3qYoNpyp5jlDQdx7r5oo4ByDdo3YchCjfEDWxKGdd0",
+        "416x416": "https://90.img.avito.st/image/1/1.LODk1La-gAmScUINsNBdmP10gg9WY4QJVgThA1q3hMtUd4I.fIRMptaKwzAy8Tf66O2Hfwg3rmdRaIqHj0c2DVyaifg",
+        "472x472": "https://90.img.avito.st/image/1/1.LODk1La-gAnicDIMsNBdmP10gg9WY4QJVgThA1rHhbtVd4I.CxXlrGvt5jRhu6hAtr2Kjs9LD4xkrFBhjmWYpqZwDAk",
+        "636x636": "https://90.img.avito.st/image/1/1.LODk1La-gAmqfnoCsNBdmP10gg9WY4QJVgThA1qPi_Nbd4I.brY4RwbmG_mi1g8XTUSiuugdSh3PxflANX0fslwkzy0"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.sIPVBLa-HGrDpL5ruWrb_cykHmxnsxhqZ9R9YGsHHchgpx4.mRGHkB2YHsAAXU64tSa4Kq6xbEIcTfTR8NMnq411efk",
+        "236x236": "https://80.img.avito.st/image/1/1.sIPVBLa-HGq7pMZruWrb_cykHmxnsxhqZ9R9YGt_HbBgpx4.80uixb0yIhA2Tv7c17rZjSj_93keR3I8efAZDu-3vdE",
+        "318x318": "https://80.img.avito.st/image/1/1.sIPVBLa-HGqfo-JsuWrb_cykHmxnsxhqZ9R9YGtbGpRnpx4.YAPQbY3yJH7leh8csS-43JW73UykyDxiUCIVVzS4zKI",
+        "416x416": "https://80.img.avito.st/image/1/1.sIPVBLa-HGqjod5uuWrb_cykHmxnsxhqZ9R9YGtnGKhlpx4.o6_M7n9rcDEShP99eV_PuOqrFYjjgDu9mLlz0ioXPk8",
+        "472x472": "https://80.img.avito.st/image/1/1.sIPVBLa-HGrToK5vuWrb_cykHmxnsxhqZ9R9YGsXGdhkpx4.wR6EUXB1sFy2ja9oNez5i0P65UlD6UPHflkj0WLSBtE",
+        "636x636": "https://80.img.avito.st/image/1/1.sIPVBLa-HGqbruZhuWrb_cykHmxnsxhqZ9R9YGtfF5Bqpx4.XIM2Pj5JGpVgG0TqgVzrC3CDzy-UznGpBi10JTTWwUk"
+      },
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.q1-UcLa-B7aC0KW3zn7EIY3QBbAmxwO2JqBmvCpzBhQh0wU.usIQZ6rSJ3rh_F7P7bRVvMyQfeHG3Zz-N0jrusCKgGY",
+        "236x236": "https://70.img.avito.st/image/1/1.q1-UcLa-B7b60N23zn7EIY3QBbAmxwO2JqBmvCoLBmwh0wU.QUxhTt9uFzwpCB6dKVuYwxs72taxu_8jYt0S3LZZngI",
+        "318x318": "https://70.img.avito.st/image/1/1.q1-UcLa-B7be1_mwzn7EIY3QBbAmxwO2JqBmvCovAUgm0wU.f27CdITsfKZ-oLC1aY9k3-aXBH85MjCea40HpWueYfs",
+        "416x416": "https://70.img.avito.st/image/1/1.q1-UcLa-B7bi1cWyzn7EIY3QBbAmxwO2JqBmvCoTA3Qk0wU.yDO7Ky0S5lLhyXaWmKgjaPFNt-WiTROSGNtPHOv0tHQ",
+        "472x472": "https://70.img.avito.st/image/1/1.q1-UcLa-B7aS1LWzzn7EIY3QBbAmxwO2JqBmvCpjAgQl0wU.c9tp6JT3zGg9UQmWtdGYHIi3oHXM95wrSK5uhDuwDpk",
+        "636x636": "https://70.img.avito.st/image/1/1.q1-UcLa-B7ba2v29zn7EIY3QBbAmxwO2JqBmvCorDEwr0wU.nLOZNozwLMMPecMjW7NhRaTQXEm5TtRS2DyqN-RKnYs"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.IhJq8La-jvt8UCz6IthsanNQjP3YR4r72CDv8dTzj1nfU4w.mCuYW42yPXojIWAjYaLWXdNut2-6ec38rUhOPkpRrVY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.IhJq8La-jvsEUFT6IthsanNQjP3YR4r72CDv8dSLjyHfU4w.YseIoi0BqmyqisSVQJdHX8s4uddmZJSjEGO_R5PEkp8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.IhJq8La-jvsgV3D9IthsanNQjP3YR4r72CDv8dSviAXYU4w.3Ome75xokCwAcgqoa1M1IWlJw-UzSN6VLt1JNZ6JbrU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.IhJq8La-jvscVUz_IthsanNQjP3YR4r72CDv8dSTijnaU4w.F1VGp5q_fWMkPU0mlBCmNBuyVylXJLVCRivRS4hRMlM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.IhJq8La-jvtsVDz-IthsanNQjP3YR4r72CDv8dTji0nbU4w.-2hJwE8jdAT-2ShTohuls9c7SALrl7Yu_rjCABRgH3s?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.IhJq8La-jvskWnTwIthsanNQjP3YR4r72CDv8dSrhQHVU4w.DVH8P8nTXfunofOwW5xjhrN__j2bsB49dqzjO1bv4Wg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 6,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 27,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Проверено в Росреестре",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8407180860
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8407180860
+            },
+            "relative": "1 неделю назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "description": "Вашему вниманию предлагается студия 23,7 м² в жилом комплексе Terra.\n\n2 этаж, лоджия.\nБез отделки: сделаете ремонт под себя, без переплаты за чужой вкус.\nЗакрытая территория без машин, подземный паркинг, детская площадка.\nРядом Пионерский сад, метро «Чёрная речка» и «Лесная» (около 20 минут пешком).\nОдин взрослый собственник, никто не прописан.\nСделка быстрая и чистая.\n\nПодойдёт для жизни и для инвестиции: студии в этом районе стабильно и быстро сдаются.\n\nПоказ в удобное время.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Земледельческая ул., 3",
+              "geoReferences": [
+                {
+                  "after": " 1,1 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "16–20 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Лесная"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8407180860,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "1vtIRGbGuCk3H5Rm"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "337 553 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8407180860
+            },
+            "seo": {
+              "title": "Квартира-студия, 23,7 м², 2/13 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 23,7 м², 2/13 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "337 553 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "337 553 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,6 · 18 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790286534000,
+    "title": "Квартира-студия, 23,7 м², 2/13 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Земледельческая улица, 3",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 23,7 м², 2/13 эт.",
+  "total_area": 23.7,
+  "updated_at": "2026-10-03T11:31:15.573012Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_237_m_213_et._8407180860?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

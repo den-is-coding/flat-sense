@@ -1,0 +1,479 @@
+{
+  "address": "Г. Пушкин, 2 оч., стр. 2",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:10:23.000362Z",
+  "floor": 4,
+  "floors_total": 5,
+  "geo": {
+    "formattedAddress": "Г. Пушкин, 2 оч., стр. 2",
+    "geoReferences": [
+      {
+        "content": "р-н Пушкинский"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 7968962635,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x1tKQ0WGfJZ32ki9R2bOg0WbSn1H5U-9Q.xjmeGUiouM1U8rpKODtxyAMmutJnGa_b6sBli9wwfP0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.GgrXNra6tuOZnEzo7zoNO_6WtONvj0zomZy04WGLtA.Trwdlw4ery4fUtu54CRzoZCvkWfjH4EOTgIVyErMzZM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c60.img.avito.st/image/1/1.rSFGw7a6AcgIafvDEKW6EG9jA8j-evvDCGkDyvB-Aw.Zx3EadAiquP-72f0v62UlcS-zns4WRatK4IxTvan6cc",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.anPJ8ra6xpqHWDyRkfMyT-BSxJpxSzyRh1jEmH9PxA.IoZfgGKcyQPlfpIVupJbzMmzM6-efVKm_ABX_JWWUVI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.ki4nO7a6PsdpkcTMDwmXEg6bPMefgsTMaZE8xZGGPA.-B7AvupHGUeRFwjI8Ks21yOZ1vsIMyvhCNKsO9kh_l0",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:20:07.300262Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7994756,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 994 756",
+    "stringWithoutDiscount": null,
+    "value": 7994756,
+    "wasLowered": false
+  },
+  "price_per_unit": 360,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1789907533000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "858413 завершённых объявлений",
+    "closestAddressId": 849001,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": false,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": false,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "г. Пушкин, 2 оч., стр. 2",
+      "lat": "59.69384",
+      "lng": "30.39949",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 8145014,
+    "developmentName": "ЖК «Дубровский»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "14 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,2 м², 4/5 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 14,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "formattedAddress": "Г. Пушкин, 2 оч., стр. 2",
+      "geoReferences": [
+        {
+          "content": "р-н Пушкинский"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 7968962635,
+    "images": [
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x01I1UcGfJZ32ki9R2bOlUcNSP1H5U-9Q.Bn-9mXjzZnJn_SfoZ81Nela7W3m6TQ85seuxjEHUwNc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x1NIy0cGfJZ32ki9R2bOi0cTSP1H5U-9Q.zzkng61AgLmbjCpwhuhmPsQk7lvpkeV4u9nm1sXuaYc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x1pJAkbGfJZ32ki9R2bOgkbaST1H5U-9Q.TDJa8q1GQkTSNszsnBUwF-00VGFvCHRvrlIjlo5TdHE?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x1VJjUZGfJZ32ki9R2bOjUZVSb1H5U-9Q.wX9eqxdYdeUNnYoQoXpfDNNFLnFtWnmy2EY0U6joWk4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x0lJ0UYGfJZ32ki9R2bOkUYJSf1H5U-9Q.MrbK7U6IteNguluXSNb_4lJbUk6EdAfY-aljPRDzQs4?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://b00.img.avito.st/image/1/1.W_Qjg7a69x1tKQ0WGfJZ32ki9R2bOg0WbSn1H5U-9Q.xjmeGUiouM1U8rpKODtxyAMmutJnGa_b6sBli9wwfP0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.GgrXNra6tuPBlhTi7zoNO_6WtONvjxTiwZa04WGLtA.XyOG21nNdP0SkdLNjowB-m-glk0zyPn-D-aNtu5aa7U?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.GgrXNra6tuO5lmzi7zoNO_6WtONvj2ziuZa04WGLtA.ZWYAalcmGVrVvayd7j0yLZdaY8kuSYWFQstyIodw20g?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.GgrXNra6tuOdkUjl7zoNO_6WtONvj0jlnZG04WGLtA.fl07fHlV4vi0gSvme0UrWndfk9ROhRuvVT8OJdSZ7_s?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.GgrXNra6tuOhk3Tn7zoNO_6WtONvj3TnoZO04WGLtA.VRCLyYF8ZJcNn671aKIY0LwIboki9LxXKk1ldTAzsUg?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.GgrXNra6tuPRkgTm7zoNO_6WtONvjwTm0ZK04WGLtA._r5c5h0YNd_c15B3WEMQ8u2OpBKviLZv-Qg6VDvvhPc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.GgrXNra6tuOZnEzo7zoNO_6WtONvj0zomZy04WGLtA.Trwdlw4ery4fUtu54CRzoZCvkWfjH4EOTgIVyErMzZM?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://c60.img.avito.st/image/1/1.rSFGw7a6AchQY6PJEKW6EG9jA8j-eqPJUGMDyvB-Aw.BmEhyEpHKOSd0Uooz-avOaLLWI0aym7Kz9XvkZX3IGg",
+        "236x236": "https://c60.img.avito.st/image/1/1.rSFGw7a6AcgoY9vJEKW6EG9jA8j-etvJKGMDyvB-Aw.aI-HawYkH3Lb_PZC4DbkHU_rfyKM33rBg-ZSi2HReIE",
+        "318x318": "https://c60.img.avito.st/image/1/1.rSFGw7a6AcgMZP_OEKW6EG9jA8j-ev_ODGQDyvB-Aw.zzozKR_ZnWNVNpwGMiNVNMWzkzOUNByPWjLhQ9rzEV8",
+        "416x416": "https://c60.img.avito.st/image/1/1.rSFGw7a6AcgwZsPMEKW6EG9jA8j-esPMMGYDyvB-Aw.BfK4gG77sucEZURscMBFh2o33amawfrlYmXo1aj1C08",
+        "472x472": "https://c60.img.avito.st/image/1/1.rSFGw7a6AchAZ7PNEKW6EG9jA8j-erPNQGcDyvB-Aw.8GZu9PJxrdsgJUxNcNvwMlQQNWB4bWgpExO9VNXGfDc",
+        "636x636": "https://c60.img.avito.st/image/1/1.rSFGw7a6AcgIafvDEKW6EG9jA8j-evvDCGkDyvB-Aw.Zx3EadAiquP-72f0v62UlcS-zns4WRatK4IxTvan6cc"
+      },
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.anPJ8ra6xprfUmSbkfMyT-BSxJpxS2Sb31LEmH9PxA.y-S35uY4FMxJorJnlbxtsoVg2ykQmOs5JBetXUtsZXc?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "236x236": "https://10.img.avito.st/image/1/1.anPJ8ra6xpqnUhybkfMyT-BSxJpxSxybp1LEmH9PxA.sIFWyW7iEKKgl1iLn2rHrQ_lfl3eX1_M3JvlLq68Hm8?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "318x318": "https://10.img.avito.st/image/1/1.anPJ8ra6xpqDVTickfMyT-BSxJpxSzicg1XEmH9PxA.SPrEYbfzybKbga_ni0-X1hUP6CR9Z-3aHWh0cgz8S1c?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "416x416": "https://10.img.avito.st/image/1/1.anPJ8ra6xpq_VwSekfMyT-BSxJpxSwSev1fEmH9PxA.JIjKUNPaHdhYeU83XZCJncMCi2hP-VHvm9e9e5_M3t0?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "472x472": "https://10.img.avito.st/image/1/1.anPJ8ra6xprPVnSfkfMyT-BSxJpxS3Sfz1bEmH9PxA.M59X7ZFyeu1RIuj_hrpTdZXStOrRcg30ErbU3feFVVU?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5",
+        "636x636": "https://10.img.avito.st/image/1/1.anPJ8ra6xpqHWDyRkfMyT-BSxJpxSzyRh1jEmH9PxA.IoZfgGKcyQPlfpIVupJbzMmzM6-efVKm_ABX_JWWUVI?cqp=2.zZzv-afyvoqW9YVlamvBXyTMeZjCjzQV4u86T91gUCqxMZjLgH45o3RL5bWJlQN3p1ZiOBT5"
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.ki4nO7a6Pscxm5zGDwmXEg6bPMefgpzGMZs8xZGGPA.CqLoSgMDJ49k0TxU8Nq2VdapgASF_X9sGsDLEo1SIzY",
+        "236x236": "https://90.img.avito.st/image/1/1.ki4nO7a6PsdJm-TGDwmXEg6bPMefguTGSZs8xZGGPA.wbsTkLQQzj1rwgmL-If7ZJj5cgWo5aoAcxjzU3PyqO8",
+        "318x318": "https://90.img.avito.st/image/1/1.ki4nO7a6PsdtnMDBDwmXEg6bPMefgsDBbZw8xZGGPA.8y7og2_RwSR4nB2JEK09TQskl7M639e6_h4RqcUivlg",
+        "416x416": "https://90.img.avito.st/image/1/1.ki4nO7a6PsdRnvzDDwmXEg6bPMefgvzDUZ48xZGGPA.NNDNfMgOZ_u99nxqFv2IaaU6VW9-GYY-iGks_t-qrk4",
+        "472x472": "https://90.img.avito.st/image/1/1.ki4nO7a6Pschn4zCDwmXEg6bPMefgozCIZ88xZGGPA.azpq5hDZ3rZBm8p2GLt9n3l8hiaknVOq12isbOgtk9g",
+        "636x636": "https://90.img.avito.st/image/1/1.ki4nO7a6PsdpkcTMDwmXEg6bPMefgsTMaZE8xZGGPA.-B7AvupHGUeRFwjI8Ks21yOZ1vsIMyvhCNKsO9kh_l0"
+      }
+    ],
+    "imagesCount": 14,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 7968962635
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "description": "Номер квартиры: 203.\n\nЭтаж: 4.\n\nПлощадь: 22.22.\n\nКорпус: Корпус 2 (2 очередь). Жилой квартал «Дубровский» представляет собой монолитно-кирпичные здания.\n\nЗастройщиком представлены различные планировки квартир. Внутренняя отделка не выполняется.\n\nБлагоустройство прилегающей территории включает в себя организацию детских игровых и спортивных площадок, гостевой автостоянки, а также озеленение. В шаговой доступности находятся школы, детские сады, медицинские учреждения, продовольственные магазины, остановки общественного транспорта, парки.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "developmentInfo": {
+              "developmentId": 8145014,
+              "href": "https://zhk-dubrovskiy-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFAAL__YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjgxNDUwMTQ7fS6SVjVAAAAA",
+              "name": "ЖК «Дубровский»",
+              "pageNumber": 1
+            },
+            "rating": {
+              "formattedValue": {
+                "attributes": {},
+                "text": "4,0 · 4 отзыва",
+                "version": 1
+              },
+              "showChevronEnd": false,
+              "type": "rating"
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Г. Пушкин, 2 оч., стр. 2",
+              "geoReferences": [
+                {
+                  "content": "р-н Пушкинский"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 7968962635,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "VGCiEr1uBBzNHSCe"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "360 124 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 994 756",
+              "stringWithoutDiscount": null,
+              "value": 7994756,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 7968962635
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,2 м², 4/5 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,2 м², 4/5 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "360 124 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 994 756 ₽",
+      "hasValue": true,
+      "normalizedPrice": "360 124 ₽ за м²",
+      "postfix": "",
+      "string": "7 994 756",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7994756,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,0 · 4 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1789907533000,
+    "title": "Квартира-студия, 22,2 м², 4/5 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "г. Пушкин, 2 оч., стр. 2",
+      "link": "/brands/i306257956?page_from=from_items_list_icon\u0026iid=7968962635",
+      "slug": null,
+      "src": "https://static.avito.ru/stub_avatars/D/6_128x128.png"
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,2 м², 4/5 эт.",
+  "total_area": 22.2,
+  "updated_at": "2026-10-03T11:20:07.300262Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_222_m_45_et._7968962635?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJWR0NpRXIxdUJCek5IU0NlIjt9qTnjED8AAAA",
+  "views_count": null,
+  "year_built": null
+}

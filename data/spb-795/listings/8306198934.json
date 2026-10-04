@@ -1,0 +1,577 @@
+{
+  "address": "Большой Казачий пер., 13",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:22:40.045554Z",
+  "floor": 2,
+  "floors_total": 6,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/bolshoy_kazachiy_per_13/108834?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 13"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=199",
+        "text": "Пушкинская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/bolshoy_kazachiy_pereulok/4820-ASgBAgECA0SSA8YQ5geMUujIE6hLAUXcBxsiYm9sc2hveV9rYXphY2hpeV9wZXJldWxvayI",
+        "text": "Большой Казачий пер."
+      }
+    },
+    "formattedAddress": "Большой Казачий пер., 13",
+    "geoReferences": [
+      {
+        "after": " 100 м",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "до 5 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Пушкинская"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "2 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": null
+    }
+  },
+  "house_type": null,
+  "id": 8306198934,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.kITQB7a-PG2ercZm_CX6icmnPmtisDhtYtddZ25cN5dvpD4.HBUUCbl5E3gLcOQW0EcIUYOyR-HPhPwoKHv9FkI1vC4",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.Tno9Oba-4pNzkxiYLUAldySZ4JWPjuaTj-mDmYNi6WmCmuA.l1xrB7RYH2M5MxnSIybflTOtLOYmTWOcORC5Juk-_9U",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.0kJYqra-fqsWAISgcP3CT0EKfK3qHXqr6nofoebxdVHnCXw.bBBSfE9yZUJ-UDw4xiiDxuQtuzu6aJoAn_2U6X6WOOo",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDmeod4yzGno3smrJj9ivCA5YttFM25QL8NvqCY.A8DPmIL8yFzVXKPCfrptnWBetjEEp9mbGidhIUOGi8Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.8hIaf7a-XvtU1aTwchT7GgPfXP2oyFr7qK8_8aQkVQGl3Fw.yaUKnaju1y5uB0yXbIftC9pE-GRyY7ueqSHhPpfGHYk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:22:40.045554Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7990000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 990 000",
+    "stringWithoutDiscount": null,
+    "value": 7990000,
+    "wasLowered": false
+  },
+  "price_per_unit": 334,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790511773000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "98 завершённых объявлений",
+    "closestAddressId": 108834,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, Большой Казачий переулок, 13",
+      "lat": "59.921795893204774",
+      "lng": "30.3290720330658",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "9 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 23,9 м², 2/6 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 9,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/bolshoy_kazachiy_per_13/108834?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 13"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=199",
+          "text": "Пушкинская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/bolshoy_kazachiy_pereulok/4820-ASgBAgECA0SSA8YQ5geMUujIE6hLAUXcBxsiYm9sc2hveV9rYXphY2hpeV9wZXJldWxvayI",
+          "text": "Большой Казачий пер."
+        }
+      },
+      "formattedAddress": "Большой Казачий пер., 13",
+      "geoReferences": [
+        {
+          "after": " 100 м",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "до 5 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Пушкинская"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "2 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": null
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8306198934,
+    "images": [
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.kITQB7a-PG3Gp55s_CX6icmnPmtisDhtYtddZ24EPc9lpD4._i5d9S3J337gh2Uj_x45Z_vHpQUhMA0OY_j4EFXxbiQ",
+        "236x236": "https://50.img.avito.st/image/1/1.kITQB7a-PG2-p-Zs_CX6icmnPmtisDhtYtddZ258PbdlpD4.8SWnsyq80EWhUBawRxQe9KgYLHx73b5TghaZYXezEqw",
+        "318x318": "https://50.img.avito.st/image/1/1.kITQB7a-PG2aoMJr_CX6icmnPmtisDhtYtddZ25YOpNipD4.ia0lS_6v6DYpTs-W9tbLdb0_8faemzdVNmtAWNkJ51I",
+        "416x416": "https://50.img.avito.st/image/1/1.kITQB7a-PG2mov5p_CX6icmnPmtisDhtYtddZ25kOK9gpD4.RNgycEx_2yq5-fzJRXK17ZbNtyEHJmn2HvCMLkxVP6I",
+        "472x472": "https://50.img.avito.st/image/1/1.kITQB7a-PG3Wo45o_CX6icmnPmtisDhtYtddZ24UOd9hpD4.MF8Sf8TFsej4nJliSa3Zxrmzju6JZuvNbpWgAb5yliI",
+        "636x636": "https://50.img.avito.st/image/1/1.kITQB7a-PG2ercZm_CX6icmnPmtisDhtYtddZ25cN5dvpD4.HBUUCbl5E3gLcOQW0EcIUYOyR-HPhPwoKHv9FkI1vC4"
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.Tno9Oba-4pMrmUCSLUAldySZ4JWPjuaTj-mDmYM64zGImuA.J-giGuttgY5IfTqstZ8uK999CAkScw3Vcid9mcS4j-U",
+        "236x236": "https://40.img.avito.st/image/1/1.Tno9Oba-4pNTmTiSLUAldySZ4JWPjuaTj-mDmYNC40mImuA.JgCFiSAaWUGwjTwh1sf9WY21XRukotN94TYVcd4UXGQ",
+        "318x318": "https://40.img.avito.st/image/1/1.Tno9Oba-4pN3nhyVLUAldySZ4JWPjuaTj-mDmYNm5G2PmuA.vO6rnBGEgj9sthtlB5o-BBT_QkqgpAByGx7oQ2QgNhA",
+        "416x416": "https://40.img.avito.st/image/1/1.Tno9Oba-4pNLnCCXLUAldySZ4JWPjuaTj-mDmYNa5lGNmuA.jmbMD4gLB6c1aZGucHPj6SZqacUqZdTDBEM-oZ-mFBg",
+        "472x472": "https://40.img.avito.st/image/1/1.Tno9Oba-4pM7nVCWLUAldySZ4JWPjuaTj-mDmYMq5yGMmuA.zJjHo2bkdASOHSQr1FrtsGs1P2jLP1zLBvpgnK4y-ps",
+        "636x636": "https://40.img.avito.st/image/1/1.Tno9Oba-4pNzkxiYLUAldySZ4JWPjuaTj-mDmYNi6WmCmuA.l1xrB7RYH2M5MxnSIybflTOtLOYmTWOcORC5Juk-_9U"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.0kJYqra-fqtOCtyqcP3CT0EKfK3qHXqr6nofoeapfwntCXw.u0KlovqxUy4nk_Yo8Vh1bvR3JbMHtYpZlQoaerYtAbQ",
+        "236x236": "https://60.img.avito.st/image/1/1.0kJYqra-fqs2CqSqcP3CT0EKfK3qHXqr6nofoebRf3HtCXw.PlyKxlyNYI7AATAy72jQEn827Ru5MUfPskOMPsQTQFU",
+        "318x318": "https://60.img.avito.st/image/1/1.0kJYqra-fqsSDYCtcP3CT0EKfK3qHXqr6nofoeb1eFXqCXw.anjORKtYXVJxCLpfZUEinLx_cYU4E4VCRmD2WL1Ft8c",
+        "416x416": "https://60.img.avito.st/image/1/1.0kJYqra-fqsuD7yvcP3CT0EKfK3qHXqr6nofoebJemnoCXw.KsQsORSzKyaBIUUK9BRph666zTHQkKsTp1xjda7fsxE",
+        "472x472": "https://60.img.avito.st/image/1/1.0kJYqra-fqteDsyucP3CT0EKfK3qHXqr6nofoea5exnpCXw.dw0Zi1BP4mTxe_0bNNM4jcbPF4uILs6E4bIAwruC86c",
+        "636x636": "https://60.img.avito.st/image/1/1.0kJYqra-fqsWAISgcP3CT0EKfK3qHXqr6nofoebxdVHnCXw.bBBSfE9yZUJ-UDw4xiiDxuQtuzu6aJoAn_2U6X6WOOo"
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDnGq4Y4zGno3smrJj9ivCA5YttFM24IJZtlqCY.U-DscjsJ0eYerPJwYNJlzu5s4K_N2r2FwKhZpLEpF5s?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDm-q_44zGno3smrJj9ivCA5YttFM25wJeNlqCY.8EkZhgL3ayJnp4uJnOycCXg7ZEcHpoFOJP555Vc4R6A?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDmarNo_zGno3smrJj9ivCA5YttFM25UIsdiqCY.cKd4DLAv7_84UeIOIVbSHhJjqg0WWE4ooLxwegNMLzs?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDmmruY9zGno3smrJj9ivCA5YttFM25oIPtgqCY.iUW-XoaR6LNOmf407JhzCjqXbmy0ZAbKY4HCknmzT68?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDnWr5Y8zGno3smrJj9ivCA5YttFM24YIYthqCY.3g2dTFzZKtJKaScTN4cg-RnSB4EODgchQBmOal_QaM4?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.iNDQC7a-JDmeod4yzGno3smrJj9ivCA5YttFM25QL8NvqCY.A8DPmIL8yFzVXKPCfrptnWBetjEEp9mbGidhIUOGi8Q?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.8hIaf7a-XvsM3_z6chT7GgPfXP2oyFr7qK8_8aR8X1mv3Fw.Alq-K6Z2J3l0zbGtiDC3FCmGBa6mlmB02Ygh9eJMTE0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.8hIaf7a-Xvt034T6chT7GgPfXP2oyFr7qK8_8aQEXyGv3Fw.gOHrpK583oyELveWN6Fz6tTQQqubFe5H9s0UNC5caOk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.8hIaf7a-XvtQ2KD9chT7GgPfXP2oyFr7qK8_8aQgWAWo3Fw.F5Nj7rqpGhgzbqH-PPktY899V-no4gW0BFunBN9KVIA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.8hIaf7a-Xvts2pz_chT7GgPfXP2oyFr7qK8_8aQcWjmq3Fw.PyFsNvOYpkUrAbkUfr3McwV__MZ7MsZbkP35i2uchEY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.8hIaf7a-Xvsc2-z-chT7GgPfXP2oyFr7qK8_8aRsW0mr3Fw.HKROfBBBP8xO1uicxf3HFswdTnfrdF9yfjH9tzyDP3I?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.8hIaf7a-XvtU1aTwchT7GgPfXP2oyFr7qK8_8aQkVQGl3Fw.yaUKnaju1y5uB0yXbIftC9pE-GRyY7ueqSHhPpfGHYk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      }
+    ],
+    "imagesCount": 9,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8306198934
+            },
+            "relative": "7 дней назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "description": "Студия 23,9 м² — Большой Казачий переулок, 13.\nПродаётся светлая студия в центре Петербурга, рядом с метро «Пушкинская» и Витебским вокзалом. Здесь есть постоянное спальное место: кровать у окна отделена от кухни декоративной перегородкой, поэтому её не нужно раскладывать каждый вечер.\n\nВ жилой зоне поместились круглый стол на двоих и телевизор. Белая угловая кухня оснащена варочной панелью, микроволновой печью, чайником и полноразмерным холодильником. Для посуды предусмотрены верхние и нижние шкафы.\n\nВдоль прохода расположены вместительные шкафы с рельефными фасадами: хранение не занимает место у кровати. Установлен кондиционер.\n\nВ санузле — ванна, стиральная машина под столешницей, накладная раковина, большое зеркало и полотенцесушитель.\n\nСтудия обставлена в спокойных светлых тонах и подойдёт тем, кто хочет жить в центре, сохранив дома ощущение порядка и простора.\n\nСделка.\n\nОдин собственник, прямая продажа, документы готовы, быстрый выход на сделку.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Большой Казачий пер., 13",
+              "geoReferences": [
+                {
+                  "after": " 100 м",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "до 5 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Пушкинская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8306198934,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "72wDuihfDnwh9fla"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "334 310 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 990 000",
+              "stringWithoutDiscount": null,
+              "value": 7990000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8306198934
+            },
+            "seo": {
+              "title": "Квартира-студия, 23,9 м², 2/6 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 23,9 м², 2/6 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/a5cd9d4f17900ea0e4898c1480dee889?src=search_seller_info\u0026iid=8306198934",
+              "title": "Prime Renovation"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "98 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8306198934
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "334 310 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,99 млн",
+      "fullString": "7 990 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "334 310 ₽ за м²",
+      "postfix": "",
+      "string": "7 990 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7990000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "2 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": ""
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790511773000,
+    "title": "Квартира-студия, 23,9 м², 2/6 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, Большой Казачий переулок, 13",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Prime Renovation",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/a5cd9d4f17900ea0e4898c1480dee889?src=search_seller_info\u0026iid=8306198934"
+  },
+  "seller_name": "Prime Renovation",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/a5cd9d4f17900ea0e4898c1480dee889?src=search_seller_info\u0026iid=8306198934",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 23,9 м², 2/6 эт.",
+  "total_area": 23.9,
+  "updated_at": "2026-10-03T11:22:40.045554Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_239_m_26_et._8306198934?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiI3MndEdWloZkRud2g5ZmxhIjt9UwD9ZD8AAAA",
+  "views_count": null,
+  "year_built": null
+}

@@ -1,0 +1,628 @@
+{
+  "address": "Пр-т Крузенштерна, 4с1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.074955Z",
+  "floor": 2,
+  "floors_total": 17,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/pr-t_kruzenshterna_4s1/104712350?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 4с1"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=194",
+        "text": "Приморская"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_kruzenshterna/13993-ASgBAgECA0SSA8YQ5geMUujIE9LaAQFF3AcYInByb3NwZWt0X2tydXplbnNodGVybmEi",
+        "text": "пр-т Крузенштерна"
+      }
+    },
+    "formattedAddress": "Пр-т Крузенштерна, 4с1",
+    "geoReferences": [
+      {
+        "after": " 2,7 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#009A49"
+        ],
+        "content": "Приморская"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 4 отзыва",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8357523131,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox1LU8EWJ8uOgBpZORu3Tj8dtylaF7uiMOe6Wjk.0tlMkRwFegsAJqNuA9q2Hx2fVZfKs25SM2iG6gJWR-M?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.tkaBIba-Gq_Pi-Ck4X_tMZ6BGKkzlh6vM_F7pT96EVU-ghg.xmlH-VtNniElrASAX_ISip3XwIA77cdo2uYALTsQOuk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://40.img.avito.st/image/1/1.cjmeWba-3tDQ8yTb9jABT4H53NYs7trQLIm_2iAC1Soh-tw.y0Y1ILuNQxvLYb0IaYKqUobXUw5wXkBWOfl0vSnC1k8",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://70.img.avito.st/image/1/1.Q54XaLa-73dZwhV8HVFW6gjI7XGl3-t3pbiOfakz5I2oy-0.MOGpKBCxcAZ4k4DDz5OTsY2WPB3OlmsaI3Vkcahms0U",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.uT0s9ba-FdRiX-_fUpf7SjNVF9KeQhHUniV03pKuHi6TVhc.B3-yh5o8ZF7_RtieSwhRDO-XIYgj0gedL5ZVvlAdW6k",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:37:13.01325Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 380,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790966012000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "25026 завершённых объявлений",
+    "closestAddressId": 104712350,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, пр-т Крузенштерна, 4с1",
+      "lat": "59.932572",
+      "lng": "30.197883",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "10 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 21 м², 2/17 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 10,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/pr-t_kruzenshterna_4s1/104712350?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 4с1"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=194",
+          "text": "Приморская"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_kruzenshterna/13993-ASgBAgECA0SSA8YQ5geMUujIE9LaAQFF3AcYInByb3NwZWt0X2tydXplbnNodGVybmEi",
+          "text": "пр-т Крузенштерна"
+        }
+      },
+      "formattedAddress": "Пр-т Крузенштерна, 4с1",
+      "geoReferences": [
+        {
+          "after": " 2,7 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#009A49"
+          ],
+          "content": "Приморская"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,5 · 4 отзыва",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8357523131,
+    "images": [
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox0TWZkcJ8uOgBpZORu3Tj8dtylaF7v6Or-wWjk.OWMS6oSl3EAxnYchKzb6SBuOgqzkayDZrmUKr_HIHss?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox1rWeEcJ8uOgBpZORu3Tj8dtylaF7uCOsewWjk.Rnjye6nrF7pOksSYrdCBe6nriewkyKSras9BP2--QwU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox1PXsUbJ8uOgBpZORu3Tj8dtylaF7umPeO3Wjk.04HdGAcgTbLU8PoZH9a0Nzf1E9-3jQAYljgiw5BZaeA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox1zXPkZJ8uOgBpZORu3Tj8dtylaF7uaP9-1Wjk.VlLoEKLRp3SvXWhTcgdAJqJAVWpsJME8vZq6YzvAJaQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox0DXYkYJ8uOgBpZORu3Tj8dtylaF7vqPq-0Wjk.FIZ85YFr4-65dgWJ1wxD8_CN3dvHX_FAYevhWt7tmLY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.l_QF-ba-Ox1LU8EWJ8uOgBpZORu3Tj8dtylaF7uiMOe6Wjk.0tlMkRwFegsAJqNuA9q2Hx2fVZfKs25SM2iG6gJWR-M?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.tkaBIba-Gq-Xgbiu4X_tMZ6BGKkzlh6vM_F7pT8iGw00ghg.Ym0jsw-BaG5ztLIKGLy5a3A1yhX5MWrJoZc-hLx2NpU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.tkaBIba-Gq_vgcCu4X_tMZ6BGKkzlh6vM_F7pT9aG3U0ghg.CgrGPNCJy-xflfxxMlyCBelO-_s6ukg_bPJ0MzsVdmg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.tkaBIba-Gq_LhuSp4X_tMZ6BGKkzlh6vM_F7pT9-HFEzghg.4XZa8BlvIgCX3ScpSFCZB_O8rTtE4w846GpjowqJ4Ts?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.tkaBIba-Gq_3hNir4X_tMZ6BGKkzlh6vM_F7pT9CHm0xghg.nlRnPbksHYhT781RgYiTc8vc5sl8Rz10g6E1L1-JmeA?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.tkaBIba-Gq-Hhaiq4X_tMZ6BGKkzlh6vM_F7pT8yHx0wghg.hN103zyPSOzBEgKPkdPgIG3kazhI38vgTk0ux646J3s?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.tkaBIba-Gq_Pi-Ck4X_tMZ6BGKkzlh6vM_F7pT96EVU-ghg.xmlH-VtNniElrASAX_ISip3XwIA77cdo2uYALTsQOuk?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://40.img.avito.st/image/1/1.cjmeWba-3tCI-XzR9jABT4H53NYs7trQLIm_2iBa33Ir-tw.14aJ1qYSwy4MhdaQNnLGrbi_p-Atdqz7ihwRiR_eCV0",
+        "236x236": "https://40.img.avito.st/image/1/1.cjmeWba-3tDw-QTR9jABT4H53NYs7trQLIm_2iAi3wor-tw.vjNQd3LMJbGrcVvoCERz4u2yLL6iGwiwu_915vT97oQ",
+        "318x318": "https://40.img.avito.st/image/1/1.cjmeWba-3tDU_iDW9jABT4H53NYs7trQLIm_2iAG2C4s-tw.IiT5nzA44lbTOEfNRo2LGyJnlZ39XwzZjIdnYKdVVh8",
+        "416x416": "https://40.img.avito.st/image/1/1.cjmeWba-3tDo_BzU9jABT4H53NYs7trQLIm_2iA62hIu-tw.Ptp-yjhe1dvehq_6-r8Kw7os7TIIrfSk0OboVnrkDwo",
+        "472x472": "https://40.img.avito.st/image/1/1.cjmeWba-3tCY_WzV9jABT4H53NYs7trQLIm_2iBK22Iv-tw.nJggr1prdlilno94PtrecLFjYgrOu6SD0WE9OrVlFlQ",
+        "636x636": "https://40.img.avito.st/image/1/1.cjmeWba-3tDQ8yTb9jABT4H53NYs7trQLIm_2iAC1Soh-tw.y0Y1ILuNQxvLYb0IaYKqUobXUw5wXkBWOfl0vSnC1k8"
+      },
+      {
+        "208x208": "https://70.img.avito.st/image/1/1.Q54XaLa-73cByE12HVFW6gjI7XGl3-t3pbiOfalr7tWiy-0.XjnYaARrJAR21gJIY_oKCMJsiIPM2mv1-SDWFJ1MKKY",
+        "236x236": "https://70.img.avito.st/image/1/1.Q54XaLa-73d5yDV2HVFW6gjI7XGl3-t3pbiOfakT7q2iy-0.crC18jkgGTeXPm84kNMjI7Zf_w_MZdEt33PcdlIUnr4",
+        "318x318": "https://70.img.avito.st/image/1/1.Q54XaLa-73ddzxFxHVFW6gjI7XGl3-t3pbiOfak36Ymly-0.W9v5rz01lEr4tCh4BGthMd-AedxZwSrsmnyXHLHbE-c",
+        "416x416": "https://70.img.avito.st/image/1/1.Q54XaLa-73dhzS1zHVFW6gjI7XGl3-t3pbiOfakL67Wny-0.uSMsP-YUytG5MnynbMa8Dmfjeo_l-sF2OU_00GRNbGc",
+        "472x472": "https://70.img.avito.st/image/1/1.Q54XaLa-73cRzF1yHVFW6gjI7XGl3-t3pbiOfal76sWmy-0.TdgVBTDGQGwySk-0shl8mxvMEl4olmVSJG-W8EAUeis",
+        "636x636": "https://70.img.avito.st/image/1/1.Q54XaLa-73dZwhV8HVFW6gjI7XGl3-t3pbiOfakz5I2oy-0.MOGpKBCxcAZ4k4DDz5OTsY2WPB3OlmsaI3Vkcahms0U"
+      },
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.uT0s9ba-FdQ6VbfVUpf7SjNVF9KeQhHUniV03pL2FHaZVhc.1dE5aHP71fjU3eBMXCfoRBPkttXX108gxEYQU0i285M",
+        "236x236": "https://60.img.avito.st/image/1/1.uT0s9ba-FdRCVc_VUpf7SjNVF9KeQhHUniV03pKOFA6ZVhc.aiE9beI9xpiehtQw7KxVmLhaaqGFFZs27R3GJmaXZXA",
+        "318x318": "https://60.img.avito.st/image/1/1.uT0s9ba-FdRmUuvSUpf7SjNVF9KeQhHUniV03pKqEyqeVhc.ljgxQvp-_r58VsvDUE1w0SgXkbqvLKG9heySKUSxaHc",
+        "416x416": "https://60.img.avito.st/image/1/1.uT0s9ba-FdRaUNfQUpf7SjNVF9KeQhHUniV03pKWERacVhc.74xsNBHtBMX0U9BhRNFaC_pigrNabyUupEqe8557snw",
+        "472x472": "https://60.img.avito.st/image/1/1.uT0s9ba-FdQqUafRUpf7SjNVF9KeQhHUniV03pLmEGadVhc.2ylMebvq73KMVrhB3K2e5giWGLyuV2Hr6GDxy2t4zcs",
+        "636x636": "https://60.img.avito.st/image/1/1.uT0s9ba-FdRiX-_fUpf7SjNVF9KeQhHUniV03pKuHi6TVhc.B3-yh5o8ZF7_RtieSwhRDO-XIYgj0gedL5ZVvlAdW6k"
+      }
+    ],
+    "imagesCount": 10,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8357523131
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8357523131
+            },
+            "relative": "Вчера"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "description": "Код объекта: 2326393.\n\nПервое впечатление.\nНебольшая, но очень уютная студия в доме 2024 года на проспекте Крузенштерна — свежая отделка, продуманная планировка и окно, откуда можно наблюдать приятный двор и часть залива, потолки 2.7 метра дает ощущение пространства. На 2 этаже 17-этажного монолитного дома квартира дарит ощущение спокойствия и безопасности.\n\nКомфорт и планировка.\n21 м² продуманы по максимуму: 15 м² полезного жилого пространства и отдельная кухонная зона 5 м² — достаточно места для удобной мебели и компактной техники. Совмещённый санузел современной планировки, окна выходят на улицу — светло и живо в течение дня.\n\nРемонт и готовность.\nЕвроремонт — заходи и живи: чистовые материалы, аккуратные поверхности, готовые коммуникации. Центральное отопление обеспечивает стабильный микроклимат без лишних хлопот. Балкон добавляет дополнительное место для отдыха или хранения.\n\nДом и парковка.\nМонолитный корпус с железобетонными перекрытиями — прочность и долговечность. Наземная парковка рядом решает вопрос с автомобилем. Дом новой постройки, эксплуатация на современных стандартах.\n\nЦена — сильный аргумент.\nНебольшая площадь и качественный ремонт делают эту квартиру выгодной по соотношению цена/качество: разумный бюджет при минимальных вложениях в обстановку и быструю сдачу в аренду или комфортное личное проживание.\n\nГотовы показать.\nПокажу в удобное для вас время, подробно расскажу про дом, документы и варианты покупки. Быстрый выход на сделку возможен — квартира полностью готова к переезду.\n\nМы гарантируем безопасную сделку и юридическую поддержку нашим Клиентам. Поможем одобрить ипотеку с сниженной ставкой.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пр-т Крузенштерна, 4с1",
+              "geoReferences": [
+                {
+                  "after": " 2,7 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#009A49"
+                  ],
+                  "content": "Приморская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8357523131,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "xgrz06C7DT84jZeE"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "380 952 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8357523131
+            },
+            "seo": {
+              "title": "Квартира-студия, 21 м², 2/17 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 21 м², 2/17 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/i4009544?src=search_seller_info\u0026iid=8357523131",
+              "title": "Владис"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "25026 завершённых объявлений"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8357523131
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "380 952 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "380 952 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 4 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790966012000,
+    "title": "Квартира-студия, 21 м², 2/17 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, пр-т Крузенштерна, 4с1",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Владис",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/i4009544?src=search_seller_info\u0026iid=8357523131"
+  },
+  "seller_name": "Владис",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/i4009544?src=search_seller_info\u0026iid=8357523131",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 21 м², 2/17 эт.",
+  "total_area": 21,
+  "updated_at": "2026-10-03T11:37:13.01325Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_21_m_217_et._8357523131?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJ4Z3J6MDZDN0RUODRqWmVFIjt9DGa2ez8AAAA",
+  "views_count": null,
+  "year_built": null
+}

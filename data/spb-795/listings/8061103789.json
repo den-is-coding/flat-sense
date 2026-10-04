@@ -1,0 +1,477 @@
+{
+  "address": "Наб. Октябрьская, корп. 1.1",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:32:50.062197Z",
+  "floor": 2,
+  "floors_total": 17,
+  "geo": {
+    "addressLinks": {
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=162",
+        "text": "Елизаровская"
+      }
+    },
+    "formattedAddress": "Наб. Октябрьская, корп. 1.1",
+    "geoReferences": [
+      {
+        "after": " 1,3 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "от 31 мин."
+        },
+        "colors": [
+          "#009A49"
+        ],
+        "content": "Елизаровская"
+      }
+    ]
+  },
+  "house_type": null,
+  "id": 8061103789,
+  "image_count": 3,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://60.img.avito.st/image/1/1.KUBzs7a6hak9GX-iLbtERkgTh6nLCn-iPRmHq8UOhw.Xnpd_A7DRJ3bX8aq9ks60TI3PmD6EN_MziPyh4ShY2w",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://50.img.avito.st/image/1/1.tbq2t7a6GVP4HeNY0OnSvI0XG1MODuNY-B0bUQAKGw.CaTBpjo8GqshWDbeytk_5h_jrDni5DWrpcoqgnXNQHo",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://80.img.avito.st/image/1/1.F6iiD7a6u0HspUFKgF9BqZmvuUEatkFK7KW5QxSyuQ.lmOcw_dy8hirfvTqrbaBaH4AvCb3q73WAR_JUdBhTyA",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:32:50.062197Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 8000000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "8 000 000",
+    "stringWithoutDiscount": null,
+    "value": 8000000,
+    "wasLowered": false
+  },
+  "price_per_unit": 372,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1788957866000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "Нет завершённых объявлений",
+    "closestAddressId": 251164,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "наб. Октябрьская, корп. 1.1",
+      "lat": "59.9066",
+      "lng": "30.43609",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "developmentId": 11756856,
+    "developmentName": "ЖК «Сэтл Ривьера»",
+    "discountPercent": null,
+    "gallery": {
+      "alt": "3 фотографии",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 21,5 м², 2/17 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 3,
+      "isFirstImageHighImportance": false,
+      "isLazy": false,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=162",
+          "text": "Елизаровская"
+        }
+      },
+      "formattedAddress": "Наб. Октябрьская, корп. 1.1",
+      "geoReferences": [
+        {
+          "after": " 1,3 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "от 31 мин."
+          },
+          "colors": [
+            "#009A49"
+          ],
+          "content": "Елизаровская"
+        }
+      ]
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": false,
+    "hasVideo": false,
+    "id": 8061103789,
+    "images": [
+      {
+        "208x208": "https://60.img.avito.st/image/1/1.KUBzs7a6hallEyeoLbtERkgTh6nLCieoZROHq8UOhw.-iWVLrju0XrOGUNhtwW9cLarxWWUCjsANeV8qlkzq2U",
+        "236x236": "https://60.img.avito.st/image/1/1.KUBzs7a6hakdE1-oLbtERkgTh6nLCl-oHROHq8UOhw.AVQaPx-z9ErNX0FKEwYyz1m8uKLebulWPJGZn1FI0BQ",
+        "318x318": "https://60.img.avito.st/image/1/1.KUBzs7a6hak5FHuvLbtERkgTh6nLCnuvORSHq8UOhw.faCIy66E0FvFlMEBvjCRo1CM2I2nNqn6LREouCHq6Bc",
+        "416x416": "https://60.img.avito.st/image/1/1.KUBzs7a6hakFFketLbtERkgTh6nLCketBRaHq8UOhw.SuIRjK_bDjkDqjVG7ZIUALce40OYM5G6ocOYVEdiXgE",
+        "472x472": "https://60.img.avito.st/image/1/1.KUBzs7a6hal1FzesLbtERkgTh6nLCjesdReHq8UOhw.tsHS5qiinLuhRUF_CDhpp8uwcPZYtdFSvSeAsJhoUSg",
+        "636x636": "https://60.img.avito.st/image/1/1.KUBzs7a6hak9GX-iLbtERkgTh6nLCn-iPRmHq8UOhw.Xnpd_A7DRJ3bX8aq9ks60TI3PmD6EN_MziPyh4ShY2w"
+      },
+      {
+        "208x208": "https://50.img.avito.st/image/1/1.tbq2t7a6GVOgF7tS0OnSvI0XG1MODrtSoBcbUQAKGw.otg2o5-Ugyk1uPh4KURP0W5QO8dJTLXMAg462fpA5No",
+        "236x236": "https://50.img.avito.st/image/1/1.tbq2t7a6GVPYF8NS0OnSvI0XG1MODsNS2BcbUQAKGw.OrfG1Jo58SD1xf4sqx9dO7raf_ovid9hAIAoTD34TxA",
+        "318x318": "https://50.img.avito.st/image/1/1.tbq2t7a6GVP8EOdV0OnSvI0XG1MODudV_BAbUQAKGw.LkaLay_Q_k7Ndr3xAIW8mgHIkSL8OSftKFqEar9ufWo",
+        "416x416": "https://50.img.avito.st/image/1/1.tbq2t7a6GVPAEttX0OnSvI0XG1MODttXwBIbUQAKGw.u99mq6iOqpkHCZid-NhVFuxVhRpjb5O9TuJSA9LeDgE",
+        "472x472": "https://50.img.avito.st/image/1/1.tbq2t7a6GVOwE6tW0OnSvI0XG1MODqtWsBMbUQAKGw.69SFaqH-sOdckZeVI8ipV8rVzC9rxHk00Utj7niOucU",
+        "636x636": "https://50.img.avito.st/image/1/1.tbq2t7a6GVP4HeNY0OnSvI0XG1MODuNY-B0bUQAKGw.CaTBpjo8GqshWDbeytk_5h_jrDni5DWrpcoqgnXNQHo"
+      },
+      {
+        "208x208": "https://80.img.avito.st/image/1/1.F6iiD7a6u0G0rxlAgF9BqZmvuUEathlAtK-5QxSyuQ.hNvZGMuh7zaFPsYAsOLZ2D0qD4EZ2Zwm2E7cgDNWlt8",
+        "236x236": "https://80.img.avito.st/image/1/1.F6iiD7a6u0HMr2FAgF9BqZmvuUEatmFAzK-5QxSyuQ.vendeTv6uKJ1hbFdsDD-7wEJPzYCqAQkwtJwq7ho-r8",
+        "318x318": "https://80.img.avito.st/image/1/1.F6iiD7a6u0HoqEVHgF9BqZmvuUEatkVH6Ki5QxSyuQ.hqbsQUEoMAJ8s1uh8UBFO2j6KuOG9TWxelS1wPTBZQU",
+        "416x416": "https://80.img.avito.st/image/1/1.F6iiD7a6u0HUqnlFgF9BqZmvuUEatnlF1Kq5QxSyuQ.zBm30n4crCyhzzaFEbZnfQbiyq9At6lp6IhqoofnIF4",
+        "472x472": "https://80.img.avito.st/image/1/1.F6iiD7a6u0GkqwlEgF9BqZmvuUEatglEpKu5QxSyuQ.uZhwBGM8WQQn3Z3IU8AbYMd-eTgNPTDl_aR4ZMGCXmI",
+        "636x636": "https://80.img.avito.st/image/1/1.F6iiD7a6u0HspUFKgF9BqZmvuUEatkFK7KW5QxSyuQ.lmOcw_dy8hirfvTqrbaBaH4AvCb3q73WAR_JUdBhTyA"
+      }
+    ],
+    "imagesCount": 3,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8061103789
+            },
+            "relative": ""
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "description": "Цена на неделю/прекрасная инвестиция/рассрочка.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "development-name"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "developmentInfo": {
+              "developmentId": 11756856,
+              "href": "https://zhk-setl-rivera-sankt-peterburg.avito.ru?context=H4sIAAAAAAAA_wFBAL7_YToyOntzOjg6ImZyb21QYWdlIjtzOjEyOiJpdGVtX3NuaXBwZXQiO3M6NjoiaXRlbUlkIjtpOjExNzU2ODU2O32hCMGfQQAAAA",
+              "name": "ЖК «Сэтл Ривьера»",
+              "pageNumber": 4
+            },
+            "rating": {
+              "formattedValue": {
+                "attributes": {},
+                "text": "4,7 · 3 отзыва",
+                "version": 1
+              },
+              "showChevronEnd": false,
+              "type": "rating"
+            }
+          }
+        },
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Наб. Октябрьская, корп. 1.1",
+              "geoReferences": [
+                {
+                  "after": " 1,3 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "от 31 мин."
+                  },
+                  "colors": [
+                    "#009A49"
+                  ],
+                  "content": "Елизаровская"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8061103789,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "OvpDhWyMtzUFpIyM"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "372 093 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "8 000 000",
+              "stringWithoutDiscount": null,
+              "value": 8000000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8061103789
+            },
+            "seo": {
+              "title": "Квартира-студия, 21,5 м², 2/17 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 21,5 м², 2/17 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": []
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4919,
+    "nativeVideo": null,
+    "normalizedPrice": "372 093 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "8 млн",
+      "fullString": "8 000 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "372 093 ₽ за м²",
+      "postfix": "",
+      "string": "8 000 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 8000000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,7 · 3 отзыва",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "nd",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1788957866000,
+    "title": "Квартира-студия, 21,5 м², 2/17 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "наб. Октябрьская, корп. 1.1",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": null,
+  "seller_name": null,
+  "seller_rating": null,
+  "seller_type": null,
+  "seller_url": null,
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 21,5 м², 2/17 эт.",
+  "total_area": 21.5,
+  "updated_at": "2026-10-03T11:32:50.062197Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_215_m_217_et._8061103789?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiJPdnBEaFd5TXR6VUZwSXlNIjt94aRvfz8AAAA",
+  "views_count": null,
+  "year_built": null
+}

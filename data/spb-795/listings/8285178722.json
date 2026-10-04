@@ -1,0 +1,628 @@
+{
+  "address": "Пр-т Маршала Блюхера, 9к2",
+  "balcony": null,
+  "bathroom": null,
+  "category": "kvartiry",
+  "city": null,
+  "contacts_count": null,
+  "deal_type": "sale",
+  "description": null,
+  "district": null,
+  "favorites_count": null,
+  "first_seen_at": "2026-10-03T11:31:15.583152Z",
+  "floor": 3,
+  "floors_total": 17,
+  "geo": {
+    "addressLinks": {
+      "houseLink": {
+        "link": "/catalog/houses/sankt-peterburg/pr-t_marshala_blyuhera_9k2/187315?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+        "text": " 9к2"
+      },
+      "metroLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=173",
+        "text": "Лесная"
+      },
+      "streetLink": {
+        "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_marshala_blyuhera/3332-ASgBAgECA0SSA8YQ5geMUujIE4g0AUXcBxwicHJvc3Bla3RfbWFyc2hhbGFfYmx5dWhlcmEi",
+        "text": "пр-т Маршала Блюхера"
+      }
+    },
+    "formattedAddress": "Пр-т Маршала Блюхера, 9к2",
+    "geoReferences": [
+      {
+        "after": " 1,8 км",
+        "afterWithIcon": {
+          "iconName": "walkingRoute16",
+          "text": "21–30 мин."
+        },
+        "colors": [
+          "#D6083B"
+        ],
+        "content": "Лесная"
+      }
+    ],
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 17 отзывов",
+        "version": 1
+      },
+      "showChevronEnd": false,
+      "type": "rating"
+    }
+  },
+  "house_type": null,
+  "id": 8285178722,
+  "image_count": 5,
+  "images": [
+    {
+      "h": 636,
+      "url": "https://10.img.avito.st/image/1/1.W_ANF7a-9xlDvQ0SNzZS2RO39R-_oPMZv8eWE7NM_OOytPU.hZFcNsaU5SpEfACb_CXY8hUFrmQ_peWrFNNJ-mj1QYU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://b00.img.avito.st/image/1/1.pMigILa-CCHuivIq5GKF4L6ACicSlwwhEvBpKx57A9sfgwo.oOSCqUPOSQG5yDroTbbJwh-NHw-FNIbEKBlUc7c5-zY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://c80.img.avito.st/image/1/1.RUaw_La-6a_-VhOktv19bq5c66kCS-2vAiyIpQ6n4lUPX-s.4afNt4tLbKYT80zR4DFxJ9Z0EJdVSH20wU40xkdqpyw",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://30.img.avito.st/image/1/1.pGxEIba-CIUKi_KOAAfMQlqBCoP2lgyF9vFpj_p6A3_7ggo.g_LlUg-cKIAJdTVO39dUDA_JVQnG0iSuLhYWL07VW8w?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+      "w": 636
+    },
+    {
+      "h": 636,
+      "url": "https://90.img.avito.st/image/1/1.WuDGOba-9gmIkwwC_kgFz9iZ9A90jvIJdOmXA3hi_fN5mvQ._kPt4ivViAXPGSGd0bGp5nxvNVHT5GGJP7oMc5zvzDk",
+      "w": 636
+    }
+  ],
+  "kitchen_area": null,
+  "land_area": null,
+  "last_seen_at": "2026-10-03T11:31:15.583152Z",
+  "lat": null,
+  "living_area": null,
+  "lng": null,
+  "metro": null,
+  "params": {},
+  "price": 7970000,
+  "price_currency": "RUB",
+  "price_meta": {
+    "postfix": "",
+    "string": "7 970 000",
+    "stringWithoutDiscount": null,
+    "value": 7970000,
+    "wasLowered": false
+  },
+  "price_per_unit": 351,
+  "price_unit": "м2",
+  "published_at": null,
+  "raw": {
+    "addressDetailed": {
+      "locationName": "Санкт-Петербург"
+    },
+    "allowTimeStamp": 1790678124000,
+    "aspectRatio": "1:1",
+    "authLink": "#login?authsrc=ps",
+    "category": {
+      "compare": true,
+      "id": 24,
+      "name": "Квартиры",
+      "pageRootId": 4,
+      "rootId": 4,
+      "slug": "kvartiry"
+    },
+    "categoryId": 24,
+    "closedItemsText": "2694 завершённых объявления",
+    "closestAddressId": 187315,
+    "contacts": {
+      "action": "",
+      "delivery": false,
+      "hasCVPackage": false,
+      "hasEmployeeBalanceForCv": false,
+      "message": true,
+      "messageTitle": "Написать",
+      "onModeration": false,
+      "phone": true,
+      "primaryButton": "",
+      "serviceBooking": false
+    },
+    "coords": {
+      "address_user": "Санкт-Петербург, пр-т Маршала Блюхера, 9к2",
+      "lat": "59.978903",
+      "lng": "30.374348",
+      "precision": 0,
+      "zoom": 16
+    },
+    "cvViewed": false,
+    "discountPercent": null,
+    "gallery": {
+      "alt": "16 фотографий",
+      "cropImagesInfo": null,
+      "extraPhoto": null,
+      "hasLeadgenOverlay": false,
+      "has_big_image": true,
+      "imageAlt": "Квартира-студия, 22,7 м², 3/17 эт., Санкт-Петербург",
+      "imageLargeUrl": "",
+      "imageLargeVipUrl": "",
+      "imageUrl": "",
+      "imageVipUrl": "",
+      "image_large_urls": [],
+      "image_urls": [],
+      "images": [],
+      "imagesCount": 16,
+      "isFirstImageHighImportance": false,
+      "isLazy": true,
+      "noPhoto": false,
+      "showSlider": true,
+      "wideSnippetUrls": []
+    },
+    "geo": {
+      "addressLinks": {
+        "houseLink": {
+          "link": "/catalog/houses/sankt-peterburg/pr-t_marshala_blyuhera_9k2/187315?context=H4sIAAAAAAAA_wEpANb_YToxOntzOjg6ImZyb21QYWdlIjtzOjEyOiJzZXJwX2FkZHJlc3MiO33ZtZG3KQAAAA",
+          "text": " 9к2"
+        },
+        "metroLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam-ASgBAgICAUSSA8YQ?metro=173",
+          "text": "Лесная"
+        },
+        "streetLink": {
+          "link": "/sankt-peterburg/kvartiry/prodam/vtorichka/street/prospekt_marshala_blyuhera/3332-ASgBAgECA0SSA8YQ5geMUujIE4g0AUXcBxwicHJvc3Bla3RfbWFyc2hhbGFfYmx5dWhlcmEi",
+          "text": "пр-т Маршала Блюхера"
+        }
+      },
+      "formattedAddress": "Пр-т Маршала Блюхера, 9к2",
+      "geoReferences": [
+        {
+          "after": " 1,8 км",
+          "afterWithIcon": {
+            "iconName": "walkingRoute16",
+            "text": "21–30 мин."
+          },
+          "colors": [
+            "#D6083B"
+          ],
+          "content": "Лесная"
+        }
+      ],
+      "rating": {
+        "formattedValue": {
+          "attributes": {},
+          "text": "4,5 · 17 отзывов",
+          "version": 1
+        },
+        "showChevronEnd": false,
+        "type": "rating"
+      }
+    },
+    "groupData": null,
+    "hasFooter": false,
+    "hasRealtyLayout": true,
+    "hasVideo": false,
+    "id": 8285178722,
+    "images": [
+      {
+        "208x208": "https://10.img.avito.st/image/1/1.W_ANF7a-9xkbt1UYNzZS2RO39R-_oPMZv8eWE7MU9ru4tPU.y9YV0aEiZKsQzG3l4dIUQYb8zyST6ssWOPzFL0cuo4M?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://10.img.avito.st/image/1/1.W_ANF7a-9xljty0YNzZS2RO39R-_oPMZv8eWE7Ns9sO4tPU.TNLRRUXH6nAsY3YNkMxrUZuQgQBJaD_rCHPKF894GE0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://10.img.avito.st/image/1/1.W_ANF7a-9xlHsAkfNzZS2RO39R-_oPMZv8eWE7NI8ee_tPU.jRw7jhJrzoxPBSwZNAzz5MN__Uf9-kW9ZokZDEwdUEQ?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://10.img.avito.st/image/1/1.W_ANF7a-9xl7sjUdNzZS2RO39R-_oPMZv8eWE7N089u9tPU.HMOMAPnp55e36-YqkXZfJwwdSoI1ptLpMV5p7P7B3-E?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://10.img.avito.st/image/1/1.W_ANF7a-9xkLs0UcNzZS2RO39R-_oPMZv8eWE7ME8qu8tPU.Or2ELqXXhBmUF7JC9X1NfdstGXR8T30kaj6TIUt2AR0?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://10.img.avito.st/image/1/1.W_ANF7a-9xlDvQ0SNzZS2RO39R-_oPMZv8eWE7NM_OOytPU.hZFcNsaU5SpEfACb_CXY8hUFrmQ_peWrFNNJ-mj1QYU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://b00.img.avito.st/image/1/1.pMigILa-CCG2gKog5GKF4L6ACicSlwwhEvBpKx4jCYMVgwo.xumAmKWwwPbeL9amlfcEbj1lwIpR5vsiQnT9ydbeDYY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://b00.img.avito.st/image/1/1.pMigILa-CCHOgNIg5GKF4L6ACicSlwwhEvBpKx5bCfsVgwo.ZK9Dhvv2HgzUVsmn9OmkK-0FHWeMBz1aDQEcqngPaK8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://b00.img.avito.st/image/1/1.pMigILa-CCHqh_Yn5GKF4L6ACicSlwwhEvBpKx5_Dt8Sgwo.x5Zfrc8K104YamQVMFA0DPAMvbwviLTz4pbLOk5eKW8?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://b00.img.avito.st/image/1/1.pMigILa-CCHWhcol5GKF4L6ACicSlwwhEvBpKx5DDOMQgwo.HV8irppnZgAw8Rv2Y5rAwW2vAljWsQsl0tdONLuQNdU?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://b00.img.avito.st/image/1/1.pMigILa-CCGmhLok5GKF4L6ACicSlwwhEvBpKx4zDZMRgwo.Yn7971uSaY6F_aP9-ZGIi7NXP1Mm-YK-96PxmVYSo1E?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://b00.img.avito.st/image/1/1.pMigILa-CCHuivIq5GKF4L6ACicSlwwhEvBpKx57A9sfgwo.oOSCqUPOSQG5yDroTbbJwh-NHw-FNIbEKBlUc7c5-zY?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://c80.img.avito.st/image/1/1.RUaw_La-6a-mXEuutv19bq5c66kCS-2vAiyIpQ7_6A0FX-s.FbWWp_Shk1Yli9ckfAEf8ORRfXBBFiQ8UkBKVNGNQxA",
+        "236x236": "https://c80.img.avito.st/image/1/1.RUaw_La-6a_eXDOutv19bq5c66kCS-2vAiyIpQ6H6HUFX-s.9MCZfQtiLIEW4e2Og3JusbnN9BpK5UlhUlqd_lIUQQk",
+        "318x318": "https://c80.img.avito.st/image/1/1.RUaw_La-6a_6Wxeptv19bq5c66kCS-2vAiyIpQ6j71ECX-s.dMxwquCgX3othscMXzcjjXMUJ_fEY-hR589UpQFyshU",
+        "416x416": "https://c80.img.avito.st/image/1/1.RUaw_La-6a_GWSurtv19bq5c66kCS-2vAiyIpQ6f7W0AX-s.eEeWrU9Uhhn-MXx4eYbs7MCIhyC-K90o0ILETrJUxJU",
+        "472x472": "https://c80.img.avito.st/image/1/1.RUaw_La-6a-2WFuqtv19bq5c66kCS-2vAiyIpQ7v7B0BX-s._1CaaL4wK3Iw5AyPvm54zamwFt-LUrxbU44gpJCA1kk",
+        "636x636": "https://c80.img.avito.st/image/1/1.RUaw_La-6a_-VhOktv19bq5c66kCS-2vAiyIpQ6n4lUPX-s.4afNt4tLbKYT80zR4DFxJ9Z0EJdVSH20wU40xkdqpyw"
+      },
+      {
+        "208x208": "https://30.img.avito.st/image/1/1.pGxEIba-CIVSgaqEAAfMQlqBCoP2lgyF9vFpj_oiCSfxggo.y-uqyKRr-H0ETEFIGwHCIBagTbsljERTkGrEtd_Nt9I?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "236x236": "https://30.img.avito.st/image/1/1.pGxEIba-CIUqgdKEAAfMQlqBCoP2lgyF9vFpj_paCV_xggo.Kf2ONF9xcOGQEjGeNJBHX7nVmkmsWNcJyUb4UPzGklg?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "318x318": "https://30.img.avito.st/image/1/1.pGxEIba-CIUOhvaDAAfMQlqBCoP2lgyF9vFpj_p-Dnv2ggo.DquoSzBuygtGw3EIUnC1f7tCgsrU9IgrcoBCuiN6pys?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "416x416": "https://30.img.avito.st/image/1/1.pGxEIba-CIUyhMqBAAfMQlqBCoP2lgyF9vFpj_pCDEf0ggo.1XWaoSpwjjIB-G59OoJOJw_7AcmQOdXU3xvCxOYnChM?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "472x472": "https://30.img.avito.st/image/1/1.pGxEIba-CIVChbqAAAfMQlqBCoP2lgyF9vFpj_oyDTf1ggo.FBKWm5I6DqgJ0PSvtnVx_eObJpd-sLwynBncxfE8MMs?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs=",
+        "636x636": "https://30.img.avito.st/image/1/1.pGxEIba-CIUKi_KOAAfMQlqBCoP2lgyF9vFpj_p6A3_7ggo.g_LlUg-cKIAJdTVO39dUDA_JVQnG0iSuLhYWL07VW8w?cqp=2.6_1L9vhKD2uBLt-qyrAoZheVsuS8u7cVFre6r7a9jrN4_pCIDjlm5anolzs-MLkTK_L9899P2epdVNs="
+      },
+      {
+        "208x208": "https://90.img.avito.st/image/1/1.WuDGOba-9gnQmVQI_kgFz9iZ9A90jvIJdOmXA3g696tzmvQ.WkaaWQG70FFWZYOEicvpiF0rvkCYowl6XgtBMJ6II3E",
+        "236x236": "https://90.img.avito.st/image/1/1.WuDGOba-9gmomSwI_kgFz9iZ9A90jvIJdOmXA3hC99NzmvQ.RM0O25IwBbBtjhQGBmbRAa12gDD_8BHzysqOjo92CTI",
+        "318x318": "https://90.img.avito.st/image/1/1.WuDGOba-9gmMnggP_kgFz9iZ9A90jvIJdOmXA3hm8Pd0mvQ.APoctttH_UyTD6W4O78PKU2j9rD16hr24Xzuzcx6ATU",
+        "416x416": "https://90.img.avito.st/image/1/1.WuDGOba-9gmwnDQN_kgFz9iZ9A90jvIJdOmXA3ha8st2mvQ.AL3q_fk1_UPTI9OEyHxf616-z9EUtOH9oiTwfL4DDcA",
+        "472x472": "https://90.img.avito.st/image/1/1.WuDGOba-9gnAnUQM_kgFz9iZ9A90jvIJdOmXA3gq87t3mvQ.6cH_5ZHw21nEN5k6dto5onKa4BIjknL9eHieZwGuFHI",
+        "636x636": "https://90.img.avito.st/image/1/1.WuDGOba-9gmIkwwC_kgFz9iZ9A90jvIJdOmXA3hi_fN5mvQ._kPt4ivViAXPGSGd0bGp5nxvNVHT5GGJP7oMc5zvzDk"
+      }
+    ],
+    "imagesCount": 16,
+    "isFavorite": false,
+    "isMarketplace": false,
+    "isNew": false,
+    "isNewCarsExtraLeadsView": false,
+    "isPossibleSparePartsCompatibility": false,
+    "isRatingExperiment": false,
+    "isReMapPromotion": false,
+    "isReserved": false,
+    "isSimilarToSearch": false,
+    "isSparePartsCompatibility": false,
+    "isVerifiedItem": false,
+    "isXl": false,
+    "iva": {
+      "AutoParamsStep": [],
+      "AutoPartsManufacturerStep": [],
+      "AutoTireInfoStep": [],
+      "AutoTireManufacturerStep": [],
+      "AutotekaStep": [],
+      "BadgeBarStep": [
+        {
+          "componentData": {
+            "component": "badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2692,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#965EEB",
+                    "valueDark": "#9F63FF"
+                  },
+                  "fontColor": {
+                    "value": "#FFFFFF",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "pipka"
+                },
+                "title": "Надёжный партнёр",
+                "version": 2
+              },
+              {
+                "id": 11,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#EBEAE8",
+                    "valueDark": "#2E2E2E"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  },
+                  "leftEdgeStyle": "flag",
+                  "rightEdgeStyle": "antiPyramid"
+                },
+                "title": "Рыночная цена",
+                "version": 2
+              }
+            ],
+            "debug": {
+              "id": 8285178722
+            }
+          }
+        }
+      ],
+      "BadgeStickerStep": [],
+      "BadgesStep": [],
+      "DateInfoStep": [
+        {
+          "componentData": {
+            "component": "date-info"
+          },
+          "default": true,
+          "payload": {
+            "absolute": "",
+            "debug": {
+              "id": 8285178722
+            },
+            "relative": "7 дней назад"
+          }
+        },
+        {
+          "componentData": {
+            "component": "vas"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "isTooltipHidden": false,
+            "vas": []
+          }
+        }
+      ],
+      "DescriptionStep": [
+        {
+          "componentData": {
+            "component": "description"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "description": "Арт. 19207984.\n\nПродается студия в ЖК Город Мастеров от застройщика Рсти (Росстройинвест).\n\nКвартира чистая и уютная, полностью готова к проживанию: выполнен ремонт в спокойной цветовой гамме, есть вся необходимая мебель и техника. Минимум вложений — заезжай и живи.\n\nУдобная планировка с большим жилым пространством, грамотное зонирование.\n\nИз окна квартиры открывается вид во двор.\n\nЖК «Город Мастеров» — стильный проект комфорт-класса от застройщика Росстройинвест. Обособленный закрытый внутренний двор без машин, с видеонаблюдением, подземный паркинг на 300 машин, гостевая парковка, уютный просторный холл.\n\nРайон обладает отлично развитой инфраструктурой: в пешей доступности расположены школы, детские сады, поликлиники, торговые центры, супермаркеты, фитнес-клубы и другие объекты, необходимые для комфортной жизни. Много магазинов, кафе и салонов красоты рядом.\n\nОтличная транспортная доступность: удобный выезд на проспект Маршала Блюхера, 10 минут до центра и Кад. Рядом две станции метро — Выборгская и Лесная. Рядом парк Академика Сахарова, Пискаревский и Пионерский парки — отличные места для прогулок и отдыха.\n\nПодходит как для собственного проживания, так и для сдачи в аренду.\n\nЗвоните, с удовольствием организуем просмотр и ответим на все интересующие вопросы!",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "DevelopmentNameStep": [
+        {
+          "componentData": {
+            "component": "geo"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "geoForItems": {
+              "addressLocality": "Санкт-Петербург",
+              "formattedAddress": "Пр-т Маршала Блюхера, 9к2",
+              "geoReferences": [
+                {
+                  "after": " 1,8 км",
+                  "afterWithIcon": {
+                    "iconName": "walkingRoute16",
+                    "text": "21–30 мин."
+                  },
+                  "colors": [
+                    "#D6083B"
+                  ],
+                  "content": "Лесная"
+                }
+              ],
+              "multiAddressesInfo": null,
+              "radiusInfo": null
+            }
+          }
+        }
+      ],
+      "FavoritesStep": [
+        {
+          "componentData": {
+            "component": "favorites"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "favorite": {
+              "access": {
+                "compare": true,
+                "favorite": true
+              },
+              "categorySlug": "kvartiry",
+              "fromBlock": null,
+              "fromPage": "catalog",
+              "id": 8285178722,
+              "isFavorite": false,
+              "rootCategoryId": 4,
+              "searchHash": "1vtIRGbGuCk3H5Rm"
+            }
+          }
+        }
+      ],
+      "FirstLineStep": [],
+      "FourthLineStep": [],
+      "GroupingsStep": [],
+      "OEMStep": [],
+      "PriceListStep": [],
+      "PriceStep": [
+        {
+          "componentData": {
+            "component": "price"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "isHighlighted": false,
+            "normalizedPrice": "351 101 ₽ за м²",
+            "priceDetailed": {
+              "postfix": "",
+              "string": "7 970 000",
+              "stringWithoutDiscount": null,
+              "value": 7970000,
+              "wasLowered": false
+            }
+          }
+        }
+      ],
+      "SecondLineStep": [
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "isHideWide": true,
+            "value": "Агентство"
+          }
+        }
+      ],
+      "ThirdLineStep": [],
+      "TitleStep": [
+        {
+          "componentData": {
+            "component": "title"
+          },
+          "default": true,
+          "payload": {
+            "debug": {
+              "id": 8285178722
+            },
+            "seo": {
+              "title": "Квартира-студия, 22,7 м², 3/17 эт. в Санкт-Петербурге"
+            },
+            "title": "Квартира-студия, 22,7 м², 3/17 эт.",
+            "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA"
+          }
+        }
+      ],
+      "UserInfoStep": [
+        {
+          "componentData": {
+            "component": "seller-info"
+          },
+          "default": true,
+          "payload": {
+            "profile": {
+              "link": "/brands/pia-spb?src=search_seller_info\u0026iid=8285178722",
+              "title": "Первое Ипотечное Агентство (ПИА Недвижимость)"
+            },
+            "rating": null,
+            "showLink": true
+          }
+        },
+        {
+          "componentData": {
+            "component": "text"
+          },
+          "default": true,
+          "payload": {
+            "color": "gray44",
+            "value": "2694 завершённых объявления"
+          }
+        },
+        {
+          "componentData": {
+            "component": "seller-badgebar"
+          },
+          "default": true,
+          "payload": {
+            "badges": [
+              {
+                "id": 2360,
+                "style": {
+                  "backgroundColor": {
+                    "value": "#CCECFF",
+                    "valueDark": "#004078"
+                  },
+                  "fontColor": {
+                    "value": "#000000",
+                    "valueDark": "#E3E3E3"
+                  }
+                },
+                "title": "Реквизиты проверены",
+                "version": 1
+              }
+            ],
+            "debug": {
+              "id": 8285178722
+            }
+          }
+        }
+      ]
+    },
+    "ivaItemRedesign": true,
+    "jobSeekerUpdateTimeStamp": null,
+    "lastMinuteOffer": null,
+    "location": {
+      "id": 653240,
+      "isCurrent": true,
+      "isRegion": false,
+      "name": "Санкт-Петербург",
+      "namePrepositional": "Санкт-Петербурге"
+    },
+    "locationId": 653240,
+    "loginLink": "#login?authsrc=ps\u0026next=/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA\u0026showPhoneNumber",
+    "microCategoryId": 4930,
+    "nativeVideo": null,
+    "normalizedPrice": "351 101 ₽ за м²",
+    "openInNewTab": true,
+    "phoneImage": null,
+    "priceDetailed": {
+      "enabled": true,
+      "exponent": "7,97 млн",
+      "fullString": "7 970 000 ₽",
+      "hasValue": true,
+      "normalizedPrice": "351 101 ₽ за м²",
+      "postfix": "",
+      "string": "7 970 000",
+      "stringWithoutDiscount": null,
+      "title": {
+        "full": "Цена",
+        "short": "Цена"
+      },
+      "titleDative": "цене",
+      "value": 7970000,
+      "wasLowered": false
+    },
+    "priceWithoutDiscount": null,
+    "rating": {
+      "formattedValue": {
+        "attributes": {},
+        "text": "4,5 · 17 отзывов",
+        "version": 1
+      },
+      "score": null,
+      "showChevronEnd": false,
+      "summary": "",
+      "type": "rating"
+    },
+    "ratingExperimentGroup": "names_and_badges_and_rating",
+    "realtyBenefit": {
+      "startText": {
+        "color": "",
+        "value": ""
+      }
+    },
+    "realtyInfo": {
+      "categoryType": "ss",
+      "transactionType": "sell"
+    },
+    "showRecallRequestButton": false,
+    "sortTimeStamp": 1790678124000,
+    "title": "Квартира-студия, 22,7 м², 3/17 эт.",
+    "turnOffDate": false,
+    "type": "item",
+    "urlPath": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+    "userLogo": {
+      "developerId": null,
+      "imageAlt": "Санкт-Петербург, пр-т Маршала Блюхера, 9к2",
+      "link": null,
+      "slug": null,
+      "src": null
+    }
+  },
+  "refreshed_at": null,
+  "region": null,
+  "renovation": null,
+  "rooms": null,
+  "seller": {
+    "name": "Первое Ипотечное Агентство (ПИА Недвижимость)",
+    "type": "developer",
+    "url": "https://www.avito.ru/brands/pia-spb?src=search_seller_info\u0026iid=8285178722"
+  },
+  "seller_name": "Первое Ипотечное Агентство (ПИА Недвижимость)",
+  "seller_rating": null,
+  "seller_type": "developer",
+  "seller_url": "https://www.avito.ru/brands/pia-spb?src=search_seller_info\u0026iid=8285178722",
+  "source_task": "spb-7.95-8.0-studios",
+  "studio": true,
+  "title": "Квартира-студия, 22,7 м², 3/17 эт.",
+  "total_area": 22.7,
+  "updated_at": "2026-10-03T11:31:15.583152Z",
+  "url": "https://www.avito.ru/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "url_path": "/sankt-peterburg/kvartiry/kvartira-studiya_227_m_317_et._8285178722?context=H4sIAAAAAAAA_wE_AMD_YToyOntzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjA7czoxOiJ4IjtzOjE2OiIxdnRJUkdiR3VDazNINVJtIjt9RgIZOz8AAAA",
+  "views_count": null,
+  "year_built": null
+}
