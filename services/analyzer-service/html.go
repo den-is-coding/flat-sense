@@ -43,7 +43,7 @@ var pageTmpl = template.Must(template.New("page").
   <input type="text" name="ad" placeholder="URL объявления Авито или id (например 3651684187)" value="{{.Query}}">
   <button type="submit">Оценить</button>
 </form>
-{{if .Report}}{{template "report" .Report}}{{end}}
+{{if .Report}}{{template "report" .}}{{end}}
 <p class="muted">Методика: арендные аналоги — студии того же ЖК/дома в диапазоне площади ±20% (правила #55;
 ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам). В стоимости учтены:
 меблировка {{price .Config.FurnishingCostRUB}} ₽ (если мебели нет), риэлтор {{.Config.RealtorFeePct}}%,
@@ -51,6 +51,7 @@ var pageTmpl = template.Must(template.New("page").
 Источник данных: локальные дампы парсера.</p>
 </body></html>
 {{define "report"}}
+{{with .Report}}
 {{with .Listing}}
 <div class="card">
  {{if .Photo}}<img src="{{.Photo}}" alt="">{{end}}
@@ -86,6 +87,7 @@ var pageTmpl = template.Must(template.New("page").
  </div>
  {{end}}{{end}}
  <div class="muted">confidence: {{.Confidence}}{{range .Warnings}} · {{.}}{{end}}</div>
+{{end}}
 {{end}}
 {{end}}
 `))
