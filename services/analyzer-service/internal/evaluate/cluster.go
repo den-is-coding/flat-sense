@@ -17,34 +17,42 @@ type RentStats struct {
 	Max          float64 `json:"max"`
 }
 
-// Cluster — арендный кластер: студии того же дома (или адреса) в
-// диапазоне площади входного объявления (правила #55: ЖК/дом → комнаты →
-// площадь; параметры диапазона — в Config, см. README).
+// Cluster — арендный кластер: студии того же ЖК/дома (правила #55:
+// локация → студии). Все студии ЖК попадают в кластер без фильтра по
+// площади — при малых пулах он уничтожает выборку; фактический разброс
+// площадей отдаётся на страницу как справка.
 type Cluster struct {
 	HouseKey  string    `json:"houseKey"`
-	AreaMin   float64   `json:"areaMin"` // границы диапазона площади
-	AreaMax   float64   `json:"areaMax"`
 	Comps     []Listing `json:"-"`
 	Furnished []Listing `json:"-"`
 	Unfurn    []Listing `json:"-"`
 }
 
-// BuildCluster отбирает из comps студии того же дома/ЖК в диапазоне площади
-// и разбивает их по мебели (неопределённые остаются только в Comps —
-// в строгие группы сценариев они не попадают). Совпадение локации:
-// пересечение ключей (дом/адрес/алиасы корпусов ЖК) ИЛИ расстояние по
-// координатам не больше radiusM (если координаты есть у обоих).
-func BuildCluster(comps []Listing, input *Listing, areaTolPct float64, radiusM int) Cluster {
-	lo := input.TotalArea * (1 - areaTolPct/100)
-	hi := input.TotalArea * (1 + areaTolPct/100)
-	c := Cluster{HouseKey: input.HouseKey(), AreaMin: lo, AreaMax: hi}
+// AreaRange — фактический разброс площадей аналогов [мин, макс].
+func (c *Cluster) AreaRange() (lo, hi float64) {
+	for i := range c.Comps {
+		a := c.Comps[i].TotalArea
+		if lo == 0 || a < lo {
+			lo = a
+		}
+		if a > hi {
+			hi = a
+		}
+	}
+	return lo, hi
+}
+
+// BuildCluster отбирает из comps студии того же ЖК/дома и разбивает их
+// по мебели (неопределённые остаются только в Comps — в строгие группы
+// сценариев они не попадают). Совпадение локации: пересечение ключей
+// (дом/адрес/алиасы корпусов ЖК) ИЛИ расстояние по координатам не больше
+// radiusM (если координаты есть у обоих).
+func BuildCluster(comps []Listing, input *Listing, radiusM int) Cluster {
+	c := Cluster{HouseKey: input.HouseKey()}
 	inputKeys := input.Keys()
 	for i := range comps {
 		r := &comps[i]
 		if !r.IsStudio() || r.Price <= 0 {
-			continue
-		}
-		if r.TotalArea < lo || r.TotalArea > hi {
 			continue
 		}
 		if !matchesKeys(r.Keys(), inputKeys) && !withinRadius(input, r, radiusM) {

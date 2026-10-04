@@ -77,9 +77,9 @@ func (e *notFoundError) Error() string { return "listing not found" }
 // E2E (issue #64, критерий 1): студия без мебели в доме с арендным пулом →
 // обе строки сценария, арифметика проверена вручную по ценам фикстур.
 //
-// Дом 175634, аренда: без мебели 26000/27000/28000/32000 (медиана 27500),
-// с мебелью 33000/35000/36000 (медиана 35000); 29000 без признака — в
-// кластере, но вне групп; 45000 @34 м² — вне диапазона площади.
+// Дом 175634, аренда (весь кластер, без фильтра по площади): без мебели
+// 26000/27000/28000/32000/45000 (медиана 28000), с мебелью 33000/35000/36000
+// (медиана 35000); 29000 без признака — в кластере, но вне групп.
 // Вход: цена 7 958 145 ₽, площадь 21.2 м².
 func TestEvalUnfurnishedBothScenarios(t *testing.T) {
 	ev := fixturesEvaluator(t)
@@ -94,11 +94,11 @@ func TestEvalUnfurnishedBothScenarios(t *testing.T) {
 		t.Fatalf("меблировка входа: %s (%s)", rep.InputFurnishing, rep.FurnishingNote)
 	}
 	c := rep.Cluster
-	if c.N != 8 {
-		t.Fatalf("кластер N = %d, want 8 (8 comps в диапазоне, один уехал по площади)", c.N)
+	if c.N != 9 {
+		t.Fatalf("кластер N = %d, want 9 (все арендные студии дома, без фильтра площади)", c.N)
 	}
-	if c.NUnfurnished != 4 || c.NFurnished != 3 {
-		t.Fatalf("разбивка: unfurnished=%d furnished=%d, want 4/3", c.NUnfurnished, c.NFurnished)
+	if c.NUnfurnished != 5 || c.NFurnished != 3 {
+		t.Fatalf("разбивка: unfurnished=%d furnished=%d, want 5/3", c.NUnfurnished, c.NFurnished)
 	}
 	if len(rep.Scenarios) != 2 {
 		t.Fatalf("сценариев %d, want 2", len(rep.Scenarios))
@@ -108,16 +108,16 @@ func TestEvalUnfurnishedBothScenarios(t *testing.T) {
 	if unf.Name != "без мебели" || !unf.Applicable {
 		t.Fatalf("сценарий 1: %+v", unf)
 	}
-	approxT(t, "rent median (без мебели)", unf.RentMedian, 27500, 1e-9)
-	approxT(t, "rent p25", unf.RentP25, 26750, 1e-9)
-	approxT(t, "rent p75", unf.RentP75, 29000, 1e-9)
-	if unf.Comps != 4 || unf.PriceUsed != 8_301_471 || unf.FurnishingCost != 0 || unf.DealCosts != 343_326 {
+	approxT(t, "rent median (без мебели)", unf.RentMedian, 28000, 1e-9)
+	approxT(t, "rent p25", unf.RentP25, 27000, 1e-9)
+	approxT(t, "rent p75", unf.RentP75, 32000, 1e-9)
+	if unf.Comps != 5 || unf.PriceUsed != 8_301_471 || unf.FurnishingCost != 0 || unf.DealCosts != 343_326 {
 		t.Fatalf("аргументы сценария 1: %+v", unf)
 	}
 	// цена 7 958 145 + сделка 343 326 (4% = 318 326 + 25 000) = 8 301 471;
-	// годовая аренда 330 000 ₽: окупаемость 25.1560… лет
-	approxT(t, "payback", unf.PaybackYears, 8_301_471.0/330_000.0, 1e-9)
-	approxT(t, "yield", unf.YieldPct, 330_000.0/8_301_471.0*100, 1e-9)
+	// годовая аренда 336 000 ₽: окупаемость 24.7080… лет
+	approxT(t, "payback", unf.PaybackYears, 8_301_471.0/336_000.0, 1e-9)
+	approxT(t, "yield", unf.YieldPct, 336_000.0/8_301_471.0*100, 1e-9)
 
 	if furn.Name != "с мебелью (после меблировки)" || !furn.Applicable {
 		t.Fatalf("сценарий 2: %+v", furn)
@@ -204,14 +204,19 @@ func TestEvalSmallClusterWarning(t *testing.T) {
 
 // Диапазон площади — границы из конфига (проверка на фикстурах: 34 м²
 // не входит в ±20% от 21.2 м²).
-func TestEvalAreaRangeFromConfig(t *testing.T) {
+// Кластер не фильтруется по площади: все арендные студии дома попадают
+// в кластер, фактический разброс площадей идёт на страницу справкой.
+func TestClusterIncludesAllAreas(t *testing.T) {
 	ev := fixturesEvaluator(t)
-	ev.Config.AreaTolerancePct = 100 // расширяем: 34 м² теперь входит
 	rep, err := ev.EvaluateByID(context.Background(), 3651684187)
 	if err != nil {
 		t.Fatal(err)
 	}
 	if rep.Cluster.N != 9 {
-		t.Fatalf("N = %d, want 9 (добавился комп 34 м²)", rep.Cluster.N)
+		t.Fatalf("N = %d, want 9", rep.Cluster.N)
+	}
+	lo, hi := rep.Cluster.AreaRange[0], rep.Cluster.AreaRange[1]
+	if lo > 20.9+1e-9 || hi < 34.0-1e-9 {
+		t.Fatalf("диапазон площадей аналогов: [%v, %v], want [<=20.9, >=34.0]", lo, hi)
 	}
 }

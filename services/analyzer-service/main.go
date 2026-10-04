@@ -154,11 +154,6 @@ func configFromEnv() evaluate.Config {
 			cfg.FurnishingCostRUB = n
 		}
 	}
-	if v := os.Getenv("AREA_TOLERANCE_PCT"); v != "" {
-		if f, err := strconv.ParseFloat(v, 64); err == nil && f > 0 {
-			cfg.AreaTolerancePct = f
-		}
-	}
 	if v := os.Getenv("MIN_CLUSTER_SIZE"); v != "" {
 		if n, err := strconv.Atoi(v); err == nil && n > 0 {
 			cfg.MinClusterSize = n

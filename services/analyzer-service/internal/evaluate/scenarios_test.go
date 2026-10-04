@@ -82,7 +82,7 @@ func TestClusterStats(t *testing.T) {
 		{Price: 32000, TotalArea: 22.0, Studio: true, Rooms: one(0), Address: "x"},
 	}
 	input := Listing{TotalArea: 21.2, Studio: true, Address: "x"}
-	c := BuildCluster(comps, &input, 20, 500)
+	c := BuildCluster(comps, &input, 500)
 	s := c.Stats()
 	if s.N != 4 {
 		t.Fatalf("N = %d", s.N)
@@ -107,7 +107,7 @@ func TestBuildClusterFilters(t *testing.T) {
 
 	comps := []Listing{
 		mk(1, "same", "студия", 21.0, true),        // в кластере
-		mk(2, "same", "студия", 34.0, true),        // площадь вне ±20%
+		mk(2, "same", "студия", 34.0, true),        // площадь не фильтруется — тоже в кластере
 		mk(3, "other", "студия", 21.0, true),       // другой дом
 		mk(4, "same", "1-к квартира", 21.0, false), // не студия
 		mk(5, "same", "студия", 21.4, true),        // в кластере
@@ -125,12 +125,12 @@ func TestBuildClusterFilters(t *testing.T) {
 			comps[i].Geo.AddressLinks.HouseLink.Link = "/h/x/" + id
 		}
 	}
-	c := BuildCluster(comps, &input, 20, 500)
-	if len(c.Comps) != 2 {
-		t.Fatalf("в кластере %d аналогов, want 2 (ids 1 и 5)", len(c.Comps))
+	c := BuildCluster(comps, &input, 500)
+	if len(c.Comps) != 3 {
+		t.Fatalf("в кластере %d аналогов, want 3 (ids 1, 2, 5)", len(c.Comps))
 	}
-	if c.Comps[0].ID != 1 || c.Comps[1].ID != 5 {
-		t.Fatalf("лишние аналоги: %d,%d", c.Comps[0].ID, c.Comps[1].ID)
+	if c.Comps[0].ID != 1 || c.Comps[1].ID != 2 || c.Comps[2].ID != 5 {
+		t.Fatalf("лишние аналоги: %d,%d,%d", c.Comps[0].ID, c.Comps[1].ID, c.Comps[2].ID)
 	}
 }
 

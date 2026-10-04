@@ -44,7 +44,7 @@ var pageTmpl = template.Must(template.New("page").
   <button type="submit">Оценить</button>
 </form>
 {{if .Report}}{{template "report" .}}{{end}}
-<p class="muted">Методика: арендные аналоги — студии того же ЖК/дома в диапазоне площади ±20% (правила #55;
+<p class="muted">Методика: арендные аналоги — все арендные студии того же ЖК/дома (правила #55;
 ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам). В стоимости учтены:
 меблировка {{price .Config.FurnishingCostRUB}} ₽ (если мебели нет), риэлтор {{.Config.RealtorFeePct}}%,
 титульное страхование {{.Config.TitleInsurancePct}}%, оформление сделки {{price .Config.DealFixedCostsRUB}} ₽.
@@ -84,6 +84,11 @@ var pageTmpl = template.Must(template.New("page").
    <div><div class="muted">доходность</div><div class="num">{{printf "%.2f" .YieldPct}} %/год</div></div>
    <div><div class="muted">аналогов в сценарии</div><div class="num">{{.Comps}}</div></div>
   </div>
+ </div>
+ {{else}}
+ <div class="card">
+  <h3>{{.Name}}</h3>
+  <div class="refuse"><b>Нет данных.</b> {{.SkippedReason}}</div>
  </div>
  {{end}}{{end}}
  <div class="muted">confidence: {{.Confidence}}{{range .Warnings}} · {{.}}{{end}}</div>

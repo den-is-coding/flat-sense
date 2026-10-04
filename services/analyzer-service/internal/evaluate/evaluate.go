@@ -28,9 +28,6 @@ type Config struct {
 	// FurnishingCostRUB — надбавка на меблировку для сценария «с мебелью»,
 	// когда мебель в объявлении отсутствует (issue: 500 000 ₽).
 	FurnishingCostRUB int64
-	// AreaTolerancePct — допуск площади аналогов относительно входного
-	// объявления (правила #55, параметр уточняется задачей #55).
-	AreaTolerancePct float64
 	// MinClusterSize — минимальный кластер для полноценного confidence.
 	MinClusterSize int
 	// ClusterRadiusM — радиус сопоставления по координатам (фолбэк, когда
@@ -47,7 +44,7 @@ type Config struct {
 // DefaultConfig — значения по умолчанию (продублированы в env-обвязке main.go).
 func DefaultConfig() Config {
 	return Config{
-		FurnishingCostRUB: 500_000, AreaTolerancePct: 20, MinClusterSize: 3,
+		FurnishingCostRUB: 500_000, MinClusterSize: 3,
 		ClusterRadiusM: 500, RealtorFeePct: 3, TitleInsurancePct: 1,
 		DealFixedCostsRUB: 25_000,
 	}
@@ -69,7 +66,7 @@ type Evaluator struct {
 
 // NewEvaluator — конструктор с дефолтным конфигом при нулевых полях.
 func NewEvaluator(src Source, cfg Config) *Evaluator {
-	if cfg.FurnishingCostRUB == 0 && cfg.AreaTolerancePct == 0 {
+	if cfg.FurnishingCostRUB == 0 && cfg.MinClusterSize == 0 {
 		cfg = DefaultConfig()
 	}
 	if cfg.MinClusterSize == 0 {
@@ -145,16 +142,18 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 		rep.FurnishingNote = "меблировка по объявлению не определена — консервативно считаем «без мебели»"
 	}
 
-	// Арендный пул и кластер «тот же дом, студии, диапазон площади».
+	// Арендный пул и кластер «студии того же ЖК/дома» (все, без фильтра
+	// по площади — фактический разброс площадей идёт на страницу справкой).
 	rents, err := e.Source.RentListings(ctx)
 	if err != nil {
 		return nil, err
 	}
-	cluster := BuildCluster(rents, input, e.Config.AreaTolerancePct, e.Config.ClusterRadiusM)
+	cluster := BuildCluster(rents, input, e.Config.ClusterRadiusM)
 	stats := cluster.Stats()
+	lo, hi := cluster.AreaRange()
 	rep.Cluster = &ClusterView{
 		HouseKey:     cluster.HouseKey,
-		AreaRange:    [2]float64{round1(cluster.AreaMin), round1(cluster.AreaMax)},
+		AreaRange:    [2]float64{round1(lo), round1(hi)},
 		N:            stats.N,
 		NFurnished:   stats.NFurnished,
 		NUnfurnished: stats.NUnfurnished,
@@ -165,8 +164,8 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 		return &Report{
 			Status: "no_rent_data",
 			Notice: fmt.Sprintf(
-				"по дому/ЖК %s нет арендных данных о студиях в диапазоне %.1f–%.1f м² — окупаемость не считаем, это валидный исход",
-				cluster.HouseKey, cluster.AreaMin, cluster.AreaMax),
+				"по дому/ЖК %s нет арендных данных о студиях — окупаемость не считаем, это валидный исход",
+				cluster.HouseKey),
 			Listing:         rep.Listing,
 			InputFurnishing: rep.InputFurnishing,
 			FurnishingNote:  rep.FurnishingNote,
@@ -174,40 +173,38 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	}
 
 	// Сценарии. Медианы берутся из строгих групп по мебели; если группа
-	// пуста, а кластер не пуст — фолбэк на медиану всего кластера с
-	// предупреждением (в реальных объявлениях мебель часто не указана).
+	// пуста — сценарий помечается «нет данных» с явной причиной
+	// (числа не выдумываем), даже если кластер в целом не пуст.
 	price := input.Price
 	if price <= 0 {
 		return nil, fmt.Errorf("listing %d has no price", input.ID)
 	}
 	dealCosts := e.Config.DealCosts(price)
-	furnMed, furnOK := cluster.groupMedian(cluster.Furnished)
-	unfMed, unfOK := cluster.groupMedian(cluster.Unfurn)
+	furnMed, _ := cluster.groupMedian(cluster.Furnished)
+	unfMed, _ := cluster.groupMedian(cluster.Unfurn)
 	furnP := groupBounds(cluster.Furnished)
 	unfP := groupBounds(cluster.Unfurn)
 	furnComps, unfComps := len(cluster.Furnished), len(cluster.Unfurn)
-
-	if !unfOK && stats.N > 0 {
-		unfMed, unfP, unfComps = stats.Median, bounds{p25: stats.P25, p75: stats.P75}, stats.N
-		rep.Warnings = append(rep.Warnings, fmt.Sprintf(
-			"меблировка не указана у %d из %d арендных аналогов — медиана «без мебели» посчитана по всему кластеру", stats.N-stats.NFurnished-stats.NUnfurnished, stats.N))
-	}
-	if !furnOK && stats.N > 0 {
-		furnMed, furnP, furnComps = stats.Median, bounds{p25: stats.P25, p75: stats.P75}, stats.N
-		rep.Warnings = append(rep.Warnings, fmt.Sprintf(
-			"в кластере нет арендных объявлений с явно указанной мебелью (%d без указания) — медиана «с мебелью» посчитана по всему кластеру", stats.N-stats.NFurnished-stats.NUnfurnished))
-	}
+	unknown := stats.N - stats.NFurnished - stats.NUnfurnished
 
 	if f == Furnished {
 		// Мебель есть: только сценарий «с мебелью», без надбавки (issue п.5).
-		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, furnComps, price, 0, dealCosts))
+		s := ComputeScenario("с мебелью", furnMed, furnP.p25, furnP.p75, furnComps, price, 0, dealCosts)
+		if !s.Applicable {
+			s.SkippedReason = fmt.Sprintf("нет данных: в арендном кластере нет объявлений с явной мебелью (не указана у %d из %d)", unknown, stats.N)
+		}
+		rep.Scenarios = append(rep.Scenarios, s)
 	} else {
 		// Мебели нет (или сомнение): оба сценария (issue п.3–4).
-		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, unfComps, price, 0, dealCosts))
-		rep.Scenarios = append(rep.Scenarios,
-			ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, furnComps, price, e.Config.FurnishingCostRUB, dealCosts))
+		unf := ComputeScenario("без мебели", unfMed, unfP.p25, unfP.p75, unfComps, price, 0, dealCosts)
+		if !unf.Applicable {
+			unf.SkippedReason = fmt.Sprintf("нет данных: в арендном кластере нет объявлений с явным «без мебели» (не указана у %d из %d)", unknown, stats.N)
+		}
+		furn := ComputeScenario("с мебелью (после меблировки)", furnMed, furnP.p25, furnP.p75, furnComps, price, e.Config.FurnishingCostRUB, dealCosts)
+		if !furn.Applicable {
+			furn.SkippedReason = fmt.Sprintf("нет данных: в арендном кластере нет объявлений с явной мебелью (не указана у %d из %d)", unknown, stats.N)
+		}
+		rep.Scenarios = append(rep.Scenarios, unf, furn)
 	}
 
 	// Confidence по размеру кластера (метрики качества — задача #55).
