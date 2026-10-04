@@ -53,40 +53,35 @@
       opts: { maxNativeZoom: 16 }
     }
   };
-  // Тема (issue #88): 'auto' (системная) | 'light' | 'dark' — ручной
-  // выбор в localStorage, по умолчанию системная. Подложка карты следует
-  // эффективной теме; маркеры/UI перекрашиваются CSS-переменными сами.
-  var theme = localStorage.getItem('mapTheme') || 'auto';
-  if (['auto', 'light', 'dark'].indexOf(theme) < 0) theme = 'auto';
+  // Тема (issue #88, доработка по фидбеку): отдельной кнопки темы нет —
+  // тему переключает выбор подложки («Светлая»/«Тёмная» меняют и тайлы,
+  // и интерфейс; стандартная ОСМ тему не трогает). Хранение — localStorage
+  // 'mapTheme' = light|dark; пока не выбрано — системная prefers-color-scheme.
+  // Маркеры/UI перекрашиваются CSS-переменными сами.
   var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  var themeBtn = document.getElementById('theme-toggle');
-  var THEME_META = {
-    auto: { next: 'light', icon: 'monitor', label: 'Системная' },
-    light: { next: 'dark', icon: 'sun', label: 'Светлая' },
-    dark: { next: 'auto', icon: 'moon', label: 'Тёмная' }
-  };
+
+  function storedTheme() { return localStorage.getItem('mapTheme'); }
 
   function effectiveDark() {
-    return theme === 'dark' || (theme === 'auto' && darkQuery.matches);
+    var t = storedTheme();
+    if (t === 'light' || t === 'dark') return t === 'dark';
+    return darkQuery.matches;
   }
 
   function applyTheme() {
-    if (theme === 'auto') document.documentElement.removeAttribute('data-theme');
-    else document.documentElement.setAttribute('data-theme', theme);
-    // подложка переключается вместе с темой (ручной выбор подложки
-    // работает, но перекрывается следующим переключением темы)
-    basemap = effectiveDark() ? 'dark' : 'light';
-    localStorage.setItem('mapBasemap', basemap);
-    if (tileLayer) map.removeLayer(tileLayer);
-    tileLayer = makeTiles(basemap).addTo(map);
-    if (basemapPanel) renderBasemapButtons();
-    if (themeBtn) renderThemeButton();
+    var t = storedTheme();
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    else document.documentElement.removeAttribute('data-theme');
   }
 
-  var basemap;
+  var basemap = localStorage.getItem('mapBasemap');
+  if (!BASEMAPS[basemap]) {
+    basemap = effectiveDark() ? 'dark' : (storedTheme() === 'light' ? 'light' : 'osm');
+  }
   var tileLayer;
   var basemapPanel = document.getElementById('basemap-panel');
   applyTheme();
+  tileLayer = makeTiles(basemap).addTo(map);
   map.fitBounds([[59.83, 30.15], [60.02, 30.45]]); // СПб по умолчанию
 
   function makeTiles(key) {
@@ -238,11 +233,8 @@
     metric = b.dataset.metric;
     localStorage.setItem('mapMetric', metric);
     renderMetricButtons();
-    restyle();
+    renderMarks(); // пересобрать пины и кластеры с новой метрикой
   });
-  function restyle() {
-    cluster.eachLayer(function (mk) { mk.setIcon(pinIcon(mk.dataset)); });
-  }
   renderMetricButtons();
 
   // Переключатель подложки: выбор в localStorage, применяется на лету.
@@ -258,27 +250,15 @@
     localStorage.setItem('mapBasemap', basemap);
     map.removeLayer(tileLayer);
     tileLayer = makeTiles(basemap).addTo(map);
+    // «Светлая»/«Тёмная» меняют и интерфейс; ОСМ — только тайлы
+    if (basemap === 'light' || basemap === 'dark') {
+      localStorage.setItem('mapTheme', basemap);
+      applyTheme();
+    }
     renderBasemapButtons();
   });
   renderBasemapButtons();
 
-  // Переключатель темы: цикл auto → light → dark; подпись и иконка lucide
-  // (THEME_META объявлена в блоке темы — до первого applyTheme).
-  function renderThemeButton() {
-    var meta = THEME_META[theme];
-    themeBtn.innerHTML = '<i data-lucide="' + meta.icon + '"></i>' + meta.label;
-    if (window.lucide) window.lucide.createIcons();
-  }
-  themeBtn.addEventListener('click', function () {
-    theme = THEME_META[theme].next;
-    localStorage.setItem('mapTheme', theme);
-    applyTheme();
-  });
-  // системная тема сменилась при auto — перекрашиваемся и меняем подложку
-  darkQuery.addEventListener('change', function () {
-    if (theme === 'auto') applyTheme();
-  });
-  renderThemeButton();
   if (window.lucide) window.lucide.createIcons();
 
   // Легенда: сворачиваемая, диапазоны и цвета — из MAP_THRESHOLDS.
@@ -330,21 +310,42 @@
     if (fh.checked) p.set('has_roi', '1');
     return p;
   }
-  document.getElementById('f-apply').onclick = function () { saveFilters(); history.replaceState(null, '', location.pathname + '?' + currentQuery()); load(); };
+  // Фильтры применяются автоматически (issue #88, фидбек): числа — с
+  // дебаунсом при вводе, селект/чекбокс — сразу; «Применить» не нужна.
+  var filterTimer = null;
+  function applyFilters() {
+    saveFilters();
+    history.replaceState(null, '', location.pathname + '?' + currentQuery());
+    load();
+  }
+  fy.addEventListener('input', function () {
+    clearTimeout(filterTimer);
+    filterTimer = setTimeout(applyFilters, 400);
+  });
+  fp.addEventListener('input', function () {
+    clearTimeout(filterTimer);
+    filterTimer = setTimeout(applyFilters, 400);
+  });
+  fr.addEventListener('change', applyFilters);
+  fh.addEventListener('change', applyFilters);
   document.getElementById('f-reset').onclick = function () {
     fy.value = fp.value = ''; fr.value = ''; fh.checked = false;
-    saveFilters(); history.replaceState(null, '', location.pathname); load();
+    applyFilters();
   };
 
   var inflight = null;
+  var marks = []; // кэш маркеров текущей выдачи
+  function renderMarks() {
+    cluster.clearLayers();
+    cluster.addLayers(marks); // bulk-добавление markercluster
+  }
   function load() {
     var p = currentQuery();
     if (inflight) inflight.abort();
     inflight = fetch('/api/map/listings?' + p).then(function (r) { return r.json(); }).then(function (data) {
       inflight = null;
-      cluster.clearLayers();
-      var marks = data.items.map(marker);
-      cluster.addLayers(marks); // bulk-добавление markercluster
+      marks = data.items.map(marker);
+      renderMarks();
     }).catch(function () { inflight = null; });
   }
 
