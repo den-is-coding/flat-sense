@@ -132,11 +132,12 @@
   // Индекс диапазона = число границ, которые значение перешагнуло.
   // Диапазоны по метрикам (issue #108): цвет следует выбранной метрике.
   // Индекс нормирован: 0 — худший (красный), последний — лучший (зелёный).
-  var T = (window.MAP_THRESHOLDS && window.MAP_THRESHOLDS.thresholds) || {};
+  // window.MAP_THRESHOLDS — плоский объект {yield:[...], price:[...], cost:[...]}
+  var T = window.MAP_THRESHOLDS || {};
   var BOUNDS = {
-    yield: T.yield || [5, 8],          // % годовых, «выше = зеленее»
-    price: T.price || [7.5e6, 9e6],    // ₽, «дешевле = зеленее»
-    cost: T.cost || [9.5e6, 11.5e6]    // ₽
+    yield: T.yield || [4.1, 4.55, 4.75, 5.05, 5.35, 5.65],                       // «выше = зеленее»
+    price: T.price || [7e6, 7.8e6, 8.5e6, 9e6, 9.6e6, 10.8e6],                   // «дешевле = зеленее»
+    cost: T.cost || [8.5e6, 9e6, 9.5e6, 10e6, 10.5e6, 11.5e6]                    // «дешевле = зеленее»
   };
 
   function bucketIndex(v, m) {
@@ -378,7 +379,7 @@
     var f = m.fmtShort;
     if (lo == null) return '≤ ' + f(hi);
     if (hi == null) return '> ' + f(lo);
-    return f(lo) + '–' + f(hi);
+    return f(lo) + ' – ' + f(hi);
   }
   function buildLegend() {
     var m = METRICS[metric];
@@ -407,9 +408,10 @@
     legendHead.textContent = LEGEND_TITLES[metric] + ' ▾';
   }
   function legendLabelYield(lo, hi) {
-    if (lo == null) return '< ' + hi + ' %';
-    if (hi == null) return '≥ ' + lo + ' %';
-    return lo + '–' + hi + ' %';
+    var f = function (v) { return String(v).replace('.', ','); };
+    if (lo == null) return '< ' + f(hi) + ' %';
+    if (hi == null) return '≥ ' + f(lo) + ' %';
+    return f(lo) + ' – ' + f(hi) + ' %';
   }
   legendHead.onclick = function () {
     var open = legendBody.style.display !== 'none';
