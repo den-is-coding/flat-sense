@@ -21,7 +21,6 @@ import (
 	"time"
 
 	"github.com/yourusername/real-estate-analyzer/image-ai-service/internal/floorplan"
-	"github.com/yourusername/real-estate-analyzer/image-ai-service/internal/roomfurnishing"
 	"github.com/yourusername/real-estate-analyzer/image-ai-service/internal/storage"
 )
 
@@ -50,21 +49,8 @@ func (s *Server) Register(mux *http.ServeMux) {
 		w.Write([]byte("OK"))
 	})
 	mux.HandleFunc("POST /api/detect", s.handleDetect)
-	// Фото-детектор меблировки (issue #110): тело — изображение,
-	// ответ {furnishing: furnished|unfurnished|unknown, confidence}.
-	mux.HandleFunc("POST /api/furnishing", s.handleFurnishing)
 	mux.HandleFunc("POST /api/ads/check", s.handleAdCheck)
 	mux.HandleFunc("GET /api/floor-plan", s.handleFloorPlan)
-}
-
-// handleFurnishing — классификация фото комнаты (меблирована/пустая).
-func (s *Server) handleFurnishing(w http.ResponseWriter, r *http.Request) {
-	img, err := decodeImage(r.Body)
-	if err != nil {
-		httpError(w, http.StatusBadRequest, "%v", err)
-		return
-	}
-	writeJSON(w, http.StatusOK, roomfurnishing.NewHeuristicDetector().Detect(img))
 }
 
 // handleDetect — быстрый разовый прогон одного изображения без записи в БД.

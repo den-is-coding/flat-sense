@@ -64,22 +64,22 @@ type Image struct {
 // Listing — объявление (подмножество полей avito_listings; JSON-теги
 // совпадают с дампами парсера data/*/listings/*.json и columns БД).
 type Listing struct {
-	ID          int64     `json:"id"`
-	URL         string    `json:"url"`
-	Title       string    `json:"title"`
-	DealType    string    `json:"deal_type"` // sale | rent_long | rent_daily
-	Category    string    `json:"category"`
-	Rooms       *int      `json:"rooms"`
-	Studio      bool      `json:"studio"`
-	TotalArea   float64   `json:"total_area"`
-	Floor       *int      `json:"floor"`
-	FloorsTotal *int      `json:"floors_total"`
-	Price       int64     `json:"price"`
-	Address     string    `json:"address"`
-	City        string    `json:"city"`
-	District    string    `json:"district"`
-	Metro       string    `json:"metro"`
-	HouseType   string    `json:"house_type"`
+	ID          int64   `json:"id"`
+	URL         string  `json:"url"`
+	Title       string  `json:"title"`
+	DealType    string  `json:"deal_type"` // sale | rent_long | rent_daily
+	Category    string  `json:"category"`
+	Rooms       *int    `json:"rooms"`
+	Studio      bool    `json:"studio"`
+	TotalArea   float64 `json:"total_area"`
+	Floor       *int    `json:"floor"`
+	FloorsTotal *int    `json:"floors_total"`
+	Price       int64   `json:"price"`
+	Address     string  `json:"address"`
+	City        string  `json:"city"`
+	District    string  `json:"district"`
+	Metro       string  `json:"metro"`
+	HouseType   string  `json:"house_type"`
 	// ResidentialComplex — «название ЖК» (колонка avito_listings из
 	// миграции 000011; в дампах парсера отсутствует, там ЖК в params).
 	ResidentialComplex string    `json:"residential_complex"`
