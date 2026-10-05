@@ -302,6 +302,11 @@ services:
       - ../services/analyzer-service:/app
     environment:
       <<: *common-env
+      # gRPC AnalyzerService (issue #6): EvaluateAd/UpdateAnalysis.
+      # ADS_GRPC_ADDR (адрес ads-service) уже в common-env.
+      GRPC_PORT: 50056
+    ports:
+      - "50056:50056"
     command: ["air", "-c", ".air.toml"]
 
   staging-service:

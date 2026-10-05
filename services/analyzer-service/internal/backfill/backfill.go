@@ -222,6 +222,13 @@ func (r *Runner) Run(ctx context.Context) (*Report, error) {
 	return rep, nil
 }
 
+// Upsert — публичная запись одной строки кэша для потокового режима
+// (#6): консьюмер parsed-ads и gRPC UpdateAnalysis кладут результат тем
+// же идемпотентным upsert, что и пакетный прогон.
+func (r *Runner) Upsert(ctx context.Context, row Row) error {
+	return r.upsert(ctx, row)
+}
+
 // textOrNil — пустая строка → NULL (CHECK-констрейнты на confidence/
 // input_furnishing допускают только NULL или значения из списка).
 func textOrNil(s string) any {
