@@ -221,15 +221,14 @@
     html += '<div class="addr">' + meta.join(' · ') + '</div><hr>';
 
     // ключевой блок: ожидаемая цена сдачи + вилка p25–p75 (оценка #64).
-    // Ключевой сценарий — по меблировке объявления; вторая строка —
-    // альтернативный сценарий. Нет данных — прочерк с объяснением.
+    // Главная — ВСЕГДА сценарий «с мебелью» (целевое состояние инвестиции,
+    // доходность считается по нему же); «без мебели» — альтернативной
+    // строкой. Нет данных — прочерк с объяснением.
     var furn = { name: 'С мебелью', med: d.rentMedianFurnished, p25: d.rentP25Furnished, p75: d.rentP75Furnished,
       comps: d.compsFurnished, y: d.yieldFurnished, cls: 's-furn' };
     var unf = { name: 'Без мебели', med: d.rentMedianUnfurnished, p25: d.rentP25Unfurnished, p75: d.rentP75Unfurnished,
       comps: d.compsUnfurnished, y: d.yieldUnfurnished, cls: 's-unfurn' };
-    var key = d.inputFurnishing === 'furnished' ? furn : unf;
-    if (key.med == null && furn.med != null) key = furn;   // своего сценария нет — показываем доступный
-    else if (key.med == null && unf.med != null) key = unf;
+    var key = furn.med != null ? furn : unf;
     if (furn.med == null && unf.med == null) {
       var why = d.dealType === 'rent_long'
         ? 'оценка окупаемости считается для объявлений о продаже'
@@ -237,13 +236,15 @@
       html += '<div class="key-data"><div class="lbl">Ожидаемая цена сдачи</div>' +
         '<div class="main">—</div><div class="range-n">' + escapeHtml(why) + '</div></div>';
     } else {
-      html += '<div class="key-data"><div class="lbl">Ожидаемая цена сдачи (' +
-        (key.name === 'Без мебели' ? 'без мебели' : 'с мебелью') + ')</div>' +
+      html += '<div class="key-data"><div class="lbl">Ожидаемая цена сдачи' +
+        (key.name === 'Без мебели' ? ' (без мебели)' : ' (с мебелью)') + '</div>' +
         '<div class="main">' + fmtRub(key.med) + '/мес</div>' +
         '<div class="range-row"><span class="range">' + fmtRub(key.p25) + ' – ' + fmtRub(key.p75) + '</span>' +
         '<span class="range-n"> · p25–p75' + (key.comps ? ' · ' + key.comps + ' аналогов ЖК' : '') + '</span></div>' +
         (key.y != null ? '<div class="key-metrics">доходность <b>' + key.y.toFixed(1).replace('.', ',') +
-          '%</b> · окупаемость <b>' + (100 / key.y).toFixed(1).replace('.', ',') + ' лет</b></div>' : '') + '</div>';
+          '%</b> · окупаемость <b>' + (100 / key.y).toFixed(1).replace('.', ',') + ' лет</b></div>' : '') +
+        (d.totalCostFurnished != null ? '<div class="key-cost">Полная стоимость с мебелью: <b>' +
+          fmtRub(d.totalCostFurnished) + '</b></div>' : '') + '</div>';
       // сценарии: обе строки (доступные)
       var scen = '';
       [furn, unf].forEach(function (sc) {
@@ -266,11 +267,9 @@
         exp += '<div class="row total"><span>Сверх цены объявления</span><b>' + fmtRub(d.dealCostsTotal + (d.furnishingCost || 0)) + '</b></div></div>';
         html += exp;
       }
-      html += '<div class="muted">Полная стоимость: ' +
-        (d.totalCostFurnished != null ? 'с мебелью ' + fmtRub(d.totalCostFurnished) : '') +
-        (d.totalCostFurnished != null && d.totalCostUnfurnished != null ? ' · ' : '') +
-        (d.totalCostUnfurnished != null ? 'без мебели ' + fmtRub(d.totalCostUnfurnished) : '') +
-        (d.confidence ? ' · уверенность ' + escapeHtml(d.confidence) : '') + '</div>';
+      html += '<div class="muted">' +
+        (d.totalCostUnfurnished != null ? 'Полная стоимость без мебели: ' + fmtRub(d.totalCostUnfurnished) + ' · ' : '') +
+        (d.confidence ? 'уверенность ' + escapeHtml(d.confidence) : '') + '</div>';
     }
 
     html += '<a class="avito" href="' + escapeAttr(d.url) + '" rel="noopener" target="_blank">Открыть на Авито →</a>';
