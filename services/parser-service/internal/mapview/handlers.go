@@ -321,6 +321,9 @@ const pageHTML = `<!doctype html>
  .scenarios .s-unfurn .sdot{background:var(--color-warning)}
  .key-data .key-metrics{margin-top:4px;font-size:13px;color:var(--color-text-secondary)}
  .key-data .key-metrics b{color:var(--color-text-primary)}
+ .key-data .key-cost{margin-top:6px;padding-top:6px;border-top:1px solid var(--color-accent-ring);
+   font-size:13px;color:var(--color-text-secondary)}
+ .key-data .key-cost b{font-size:15px;color:var(--color-text-primary)}
  /* расшифровка расходов сделки (#108) */
  .costs{margin:10px 0;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:8px 12px}
  .costs-head{font-size:12px;color:var(--color-text-secondary);margin-bottom:4px}
