@@ -58,7 +58,10 @@ func (s *Storage) UpsertListing(ctx context.Context, l *Listing) (bool, error) {
 	if l.Raw == nil {
 		l.Raw = json.RawMessage("{}")
 	}
-	images := json.RawMessage("[]")
+	// Пустой Images → NULL (а не '[]'): иначе повторный импорт из
+	// источника без картинок затирал бы уже сохранённые фото
+	// (COALESCE(EXCLUDED.images, ...) ниже).
+	var images any
 	if len(l.Images) > 0 {
 		images = mustJSON(l.Images)
 	}

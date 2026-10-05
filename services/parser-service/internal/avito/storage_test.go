@@ -106,3 +106,51 @@ func TestStorage_Integration(t *testing.T) {
 		t.Fatalf("run status = %s", fin)
 	}
 }
+
+// Регрессия (фидбек #108): повторный upsert объявления из источника без
+// фотографий не должен затирать уже сохранённые фото (COALESCE + NULL).
+func TestStorage_ImagesNotWiped(t *testing.T) {
+	dsn := os.Getenv("TEST_DSN")
+	if dsn == "" {
+		t.Skip("TEST_DSN not set")
+	}
+	ctx := context.Background()
+	s, err := NewStorage(ctx, dsn)
+	if err != nil {
+		t.Fatalf("connect: %v", err)
+	}
+	defer s.Close()
+
+	const id = int64(3221234598)
+	if _, err := s.pool.Exec(ctx, `DELETE FROM avito_listings WHERE id=$1`, id); err != nil {
+		t.Fatal(err)
+	}
+	withPhoto := &Listing{
+		ID: id, URL: "https://www.avito.ru/spb/kvartiry/photo_test", URLPath: "/spb/kvartiry/photo_test",
+		Category: "kvartiry", DealType: KindSale, Price: 8_500_000,
+		Images:     []Image{{URL: "https://img.example/1.jpg"}, {URL: "https://img.example/2.jpg"}},
+		ImageCount: 2,
+	}
+	if _, err := s.UpsertListing(ctx, withPhoto); err != nil {
+		t.Fatalf("seed with photo: %v", err)
+	}
+	// повторный импорт того же объявления БЕЗ картинок
+	noPhoto := &Listing{
+		ID: id, URL: withPhoto.URL, URLPath: withPhoto.URLPath,
+		Category: "kvartiry", DealType: KindSale, Price: 8_500_000,
+	}
+	if _, err := s.UpsertListing(ctx, noPhoto); err != nil {
+		t.Fatalf("upsert without photo: %v", err)
+	}
+	var n int
+	if err := s.pool.QueryRow(ctx,
+		`SELECT jsonb_array_length(images) FROM avito_listings WHERE id=$1`, id).Scan(&n); err != nil {
+		t.Fatal(err)
+	}
+	if n != 2 {
+		t.Fatalf("photos wiped: images = %d, want 2", n)
+	}
+	if _, err := s.pool.Exec(ctx, `DELETE FROM avito_listings WHERE id=$1`, id); err != nil {
+		t.Fatal(err)
+	}
+}
