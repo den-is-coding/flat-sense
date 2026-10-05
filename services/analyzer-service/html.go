@@ -62,6 +62,7 @@ var pageTmpl = template.Must(template.New("page").
 </div>
 {{end}}
 {{if .FurnishingNote}}<div class="warn">{{.FurnishingNote}}</div>{{end}}
+{{if and .Notice (ne .Status "no_rent_data")}}<div class="warn">{{.Notice}}</div>{{end}}
 {{if eq .Status "no_rent_data"}}
  <div class="refuse"><b>Пока не можем посчитать.</b> {{.Notice}}</div>
 {{else}}

@@ -94,14 +94,14 @@ func roiTipCost(roi *ROIView) string {
 }
 
 var funcs = template.FuncMap{
-	"commaint":  commaintInt,
+	"commaint": commaintInt,
 	"commaintP": func(v *int64) string {
 		if v == nil {
 			return ""
 		}
 		return commaintInt(*v)
 	},
-	"pct1": pct1,
+	"pct1":        pct1,
 	"roiTipYield": roiTipYield,
 	"roiTipCost":  roiTipCost,
 	"floorStr": func(f, ft *int) string {
@@ -147,35 +147,35 @@ var funcs = template.FuncMap{
 	"sub1":    func(n int) int { return n - 1 },
 	"add1":    func(n int) int { return n + 1 },
 	"rownum":  func(start, i int) int { return start + i },
-		"qse": func(f ListingFilters, key, val string) string {
-			q := url.Values{}
-			q.Set("q", f.Search)
-			q.Set("city", f.City)
-			q.Set("complex", f.Complex)
-			if f.Rooms >= 0 {
-				q.Set("rooms", strconv.Itoa(f.Rooms))
+	"qse": func(f ListingFilters, key, val string) string {
+		q := url.Values{}
+		q.Set("q", f.Search)
+		q.Set("city", f.City)
+		q.Set("complex", f.Complex)
+		if f.Rooms >= 0 {
+			q.Set("rooms", strconv.Itoa(f.Rooms))
+		}
+		if f.PriceMin > 0 {
+			q.Set("priceMin", strconv.FormatInt(f.PriceMin, 10))
+		}
+		if f.PriceMax > 0 {
+			q.Set("priceMax", strconv.FormatInt(f.PriceMax, 10))
+		}
+		if f.HasCoords != nil {
+			if *f.HasCoords {
+				q.Set("hasCoords", "1")
+			} else {
+				q.Set("hasCoords", "0")
 			}
-			if f.PriceMin > 0 {
-				q.Set("priceMin", strconv.FormatInt(f.PriceMin, 10))
-			}
-			if f.PriceMax > 0 {
-				q.Set("priceMax", strconv.FormatInt(f.PriceMax, 10))
-			}
-			if f.HasCoords != nil {
-				if *f.HasCoords {
-					q.Set("hasCoords", "1")
-				} else {
-					q.Set("hasCoords", "0")
-				}
-			}
-			if f.HasROI != nil && *f.HasROI {
-				q.Set("has_roi", "1") // состояние фильтра живёт в URL (#67)
-			}
-			q.Set("sort", f.SortBy)
-			q.Set("dir", f.SortDir)
-			q.Set(key, val)
-			return "/admin?" + q.Encode()
-		},
+		}
+		if f.HasROI != nil && *f.HasROI {
+			q.Set("has_roi", "1") // состояние фильтра живёт в URL (#67)
+		}
+		q.Set("sort", f.SortBy)
+		q.Set("dir", f.SortDir)
+		q.Set(key, val)
+		return "/admin?" + q.Encode()
+	},
 }
 
 var loginTmpl = template.Must(template.New("login").Funcs(funcs).Parse(`<!doctype html>

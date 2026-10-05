@@ -92,6 +92,11 @@ type Listing struct {
 	// Aliases — дополнительные ключи сопоставления (сырые адреса),
 	// например адреса всех корпусов ЖК из мета арендной кампании.
 	Aliases []string `json:"-"`
+
+	// FurnishedPhoto — кэш фото-детекции меблировки
+	// (ad_furnishing.furnished_photo; issue #110). Пусто — нет кэша.
+	FurnishedPhoto           string  `json:"-"`
+	FurnishedPhotoConfidence float64 `json:"-"`
 }
 
 // IsStudio — студия по флагу или по заголовку (в части кампаний флаг не заполнен).

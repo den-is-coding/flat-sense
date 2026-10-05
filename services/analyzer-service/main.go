@@ -24,6 +24,7 @@ import (
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/backfill"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/evaluate"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/labeler"
+	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/photoai"
 	"github.com/yourusername/real-estate-analyzer/analyzer-service/internal/source"
 )
 
@@ -32,6 +33,7 @@ func main() {
 		evalTarget  = flag.String("evaluate", "", "id или URL объявления — разовая оценка и выход (источник: -dump-dir, иначе БД)")
 		dumpDirs    = flag.String("dump-dir", "", "каталоги дампов парсера через запятую (для -evaluate и HTTP-режима без БД)")
 		labelFurn   = flag.Bool("label-furnishing", false, "разметить меблировку всех объявлений БД в ad_furnishing и выйти")
+		labelPhotos = flag.Bool("label-furnishing-photos", false, "фото-фолбэк (#110): разметить меблировку по фото для объявлений с неоднозначным текстом (нужен IMAGEAI_URL) и выйти")
 		backfillROI = flag.Bool("backfill-roi", false, "пересчитать окупаемость всех объявлений-продаж в ad_roi_results и выйти (идемпотентно, источник — БД)")
 	)
 	flag.Parse()
@@ -82,6 +84,24 @@ func main() {
 		return
 	}
 
+	// Режим фото-фолбэка (issue #110): неоднозначный текст → фото → кэш.
+	if *labelPhotos {
+		pool, err := pgxpool.New(ctx, dsn())
+		if err != nil {
+			log.Fatalf("db: %v", err)
+		}
+		defer pool.Close()
+		if err := pool.Ping(ctx); err != nil {
+			log.Fatalf("db ping: %v", err)
+		}
+		st, err := labeler.LabelPhotos(ctx, pool, photoai.New(env("IMAGEAI_URL", "http://localhost:8089")))
+		if err != nil {
+			log.Fatalf("label photos: %v", err)
+		}
+		printJSON(st)
+		return
+	}
+
 	// CLI-режим: оценка по дампам из директории либо по БД.
 	if *evalTarget != "" {
 		runCLI(ctx, cfg, *evalTarget, *dumpDirs)
@@ -110,6 +130,9 @@ func main() {
 	}
 
 	ev := evaluate.NewEvaluator(src, cfg)
+	// Фото-фолбэк (issue #110): недоступность image-ai деградирует
+	// в текстовый режим внутри Evaluator.
+	ev.Photo = photoai.New(env("IMAGEAI_URL", "http://image-ai-service:8080"))
 	srv := newServer(ev)
 
 	mux := http.NewServeMux()

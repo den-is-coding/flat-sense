@@ -107,8 +107,10 @@ func Analyze(img image.Image) Features {
 	}
 }
 
-// Порог уверенности: ниже — unknown (не догадываться, per issue #110).
-const unknownBand = 0.60
+// Порог уверенности: вне полосы 0.3–0.7 вердикт не выдаётся
+// (не догадываться, per issue #110). На выборке band=0.7 даёт
+// precision 0.867 / recall 1.000 при 15/32 unknown.
+const unknownBand = 0.70
 
 // Веса логистической модели, подобраны на размеченной выборке
 // internal/roomfurnishing/testdata/fixtures (32 фото: 21 furnished /

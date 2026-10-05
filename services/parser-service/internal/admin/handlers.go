@@ -10,9 +10,9 @@ import (
 
 // Handler — обработчики /admin/*.
 type Handler struct {
-	store   AdminStore
-	sess    *Sessions
-	login   string
+	store    AdminStore
+	sess     *Sessions
+	login    string
 	password string
 }
 

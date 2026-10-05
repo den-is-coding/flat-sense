@@ -65,10 +65,10 @@ type Listing struct {
 	City               string
 	ResidentialComplex string
 	District           string
-	Metro    string
-	Lat      float64
-	Lng      float64
-	Geo      json.RawMessage
+	Metro              string
+	Lat                float64
+	Lng                float64
+	Geo                json.RawMessage
 
 	// Продавец
 	SellerName   string

@@ -233,6 +233,19 @@ func (s *DBSource) ListingByID(ctx context.Context, id int64) (*evaluate.Listing
 	if err != nil {
 		return nil, err
 	}
+	// Кэш фото-детекции меблировки (issue #110); нет строки — нет кэша.
+	var photoLabel *string
+	var photoConf *float64
+	_ = s.pool.QueryRow(ctx,
+		`SELECT furnished_photo, furnished_photo_confidence
+		 FROM ad_furnishing WHERE ad_id = $1 AND furnished_photo IS NOT NULL`, id).
+		Scan(&photoLabel, &photoConf)
+	if photoLabel != nil {
+		l.FurnishedPhoto = *photoLabel
+		if photoConf != nil {
+			l.FurnishedPhotoConfidence = *photoConf
+		}
+	}
 	// Алиасы ЖК (реестр zhk, issue #66): кластеризация уровня ЖК — как
 	// с meta.addresses кампаний в DumpSource.
 	zhk.Enrich(l)

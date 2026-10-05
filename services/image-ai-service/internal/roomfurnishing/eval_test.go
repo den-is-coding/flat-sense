@@ -57,8 +57,8 @@ func TestEvalFixtures(t *testing.T) {
 	recall := float64(tp) / float64(tp+fn)
 	t.Logf("итог: всего=%d TP=%d FP=%d TN=%d FN=%d UNKNOWN=%d precision=%.3f recall=%.3f",
 		total, tp, fp, tn, fn, unknown, precision, recall)
-	if precision < 0.80 {
-		t.Errorf("precision %.3f < 0.80", precision)
+	if precision < 0.85 {
+		t.Errorf("precision %.3f < 0.85", precision)
 	}
 	if recall < 0.90 {
 		t.Errorf("recall %.3f < 0.90", recall)
