@@ -1,0 +1,6 @@
+# Конфигурация buf для gRPC-контрактов flat-sense (issue #2).
+# Контракты: ads/v1, analyzer/v1. Запуск генерации — `make proto`
+# (scripts/genproto.sh); buf самодостаточен и не требует системного protoc.
+version: v2
+modules:
+  - path: .

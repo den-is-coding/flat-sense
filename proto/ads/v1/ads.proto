@@ -1,0 +1,122 @@
+// Контракт сервиса объявлений ads-service (issue #2).
+//
+// MVP-поток: parser-service сохраняет объявление через CreateAd,
+// analyzer-service записывает результат оценки через UpdateAnalysis,
+// клиенты читают объявление (GetAd) и похожие объекты того же ЖК
+// (GetSimilarAds). Поля сообщения Ad повторяют схему avito_listings
+// (миграции 000010 и 000011).
+syntax = "proto3";
+
+package ads.v1;
+
+import "analyzer/v1/analyzer.proto";
+
+option go_package = "github.com/yourusername/real-estate-analyzer/pkg/proto/ads/v1;adsv1";
+
+// AdsService — хранение объявлений и их результатов оценки.
+service AdsService {
+  // GetAd — объявление по id (avito_listings.id).
+  rpc GetAd(GetAdRequest) returns (Ad);
+  // CreateAd — создать/обновить объявление (результат парсинга; upsert
+  // по id, как в avito_listings).
+  rpc CreateAd(CreateAdRequest) returns (CreateAdResponse);
+  // UpdateAnalysis — сохранить результат оценки объявления (кэш
+  // ad_roi_results; считает analyzer-service).
+  rpc UpdateAnalysis(UpdateAnalysisRequest) returns (UpdateAnalysisResponse);
+  // GetSimilarAds — похожие объявления (кластер того же ЖК/дома).
+  rpc GetSimilarAds(GetSimilarAdsRequest) returns (GetSimilarAdsResponse);
+}
+
+// Ad — объявление недвижимости (срез avito_listings, достаточный для
+// MVP-потока и карточки объекта).
+message Ad {
+  // id объявления на Авито (первичный ключ avito_listings).
+  int64 id = 1;
+  // Полный URL карточки (https://www.avito.ru{url_path}).
+  string url = 2;
+  // Путь карточки (/moskva/kvartiry/1-k._kvartira_..._1234567890).
+  string url_path = 3;
+  // Заголовок объявления.
+  string title = 4;
+  // Тип сделки (deal_type): sale | rent_long | rent_daily.
+  string deal_type = 5;
+  // Категория (category): kvartiry | komnaty | ... .
+  string category = 6;
+  // Цена, ₽ целым числом (price).
+  int64 price = 7;
+  // Число комнат; 0 у студий, отсутствие — optional (rooms).
+  optional int32 rooms = 8;
+  // Признак студии (studio).
+  bool studio = 9;
+  // Общая площадь, м2 (total_area).
+  optional double total_area = 10;
+  // Этаж (floor).
+  optional int32 floor = 11;
+  // Этажность дома (floors_total).
+  optional int32 floors_total = 12;
+  // Человекочитаемый адрес (address).
+  string address = 13;
+  // Город (city).
+  string city = 14;
+  // Район (district).
+  string district = 15;
+  // Станция метро (metro).
+  string metro = 16;
+  // Название ЖК (residential_complex, миграция 000011).
+  string residential_complex = 17;
+  // Широта (lat).
+  optional double lat = 18;
+  // Долгота (lng).
+  optional double lng = 19;
+  // Фотографии (images JSONB в БД).
+  repeated Photo photos = 20;
+  // Описание объявления (description; по нему анализируется меблировка).
+  string description = 21;
+}
+
+// Photo — фотография объявления (элемент images в avito_listings).
+message Photo {
+  string url = 1;
+  int32 width = 2;
+  int32 height = 3;
+}
+
+// GetAdRequest — id объявления.
+message GetAdRequest {
+  int64 id = 1;
+}
+
+// CreateAdRequest — объявление для сохранения (upsert по Ad.id).
+message CreateAdRequest {
+  Ad ad = 1;
+}
+
+// CreateAdResponse — id сохранённого объявления и признак создания.
+message CreateAdResponse {
+  int64 id = 1;
+  // true — объявление создано, false — обновлено существующее.
+  bool created = 2;
+}
+
+// UpdateAnalysisRequest — результат оценки для привязки к объявлению.
+message UpdateAnalysisRequest {
+  analyzer.v1.AnalysisResult analysis = 1;
+}
+
+// UpdateAnalysisResponse — подтверждение записи.
+message UpdateAnalysisResponse {
+  bool ok = 1;
+}
+
+// GetSimilarAdsRequest — похожие для объявления.
+message GetSimilarAdsRequest {
+  // id исходного объявления.
+  int64 ad_id = 1;
+  // Максимум объявлений в ответе (лимит по умолчанию — на стороне сервиса).
+  int32 limit = 2;
+}
+
+// GetSimilarAdsResponse — похожие объявления (кластер того же ЖК/дома).
+message GetSimilarAdsResponse {
+  repeated Ad ads = 1;
+}
