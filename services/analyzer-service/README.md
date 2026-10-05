@@ -46,6 +46,51 @@
 Ответ — отчёт (данные объявления, кластер с разбивкой, сценарии, confidence,
 предупреждения). Источник — БД `avito_listings` (нужен арендный пул: `deal_type='rent_long'`).
 
+## Событийный поток и gRPC (issue #6)
+
+В MVP-потоке analyzer стоит после парсера и ads-service:
+
+```
+parser → parsed-ads → ads-service (upsert ads) ┐
+                     └→ analyzer-service       ┴→ ad_roi_results (полный расчёт)
+                                            └→ gRPC AdsService.UpdateAnalysis → analysis_results (срез)
+```
+
+- **Консьюмер `parsed-ads`** (group `analyzer-service`): на `parsed_ad`
+  прогоняется тот же Evaluator по `avito_id` из события (данные объявления
+  уже в `avito_listings` — парсер пишет их раньше события), результат
+  идемпотентным upsert ложится в `ad_roi_results` (как backfill #66),
+  затем downstream-уведомление — gRPC `AdsService.UpdateAnalysis`
+  (ads-service сохраняет срез в `analysis_results`). На `parse_error` —
+  лог + счётчик + ack (оценивать нечего). Чужой тип события и ошибки
+  расчёта/записи ретраятся консьюмером pkg/kafka и после N попыток уходят
+  в `parsed-ads-dlq`.
+- **Ретраи downstream ограничены** (`ADS_NOTIFY_ATTEMPTS`, по умолчанию 3,
+  backoff 500мс→1с→2с): после N неудач — лог-ошибка и ack, поток не валится —
+  результат уже сохранён в `ad_roi_results` (analysis_results догонится
+  повторной обработкой/backfill).
+- **gRPC `AnalyzerService`** (порт `GRPC_PORT`, 50056; контракт
+  `pkg/proto/analyzer/v1`): `EvaluateAd(ad_id) → AnalysisResult` (тот же
+  расчёт, кэш не пишет) и `UpdateAnalysis(AnalysisResult)` — кладёт готовый
+  результат в `ad_roi_results` тем же upsert. Маппинг отчёт ↔ кэш ↔ контракт
+  — в `internal/analysis` (одна формула, ad_roi_results и analysis_results
+  не расходятся).
+- **`KAFKA_BROKERS` пуст** → консьюмер не стартует (HTTP/gRPC-режим как
+  раньше). В docker-compose брокер задан — поток включён.
+
+```bash
+# живой e2e потока: kafka+postgres из compose (брокер рекламирует
+# kafka:9092, поэтому тест ходит по именам сети compose и запускается
+# в контейнере этой сети; ADS_GRPC_ADDR — запущенный ads-service):
+docker run --rm --network real-estate_app-network \
+  -v "$(pwd)/../..":/repo -w /repo/services/analyzer-service \
+  -e KAFKA_BROKERS=kafka:9092 \
+  -e TEST_DSN='postgres://analyzer:secret@postgres:5432/analyzer?sslmode=disable' \
+  -e ADS_GRPC_ADDR=ads-service:50052 \
+  golang:1.25-alpine \
+  go test -tags integration -run TestPipeline -count=1 ./internal/pipeline/
+```
+
 ## CLI (локальные прогоны на дампах)
 
 ```bash
@@ -95,6 +140,12 @@ DB_HOST=localhost go run . -backfill-roi
 | `TITLE_INSURANCE_PCT` | `1` | титульное страхование, % от цены |
 | `DEAL_FIXED_COSTS_RUB` | `25000` | издержки на оформление сделки |
 | `DB_*` | как в parser-service | подключение к PostgreSQL |
+| `KAFKA_BROKERS` | *(пусто)* | брокеры; пусто — консьюмер `parsed-ads` не стартует |
+| `KAFKA_GROUP_ID` | `analyzer-service` | consumer group консьюмера |
+| `GRPC_PORT` | `50056` | порт gRPC `AnalyzerService` |
+| `ADS_GRPC_ADDR` | `ads-service:50052` | адрес ads-service для `UpdateAnalysis` |
+| `ADS_NOTIFY_ATTEMPTS` | `3` | попыток уведомления ads-service на сообщение |
+| `HTTP_PORT` | `8080` | порт HTTP API |
 
 ## Тесты
 

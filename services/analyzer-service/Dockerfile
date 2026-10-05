@@ -20,5 +20,5 @@ COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 COPY --from=builder --chown=appuser:appgroup --chmod=755 /server /server
 USER appuser
-EXPOSE 8080
+EXPOSE 8080 50056
 CMD ["/server"]
