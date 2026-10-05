@@ -107,3 +107,84 @@ func LabelAll(ctx context.Context, pool *pgxpool.Pool) (*Summary, []ByDealType, 
 	}
 	return sum, out, nil
 }
+
+// PhotoStats — итог фото-прохода.
+type PhotoStats struct {
+	Examined    int `json:"examined"` // объявлений с неоднозначным текстом и фото
+	Labeled     int `json:"labeled"`  // фото-детектор дал вердикт
+	Furnished   int `json:"furnished"`
+	Unfurnished int `json:"unfurnished"`
+	Unknown     int `json:"unknown"`
+	Failed      int `json:"failed"` // image-ai недоступен / фото не скачались
+}
+
+// LabelPhotos — фото-фолбэк (issue #110): для объявлений, у которых текст
+// не дал уверенной метки и есть фото, вызывает детектор и кэширует
+// вердикт в ad_furnishing.furnished_photo*. Повторный прогон пропускает
+// уже просмотренные (кэш не пересматривается).
+func LabelPhotos(ctx context.Context, pool *pgxpool.Pool, det evaluate.PhotoFurnishingDetector) (*PhotoStats, error) {
+	rows, err := pool.Query(ctx, `
+		SELECT l.id, l.images
+		FROM avito_listings l
+		JOIN ad_furnishing f ON f.ad_id = l.id
+		WHERE (f.furnishing = 'unknown' OR NOT f.confident)
+		  AND f.furnished_photo IS NULL
+		  AND jsonb_array_length(coalesce(l.images, '[]'::jsonb)) > 0`)
+	if err != nil {
+		return nil, fmt.Errorf("select unlabeled: %w", err)
+	}
+	defer rows.Close()
+	type item struct {
+		id   int64
+		urls []string
+	}
+	var batch []item
+	for rows.Next() {
+		var id int64
+		var raw []byte
+		if err := rows.Scan(&id, &raw); err != nil {
+			return nil, err
+		}
+		var imgs []struct {
+			URL string `json:"url"`
+		}
+		_ = json.Unmarshal(raw, &imgs)
+		var urls []string
+		for _, im := range imgs {
+			if im.URL != "" {
+				urls = append(urls, im.URL)
+			}
+		}
+		if len(urls) > 0 {
+			batch = append(batch, item{id: id, urls: urls})
+		}
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+
+	st := &PhotoStats{Examined: len(batch)}
+	for _, it := range batch {
+		f, conf, err := det.DetectByPhotos(ctx, it.urls)
+		if err != nil {
+			st.Failed++
+			continue
+		}
+		st.Labeled++
+		if _, err := pool.Exec(ctx, `
+			UPDATE ad_furnishing
+			SET furnished_photo = $2, furnished_photo_confidence = $3, furnished_photo_at = now()
+			WHERE ad_id = $1`, it.id, string(f), conf); err != nil {
+			return st, fmt.Errorf("update photo label %d: %w", it.id, err)
+		}
+		switch f {
+		case evaluate.Furnished:
+			st.Furnished++
+		case evaluate.Unfurnished:
+			st.Unfurnished++
+		default:
+			st.Unknown++
+		}
+	}
+	return st, nil
+}

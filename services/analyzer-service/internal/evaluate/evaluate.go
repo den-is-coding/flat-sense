@@ -30,9 +30,6 @@ type Config struct {
 	FurnishingCostRUB int64
 	// MinClusterSize — минимальный кластер для полноценного confidence.
 	MinClusterSize int
-	// ClusterRadiusM — радиус сопоставления по координатам (фолбэк, когда
-	// дом/адрес не сматчились; корпуса одного ЖК обычно в пределах 500 м).
-	ClusterRadiusM int
 	// RealtorFeePct — комиссия риэлтору, % от цены квартиры.
 	RealtorFeePct float64
 	// TitleInsurancePct — титульное страхование, % от цены квартиры.
@@ -45,7 +42,7 @@ type Config struct {
 func DefaultConfig() Config {
 	return Config{
 		FurnishingCostRUB: 500_000, MinClusterSize: 3,
-		ClusterRadiusM: 500, RealtorFeePct: 3, TitleInsurancePct: 1,
+		RealtorFeePct: 3, TitleInsurancePct: 1,
 		DealFixedCostsRUB: 25_000,
 	}
 }
@@ -62,6 +59,36 @@ func (c Config) DealCosts(price int64) int64 {
 type Evaluator struct {
 	Source Source
 	Config Config
+	// Photo — необязательный фото-детектор меблировки (issue #110,
+	// фото-фолбэк). nil = фото-режим отключён (текстовый приоритет,
+	// консервативный default).
+	Photo PhotoFurnishingDetector
+}
+
+// photoFurnishing — меблировка по фото: сначала кэш
+// (ad_furnishing.furnished_photo из БД), затем живой вызов детектора.
+// Детектор недоступен/фото нет → (Unknown, 0) — текстовый режим.
+func (e *Evaluator) photoFurnishing(ctx context.Context, input *Listing) (Furnishing, float64) {
+	switch input.FurnishedPhoto {
+	case "furnished":
+		return Furnished, input.FurnishedPhotoConfidence
+	case "unfurnished":
+		return Unfurnished, input.FurnishedPhotoConfidence
+	}
+	if e.Photo == nil || len(input.Images) == 0 {
+		return Unknown, 0
+	}
+	urls := make([]string, 0, len(input.Images))
+	for _, im := range input.Images {
+		if im.URL != "" {
+			urls = append(urls, im.URL)
+		}
+	}
+	f, conf, err := e.Photo.DetectByPhotos(ctx, urls)
+	if err != nil {
+		return Unknown, 0 // недоступность image-ai — деградация в текстовый режим
+	}
+	return f, conf
 }
 
 // NewEvaluator — конструктор с дефолтным конфигом при нулевых полях.
@@ -71,9 +98,6 @@ func NewEvaluator(src Source, cfg Config) *Evaluator {
 	}
 	if cfg.MinClusterSize == 0 {
 		cfg.MinClusterSize = DefaultConfig().MinClusterSize
-	}
-	if cfg.ClusterRadiusM == 0 {
-		cfg.ClusterRadiusM = DefaultConfig().ClusterRadiusM
 	}
 	return &Evaluator{Source: src, Config: cfg}
 }
@@ -136,18 +160,43 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	rep := &Report{Status: "ok", Listing: listView(input)}
 
 	// Меблировка входного объявления (продажа): полная эвристика
-	// (явные фразы + предметы); сомнение консервативно = «без мебели».
+	// (явные фразы + предметы); при сомнении — фото-фолбэк; без фото —
+	// консервативно «без мебели». Приоритет: явный текст > фото > default.
 	f, confident, evidence := DetectFurnishingDetailed(input.Description, input.Params)
-	if !confident {
-		f = Unfurnished
-	}
 	rep.InputFurnishing = f
 	switch {
-	case !confident:
-		rep.FurnishingNote = "меблировка по объявлению не определена — консервативно считаем «без мебели», добавляем надбавку на меблировку"
-	case f == Furnished && strings.HasPrefix(evidence, "описание: предметы"):
-		rep.FurnishingNote = "мебель определена по перечислению предметов в описании — надбавка на меблировку не добавляется"
+	case confident:
+		if f == Furnished && strings.HasPrefix(evidence, "описание: предметы") {
+			rep.FurnishingNote = "мебель определена по перечислению предметов в описании — надбавка на меблировку не добавляется"
+		}
+		if f == Furnished && input.FurnishedPhoto == "unfurnished" {
+			// Противоречие: текст говорит «есть», фото — «пусто».
+			// Не молчим: текст приоритетен, но помечаем (issue #110).
+			rep.Notice = "внимание: текст объявления указывает на мебель, фото-детектор считает комнату пустой — рекомендуем просмотреть фото"
+		}
+	default:
+		f = Unfurnished
+		pf, pconf := e.photoFurnishing(ctx, input)
+		switch {
+		case pf == Unfurnished:
+			rep.FurnishingNote = fmt.Sprintf(
+				"меблировка по тексту не определена; фото-детектор подтверждает пустую комнату (уверенность %.2f) — консервативно «без мебели», добавляем надбавку", pconf)
+		case pf == Furnished:
+			// Фото предлагает меблировку, но НЕ снимает надбавку: простая
+			// модель путает фасады/рендеры с комнатами (измерено на
+			// 7907741579, issue #110) — сигнал рекомендательный.
+			f = Unfurnished
+			rep.InputFurnishing = f
+			rep.Notice = fmt.Sprintf(
+				"внимание: фото-детектор предлагает «с мебелью» (уверенность %.2f), но надбавка на меблировку сохранена — рекомендуется просмотр фото; для автоснятия надбавки нужна модель точнее (CLIP)", pconf)
+			rep.FurnishingNote = "меблировка по тексту не определена — консервативно «без мебели», добавляем надбавку на меблировку"
+		case pf == Unknown && pconf > 0:
+			rep.FurnishingNote = "меблировка по тексту не определена, фото-детектор не дал уверенного ответа — консервативно считаем «без мебели», добавляем надбавку на меблировку"
+		default:
+			rep.FurnishingNote = "меблировка по объявлению не определена — консервативно считаем «без мебели», добавляем надбавку на меблировку"
+		}
 	}
+	rep.InputFurnishing = f
 
 	// Арендный пул и кластер «студии того же ЖК/дома» (все, без фильтра
 	// по площади — фактический разброс площадей идёт на страницу справкой).
@@ -155,7 +204,7 @@ func (e *Evaluator) evaluate(ctx context.Context, input *Listing) (*Report, erro
 	if err != nil {
 		return nil, err
 	}
-	cluster := BuildCluster(rents, input, e.Config.ClusterRadiusM)
+	cluster := BuildCluster(rents, input)
 	stats := cluster.Stats()
 	lo, hi := cluster.AreaRange()
 	rep.Cluster = &ClusterView{

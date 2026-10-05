@@ -45,7 +45,7 @@ var pageTmpl = template.Must(template.New("page").
 </form>
 {{if .Report}}{{template "report" .}}{{end}}
 <p class="muted">Методика: арендные аналоги — все арендные студии того же ЖК/дома (правила #55;
-ЖК — адреса корпусов арендной кампании или радиус 500 м по координатам). В стоимости учтены:
+ЖК — адреса корпусов арендной кампании; аренда соседних ЖК не подтягивается). В стоимости учтены:
 меблировка {{price .Config.FurnishingCostRUB}} ₽ (если мебели нет), риэлтор {{.Config.RealtorFeePct}}%,
 титульное страхование {{.Config.TitleInsurancePct}}%, оформление сделки {{price .Config.DealFixedCostsRUB}} ₽.
 Источник данных: локальные дампы парсера.</p>
@@ -62,6 +62,7 @@ var pageTmpl = template.Must(template.New("page").
 </div>
 {{end}}
 {{if .FurnishingNote}}<div class="warn">{{.FurnishingNote}}</div>{{end}}
+{{if and .Notice (ne .Status "no_rent_data")}}<div class="warn">{{.Notice}}</div>{{end}}
 {{if eq .Status "no_rent_data"}}
  <div class="refuse"><b>Пока не можем посчитать.</b> {{.Notice}}</div>
 {{else}}

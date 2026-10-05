@@ -44,10 +44,10 @@ func (c *Cluster) AreaRange() (lo, hi float64) {
 
 // BuildCluster отбирает из comps студии того же ЖК/дома и разбивает их
 // по мебели (неопределённые остаются только в Comps — в строгие группы
-// сценариев они не попадают). Совпадение локации: пересечение ключей
-// (дом/адрес/алиасы корпусов ЖК) ИЛИ расстояние по координатам не больше
-// radiusM (если координаты есть у обоих).
-func BuildCluster(comps []Listing, input *Listing, radiusM int) Cluster {
+// сценариев они не попадают). Совпадение локации — только по пересечению
+// ключей (дом/адрес/алиасы корпусов арендной кампании): аренда соседнего
+// ЖК в кластер не подтягивается (решение владельца 2026-10-05).
+func BuildCluster(comps []Listing, input *Listing) Cluster {
 	c := Cluster{HouseKey: input.HouseKey()}
 	inputKeys := input.Keys()
 	for i := range comps {
@@ -55,7 +55,7 @@ func BuildCluster(comps []Listing, input *Listing, radiusM int) Cluster {
 		if !r.IsStudio() || r.Price <= 0 {
 			continue
 		}
-		if !matchesKeys(r.Keys(), inputKeys) && !withinRadius(input, r, radiusM) {
+		if !matchesKeys(r.Keys(), inputKeys) {
 			continue
 		}
 		c.Comps = append(c.Comps, *r)
@@ -68,15 +68,6 @@ func BuildCluster(comps []Listing, input *Listing, radiusM int) Cluster {
 		}
 	}
 	return c
-}
-
-// withinRadius — радиус-сопоставление (фолбэк, когда ключей нет, но есть
-// координаты у обеих сторон; радиус из Config, по умолчанию 500 м).
-func withinRadius(a, b *Listing, radiusM int) bool {
-	if radiusM <= 0 || !a.hasCoords() || !b.hasCoords() {
-		return false
-	}
-	return a.distanceM(b) <= float64(radiusM)
 }
 
 // Stats — сводка по кластеру.

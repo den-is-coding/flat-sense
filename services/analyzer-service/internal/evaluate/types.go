@@ -7,7 +7,6 @@ package evaluate
 
 import (
 	"encoding/json"
-	"math"
 	"strings"
 )
 
@@ -64,22 +63,22 @@ type Image struct {
 // Listing — объявление (подмножество полей avito_listings; JSON-теги
 // совпадают с дампами парсера data/*/listings/*.json и columns БД).
 type Listing struct {
-	ID          int64     `json:"id"`
-	URL         string    `json:"url"`
-	Title       string    `json:"title"`
-	DealType    string    `json:"deal_type"` // sale | rent_long | rent_daily
-	Category    string    `json:"category"`
-	Rooms       *int      `json:"rooms"`
-	Studio      bool      `json:"studio"`
-	TotalArea   float64   `json:"total_area"`
-	Floor       *int      `json:"floor"`
-	FloorsTotal *int      `json:"floors_total"`
-	Price       int64     `json:"price"`
-	Address     string    `json:"address"`
-	City        string    `json:"city"`
-	District    string    `json:"district"`
-	Metro       string    `json:"metro"`
-	HouseType   string    `json:"house_type"`
+	ID          int64   `json:"id"`
+	URL         string  `json:"url"`
+	Title       string  `json:"title"`
+	DealType    string  `json:"deal_type"` // sale | rent_long | rent_daily
+	Category    string  `json:"category"`
+	Rooms       *int    `json:"rooms"`
+	Studio      bool    `json:"studio"`
+	TotalArea   float64 `json:"total_area"`
+	Floor       *int    `json:"floor"`
+	FloorsTotal *int    `json:"floors_total"`
+	Price       int64   `json:"price"`
+	Address     string  `json:"address"`
+	City        string  `json:"city"`
+	District    string  `json:"district"`
+	Metro       string  `json:"metro"`
+	HouseType   string  `json:"house_type"`
 	// ResidentialComplex — «название ЖК» (колонка avito_listings из
 	// миграции 000011; в дампах парсера отсутствует, там ЖК в params).
 	ResidentialComplex string    `json:"residential_complex"`
@@ -93,6 +92,11 @@ type Listing struct {
 	// Aliases — дополнительные ключи сопоставления (сырые адреса),
 	// например адреса всех корпусов ЖК из мета арендной кампании.
 	Aliases []string `json:"-"`
+
+	// FurnishedPhoto — кэш фото-детекции меблировки
+	// (ad_furnishing.furnished_photo; issue #110). Пусто — нет кэша.
+	FurnishedPhoto           string  `json:"-"`
+	FurnishedPhotoConfidence float64 `json:"-"`
 }
 
 // IsStudio — студия по флагу или по заголовку (в части кампаний флаг не заполнен).
@@ -137,22 +141,6 @@ func (l *Listing) Keys() []string {
 	}
 	return out
 }
-
-// hasCoords — есть ли координаты для радиус-сопоставления.
-func (l *Listing) hasCoords() bool { return l.Lat != nil && l.Lng != nil }
-
-// distanceM — расстояние между объявлениями по координатам (haversine, м).
-func (l *Listing) distanceM(o *Listing) float64 {
-	const earthM = 6_371_000
-	la1, lo1 := degRad(*l.Lat), degRad(*l.Lng)
-	la2, lo2 := degRad(*o.Lat), degRad(*o.Lng)
-	sinLat := math.Sin((la2 - la1) / 2)
-	sinLng := math.Sin((lo2 - lo1) / 2)
-	h := sinLat*sinLat + math.Cos(la1)*math.Cos(la2)*sinLng*sinLng
-	return 2 * earthM * math.Asin(math.Min(1, math.Sqrt(h)))
-}
-
-func degRad(d float64) float64 { return d * math.Pi / 180 }
 
 // matchesKeys — совпадение кластера: пересечение множеств ключей.
 func matchesKeys(a, b []string) bool {

@@ -16,6 +16,8 @@ var (
 	unfurnishedPhrases = []string{
 		"без мебели", "без мебелью", "мебели нет", "мебели отсутствуют",
 		"не меблирован", "не меблирова", "нет мебели", "пустая, без",
+		"пустая квартира", "пустая студия", "сдаётся пустая", "сдается пустая",
+		"голые стен",
 	}
 	// «сможете обставить под себя», «по своему вкусу», «со своей мебелью» —
 	// квартира сдаётся пустой, мебель tenants привозят сами.
@@ -81,16 +83,21 @@ func DetectFurnishingDetailed(description string, params []Param) (Furnishing, b
 	// Перечисление предметов мебели: ≥2 разных предмета, среди которых
 	// есть хотя бы один «настоящий» (сон/хранение/гостиная) — бытовая
 	// техника и кухня без кровати/шкафа меблированной квартиру не делают.
+	// Предметы считаются только по сегментам текста без маркеров
+	// ПОТЕНЦИАЛЬНОЙ мебели: «ниша под устройство кухонной зоны», «место
+	// под встроенный шкаф» — это пустая квартира, а не меблированная
+	// (root cause кейса #110: 7907741579).
 	text := normalizeHomoglyphs(strings.ToLower(description))
+	itemText := segmentTextWithoutPotential(text)
 	var items []string
 	for _, item := range furnitureItems {
-		if strings.Contains(text, item) {
+		if strings.Contains(itemText, item) {
 			items = append(items, item)
 		}
 	}
 	hasProper := false
 	for _, p := range furnitureProper {
-		if strings.Contains(text, p) {
+		if strings.Contains(itemText, p) {
 			hasProper = true
 			break
 		}
@@ -99,6 +106,33 @@ func DetectFurnishingDetailed(description string, params []Param) (Furnishing, b
 		return Furnished, true, "описание: предметы мебели (" + strings.Join(items, ", ") + ")"
 	}
 	return Unknown, false, ""
+}
+
+// potentialFurnitureMarkers — конструкции, описывающие мебель, которой
+// ещё нет (место/ниша под неё, предложение покупателю). Сегменты с этими
+// маркерами исключаются из предметного подсчёта.
+var potentialFurnitureMarkers = []string{
+	"ниша под", "место под", "места под", "под устройство",
+	"под встроенный", "под вашу", "под свои", "поставите", "поставить",
+	"привезти", "привезёте", "привезете", "купите", "купить",
+	"приобрести", "останется место", "есть место", "есть ниша",
+}
+
+// segmentTextWithoutPotential разбивает текст на сегменты (по знакам
+// конца предложения, запятым и плюсам — типичные разделители в объявлениях)
+// и оставляет только сегменты без маркеров потенциальной мебели.
+func segmentTextWithoutPotential(text string) string {
+	split := func(r rune) bool {
+		return r == '.' || r == '!' || r == '?' || r == ';' || r == ',' || r == '+' || r == '\n'
+	}
+	var b strings.Builder
+	for _, seg := range strings.FieldsFunc(text, split) {
+		if firstHit(seg, potentialFurnitureMarkers) == "" {
+			b.WriteString(seg)
+			b.WriteString(", ")
+		}
+	}
+	return b.String()
 }
 
 // detectExplicit — только явные маркеры (params и фразы), без вывода по
