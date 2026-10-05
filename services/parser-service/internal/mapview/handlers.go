@@ -22,10 +22,13 @@ type Thresholds struct {
 
 // thresholdsFromEnv — границы всех трёх метрик из окружения.
 func thresholdsFromEnv() Thresholds {
+	// Дефолты — по фактическому разбросу данных (все 7 диапазонов
+	// непустые): доходность 4.0–5.8 %, продажи 7.3–12.9 млн, стоимость
+	// 8.3–13.4 млн. Настраивается окружением без правки кода.
 	return Thresholds{
-		Yield: boundariesFromEnv("YIELD_THRESHOLDS", []float64{5, 8}),
-		Price: boundariesFromEnv("PRICE_THRESHOLDS", []float64{7_500_000, 9_000_000}),
-		Cost:  boundariesFromEnv("COST_THRESHOLDS", []float64{9_500_000, 11_500_000}),
+		Yield: boundariesFromEnv("YIELD_THRESHOLDS", []float64{4.1, 4.55, 4.75, 5.05, 5.35, 5.65}),
+		Price: boundariesFromEnv("PRICE_THRESHOLDS", []float64{7_000_000, 7_800_000, 8_500_000, 9_000_000, 9_600_000, 10_800_000}),
+		Cost:  boundariesFromEnv("COST_THRESHOLDS", []float64{8_500_000, 9_000_000, 9_500_000, 10_000_000, 10_500_000, 11_500_000}),
 	}
 }
 
@@ -254,36 +257,38 @@ const pageHTML = `<!doctype html>
  .legend .title{color:var(--color-text-secondary);font-size:12px;margin-bottom:2px}
  .legend .note{color:var(--color-text-muted);font-size:11px;margin-top:4px}
  .ldot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
- /* классы диапазонов b0 (худший) … bN (лучший); 3 диапазона — danger/warning/success */
- .ldot.b0{background:var(--color-danger)}.ldot.b1{background:var(--color-warning)}
- .ldot.b2{background:var(--color-success)}
+ /* классы диапазонов b0 (худший, красный) … b6 (лучший, зелёный) —
+    7 ступеней шкалы из дизайн-токенов (auth-flow.pen) */
+ .ldot.b0{background:var(--map-bucket-0)}.ldot.b1{background:var(--map-bucket-1)}
+ .ldot.b2{background:var(--map-bucket-2)}.ldot.b3{background:var(--map-bucket-3)}
+ .ldot.b4{background:var(--map-bucket-4)}.ldot.b5{background:var(--map-bucket-5)}
+ .ldot.b6{background:var(--map-bucket-6)}
  .pin-wrap{transform:translate(-50%,-50%)}
  .pin{display:flex;align-items:center;justify-content:center;border-radius:17px;
    border:2px solid var(--map-pin-border);box-shadow:0 1px 4px var(--map-shadow);
    font-size:12px;font-weight:600;white-space:nowrap;color:var(--map-bucket-fg);
    min-width:44px;height:30px;padding:0 10px;box-sizing:border-box}
- .pin.b0{background:var(--color-danger)}.pin.b1{background:var(--color-warning)}
- .pin.b2{background:var(--color-success)}
- .pin.b3{background:var(--map-bucket-1)}.pin.b4{background:var(--map-bucket-2)}
- .pin.b5{background:var(--map-bucket-3)}.pin.b6{background:var(--map-bucket-4)}
+ .pin.b0{background:var(--map-bucket-0)}.pin.b1{background:var(--map-bucket-1)}
+ .pin.b2{background:var(--map-bucket-2)}.pin.b3{background:var(--map-bucket-3)}
+ .pin.b4{background:var(--map-bucket-4)}.pin.b5{background:var(--map-bucket-5)}
+ .pin.b6{background:var(--map-bucket-6)}
  .pin.gray,.cluster-pin.gray,.ldot.gray{background:var(--map-bucket-gray)}
- [data-theme="dark"] .pin.b1,[data-theme="dark"] .pin.b4,
- [data-theme="dark"] .pin.b5{color:var(--map-bucket-fg-bright)}
- @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pin.b1,
-   :root:not([data-theme="light"]) .pin.b4,:root:not([data-theme="light"]) .pin.b5{color:var(--map-bucket-fg-bright)} }
+ /* яркие середины шкалы (c2–c4) в тёмной теме — тёмный текст */
+ [data-theme="dark"] .pin.b2,[data-theme="dark"] .pin.b3,[data-theme="dark"] .pin.b4{color:var(--map-bucket-fg-bright)}
+ @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .pin.b2,
+   :root:not([data-theme="light"]) .pin.b3,:root:not([data-theme="light"]) .pin.b4{color:var(--map-bucket-fg-bright)} }
  .cluster-pin{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;
    border:3px solid var(--map-pin-border);box-shadow:0 2px 6px var(--map-shadow);
    color:var(--map-bucket-fg);font-weight:700;box-sizing:border-box}
  .cluster-pin .n{font-size:16px;line-height:1.15}
  .cluster-pin .v{font-size:12px;font-weight:600;opacity:.95;line-height:1.1;max-width:92%;overflow:hidden}
- .cluster-pin.b0{background:var(--color-danger)}.cluster-pin.b1{background:var(--color-warning)}
- .cluster-pin.b2{background:var(--color-success)}
- .cluster-pin.b3{background:var(--map-bucket-1)}.cluster-pin.b4{background:var(--map-bucket-2)}
- .cluster-pin.b5{background:var(--map-bucket-3)}.cluster-pin.b6{background:var(--map-bucket-4)}
- [data-theme="dark"] .cluster-pin.b1,[data-theme="dark"] .cluster-pin.b4,
- [data-theme="dark"] .cluster-pin.b5{color:var(--map-bucket-fg-bright)}
- @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cluster-pin.b1,
-   :root:not([data-theme="light"]) .cluster-pin.b4,:root:not([data-theme="light"]) .cluster-pin.b5{color:var(--map-bucket-fg-bright)} }
+ .cluster-pin.b0{background:var(--map-bucket-0)}.cluster-pin.b1{background:var(--map-bucket-1)}
+ .cluster-pin.b2{background:var(--map-bucket-2)}.cluster-pin.b3{background:var(--map-bucket-3)}
+ .cluster-pin.b4{background:var(--map-bucket-4)}.cluster-pin.b5{background:var(--map-bucket-5)}
+ .cluster-pin.b6{background:var(--map-bucket-6)}
+ [data-theme="dark"] .cluster-pin.b2,[data-theme="dark"] .cluster-pin.b3,[data-theme="dark"] .cluster-pin.b4{color:var(--map-bucket-fg-bright)}
+ @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cluster-pin.b2,
+   :root:not([data-theme="light"]) .cluster-pin.b3,:root:not([data-theme="light"]) .cluster-pin.b4{color:var(--map-bucket-fg-bright)} }
  .card{position:absolute;top:10px;bottom:10px;right:10px;width:400px;max-width:calc(100% - 20px);
    background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
    box-shadow:0 2px 12px var(--map-shadow-lg);z-index:1100;padding:14px;overflow-y:auto;display:none;box-sizing:border-box}

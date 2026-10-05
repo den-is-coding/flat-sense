@@ -94,13 +94,13 @@ func TestFiltersFromRequest(t *testing.T) {
 	}
 }
 
-// Границы диапазонов по метрикам из окружения (не хардкод);
+// Границы 7 диапазонов по метрикам из окружения (не хардкод);
 // мусор игнорируется, сортировка сохраняется.
 func TestThresholdsFromEnv(t *testing.T) {
-	t.Setenv("YIELD_THRESHOLDS", "8, 5 ,x,6")
+	t.Setenv("YIELD_THRESHOLDS", "8, 5 ,x,6,4.2,7,3")
 	t.Setenv("PRICE_THRESHOLDS", "7500000,9000000")
 	th := thresholdsFromEnv()
-	wantYield := []float64{5, 6, 8}
+	wantYield := []float64{3, 4.2, 5, 6, 7, 8}
 	if len(th.Yield) != len(wantYield) {
 		t.Fatalf("yield = %v, want %v", th.Yield, wantYield)
 	}
@@ -112,14 +112,14 @@ func TestThresholdsFromEnv(t *testing.T) {
 	if len(th.Price) != 2 || th.Price[0] != 7_500_000 {
 		t.Fatalf("price = %v", th.Price)
 	}
-	// дефолты из макета #107: доходность 5/8, цена 7,5/9 млн, стоимость 9,5/11,5 млн
+	// дефолты: 6 границ → 7 диапазонов, крайние непустые на текущих данных
 	t.Setenv("YIELD_THRESHOLDS", "")
 	t.Setenv("PRICE_THRESHOLDS", "")
 	th2 := thresholdsFromEnv()
-	if len(th2.Yield) != 2 || th2.Yield[0] != 5 {
+	if len(th2.Yield) != 6 || th2.Yield[0] != 4.1 {
 		t.Fatalf("yield defaults = %v", th2.Yield)
 	}
-	if len(th2.Cost) != 2 || th2.Cost[0] != 9_500_000 {
+	if len(th2.Cost) != 6 || th2.Cost[0] != 8_500_000 {
 		t.Fatalf("cost defaults = %v", th2.Cost)
 	}
 }
@@ -245,9 +245,9 @@ func TestHandlers_API_Integration(t *testing.T) {
 		"OpenStreetMap", // атрибуция обязательна
 		"MAP_THRESHOLDS",
 		"только с рентабельностью",
-		// цвета точек/кластеров/легенды — семантические токены (#108)
-		".cluster-pin.b0{background:var(--color-danger)", ".cluster-pin.b1{background:var(--color-warning)",
-		".cluster-pin.b2{background:var(--color-success)", "--map-bucket-gray",
+		// цвета точек/кластеров/легенды — 7 ступеней шкалы (#108, фидбек)
+		".cluster-pin.b0{background:var(--map-bucket-0)", ".cluster-pin.b3{background:var(--map-bucket-3)",
+		".cluster-pin.b6{background:var(--map-bucket-6)", "--map-bucket-gray",
 		".ldot.b2{background",
 		// дизайн-токены #88 + фидбек: без кнопки «Применить»,
 		// без отдельной кнопки темы (тему ведёт выбор подложки)
