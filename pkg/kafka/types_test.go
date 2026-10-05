@@ -62,3 +62,47 @@ func TestParsedAdJSONShape(t *testing.T) {
 		t.Fatalf("rooms: хочу явный ноль с присутствием, got %v", dst.Ad.Rooms)
 	}
 }
+
+// TestParseErrorJSONShape — ParseError несёт request_id и текст ошибки
+// (issue #4: событие ошибки в parsed-ads, чтобы gateway отдал failed).
+func TestParseErrorJSONShape(t *testing.T) {
+	src := ParseError{RequestID: "r-7", Error: "avito: all proxies blocked / captcha, aborting"}
+
+	raw, err := json.Marshal(src)
+	if err != nil {
+		t.Fatalf("marshal: %v", err)
+	}
+	s := string(raw)
+	for _, key := range []string{`"request_id":"r-7"`, `"error":"avito: all proxies blocked`} {
+		if !strings.Contains(s, key) {
+			t.Fatalf("нет %s в %s", key, s)
+		}
+	}
+
+	var dst ParseError
+	if err := json.Unmarshal(raw, &dst); err != nil {
+		t.Fatalf("unmarshal: %v", err)
+	}
+	if dst != src {
+		t.Fatalf("ParseError разошёлся: %+v != %+v", dst, src)
+	}
+}
+
+// TestParseErrorEnvelope — конверт для ParseError имеет тип parse_error
+// и ключится request_id (порядок событий одного запроса в партиции).
+func TestParseErrorEnvelope(t *testing.T) {
+	env, err := NewEnvelope(EventTypeParseError, ParseError{RequestID: "r-8", Error: "404"})
+	if err != nil {
+		t.Fatalf("NewEnvelope: %v", err)
+	}
+	if env.Type != EventTypeParseError {
+		t.Fatalf("type = %q, хочу %q", env.Type, EventTypeParseError)
+	}
+	var e ParseError
+	if err := env.DecodePayload(&e); err != nil {
+		t.Fatalf("DecodePayload: %v", err)
+	}
+	if e.RequestID != "r-8" {
+		t.Fatalf("request_id = %q, хочу r-8", e.RequestID)
+	}
+}

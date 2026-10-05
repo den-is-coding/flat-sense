@@ -26,6 +26,9 @@ type Envelope struct {
 const (
 	EventTypeParseRequest = "parse_request"
 	EventTypeParsedAd     = "parsed_ad"
+	// EventTypeParseError — конечная ошибка парсинга (issue #4);
+	// публикуется в TopicParsedAds рядом с ParsedAd.
+	EventTypeParseError = "parse_error"
 )
 
 // NewEnvelope — собрать конверт: payload сериализуется в JSON,

@@ -3,19 +3,25 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"log"
+	"log/slog"
 	"net/http"
 	"os"
+	"os/signal"
 	"path/filepath"
 	"strconv"
 	"strings"
+	"syscall"
 	"time"
 
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/admin"
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/avito"
 	"github.com/yourusername/real-estate-analyzer/parser-service/internal/mapview"
+	"github.com/yourusername/real-estate-analyzer/parser-service/internal/pipeline"
+	"github.com/yourusername/real-estate-analyzer/pkg/kafka"
 )
 
 func main() {
@@ -67,8 +73,8 @@ func main() {
 		cfg.SourceTask = *sourceTask
 	}
 
-	ctx, cancel := context.WithCancel(context.Background())
-	defer cancel()
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
 
 	storage, err := avito.NewStorage(ctx, cfg.DSN)
 	if err != nil {
@@ -274,9 +280,59 @@ func main() {
 		env("PRICE_THRESHOLDS", "7000000,7800000,8500000,9000000,9600000,10800000"),
 		env("COST_THRESHOLDS", "8500000,9000000,9500000,10000000,10500000,11500000"))
 
+	// Kafka-поток (issue #4): консьюмер parse-requests (group parser-service)
+	// публикует результаты парсинга в parsed-ads. Стартует только при
+	// заданном KAFKA_BROKERS — без Kafka сервис работает в HTTP-режиме как раньше.
+	var consumerDone <-chan struct{}
+	if brokersEnv := strings.TrimSpace(os.Getenv("KAFKA_BROKERS")); brokersEnv != "" {
+		kcfg := kafka.Config{Brokers: splitList(brokersEnv)}
+		klog := slog.New(slog.NewJSONHandler(os.Stdout, nil))
+		producer := kafka.NewProducer(kcfg, kafka.WithProducerLogger(klog))
+		defer producer.Close()
+
+		handler := pipeline.NewHandler(service, producer, klog)
+		consumer := kafka.NewConsumer(kcfg, kafka.TopicParseRequests, "parser-service",
+			handler.HandleMessage, kafka.WithLogger(klog))
+		done := make(chan struct{})
+		consumerDone = done
+		go func() {
+			defer close(done)
+			// Run возвращает nil по отмене ctx (SIGTERM) — graceful shutdown.
+			if err := consumer.Run(ctx); err != nil {
+				klog.Error("kafka consumer остановлен с ошибкой", "err", err)
+			}
+		}()
+		log.Printf("kafka consumer started: topic=%s group=parser-service brokers=%s",
+			kafka.TopicParseRequests, brokersEnv)
+	} else {
+		log.Printf("KAFKA_BROKERS не задан — kafka-консьюмер не запущен, только HTTP API")
+	}
+
 	addr := ":" + cfg.HTTPPort
-	log.Printf("parser-service listening on %s", addr)
-	log.Fatal(http.ListenAndServe(addr, mux))
+	srv := &http.Server{Addr: addr, Handler: mux}
+	go func() {
+		log.Printf("parser-service listening on %s", addr)
+		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+			log.Printf("http server: %v", err)
+			stop() // сигнал к остановке консьюмера и graceful shutdown
+		}
+	}()
+
+	// Graceful shutdown по SIGTERM/SIGINT: сначала HTTP, затем консьюмер
+	// (обрабатываемое сообщение консьюмер коммитит или повторит после рестарта).
+	<-ctx.Done()
+	shutdownCtx, cancelShutdown := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancelShutdown()
+	if err := srv.Shutdown(shutdownCtx); err != nil {
+		log.Printf("http shutdown: %v", err)
+	}
+	if consumerDone != nil {
+		select {
+		case <-consumerDone:
+		case <-time.After(15 * time.Second):
+			log.Printf("kafka consumer shutdown timeout")
+		}
+	}
 }
 
 // runParseAndPrint — устаревшее имя оставлено для совместимости вызовов из тестов.
