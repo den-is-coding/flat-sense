@@ -1,4 +1,4 @@
-FROM golang:1.24-alpine3.20 AS builder
+FROM golang:1.25-alpine AS builder
 RUN apk add --no-cache ca-certificates tzdata
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
@@ -20,5 +20,5 @@ COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 COPY --from=builder --chown=appuser:appgroup --chmod=755 /server /server
 USER appuser
-EXPOSE 8080
+EXPOSE 8080 50052
 CMD ["/server"]
