@@ -9,6 +9,25 @@ docker build --target production -t my-service:latest .
 docker run -p 8080:8080 my-service:latest
 
 # ============================================================
+# gRPC-контракты (proto/ → pkg/proto)
+# ============================================================
+
+Контракты сервисов описаны в `proto/` (`ads/v1/ads.proto`,
+`analyzer/v1/analyzer.proto`), сгенерированный Go-код хранится в
+`pkg/proto/` (go-модуль `pkg`, пакет `pkg/proto/ads/v1`, `pkg/proto/analyzer/v1`).
+
+Перегенерация (buf, без системного protoc; версии инструментов
+зафиксированы в `scripts/genproto.sh`):
+
+```bash
+make proto          # buf generate → pkg/proto/**/*.pb.go
+cd pkg && go test ./...   # фикстура-тест: контракты линкуются и регистрируются
+```
+
+Сгенерированные `*.pb.go` руками не редактировать — правим `.proto`,
+затем `make proto`.
+
+# ============================================================
 # Парсер Авито (services/parser-service)
 # ============================================================
 

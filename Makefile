@@ -11,7 +11,7 @@ RED := \033[0;31m
 YELLOW := \033[0;33m
 NC := \033[0m # No Color
 
-.PHONY: health ping-postgres ping-redis ping-minio ping-kafka ping-microservices
+.PHONY: health ping-postgres ping-redis ping-minio ping-kafka ping-microservices proto
 
 # ------------------------------------------------------------
 # Комплексная проверка всех компонентов
@@ -114,6 +114,13 @@ ping-microservices:
 # ------------------------------------------------------------
 ps:
 	@docker compose -f $(COMPOSE_FILE) ps
+
+# ------------------------------------------------------------
+# Генерация Go-кода из gRPC-контрактов: proto/ → pkg/proto
+# (buf, версии инструментов зафиксированы в scripts/genproto.sh)
+# ------------------------------------------------------------
+proto:
+	@bash scripts/genproto.sh
 
 # ------------------------------------------------------------
 # Запуск миграций (если ещё не накатили)

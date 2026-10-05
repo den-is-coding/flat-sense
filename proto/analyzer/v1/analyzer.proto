@@ -1,0 +1,93 @@
+// Контракт сервиса оценки analyzer-service (issue #2).
+//
+// analyzer-service рассчитывает окупаемость объявления-продажи по кластеру
+// арендных студий того же ЖК/дома (методика #64/#55) и пишет результат в
+// кэш ad_roi_results. Поля сообщений повторяют схему БД (миграции
+// 000014/000015/000016) и структуры internal/evaluate.
+syntax = "proto3";
+
+package analyzer.v1;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/yourusername/real-estate-analyzer/pkg/proto/analyzer/v1;analyzerv1";
+
+// AnalyzerService — расчёт и обновление результатов оценки.
+service AnalyzerService {
+  // EvaluateAd — рассчитать оценку объявления-продажи по id
+  // (avito_listings.id).
+  rpc EvaluateAd(EvaluateAdRequest) returns (AnalysisResult);
+  // UpdateAnalysis — записать готовый результат оценки в кэш
+  // (analysis_results / таблица ad_roi_results).
+  rpc UpdateAnalysis(UpdateAnalysisRequest) returns (UpdateAnalysisResponse);
+}
+
+// EvaluateAdRequest — какое объявление оценить.
+message EvaluateAdRequest {
+  // id объявления (avito_listings.id).
+  int64 ad_id = 1;
+}
+
+// AnalysisResult — результат оценки окупаемости (тело ad_roi_results).
+// Пустые сценарии с applicable=false соответствуют NULL-колонкам в БД
+// («сценарий неприменим или нет арендных данных», не ноль).
+message AnalysisResult {
+  // id объявления (ad_roi_results.ad_id).
+  int64 ad_id = 1;
+  // Статус расчёта: ok | no_rent_data (ad_roi_results.status).
+  string status = 2;
+  // Меблировка входного объявления (input_furnishing):
+  // furnished | unfurnished | unknown.
+  string furnishing = 3;
+  // Сценарий «без мебели» (колонки *_unfurnished).
+  Scenario unfurnished = 4;
+  // Сценарий «с мебелью» (колонки *_furnished).
+  Scenario furnished = 5;
+  // Комиссия риэлтора (realtor_fee).
+  int64 realtor_fee = 6;
+  // Титульное страхование и оформление (deal_costs_other).
+  int64 deal_costs_other = 7;
+  // Полные издержки сделки (deal_costs_total).
+  int64 deal_costs_total = 8;
+  // Размер арендного кластера (cluster_n).
+  int32 cluster_n = 9;
+  // Достоверность по размеру кластера (confidence): high | medium | low.
+  string confidence = 10;
+  // Человекочитаемая сноска методики (notice).
+  string notice = 11;
+  // Момент расчёта (computed_at).
+  google.protobuf.Timestamp computed_at = 12;
+}
+
+// Scenario — один сценарий окупаемости (пара колонок *_unfurnished /
+// *_furnished таблицы ad_roi_results; арифметика evaluate.Scenario).
+message Scenario {
+  // false — сценарий неприменим (нет арендных данных), в БД NULL.
+  bool applicable = 1;
+  // Медиана аренды кластера, ₽/мес (rent_median_*).
+  double rent_median = 2;
+  // Ожидаемая аренда p25 (rent_p25_*).
+  double rent_p25 = 3;
+  // Ожидаемая аренда p75 (rent_p75_*).
+  double rent_p75 = 4;
+  // Число аналогов сценария (comps_*).
+  int32 comps = 5;
+  // Доходность, % в год (yield_*_pct).
+  double yield_pct = 6;
+  // Окупаемость, лет: full_cost / (rent_median × 12) (payback_years).
+  double payback_years = 7;
+  // Полная стоимость сделки: цена + меблировка + издержки (total_cost_*).
+  int64 full_cost = 8;
+  // Надбавка на меблировку (furnishing_cost; 0 — не применялась).
+  int64 furnishing_cost = 9;
+}
+
+// UpdateAnalysisRequest — результат оценки для записи в кэш.
+message UpdateAnalysisRequest {
+  AnalysisResult analysis = 1;
+}
+
+// UpdateAnalysisResponse — подтверждение записи.
+message UpdateAnalysisResponse {
+  bool ok = 1;
+}

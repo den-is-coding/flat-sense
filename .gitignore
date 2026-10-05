@@ -16,3 +16,6 @@ data/**/images/
 
 # Mimosa hook state (артефакты сессий)
 .mimosa/
+
+# Локальные инструменты генерации protobuf (scripts/genproto.sh)
+.tools/
