@@ -26,6 +26,12 @@
 |---|---|---|---|
 | задание парсеру | `kafka.EventTypeParseRequest` | `parse-requests` | `kafka.ParseRequest{request_id, url, source}` |
 | результат парсинга | `kafka.EventTypeParsedAd` | `parsed-ads` | `kafka.ParsedAd{request_id, ad: ads.v1.Ad}` |
+| ошибка парсинга (issue #4) | `kafka.EventTypeParseError` | `parsed-ads` | `kafka.ParseError{request_id, error}` |
+
+`parse_error` — это **конечный** результат парсинга (блокировка Авито,
+страница не найдена): парсер публикует его и коммитит offset, без
+бесконечных ретраев. DLQ — для другого: битые конверты и сообщения,
+обработка которых падала maxAttempts раз (например, недоступна БД).
 
 Топики (вместе с парными `<topic>-dlq`) создаёт `kafka-init`
 в `deploy/docker-compose.yml`: 3 партиции, RF=1.

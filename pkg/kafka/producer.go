@@ -115,6 +115,16 @@ func (p *Producer) PublishParsedAd(ctx context.Context, ad ParsedAd) error {
 	return p.Publish(ctx, TopicParsedAds, []byte(ad.RequestID), env)
 }
 
+// PublishParseError — неуспешный результат парсинга (TopicParsedAds,
+// issue #4): конечная ошибка (блокировка, 404), а не повод для ретраев.
+func (p *Producer) PublishParseError(ctx context.Context, e ParseError) error {
+	env, err := NewEnvelope(EventTypeParseError, e)
+	if err != nil {
+		return err
+	}
+	return p.Publish(ctx, TopicParsedAds, []byte(e.RequestID), env)
+}
+
 // Close — дождаться неподтверждённых сообщений и закрыть соединения.
 func (p *Producer) Close() error { return p.writer.Close() }
 
